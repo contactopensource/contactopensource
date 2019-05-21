@@ -1,11 +1,11 @@
-CREATE DATABASE contact_open_source;
+CREATE DATABASE contactopensource;
 
-CREATE ROLE contact_open_source_administrator WITH LOGIN ENCRYPTED PASSWORD 'secret';
-CREATE ROLE contact_open_source_reader WITH LOGIN ENCRYPTED PASSWORD 'secret';
+CREATE ROLE contactopensource_administrator WITH LOGIN ENCRYPTED PASSWORD 'secret';
+CREATE ROLE contactopensource_reader WITH LOGIN ENCRYPTED PASSWORD 'secret';
 
-GRANT ALL ON DATABASE contact_open_source TO contact_open_source_administrator;
+GRANT ALL ON DATABASE contactopensource TO contactopensource_administrator;
 
-GRANT CONNECT ON DATABASE contact_open_source TO contact_open_source_reader;
-GRANT USAGE ON SCHEMA public TO contact_open_source_reader;
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO contact_open_source_reader;
-ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO contact_open_source_reader;
+GRANT CONNECT ON DATABASE contactopensource TO contactopensource_reader;
+GRANT USAGE ON SCHEMA public TO contactopensource_reader;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO contactopensource_reader;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO contactopensource_reader;
