@@ -13,11 +13,11 @@ We love pull requests for improvments to the source code and documentation.
 
 There are three easy steps:
 
-1. Fork the repo. 
+1. Fork the repo.
 
   * Before you do any work please run our existing tests to make sure the code runs cleanly.
 
-2. Work as you like. 
+2. Work as you like.
 
    * Please create tests. This helps us know that all your code runs cleanly.
 
