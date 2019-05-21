@@ -13,10 +13,10 @@ create table item (
   id uuid not null primary key,
 
   -- Tracking-related
-  created_at timestamp, created_by text, -- example: created at 2020-01-01T00:00:00Z by alice.anderson@example.com
-  updated_at timestamp, updated_by text, -- example: created at 2021-01-01T00:00:00Z by alice.anderson@example.com
-  proofed_at timestamp, proofed_by text, -- example: created at 2022-01-01T00:00:00Z by alice.anderson@example.com
-  retired_at timestamp, retired_by text, -- example: created at 2023-01-01T00:00:00Z by alice.anderson@example.com
+  created_at timestamptz, created_by text, -- example: created at 2020-01-01T00:00:00Z by alice.anderson@example.com
+  updated_at timestamptz, updated_by text, -- example: created at 2021-01-01T00:00:00Z by alice.anderson@example.com
+  proofed_at timestamptz, proofed_by text, -- example: created at 2022-01-01T00:00:00Z by alice.anderson@example.com
+  retired_at timestamptz, retired_by text, -- example: created at 2023-01-01T00:00:00Z by alice.anderson@example.com
 
   -- General-related
   name text, -- example: "Alice Anderson"
