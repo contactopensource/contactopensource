@@ -1,38 +1,31 @@
 # Contact Open Source
 
-Contact Open Source is free contact management software, akin to a contacts app, or address book, or customer relationship manganer (CRM).
-
-* [Introduction](#introduction)
-* [Implementation](#implementation)
-  * [Data store](#data-store)
-  * [Web application](#web-application)
+Contact Open Source is contact management software and is freely available for everyone. Contact Open Source is akin to address book software, or phone book software, or customer relationship manager (CRM) software.
 
 
 ## Introduction
 
-The goal of this project is to provide free, open, modern software that is especially easy to change and adapt by software programmers, application developers, and database administrators.
+Contact Open Source makes it easy to keep track of people, places, things, events, and the like.
+
+The project provides free, open, modern software that is easy to change and adapt by software programmers, application developers, and database administrators.
+
+For a full list of concepts please see [concepts](doc/concepts.md)
 
 
-## Implementation
+## Ideas
 
+Ideas for contact card formats:
 
-### Data store
+* [VCard using structured text](https://wikipedia.org/wiki/VCard)
 
-The data store is implemented as PostgreSQL, using Liquibase migration annotations. 
+* [HCard using HTML](https://wikipedia.org/wiki/HCard) (and XCard using XML and similar format)
 
-We welcome contributing code that provides additional implementations, such as for more databases (e.g. MySQL, SQL Server, Oracle) and for more migration tooling (e.g. Flyway, DB-Migrate, DBMate).
+* [JCard using JSON and RFC 7095](https://tools.ietf.org/html/rfc7095) (and YCard using YAML and simlar format)
 
-The current code is deliberately very simple: there is only one table: a contact item. 
+Ideas for node associations:
 
-We encourage you to extend this code as you like, for your own kinds of SQL and functionality.
+* Feed: such as a feed of news, weather, stories, posts, etc.
 
+* Note: such as a memo, advisory, update, additional information, etc.
 
-### Web application
-
-The web application is implemented as Actix, using Rust and Cargo. 
-
-We welcome contributing code that provides additional implementations, such as for more web frameworks (e.g. Node Express, Ruby on Rails, Python Django).
-
-The current code is deliberately very simple: there are only two web pages: a contact list, and a contact item.
-
-We encourage you to extend this code as you like, for your own kinds of web pages and capabilties.
+* Résumé: such as summary of work experience, skills, capabilties, etc.
