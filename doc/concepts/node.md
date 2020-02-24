@@ -2,15 +2,17 @@
 
 The `node` concept is how we store any arbitrary chunk of data.
 
-We track the URI of the data:
+Graph
 
-* uri ~ text ~ example: "https://example.com/example.txt"
+* type_uri ~ uri ~ example: "http://example.com/user"
 
-We track the content of the data, by using one or more of these attributess:
+* type_name ~ name ~ example: user
+
+Content attributes for specific database types:
 
 * text ~ text ~ example: "hello world"
 
-* json ~ jsonb ~ example: {"hello": "world"}
+* jsonb ~ jsonb ~ example: {"hello": "world"}
 
 * xml ~ xml ~ example: "<?xml version=\'1.0\'?><example>hello world</example>"
 

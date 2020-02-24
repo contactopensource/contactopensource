@@ -1,6 +1,6 @@
-# Person pronoun
+# Person pronoun kit
 
-A `person_pronoun` is a group of pronouns such as "they, their, theirs, etc."
+A `person_pronoun_kit` is a group of pronouns such as "they, their, theirs, etc."
 
 Attributes:
 
@@ -17,3 +17,7 @@ Attributes:
 * intensive_pronoun ~ text ~ example: "herself" as in "she does it herself" ~ see https://en.wikipedia.org/wiki/Intensive_pronoun
 
 * disjunctive_pronoun ~ text ~ example: "her" as in "it is her" ~ see https://wikipedia.org/wiki/Disjunctive_pronoun
+
+Modifier attributes:
+
+* locale ~ reference ~ example: id of "en-US"

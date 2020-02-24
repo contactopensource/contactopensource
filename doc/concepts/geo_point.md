@@ -20,8 +20,10 @@ Attributes:
 
 * longitude_as_decimal_degrees ~ number ~ example: 122.4783 is 122.4783° W (Golden Gate Bridge)
 
-* altitude_msl_as_meters ~ number ~ example: 67.056 is 67.056 meters to mean sea level (MSL) ~ a.k.a. true altitude
+* altitude_msl_as_meters ~ number ~ example: 67.056 is 67.056 meters higher than mean sea level (MSL)
 
-* altitude_agl_as_meters ~ number ~ example: 67.056 is 67.056 meters height above ground level (AGL) ~ a.k.a. absolute altitude
+* altitude_agl_as_meters ~ number ~ example: 67.056 is 67.056 meters above ground level (AGL)
 
-* elevation_msl_as_meters ~ number ~ example: 67.056 is 67.056 meters height above mean sea level.
+* elevation_msl_as_meters ~ number ~ example: 67.056 is 67.056 meters higher than mean sea level (MSL)
+
+* elevation_agl_as_meters ~ number ~ example: 67.056 is 67.056 meters above ground level (AGL)

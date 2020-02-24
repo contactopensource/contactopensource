@@ -5,54 +5,34 @@ Concepts are our domain model concepts in the software:
 
 * Popular concepts: [person](concepts/person.md), [place](concepts/place.md), [thing](concepts/thing.md), [event](concepts/event.md), etc.
 
-* Contact concepts: [email_contact](concepts/email_contact.md), [phone_contact](concepts/phone_contact.md), [postal_contact](concepts/postal_contact.md), etc.
+* Contact concepts: [email_contact](concepts/email_contact.md), [phone_contact](concepts/phone_contact.md), [postal_contact](concepts/postal_contact.md), [link_contact](link_contact.md)
 
-* Modifier concepts: [tag](concepts/tag.md), [locale](concepts/locale.md), [media_type](concepts/media_type.md), [timestamp_range](concepts/timestamp_range.md), [physical](concepts/physical.md), etc.
+* Kit concepts: [person_name_kit](concepts/person_name_kit.md), [person_pronoun_kit](concepts/person_name_kit.md).
+
+* Modifier concepts: [tag](concepts/tag.md), [unit](concepts/unit.md), [locale](concepts/locale.md), [media_type](concepts/media_type.md), [timestamp_range](concepts/timestamp_range.md), [physical](concepts/physical.md), etc.
 
 * Geograpy concepts: [geo_point](concepts/geo_point.md), [geo_circle](concepts/geo_circle.md), [geo_rectangle](concepts/geo_rectangle.md), etc.
 
 * Graph database concepts: [node](concepts/node.md), [edge](concepts/edge.md)
 
-Alphabetic list of concepts:
+TODO attributes:
 
-* [edge.md](concepts/edge.md)
+* parent_id ~ id
 
-* [email_contact.md](concepts/email_contact.md)
+* emoji ~ text ~ example: "U+1F60A" (happy face)
 
-* [event.md](concepts/event.md)
+* image_uri ~ text ~ example: "https://example.com/image.jpg"
 
-* [geo_circle.md](concepts/geo_circle.md)
+* color_hex ~ text ~ examle: "FF0000" (red)
 
-* [geo_point.md](concepts/geo_point.md)
+* css_class ~ text ~ example: "selected"
 
-* [geo_rectangle.md](concepts/geo_rectangle.md)
+* star_count ~ number
 
-* [link_contact.md](concepts/link_contact.md)
+* start_date ~ date
 
-* [locale.md](concepts/locale.md)
+* stop_date ~ date
 
-* [media_type.md](concepts/media_type.md)
+* physical concepts: width as meters, height as meters, length as meters, depth_as_meters
 
-* [node.md](concepts/node.md)
-
-* [passport_contact.md](concepts/passport_contact.md)
-
-* [person.md](concepts/person.md)
-
-* [person_name.md](concepts/person_name.md)
-
-* [person_pronoun.md](concepts/person_pronoun.md)
-
-* [phone_contact.md](concepts/phone_contact.md)
-
-* [physical.md](concepts/physical.md)
-
-* [place.md](concepts/place.md)
-
-* [postal_contact.md](concepts/postal_contact.md)
-
-* [tag.md](concepts/tag.md)
-
-* [thing.md](concepts/thing.md)
-
-* [timestamp_range](concepts/timestamp_range.md)
+* screen concepts: width as pixels, height as pixels, length as pixels, depth_as_pixels

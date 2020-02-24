@@ -48,4 +48,4 @@ Attributes:
 
 * suffix ~ text ~ example: "+zip' means ZIP compressed file
 
-* parameters ~ text ~ example: "charset=UTF-8"
+* parameter_text ~ text ~ example: "charset=UTF-8;boundary=something"

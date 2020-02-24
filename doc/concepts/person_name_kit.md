@@ -1,8 +1,8 @@
-# person_name
+# person_name_kit
 
-A `person_name` is a typical person's name, with many optional attributes for worldwide choices, prefixes and suffixes, honorifics, etc.
+A `person_name_kit` is a group of names, with many optional attributes for worldwide choices, prefixes and suffixes, honorifics, etc.
 
-Attributes:
+Name attributes:
 
 * given_name ~ text ~ example: "Alice"
 
@@ -20,6 +20,12 @@ Attributes:
 
 * legal_name_phonetic ~ text ~ example: "Alice Amy Adams"
 
+* nickname ~ text ~ example: "Ali"
+
+* nickname_phonetic ~ text ~ example: "Al-lee"
+
+Extra attributes:
+
 * prefix_name ~ text ~ example: "Dr."
 
 * prefix_name_phonetic ~ text ~ example: "Doctor"
@@ -36,6 +42,7 @@ Attributes:
 
 * addressee_name_phonetic ~ text ~ example: "Doctor Alice Adams Junior"
 
-* nickname ~ text ~ example: "Ali"
+Modifier attributes:
 
-* nickname_phonetic ~ text ~ example: "Al-lee"
+* locale ~ reference ~ example: id of "en-US"
+
