@@ -16,14 +16,14 @@ Note about mean sea level:
 
 Attributes:
 
-* latitude_as_decimal_degrees ~ number ~ example: 37.8199 is 37.8199° N which is Golden Gate Bridge
+* latitude: decimal_degrees -- example: 37.8199 is 37.8199° N which is Golden Gate Bridge
 
-* longitude_as_decimal_degrees ~ number ~ example: 122.4783 is 122.4783° W (Golden Gate Bridge)
+* longitude: decimal_degrees -- example: 122.4783 is 122.4783° W (Golden Gate Bridge)
 
-* altitude_msl_as_meters ~ number ~ example: 67.056 is 67.056 meters higher than mean sea level (MSL)
+* altitude_msl: meters -- example: 67.056 is 67.056 meters higher than mean sea level (MSL)
 
-* altitude_agl_as_meters ~ number ~ example: 67.056 is 67.056 meters above ground level (AGL)
+* altitude_agl: meters -- example: 67.056 is 67.056 meters above ground level (AGL)
 
-* elevation_msl_as_meters ~ number ~ example: 67.056 is 67.056 meters higher than mean sea level (MSL)
+* elevation_msl: meters -- example: 67.056 is 67.056 meters higher than mean sea level (MSL)
 
-* elevation_agl_as_meters ~ number ~ example: 67.056 is 67.056 meters above ground level (AGL)
+* elevation_agl: meters -- example: 67.056 is 67.056 meters above ground level (AGL)

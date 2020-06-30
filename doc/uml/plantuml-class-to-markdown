@@ -1,0 +1,2 @@
+#!/bin/sh
+grep "^\(package \|  class \)" | sed 's/^package \(.*\) { */⏎\1:⏎/; s/^  class \(.*\)/* [\1](concepts\/\1.md)/;' | tr '⏎' '\n'

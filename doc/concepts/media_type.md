@@ -38,14 +38,14 @@ Example that uses all of the above:
 
 Attributes:
 
-* text ~ text ~ example: "application/x.foo;charset=UTF-8"
+* text: text -- example: "application/x.foo;charset=UTF-8"
 
-* supertype ~ text ~ example: "text"
+* supertype: text -- example: "text"
 
-* subtype ~ text ~ example: "plain"
+* subtype: text -- example: "plain"
 
-* tree ~ text ~ example: "x." means unregistered
+* tree: text -- example: "x." means unregistered
 
-* suffix ~ text ~ example: "+zip' means ZIP compressed file
+* suffix: text -- example: "+zip' means ZIP compressed file
 
-* parameter_text ~ text ~ example: "charset=UTF-8;boundary=something"
+* parameter_text: text -- example: "charset=UTF-8;boundary=something"

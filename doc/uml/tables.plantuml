@@ -1,0 +1,740 @@
+e@startuml
+skinparam monochrome true
+hide circle
+
+'''
+'
+' Package section
+'
+'''
+
+package Graph {
+  class node
+  class edge
+}
+
+package Account {
+  class user
+  class group
+  class credential
+}
+
+package Access {
+  class access_user
+  class access_assignment
+  class access_attribute
+  class access_permission
+  class access_operation
+}
+
+package System {
+  class system_user
+  class system_group
+  class system_path
+  class system_proc
+}
+
+package Data {
+  class unit
+  class tag
+  class codec
+  class locale
+  class media_type
+  class currency_type
+  class license_type
+}
+
+package Content {
+  class content_application
+  class content_audio
+  class content_font
+  class content_example
+  class content_image
+  class content_message
+  class content_model
+  class content_multipart
+  class content_text
+  class content_video
+}
+
+package Color {
+  class color_point
+  class color_point_code
+  class color_rag
+  class color_sign
+  class color_theme
+}
+
+package Geo {
+  class geo_point
+  class geo_point_code
+  class geo_point_center
+}
+
+package Contacts {
+  class contact_uri
+  class contact_email
+  class contact_phone
+  class contact_postal
+  class contact_passport
+}
+
+package Personal {
+  class person
+  class person_name_kit
+  class person_pronoun_kit
+}
+
+package Social {
+  class post
+  class feed
+  class page
+  class room
+  class topic
+  class portal
+  class notification
+}
+
+package Concepts {
+  class artist
+  class album
+  class song
+  class book
+  class thing
+  class event
+  class job_opening
+  class movie
+  class offer
+  class organization
+  class place
+  class sport
+  class travel
+}
+
+package Plan {
+  class plan_objective
+  class plan_result
+  class plan_metric
+  class plan_smart
+}
+
+'''
+'
+' Package layout hint section
+'
+'''
+
+Graph -d-> Account
+Account -d-> Access
+Access -d-> System
+System -d-> Data
+Data -d-> Content
+Content -d-> Color
+Color -d-> Geo
+Geo -d-> Contacts
+Contacts -d-> Personal
+Personal -d-> Social
+Social -d-> Concepts
+Concepts -d-> Plan
+
+'' package Graph
+node -[hidden] edge
+
+'' package Account
+user -[hidden] group
+group -[hidden] credential
+
+'' package Access
+access_user -[hidden] access_assignment
+access_assignment -[hidden] access_attribute
+access_attribute -[hidden] access_permission
+access_permission -[hidden] access_operation
+
+'' package System
+system_user -[hidden] system_group
+system_group -[hidden] system_path
+system_path -[hidden] system_proc
+
+'' package Data
+unit -[hidden] tag
+tag -[hidden] codec
+codec -[hidden] locale
+locale -[hidden] media_type
+media_type -[hidden] currency_type
+currency_type -[hidden] license_type
+
+'' package Media
+content_application -[hidden] content_audio
+content_audio -[hidden] content_example
+content_example -[hidden] content_font
+content_font -[hidden] content_image
+content_image -[hidden] content_message
+content_message -[hidden] content_model
+content_model -[hidden] content_multipart
+content_multipart -[hidden] content_text
+content_text -[hidden] content_video
+
+'' package Contact
+contact_uri -[hidden] contact_email
+contact_email -[hidden] contact_phone
+contact_phone -[hidden] contact_postal
+contact_postal -[hidden] contact_passport
+
+'' package Color
+color_point -[hidden] color_point_code
+color_point_code -[hidden] color_rag
+color_rag -[hidden] color_sign
+color_sign -[hidden] color_theme
+
+'' package Geo
+geo_point -[hidden] geo_point_code
+geo_point_code -[hidden] geo_point_center
+
+'' package Social
+post -[hidden] feed
+feed -[hidden] page
+page -[hidden] room
+room -[hidden] topic
+topic -[hidden] portal
+
+'' package Personal
+person -[hidden] person_name_kit
+person_name_kit -[hidden] person_pronoun_kit
+
+'' package Concepts
+artist -[hidden] album
+album -[hidden] song
+song -[hidden] book
+book -[hidden] job_opening
+job_opening -[hidden] movie
+movie -[hidden] offer
+offer -[hidden] sport
+sport -[hidden] travel
+travel -[hidden] organization
+organization -[hidden] place
+place -[hidden] thing
+thing -[hidden] event
+event -[hidden] artist
+
+'' package Plan
+plan_objective -[hidden] plan_result
+plan_result -[hidden] plan_metric
+plan_metric -[hidden] plan_smart
+
+'''
+'
+' Graph
+'
+'''
+
+class node {
+  uri text
+  text text
+  json jsonb
+  xml xml
+  number numeric
+}
+
+class edge {
+__ Subject __
+  subject_uri text
+  subject_database text
+  subject_schema text
+  subject_table text
+  subject_id id
+__ Predicate __
+  predicate_uri text
+  predicate_database text
+  predicate_schema text
+  predicate_table text
+  predicate_id id
+__ Object __
+  object_uri text
+  object_database text
+  object_schema text
+  object_table text
+  object_id id
+__ Lifecycle __
+  start_at_timestamp_utc timestamp
+  stop_at_timestamp_utc timestamp
+__ Modifiers __
+  count integer
+  weight decimal
+  unit_interval unit_interval
+  dual_interval decimal
+}
+
+'''
+'
+' Account
+'
+'''
+
+class user {
+  name text
+}
+
+class group {
+  name text
+}
+
+class credential {
+  username text
+  password_as_scrypt text
+}
+
+'''
+'
+' package Access
+'
+'''
+
+class access_user {
+  name text
+}
+
+class access_assignment {
+  access_user_id id
+  access_attribute id
+}
+
+class access_attribute {
+  name text
+  TODO
+}
+
+class access_permission {
+  access_attribute id
+  access_operation_id id
+}
+
+class access_operation {
+  name text
+}
+
+'''
+'
+' System
+'
+'''
+
+class system_user {
+  uid integer
+  name text
+}
+
+class system_group {
+  gid integer
+  name text
+}
+
+class system_path {
+  iid integer
+  name text
+}
+
+class system_proc {
+  pid integer
+  name text
+}
+
+'''
+'
+' Data
+'
+'''
+
+class unit {
+  name text
+  symbol text
+}
+
+class tag {
+  text text
+  description text
+}
+
+class locale {
+  text text
+  language_code text
+  country_code text
+  script_code text
+  region_code text
+  variant_code text
+  decimal_separator text
+  grouping_separator text
+  currency_code text
+  currency_symbol text
+  quotation_start_delimiter text
+  quotation_stop_delimiter text
+}
+
+class codec {
+  name text
+  code text
+  icon text
+  link text
+  note text
+  creator_name text
+  prefer_file_extension text
+  prefer_media_type_id id
+  lossy_flag boolean
+  floss_flag boolean
+  fixed_bit_rate decimal
+  variable_bit_rate_minimum decimal
+  variable_bit_rate_maximum decimal
+  fixed_channel_count integer
+  variable_channel_count_minimum integer
+  variable_channel_count_maximum integer  
+}
+
+class media_type {
+  text text
+  supertype text
+  subtype text
+  tree text
+  suffix  text
+  parameters text[]
+}
+
+class currency_type {
+  name text
+  code text
+  symbol text
+}
+
+class license_type {
+  name text
+  spdx_identifier text
+  text text
+}
+
+'''
+'
+' Content
+'
+'''
+
+class content_application {
+  name text
+}
+
+class content_audio {
+  name text
+  codec_id
+  duration_as_seconds count
+}
+
+class content_font {
+  name text
+}
+
+class content_example {
+  name text
+}
+
+class content_image {
+  name text
+  codec_id
+  width_as_pixels count
+  height_as_pixels count
+}
+
+class content_message {
+  name text
+}
+
+class content_model {
+  name text
+}
+
+class content_multipart {
+  name text
+}
+
+class content_text {
+  name text
+}
+
+class content_video {
+  name text
+  codec_id
+  duration_as_seconds count
+}
+
+'''
+'
+' Color
+'
+'''
+
+class color_point {
+  hex text
+  red unit_interval
+  green unit_interval
+  blue unit_interval
+  cyan unit_interval
+  yellow unit_interval
+  magenta unit_interval
+  black unit_interval
+}
+
+class color_point_code {
+  color_point_id text
+  html_color_name text
+  x11_color_name text
+  color_naming_system_name text
+  pantone_matching_system_name text
+}
+
+class color_rag {
+  red_color_point_id id
+  amber_color_point_id id
+  green_color_point_id id
+}
+
+class color_sign {
+  safety_color_point_id id
+  caution_color_point_id id
+  warning_color_point_id id
+  danger_color_point_id id
+}
+
+class color_theme {
+  primary_color_point_id id
+  secondary_color_point_id id
+  tertiary_color_point_id id
+  success_color_point_id id
+  failure_color_point_id id
+  light_color_point_id id
+  dark_color_point_id id
+}
+
+'''
+'
+' Geo
+'
+'''
+
+class geo_point {
+  latitude numeric
+  longitude numeric
+  altitude numeric
+  elevation numeric
+}
+
+class geo_point_code {
+  geo_point_id text
+  name text
+}
+
+class geo_point_center {
+  geo_point_id id
+  spread_as_meters numeric
+}
+
+'''
+'
+' Contact
+'
+'''
+
+class contact_uri {
+  label text
+  uri text
+}
+
+class contact_email {
+  address text
+  display_name text
+  addr_spec text
+}
+
+class contact_phone {
+  label text
+  number_text text
+  e164_text varchar
+  e164_country_code varchar
+  e164_national_destination_code varchar
+  e164_group_identification_code varchar
+  e164_trial_identification_code varchar
+  e164_subscriber_number varchar
+}
+
+class contact_postal {
+  country_text text
+  region_text text
+  locality_text text
+  neighborhood_text text
+  postal_code_text text
+  street_address_text text
+  premise_address_text text
+  global_location_number_text text
+}
+
+class contact_passport {
+  country_text text
+  number_text text
+  valid_start_date date
+  valid_stop_date date
+}
+
+'''
+'
+' Personal
+'
+'''
+
+class person {
+  todo text
+}
+
+class person_name_kit {
+  given_name text
+  middle_name text
+  family_name text
+  legal_name text
+  prefix_name text
+  suffix_name text
+  salutation_name text
+  addressee_name text
+  nickname text
+}
+
+class person_pronoun_kit {
+  subject_pronoun text
+  object_pronoun text
+  dependent_possessive_pronoun text
+  independent_possessive_pronoun text
+  reflexive_pronoun text
+  intensive_pronoun text
+  disjunctive_pronoun text
+}
+
+'''
+'
+' Social
+'
+'''
+
+class post {
+  name text
+}
+
+class feed {
+  name text
+}
+
+class page {
+  name text
+}
+
+class room {
+  name text
+}
+
+class topic {
+  name text
+}
+
+class portal {
+  name text
+}
+
+class notification {
+  name text
+}
+
+'''
+'
+' Concept
+'
+'''
+
+class organization {
+  name text
+  emoji text
+__ Display-related __
+  image_uri text
+  color_hex char
+  css_class text
+  star_count integer
+__ Lifetime-related __
+  start_date date
+  stop_date date
+}
+
+class place {
+  name text
+}
+
+class thing {
+  name text
+}
+
+class event {
+  name text
+  who_as_org_id id
+  what_as_thing_id id
+  where_as_place_id id
+  when_as_date_time_range id
+}
+
+class artist {
+  name text
+}
+
+class album {
+  name text
+}
+
+class song {
+  name text
+}
+
+class book {
+  name text
+}
+
+class movie {
+  name text
+}
+
+class sport {
+  name text
+}
+
+class travel {
+  name text
+}
+
+'''
+'
+' Plan
+'
+'''
+
+class plan_objective {
+  name text
+  metric_id text
+}
+
+class plan_result {
+  name text
+  metric_id text
+}
+
+class plan_metric {
+  name text
+  value numeric
+}
+
+class plan_smart {
+  specific text
+  measurable text
+  actionable text
+  relevant text
+  timely text
+}
+
+@enduml
