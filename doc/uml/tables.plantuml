@@ -1,4 +1,4 @@
-e@startuml
+@startuml
 skinparam monochrome true
 hide circle
 
@@ -40,6 +40,7 @@ package Data {
   class codec
   class locale
   class media_type
+  class microdata_item
   class currency_type
   class license_type
 }
@@ -160,7 +161,8 @@ unit -[hidden] tag
 tag -[hidden] codec
 codec -[hidden] locale
 locale -[hidden] media_type
-media_type -[hidden] currency_type
+media_type -[hidden] microdata_item
+microdata_item -[hidden] currency_type
 currency_type -[hidden] license_type
 
 '' package Media
@@ -395,6 +397,11 @@ class media_type {
   tree text
   suffix  text
   parameters text[]
+}
+
+class microdata_item {
+  itemtype text
+  itemprop text
 }
 
 class currency_type {

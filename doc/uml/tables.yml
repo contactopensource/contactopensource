@@ -575,6 +575,50 @@ package_list:
               summary:
               example:>                
                 charset=UTF-8
+      - microdata_item:
+        summary: "Microdata item classes"
+        saga:>
+          Specification for identifying content such as text, images, videos, etc. 
+
+          See https://en.wikipedia.org/wiki/Microdata_(HTML)
+          
+          Attributes:
+          
+          * itemtype: URL --  
+          
+          * itemprop: text -- Indicates that its containing tag holds the value of the specified item property. The property's name and value context are described by the item's vocabulary. Properties values usually consist of string values, but can also use URLs using the a element and its href attribute, the img element and its src attribute, or other elements that link to or embed external resources. Example: "name".
+        
+          Example itemtype:
+
+              http://schema.org/Person
+              http://schema.org/Movie
+
+          Example itemtype and itemprop:
+
+              http://schema.org/Person name
+              http://schema.org/Person jobTitle
+              http://schema.org/Movie genre
+              http://schema.org/Movie director
+              
+        section_list:
+          - Main:
+            - itemtype:
+              type: URI
+              summary: A valid URL of a vocabulary that describes the item and its properties context.
+              example:>                
+                http://schema.org/Person
+            - itemprop:
+              type: text
+              summary:>
+                Indicates that its containing tag holds the value of the
+                specified item property. The property's name and value context
+                are described by the item's vocabulary. Properties values
+                usually consist of string values, but can also use URLs using
+                the a element and its href attribute, the img element and its
+                src attribute, or other elements that link to or embed external
+                resources.
+              example:>
+                name
       - currency_type:
         section_list:
           - Main:
@@ -1086,7 +1130,7 @@ package_list:
                 123 Main Street
             - premise_address_text:
               type: text
-              summary: "A street address subcateory, such as an apartment id, mailbox identifier, room name"
+              summary: "A street address subcateory, such as an apartment identifier, mailbox number, room name"
               example:>                
                 Apartment A1
             - global_location_number_text:
