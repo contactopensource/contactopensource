@@ -1,2 +1,9 @@
 #!/bin/sh
-grep "^  class " | sed 's/^  class \(.*\)/\1/;'
+
+# Process a plantuml class file to a class list.
+#
+# Example:
+#
+#     cat tables.plantuml | plantuml-class-to-list
+#
+sed -n 's/^[[:space:]]*class \([_[:alnum:]]\{1,\}\).*/\1/p;'
