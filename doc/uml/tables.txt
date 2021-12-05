@@ -30,10 +30,6 @@ content_multipart
 content_text
 content_video
 color_point
-color_point_code
-color_rag
-color_sign
-color_theme
 geo_point
 geo_point_code
 geo_point_center

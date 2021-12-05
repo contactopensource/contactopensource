@@ -6,7 +6,9 @@ Contents:
 
 ## Introduction
 
-ContactOpenSource is free software that tracks contacts, such as an organization, person, place, thing, etc.
+ContactOpenSource is software that helps you manage contact information lists, such as people you know, and their email addresses, phone numbers, web links, and more.
+
+ContactOpenSource is free libre open source software (FLOSS) and developed entirely by volunteers. We welcome help, ideas, sharing, and donations.
 
 We use these categories:
 
@@ -61,15 +63,14 @@ All tables have these metadata columns:
 CREATE TABLE `examples` (
     id uuid not null primary key,
 
-    -- Programming-related
-    tenant_id uuid, -- for optional multi-tenant installation
-    typecast text, -- for optional single table inheritance
-    state text, -- for optional state machine transition
-
     -- Update-related
     updated_at_timestamp_utc timestamp, -- example: 2020-01-01T00:00:00 always UTC
     updated_at_clock_count bigint, -- example: 123456789 as suitable for a vector clock
-    updated_by_text text, -- example: explanation of who updated the contact, why, how, etc.
+
+    -- Programming-related
+    tenant_id uuid, -- for optional multi-tenant installation
+    type_id text, -- for optional single table inheritance
+    state_id text, -- for optional state machine transition
 
     -- Meta-related -- the intent is to describe the content fields below.
     uri text, -- example: 'https://example.com/example.txt'

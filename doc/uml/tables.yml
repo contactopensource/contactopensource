@@ -778,12 +778,6 @@ package_list:
     class_list:
       - color_point:
         section_list:
-          - Main:
-            - hex:
-              type: text
-              summary:
-              example:>                
-                "FF0088" means purple
           - RGB
             - red:
               type: unit_interval
@@ -821,14 +815,12 @@ package_list:
               summary:
               example:>                
                 0.10
-      - color_point_code:
-        section_list:
-          - Main:
-            - color_point_id:
-              type: color_point.id
+          - Codes:
+            - hex:
+              type: text
               summary:
               example:>                
-                id
+                "FF0088" means purple
             - html_color_name:
               type: text
               summary: "See: https://en.wikipedia.org/wiki/Web_colors#HTML_color_names"
@@ -849,87 +841,6 @@ package_list:
               summary: "See: https://en.wikipedia.org/wiki/Pantone"
               example:>                
                 red
-      - color_rag:
-        section_list:
-          - Main:
-            - red_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of cheery red
-            - amber_color_point_id:
-              type: id
-              summary:
-              example:>                
-                id of lemon yellow
-            - green_color_point_id:
-              type: id
-              summary:
-              example:>                
-                id of forest green
-      - color_sign:
-        section_list:
-          - Main:
-            - safety_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of green
-            - caution_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of yellow
-            - warning_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of orange
-            - danger_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of red
-      - color_theme:
-        section_list:
-          - Rank:
-            - primary_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of blue
-            - secondary_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of indigo
-            - tertiary_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of violet
-          - Result
-            - success_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of green
-            - failure_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of red
-          - Shade
-            - light_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of white
-            - dark_color_point_id:
-              type: color_point.id
-              summary:
-              example:>                
-                id of black
   - "Geo":
     summary: "Geo classes for geolocation, geography, geopolitics, etc."
     class_list:

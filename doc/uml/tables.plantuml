@@ -58,12 +58,8 @@ package Content {
   class content_video
 }
 
-package Color {
+package Qualia {
   class color_point
-  class color_point_code
-  class color_rag
-  class color_sign
-  class color_theme
 }
 
 package Geo {
@@ -182,11 +178,8 @@ contact_email -[hidden] contact_phone
 contact_phone -[hidden] contact_postal
 contact_postal -[hidden] contact_passport
 
-'' package Color
-color_point -[hidden] color_point_code
-color_point_code -[hidden] color_rag
-color_rag -[hidden] color_sign
-color_sign -[hidden] color_theme
+'' package Qualia
+'' color_point -[hidden] ?
 
 '' package Geo
 geo_point -[hidden] geo_point_code
@@ -476,7 +469,6 @@ class content_video {
 '''
 
 class color_point {
-  hex text
   red unit_interval
   green unit_interval
   blue unit_interval
@@ -484,37 +476,12 @@ class color_point {
   yellow unit_interval
   magenta unit_interval
   black unit_interval
-}
-
-class color_point_code {
+  hex text
   color_point_id text
   html_color_name text
   x11_color_name text
   color_naming_system_name text
   pantone_matching_system_name text
-}
-
-class color_rag {
-  red_color_point_id id
-  amber_color_point_id id
-  green_color_point_id id
-}
-
-class color_sign {
-  safety_color_point_id id
-  caution_color_point_id id
-  warning_color_point_id id
-  danger_color_point_id id
-}
-
-class color_theme {
-  primary_color_point_id id
-  secondary_color_point_id id
-  tertiary_color_point_id id
-  success_color_point_id id
-  failure_color_point_id id
-  light_color_point_id id
-  dark_color_point_id id
 }
 
 '''
@@ -571,7 +538,9 @@ class contact_phone {
 class contact_postal {
   country_text text
   region_text text
+  district_text
   locality_text text
+  sublocality_text text
   neighborhood_text text
   postal_code_text text
   street_address_text text

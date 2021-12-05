@@ -15,18 +15,19 @@ Account:
 
 Access:
 
-* [access_user](concepts/access_user.md)
-* [access_assignment](concepts/access_assignment.md)
-* [access_attribute](concepts/access_attribute.md)
-* [access_permission](concepts/access_permission.md)
-* [access_operation](concepts/access_operation.md)
+* [access_user](concepts/access/access_user.md)
+* [access_role](concepts/access/access_role.md)
+* [access_assignment](concepts/access/access_assignment.md)
+* [access_attribute](concepts/access/access_attribute.md)
+* [access_permission](concepts/access/access_permission.md)
+* [access_operation](concepts/access/access_operation.md)
 
 System:
 
-* [system_user](concepts/system_user.md)
-* [system_group](concepts/system_group.md)
-* [system_path](concepts/system_path.md)
-* [system_proc](concepts/system_proc.md)
+* [system_user](concepts/system/system_user.md)
+* [system_group](concepts/system/system_group.md)
+* [system_path](concepts/system/system_path.md)
+* [system_process](concepts/system/system_process.md)
 
 Data:
 
@@ -54,10 +55,6 @@ Content:
 Color:
 
 * [color_point](concepts/color_point.md)
-* [color_point_code](concepts/color_point_code.md)
-* [color_rag](concepts/color_rag.md)
-* [color_sign](concepts/color_sign.md)
-* [color_theme](concepts/color_theme.md)
 
 Geo:
 
@@ -79,7 +76,7 @@ Personal:
 * [person_name_kit](concepts/person_name_kit.md)
 * [person_pronoun_kit](concepts/person_pronoun_kit.md)
 
-Social:
+Social a.k.a. "Space":
 
 * [post](concepts/post.md)
 * [feed](concepts/feed.md)
@@ -107,7 +104,18 @@ Concepts:
 
 Plan:
 
-* [plan_objective](concepts/plan_objective.md)
-* [plan_result](concepts/plan_result.md)
-* [plan_metric](concepts/plan_metric.md)
-* [plan_smart](concepts/plan_smart.md)
+* [plan_smart](concepts/plan/plan_smart.md)
+* [plan_objective](concepts/plan/plan_objective.md)
+* [plan_result](concepts/plan/plan_result.md)
+* [plan_metric](concepts/plan/plan_metric.md)
+* [plan_measure](concepts/plan/plan_measure.md)
+* [plan_indicator](concepts/plan/plan_indicator.md)
+* [plan_factor](concepts/plan/plan_factor.md)
+* [plan_charter](concepts/plan/plan_charter.md)
+* [plan_tenet](concepts/plan/plan_tenet.md)
+* [plan_task](concepts/plan/plan_task.md)
+* [plan_project](concepts/plan/plan_project.md)
+* [plan_program](concepts/plan/plan_program.md)
+* [plan_request](concepts/plan/plan_request.md)
+* [plan_proposal](concepts/plan/plan_proposal.md)
+* [plan_requirement](concepts/plan/plan_requirement.md)
