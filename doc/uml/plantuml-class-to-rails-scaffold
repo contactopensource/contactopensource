@@ -1,0 +1,4 @@
+gsed "s/^'''.*/###/; s/^'/#/;" |
+gsed 's/^class \(\w\+\) .*/rails generate scaffold \1 \\/; s/^}.*//;' |
+gsed 's/^  \(\w\+\) text/  \1:string \\/;' |
+gsed 's/^  \(\w\+\) numeric/  \1:int \\/;'

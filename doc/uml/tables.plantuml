@@ -13,10 +13,14 @@ package Graph {
   class edge
 }
 
-package Account {
+package User {
   class user
-  class group
-  class credential
+  class user_attribute
+}
+
+package Tenant {
+  class tenant
+  class tenant_attribute
 }
 
 package Access {
@@ -68,7 +72,7 @@ package Geo {
   class geo_point_center
 }
 
-package Contacts {
+package Contact {
   class contact_uri
   class contact_email
   class contact_phone
@@ -76,7 +80,7 @@ package Contacts {
   class contact_passport
 }
 
-package Personal {
+package Person {
   class person
   class person_name_kit
   class person_pronoun_kit
@@ -87,12 +91,15 @@ package Social {
   class feed
   class page
   class room
+  class role
+  class group
   class topic
   class portal
+  class message
   class notification
 }
 
-package Concepts {
+package Concept {
   class artist
   class album
   class song
@@ -112,7 +119,14 @@ package Plan {
   class plan_objective
   class plan_result
   class plan_metric
+  class plan_rice
+  class plan_rope
   class plan_smart
+}
+
+package Code {
+  class international_standard_classification_occupations_2008
+  class united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
 }
 
 '''
@@ -122,24 +136,27 @@ package Plan {
 '''
 
 Graph -d-> Account
-Account -d-> Access
+User -d-> Tenant
+Tenant -d-> Access
 Access -d-> System
 System -d-> Data
 Data -d-> Content
 Content -d-> Color
 Color -d-> Geo
-Geo -d-> Contacts
-Contacts -d-> Personal
-Personal -d-> Social
-Social -d-> Concepts
-Concepts -d-> Plan
+Geo -d-> Contact
+Contact -d-> Person
+Person -d-> Social
+Social -d-> Concept
+Concept -d-> Plan
 
 '' package Graph
 node -[hidden] edge
 
-'' package Account
-user -[hidden] group
-group -[hidden] credential
+'' package User
+user -[hidden] user_attribute
+
+'' package Tenant
+tenant -[hidden] tenant_attribute
 
 '' package Access
 access_user -[hidden] access_assignment
@@ -179,7 +196,7 @@ contact_phone -[hidden] contact_postal
 contact_postal -[hidden] contact_passport
 
 '' package Qualia
-'' color_point -[hidden] ?
+'' color_point
 
 '' package Geo
 geo_point -[hidden] geo_point_code
@@ -192,11 +209,11 @@ page -[hidden] room
 room -[hidden] topic
 topic -[hidden] portal
 
-'' package Personal
+'' package Person
 person -[hidden] person_name_kit
 person_name_kit -[hidden] person_pronoun_kit
 
-'' package Concepts
+'' package Concept
 artist -[hidden] album
 album -[hidden] song
 song -[hidden] book
@@ -215,6 +232,9 @@ event -[hidden] artist
 plan_objective -[hidden] plan_result
 plan_result -[hidden] plan_metric
 plan_metric -[hidden] plan_smart
+
+'' package Code
+code_for_international_standard_classification_occupations_2008 -[hidden] code_for_united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
 
 '''
 '
@@ -261,7 +281,7 @@ __ Modifiers __
 
 '''
 '
-' Account
+' User
 '
 '''
 
@@ -269,18 +289,28 @@ class user {
   name text
 }
 
-class group {
+class user_attribute {
   name text
 }
 
-class credential {
-  username text
-  password_as_scrypt text
+
+'''
+'
+' Tenant
+'
+'''
+
+class tenant {
+  name text
+}
+
+class tenant_attribute {
+  name text
 }
 
 '''
 '
-' package Access
+' Access
 '
 '''
 
@@ -595,30 +625,62 @@ class person_pronoun_kit {
 
 class post {
   name text
+  summary text
+  description text
 }
 
 class feed {
   name text
+  summary text
+  description text
 }
 
 class page {
   name text
+  summary text
+  description text
 }
 
 class room {
   name text
+  summary text
+  description text
+}
+
+class role {
+  name text
+  summary text
+  description text
+}
+
+class group {
+  name text
+  summary text
+  description text
 }
 
 class topic {
   name text
+  summary text
+  description text
 }
 
 class portal {
   name text
+  summary text
+  description text
+}
+
+class message {
+  name text
+  summary text
+  description text
 }
 
 class notification {
   name text
+  summary text
+  description text
 }
 
 '''
@@ -627,30 +689,23 @@ class notification {
 '
 '''
 
-class organization {
-  name text
-  emoji text
-__ Display-related __
-  image_uri text
-  color_hex char
-  css_class text
-  star_count integer
-__ Lifetime-related __
-  start_date date
-  stop_date date
-}
-
 class place {
   name text
+  summary text
+  description text
 }
 
 class thing {
   name text
+  summary text
+  description text
 }
 
 class event {
   name text
-  who_as_org_id id
+  summary text
+  description text
+  who_as_group_id id
   what_as_thing_id id
   where_as_place_id id
   when_as_date_time_range id
@@ -705,12 +760,46 @@ class plan_metric {
   value numeric
 }
 
+class plan_rice {
+  reach text
+  impact text
+  confidence text
+  effort text
+}
+
+class plan_rope {
+  realistic text
+  optimistic text
+  pessimistic text
+  equilibristic text
+}
+
 class plan_smart {
   specific text
   measurable text
   actionable text
   relevant text
   timely text
+}
+
+'''
+'
+' Code
+'
+'''
+
+class united_states_bureau_of_labor_statistics_standard_occupational_classification_2018 {
+  group text
+  code text 
+  title text
+  definition text
+}
+
+class international_standard_classification_occupations_2008 {
+  group text
+  code text 
+  title text
+  definition text
 }
 
 @enduml
