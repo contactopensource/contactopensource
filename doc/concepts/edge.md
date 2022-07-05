@@ -63,7 +63,7 @@ Subject attributes:
 
 * subject_table: text -- database table name; example: "persons"
 
-* subject_id ~ id ~ database row id; example: 34b75621921fdc7ac83459c5c4b7dba6
+* subject_id: id -- database row id; example: 34b75621921fdc7ac83459c5c4b7dba6
 
 Predicate attributes:
 
@@ -75,7 +75,7 @@ Predicate attributes:
 
 * predicate_table: text -- database table name; example: "likes"
 
-* predicate_id id ~ database row id; example: 124cf87662601612ae47379c91876e1e
+* predicate_id: id -- database row id; example: 124cf87662601612ae47379c91876e1e
 
 Object attributes:
 
@@ -87,18 +87,18 @@ Object attributes:
 
 * object_table: text -- database table name; example: "places"
 
-* object_id id ~ database row id; example: 9588686d2a1b4cda40cad5269c87a627
+* object_id: id -- database row id; example: 9588686d2a1b4cda40cad5269c87a627
 
 Lifecycle attributes:
 
-* start_at_timestamp_utc ~ timestamp
+* start_at_timestamp_utc: timestamp
 
-* stop_at_timestamp_utc ~ timestamp
+* stop_at_timestamp_utc: timestamp
 
 Modifier attributes:
 
-* count ~ number ~ count, such as an instance index; example: 10 means count 10
+* count: number ~ count, such as an instance index; example: 10 means count 10
 
-* unit_interval ~ number ~ unit interval, 0 to 1 inclusive; example: 0.1 means unit interval 10%
+* unit_interval: number ~ unit interval, 0 to 1 inclusive; example: 0.1 means unit interval 10%
 
-* dual_interval ~ number ~ dual interval, -1 to 1 inclusive; example: -0.1 means dual interval -10%
+* dual_interval: number ~ dual interval, -1 to 1 inclusive; example: -0.1 means dual interval -10%
