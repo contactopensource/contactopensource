@@ -13,14 +13,13 @@ package Graph {
   class edge
 }
 
-package User {
-  class user
-  class user_attribute
-}
-
-package Tenant {
+package Base {
   class tenant
-  class tenant_attribute
+  class user
+  class note
+  class role
+  class group
+  class trait
 }
 
 package Access {
@@ -41,6 +40,8 @@ package System {
 package Data {
   class unit
   class tag
+  class pair
+  class note
   class codec
   class locale
   class media_type
@@ -234,7 +235,7 @@ plan_result -[hidden] plan_metric
 plan_metric -[hidden] plan_smart
 
 '' package Code
-code_for_international_standard_classification_occupations_2008 -[hidden] code_for_united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
+international_standard_classification_occupations_2008 -[hidden] united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
 
 '''
 '
@@ -275,37 +276,52 @@ __ Lifecycle __
 __ Modifiers __
   count integer
   weight decimal
-  unit_interval unit_interval
-  dual_interval decimal
+  probability unit_interval
+  confidence unit_interval
+  multiplier_unit_interval unit_interval
+  multiplier_dual_interval dual_interval
 }
 
 '''
 '
-' User
-'
-'''
-
-class user {
-  name text
-}
-
-class user_attribute {
-  name text
-}
-
-
-'''
-'
-' Tenant
+' Base
 '
 '''
 
 class tenant {
   name text
+  summary text
+  description text
 }
 
-class tenant_attribute {
+class user {
   name text
+  summary text
+  description text
+}
+
+class note {
+  name text
+  summary text
+  description text
+}
+
+class role {
+  name text
+  summary text
+  description text
+}
+
+class group {
+  name text
+  summary text
+  description text
+}
+
+class trait {
+  name text
+  summary text
+  description text
 }
 
 '''
@@ -316,6 +332,8 @@ class tenant_attribute {
 
 class access_user {
   name text
+  summary text
+  description text
 }
 
 class access_assignment {
@@ -325,7 +343,8 @@ class access_assignment {
 
 class access_attribute {
   name text
-  TODO
+  summary text
+  description text
 }
 
 class access_permission {
@@ -335,6 +354,8 @@ class access_permission {
 
 class access_operation {
   name text
+  summary text
+  description text
 }
 
 '''
@@ -568,7 +589,7 @@ class contact_phone {
 class contact_postal {
   country_text text
   region_text text
-  district_text
+  district_text text
   locality_text text
   sublocality_text text
   neighborhood_text text
@@ -592,7 +613,9 @@ class contact_passport {
 '''
 
 class person {
-  todo text
+  name text
+  summary text
+  description text
 }
 
 class person_name_kit {
