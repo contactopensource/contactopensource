@@ -1,24 +1,31 @@
-# color_point
+# color_point pacakge
 
-Any color, represented in a variety of ways.
+Any color and represented in a variety of ways.
 
-Attributes for Red Green Blue (RGB):
 
-* red: unit interval -- example: 1.000000 means all red
+## red green blue (and alpha)
 
-* green: unit interval -- example: 0.000000 means no green
+* [color_point_rgb_with_byte](../color_point_rgb_with_byte): red, green, blue, implemented with byte
 
-* blue: unit interval -- example: 0.500000 means half blue
+* [color_point_rgb_with_unit_interval](../color_point_cymka_with_unit_interval): red, green, blue, implemented with unit interval
 
-Attributes for Cyan Yellow Magenta Black (CYMK):
+* [color_point_rgba_with_byte](../color_point_rgba_with_byte): red, green, blue, alpha, implemented with byte
 
-* cyan: unit interval -- example: 
+* [color_point_rgba_with_unit_interval](../color_point_rgba_with_unit_interval): red, green, blue, alpha, implemented with unit interval
 
-* yellow: unit interval -- example: 
 
-* magenta: unit interval -- example: 
+## cyan yellow magenta (and alpha)
 
-* black: unit interval -- example: 
+* [color_point_cymk_with_byte](../color_point_cymk_with_byte): cyan, yellow, magenta, black, implemented with byte
+
+* [color_point_cymk_with_unit_interval](../color_point_cymka_with_unit_interval): cyan, yellow, magenta, black, implemented with unit interval
+
+* [color_point_cymka_with_byte](../color_point_cymka_with_byte): cyan, yellow, magenta, black, alpha, implemented with byte
+
+* [color_point_cymka_with_unit_interval](../color_point_cymka_with_unit_interval): cyan, yellow, magenta, black, alpha, implemented with unit interval
+
+
+## Other
 
 Attributes for code names:
 
@@ -32,10 +39,10 @@ Attributes for code names:
 
 * pantone_matching_system_name: text -- see https://en.wikipedia.org/wiki/Pantone
 
+
 ## Themes
 
 You can use color point ids to create color themes.
-
 
 Color choices suitable for a theme, such as a website theme, mobile app theme, etc.
 
