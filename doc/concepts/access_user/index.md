@@ -2,14 +2,17 @@
 
 For Attribute-Based Access Control (ABAC).
 
+
+## access_user_locale
+
 Attributes:
 
-* name: text -- example: "alice"
+* access_user_id: access_user.id -- example: access user for `alice@example.com`.
 
-The accesss concepts are:
+* locale_id: locale.id -- example: locale for "English / United States"
 
-* [access_user](access_user.md)
-* [access_assignment](access_assignment.md)
-* [access_attribute](access_attribute.md)
-* [access_permission](access_permission.md)
-* [access_operation](access_operation.md)
+* name: text -- example: "Alice Adams"
+
+* summary: text -- example: "Access user \"Alice Adams\" <alice@example.com>"
+
+* description: text -- example: "Access user \"Alice Adams\" <alice@example.com> https://example.com/alice"

@@ -2,18 +2,17 @@
 
 For Attribute-Based Access Control (ABAC).
 
+
+## access_operation_locale
+
 Attributes:
 
-* name: text -- example: "read" operation
+* access_operation_id: access_operation.id -- example: access operation for "read".
 
-The accesss concepts are:
+* locale_id: locale.id -- example: locale for "English / United States"
 
-* [access_user](access_user.md)
+* name: text -- example: "read"
 
-* [access_assignment](access_assignment.md)
+* summary: text -- example: "Access operation \"read\" provides read access"
 
-* [access_attribute](access_attribute.md)
-
-* [access_permission](access_permission.md)
-
-* [access_operation](access_operation.md)
+* description: text -- example: "Access operation \"read\" provides read access, such as for show, view, list, etc."

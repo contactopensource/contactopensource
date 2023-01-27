@@ -2,18 +2,17 @@
 
 For Attribute-Based Access Control (ABAC).
 
+
+## access_attribute_locale
+
 Attributes:
+
+* access_attribute_id: access_attribute.id -- example: access attribute for `reader`.
+
+* locale_id: locale.id -- example: locale for "English / United States"
 
 * name: text -- example: "reader"
 
-The accesss concepts are:
+* summary: text -- example: "Access attribute 'reader' provides read access"
 
-* [access_user](access_user.md)
-
-* [access_assignment](access_assignment.md)
-
-* [access_attribute](access_attribute.md)
-
-* [access_permission](access_permission.md)
-
-* [access_operation](access_operation.md)
+* description: text -- example: "Access attribute 'reader' provides read access, such as for show, view, list, etc."
