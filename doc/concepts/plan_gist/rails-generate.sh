@@ -3,13 +3,12 @@ set -euf
 
 rails generate scaffold plan_smart \
 	"$RAILS_GENERATE_SCAFFOLD_FIELDS" \
-    specific_id:references \
-    measurable_id:references \
-    actionable_id:references \
-    relevant_id:references \
-    timely_id:references \
-
-rails generate scaffold plan_item \
+    goal_id:references \
+    idea_id:references \
+    step_id:references \
+    task_id:references \
+    
+rails generate scaffold plan_smart_item \
 	"$RAILS_GENERATE_SCAFFOLD_FIELDS" \
     name:string:index \
     summary:string:index \

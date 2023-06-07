@@ -1,0 +1,19 @@
+@startuml uml
+skinparam monochrome true
+
+entity plan_rice {
+  reach_id : plan_item(id)
+  impact_id : plan_item(id)
+  confidence_id : plan_item(id)
+  effort_id : plan_item(id)
+}
+
+entity plan_item {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+@enduml

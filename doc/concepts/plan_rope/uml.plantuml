@@ -1,0 +1,19 @@
+@startuml uml
+skinparam monochrome true
+
+entity plan_rope {
+  realistic_id : plan_item(id)
+  optimistic_id : plan_item(id)
+  pessimistic_id : plan_item(id)
+  equilibristic_id : plan_item(id)
+}
+
+entity plan_item {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+@enduml

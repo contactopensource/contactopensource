@@ -3,11 +3,10 @@ set -euf
 
 rails generate scaffold plan_smart \
 	"$RAILS_GENERATE_SCAFFOLD_FIELDS" \
-    specific_id:references \
-    measurable_id:references \
-    actionable_id:references \
-    relevant_id:references \
-    timely_id:references \
+    realistic_id:references \
+    optimistic_id:references \
+    pessimistic_id:references \
+    equilibristic_id:references \
 
 rails generate scaffold plan_item \
 	"$RAILS_GENERATE_SCAFFOLD_FIELDS" \
