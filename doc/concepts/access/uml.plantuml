@@ -1,0 +1,18 @@
+@startuml uml
+skinparam monochrome true
+
+package Access {
+    entity access_tenant
+    entity access_tenant_locale
+    entity access_occupancy
+    entity access_agent
+    entity access_agent_locale
+    entity access_assignment
+    entity access_attribute
+    entity access_attribute_locale
+    entity access_permission
+    entity access_operation
+    entity access_operation_locale
+}
+
+@enduml

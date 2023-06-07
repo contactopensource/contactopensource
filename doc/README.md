@@ -134,14 +134,14 @@ For example, link a person in this database schema to an external URI:
 
   * object_uri: http://example.com/bob-brown.html
 
-Each edge row must have a subject and object. 
+Each edge row must have a subject and object.
 
 Each edge row may have a predicate, which is a way to describe the type
 of relationship. Common examples we use are "like", "follow", "favorite".
 
 This table has a goal to be fully workable with RDF concepts.
 
-If possible, this table will be improved to use a better way of 
+If possible, this table will be improved to use a better way of
 linking to internal data. For example, we would prefer to phase out
 the individual fields for table name and row id, and instead simply
 use the URI fields along with a URI that points to internal data.
@@ -306,20 +306,20 @@ CREATE TABLE `events` (
 ```
 
 
-### contact_uris
+### uri_contacts
 
 ```sql
-CREATE TABLE `contact_uris` (
+CREATE TABLE `uri_contacts` (
     …
     -- Link-related
     label text, -- example: 'Example web page'
     uri text -- example: 'http://example.com/example.html'
 ```
 
-### contact_emails
+### email_contacts
 
 ```sql
-CREATE TABLE `contact_emails` (
+CREATE TABLE `email_contacts` (
     …
     -- Email-related
     address text, -- example: 'Alice Adams <alice@example.com>' -- see https://tools.ietf.org/html/rfc5322
@@ -329,10 +329,10 @@ CREATE TABLE `contact_emails` (
 ```
 
 
-### contact_phones
+### phone_contacts
 
 ```sql
-CREATE TABLE `contact_phones` (
+CREATE TABLE `phone_contacts` (
     …
     -- Telephone-related
     label text, -- example: 'mobile phone'
@@ -348,17 +348,17 @@ CREATE TABLE `contact_phones` (
 ```
 
 
-### contact_postals
+### postal_contacts
 
 ```sql
-CREATE TABLE `contact_postals` (
+CREATE TABLE `postal_contacts` (
     …
     -- Postal-related
     country_text text, -- example: 'US' is United States
     region_text text, -- example: 'CA' is California (a.k.a. United States state, Canada province, etc.)
     locality_text text, -- example: 'San Francisco' (a.k.a. city, town, etc.)
     neighborhood_text text, -- example: 'Mission District' (a.k.a. city area, town zone, etc.)
-    postal_code_text text, -- example: '94101' is San Francisco downtown area (a.k.a. United States ZIP code, Cananda mail routing number, etc.)
+    postal_code_text text, -- example: '94101' is San Francisco downtown area (a.k.a. United States ZIP code, Canada mail routing number, etc.)
     street_address_text text, -- example: '123 Main Street'
     premise_address_text text, -- example: 'Apartment A1' (a.k.a. room name, box number, etc.)
     global_location_number_text text -- see: https://schema.org/globalLocationNumber https://en.wikipedia.org/wiki/Global_Location_Number
@@ -366,10 +366,10 @@ CREATE TABLE `contact_postals` (
 ```
 
 
-### contact_passports
+### passport_credentials
 
 ```sql
-CREATE TABLE `contact_passports` (
+CREATE TABLE `passport_credentials` (
     …
     -- Place-related
     country_text text, -- example: 'US' is United States
@@ -398,10 +398,10 @@ CREATE TABLE `contacts` (
 );
 ```
 
-### contact_passports
+### passport_credentials
 
 ```sql
-CREATE TABLE `contact_passports` (
+CREATE TABLE `passport_credentials` (
     …
     -- Tag-related
     text text -- example: 'trending'

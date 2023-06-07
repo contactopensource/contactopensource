@@ -1,0 +1,12 @@
+@startuml uml
+skinparam monochrome true
+
+entity uri_contact {
+  uri : text
+  label : text
+  download_filename : text
+  locale_id : locale(id)
+  media_type_id : media_type(id)
+}
+
+@enduml

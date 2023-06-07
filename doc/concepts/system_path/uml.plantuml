@@ -1,0 +1,9 @@
+@startuml uml
+skinparam monochrome true
+
+entity system_path {
+  iid : integer
+  name : string
+}
+
+@enduml

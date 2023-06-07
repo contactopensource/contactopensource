@@ -1,0 +1,137 @@
+'''
+'
+' Package layout hint section
+'
+'''
+
+Graph -d-> Base
+Base -d-> Access
+Access -d-> System
+System -d-> Data
+Data -d-> Content
+Content -d-> Color
+Color -d-> Geo
+Geo -d-> Contact
+Contact -d-> Social
+Social -d-> Concept
+Concept -d-> Plan
+Plan -d-> Code
+
+
+'' package Graph
+node -[hidden] edge
+
+'' package Base
+tenant -[hidden] user
+user -[hidden] note
+note -[hidden] role
+role -[hidden] group
+group -[hidden] trait
+
+'' package Access
+access_agent -[hidden] access_assignment
+access_assignment -[hidden] access_attribute
+access_attribute -[hidden] access_permission
+access_permission -[hidden] access_operation
+
+'' package System
+system_user -[hidden] system_group
+system_group -[hidden] system_path
+system_path -[hidden] system_proc
+system_proc -[hidden] system_env
+
+'' package Data
+unit -[hidden] tag
+tag -[hidden] codec
+codec -[hidden] locale
+locale -[hidden] media_type
+media_type -[hidden] microdata_item
+microdata_item -[hidden] currency_type
+currency_type -[hidden] license_type
+
+'' package Media
+content_application -[hidden] content_audio
+content_audio -[hidden] content_example
+content_example -[hidden] content_font
+content_font -[hidden] content_image
+content_image -[hidden] content_message
+content_message -[hidden] content_model
+content_model -[hidden] content_multipart
+content_multipart -[hidden] content_text
+content_text -[hidden] content_video
+
+'' package Contact
+uri_contact -[hidden] email_contact
+email_contact -[hidden] phone_contact
+phone_contact -[hidden] postal_contact
+postal_contact -[hidden] passport_credential
+
+'' package Color
+color_point_kit -[hidden] color_point_rgb_with_byte
+color_point_rgb_with_byte -r->color_point_rgb_with_unit_interval
+color_point_rgb_with_unit_interval -[hidden] color_point_rgba_with_byte
+color_point_rgba_with_byte -r-> color_point_rgba_with_unit_interval
+color_point_rgba_with_unit_interval -[hidden] color_point_cymk_with_byte
+color_point_cymk_with_byte -r-> color_point_cymk_with_unit_interval
+color_point_cymk_with_unit_interval -[hidden] color_point_cymka_with_byte
+color_point_cymka_with_byte -r-> color_point_cymka_with_unit_interval
+
+'' package Geo
+geo_point -[hidden] geo_point_code
+geo_point_code -[hidden] geo_point_center
+
+'' package Social
+post -[hidden] feed
+feed -[hidden] page
+page -[hidden] room
+room -[hidden] topic
+topic -[hidden] portal
+
+'' package Concept
+person -r--o{ person_localizer
+person_localizer -[hidden] place
+place -r--o{ place_localizer
+place_localizer -[hidden] thing
+thing -r--o{ thing_localizer
+thing_localizer -[hidden] event
+event -r--o{ event_localizer
+event_localizer -[hidden] artist
+artist -[hidden] album
+album -[hidden] song
+song -[hidden] book
+book -[hidden] job_opening
+job_opening -[hidden] movie
+movie -[hidden] offer
+offer -[hidden] sport
+sport -[hidden] travel
+travel -[hidden] organization
+organization -[hidden] place
+
+'' package Plan
+plan_objective -[hidden] plan_result
+plan_result -[hidden] plan_metric
+plan_metric -[hidden] plan_gist
+plan_gist -[hidden] plan_gist_goal
+plan_gist_goal -[hidden] plan_gist_idea
+plan_gist_idea -[hidden] plan_gist_step
+plan_gist_step -[hidden] plan_gist_task
+plan_gist_task -[hidden] plan_smart
+plan_smart -[hidden] plan_smart_specific
+plan_smart_specific -[hidden] plan_smart_measurable
+plan_smart_measurable -[hidden] plan_smart_actionable
+plan_smart_actionable -[hidden] plan_smart_relevant
+plan_smart_relevant -[hidden] plan_smart_timely
+plan_smart_timely -[hidden] plan_rice
+plan_rice -[hidden] plan_rice_reach
+plan_rice_reach -[hidden] plan_rice_impact
+plan_rice_impact -[hidden] plan_rice_confidence
+plan_rice_confidence -[hidden] plan_rice_effort
+plan_rice_effort -[hidden] plan_rope
+plan_rope -[hidden] plan_rope_realistic
+plan_rope_realistic -[hidden] plan_rope_optimistic
+plan_rope_optimistic -[hidden] plan_rope_pessimistic
+plan_rope_pessimistic -[hidden] plan_rope_equilibristic
+
+'' package Code
+international_standard_classification_occupations_2008 -[hidden] united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
+

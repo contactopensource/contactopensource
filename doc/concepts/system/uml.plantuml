@@ -1,0 +1,12 @@
+@startuml uml
+skinparam monochrome true
+
+package System {
+  entity system_user
+  entity system_group
+  entity system_path
+  entity system_proc
+  entity system_env
+}
+
+@enduml

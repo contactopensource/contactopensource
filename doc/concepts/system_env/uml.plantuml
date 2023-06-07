@@ -1,0 +1,9 @@
+@startuml uml
+skinparam monochrome true
+
+entity system_env {
+  key : string
+  value : text
+}
+
+@enduml

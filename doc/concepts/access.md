@@ -6,9 +6,9 @@ Package:
 
 * [access_tenant](access_tenant/)
 
-* [access_occupant](access_occupant/)
+* [access_occupancy](access_occupancy/)
 
-* [access_user](access_user/)
+* [access_agent](access_agent/)
 
 * [access_assignment](access_assignment/)
 

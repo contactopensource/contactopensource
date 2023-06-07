@@ -230,17 +230,17 @@ Example: Biotech Business
 Example: one second
 
   * start_as_timestamp_utc: 2020-01-01T00:00:00
-  
+
   * stop_as_timestamp_utc: 2020-01-01T00:00:01
 
 Example: one decade
 
   * start_as_timestamp_utc: 2020-01-01 00:00:00
-  
+
   * stop_as_timestamp_utc: 2030-01-01 00:00:00
 
 
-## Edge 
+## Edge
 
 Subject:
 
@@ -251,7 +251,7 @@ Subject:
   * subject_schema: "example_schema_1"
 
   * subject_table: "example_table_1"
-  
+
   * subject_id: 694492e037227acf0a264d235f18d1e9
 
 Predicate:
@@ -330,7 +330,7 @@ Example: New York Grand Central
 
   * altitude_as_meters: 39.6
 
-  * elevation_as_meters: 39.6 
+  * elevation_as_meters: 39.6
 
 
 Example: New York Grand Central, delta -0.1 latitude, -0.1 longitude
@@ -354,7 +354,7 @@ Example: New York Grand Central, delta +0.1 latitude, +0.1 longitude
   * longitude: 74.077188
 
   * altitude: 39.6
-  
+
   * 39.6
 
 Example: San Francisco Ferry Building
@@ -378,7 +378,7 @@ Example: San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude
   * longitude: -122.293312
 
   * altitude: 12.1
-  
+
   * elevation: 12.1
 
 Example: San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude
@@ -407,7 +407,7 @@ Example: New York, Grand Central, radius 1 kilometer
 Example: San Francisco, Ferry Building, radius 1 kilometer
 
   * id: 4b74e5d7848af524199f26ecf7348718
-  
+
   * center_as_geo_point_id: "6e7e03c894c96caeee4719e3dcccd339" as id
 
   * spread_as_meters: 1000
@@ -626,7 +626,7 @@ Example: Biotech Business, Biology Department
 * stop_date: 2099-01-01
 
 
-Example: Alice's passport
+Example: Alice's passport credential
 (
   * id: 5c6122ea2ceab2a7374bf42095c6cd3e
 
@@ -639,7 +639,7 @@ Example: Alice's passport
   "2030-01-01" -- valid_stop_date
 ),
 
--- Example: Bob"s passport
+-- Example: Bob"s passport credential
 (
   * id: de2eac04da783ec19c713440e2147c75
 
@@ -655,7 +655,7 @@ Example: Alice's passport
 
 
 
-INSERT INTO places VALUES 
+INSERT INTO places VALUES
 
 -- New York + Grand Central
 (
@@ -736,8 +736,8 @@ INSERT INTO places VALUES
   -- Telephone: 1 (415) ???-???? = ?
 
   -- Geo point:
-  * latitude: -- 
-  * longitude: -- 
+  * latitude: --
+  * longitude: --
 
   -- Geo codes:
   * https://plus.codes: -- ""
@@ -765,8 +765,8 @@ INSERT INTO places VALUES
   -- Telephone: 1 (415) ???-???? = ?
 
   -- Geo point:
-  * latitude: -- 
-  * longitude: -- 
+  * latitude: --
+  * longitude: --
 
   -- Geo codes:
   * https://plus.codes: -- ""
@@ -795,8 +795,8 @@ INSERT INTO places VALUES
   -- Telephone: ? = ?
 
   -- Geo point:
-  * latitude: -- 
-  * longitude: -- 
+  * latitude: --
+  * longitude: --
 
   -- Geo codes:
   * https://plus.codes: -- ""
@@ -824,8 +824,8 @@ INSERT INTO places VALUES
   -- Telephone: ? = ?
 
   -- Geo point:
-  * latitude: -- 
-  * longitude: -- 
+  * latitude: --
+  * longitude: --
 
   -- Geo codes:
   * https://plus.codes: -- ""
@@ -833,7 +833,7 @@ INSERT INTO places VALUES
   * https://whatfreewords.org: -- ""
   * global location number: -- ""
 );
-INSERT INTO contact_postals VALUES 
+INSERT INTO postal_contacts VALUES
 
 -- Example: New York + Grand Central
 (
@@ -872,7 +872,7 @@ INSERT INTO contact_postals VALUES
 --
 --   * "sanfrancisco" is our example hashtag for San Francisco
 --
-INSERT INTO tags VALUES 
+INSERT INTO tags VALUES
 
 -- Example: tag for New York
 (
@@ -911,7 +911,7 @@ INSERT INTO tags VALUES
 --
 --   * San Francisco Ferry Building
 --
-INSERT INTO tags VALUES 
+INSERT INTO tags VALUES
 
 -- Example: Grand Central, New York, NY, US + Open Location Code
 (
@@ -978,7 +978,7 @@ INSERT INTO tags VALUES
   * text: "solid.cracks.solar"
   "Ferry Building, San Francisco, CA, US + WhatFreeWords" -- description
 );
-INSERT INTO contact_phones VALUES 
+INSERT INTO phone_contacts VALUES
 
 -- Example: New York + Grand Central + telephone for Master"s Office
 (

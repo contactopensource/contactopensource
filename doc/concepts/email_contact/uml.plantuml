@@ -1,0 +1,12 @@
+@startuml uml
+skinparam monochrome true
+
+entity email_contact {
+  address : text
+  display_name : text
+  local_part : text
+  domain : text
+  addr_spec : text
+}
+
+@enduml

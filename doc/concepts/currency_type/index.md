@@ -4,8 +4,8 @@ A `currency_type` represents a kind of money such as United States dollars, or B
 
 Attributes:
 
-* name: text -- example: "United States Dollar"
+* name : string -- example: "United States Dollar"
 
-* code: text -- example: "USD" is United States Dollar
+* code : text -- example: "USD" is United States Dollar
 
-* symbol: text -- example: "$" is United States Dollar
+* symbol : string -- example: "$" is United States Dollar

@@ -1,0 +1,4 @@
+@startuml uml
+skinparam monochrome true
+
+@enduml

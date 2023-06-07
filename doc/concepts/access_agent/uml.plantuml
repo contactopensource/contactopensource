@@ -1,0 +1,16 @@
+@startuml uml
+skinparam monochrome true
+
+entity access_agent {
+    key : string & index
+}
+
+entity access_agent_locale {
+    access_agent_id: access_agent(id)
+    locale_id: locale(id)
+    name : string & index
+    summary : string
+    description : text
+}
+
+@enduml

@@ -3,7 +3,7 @@ edge
 user
 group
 credential
-access_user
+access_agent
 access_assignment
 access_attribute
 access_permission
@@ -33,11 +33,11 @@ color_point
 geo_point
 geo_point_code
 geo_point_center
-contact_uri
-contact_email
-contact_phone
-contact_postal
-contact_passport
+uri_contact
+email_contact
+phone_contact
+postal_contact
+pas_contactsport
 person
 person_name_kit
 person_pronoun_kit

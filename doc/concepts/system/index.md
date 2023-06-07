@@ -18,7 +18,7 @@ Concepts:
 │ system_user   │
 └───────────────┘
        ╲│╱
-        ○ 
+        ○
        ╱│╲
 ┌───────────────┐
 │ system_group  │

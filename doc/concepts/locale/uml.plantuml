@@ -1,0 +1,24 @@
+@startuml uml
+skinparam monochrome true
+
+entity locale {
+  text : text
+  language_code : string
+  country_code : string
+  script_code : string
+  region_code : string
+  variant_code : string
+  decimal_separator : text
+  grouping_separator : text
+  currency_code : string
+  currency_symbol : string
+  quotation_start_delimiter : text
+  quotation_stop_delimiter : text
+  collator_identifier : text
+  collation_identifier : text
+  exemplar_character_set : character set
+  calendar_system_id : calendar_system(id)
+  measurement_system_id : measurement_system(id)
+}
+
+@enduml

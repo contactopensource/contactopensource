@@ -10,14 +10,14 @@ Graph:
 Account:
 
 * [user](concepts/user/)
-* [role](concepts/user/)
+* [role](concepts/role/)
 * [group](concepts/group/)
 
 Access:
 
 * [access_tenant](concepts/access_tenant/)
-* [access_occupant](concepts/access_occupant/)
-* [access_user](concepts/access_user/)
+* [access_occupancy](concepts/access_occupancy/)
+* [access_agent](concepts/access_agent/)
 * [access_assignment](concepts/access_assignment/)
 * [access_attribute](concepts/access_attribute/)
 * [access_permission](concepts/access_permission/)
@@ -57,6 +57,14 @@ Content:
 Color:
 
 * [color_point](concepts/color_point/)
+* [color_point_rgb_with_byte](concepts/color_point_rgb_with_byte)
+* [color_point_rgb_with_unit_interval](concepts/color_point_cymka_with_unit_interval)
+* [color_point_rgba_with_byte](concepts/color_point_rgba_with_byte)
+* [color_point_rgba_with_unit_interval](concepts/color_point_rgba_with_unit_interval)
+* [color_point_cymk_with_byte](concepts/color_point_cymk_with_byte)
+* [color_point_cymk_with_unit_interval](concepts/color_point_cymka_with_unit_interval)
+* [color_point_cymka_with_byte](../color_point_cymka_with_byte)
+* [color_point_cymka_with_unit_interval](../color_point_cymka_with_unit_interval)
 
 Geo:
 
@@ -69,7 +77,7 @@ Contacts:
 * [uri_contact](concepts/uri_contact/)
 * [email_contact](concepts/email_contact/)
 * [phone_contact](concepts/phone_contact/)
-* [po_contactstal](concepts/po_contactstal/)
+* [postal_contact](concepts/postal_contact/)
 * [pas_contactsport](concepts/pas_contactsport/)
 
 Personal:

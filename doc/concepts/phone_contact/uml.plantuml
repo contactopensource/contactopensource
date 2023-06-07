@@ -1,0 +1,15 @@
+@startuml uml
+skinparam monochrome true
+
+entity phone_contact {
+  freeform : string
+  label : string
+  e164_text : string
+  e164_country_code : string
+  e164_national_destination_code : string
+  e164_group_identification_code : string
+  e164_trial_identification_code : string
+  e164_subscriber_number : text
+}
+
+@enduml

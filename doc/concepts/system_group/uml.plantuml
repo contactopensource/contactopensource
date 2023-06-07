@@ -1,0 +1,9 @@
+@startuml uml
+skinparam monochrome true
+
+entity system_group {
+  gid : integer
+  name : string
+}
+
+@enduml

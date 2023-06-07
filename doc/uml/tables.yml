@@ -3,38 +3,38 @@ package_list:
     summary:
     class_list:
       - node:
-        summary:>                
+        summary:>
           Store an arbitrary chunk of data.
         section_list:
           - Main:
             - uri:
               type: uri
               summary:
-              example:>                
+              example:>
                 http://example.com/user
             - text:
               type: text
               summary:
-              example:>                
+              example:>
                 hello world
             - json:
               type: jsonb
               summary:
-              example:>                
+              example:>
                 {"hello": "world"}
             - xml:
               type: xml
               summary:
-              example:>                
+              example:>
                 <?xml version=\'1.0\'?><example>hello world</example>
             - number:
               type: numeric
               summary:
-              example:>                
-                123.456                
+              example:>
+                123.456
       - edge:
         summary: "For linking from one node to another node"
-        saga:>                
+        saga:>
           An edge can associate up to three concepts: subject, predicate, object.
 
           This kind of association has similarities to a data "semantic triple",
@@ -72,14 +72,14 @@ package_list:
 
           * object_uri: http://example.com/bob-brown.html
 
-          Each edge row must have a subject and object. 
+          Each edge row must have a subject and object.
 
           Each edge row may have a predicate, which is a way to describe the type
           of relationship. Common examples we use are "like", "follow", "favorite".
 
           This table has a goal to be fully workable with RDF concepts.
 
-          If possible, this table will be improved to use a better way of 
+          If possible, this table will be improved to use a better way of
           linking to internal data. For example, we would prefer to phase out
           the individual fields for table name and row id, and instead simply
           use the URI fields along with a URI that points to internal data.
@@ -91,106 +91,106 @@ package_list:
             - subject_uri:
               type: text
               summary: "type identifier, such as an RDF link, or semantic URL, or internal URN"
-              example:>                
-                http://example.com/alpha.html                
+              example:>
+                http://example.com/alpha.html
             - subject_database:
               type: text
               summary: "database identifier, such as a database instance name"
-              example:>                
+              example:>
                 contactopensource
             - subject_schema:
               type: text
               summary: "schema identifier, such as a database instance schema name"
-              example:>                
-                public              
+              example:>
+                public
             - subject_table:
               type: text
               summary: "table identifier, such as a database instance schema table name"
-              example:>                
+              example:>
                 users
             - subject_id:
               type: id
               summary: "row indentifier, such as a database instance schema table row primary key"
-              example:>                
+              example:>
                 34b75621921fdc7ac83459c5c4b7dba6
           - Predicate:
             - predicate_uri:
               type: text
               summary: "type identifier, such as an RDF link, or semantic URL, or internal URN"
-              example:>                
+              example:>
                 http://example.com/bravo.html
             - predicate_database:
               type: text
               summary: "database identifier, such as a database instance name"
-              example:>                
-                contactopensource                
+              example:>
+                contactopensource
             - predicate_schema:
               type: text
               summary: "schema identifier, such as a database instance schema name"
-              example:>                
-                public             
+              example:>
+                public
             - predicate_table:
               type: text
               summary: "table identifier, such as a database instance schema table name"
-              example:>                
+              example:>
                 likes
             - predicate_id:
               type: id
               summary: "row indentifier, such as a database instance schema table row primary key"
-              example:>                
+              example:>
                 124cf87662601612ae47379c91876e1e
           - Object:
             - object_uri:
               type: text
               summary: "type identifier, such as an RDF link, or semantic URL, or internal URN"
-              example:>                
+              example:>
                 http://example.com/charlie.html
             - object_database:
               type: text
               summary: "database identifier, such as a database instance name"
-              example:>                
+              example:>
                 contactopensource
             - object_schema:
               type: text
               summary:
-              example:>                
-                public                             
+              example:>
+                public
             - object_table:
               type: text
               summary: "table identifier, such as a database instance schema table name"
-              example:>                
+              example:>
                 post
             - object_id:
               type: id
               summary: "row indentifier, such as a database instance schema table row primary key"
-              example:>                
-                9588686d2a1b4cda40cad5269c87a627                
+              example:>
+                9588686d2a1b4cda40cad5269c87a627
           - Lifecycle:
             - start_at_timestamp_utc:
               type: timestamp
               summary:
-              example:>                
-                2020-01-01T00:00:00Z            
+              example:>
+                2020-01-01T00:00:00Z
             - stop_at_timestamp_utc:
               type: timestamp
               summary:
-              example:>                
-                2020-01-01T00:00:00Z            
+              example:>
+                2020-01-01T00:00:00Z
           - Modifiers:
             - count:
               type: integer
               summary: "any kind of count, and the usage is up to the application"
-              example:>                
+              example:>
                 100
             - unit_interval:
               type: unit_interval
               summary: "any kind of unit interval, and the usage is up to the application"
-              example:>                
+              example:>
                 0.1 means unit interval 10%
             - dual_interval:
               type: dual_interval
               summary: "any kind of dual intervale and the usage is up to the application"
-              example:>                
+              example:>
                 -0.1 means dual interval -10%
   - Account:
     summary: "Account classes"
@@ -201,7 +201,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 Alice
       - group:
         section_list:
@@ -209,7 +209,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 Administrator
       - credential:
         section_list:
@@ -217,29 +217,29 @@ package_list:
             - username:
               type: text
               summary:
-              example:>                
+              example:>
                 alice
             - password_as_scrypt:
               type: text
               summary:
-              example:>                
+              example:>
                 4000$8$3$27de1e5a0790376e7e988f40b13480631a48f6b9712eec7455465c60437fa098$8206e98022c54f9263d065d67937840a697b96956fd1a099c4ade5c9eac4385e
   - Access:
     summary: "For Attribute-Based Access Control (ABAC)"
     class_list:
-      - access_user:
+      - access_agent:
         section_list:
           - Main:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 alice
       - access_assignment:
         section_list:
           - Main:
-            - access_user_id:
-              type: access_user.id
+            - access_agent_id:
+              type: access_agent.id
               summary:
               example:>
                 access user "alice"
@@ -284,12 +284,12 @@ package_list:
             - uid:
               type: integer
               summary:
-              example:>                
+              example:>
                 1000
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 alice
       - system_group:
         section_list:
@@ -297,12 +297,12 @@ package_list:
             - gid:
               type: integer
               summary:
-              example:>                
+              example:>
                 1000
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 administrator
       - system_path:
         section_list:
@@ -310,12 +310,12 @@ package_list:
             - iid:
               type: integer
               summary:
-              example:>                
-                10000                
+              example:>
+                10000
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 /etc/environment
       - system_process:
         section_list:
@@ -323,12 +323,12 @@ package_list:
             - pid:
               type: integer
               summary:
-              example:>                
+              example:>
                 1000
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 /bin/sh --version
   - "Data":
     summary: "Data annotation classes"
@@ -339,12 +339,12 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 second
             - symbol:
               type: text
               summary:
-              example:>                
+              example:>
                 s
       - tag:
         section_list:
@@ -352,12 +352,12 @@ package_list:
             - text:
               type: text
               summary:
-              example:>                
+              example:>
                 trending
             - description:
               type: text
               summary:
-              example:>                
+              example:>
                 Trending in popularity
       - locale:
         section_list:
@@ -365,65 +365,65 @@ package_list:
             - text:
               type: text
               summary:
-              example:>                
+              example:>
                 'en-US' is English language in United States country
             - language_code:
               type: text
               summary:
-              example:>                
+              example:>
                 'en' is English
             - country_code:
               type: text
               summary:
-              example:>                
+              example:>
                 'US' is United States
             - script_code:
               type: text
               summary: "See: http://www.unicode.org/iso15924/codelists.html"
-              example:>                
+              example:>
                 'Latn' is Latin script
             - region_code:
               type: text
               summary:
-              example:>                
+              example:>
                 'QO' is Outlying Oceania
             - variant_code:
               type: text
               summary:
-              example:>                
+              example:>
                 'TH' is Thai digit shapes
           - Separator:
             - decimal_separator:
               type: text
               summary: "See: https://en.wikipedia.org/wiki/Decimal_separator"
-              example:>                
+              example:>
                 '.' is the decimal separator of 'en-US'
             - grouping_separator:
               type: text
               summary:
-              example:>                
+              example:>
                 ',' is the grouping separator of 'en-US'
           - Currency:
             - currency_code:
               type: text
               summary:
-              example:>                
+              example:>
                 'USD' is United States Dollar
             - currency_symbol:
               type: text
               summary:
-              example:>                
+              example:>
                 '$' is United States Dollar
           - Quotation:
             - quotation_start_delimiter:
               type: text
               summary:
-              example:>                
+              example:>
                 '“' (U+201C) is left double quotation mark
             - quotation_stop_delimiter:
               type: text
               summary:
-              example:>                
+              example:>
                 '”' (U+201D) is right double quotation mark
       - codec:
         section_list:
@@ -431,84 +431,84 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 Ogg Vorbis Compressed Audio
             - code:
               type: text
               summary:
-              example:>                
+              example:>
                 ogg
             - icon:
               type: text
               summary:
-              example:>                
+              example:>
                 https://example.com/image.jpg
             - link:
               type: text
               summary:
-              example:>                
+              example:>
                 https://en.wikipedia.org/wiki/Ogg
             - note:
               type: text
               summary:
-              example:>                
+              example:>
                 Open source and patent free
             - creator_name:
               type: text
               summary:
-              example:>                
+              example:>
                 Xiph
             - prefer_file_extension:
               type: text
               summary:
-              example:>                
+              example:>
                 ogg
             - prefer_media_type_id:
               type: media_type.id
               summary:
-              example:>                
+              example:>
                 audio/ogg
             - lossy_flag:
               type: boolean
               summary: "true = lossy encoding; false = lossless encoding"
-              example:>                
+              example:>
                 true
             - floss_flag:
               type: boolean
               summary:
-              example:>                
+              example:>
                 true means free libre open source software
           - Bit Rate
             - fixed_bit_rate:
               type: decimal
               summary:
-              example:>                
-                22000 means 23000 samples per second  
+              example:>
+                22000 means 23000 samples per second
             - variable_bit_rate_minimum:
               type: decimal
               summary:
-              example:>                
+              example:>
                 11000 means 11000 samples per second minimum
             - variable_bit_rate_maximum:
               type: decimal
               summary:
-              example:>                
+              example:>
                 44000 means 44000 samples per second maximum
           - Channel Count
             - fixed_channel_count:
               type: integer
               summary:
-              example:>                
+              example:>
                 2 channel audio tyipcally means stereophonic
             - variable_channel_count_minimum:
               type: integer
               summary:
-              example:>                
+              example:>
                 1 channel audio typically means monophonic
             - variable_channel_count_maximum:
-              type: integer  
+              type: integer
               summary:
-              example:>                
+              example:>
                 5 channel audio typically means surround sound
       - media_type:
         summary: "Media type classes"
@@ -526,7 +526,7 @@ package_list:
 
           Example tree media_types:
 
-              application/x.foo (the 'x' tree means unregistered) 
+              application/x.foo (the 'x' tree means unregistered)
               application/vnd.foo (the 'vnd' tree means vendor)
 
           Example suffix media_types:
@@ -542,52 +542,52 @@ package_list:
           Example that uses all of the above:
 
               application/x.foo+json;charset=UTF-8;boundary=something
-              
+
         section_list:
           - Main:
             - text:
               type: text
               summary:
-              example:>                
+              example:>
                 application/vnd.foo;charset=UTF-8
             - supertype:
               type: text
               summary:
-              example:>                
+              example:>
                 application
             - subtype:
               type: text
               summary:
-              example:>                
+              example:>
                 'vnd.foo' means vendor then foo namespace
             - tree:
               type: text
               summary:
-              example:>                
+              example:>
                 'vnd.' means vendor tree
             - suffix:
               type:  text
               summary:
-              example:>                
+              example:>
                 '+zip' means ZIP compressed file
             - parameters:
               type: text[]
               summary:
-              example:>                
+              example:>
                 charset=UTF-8
       - microdata_item:
         summary: "Microdata item classes"
         saga:>
-          Specification for identifying content such as text, images, videos, etc. 
+          Specification for identifying content such as text, images, videos, etc.
 
           See https://en.wikipedia.org/wiki/Microdata_(HTML)
-          
+
           Attributes:
-          
-          * itemtype: URL --  
-          
+
+          * itemtype: URL --
+
           * itemprop: text -- Indicates that its containing tag holds the value of the specified item property. The property's name and value context are described by the item's vocabulary. Properties values usually consist of string values, but can also use URLs using the a element and its href attribute, the img element and its src attribute, or other elements that link to or embed external resources. Example: "name".
-        
+
           Example itemtype:
 
               http://schema.org/Person
@@ -599,13 +599,13 @@ package_list:
               http://schema.org/Person jobTitle
               http://schema.org/Movie genre
               http://schema.org/Movie director
-              
+
         section_list:
           - Main:
             - itemtype:
               type: URI
               summary: A valid URL of a vocabulary that describes the item and its properties context.
-              example:>                
+              example:>
                 http://schema.org/Person
             - itemprop:
               type: text
@@ -625,17 +625,17 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 United States Dollar
             - code:
               type: text
               summary:
-              example:>                
+              example:>
                 USD
             - symbol:
               type: text
               summary:
-              example:>                
+              example:>
                 $
       - license_type:
         section_list:
@@ -643,17 +643,17 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 GNU General Public License v2.0
             - spdx_identifier:
               type: text
               summary:
-              example:>                
+              example:>
                 GPL-2.0-only
             - text:
               type: text
               summary:
-              example:>                
+              example:>
                 The full text of the GNU GPL.
   - "Content":
     summary: "Content classes corresponding to standard media types"
@@ -664,7 +664,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - content_audio:
         section_list:
@@ -672,12 +672,12 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
-                TODO              
+              example:>
+                TODO
             - codec_id
               type: codec.id
               summary:
-              example:>                
+              example:>
                 TODO
             - duration_as_seconds:
               type: count
@@ -690,15 +690,15 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
-                TODO                
+              example:>
+                TODO
       - content_example:
         section_list:
           - Main:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - content_image:
         section_list:
@@ -706,22 +706,22 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TOODO
             - codec_id
               type: codec.id
               summary:
-              example:>                
+              example:>
                 TODO
             - width_as_pixels:
               type: count
               summary:
-              example:>                
+              example:>
                 100 pixels horizontally
             - height_as_pixels:
               type: count
               summary:
-              example:>                
+              example:>
                 100 pixels veritically
       - content_message:
         section_list:
@@ -729,7 +729,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - content_model:
         section_list:
@@ -737,7 +737,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - content_multipart:
         section_list:
@@ -745,7 +745,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - content_text:
         section_list:
@@ -753,7 +753,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - content_video:
         section_list:
@@ -761,86 +761,233 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 Video MP4
               - codec_id
               type: codec.id
               summary:
-              example:>                
+              example:>
                 video/mp4
             - duration_as_seconds:
               type: count
               summary:
-              example:>                
+              example:>
                 video/mp4
   - "Color":
     summary: "Color classes"
     class_list:
-      - color_point:
+      - color_point_kit:
         section_list:
-          - RGB
-            - red:
-              type: unit_interval
-              summary:
-              example:>                
-                1.0
-            - green:
-              type: unit_interval
-              summary:
-              example:>                
-                0.0
-            - blue:
-              type: unit_interval
-              summary:
-              example:>                
-                0.5
-          - CYMK:
-            - cyan:
-              type: unit_interval
-              summary:
-              example:>                
-                0.2
-            - yellow:
-              type: unit_interval
-              summary:
-              example:>                
-                0.4
-            - magenta:
-              type: unit_interval
-              summary:
-              example:>                
-                0.8
-            - black:
-              type: unit_interval
-              summary:
-              example:>                
-                0.10
           - Codes:
             - hex:
               type: text
               summary:
-              example:>                
+              example:>
                 "FF0088" means purple
             - html_color_name:
               type: text
               summary: "See: https://en.wikipedia.org/wiki/Web_colors#HTML_color_names"
-              example:>                
+              example:>
                 red
             - x11_color_name:
               type: text
               summary: "See: https://en.wikipedia.org/wiki/X11_color_names"
-              example:>                
+              example:>
                 red
             - color_naming_system_name:
               type: text
               summary: "See: https://en.wikipedia.org/wiki/Color_Naming_System"
-              example:>                
+              example:>
                 red
             - pantone_matching_system_name:
               type: text
               summary: "See: https://en.wikipedia.org/wiki/Pantone"
-              example:>                
+              example:>
                 red
+      - color_point_rgb_as_byte:
+        section_list:
+          - Components:
+            - red:
+              type: byte
+              summary:
+              example:>
+                "0x00" means zero red
+            - green:
+              type: byte
+              summary:
+              example:>
+                "0x88" means half green
+            - blue:
+              type: byte
+              summary:
+              example:>
+                "0xFF" means full blue
+      - color_point_rgb_as_unit_interval:
+        section_list:
+          - Components:
+            - red:
+              type: unit_interval
+              summary:
+              example:>
+                "0.0" means zero red
+            - green:
+              type: unit_interval
+              summary:
+              example:>
+                "0.5" means half green
+            - blue:
+              type: unit_interval
+              summary:
+              example:>
+                "1.0" means full blue
+      - color_point_rgba_as_byte:
+        section_list:
+          - Components:
+            - red:
+              type: byte
+              summary:
+              example:>
+                "0x00" means zero red
+            - green:
+              type: byte
+              summary:
+              example:>
+                "0x88" means half green
+            - blue:
+              type: byte
+              summary:
+              example:>
+                "0xFF" means full blue
+            - alpha:
+              type: byte
+              summary:
+              example:>
+                "0x88" means half translucent
+      - color_point_rgba_as_unit_interval:
+        section_list:
+          - Components:
+            - red:
+              type: unit_interval
+              summary:
+              example:>
+                "0.0" means zero red
+            - green:
+              type: unit_interval
+              summary:
+              example:>
+                "0.5" means half green
+            - blue:
+              type: unit_interval
+              summary:
+              example:>
+                "1.0" means full blue
+            - alpha:
+              type: unit_interval
+              summary:
+              example:>
+                "0.5" means half translucent
+      - color_point_cymk_as_byte:
+        section_list:
+          - Components:
+            - cyan:
+              type: byte
+              summary:
+              example:>
+                "0x00" means zero cyan
+            - yellow:
+              type: byte
+              summary:
+              example:>
+                "0x88" means half yellow
+            - magenta:
+              type: byte
+              summary:
+              example:>
+                "0xFF" means full magenta
+            - black:
+              type: byte
+              summary:
+              example:>
+                "0x10" means a tad black
+      - color_point_cymk_as_unit_interval:
+        section_list:
+          - Components:
+            - cyan:
+              type: unit_interval
+              summary:
+              example:>
+                "0.0" means zero cyan
+            - yellow:
+              type: unit_interval
+              summary:
+              example:>
+                "0.5" means half yellow
+            - magenta:
+              type: unit_interval
+              summary:
+              example:>
+                "1.0" means full magenta
+            - black:
+              type: unit_interval
+              summary:
+              example:>
+                "0.1" means a tad black
+      - color_point_cymka_as_byte:
+        section_list:
+          - Components:
+            - cyan:
+              type: byte
+              summary:
+              example:>
+                "0x00" means zero cyan
+            - yellow:
+              type: byte
+              summary:
+              example:>
+                "0x88" means half yellow
+            - magenta:
+              type: byte
+              summary:
+              example:>
+                "0xFF" means full magenta
+            - black:
+              type: byte
+              summary:
+              example:>
+                "0x10" means a tad black
+            - alpha:
+              type: byte
+              summary:
+              example:>
+                "0x88" means half translucent
+      - color_point_cymka_as_unit_interval:
+        section_list:
+          - Components:
+            - cyan:
+              type: unit_interval
+              summary:
+              example:>
+                "0.0" means zero cyan
+            - yellow:
+              type: unit_interval
+              summary:
+              example:>
+                "0.5" means half yellow
+            - magenta:
+              type: unit_interval
+              summary:
+              example:>
+                "1.0" means full magenta
+            - black:
+              type: unit_interval
+              summary:
+              example:>
+                "0.1" means a tad black
+            - alpha:
+              type: unit_interval
+              summary:
+              example:>
+                "0.5" means half translucent
   - "Geo":
     summary: "Geo classes for geolocation, geography, geopolitics, etc."
     class_list:
@@ -850,45 +997,45 @@ package_list:
             - latitude_as_decimal_degrees:
               type: decimal_degrees
               summary:
-              example:>                
+              example:>
                 37.8199° N is Golden Gate Bridge in San Francisco
             - longitude_as_decimal_degrees:
               type: decimal_degrees
               summary:
-              example:>                
+              example:>
                 122.4783° W is Golden Gate Bridge in San Francisco
             - altitude_agl_as_meters:
               type: meters
               summary: "Altitude above ground level (AGL)"
-              example:>                
+              example:>
                 67.056 meters above ground level
             - altitude_msl_as_meters:
               type: meters
               summary: "Altitude relative to mean sea level (MSL)"
-              example:>                
+              example:>
                 67.056 meters to mean sea level
             - elevation_agl_as_meters:
               type: meters
               summary: "Elevation above ground level (AGL)"
-              example:>                                
+              example:>
                 67.056 meters above ground level
             - elevation_msl_as_meters:
               type: meters
               summary: "Elevation relative to mean sea level (MGL)"
-              example:>                
-                67.056 meters to mean sea level            
+              example:>
+                67.056 meters to mean sea level
       - geo_point_code:
         section_list:
           - Main:
             - geo_point_id:
               type: geo_point.id
               summary:
-              example:>                
+              example:>
                 id of Golden Gate Bridge
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 goldengatebridge
       - geo_point_center:
         section_list:
@@ -896,29 +1043,29 @@ package_list:
             - geo_point_id:
               type: geopoint.id
               summary:
-              example:>                
-                id of Golden Gate Bridge              
+              example:>
+                id of Golden Gate Bridge
             - spread_as_meters:
               type: numeric
               summary:
-              example:>                
+              example:>
                 1000 is 1 kilometer spread from Golden Gate Bridge
   - "Contact":
     summary: "Contact classes"
     class_list:
-      - contact_uri:
+      - uri_contact:
         section_list:
           - Main:
-            - label:
-              type: text
-              summary:
-              example:>                
-                Example web page
             - text:
               type: text
               summary:
-              example:>                
+              example:>
                 http://example.com/index.html?a=b&c=d#e
+            - label:
+              type: text
+              summary:
+              example:>
+                Example web page
             - scheme:
               type: text
               summary:
@@ -942,135 +1089,135 @@ package_list:
               type: text
               summary:
               example:>
-                e              
-      - contact_email:
+                e
+      - email_contact:
         section_list:
           - Main:
             - address:
               type: text
               summary: "See: https://tools.ietf.org/html/rfc5322"
-              example:>                
+              example:>
                 Alice Adams <alice@example.com>
             - display_name:
               type: text
               summary:
-              example:>                
+              example:>
                 Alice Adams
             - addr_spec:
               type: text
               summary:
-              example:>                
+              example:>
                 alice@example.com
-      - contact_phone:
+      - phone_contact:
         section_list:
           - Main:
             - label:
               type: text
               summary:
-              example:>                
+              example:>
                 mobile
             - number_text:
               type: text
               summary:
-              example:>                
+              example:>
                 1 (415) 555-0000
           - E.164:
             summary: "See: https://en.wikipedia.org/wiki/E.164"
             - e164_text:
               type: varchar
               summary:
-              example:>                
+              example:>
                 14155550000 means United States country code, San Franicsco area code, etc.
             - e164_country_code:
               type: varchar
               summary:
-              example:>                
+              example:>
                 1 means United States
             - e164_national_destination_code:
               type: varchar
               summary:
-              example:>                
+              example:>
                 415 means a United States area code that goes to San Francisco
             - e164_group_identification_code:
               type: varchar
               summary:
-              example:>                
+              example:>
                 TODO
             - e164_trial_identification_code:
               type: varchar
               summary:
-              example:>                
+              example:>
                 TODO
             - e164_subscriber_number:
               type: varchar
               summary:
-              example:>                
+              example:>
                 5550000 means a local number, without country code or national destination code
-      - contact_postal:
+      - postal_contact:
         section_list:
           - Main:
             - country_text:
               type: text
               summary:
-              example:>                
+              example:>
                 US means United States
             - region_text:
               type: text
               summary: "A country's regional area, such as a United States state, a Canada province, etc."
-              example:>                
+              example:>
                 CA means California
             - locality_text:
               type: text
               summary: "A region's local area, such as a city, town, village"
-              example:>                
+              example:>
                 San Francisco
             - neighborhood_text:
               type: text
               summary: "A locality's neighborhood area, such as a district, subdivision, zone"
-              example:>                
+              example:>
                 Mission District
             - postal_code_text:
               type: text
-              summary: "An encoding, such as a United States ZIP code, a Cananda mail routing number, etc."
-              example:>                
-                94101 means San Francisco downtown area                
+              summary: "An encoding, such as a United States ZIP code, a Canada mail routing number, etc."
+              example:>
+                94101 means San Francisco downtown area
             - street_address_text:
               type: text
               summary:
-              example:>               
+              example:>
                 123 Main Street
             - premise_address_text:
               type: text
               summary: "A street address subcateory, such as an apartment identifier, mailbox number, room name"
-              example:>                
+              example:>
                 Apartment A1
             - global_location_number_text:
               type: text
               summary: "See: https://schema.org/globalLocationNumber https://en.wikipedia.org/wiki/Global_Location_Number"
-              example:>                
+              example:>
                 TODO
-      - contact_passport:
+      - pas_contactsport:
         section_list:
           - Main:
             - country_text:
               type: text
               summary:
-              example:>                
+              example:>
                 US means United States
             - number_text:
               type: text
               summary:
-              example:>                
+              example:>
                 111-111-111-111
             - valid_start_date:
               type: date
               summary:
-              example:>                
+              example:>
                 2020-01-01
             - valid_stop_date:
               type: date
               summary:
-              example:>                
+              example:>
                 2030-01-01
   - Personal:
     summary: "Personal classes"
@@ -1081,100 +1228,100 @@ package_list:
             - todo:
               type: text
               summary:
-              example:>                
-                
+              example:>
+
       - person_name_kit:
         section_list:
           - Main:
             - given_name:
               type: text
               summary: "The person's given name(s), such as the first name in given-middle-family"
-              example:>                
+              example:>
                 Alice
             - given_name_phonetic:
               type: text
               summary:
-              example:>                
+              example:>
                 alice
             - middle_name:
               type: text
               summary: "The person's middle name(s), such as the inner name in given-middle-family"
-              example:>                
+              example:>
                 Amy
             - middle_name_phoenetic:
               type: text
               summary:
-              example:>                
+              example:>
                 amy
             - family_name:
               type: text
               summary: "The person's family name(s), such as the last name in given-middle-family"
-              example:>                
+              example:>
                 Adams
             - family_name_phoentic:
               type: text
               summary:
-              example:>                
+              example:>
                 adams
             - legal_name:
               type: text
               summary:
-              example:>                
+              example:>
                 Alice Amy Adams
             - legal_name_phoenetic:
               type: text
               summary:
-              example:>                
+              example:>
                 alice amy adams
             - prefix_name:
               type: text
               summary:
-              example:>                
+              example:>
                 Dr.
             - prefix_name_phoeneti:
               type: text
               summary:
-              example:>                
+              example:>
                 doctor
             - suffix_name:
               type: text
               summary:
-              example:>                
+              example:>
                 Jr.
             - suffix_name_phoeneti:
               type: text
               summary:
-              example:>                
+              example:>
                 junior
             - salutation_name:
               type: text
               summary:
-              example:>                
+              example:>
                 Dr. Adams
             - salutation_name_phoenetic:
               type: text
               summary:
-              example:>                
+              example:>
                 doctor adams
             - addressee_name:
               type: text
               summary:
-              example:>                
+              example:>
                 Dr. Alice Adams Jr.
             - addressee_name_phoenetic:
               type: text
               summary:
-              example:>                
+              example:>
                 doctor alice adams junior
           - nickname:
               type: text
               summary:
-              example:>                
+              example:>
                 Ali
           - nickname_phoentic:
             type: text
             summary:
-            example:>                
+            example:>
               al-lee
       - person_pronoun_kit:
         section_list:
@@ -1182,37 +1329,37 @@ package_list:
             - subject_pronoun:
               type: text
               summary: "See: https://wikipedia.org/wiki/Subject_pronoun"
-              example:>                
+              example:>
                 "she" as in "She likes Alice."
             - object_pronoun:
               type: text
               summary: "See: https://wikipedia.org/wiki/Object_pronoun"
-              example:>                
+              example:>
                 "her" as in "Alice likes her."
             - dependent_possessive_pronoun:
               type: text
               summary: "See: https://wikipedia.org/wiki/Possessive_pronoun"
-              example:>                
+              example:>
                 "her" as in "Her ideas are good."
             - independent_possessive_pronoun:
               type: text
               summary: "See: https://wikipedia.org/wiki/Possessive_determiner"
-              example:>                
+              example:>
                 "hers" as in "The ideas are hers."
             - reflexive_pronoun:
               type: text
               summary: "See: https://wikipedia.org/wiki/Reflexive_pronoun"
-              example:>                
+              example:>
                 "herself" as in "She likes herself."
             - intensive_pronoun:
               type: text
               summary: "See: https://en.wikipedia.org/wiki/Intensive_pronoun"
-              example:>                
+              example:>
                 "herself" as in "She does it herself."
             - disjunctive_pronoun:
               type: text
               summary: "See: https://wikipedia.org/wiki/Disjunctive_pronoun"
-              example:>                
+              example:>
                 "her" as in "It is her."
   - "Social":
     class_list:
@@ -1222,7 +1369,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - feed:
         section_list:
@@ -1230,7 +1377,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - page:
         section_list:
@@ -1238,7 +1385,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - room:
         section_list:
@@ -1246,7 +1393,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - topic:
         section_list:
@@ -1254,7 +1401,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - portal:
         section_list:
@@ -1262,7 +1409,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - notification:
         section_list:
@@ -1270,7 +1417,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
   - Concept:
     summary: "Concept classes"
@@ -1281,34 +1428,34 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
             - emoji:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
           - Display-related:
             - image_uri:
               type: text
               summary:
-              example:>                
-                TODO                
+              example:>
+                TODO
             - star_count:
               type: integer
               summary:
-              example:>                
+              example:>
                 TODO
           - Lifetime-related:
             - start_date:
               type: date
               summary:
-              example:>                
+              example:>
                 TODO
             - stop_date:
               type: date
               summary:
-              example:>                
+              example:>
                 TODO
       - place:
         section_list:
@@ -1316,7 +1463,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - thing:
         section_list:
@@ -1324,7 +1471,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - event:
         section_list:
@@ -1332,27 +1479,27 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
             - who_as_org_id:
               type: id
               summary:
-              example:>                
+              example:>
                 TODO
             - what_as_thing_id:
               type: id
               summary:
-              example:>                
+              example:>
                 TODO
             - where_as_place_id:
               type: id
               summary:
-              example:>                
+              example:>
                 TODO
             - when_as_date_time_range:
               type: id
               summary:
-              example:>                
+              example:>
                 TODO
       - artist:
         section_list:
@@ -1377,7 +1524,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - book:
         section_list:
@@ -1393,7 +1540,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - sport:
         section_list:
@@ -1401,7 +1548,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - travel:
         section_list:
@@ -1409,7 +1556,7 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
               TODO
   - Plan:
     summary: "Plan classes such as for project management, task lists, etc."
@@ -1420,12 +1567,12 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
             - metric_id:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
       - plan_result:
         section_list:
@@ -1433,12 +1580,12 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
             - plan_metric_id:
               type: plan_metric.id
               summary:
-              example:>                
+              example:>
                 TODO
       - plan_metric:
         section_list:
@@ -1446,37 +1593,494 @@ package_list:
             - name:
               type: text
               summary:
-              example:>                
+              example:>
                 TODO
             - value:
               type: numeric
               summary:
-              example:>                
+              example:>
                 TODO
+      - plan_gist:
+          section_list:
+            - Main:
+              - goal_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - idea_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - step_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - task_id:
+                type: id
+                summary:
+                example:>
+      - plan_gist_goal:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_gist_idea
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_gist_step:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_gist_task:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rice:
+          section_list:
+            - Main:
+              - reach_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - impact_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - confidence_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - effort_id:
+                type: id
+                summary:
+                example:>
+      - plan_rice_reach:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rice_impact
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rice_confidence:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rice_effort:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rope:
+          section_list:
+            - Main:
+              - realistic_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - optimistic_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - pessimistic_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - equilabristic_id:
+                type: id
+                summary:
+                example:>
+      - plan_rope_realistic:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rope_optimistic
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rope_pessimistic:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_rope_equilabristic:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
       - plan_smart:
-        section_list:
-          - Main:
-            - specific:
-              type: text
-              summary:
-              example:>                
-                TODO
-            - measurable:
-              type: text
-              summary:
-              example:>                
-                TODO
-            - actionable:
-              type: text
-              summary:
-              example:>                
-                TODO
-            - relevant:
-              type: text
-              summary:
-              example:>                
-                TODO
-            - timely:
-              type: text
-              summary:
-              example:>                
+          section_list:
+            - Main:
+              - specific_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - measurable_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - actionable_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - relevant_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - timely_id:
+                type: id
+                summary:
+                example:>
+      - plan_smart_specific:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_smart_measurable
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_smart_actionable:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_smart_relevant:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO
+      - plan_smart_timely:
+          section_list:
+            - Main:
+              - title:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - description:
+                type: text
+                summary:
+                example:>
+                  TODO
+              - unit_id:
+                type: id
+                summary:
+                example:>
+                  TODO
+              - value:
+                type: value
+                summary:
+                example:>
+                  TODO

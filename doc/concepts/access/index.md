@@ -2,13 +2,13 @@
 
 For attribute-based access control (ABAC).
 
-Contains:
+Concepts:
 
 * [access_tenant](../access_tenant/)
 
-* [access_occupant](../access_occupant/)
+* [access_occupancy](../access_occupancy/)
 
-* [access_user](../access_user/)
+* [access_agent](../access_agent/)
 
 * [access_assignment](../access_assignment/)
 
@@ -21,44 +21,45 @@ Contains:
 
 ## Diagram
 
-```monodraw
+```monopic
 ┌──────────────────────────┐
 │ access_tenant            │
 └──────────────────────────┘
-              │             
-              ○             
-             ╱│╲            
+              │
+              ○
+             ╱│╲
 ┌──────────────────────────┐
-│ access_occupant          │
+│ access_occupancy         │
 └──────────────────────────┘
-             ╲│╱            
-              ○             
-              │             
+             ╲│╱
+              ○
+              │
 ┌──────────────────────────┐
-│ access_user              │
+│ access_agent             │
 └──────────────────────────┘
-              │             
-              ○             
-             ╱│╲            
+              │
+              ○
+             ╱│╲
 ┌──────────────────────────┐
 │ access_assignment        │
 └──────────────────────────┘
-             ╲│╱            
-              ○             
-              │             
+             ╲│╱
+              ○
+              │
 ┌──────────────────────────┐
 │ access_attribute         │
 └──────────────────────────┘
-              │             
-              ○             
-             ╱│╲            
+              │
+              ○
+             ╱│╲
 ┌──────────────────────────┐
 │ access_permission        │
 └──────────────────────────┘
-             ╲│╱            
-              ○             
-              │             
+             ╲│╱
+              ○
+              │
 ┌──────────────────────────┐
 │ access_operation         │
 └──────────────────────────┘
 ```
+

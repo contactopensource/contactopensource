@@ -1,0 +1,8 @@
+@startuml uml
+skinparam monochrome true
+
+entity measurement_system {
+    key : string
+}
+
+@enduml

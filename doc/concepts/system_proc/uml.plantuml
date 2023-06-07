@@ -1,0 +1,9 @@
+@startuml uml
+skinparam monochrome true
+
+entity system_proc {
+  pid : integer
+  name : string
+}
+
+@enduml

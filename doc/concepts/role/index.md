@@ -4,10 +4,10 @@ A `role` is any kind of role, such as for participation in a group, or a positio
 
 Attributes:
 
-* set_id: set.id -- example: "8bafabcc469dbae2c04e84a42bbfd19d' is ISO
+* set_id : key -- example: "8bafabcc469dbae2c04e84a42bbfd19d' is ISO
 
-* parent_id: tag.id -- example: "e0bf207b8e2d38bfc3899417ef819a47' is this row's parent row
+* parent_id : tag.id -- example: "e0bf207b8e2d38bfc3899417ef819a47' is this row's parent row
 
-* text: text -- example: "Goalie"
+* text : text -- example: "Goalie"
 
-* description: text -- example: "Goalie for a sports team"
+* description : text -- example: "Goalie for a sports team"

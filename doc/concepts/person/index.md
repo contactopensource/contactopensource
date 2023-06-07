@@ -4,6 +4,6 @@ A `person` is a typical human being. This model is to track the person attribute
 
 Lifetime attributes:
 
-* birth_date: date -- example: 2000-01-01
+* birth_date : date -- example: 2000-01-01
 
-* death_date: date -- example: 2099-01-01
+* death_date : date -- example: 2099-01-01

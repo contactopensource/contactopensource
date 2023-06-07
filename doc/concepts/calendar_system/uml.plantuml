@@ -1,0 +1,8 @@
+@startuml uml
+skinparam monochrome true
+
+entity calendar_system {
+    key : string
+}
+
+@enduml

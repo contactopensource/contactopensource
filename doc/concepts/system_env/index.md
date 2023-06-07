@@ -4,6 +4,6 @@ System environment variable.
 
 Attributes:
 
-* key: text -- example: "EDITOR"
-  
-* value: text -- example: "/bin/vi"
+* key : string -- example: "EDITOR"
+
+* value : text -- example: "/bin/vi"

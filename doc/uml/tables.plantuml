@@ -1,6 +1,24 @@
-@startuml
+@startuml all
+
+' use monochrome instead of color
 skinparam monochrome true
+
+' use orthogonal lines to fix problems with angled crows feet
+skinparam linetype ortho
+
+' hide the spot
 hide circle
+
+'left to right direction
+top to bottom direction
+
+' transparent layout box
+skinparam package<<Layout>> {
+  borderColor Transparent
+  backgroundColor Transparent
+  fontColor Transparent
+  stereotypeFontColor Transparent
+}
 
 '''
 '
@@ -9,233 +27,136 @@ hide circle
 '''
 
 package Graph {
-  class node
-  class edge
+  entity node
+  entity edge
 }
 
 package Base {
-  class tenant
-  class user
-  class note
-  class role
-  class group
-  class trait
-}
-
-package Access {
-  class access_user
-  class access_assignment
-  class access_attribute
-  class access_permission
-  class access_operation
-}
-
-package System {
-  class system_user
-  class system_group
-  class system_path
-  class system_proc
+  entity note
+  entity role
+  entity group
+  entity trait
 }
 
 package Data {
-  class unit
-  class tag
-  class pair
-  class note
-  class codec
-  class locale
-  class media_type
-  class microdata_item
-  class currency_type
-  class license_type
+  entity unit
+  entity tag
+  entity pair
+  entity note
+  entity codec
+  entity locale
+  entity calendar_system
+  entity measurement_system
+  entity media_type
+  entity microdata_item
+  entity currency_type
+  entity license_type
 }
 
 package Content {
-  class content_application
-  class content_audio
-  class content_font
-  class content_example
-  class content_image
-  class content_message
-  class content_model
-  class content_multipart
-  class content_text
-  class content_video
+  entity content_application
+  entity content_audio
+  entity content_font
+  entity content_example
+  entity content_image
+  entity content_message
+  entity content_model
+  entity content_multipart
+  entity content_text
+  entity content_video
 }
 
-package Qualia {
-  class color_point
+package Color {
+  entity color_point_kit
+  entity color_point_rgb_with_byte
+  entity color_point_rgb_with_unit_interval
+  entity color_point_rgba_with_byte
+  entity color_point_rgba_with_unit_interval
+  entity color_point_cymk_with_byte
+  entity color_point_cymk_with_unit_interval
+  entity color_point_cymka_with_byte
+  entity color_point_cymka_with_unit_interval
 }
 
 package Geo {
-  class geo_point
-  class geo_point_code
-  class geo_point_center
+  entity geo_point
+  entity geo_point_code
+  entity geo_point_center
 }
 
 package Contact {
-  class contact_uri
-  class contact_email
-  class contact_phone
-  class contact_postal
-  class contact_passport
-}
-
-package Person {
-  class person
-  class person_name_kit
-  class person_pronoun_kit
+  entity uri_contact
+  entity email_contact
+  entity phone_contact
+  entity postal_contact
 }
 
 package Social {
-  class post
-  class feed
-  class page
-  class room
-  class role
-  class group
-  class topic
-  class portal
-  class message
-  class notification
+  entity post
+  entity feed
+  entity page
+  entity room
+  entity role
+  entity group
+  entity topic
+  entity portal
+  entity message
+  entity notification
 }
 
 package Concept {
-  class artist
-  class album
-  class song
-  class book
-  class thing
-  class event
-  class job_opening
-  class movie
-  class offer
-  class organization
-  class place
-  class sport
-  class travel
+  entity person
+  entity person_locale
+  entity place
+  entity place_locale
+  entity thing
+  entity thing_locale
+  entity event
+  entity event_locale
+  entity artist
+  entity album
+  entity song
+  entity book
+  entity when
+  entity job_opening
+  entity movie
+  entity offer
+  entity organization
+  entity sport
+  entity travel
 }
 
 package Plan {
-  class plan_objective
-  class plan_result
-  class plan_metric
-  class plan_rice
-  class plan_rope
-  class plan_smart
+  entity plan_objective
+  entity plan_result
+  entity plan_metric
+  entity plan_gist
+  entity plan_gist_goal
+  entity plan_gist_idea
+  entity plan_gist_step
+  entity plan_gist_task
+  entity plan_smart
+  entity plan_smart_specific
+  entity plan_smart_measurable
+  entity plan_smart_actionable
+  entity plan_smart_relevant
+  entity plan_smart_timely
+  entity plan_rice
+  entity plan_rice_reach
+  entity plan_rice_impact
+  entity plan_rice_confidence
+  entity plan_rice_effort
+  entity plan_rope
+  entity plan_rope_realistic
+  entity plan_rope_optimistic
+  entity plan_rope_pessimistic
+  entity plan_rope_equilibristic
 }
 
 package Code {
-  class international_standard_classification_occupations_2008
-  class united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
+  entity international_standard_classification_occupations_2008
+  entity united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
 }
-
-'''
-'
-' Package layout hint section
-'
-'''
-
-Graph -d-> Account
-User -d-> Tenant
-Tenant -d-> Access
-Access -d-> System
-System -d-> Data
-Data -d-> Content
-Content -d-> Color
-Color -d-> Geo
-Geo -d-> Contact
-Contact -d-> Person
-Person -d-> Social
-Social -d-> Concept
-Concept -d-> Plan
-
-'' package Graph
-node -[hidden] edge
-
-'' package User
-user -[hidden] user_attribute
-
-'' package Tenant
-tenant -[hidden] tenant_attribute
-
-'' package Access
-access_user -[hidden] access_assignment
-access_assignment -[hidden] access_attribute
-access_attribute -[hidden] access_permission
-access_permission -[hidden] access_operation
-
-'' package System
-system_user -[hidden] system_group
-system_group -[hidden] system_path
-system_path -[hidden] system_proc
-
-'' package Data
-unit -[hidden] tag
-tag -[hidden] codec
-codec -[hidden] locale
-locale -[hidden] media_type
-media_type -[hidden] microdata_item
-microdata_item -[hidden] currency_type
-currency_type -[hidden] license_type
-
-'' package Media
-content_application -[hidden] content_audio
-content_audio -[hidden] content_example
-content_example -[hidden] content_font
-content_font -[hidden] content_image
-content_image -[hidden] content_message
-content_message -[hidden] content_model
-content_model -[hidden] content_multipart
-content_multipart -[hidden] content_text
-content_text -[hidden] content_video
-
-'' package Contact
-contact_uri -[hidden] contact_email
-contact_email -[hidden] contact_phone
-contact_phone -[hidden] contact_postal
-contact_postal -[hidden] contact_passport
-
-'' package Qualia
-'' color_point
-
-'' package Geo
-geo_point -[hidden] geo_point_code
-geo_point_code -[hidden] geo_point_center
-
-'' package Social
-post -[hidden] feed
-feed -[hidden] page
-page -[hidden] room
-room -[hidden] topic
-topic -[hidden] portal
-
-'' package Person
-person -[hidden] person_name_kit
-person_name_kit -[hidden] person_pronoun_kit
-
-'' package Concept
-artist -[hidden] album
-album -[hidden] song
-song -[hidden] book
-book -[hidden] job_opening
-job_opening -[hidden] movie
-movie -[hidden] offer
-offer -[hidden] sport
-sport -[hidden] travel
-travel -[hidden] organization
-organization -[hidden] place
-place -[hidden] thing
-thing -[hidden] event
-event -[hidden] artist
-
-'' package Plan
-plan_objective -[hidden] plan_result
-plan_result -[hidden] plan_metric
-plan_metric -[hidden] plan_smart
-
-'' package Code
-international_standard_classification_occupations_2008 -[hidden] united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
 
 '''
 '
@@ -243,43 +164,43 @@ international_standard_classification_occupations_2008 -[hidden] united_states_b
 '
 '''
 
-class node {
-  uri text
-  text text
-  json jsonb
-  xml xml
-  number numeric
+entity node {
+  uri : text
+  text : text
+  jsonb : jsonb
+  xml : xml
+  number : numeric
 }
 
-class edge {
+entity edge {
 __ Subject __
-  subject_uri text
-  subject_database text
-  subject_schema text
-  subject_table text
-  subject_id id
+  subject_uri : text
+  subject_database : text
+  subject_schema : text
+  subject_table : text
+  subject_id : subject(id)
 __ Predicate __
-  predicate_uri text
-  predicate_database text
-  predicate_schema text
-  predicate_table text
-  predicate_id id
+  predicate_uri : text
+  predicate_database : text
+  predicate_schema : text
+  predicate_table : text
+  predicate_id : predicate(id)
 __ Object __
-  object_uri text
-  object_database text
-  object_schema text
-  object_table text
-  object_id id
+  object_uri : text
+  object_database : text
+  object_schema : text
+  object_table : text
+  object_id : object(id)
 __ Lifecycle __
-  start_at_timestamp_utc timestamp
-  stop_at_timestamp_utc timestamp
+  start_at_timestamp_utc : timestamp
+  stop_at_timestamp_utc : timestamp
 __ Modifiers __
-  count integer
-  weight decimal
-  probability unit_interval
-  confidence unit_interval
-  multiplier_unit_interval unit_interval
-  multiplier_dual_interval dual_interval
+  count : integer
+  weight : decimal
+  probability : unit_interval
+  confidence : unit_interval
+  multiplier_unit_interval : unit_interval
+  multiplier_dual_interval : dual_interval
 }
 
 '''
@@ -288,40 +209,28 @@ __ Modifiers __
 '
 '''
 
-class tenant {
-  name text
-  summary text
-  description text
+entity note {
+  name : string
+  summary : string
+  description : text
 }
 
-class user {
-  name text
-  summary text
-  description text
+entity role {
+  name : string
+  summary : string
+  description : text
 }
 
-class note {
-  name text
-  summary text
-  description text
+entity group {
+  name : string
+  summary : string
+  description : text
 }
 
-class role {
-  name text
-  summary text
-  description text
-}
-
-class group {
-  name text
-  summary text
-  description text
-}
-
-class trait {
-  name text
-  summary text
-  description text
+entity trait {
+  name : string
+  summary : string
+  description : text
 }
 
 '''
@@ -330,32 +239,70 @@ class trait {
 '
 '''
 
-class access_user {
-  name text
-  summary text
-  description text
+package Access {
+  entity access_tenant
+  entity access_tenant_locale
+  entity access_occupancy
+  entity access_agent
+  entity access_agent_locale
+  entity access_assignment
+  entity access_attribute
+  entity access_attribute_locale
+  entity access_permission
+  entity access_operation
+  entity access_operation_locale
 }
 
-class access_assignment {
-  access_user_id id
-  access_attribute id
+
+entity access_tenant {
 }
 
-class access_attribute {
-  name text
-  summary text
-  description text
+entity access_tenant_locale {
+  name : string
+  summary : string
+  description : text
 }
 
-class access_permission {
-  access_attribute id
-  access_operation_id id
+entity access_occupancy {
+  access_tenant_id : access_tenant(id)
+  access_agent_id : access_agent(id)
 }
 
-class access_operation {
-  name text
-  summary text
-  description text
+entity access_agent {
+}
+
+entity access_agent_locale {
+  name : string
+  summary : string
+  description : text
+}
+
+entity access_assignment {
+  access_agent_id : access_agent(id)
+  access_attribute_id : access_attribute(id)
+}
+
+entity access_attribute {
+}
+
+entity access_attribute_locale {
+  name : string
+  summary : string
+  description : text
+}
+
+entity access_permission {
+  access_attribute : id
+  access_operation_id : access_operation(id)
+}
+
+entity access_operation {
+}
+
+entity access_operation_locale {
+  name : string
+  summary : string
+  description : text
 }
 
 '''
@@ -364,24 +311,37 @@ class access_operation {
 '
 '''
 
-class system_user {
-  uid integer
-  name text
+package System {
+  entity system_user
+  entity system_group
+  entity system_path
+  entity system_proc
+  entity system_env
 }
 
-class system_group {
-  gid integer
-  name text
+entity system_user {
+  uid : integer
+  name : string
 }
 
-class system_path {
-  iid integer
-  name text
+entity system_group {
+  gid : integer
+  name : string
 }
 
-class system_proc {
-  pid integer
-  name text
+entity system_path {
+  iid : integer
+  name : string
+}
+
+entity system_proc {
+  pid : integer
+  name : string
+}
+
+entity system_env {
+  key : string
+  value : text
 }
 
 '''
@@ -390,74 +350,88 @@ class system_proc {
 '
 '''
 
-class unit {
-  name text
-  symbol text
+entity unit {
+  name : string
+  symbol : string
 }
 
-class tag {
-  text text
-  description text
+entity tag {
+  text : text
+  summary : string
+  description : text
 }
 
-class locale {
-  text text
-  language_code text
-  country_code text
-  script_code text
-  region_code text
-  variant_code text
-  decimal_separator text
-  grouping_separator text
-  currency_code text
-  currency_symbol text
-  quotation_start_delimiter text
-  quotation_stop_delimiter text
+entity locale {
+  text : text
+  language_code : string
+  country_code : string
+  script_code : string
+  region_code : string
+  variant_code : string
+  decimal_separator : text
+  grouping_separator : text
+  currency_code : string
+  currency_symbol : string
+  quotation_start_delimiter : text
+  quotation_stop_delimiter : text
+  collator_identifier : text
+  collation_identifier : text
+  exemplar_character_set : character set
+  calendar_system_id : calendar_system(id)
+  measurement_system_id : measurement_system(id)
 }
 
-class codec {
-  name text
-  code text
-  icon text
-  link text
-  note text
-  creator_name text
-  prefer_file_extension text
-  prefer_media_type_id id
-  lossy_flag boolean
-  floss_flag boolean
-  fixed_bit_rate decimal
-  variable_bit_rate_minimum decimal
-  variable_bit_rate_maximum decimal
-  fixed_channel_count integer
-  variable_channel_count_minimum integer
-  variable_channel_count_maximum integer  
+entity calendar_system {
+  name : string
 }
 
-class media_type {
-  text text
-  supertype text
-  subtype text
-  tree text
-  suffix  text
-  parameters text[]
+entity measurement_system {
+  name : string
 }
 
-class microdata_item {
-  itemtype text
-  itemprop text
+entity codec {
+  name : string
+  code : string
+  icon : text
+  link : text
+  note : text
+  creator_name : string
+  prefer_file_extension : text
+  prefer_media_type_id : prefer_media_type(id)
+  lossy_flag : boolean
+  floss_flag : boolean
+  fixed_bit_rate : decimal
+  variable_bit_rate_minimum : decimal
+  variable_bit_rate_maximum : decimal
+  fixed_channel_count : integer
+  variable_channel_count_minimum : integer
+  variable_channel_count_maximum integer
 }
 
-class currency_type {
-  name text
-  code text
-  symbol text
+entity media_type {
+  text : text
+  supertype : string
+  subtype : string
+  tree : string
+  suffix  : string
+  parameters : string[]
 }
 
-class license_type {
-  name text
-  spdx_identifier text
-  text text
+entity microdata_item {
+  itemtype : string
+  itemprop : string
+}
+
+entity currency_type {
+  name : string
+  code : string
+  symbol : string
+}
+
+entity license_type {
+  name : string
+  spdx_identifier : string
+  text : text
 }
 
 '''
@@ -466,49 +440,49 @@ class license_type {
 '
 '''
 
-class content_application {
-  name text
+entity content_application {
+  name : string
 }
 
-class content_audio {
-  name text
+entity content_audio {
+  name : string
   codec_id
   duration_as_seconds count
 }
 
-class content_font {
-  name text
+entity content_font {
+  name : string
 }
 
-class content_example {
-  name text
+entity content_example {
+  name : string
 }
 
-class content_image {
-  name text
+entity content_image {
+  name : string
   codec_id
   width_as_pixels count
   height_as_pixels count
 }
 
-class content_message {
-  name text
+entity content_message {
+  name : string
 }
 
-class content_model {
-  name text
+entity content_model {
+  name : string
 }
 
-class content_multipart {
-  name text
+entity content_multipart {
+  name : string
 }
 
-class content_text {
-  name text
+entity content_text {
+  name : string
 }
 
-class content_video {
-  name text
+entity content_video {
+  name : string
   codec_id
   duration_as_seconds count
 }
@@ -519,20 +493,71 @@ class content_video {
 '
 '''
 
-class color_point {
-  red unit_interval
-  green unit_interval
-  blue unit_interval
-  cyan unit_interval
-  yellow unit_interval
-  magenta unit_interval
-  black unit_interval
-  hex text
-  color_point_id text
-  html_color_name text
-  x11_color_name text
-  color_naming_system_name text
-  pantone_matching_system_name text
+entity color_point_kit {
+  hex : text
+  color_point_id : text
+  html_color_name : string
+  x11_color_name : string
+  color_naming_system_name : string
+  pantone_matching_system_name : string
+}
+
+' a.k.a. RGB-24
+entity color_point_rgb_with_byte {
+  red : byte
+  green : byte
+  blue : byte
+}
+
+entity color_point_rgb_with_unit_interval {
+  red : unit_interval
+  green : unit_interval
+  blue : unit_interval
+}
+
+' a.k.a. RGBA-32
+entity color_point_rgba_with_byte {
+  red : byte
+  green : byte
+  blue : byte
+  alpha : byte
+}
+
+entity color_point_rgba_with_unit_interval {
+  red : unit_interval
+  green : unit_interval
+  blue : unit_interval
+  alpha : unit_interval
+}
+
+entity color_point_cymk_with_byte {
+  cyan : byte
+  yellow : byte
+  magenta : byte
+  black : byte
+}
+
+entity color_point_cymk_with_unit_interval {
+  cyan : unit_interval
+  yellow : unit_interval
+  magenta : unit_interval
+  black : unit_interval
+}
+
+entity color_point_cymka_with_byte {
+  cyan : byte
+  yellow : byte
+  magenta : byte
+  black : byte
+  alpha : byte
+}
+
+entity color_point_cymka_with_unit_interval {
+  cyan : unit_interval
+  yellow : unit_interval
+  magenta : unit_interval
+  black : unit_interval
+  alpha : unit_interval
 }
 
 '''
@@ -541,21 +566,21 @@ class color_point {
 '
 '''
 
-class geo_point {
-  latitude numeric
-  longitude numeric
-  altitude numeric
-  elevation numeric
+entity geo_point {
+  latitude : numeric
+  longitude : numeric
+  altitude : numeric
+  elevation : numeric
 }
 
-class geo_point_code {
-  geo_point_id text
-  name text
+entity geo_point_code {
+  geo_point_id : text
+  name : string
 }
 
-class geo_point_center {
-  geo_point_id id
-  spread_as_meters numeric
+entity geo_point_center {
+  geo_point_id : geo_point(id)
+  spread_as_meters : numeric
 }
 
 '''
@@ -564,46 +589,49 @@ class geo_point_center {
 '
 '''
 
-class contact_uri {
-  label text
-  uri text
+entity uri_contact {
+  label : text
+  uri : text
 }
 
-class contact_email {
-  address text
-  display_name text
-  addr_spec text
+entity email_contact {
+  label : text
+  address : text
+  display_name : string
+  addr_spec : text
 }
 
-class contact_phone {
-  label text
-  number_text text
-  e164_text varchar
-  e164_country_code varchar
-  e164_national_destination_code varchar
-  e164_group_identification_code varchar
-  e164_trial_identification_code varchar
-  e164_subscriber_number varchar
+entity phone_contact {
+  label : text
+  number_text : text
+  e164_text : text
+  e164_country_code : string
+  e164_national_destination_code : string
+  e164_group_identification_code : string
+  e164_trial_identification_code : string
+  e164_subscriber_number : text
 }
 
-class contact_postal {
-  country_text text
-  region_text text
-  district_text text
-  locality_text text
-  sublocality_text text
-  neighborhood_text text
-  postal_code_text text
-  street_address_text text
-  premise_address_text text
-  global_location_number_text text
+entity postal_contact {
+  label : text
+  country_text : text
+  region_text : text
+  district_text : text
+  locality_text : text
+  locality_division_text : text
+  neighborhood_text : text
+  postal_code_text : text
+  street_address_text : text
+  premise_address_text : text
+  global_location_number_text : text
 }
 
-class contact_passport {
-  country_text text
-  number_text text
-  valid_start_date date
-  valid_stop_date date
+entity passport_credential {
+  label : text
+  country_text : text
+  number_text : text
+  valid_start_date : date
+  valid_stop_date : date
 }
 
 '''
@@ -612,32 +640,34 @@ class contact_passport {
 '
 '''
 
-class person {
-  name text
-  summary text
-  description text
+entity person {
+  name : string
+  summary : string
+  description : text
 }
 
-class person_name_kit {
-  given_name text
-  middle_name text
-  family_name text
-  legal_name text
-  prefix_name text
-  suffix_name text
-  salutation_name text
-  addressee_name text
-  nickname text
-}
-
-class person_pronoun_kit {
-  subject_pronoun text
-  object_pronoun text
-  dependent_possessive_pronoun text
-  independent_possessive_pronoun text
-  reflexive_pronoun text
-  intensive_pronoun text
-  disjunctive_pronoun text
+entity person_locale {
+  person_id : person(id)
+  locale_id : locale(id)
+  __ naming __
+  given_naming : text
+  middle_naming : text
+  family_naming : text
+  legal_naming : text
+  formal_naming : text
+  prefix_naming : text
+  suffix_naming : text
+  salutation_naming : text
+  addressee_naming : text
+  nicknames : text[]
+  __ pronoun __
+  subject_pronoun : text
+  object_pronoun : text
+  dependent_possessive_pronoun : text
+  independent_possessive_pronoun : text
+  reflexive_pronoun : text
+  intensive_pronoun : text
+  disjunctive_pronoun : text
 }
 
 '''
@@ -646,64 +676,64 @@ class person_pronoun_kit {
 '
 '''
 
-class post {
-  name text
-  summary text
-  description text
+entity post {
+  name : string
+  summary : string
+  description : text
 }
 
-class feed {
-  name text
-  summary text
-  description text
+entity feed {
+  name : string
+  summary : string
+  description : text
 }
 
-class page {
-  name text
-  summary text
-  description text
+entity page {
+  name : string
+  summary : string
+  description : text
 }
 
-class room {
-  name text
-  summary text
-  description text
+entity room {
+  name : string
+  summary : string
+  description : text
 }
 
-class role {
-  name text
-  summary text
-  description text
+entity role {
+  name : string
+  summary : string
+  description : text
 }
 
-class group {
-  name text
-  summary text
-  description text
+entity group {
+  name : string
+  summary : string
+  description : text
 }
 
-class topic {
-  name text
-  summary text
-  description text
+entity topic {
+  name : string
+  summary : string
+  description : text
 }
 
-class portal {
-  name text
-  summary text
-  description text
+entity portal {
+  name : string
+  summary : string
+  description : text
 }
 
-class message {
-  name text
-  summary text
-  description text
+entity message {
+  name : string
+  summary : string
+  description : text
 }
 
-class notification {
-  name text
-  summary text
-  description text
+entity notification {
+  name : string
+  summary : string
+  description : text
 }
 
 '''
@@ -712,54 +742,76 @@ class notification {
 '
 '''
 
-class place {
-  name text
-  summary text
-  description text
+entity place {
 }
 
-class thing {
-  name text
-  summary text
-  description text
+entity place_locale {
+  place_id : place(id)
+  locale_id : locale(id)
+  name : string
+  summary : string
+  description : text
 }
 
-class event {
-  name text
-  summary text
-  description text
-  who_as_group_id id
-  what_as_thing_id id
-  where_as_place_id id
-  when_as_date_time_range id
+entity thing {
 }
 
-class artist {
-  name text
+entity thing_locale {
+  thing_id : thing(id)
+  locale_id : locale(id)
+  summary : string
+  description : text
+  disambiguating_description : text
 }
 
-class album {
-  name text
+entity event {
+  who_as_group_id_list id[]
+  what_as_thing_id_list id[]
+  where_as_place_id_list id[]
+  when_as_date_time_range_list id[]
 }
 
-class song {
-  name text
+entity event_locale {
+  event_id : event(id)
+  locale_id : locale(id)
+  name : string
+  summary : string
+  description : text
 }
 
-class book {
-  name text
+entity when {
+  year : number
+  month : number
+  monthday : number
+  recurring : TODO
 }
 
-class movie {
-  name text
+entity artist {
+  name : string
 }
 
-class sport {
-  name text
+entity album {
+  name : string
 }
 
-class travel {
-  name text
+entity song {
+  name : string
+}
+
+entity book {
+  name : string
+}
+
+entity movie {
+  name : string
+}
+
+entity sport {
+  name : string
+}
+
+entity travel {
+  name : string
 }
 
 '''
@@ -768,41 +820,177 @@ class travel {
 '
 '''
 
-class plan_objective {
-  name text
-  metric_id text
+entity plan_objective {
+  name : string
+  metric_id : text
 }
 
-class plan_result {
-  name text
-  metric_id text
+entity plan_result {
+  name : string
+  metric_id : text
 }
 
-class plan_metric {
-  name text
-  value numeric
+entity plan_metric {
+  name : string
+  value : numeric
 }
 
-class plan_rice {
-  reach text
-  impact text
-  confidence text
-  effort text
+
+entity plan_gist {
+  goal_id
+  idea_id
+  step_id
+  task_id
 }
 
-class plan_rope {
-  realistic text
-  optimistic text
-  pessimistic text
-  equilibristic text
+entity plan_gist_goal {
+  name : string
+  summary : string
+  description : text
 }
 
-class plan_smart {
-  specific text
-  measurable text
-  actionable text
-  relevant text
-  timely text
+entity plan_gist_idea {
+  name : string
+  summary : string
+  description : text
+}
+
+entity plan_gist_step {
+  name : string
+  summary : string
+  description : text
+}
+
+entity plan_gist_task {
+  name : string
+  summary : string
+  description : text
+}
+
+entity plan_smart {
+  specific_id
+  measurable_id
+  actionable_id
+  relevant_id
+  timely_id
+}
+
+entity plan_smart_specific {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_smart_measurable {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_smart_actionable {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_smart_relevant {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_smart_timely {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rice {
+  reach_id
+  impact_id
+  confidence_id
+  effort_id
+}
+
+entity plan_rice_reach {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rice_impact {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rice_confidence {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rice_effort {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rope {
+  realistic_id
+  optimistic_id
+  pessimistic_id
+  equilibristic_id
+}
+
+entity plan_rope_realistic {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rope_optimistic {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rope_pessimistic {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
+}
+
+entity plan_rope_equilibristic {
+  name : string
+  summary : string
+  description : text
+  unit_id : unit(id)
+  value : value
 }
 
 '''
@@ -811,18 +999,28 @@ class plan_smart {
 '
 '''
 
-class united_states_bureau_of_labor_statistics_standard_occupational_classification_2018 {
-  group text
-  code text 
-  title text
-  definition text
+entity united_states_bureau_of_labor_statistics_standard_occupational_classification_2018 {
+  group : text
+  code : string
+  title : text
+  definition : text
 }
 
-class international_standard_classification_occupations_2008 {
-  group text
-  code text 
-  title text
-  definition text
+entity international_standard_classification_occupations_2008 {
+  group : text
+  code : string
+  title : text
+  definition : text
+}
+
+entity html_color_name {
+  hex : xdigit(6)
+  name : string
+}
+
+entity pantone_matching_system {
+  number : integer
+  name : string
 }
 
 @enduml

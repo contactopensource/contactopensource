@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Process a plantuml class file to a concepts web page.
+#
+# Example:
+#
+#     cat tables.plantuml | plantuml-class-to-concepts
+#
+grep '^\(package\|  class\) ' |
+sed 's/^package \([_[:alnum:]]\{1,\}\) *{ */⏎\1:⏎/; s/^[[:space:]]*class \([_[:alnum:]]\{1,\}\)/* [\1](concepts\/\1/)/;' |
+tr '⏎' '\n'

@@ -1,0 +1,13 @@
+@startuml uml
+skinparam monochrome true
+
+entity media_type {
+  code : string
+  supertype : string
+  subtype : string
+  tree : string
+  suffix  : string
+  parameters : string[]
+}
+
+@enduml

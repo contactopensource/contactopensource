@@ -2,8 +2,8 @@
 
 Attributes:
 
-* red: byte -- example: OxFF means all red
+* red : byte -- example: OxFF means all red
 
-* green: byte -- example: 0x00 means no green
+* green : byte -- example: 0x00 means no green
 
-* blue: byte -- example: 0x88 means half blue
+* blue : byte -- example: 0x88 means half blue

@@ -1,6 +1,6 @@
 # media_type
 
-A `media_type` is an internet standard for identifying content such as text, images, videos, etc. 
+A `media_type` is an internet standard for identifying content such as text, images, videos, etc.
 
 Media types are also known and MIME types.
 
@@ -17,7 +17,7 @@ Examples:
 Example tree nodes:
 
 * application/x.foo (the 'x' tree means unregistered)
-  
+
 * application/vnd.foo (the 'vnd' tree means vendor)
 
 Example suffix nodes:
@@ -38,14 +38,14 @@ Example that uses all of the above:
 
 Attributes:
 
-* text: text -- example: "application/x.foo;charset=UTF-8"
+* code : string -- example: "application/x.foo;charset=UTF-8"
 
-* supertype: text -- example: "text"
+* supertype : string -- example: "text"
 
-* subtype: text -- example: "plain"
+* subtype : string -- example: "plain"
 
-* tree: text -- example: "x." means unregistered
+* tree : string -- example: "x." means unregistered
 
-* suffix: text -- example: "+zip' means ZIP compressed file
+* suffix : string -- example: "+zip' means ZIP compressed file
 
-* parameter_text: text -- example: "charset=UTF-8;boundary=something"
+* parameter_text : string -- example: "charset=UTF-8;boundary=something"

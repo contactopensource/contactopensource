@@ -1,0 +1,16 @@
+@startuml uml
+skinparam monochrome true
+
+entity access_operation {
+    key : string
+}
+
+entity access_operation_locale {
+    access_operation : access_operation(id)
+    locale : locale(id)
+    name : string
+    summary : string
+    description : text
+}
+
+@enduml
