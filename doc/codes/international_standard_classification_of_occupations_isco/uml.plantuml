@@ -1,0 +1,11 @@
+@startuml uml
+skinparam monochrome true
+
+entity international_standard_classification_of_occupations_isco_2008 {
+  group : string
+  code : string
+  title : string
+  definition : text
+}
+
+@enduml

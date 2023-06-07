@@ -1,0 +1,8 @@
+@startuml uml
+skinparam monochrome true
+
+entity libraries_org_identifier {
+  identifier : string
+}
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml uml
+skinparam monochrome true
+
+entity united_states_bureau_of_labor_statistics_standard_occupational_classification_2018 {
+  group : text
+  code : string
+  title : string
+  definition : text
+}
+
+@enduml
