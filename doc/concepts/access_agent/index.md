@@ -17,6 +17,6 @@ Attributes:
 
 * name : string -- example: "Alice Adams"
 
-* summary : text -- example: "Access user \"Alice Adams\" <alice@example.com>"
+* summary : string -- example: "Access user \"Alice Adams\" <alice@example.com>"
 
 * description : text -- example: "Access user \"Alice Adams\" <alice@example.com> https://example.com/alice"
