@@ -1,4 +1,8 @@
 @startuml uml
 skinparam monochrome true
 
+entity content_example {
+  name : string
+}
+
 @enduml
