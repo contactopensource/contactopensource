@@ -44,6 +44,6 @@ entity person_locale {
     disjunctive_pronoun : text
 }
 
-person -r-o{ person_locale
+person ||-r-o{ person_locale
 
 @enduml

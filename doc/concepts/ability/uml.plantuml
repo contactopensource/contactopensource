@@ -3,18 +3,18 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity access_operation {
+entity ability {
     key : string
 }
 
-entity access_operation_locale {
-    access_operation : access_operation(id)
+entity ability_locale {
+    ability : ability(id)
     locale : locale(id)
     name : string+
     summary : string+
     description : text
 }
 
-access_operation ||-r-o{ access_operation_locale
+ability ||-r-o{ ability_locale
 
 @enduml

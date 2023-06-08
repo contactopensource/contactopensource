@@ -18,6 +18,6 @@ entity event_locale {
     description : text
 }
 
-event -r-o{ event_locale
+event ||-r-o{ event_locale
 
 @enduml

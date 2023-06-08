@@ -15,6 +15,6 @@ entity access_attribute_locale {
     description : text
 }
 
-access_attribute -r-o{ access_attribute_locale
+access_attribute ||-r-o{ access_attribute_locale
 
 @enduml

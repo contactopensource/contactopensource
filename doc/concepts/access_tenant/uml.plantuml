@@ -15,6 +15,6 @@ entity access_tenant_locale {
     description : text
 }
 
-access_tenant -r-o{ access_tenant_locale
+access_tenant ||-r-o{ access_tenant_locale
 
 @enduml

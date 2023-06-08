@@ -15,6 +15,6 @@ entity organization_locale {
     description : text
 }
 
-organization -r-o{ organization_locale
+organization ||-r-o{ organization_locale
 
 @enduml

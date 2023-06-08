@@ -15,6 +15,6 @@ entity access_agent_locale {
     description : text
 }
 
-access_agent -r-o{ access_agent_locale
+access_agent ||-r-o{ access_agent_locale
 
 @enduml

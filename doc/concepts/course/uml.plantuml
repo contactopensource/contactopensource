@@ -15,6 +15,6 @@ entity course_locale {
     description : text
 }
 
-course -r-o{ course_locale
+course ||-r-o{ course_locale
 
 @enduml
