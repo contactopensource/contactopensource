@@ -1,4 +1,19 @@
 @startuml uml
 skinparam monochrome true
 
+entity event {
+    key : string + index
+    start_timestamp_utc : timestamp + index
+    stop_timestamp_utc : timestamp + index
+    duration_as_seconds : count
+}
+
+entity event_locale {
+    event_id: event(id)
+    locale_id: locale(id)
+    name : string + index
+    summary : string
+    description : text
+}
+
 @enduml
