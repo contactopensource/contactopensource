@@ -15,8 +15,8 @@ Attributes:
 
 * locale_id : key -- example: locale for "English / United States"
 
-* name : string -- example: "Biology 101"
+* name : string+index -- example: "Biology 101"
 
-* summary : string -- example: "Biology 101 is a science introduction course"
+* summary : string+index -- example: "Biology 101 is a science introduction course"
 
 * description : text -- example: "Biology 101 is a science introduction course about living organisms and their processes"

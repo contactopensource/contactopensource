@@ -11,8 +11,8 @@ Attributes:
 
 Attributes:
 
-* name : string -- example: "GPL 3.0"
+* name : string+index -- example: "GPL 3.0"
 
-* summary : text -- example: "GNU Public License version 3.0"
+* summary : string+index -- example: "GNU Public License version 3.0"
 
 * description : text -- example: "This is the full text of the license"

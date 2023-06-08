@@ -4,7 +4,7 @@ A `license_type` represents a kind of legal agreement, such as a software licens
 
 Attributes:
 
-* name : string -- example: "GNU Public License 2.0"
+* name : string+index -- example: "GNU Public License 2.0"
 
 * spdx_identifer : text -- example: "GPL-2.0-only" as per Software Package Data Exchange (SPDX) unique identifier
 

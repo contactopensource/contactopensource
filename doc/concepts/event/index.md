@@ -19,8 +19,8 @@ Attributes:
 
 * locale_id : key -- example: locale for "English / United States"
 
-* name : string -- example: "Alice's birthday party"
+* name : string+index -- example: "Alice's birthday party"
 
-* summary : string -- example: "Alice's birthday party at noon"
+* summary : string+index -- example: "Alice's birthday party at noon"
 
 * description : text -- example: "Alice's birthday party at noon with cake and ice cream"

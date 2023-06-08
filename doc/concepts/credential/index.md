@@ -15,8 +15,8 @@ Attributes:
 
 * locale_id : key -- example: locale for "English / United States"
 
-* name : string -- example: "Driver's License"
+* name : string+index -- example: "Driver's License"
 
-* summary : string -- example: "This authorizes the person to drive."
+* summary : string+index -- example: "This authorizes the person to drive."
 
 * description : text -- example: "This authorizes the person to drive a personal car for personal reasons."

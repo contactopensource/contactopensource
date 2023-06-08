@@ -1002,14 +1002,14 @@ entity plan_rope_equilibristic {
 entity united_states_bureau_of_labor_statistics_standard_occupational_classification_2018 {
   group : text
   code : string
-  title : text
+  title : string
   definition : text
 }
 
 entity international_standard_classification_occupations_2008 {
   group : text
   code : string
-  title : text
+  title : string
   definition : text
 }
 

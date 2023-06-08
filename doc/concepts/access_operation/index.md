@@ -15,8 +15,8 @@ Attributes:
 
 * locale_id : key -- example: locale for "English / United States"
 
-* name : string -- example: "read"
+* name : string+index -- example: "read"
 
-* summary : string -- example: "Access operation \"read\" provides read access"
+* summary : string+index -- example: "Access operation \"read\" provides read access"
 
 * description : text -- example: "Access operation \"read\" provides read access, such as for show, view, list, etc."

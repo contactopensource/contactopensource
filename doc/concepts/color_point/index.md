@@ -31,13 +31,13 @@ Attributes for code names:
 
 * hex : char(6) -- example: "FF0088" means purple
 
-* html_color_name : string -- see https://en.wikipedia.org/wiki/Web_colors#HTML_color_names
+* html_color_name : string+index -- see https://en.wikipedia.org/wiki/Web_colors#HTML_color_names
 
-* x11_color_name : string -- see https://en.wikipedia.org/wiki/X11_color_names
+* x11_color_name : string+index -- see https://en.wikipedia.org/wiki/X11_color_names
 
-* color_naming_system_name : string -- see https://en.wikipedia.org/wiki/Color_Naming_System
+* color_naming_system_name : string+index -- see https://en.wikipedia.org/wiki/Color_Naming_System
 
-* pantone_matching_system_name : string -- see https://en.wikipedia.org/wiki/Pantone
+* pantone_matching_system_name : string+index -- see https://en.wikipedia.org/wiki/Pantone
 
 
 ## Themes
@@ -90,7 +90,7 @@ Example for color choices suitable for sign indicators.
 
 Example for a log level theme:
 
-* fatal : color_point.id -- example: the color black means death
+* fatal : color_point.id -- example: the color black means died
 
 * emergency : color_point.id -- example: the color brown means dying
 

@@ -39,17 +39,17 @@ Example: Alice
 
 * id: cc1143129505d87f5f0a044b7dbef236
 
-* birth_date: 2000-01-01
+* born_date: 2000-01-01
 
-* death_date: 2099-01-01
+* died_date: 2099-01-01
 
 Example: Bob
 
 * id: 0f8a222d89c986b4a95ad60a55fad6e6
 
-* birth_date: 2000-01-01
+* born_date: 2000-01-01
 
-* death_date: 2099-01-01
+* died_date: 2099-01-01
 
 
 ### Person name

@@ -6,4 +6,4 @@ Attributes:
 
 * uid : integer -- example: 1
 
-* name : string -- example: "root"
+* name : string+index -- example: "root"

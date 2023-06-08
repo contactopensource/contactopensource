@@ -15,8 +15,8 @@ Attributes:
 
 * locale_id : key -- example: locale for "English / United States"
 
-* name : string -- example: "Alice Adams"
+* name : string+index -- example: "Alice Adams"
 
-* summary : string -- example: "Access user \"Alice Adams\" <alice@example.com>"
+* summary : string+index -- example: "Access user \"Alice Adams\" <alice@example.com>"
 
 * description : text -- example: "Access user \"Alice Adams\" <alice@example.com> https://example.com/alice"
