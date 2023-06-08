@@ -1,9 +1,11 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity system_group {
   gid : integer
-  name : string
+  name : string+
 }
 
 @enduml

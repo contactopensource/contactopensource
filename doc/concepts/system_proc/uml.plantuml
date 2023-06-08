@@ -1,9 +1,11 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity system_proc {
   pid : integer
-  name : string
+  name : string+
 }
 
 @enduml

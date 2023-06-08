@@ -1,5 +1,7 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity plan_rice {
   reach_id : plan_item(id)
@@ -9,8 +11,8 @@ entity plan_rice {
 }
 
 entity plan_item {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value

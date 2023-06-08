@@ -1,19 +1,23 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity event {
-    key : string+index
-    start_timestamp_utc : timestamp+index
-    stop_timestamp_utc : timestamp+index
+    key : string+
+    start_timestamp_utc : timestamp+
+    stop_timestamp_utc : timestamp+
     duration_as_seconds : count
 }
 
 entity event_locale {
     event_id: event(id)
     locale_id: locale(id)
-    name : string+index
-    summary : string
+    name : string+
+    summary : string+
     description : text
 }
+
+event -r-o{ event_locale
 
 @enduml

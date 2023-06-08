@@ -1,13 +1,15 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity codec {
-  name : string
+  name : string+
   code : string
   icon : text
   link : text
   note : text
-  creator_name : string
+  creator_name : string+
   prefer_file_extension : text
   prefer_media_type_id : prefer_media_type(id)
   lossy_flag : boolean

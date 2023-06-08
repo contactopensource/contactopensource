@@ -15,12 +15,12 @@ Lifetime attributes:
 
 Attributes:
 
-* event_id : key -- example: event for Alice's birthday party
+* event_id : key+ -- example: event for Alice's birthday party
 
-* locale_id : key -- example: locale for "English / United States"
+* locale_id : key+ -- example: locale for "English / United States"
 
-* name : string+index -- example: "Alice's birthday party"
+* name : string+ -- example: "Alice's birthday party"
 
-* summary : string+index -- example: "Alice's birthday party at noon"
+* summary : string+ -- example: "Alice's birthday party at noon"
 
 * description : text -- example: "Alice's birthday party at noon with cake and ice cream"

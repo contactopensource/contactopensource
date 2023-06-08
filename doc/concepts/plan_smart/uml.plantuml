@@ -1,5 +1,7 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity plan_smart {
   specific_id : plan_item(id)
@@ -10,8 +12,8 @@ entity plan_smart {
 }
 
 entity plan_item {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value

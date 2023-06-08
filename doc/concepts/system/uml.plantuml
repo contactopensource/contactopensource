@@ -1,5 +1,7 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 package System {
   entity system_user

@@ -4,5 +4,5 @@ Represent the media type "font/*".
 
 Attributes:
 
-* name : string
+* name : string+
   

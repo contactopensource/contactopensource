@@ -80,11 +80,9 @@ Contacts:
 * [postal_contact](concepts/postal_contact/)
 * [pas_contactsport](concepts/pas_contactsport/)
 
-Personal:
+Person:
 
 * [person](concepts/person/)
-* [person_name_kit](concepts/person_name_kit/)
-* [person_pronoun_kit](concepts/person_pronoun_kit/)
 
 Social a.k.a. "Space":
 

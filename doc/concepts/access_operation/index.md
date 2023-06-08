@@ -11,12 +11,12 @@ Attributes:
 
 Attributes:
 
-* access_operation_id : key -- example: access operation for "read".
+* access_operation_id : key+ -- example: access operation for "read".
 
-* locale_id : key -- example: locale for "English / United States"
+* locale_id : key+ -- example: locale for "English / United States"
 
-* name : string+index -- example: "read"
+* name : string+ -- example: "read"
 
-* summary : string+index -- example: "Access operation \"read\" provides read access"
+* summary : string+ -- example: "Access operation \"read\" provides read access"
 
 * description : text -- example: "Access operation \"read\" provides read access, such as for show, view, list, etc."

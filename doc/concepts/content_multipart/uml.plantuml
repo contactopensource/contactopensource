@@ -1,4 +1,10 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity content_multipart {
+  name : string+
+}
 
 @enduml

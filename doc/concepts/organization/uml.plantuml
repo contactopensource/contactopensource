@@ -1,4 +1,20 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity organization {
+    key : string
+}
+
+entity organization_locale {
+    organization : organization(id)
+    locale : locale(id)
+    name : string+
+    summary : string+
+    description : text
+}
+
+organization -r-o{ organization_locale
 
 @enduml

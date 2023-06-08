@@ -1,5 +1,7 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity access_tenant {
     key : string
@@ -8,7 +10,7 @@ entity access_tenant {
 entity access_tenant_locale {
     access_tenant: access_tenant(id)
     locale_id: locale(id)
-    name : string
-    summary : string
+    name : string+
+    summary : string+
     description : text
 }

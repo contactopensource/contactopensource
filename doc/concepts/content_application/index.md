@@ -4,5 +4,5 @@ Represent the media type "application/*".
 
 Attributes:
 
-* name : string
+* name : string+
 

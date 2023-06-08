@@ -4,7 +4,7 @@ Represent the media type "image/*". Any kind of image, such as a photo, illustra
 
 Attributes:
 
-* name : string
+* name : string+
   
 * codec_id : codec(id)
 

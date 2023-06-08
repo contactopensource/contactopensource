@@ -1,5 +1,7 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity postal_contact {
   freeform : text

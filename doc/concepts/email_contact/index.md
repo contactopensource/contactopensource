@@ -10,7 +10,7 @@ Attributes as per RFC 5322:
 
 * address : text -- example: "Alice Adams <alice@example.com>"
 
-* display_name : string+index -- example: "Alice Adams"
+* display_name : string+ -- example: "Alice Adams"
 
 * local_part : text -- example: "alice" ~ this is case sensitive, and may contain subparts
 

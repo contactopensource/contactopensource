@@ -11,12 +11,12 @@ Attributes:
 
 Attributes:
 
-* course_id : key -- example: course for "Biology 101".
+* course_id : key+ -- example: course for "Biology 101".
 
-* locale_id : key -- example: locale for "English / United States"
+* locale_id : key+ -- example: locale for "English / United States"
 
-* name : string+index -- example: "Biology 101"
+* name : string+ -- example: "Biology 101"
 
-* summary : string+index -- example: "Biology 101 is a science introduction course"
+* summary : string+ -- example: "Biology 101 is a science introduction course"
 
 * description : text -- example: "Biology 101 is a science introduction course about living organisms and their processes"

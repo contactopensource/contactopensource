@@ -4,4 +4,4 @@ A `place` is anywhere, such as a specific room, or building, or town, or country
 
 Attributes:
 
-* name : string+index -- example: "Grand Central in New York City"
+* name : string+ -- example: "Grand Central in New York City"

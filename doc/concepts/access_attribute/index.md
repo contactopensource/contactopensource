@@ -11,12 +11,12 @@ Attributes:
 
 Attributes:
 
-* access_attribute_id : key -- example: access attribute for `reader`.
+* access_attribute_id : key+ -- example: access attribute for `reader`.
 
-* locale_id : key -- example: locale for "English / United States"
+* locale_id : key+ -- example: locale for "English / United States"
 
-* name : string+index -- example: "reader"
+* name : string+ -- example: "reader"
 
-* summary : string+index -- example: "Access attribute 'reader' provides read access"
+* summary : string+ -- example: "Access attribute 'reader' provides read access"
 
 * description : text -- example: "Access attribute 'reader' provides read access, such as for show, view, list, etc."

@@ -6,4 +6,4 @@ Attributes:
 
 * gid : integer -- example: 1
 
-* name : string+index -- example: "wheel"
+* name : string+ -- example: "wheel"

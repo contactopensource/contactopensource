@@ -1,5 +1,7 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity access_occupancy {
     access_tenant_id : access_tenant(id)

@@ -11,12 +11,12 @@ Attributes:
 
 Attributes:
 
-* access_agent_id : key -- example: access user for `alice@example.com`.
+* access_agent_id : key+ -- example: access user for `alice@example.com`.
 
-* locale_id : key -- example: locale for "English / United States"
+* locale_id : key+ -- example: locale for "English / United States"
 
-* name : string+index -- example: "Alice Adams"
+* name : string+ -- example: "Alice Adams"
 
-* summary : string+index -- example: "Access user \"Alice Adams\" <alice@example.com>"
+* summary : string+ -- example: "Access user \"Alice Adams\" <alice@example.com>"
 
 * description : text -- example: "Access user \"Alice Adams\" <alice@example.com> https://example.com/alice"

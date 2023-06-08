@@ -10,7 +10,7 @@ Attributes:
 
 * label : text -- example: "Example web page"
 
-* download_filename : string+index -- example: "hello.txt". Specifies the download filename of the URI, such as what target file will be downloaded when a user clicks on the hyperlink.
+* download_filename : string+ -- example: "hello.txt". Specifies the download filename of the URI, such as what target file will be downloaded when a user clicks on the hyperlink.
 
 * language_code : text -- example: "en-US" for English - United States. Specifies the language of the linked document.
 

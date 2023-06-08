@@ -4,7 +4,7 @@ Represent the media type "video/*". Any type of video, such as a movie, animatio
 
 Attributes:
 
-* name : string
+* name : string+
 
 * codec_id : codec(id)
 

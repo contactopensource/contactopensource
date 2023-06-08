@@ -1,5 +1,7 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity access_operation {
     key : string
@@ -8,9 +10,11 @@ entity access_operation {
 entity access_operation_locale {
     access_operation : access_operation(id)
     locale : locale(id)
-    name : string
-    summary : string
+    name : string+
+    summary : string+
     description : text
 }
+
+access_operation -r-o{ access_operation_locale
 
 @enduml

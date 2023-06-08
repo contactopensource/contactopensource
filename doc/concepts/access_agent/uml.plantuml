@@ -1,16 +1,20 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 entity access_agent {
-    key : string+index
+    key : string+
 }
 
 entity access_agent_locale {
     access_agent_id: access_agent(id)
     locale_id: locale(id)
-    name : string+index
-    summary : string
+    name : string+
+    summary : string+
     description : text
 }
+
+access_agent -r-o{ access_agent_locale
 
 @enduml

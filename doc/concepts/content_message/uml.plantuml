@@ -1,8 +1,10 @@
 @startuml uml
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
-entity content_application {
-  name : string
+entity content_message {
+  name : string+
 }
 
 @enduml

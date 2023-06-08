@@ -4,7 +4,7 @@ Any kind of coding-decoding process, such as an audio codec (e.g. MP3), image co
 
 Attributes:
 
-* name : string+index -- example: "MP3 audio"
+* name : string+ -- example: "MP3 audio"
 
 * code : text -- example: "mp3"
 
@@ -14,11 +14,11 @@ Attributes:
 
 * note : text -- example: "MP3 is the most popular audio codec worldwide"
 
-* creator_name : string+index -- example: "Fraunhofer Society"
+* creator_name : string+ -- example: "Fraunhofer Society"
 
 * prefer_file_extension : text -- example: "mp3"
 
-* prefer_media_type_id : key -- example: audio/mp3
+* prefer_media_type_id : key+ -- example: audio/mp3
 
 * lossy_flag : flag -- is the codec lossy?
 

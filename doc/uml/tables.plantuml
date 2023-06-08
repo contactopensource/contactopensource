@@ -2,6 +2,8 @@
 
 ' use monochrome instead of color
 skinparam monochrome true
+skinparam linetype ortho
+hide circle
 
 ' use orthogonal lines to fix problems with angled crows feet
 skinparam linetype ortho
@@ -210,26 +212,26 @@ __ Modifiers __
 '''
 
 entity note {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity role {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity group {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity trait {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -258,8 +260,8 @@ entity access_tenant {
 }
 
 entity access_tenant_locale {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -272,8 +274,8 @@ entity access_agent {
 }
 
 entity access_agent_locale {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -286,8 +288,8 @@ entity access_attribute {
 }
 
 entity access_attribute_locale {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -300,8 +302,8 @@ entity access_operation {
 }
 
 entity access_operation_locale {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -321,22 +323,22 @@ package System {
 
 entity system_user {
   uid : integer
-  name : string
+  name : string+
 }
 
 entity system_group {
   gid : integer
-  name : string
+  name : string+
 }
 
 entity system_path {
   iid : integer
-  name : string
+  name : string+
 }
 
 entity system_proc {
   pid : integer
-  name : string
+  name : string+
 }
 
 entity system_env {
@@ -351,13 +353,13 @@ entity system_env {
 '''
 
 entity unit {
-  name : string
+  name : string+
   symbol : string
 }
 
 entity tag {
   text : text
-  summary : string
+  summary : string+
   description : text
 }
 
@@ -382,20 +384,20 @@ entity locale {
 }
 
 entity calendar_system {
-  name : string
+  name : string+
 }
 
 entity measurement_system {
-  name : string
+  name : string+
 }
 
 entity codec {
-  name : string
+  name : string+
   code : string
   icon : text
   link : text
   note : text
-  creator_name : string
+  creator_name : string+
   prefer_file_extension : text
   prefer_media_type_id : prefer_media_type(id)
   lossy_flag : boolean
@@ -423,13 +425,13 @@ entity microdata_item {
 }
 
 entity currency_type {
-  name : string
+  name : string+
   code : string
   symbol : string
 }
 
 entity license_type {
-  name : string
+  name : string+
   spdx_identifier : string
   text : text
 }
@@ -441,48 +443,48 @@ entity license_type {
 '''
 
 entity content_application {
-  name : string
+  name : string+
 }
 
 entity content_audio {
-  name : string
+  name : string+
   codec_id
   duration_as_seconds count
 }
 
 entity content_font {
-  name : string
+  name : string+
 }
 
 entity content_example {
-  name : string
+  name : string+
 }
 
 entity content_image {
-  name : string
+  name : string+
   codec_id
   width_as_pixels count
   height_as_pixels count
 }
 
 entity content_message {
-  name : string
+  name : string+
 }
 
 entity content_model {
-  name : string
+  name : string+
 }
 
 entity content_multipart {
-  name : string
+  name : string+
 }
 
 entity content_text {
-  name : string
+  name : string+
 }
 
 entity content_video {
-  name : string
+  name : string+
   codec_id
   duration_as_seconds count
 }
@@ -496,10 +498,10 @@ entity content_video {
 entity color_point_kit {
   hex : text
   color_point_id : text
-  html_color_name : string
-  x11_color_name : string
-  color_naming_system_name : string
-  pantone_matching_system_name : string
+  html_color_name : string+
+  x11_color_name : string+
+  color_naming_system_name : string+
+  pantone_matching_system_name : string+
 }
 
 ' a.k.a. RGB-24
@@ -575,7 +577,7 @@ entity geo_point {
 
 entity geo_point_code {
   geo_point_id : text
-  name : string
+  name : string+
 }
 
 entity geo_point_center {
@@ -597,7 +599,7 @@ entity uri_contact {
 entity email_contact {
   label : text
   address : text
-  display_name : string
+  display_name : string+
   addr_spec : text
 }
 
@@ -641,8 +643,8 @@ entity passport_credential {
 '''
 
 entity person {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -677,62 +679,62 @@ entity person_locale {
 '''
 
 entity post {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity feed {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity page {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity room {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity role {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity group {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity topic {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity portal {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity message {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity notification {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -748,8 +750,8 @@ entity place {
 entity place_locale {
   place_id : place(id)
   locale_id : locale(id)
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -759,7 +761,7 @@ entity thing {
 entity thing_locale {
   thing_id : thing(id)
   locale_id : locale(id)
-  summary : string
+  summary : string+
   description : text
   disambiguating_description : text
 }
@@ -774,8 +776,8 @@ entity event {
 entity event_locale {
   event_id : event(id)
   locale_id : locale(id)
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -787,31 +789,31 @@ entity when {
 }
 
 entity artist {
-  name : string
+  name : string+
 }
 
 entity album {
-  name : string
+  name : string+
 }
 
 entity song {
-  name : string
+  name : string+
 }
 
 entity book {
-  name : string
+  name : string+
 }
 
 entity movie {
-  name : string
+  name : string+
 }
 
 entity sport {
-  name : string
+  name : string+
 }
 
 entity travel {
-  name : string
+  name : string+
 }
 
 '''
@@ -821,17 +823,17 @@ entity travel {
 '''
 
 entity plan_objective {
-  name : string
+  name : string+
   metric_id : text
 }
 
 entity plan_result {
-  name : string
+  name : string+
   metric_id : text
 }
 
 entity plan_metric {
-  name : string
+  name : string+
   value : numeric
 }
 
@@ -844,26 +846,26 @@ entity plan_gist {
 }
 
 entity plan_gist_goal {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity plan_gist_idea {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity plan_gist_step {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
 entity plan_gist_task {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
 }
 
@@ -876,40 +878,40 @@ entity plan_smart {
 }
 
 entity plan_smart_specific {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_smart_measurable {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_smart_actionable {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_smart_relevant {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_smart_timely {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
@@ -923,32 +925,32 @@ entity plan_rice {
 }
 
 entity plan_rice_reach {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_rice_impact {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_rice_confidence {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_rice_effort {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
@@ -962,32 +964,32 @@ entity plan_rope {
 }
 
 entity plan_rope_realistic {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_rope_optimistic {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_rope_pessimistic {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
 }
 
 entity plan_rope_equilibristic {
-  name : string
-  summary : string
+  name : string+
+  summary : string+
   description : text
   unit_id : unit(id)
   value : value
@@ -1015,12 +1017,12 @@ entity international_standard_classification_occupations_2008 {
 
 entity html_color_name {
   hex : xdigit(6)
-  name : string
+  name : string+
 }
 
 entity pantone_matching_system {
   number : integer
-  name : string
+  name : string+
 }
 
 @enduml
