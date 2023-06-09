@@ -13,6 +13,7 @@ entity thing_locale {
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 thing ||-r-o{ thing_locale

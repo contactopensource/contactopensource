@@ -4,7 +4,7 @@ For a thing, such as a social media thing.
 
 Attributes:
 
-* key
+* key : string+
 
 
 ## thing_locale
@@ -20,3 +20,5 @@ Attributes:
 * summary : string -- example: "This thing is an example".
 
 * description : text -- example: "This thing is an example of a social media thing"
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."
