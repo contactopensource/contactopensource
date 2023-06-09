@@ -1,0 +1,12 @@
+
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+package Graph {
+  entity node
+  entity edge
+}
+
+@enduml
