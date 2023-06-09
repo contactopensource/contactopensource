@@ -1,4 +1,4 @@
-# color_point pacakge
+# color_point package
 
 Any color and represented in a variety of ways.
 

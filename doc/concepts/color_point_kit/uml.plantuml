@@ -1,0 +1,15 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity color_point_kit {
+  hex : string+
+  color_point_id : color_point(id)
+  html_color_name : string+
+  x11_color_name : string+
+  color_naming_system_name : string+
+  pantone_matching_system_name : string+
+}
+
+@enduml
