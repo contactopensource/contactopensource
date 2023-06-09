@@ -5,11 +5,11 @@ hide circle
 
 entity postal_contact {
   freeform : text
-  country_id : country(id)
-  country_subdivision_id : country_subdivision(id)
+  country_id : country(id)+
+  country_subdivision_id : country_subdivision(id)+
   district_text : string
-  locality_id : locality(id)
-  locality_division_id : locality_division(id)
+  locality_id : locality(id)+
+  locality_division_id : locality_division(id)+
   neighborhood_text : string
   postal_code_text : string
   street_address_text : string

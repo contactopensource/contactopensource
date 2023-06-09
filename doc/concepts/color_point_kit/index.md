@@ -2,7 +2,7 @@
 
 Attributes:
 
-* color_point_id : color_point(id)
+* color_point_id : color_point(id)+
 
 * hex : string+
 

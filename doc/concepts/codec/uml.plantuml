@@ -11,7 +11,7 @@ entity codec {
   note : text
   creator_name : string+
   prefer_file_extension : text
-  prefer_media_type_id : prefer_media_type(id)
+  prefer_media_type_id : prefer_media_type(id)+
   lossy_flag : boolean
   floss_flag : boolean
   fixed_bit_rate : decimal

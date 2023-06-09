@@ -17,6 +17,7 @@ plan_item \
     name:string:index \
     summary:string:index \
     description:text \
+    disambiguation:text \
     unit_id:references:index \
     value:value \
     $RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER

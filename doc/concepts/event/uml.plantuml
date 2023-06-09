@@ -11,11 +11,12 @@ entity event {
 }
 
 entity event_locale {
-    event_id: event(id)
-    locale_id: locale(id)
+    event_id: event(id)+
+    locale_id: locale(id)+
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 event ||-r-o{ event_locale

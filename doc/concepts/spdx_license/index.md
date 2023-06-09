@@ -16,3 +16,5 @@ Attributes:
 * summary : string -- example: "GNU Public License version 3.0"
 
 * description : text -- example: "This is the full text of the license"
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."

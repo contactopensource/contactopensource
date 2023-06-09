@@ -4,7 +4,7 @@ For a place, such as a social media place.
 
 Attributes:
 
-* key
+* key : string+
 
 
 ## place_locale
@@ -20,3 +20,5 @@ Attributes:
 * summary : string -- example: "This place is an example".
 
 * description : text -- example: "This place is an example of a social media place"
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."

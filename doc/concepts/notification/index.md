@@ -4,7 +4,7 @@ For a notification, such as a social media notification.
 
 Attributes:
 
-* key
+* key : string+
 
 
 ## notification_locale
@@ -20,3 +20,5 @@ Attributes:
 * summary : string -- example: "This notification is an example".
 
 * description : text -- example: "This notification is an example of a social media notification"
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."

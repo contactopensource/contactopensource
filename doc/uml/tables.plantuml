@@ -180,19 +180,19 @@ __ Subject __
   subject_database : text
   subject_schema : text
   subject_table : text
-  subject_id : subject(id)
+  subject_id : subject(id)+
 __ Predicate __
   predicate_uri : text
   predicate_database : text
   predicate_schema : text
   predicate_table : text
-  predicate_id : predicate(id)
+  predicate_id : predicate(id)+
 __ Object __
   object_uri : text
   object_database : text
   object_schema : text
   object_table : text
-  object_id : object(id)
+  object_id : object(id)+
 __ Lifecycle __
   start_at_timestamp_utc : timestamp
   stop_at_timestamp_utc : timestamp
@@ -215,24 +215,28 @@ entity note {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity role {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity group {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity trait {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 '''
@@ -263,11 +267,12 @@ entity access_tenant_locale {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity access_occupancy {
-  access_tenant_id : access_tenant(id)
-  access_agent_id : access_agent(id)
+  access_tenant_id : access_tenant(id)+
+  access_agent_id : access_agent(id)+
 }
 
 entity access_agent {
@@ -277,11 +282,12 @@ entity access_agent_locale {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity access_assignment {
-  access_agent_id : access_agent(id)
-  access_attribute_id : access_attribute(id)
+  access_agent_id : access_agent(id)+
+  access_attribute_id : access_attribute(id)+
 }
 
 entity access_attribute {
@@ -291,11 +297,12 @@ entity access_attribute_locale {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity access_permission {
   access_attribute : id
-  access_operation_id : access_operation(id)
+  access_operation_id : access_operation(id)+
 }
 
 entity access_operation {
@@ -305,6 +312,7 @@ entity access_operation_locale {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 '''
@@ -342,7 +350,7 @@ entity system_proc {
 }
 
 entity system_env {
-  key : string
+  key : string+
   value : text
 }
 
@@ -361,6 +369,7 @@ entity tag {
   text : text
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity locale {
@@ -379,8 +388,8 @@ entity locale {
   collator_identifier : text
   collation_identifier : text
   exemplar_character_set : character set
-  calendar_system_id : calendar_system(id)
-  measurement_system_id : measurement_system(id)
+  calendar_system_id : calendar_system(id)+
+  measurement_system_id : measurement_system(id)+
 }
 
 entity calendar_system {
@@ -399,7 +408,7 @@ entity codec {
   note : text
   creator_name : string+
   prefer_file_extension : text
-  prefer_media_type_id : prefer_media_type(id)
+  prefer_media_type_id : prefer_media_type(id)+
   lossy_flag : boolean
   floss_flag : boolean
   fixed_bit_rate : decimal
@@ -497,7 +506,7 @@ entity content_video {
 
 entity color_point_kit {
   hex : string+
-  color_point_id : color_point(id)
+  color_point_id : color_point(id)+
   html_color_name : string+
   x11_color_name : string+
   color_naming_system_name : string+
@@ -581,7 +590,7 @@ entity geo_point_code {
 }
 
 entity geo_point_center {
-  geo_point_id : geo_point(id)
+  geo_point_id : geo_point(id)+
   spread_as_meters : numeric
 }
 
@@ -646,11 +655,12 @@ entity person {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity person_locale {
-  person_id : person(id)
-  locale_id : locale(id)
+  person_id : person(id)+
+  locale_id : locale(id)+
   __ naming __
   given_naming : text
   middle_naming : text
@@ -682,60 +692,70 @@ entity post {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity feed {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity page {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity room {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity role {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity group {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity topic {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity portal {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity message {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity notification {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 '''
@@ -748,21 +768,23 @@ entity place {
 }
 
 entity place_locale {
-  place_id : place(id)
-  locale_id : locale(id)
+  place_id : place(id)+
+  locale_id : locale(id)+
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity thing {
 }
 
 entity thing_locale {
-  thing_id : thing(id)
-  locale_id : locale(id)
+  thing_id : thing(id)+
+  locale_id : locale(id)+
   summary : string
   description : text
+  disambiguation : text
   disambiguating_description : text
 }
 
@@ -774,11 +796,12 @@ entity event {
 }
 
 entity event_locale {
-  event_id : event(id)
-  locale_id : locale(id)
+  event_id : event(id)+
+  locale_id : locale(id)+
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity when {
@@ -849,24 +872,28 @@ entity plan_gist_goal {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity plan_gist_idea {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity plan_gist_step {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity plan_gist_task {
   name : string+
   summary : string
   description : text
+  disambiguation : text
 }
 
 entity plan_smart {
@@ -881,7 +908,8 @@ entity plan_smart_specific {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -889,7 +917,8 @@ entity plan_smart_measurable {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -897,7 +926,8 @@ entity plan_smart_actionable {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -905,7 +935,8 @@ entity plan_smart_relevant {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -913,7 +944,8 @@ entity plan_smart_timely {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -928,7 +960,8 @@ entity plan_rice_reach {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -936,7 +969,8 @@ entity plan_rice_impact {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -944,7 +978,8 @@ entity plan_rice_confidence {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -952,7 +987,8 @@ entity plan_rice_effort {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -967,7 +1003,8 @@ entity plan_rope_realistic {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -975,7 +1012,8 @@ entity plan_rope_optimistic {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -983,7 +1021,8 @@ entity plan_rope_pessimistic {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 
@@ -991,7 +1030,8 @@ entity plan_rope_equilibristic {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 

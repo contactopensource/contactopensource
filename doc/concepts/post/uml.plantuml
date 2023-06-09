@@ -4,15 +4,16 @@ skinparam linetype ortho
 hide circle
 
 entity post {
-    key : string
+    key : string+
 }
 
 entity post_locale {
-    post : post(id)
-    locale : locale(id)
+    post : post(id)+
+    locale : locale(id)+
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 post ||-r-o{ post_locale

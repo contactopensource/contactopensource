@@ -4,5 +4,5 @@ skinparam linetype ortho
 hide circle
 
 entity calendar_system {
-    key : string
+    key : string+
 }

@@ -19,9 +19,9 @@ A `person_locale` is a group of names, with many optional attributes for worldwi
 
 Keys:
 
-* person_id : key+ -- example: id of "en-US"
+* person_id : person(id)+ -- example: id of "en-US"
 
-* locale_id : key+ -- example: id of "en-US"
+* locale_id : locale(id)+ -- example: id of "en-US"
 
 Name attributes:
 

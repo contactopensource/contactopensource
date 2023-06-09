@@ -4,7 +4,7 @@ For a post, such as a social media post.
 
 Attributes:
 
-* key
+* key : string+
 
 
 ## post_locale
@@ -20,3 +20,5 @@ Attributes:
 * summary : string -- example: "This post is an example".
 
 * description : text -- example: "This post is an example of a social media post"
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."

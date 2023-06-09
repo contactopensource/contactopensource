@@ -11,8 +11,8 @@ entity person {
 }
 
 entity person_locale {
-    person_id : person(id)
-    locale_id : locale(id)
+    person_id : person(id)+
+    locale_id : locale(id)+
     __ main naming __
     given_naming : text
     given_naming_phonetic : text

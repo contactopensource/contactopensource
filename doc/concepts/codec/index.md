@@ -18,7 +18,7 @@ Attributes:
 
 * prefer_file_extension : text -- example: "mp3"
 
-* prefer_media_type_id : key+ -- example: audio/mp3
+* prefer_media_type_id : prefer_media_type(id)+ -- example: audio/mp3
 
 * lossy_flag : flag -- is the codec lossy?
 

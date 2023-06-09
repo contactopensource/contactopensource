@@ -4,5 +4,5 @@ Measurement system, such as the metric measurement system, or imperial measureme
 
 Attributes:
 
-* key : string -- example: "metric" or "imperial"
+* key : string+ -- example: "metric" or "imperial"
 

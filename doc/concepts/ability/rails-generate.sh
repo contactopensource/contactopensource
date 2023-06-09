@@ -15,4 +15,5 @@ ability_locale \
     name:string:index \
     summary:string \
     description:text \
+    disambiguation:text \
     $RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER

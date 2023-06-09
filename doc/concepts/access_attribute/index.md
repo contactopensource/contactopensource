@@ -4,19 +4,21 @@ For Attribute-Based Access Control (ABAC).
 
 Attributes:
 
-* key
+* key : string+
 
 
 ## access_attribute_locale
 
 Attributes:
 
-* access_attribute_id : key+ -- example: access attribute for `reader`.
+* access_attribute_id : access_attribute(id)+ -- example: access attribute for `reader`.
 
-* locale_id : key+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English / United States"
 
 * name : string+ -- example: "reader"
 
 * summary : string -- example: "Access attribute 'reader' provides read access"
 
 * description : text -- example: "Access attribute 'reader' provides read access, such as for show, view, list, etc."
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."

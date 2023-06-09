@@ -4,15 +4,16 @@ skinparam linetype ortho
 hide circle
 
 entity access_tenant {
-    key : string
+    key : string+
 }
 
 entity access_tenant_locale {
-    access_tenant: access_tenant(id)
-    locale_id: locale(id)
+    access_tenant: access_tenant(id)+
+    locale_id: locale(id)+
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 access_tenant ||-r-o{ access_tenant_locale

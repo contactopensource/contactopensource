@@ -13,6 +13,7 @@ entity place_locale {
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 place ||-r-o{ place_locale

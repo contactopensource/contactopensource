@@ -5,7 +5,7 @@ hide circle
 
 entity content_video {
   name : string+
-  codec_id : codec(id)
+  codec_id : codec(id)+
   width_as_pixels : count
   height_as_pixels : count
   duration_as_seconds : count

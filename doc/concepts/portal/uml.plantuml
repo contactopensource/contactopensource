@@ -13,6 +13,7 @@ entity portal_locale {
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 portal ||-r-o{ portal_locale

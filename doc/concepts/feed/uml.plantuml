@@ -13,6 +13,7 @@ entity feed_locale {
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 feed ||-r-o{ feed_locale

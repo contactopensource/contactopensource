@@ -4,15 +4,16 @@ skinparam linetype ortho
 hide circle
 
 entity access_attribute {
-    key : string
+    key : string+
 }
 
 entity access_attribute_locale {
-    access_attribute_id: access_attribute(id)
-    locale_id: locale(id)
+    access_attribute_id: access_attribute(id)+
+    locale_id: locale(id)+
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 access_attribute ||-r-o{ access_attribute_locale

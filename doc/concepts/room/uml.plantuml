@@ -13,6 +13,7 @@ entity room_locale {
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 room ||-r-o{ room_locale

@@ -6,7 +6,7 @@ Attributes:
 
 * name : string+
   
-* codec_id : codec(id)
+* codec_id : codec(id)+
 
 * width_as_pixels : count
   

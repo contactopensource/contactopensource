@@ -6,6 +6,6 @@ Attributes:
 
 * name : string+ -- example: "Blue - By Beyoncé"
 
-* codec_id : codec(id)
+* codec_id : codec(id)+
 
 * duration_as_seconds : count

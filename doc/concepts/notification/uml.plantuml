@@ -13,6 +13,7 @@ entity notification_locale {
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 notification ||-r-o{ notification_locale

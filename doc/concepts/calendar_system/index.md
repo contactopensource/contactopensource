@@ -4,4 +4,4 @@ Calendar system, such as the Gregorian calendar system.
 
 Attributes:
 
-* key : string -- example: "gregorian".
+* key : string+ -- example: "gregorian".

@@ -4,17 +4,18 @@ skinparam linetype ortho
 hide circle
 
 entity plan_gist {
-  goal_id : plan_item(id)
-  idea_id : plan_item(id)
-  step_id : plan_item(id)
-  task_id : plan_item(id)
+  goal_id : plan_item(id)+
+  idea_id : plan_item(id)+
+  step_id : plan_item(id)+
+  task_id : plan_item(id)+
 }
 
 entity plan_item {
   name : string+
   summary : string
   description : text
-  unit_id : unit(id)
+  disambiguation : text
+  unit_id : unit(id)+
   value : value
 }
 

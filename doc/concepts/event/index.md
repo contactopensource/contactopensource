@@ -15,12 +15,14 @@ Lifetime attributes:
 
 Attributes:
 
-* event_id : key+ -- example: event for Alice's birthday party
+* event_id : event(id)+ -- example: event for Alice's birthday party
 
-* locale_id : key+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English / United States"
 
 * name : string+ -- example: "Alice's birthday party"
 
 * summary : string -- example: "Alice's birthday party at noon"
 
 * description : text -- example: "Alice's birthday party at noon with cake and ice cream"
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."

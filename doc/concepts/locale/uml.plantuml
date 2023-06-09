@@ -24,8 +24,8 @@ entity locale {
   collation_identifier : text
   exemplar_character_set : character set
   __systems__
-  calendar_system_id : calendar_system(id)
-  measurement_system_id : measurement_system(id)
+  calendar_system_id : calendar_system(id)+
+  measurement_system_id : measurement_system(id)+
 }
 
 @enduml

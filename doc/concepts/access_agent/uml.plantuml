@@ -8,11 +8,12 @@ entity access_agent {
 }
 
 entity access_agent_locale {
-    access_agent_id: access_agent(id)
-    locale_id: locale(id)
+    access_agent_id: access_agent(id)+
+    locale_id: locale(id)+
     name : string+
     summary : string
     description : text
+    disambiguation : text
 }
 
 access_agent ||-r-o{ access_agent_locale
