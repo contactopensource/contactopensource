@@ -3,4 +3,18 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity notification {
+    key : string+
+}
+
+entity notification_locale {
+    notification : notification(id)+
+    locale : locale(id)+
+    name : string+
+    summary : string
+    description : text
+}
+
+notification ||-r-o{ notification_locale
+
 @enduml
