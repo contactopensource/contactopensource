@@ -2,7 +2,7 @@
 set -euf
 
 rails generate scaffold united_states_bureau_of_labor_statistics_standard_occupational_classification_2018 \
-    "$RAILS_GENERATE_SCAFFOLD_FIELDS" \
+    $RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \
     group:string:index \
     code:string:index \
     title:string:index \

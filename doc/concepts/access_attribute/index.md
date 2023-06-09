@@ -17,6 +17,6 @@ Attributes:
 
 * name : string+ -- example: "reader"
 
-* summary : string+ -- example: "Access attribute 'reader' provides read access"
+* summary : string -- example: "Access attribute 'reader' provides read access"
 
 * description : text -- example: "Access attribute 'reader' provides read access, such as for show, view, list, etc."

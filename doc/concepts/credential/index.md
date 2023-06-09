@@ -17,6 +17,6 @@ Attributes:
 
 * name : string+ -- example: "Driver's License"
 
-* summary : string+ -- example: "This authorizes the person to drive."
+* summary : string -- example: "This authorizes the person to drive."
 
 * description : text -- example: "This authorizes the person to drive a personal car for personal reasons."

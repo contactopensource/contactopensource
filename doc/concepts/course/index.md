@@ -17,6 +17,6 @@ Attributes:
 
 * name : string+ -- example: "Biology 101"
 
-* summary : string+ -- example: "Biology 101 is a science introduction course"
+* summary : string -- example: "Biology 101 is a science introduction course"
 
 * description : text -- example: "Biology 101 is a science introduction course about living organisms and their processes"

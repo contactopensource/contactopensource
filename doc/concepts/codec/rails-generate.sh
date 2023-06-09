@@ -1,8 +1,9 @@
 #!/bin/sh
 set -euf
 
-rails generate scaffold codec \
-    "$RAILS_GENERATE_SCAFFOLD_FIELDS" \
+rails generate scaffold \
+codec \
+    $RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \
     name:string:index \
     code:string:index \
     icon:text \
@@ -10,7 +11,7 @@ rails generate scaffold codec \
     note:text \
     creator_name:string:index \
     prefer_file_extension:string \
-    prefer_media_type_id:references \
+    prefer_media_type_id:references:index \
     lossy_flag:boolean \
     floss_flag:boolean \
     fixed_bit_rate:decimal \
@@ -19,3 +20,4 @@ rails generate scaffold codec \
     fixed_channel_count:integer \
     variable_channel_count_minimum:integer \
     variable_channel_count_maximum:integer \
+    $RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER

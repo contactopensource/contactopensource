@@ -21,6 +21,6 @@ Attributes:
 
 * name : string+ -- example: "Alice's birthday party"
 
-* summary : string+ -- example: "Alice's birthday party at noon"
+* summary : string -- example: "Alice's birthday party at noon"
 
 * description : text -- example: "Alice's birthday party at noon with cake and ice cream"

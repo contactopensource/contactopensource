@@ -1,0 +1,5 @@
+#!/bin/sh
+
+top=$(git rev-parse --show-toplevel)
+
+find $top/doc/concepts/*/uml.plantuml -exec dirname {} \; | while read x; do test -f "$x/uml.png" || (echo "$x" && cd "$x" && plantuml uml.plantuml); done

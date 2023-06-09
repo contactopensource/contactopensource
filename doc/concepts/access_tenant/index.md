@@ -17,6 +17,6 @@ Attributes:
 
 * name : string+ -- example: "ACME Organization"
 
-* summary : string+ -- example: "Access tenant \"ACME Organization\" https://acme.example.com"
+* summary : string -- example: "Access tenant \"ACME Organization\" https://acme.example.com"
 
 * description : text -- example: "Access tenant \"ACME Organization\" https://acme.example.com at 123 Main Street, San Francisco, CA, US"

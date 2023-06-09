@@ -13,6 +13,6 @@ Attributes:
 
 * name : string+ -- example: "GPL 3.0"
 
-* summary : string+ -- example: "GNU Public License version 3.0"
+* summary : string -- example: "GNU Public License version 3.0"
 
 * description : text -- example: "This is the full text of the license"

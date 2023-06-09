@@ -213,25 +213,25 @@ __ Modifiers __
 
 entity note {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity role {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity group {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity trait {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -261,7 +261,7 @@ entity access_tenant {
 
 entity access_tenant_locale {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -275,7 +275,7 @@ entity access_agent {
 
 entity access_agent_locale {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -289,7 +289,7 @@ entity access_attribute {
 
 entity access_attribute_locale {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -303,7 +303,7 @@ entity access_operation {
 
 entity access_operation_locale {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -359,7 +359,7 @@ entity unit {
 
 entity tag {
   text : text
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -496,8 +496,8 @@ entity content_video {
 '''
 
 entity color_point_kit {
-  hex : text
-  color_point_id : text
+  hex : string+
+  color_point_id : color_point(id)
   html_color_name : string+
   x11_color_name : string+
   color_naming_system_name : string+
@@ -644,7 +644,7 @@ entity passport_credential {
 
 entity person {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -680,61 +680,61 @@ entity person_locale {
 
 entity post {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity feed {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity page {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity room {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity role {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity group {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity topic {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity portal {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity message {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity notification {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -751,7 +751,7 @@ entity place_locale {
   place_id : place(id)
   locale_id : locale(id)
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -761,7 +761,7 @@ entity thing {
 entity thing_locale {
   thing_id : thing(id)
   locale_id : locale(id)
-  summary : string+
+  summary : string
   description : text
   disambiguating_description : text
 }
@@ -777,7 +777,7 @@ entity event_locale {
   event_id : event(id)
   locale_id : locale(id)
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -847,25 +847,25 @@ entity plan_gist {
 
 entity plan_gist_goal {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity plan_gist_idea {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity plan_gist_step {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
 entity plan_gist_task {
   name : string+
-  summary : string+
+  summary : string
   description : text
 }
 
@@ -879,7 +879,7 @@ entity plan_smart {
 
 entity plan_smart_specific {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -887,7 +887,7 @@ entity plan_smart_specific {
 
 entity plan_smart_measurable {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -895,7 +895,7 @@ entity plan_smart_measurable {
 
 entity plan_smart_actionable {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -903,7 +903,7 @@ entity plan_smart_actionable {
 
 entity plan_smart_relevant {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -911,7 +911,7 @@ entity plan_smart_relevant {
 
 entity plan_smart_timely {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -926,7 +926,7 @@ entity plan_rice {
 
 entity plan_rice_reach {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -934,7 +934,7 @@ entity plan_rice_reach {
 
 entity plan_rice_impact {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -942,7 +942,7 @@ entity plan_rice_impact {
 
 entity plan_rice_confidence {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -950,7 +950,7 @@ entity plan_rice_confidence {
 
 entity plan_rice_effort {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -965,7 +965,7 @@ entity plan_rope {
 
 entity plan_rope_realistic {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -973,7 +973,7 @@ entity plan_rope_realistic {
 
 entity plan_rope_optimistic {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -981,7 +981,7 @@ entity plan_rope_optimistic {
 
 entity plan_rope_pessimistic {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value
@@ -989,7 +989,7 @@ entity plan_rope_pessimistic {
 
 entity plan_rope_equilibristic {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value

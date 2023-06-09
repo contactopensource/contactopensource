@@ -13,7 +13,7 @@ entity plan_smart {
 
 entity plan_item {
   name : string+
-  summary : string+
+  summary : string
   description : text
   unit_id : unit(id)
   value : value

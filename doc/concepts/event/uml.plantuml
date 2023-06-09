@@ -14,7 +14,7 @@ entity event_locale {
     event_id: event(id)
     locale_id: locale(id)
     name : string+
-    summary : string+
+    summary : string
     description : text
 }
 

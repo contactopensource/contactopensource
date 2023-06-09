@@ -11,7 +11,7 @@ entity ability_locale {
     ability : ability(id)
     locale : locale(id)
     name : string+
-    summary : string+
+    summary : string
     description : text
 }
 

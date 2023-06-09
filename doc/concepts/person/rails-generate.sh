@@ -2,18 +2,19 @@
 set -euf
 
 rails generate scaffold \
-person_locale \
-	"$RAILS_GENERATE_SCAFFOLD_FIELDS" \
+person \
+	$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \
     born_date:date \
     born_year:integer \
     died_date:date \
     died_year:integer \
+    $RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER
    
 rails generate scaffold \
 person_locale \
-	"$RAILS_GENERATE_SCAFFOLD_FIELDS" \
-	person:references \
-	locale:references \
+	$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \
+	person:references:index \
+	locale:references:index \
     given_name:string \
     given_name_phonetic:string \
     middle_name:string \
@@ -40,3 +41,4 @@ person_locale \
     reflexive_pronoun:string \
     intensive_pronoun:string \
     disjunctive_pronoun:string \
+    $RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER

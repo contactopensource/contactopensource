@@ -17,6 +17,6 @@ Attributes:
 
 * name : string+ -- example: "ACME Organization"
 
-* summary : string+ -- example: "ACME Organization is a big company"
+* summary : string -- example: "ACME Organization is a big company"
 
 * description : text -- example: "ACME Organization is a big company with offices worldwide"

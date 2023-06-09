@@ -17,6 +17,6 @@ Attributes:
 
 * name : string+ -- example: "read"
 
-* summary : string+ -- example: "Access operation \"read\" provides read access"
+* summary : string -- example: "Access operation \"read\" provides read access"
 
 * description : text -- example: "Access operation \"read\" provides read access, such as for show, view, list, etc."

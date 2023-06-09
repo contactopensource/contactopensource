@@ -3,7 +3,7 @@ set -euf
 
 rails generate scaffold \
 phone_contact \
-	"$RAILS_GENERATE_SCAFFOLD_FIELDS" \
+	$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \
 	freeform:string:index \
 	label:string:index \
     e164_text:"string{15}":index \
@@ -12,3 +12,4 @@ phone_contact \
     e164_group_identification_code:"string{4}":index \
     e164_trial_identification_code:"string{3}" \
     e164_subscriber_number:"string{14}" \
+    $RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER

@@ -11,7 +11,7 @@ entity access_attribute_locale {
     access_attribute_id: access_attribute(id)
     locale_id: locale(id)
     name : string+
-    summary : string+
+    summary : string
     description : text
 }
 
