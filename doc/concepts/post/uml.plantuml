@@ -3,4 +3,18 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity post {
+    key : string
+}
+
+entity post_locale {
+    post : post(id)
+    locale : locale(id)
+    name : string+
+    summary : string
+    description : text
+}
+
+post ||-r-o{ post_locale
+
 @enduml
