@@ -8,7 +8,18 @@ Attributes:
 
 * parent_id : tag.id -- example: "e0bf207b8e2d38bfc3899417ef819a47' is this row's parent row
 
-* text : text -- example: "trending"
+* key : string+
+
+
+## tag_locale
+
+* tag_id : tag(id)+
+
+* locale_id : locale(id)+
+
+* name : string+ -- example: "trending"
+
+* summary : string -- example: "trending"
 
 * description : text -- example: "Trending in popularity"
 
