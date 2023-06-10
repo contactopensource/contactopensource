@@ -3,4 +3,13 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity geo_point {
+    latitude : decimal_degrees
+    longitude : decimal_degrees
+    altitude_msl : meters
+    altitude_agl : meters
+    elevation_msl : meters
+    elevation_agl : meters
+}
+
 @enduml
