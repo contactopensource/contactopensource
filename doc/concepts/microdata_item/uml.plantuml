@@ -3,4 +3,9 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity microdata_item {
+  itemtype : string
+  itemprop : string
+}
+
 @enduml
