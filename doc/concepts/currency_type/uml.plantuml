@@ -3,4 +3,10 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity currency_type {
+  name : string+
+  code : string+
+  symbol : string+
+}
+
 @enduml

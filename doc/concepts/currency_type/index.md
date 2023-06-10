@@ -6,6 +6,6 @@ Attributes:
 
 * name : string+ -- example: "United States Dollar"
 
-* code : text -- example: "USD" is United States Dollar
+* code : string+ -- example: "USD" is United States Dollar
 
-* symbol : string -- example: "$" is United States Dollar
+* symbol : string+ -- example: "$" is United States Dollar
