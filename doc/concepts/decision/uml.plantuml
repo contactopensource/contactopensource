@@ -1,0 +1,21 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity course {
+    key : string+
+}
+
+entity course_locale {
+    course : course(id)+
+    locale : locale(id)+
+    name : string+
+    summary : string
+    description : text
+    disambiguation : text
+}
+
+course ||-r-o{ course_locale
+
+@enduml
