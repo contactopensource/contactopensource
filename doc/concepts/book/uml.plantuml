@@ -1,0 +1,6 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+@enduml
