@@ -1,0 +1,13 @@
+- system_proc:
+  section_list:
+    - Main:
+      - pid:
+        type: integer
+        summary:
+        example:>
+          1000
+      - name:
+        type: text
+        summary:
+        example:>
+          /bin/sh --version

@@ -1,0 +1,138 @@
+- person:
+  section_list:
+    - Main:
+      - todo:
+        type: text
+        summary:
+        example:>
+- person_locale:
+  section_list:
+    - Main:
+      - given_name:
+        type: text
+        summary: "The person's given name(s), such as the first name in given-middle-family"
+        example:>
+          Alice
+      - given_name_phonetic:
+        type: text
+        summary:
+        example:>
+          alice
+      - middle_name:
+        type: text
+        summary: "The person's middle name(s), such as the inner name in given-middle-family"
+        example:>
+          Amy
+      - middle_name_phoenetic:
+        type: text
+        summary:
+        example:>
+          amy
+      - family_name:
+        type: text
+        summary: "The person's family name(s), such as the last name in given-middle-family"
+        example:>
+          Adams
+      - family_name_phonetic:
+        type: text
+        summary:
+        example:>
+          adams
+      - legal_name:
+        type: text
+        summary:
+        example:>
+          Alice Amy Adams
+      - legal_name_phoenetic:
+        type: text
+        summary:
+        example:>
+          alice amy adams
+      - prefix_name:
+        type: text
+        summary:
+        example:>
+          Dr.
+      - prefix_name_phoeneti:
+        type: text
+        summary:
+        example:>
+          doctor
+      - suffix_name:
+        type: text
+        summary:
+        example:>
+          Jr.
+      - suffix_name_phoeneti:
+        type: text
+        summary:
+        example:>
+          junior
+      - salutation_name:
+        type: text
+        summary:
+        example:>
+          Dr. Adams
+      - salutation_name_phoenetic:
+        type: text
+        summary:
+        example:>
+          doctor adams
+      - addressee_name:
+        type: text
+        summary:
+        example:>
+          Dr. Alice Adams Jr.
+      - addressee_name_phoenetic:
+        type: text
+        summary:
+        example:>
+          doctor alice adams junior
+    - nickname:
+        type: text
+        summary:
+        example:>
+          Ali
+    - nickname_phonetic:
+      type: text
+      summary:
+      example:>
+        al-lee
+- person_pronoun_kit:
+  section_list:
+    - Main:
+      - subject_pronoun:
+        type: text
+        summary: "See: https://wikipedia.org/wiki/Subject_pronoun"
+        example:>
+          "she" as in "She likes Alice."
+      - object_pronoun:
+        type: text
+        summary: "See: https://wikipedia.org/wiki/Object_pronoun"
+        example:>
+          "her" as in "Alice likes her."
+      - dependent_possessive_pronoun:
+        type: text
+        summary: "See: https://wikipedia.org/wiki/Possessive_pronoun"
+        example:>
+          "her" as in "Her ideas are good."
+      - independent_possessive_pronoun:
+        type: text
+        summary: "See: https://wikipedia.org/wiki/Possessive_determiner"
+        example:>
+          "hers" as in "The ideas are hers."
+      - reflexive_pronoun:
+        type: text
+        summary: "See: https://wikipedia.org/wiki/Reflexive_pronoun"
+        example:>
+          "herself" as in "She likes herself."
+      - intensive_pronoun:
+        type: text
+        summary: "See: https://en.wikipedia.org/wiki/Intensive_pronoun"
+        example:>
+          "herself" as in "She does it herself."
+      - disjunctive_pronoun:
+        type: text
+        summary: "See: https://wikipedia.org/wiki/Disjunctive_pronoun"
+        example:>
+          "her" as in "It is her."

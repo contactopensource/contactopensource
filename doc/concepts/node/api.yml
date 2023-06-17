@@ -1,0 +1,30 @@
+- node:
+  summary:>
+    Store an arbitrary chunk of data.
+  section_list:
+    - Main:
+      - uri:
+        type: uri
+        summary:
+        example:>
+          http://example.com/user
+      - text:
+        type: text
+        summary:
+        example:>
+          hello world
+      - json:
+        type: jsonb
+        summary:
+        example:>
+          {"hello": "world"}
+      - xml:
+        type: xml
+        summary:
+        example:>
+          <?xml version=\'1.0\'?><example>hello world</example>
+      - number:
+        type: numeric
+        summary:
+        example:>
+          123.456

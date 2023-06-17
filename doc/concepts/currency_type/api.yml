@@ -1,0 +1,18 @@
+- currency_type:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          United States Dollar
+      - code:
+        type: text
+        summary:
+        example:>
+          USD
+      - symbol:
+        type: text
+        summary:
+        example:>
+          $

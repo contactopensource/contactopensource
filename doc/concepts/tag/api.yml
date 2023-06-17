@@ -1,0 +1,13 @@
+- tag:
+  section_list:
+    - Main:
+      - text:
+        type: text
+        summary:
+        example:>
+          trending
+      - description:
+        type: text
+        summary:
+        example:>
+          Trending in popularity

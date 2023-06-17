@@ -1,0 +1,8 @@
+- group:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          Administrator

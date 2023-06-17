@@ -1,0 +1,8 @@
+- access_attribute:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          reader

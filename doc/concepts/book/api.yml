@@ -1,0 +1,8 @@
+- book:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          TODO

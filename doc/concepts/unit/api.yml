@@ -1,0 +1,13 @@
+- unit:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          second
+      - symbol:
+        type: text
+        summary:
+        example:>
+          s

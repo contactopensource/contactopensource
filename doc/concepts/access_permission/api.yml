@@ -1,0 +1,13 @@
+- access_permission:
+  section_list:
+    - Main:
+      - access_attribute_id:
+        type: access_attribute.id
+        summary:
+        example:>
+          access attribute "reader"
+      - access_operation_id:
+        type: access_operation.id
+        summary:
+        example:>
+          access operation \"read\"

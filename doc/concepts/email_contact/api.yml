@@ -1,0 +1,23 @@
+- email_contact:
+  section_list:
+    - Main:
+      - address:
+        type: text
+        summary: "See: https://tools.ietf.org/html/rfc5322"
+        example:>
+          Alice Adams <alice@example.com>
+      - display_name:
+        type: text
+        summary:
+        example:>
+          Alice Adams
+      - local_part:
+        type: text
+        summary:
+        example:>
+          alice
+      - addr_spec:
+        type: text
+        summary:
+        example:>
+          alice@example.com

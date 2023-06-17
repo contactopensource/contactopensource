@@ -1,0 +1,33 @@
+- geo_point:
+  section_list:
+    - Main:
+      - latitude_as_decimal_degrees:
+        type: decimal_degrees
+        summary:
+        example:>
+          37.8199° N is Golden Gate Bridge in San Francisco
+      - longitude_as_decimal_degrees:
+        type: decimal_degrees
+        summary:
+        example:>
+          122.4783° W is Golden Gate Bridge in San Francisco
+      - altitude_agl_as_meters:
+        type: meters
+        summary: "Altitude above ground level (AGL)"
+        example:>
+          67.056 meters above ground level
+      - altitude_msl_as_meters:
+        type: meters
+        summary: "Altitude relative to mean sea level (MSL)"
+        example:>
+          67.056 meters to mean sea level
+      - elevation_agl_as_meters:
+        type: meters
+        summary: "Elevation above ground level (AGL)"
+        example:>
+          67.056 meters above ground level
+      - elevation_msl_as_meters:
+        type: meters
+        summary: "Elevation relative to mean sea level (MGL)"
+        example:>
+          67.056 meters to mean sea level

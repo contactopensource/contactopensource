@@ -1,0 +1,18 @@
+- content_audio:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          TODO
+      - codec_id
+        type: codec.id
+        summary:
+        example:>
+          TODO
+      - duration_as_seconds:
+        type: count
+        summary:
+        example:>
+          60 means 60 seconds

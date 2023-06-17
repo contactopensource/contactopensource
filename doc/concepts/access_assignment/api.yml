@@ -1,0 +1,13 @@
+- access_assignment:
+  section_list:
+    - Main:
+      - access_agent_id:
+        type: access_agent.id
+        summary:
+        example:>
+          access user "alice"
+      - access_attribute:
+        type: id
+        summary:
+        example:>
+          access attribute "reader"

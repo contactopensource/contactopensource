@@ -1,0 +1,45 @@
+- phone_contact:
+  section_list:
+    - Main:
+      - label:
+        type: text
+        summary:
+        example:>
+          mobile
+      - number_text:
+        type: text
+        summary:
+        example:>
+          1 (415) 555-0000
+    - E.164:
+      summary: "See: https://en.wikipedia.org/wiki/E.164"
+      - e164_text:
+        type: varchar
+        summary:
+        example:>
+          14155550000 means United States country code, San Franicsco area code, etc.
+      - e164_country_code:
+        type: varchar
+        summary:
+        example:>
+          1 means United States
+      - e164_national_destination_code:
+        type: varchar
+        summary:
+        example:>
+          415 means a United States area code that goes to San Francisco
+      - e164_group_identification_code:
+        type: varchar
+        summary:
+        example:>
+          TODO
+      - e164_trial_identification_code:
+        type: varchar
+        summary:
+        example:>
+          TODO
+      - e164_subscriber_number:
+        type: varchar
+        summary:
+        example:>
+          5550000 means a local number, without country code or national destination code

@@ -1,0 +1,43 @@
+- postal_contact:
+  section_list:
+    - Main:
+      - country_text:
+        type: text
+        summary:
+        example:>
+          US means United States
+      - region_text:
+        type: text
+        summary: "A country's regional area, such as a United States state, a Canada province, etc."
+        example:>
+          CA means California
+      - locality_text:
+        type: text
+        summary: "A region's local area, such as a city, town, village"
+        example:>
+          San Francisco
+      - neighborhood_text:
+        type: text
+        summary: "A locality's neighborhood area, such as a district, subdivision, zone"
+        example:>
+          Mission District
+      - postal_code_text:
+        type: text
+        summary: "An encoding, such as a United States ZIP code, a Canada mail routing number, etc."
+        example:>
+          94101 means San Francisco downtown area
+      - street_address_text:
+        type: text
+        summary:
+        example:>
+          123 Main Street
+      - premise_address_text:
+        type: text
+        summary: "A street address subcateory, such as an apartment identifier, mailbox number, room name"
+        example:>
+          Apartment A1
+      - global_location_number_text:
+        type: text
+        summary: "See: https://schema.org/globalLocationNumber https://en.wikipedia.org/wiki/Global_Location_Number"
+        example:>
+          TODO

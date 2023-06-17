@@ -1,0 +1,66 @@
+- locale:
+  section_list:
+    - Dialect:
+      - text:
+        type: text
+        summary:
+        example:>
+          'en-US' is English language in United States country
+      - language_code:
+        type: text
+        summary:
+        example:>
+          'en' is English
+      - country_code:
+        type: text
+        summary:
+        example:>
+          'US' is United States
+      - script_code:
+        type: text
+        summary: "See: http://www.unicode.org/iso15924/codelists.html"
+        example:>
+          'Latn' is Latin script
+      - region_code:
+        type: text
+        summary:
+        example:>
+          'QO' is Outlying Oceania
+      - variant_code:
+        type: text
+        summary:
+        example:>
+          'TH' is Thai digit shapes
+    - Separator:
+      - decimal_separator:
+        type: text
+        summary: "See: https://en.wikipedia.org/wiki/Decimal_separator"
+        example:>
+          '.' is the decimal separator of 'en-US'
+      - grouping_separator:
+        type: text
+        summary:
+        example:>
+          ',' is the grouping separator of 'en-US'
+    - Currency:
+      - currency_code:
+        type: text
+        summary:
+        example:>
+          'USD' is United States Dollar
+      - currency_symbol:
+        type: text
+        summary:
+        example:>
+          '$' is United States Dollar
+    - Quotation:
+      - quotation_start_delimiter:
+        type: text
+        summary:
+        example:>
+          '“' (U+201C) is left double quotation mark
+      - quotation_stop_delimiter:
+        type: text
+        summary:
+        example:>
+          '”' (U+201D) is right double quotation mark

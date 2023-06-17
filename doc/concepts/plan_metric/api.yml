@@ -1,0 +1,14 @@
+- plan_metric:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          TODO
+      - value:
+        type: numeric
+        summary:
+        example:>
+          TODO
+          

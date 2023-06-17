@@ -1,0 +1,22 @@
+- plan_gist:
+    section_list:
+      - Main:
+        - goal_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - idea_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - step_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - task_id:
+          type: id
+          summary:
+          example:>

@@ -1,0 +1,22 @@
+- plan_rice:
+    section_list:
+      - Main:
+        - reach_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - impact_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - confidence_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - effort_id:
+          type: id
+          summary:
+          example:>

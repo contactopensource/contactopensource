@@ -1,0 +1,23 @@
+- content_image:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          TOODO
+      - codec_id
+        type: codec.id
+        summary:
+        example:>
+          TODO
+      - width_as_pixels:
+        type: count
+        summary:
+        example:>
+          100 pixels horizontally
+      - height_as_pixels:
+        type: count
+        summary:
+        example:>
+          100 pixels veritically

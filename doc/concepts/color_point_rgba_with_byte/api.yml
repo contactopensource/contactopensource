@@ -1,0 +1,23 @@
+- color_point_rgba_with_byte:
+  section_list:
+    - Components:
+      - red:
+        type: byte
+        summary:
+        example:>
+          "0x00" means zero red
+      - green:
+        type: byte
+        summary:
+        example:>
+          "0x88" means half green
+      - blue:
+        type: byte
+        summary:
+        example:>
+          "0xFF" means full blue
+      - alpha:
+        type: byte
+        summary:
+        example:>
+          "0x88" means half translucent

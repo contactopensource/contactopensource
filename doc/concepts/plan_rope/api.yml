@@ -1,0 +1,22 @@
+- plan_rope:
+    section_list:
+      - Main:
+        - realistic_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - optimistic_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - pessimistic_id:
+          type: id
+          summary:
+          example:>
+            TODO
+        - equilabristic_id:
+          type: id
+          summary:
+          example:>

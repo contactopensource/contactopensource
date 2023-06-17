@@ -1,0 +1,85 @@
+- codec:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          Ogg Vorbis Compressed Audio
+      - code:
+        type: text
+        summary:
+        example:>
+          ogg
+      - icon:
+        type: text
+        summary:
+        example:>
+          https://example.com/image.jpg
+      - link:
+        type: text
+        summary:
+        example:>
+          https://en.wikipedia.org/wiki/Ogg
+      - note:
+        type: text
+        summary:
+        example:>
+          Open source and patent free
+      - creator_name:
+        type: text
+        summary:
+        example:>
+          Xiph
+      - prefer_file_extension:
+        type: text
+        summary:
+        example:>
+          ogg
+      - prefer_media_type_id:
+        type: media_type.id
+        summary:
+        example:>
+          audio/ogg
+      - lossy_flag:
+        type: boolean
+        summary: "true = lossy encoding; false = lossless encoding"
+        example:>
+          true
+      - floss_flag:
+        type: boolean
+        summary:
+        example:>
+          true means free libre open source software
+    - Bit Rate
+      - fixed_bit_rate:
+        type: decimal
+        summary:
+        example:>
+          22000 means 23000 samples per second
+      - variable_bit_rate_minimum:
+        type: decimal
+        summary:
+        example:>
+          11000 means 11000 samples per second minimum
+      - variable_bit_rate_maximum:
+        type: decimal
+        summary:
+        example:>
+          44000 means 44000 samples per second maximum
+    - Channel Count
+      - fixed_channel_count:
+        type: integer
+        summary:
+        example:>
+          2 channel audio tyipcally means stereophonic
+      - variable_channel_count_minimum:
+        type: integer
+        summary:
+        example:>
+          1 channel audio typically means monophonic
+      - variable_channel_count_maximum:
+        type: integer
+        summary:
+        example:>
+          5 channel audio typically means surround sound

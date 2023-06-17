@@ -1,0 +1,35 @@
+- organization:
+  section_list:
+    - Main:
+      - name:
+        type: text
+        summary:
+        example:>
+          TODO
+      - emoji:
+        type: text
+        summary:
+        example:>
+          TODO
+    - Display-related:
+      - image_uri:
+        type: text
+        summary:
+        example:>
+          TODO
+      - star_count:
+        type: integer
+        summary:
+        example:>
+          TODO
+    - Lifetime-related:
+      - start_date:
+        type: date
+        summary:
+        example:>
+          TODO
+      - stop_date:
+        type: date
+        summary:
+        example:>
+          TODO

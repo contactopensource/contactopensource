@@ -1,0 +1,13 @@
+- system_user:
+  section_list:
+    - Main:
+      - uid:
+        type: integer
+        summary:
+        example:>
+          1000
+      - name:
+        type: text
+        summary:
+        example:>
+          alice

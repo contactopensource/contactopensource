@@ -1,0 +1,6 @@
+- access_operation:
+    - name:
+      type: text
+      summary:
+      example:>
+        read

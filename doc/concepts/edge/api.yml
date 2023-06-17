@@ -1,0 +1,109 @@
+- edge:
+  summary:>
+    For linking from one node to another node
+  section_list:
+    - Subject:
+      - subject_uri:
+        type: text
+        summary: "type identifier, such as an RDF link, or semantic URL, or internal URN"
+        example:>
+          http://example.com/alpha.html
+      - subject_database:
+        type: text
+        summary: "database identifier, such as a database instance name"
+        example:>
+          contactopensource
+      - subject_schema:
+        type: text
+        summary: "schema identifier, such as a database instance schema name"
+        example:>
+          public
+      - subject_table:
+        type: text
+        summary: "table identifier, such as a database instance schema table name"
+        example:>
+          users
+      - subject_id:
+        type: id
+        summary: "row indentifier, such as a database instance schema table row primary key"
+        example:>
+          34b75621921fdc7ac83459c5c4b7dba6
+    - Predicate:
+      - predicate_uri:
+        type: text
+        summary: "type identifier, such as an RDF link, or semantic URL, or internal URN"
+        example:>
+          http://example.com/bravo.html
+      - predicate_database:
+        type: text
+        summary: "database identifier, such as a database instance name"
+        example:>
+          contactopensource
+      - predicate_schema:
+        type: text
+        summary: "schema identifier, such as a database instance schema name"
+        example:>
+          public
+      - predicate_table:
+        type: text
+        summary: "table identifier, such as a database instance schema table name"
+        example:>
+          likes
+      - predicate_id:
+        type: id
+        summary: "row indentifier, such as a database instance schema table row primary key"
+        example:>
+          124cf87662601612ae47379c91876e1e
+    - Object:
+      - object_uri:
+        type: text
+        summary: "type identifier, such as an RDF link, or semantic URL, or internal URN"
+        example:>
+          http://example.com/charlie.html
+      - object_database:
+        type: text
+        summary: "database identifier, such as a database instance name"
+        example:>
+          contactopensource
+      - object_schema:
+        type: text
+        summary:
+        example:>
+          public
+      - object_table:
+        type: text
+        summary: "table identifier, such as a database instance schema table name"
+        example:>
+          post
+      - object_id:
+        type: id
+        summary: "row indentifier, such as a database instance schema table row primary key"
+        example:>
+          9588686d2a1b4cda40cad5269c87a627
+    - Lifecycle:
+      - start_at_timestamp_utc:
+        type: timestamp
+        summary:
+        example:>
+          2020-01-01T00:00:00Z
+      - stop_at_timestamp_utc:
+        type: timestamp
+        summary:
+        example:>
+          2020-01-01T00:00:00Z
+    - Modifiers:
+      - count:
+        type: integer
+        summary: "any kind of count, and the usage is up to the application"
+        example:>
+          100
+      - unit_interval:
+        type: unit_interval
+        summary: "any kind of unit interval, and the usage is up to the application"
+        example:>
+          0.1 means unit interval 10%
+      - dual_interval:
+        type: dual_interval
+        summary: "any kind of dual intervale and the usage is up to the application"
+        example:>
+          -0.1 means dual interval -10%

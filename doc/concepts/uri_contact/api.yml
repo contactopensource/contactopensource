@@ -1,0 +1,37 @@
+- uri_contact:
+  section_list:
+    - Main:
+      - text:
+        type: text
+        summary:
+        example:>
+          http://example.com/index.html?alpha=bravo&charlie=delta#echo
+      - label:
+        type: text
+        summary:
+        example:>
+          Example web page
+      - scheme:
+        type: text
+        summary:
+        example:>
+          http
+      - authority:
+        type: text
+        summary:
+        example:>
+          TODO
+      - path:
+        type: text
+        example:>
+          example.com/index.html
+      - query:
+        type: text
+        summary:
+        example:>
+          alpha=bravo&charlie=delta
+      - fragment:
+        type: text
+        summary:
+        example:>
+          echo
