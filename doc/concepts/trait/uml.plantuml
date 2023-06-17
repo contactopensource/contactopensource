@@ -1,0 +1,21 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity trait {
+    key : string+
+}
+
+entity trait_locale {
+    trait : trait(id)+
+    locale : locale(id)+
+    name : string+
+    summary : string
+    description : text
+    disambiguation : text
+}
+
+trait ||-r-o{ trait_locale
+
+@enduml
