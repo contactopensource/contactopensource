@@ -1,0 +1,11 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity html_color {
+    code : xdigit(6)+
+    name : string+
+}
+
+@enduml
