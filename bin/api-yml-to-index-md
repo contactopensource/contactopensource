@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+import pprint
+import sys
+import yaml
+
+class Entity:
+  def __init__(self, id, summary, attributes):
+    self.id = id
+    self.summary = summary
+    self.attributes = attributes
+   
+class Attribute:
+  def __init__(self, id, type, example):
+    self.id = id
+    self.type = type
+    self.example = example
+    
+def parse_attribute(id, y):
+    return Attribute(id, y['type'], y['example'])
+
+def parse_attribute_kv(kv):
+    return parse_attribute(*kv)
+
+def parse_attributes(y):
+    return list(map(parse_attribute_kv, y.items()))
+    
+def parse_entity(id, y):
+    return Entity(id, y['summary'], parse_attributes(y['attributes']))
+
+def parse_entity_kv(kv):
+    return parse_entity(*kv)
+
+def parse_entities(y):
+    return list(map(parse_entity_kv, y.items()))
+
+y = yaml.safe_load(sys.stdin.read())
+#print(yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
+
+entities = parse_entities(y)
+
+for entity in entities:
+    print(f"## {entity.id}\n")
+    print(f"{entity.summary}\n")
+    print(f"Attributes:\n")
+    for attribute in entity.attributes:
+        print(f"* {attribute.id}: {attribute.type} -- {attribute.example}\n")
