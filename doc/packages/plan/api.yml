@@ -1,0 +1,9 @@
+package Plan {
+  entity plan_okr
+  entity plan_result
+  entity plan_metric
+  entity plan_gist
+  entity plan_smart
+  entity plan_rice
+  entity plan_rope
+}
