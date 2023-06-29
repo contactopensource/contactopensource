@@ -8,6 +8,10 @@ entity event {
     start_timestamp_utc : timestamp+
     stop_timestamp_utc : timestamp+
     duration_as_seconds : count
+    who_as_group_id_list id[]
+    what_as_thing_id_list id[]
+    where_as_place_id_list id[]
+    when_as_date_time_range_list id[]
 }
 
 entity event_locale {

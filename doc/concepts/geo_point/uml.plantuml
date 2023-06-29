@@ -10,6 +10,18 @@ entity geo_point {
     altitude_agl : meters
     elevation_msl : meters
     elevation_agl : meters
+    spread_as_meters : meters
 }
+
+entity geo_point_locale {
+    geo_point : geo_point(id)+
+    locale : locale(id)+
+    name : string+
+    summary : string
+    description : text
+    disambiguation : text
+}
+
+geo_point ||-r-o{ geo_point_locale
 
 @enduml

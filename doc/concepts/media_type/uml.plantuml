@@ -4,7 +4,7 @@ skinparam linetype ortho
 hide circle
 
 entity media_type {
-  code : string
+  code : string+
   supertype : string
   subtype : string
   tree : string

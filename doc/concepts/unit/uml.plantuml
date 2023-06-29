@@ -3,4 +3,9 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity unit {
+  name : string+
+  symbol : string
+}
+
 @enduml

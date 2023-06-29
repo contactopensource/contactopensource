@@ -3,4 +3,19 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity page {
+    key : string+
+}
+
+entity page_locale {
+    page : page(id)+
+    locale : locale(id)+
+    name : string+
+    summary : string
+    description : text
+    disambiguation : text
+}
+
+page ||-r-o{ page_locale
+
 @enduml

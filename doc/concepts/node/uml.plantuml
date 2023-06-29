@@ -3,4 +3,12 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
+entity node {
+  uri : text
+  text : text
+  jsonb : jsonb
+  xml : xml
+  number : numeric
+}
+
 @enduml
