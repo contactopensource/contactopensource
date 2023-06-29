@@ -10,13 +10,14 @@ class Entity:
     self.attributes = attributes
    
 class Attribute:
-  def __init__(self, id, type, example):
+  def __init__(self, id, type, index, example):
     self.id = id
     self.type = type
+    self.index = index
     self.example = example
     
 def parse_attribute(id, y):
-    return Attribute(id, y['type'], y['example'])
+    return Attribute(id, y['type'], y.get('index', False), y['example'])
 
 def parse_attribute_kv(kv):
     return parse_attribute(*kv)
@@ -43,4 +44,5 @@ for entity in entities:
     print(f"{entity.summary}\n")
     print(f"Attributes:\n")
     for attribute in entity.attributes:
-        print(f"* {attribute.id}: {attribute.type} -- {attribute.example}\n")
+        index_indicator = "+" if attribute.index else ""
+        print(f"* {attribute.id}: {attribute.type}{index_indicator} -- {attribute.example}\n")
