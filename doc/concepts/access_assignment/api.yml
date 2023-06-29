@@ -1,13 +1,11 @@
-- access_assignment:
-  section_list:
-    - Main:
-      - access_agent_id:
-        type: access_agent.id
-        summary:
-        example:>
-          access user "alice"
-      - access_attribute:
-        type: id
-        summary:
-        example:>
-          access attribute "reader"
+access_assignment:
+  summary: Access control assignment, which joins an access_agent and an access_attribute.
+  attributes:
+    access_agent_id:
+      type: access_agent(id)
+      index: true
+      example: access agent \"alice\"
+    access_attribute_id:
+      type: access_attribute(id)
+      index: true
+      example: access attribute \"reader\"

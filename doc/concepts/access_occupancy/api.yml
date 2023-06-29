@@ -1,0 +1,9 @@
+access_occupancy:
+  summary: Access control occupancy, which joins an access_tenant and an access_agent.
+  attributes:
+    access_tenant_it:
+      type: access_tenant.id
+      example: access tenant \"ACME\"
+    access_agent_id:
+      type: access_agent.id
+      example: access agent \"alice\"

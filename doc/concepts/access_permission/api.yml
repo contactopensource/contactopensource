@@ -1,13 +1,11 @@
-- access_permission:
-  section_list:
-    - Main:
-      - access_attribute_id:
-        type: access_attribute.id
-        summary:
-        example:>
-          access attribute "reader"
-      - access_operation_id:
-        type: access_operation.id
-        summary:
-        example:>
-          access operation \"read\"
+access_permission:
+  summary: Access control permission, which joins an access_attribute and an access_operation.
+  attributes:
+    access_attribute_it:
+      type: access_attribute(id)
+      index: true
+      example: access attribute \"reader\"
+    access_operation_id:
+      type: access_operation(id)
+      index: true
+      example: access operation \"read\"

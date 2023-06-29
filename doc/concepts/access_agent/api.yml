@@ -1,8 +1,31 @@
-- access_agent:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          alice
+access_agent:
+  summary: Access control agent.
+  attributes:
+    key:
+      type: string
+      index: true
+      example: access_agent_example
+access_agent_locale:
+  summary: Localization.
+  attributes:
+    access_agent_id:
+      type: access_agent(id)
+      index: true
+      example: id
+    locale_id:
+      type: locale(id)
+      index: true
+      example: locale for "English United States"
+    name:
+      type: string
+      index: true
+      example: "\"Alice Adams\""
+    summary:
+      type: string
+      example: "\"Access agent Alice Adams <alice@example.com>\""
+    description:
+      type: text
+      example: "\"Access agent Alice Adams <alice@example.com> https://example.com/alice\""
+    disambiguation:
+      type: text
+      example: "\"This text is a disambiguation description that explains the difference between this item and others.\""

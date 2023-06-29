@@ -1,0 +1,31 @@
+ability:
+  summary: An ability, such as a skill or talent.
+  attributes:
+    key:
+      type: string
+      index: true
+      example: ability_example
+ability_locale:
+  summary: Localization.
+  attributes:
+    ability_id:
+      type: ability(id)
+      index: true
+      example: id
+    locale_id:
+      type: locale(id)
+      index: true
+      example: locale for "English United States"
+    name:
+      type: string
+      index: true
+      example: "\"Example Name\""
+    summary:
+      type: string
+      example: "\"Example summary text.\""
+    description:
+      type: text
+      example: "\"Example description text.\""
+    disambiguation:
+      type: text
+      example: "\"Example disambiguation text.\""

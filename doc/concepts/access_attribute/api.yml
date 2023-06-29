@@ -1,8 +1,31 @@
-- access_attribute:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          reader
+access_attribute:
+  summary: Access control attribute.
+  attributes:
+    key:
+      type: string
+      index: true
+      example: access_example
+access_attribute_locale:
+  summary: Localization.
+  attributes:
+    access_attribute_id:
+      type: access_attribute(id)
+      index: true
+      example: id
+    locale_id:
+      type: locale(id)
+      index: true
+      example: locale for "English - United States"
+    name:
+      type: string
+      index: true
+      example: "\"reader\""
+    summary:
+      type: string
+      example: "\"Access attribute 'reader' provides read access.\""
+    description:
+      type: text
+      example: "\"Access attribute 'reader' provides read access, such as for show, list, print, etc.\""
+    disambiguation:
+      type: text
+      example: "\"This text is a disambiguation description that explains the difference between this item and others.\""
