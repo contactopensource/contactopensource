@@ -9,5 +9,3 @@ color_point_rgb_with_byte \
     blue:byte \
     alpha:byte \
     $RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER
-
-@enduml

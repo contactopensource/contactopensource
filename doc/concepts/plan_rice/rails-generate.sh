@@ -14,7 +14,7 @@ rails generate scaffold \
 plan_smart_item \
 	$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \
     name:string:index \
-    summary:string:index \
+    summary:string  \
     description:text \
     disambiguation:text \
     unit_id:references:index \
