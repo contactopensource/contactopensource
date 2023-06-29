@@ -13,7 +13,7 @@ Attributes:
 
 * feed_id : feed(id)+ -- example: feed id for "Example Post".
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "Example Post".
 

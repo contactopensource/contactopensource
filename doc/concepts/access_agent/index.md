@@ -13,7 +13,7 @@ Attributes:
 
 * access_agent_id : access_agent(id)+ -- example: access user for `alice@example.com`.
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "Alice Adams"
 

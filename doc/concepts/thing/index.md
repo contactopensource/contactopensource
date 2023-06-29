@@ -13,7 +13,7 @@ Attributes:
 
 * thing_id : thing(id)+ -- example: thing id for "Example Post".
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "Example Post".
 

@@ -37,7 +37,7 @@ Attributes for code names:
 
 * color_naming_system_name : string+ -- see https://en.wikipedia.org/wiki/Color_Naming_System
 
-* pantone_matching_system_name : string+ -- see https://en.wikipedia.org/wiki/Pantone
+* pantone_color_name : string+ -- see https://en.wikipedia.org/wiki/Pantone
 
 
 ## Themes

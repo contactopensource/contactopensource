@@ -38,7 +38,7 @@ Example that uses all of the above:
 
 Attributes:
 
-* code : string -- example: "application/x.foo;charset=UTF-8"
+* code : string+ -- example: "application/x.foo;charset=UTF-8"
 
 * supertype : string -- example: "text"
 

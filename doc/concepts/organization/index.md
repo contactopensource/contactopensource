@@ -13,7 +13,7 @@ Attributes:
 
 * organization_id : organization(id)+ -- example: organization for "ACME Organization".
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "ACME Organization"
 

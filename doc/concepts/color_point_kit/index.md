@@ -12,4 +12,4 @@ Attributes:
 
 * color_naming_system_name : string+
 
-* pantone_matching_system_name : string+
+* pantone_color_name : string+

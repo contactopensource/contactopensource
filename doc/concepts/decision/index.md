@@ -13,7 +13,7 @@ Attributes:
 
 * decision_id : decision(id)+ -- example: decision for "Build versus Buy".
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "Build versus Buy"
 

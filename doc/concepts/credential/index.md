@@ -13,7 +13,7 @@ Attributes:
 
 * credential_id : credential(id)+ -- example: credential for "Driver's License".
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "Driver's License"
 

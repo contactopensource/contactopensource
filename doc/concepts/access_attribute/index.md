@@ -13,7 +13,7 @@ Attributes:
 
 * access_attribute_id : access_attribute(id)+ -- example: access attribute for `reader`.
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "reader"
 

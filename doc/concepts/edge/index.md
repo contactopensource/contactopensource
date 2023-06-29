@@ -55,37 +55,37 @@ the table name and row id, such as to do poly-to-poly joins.
 
 Subject attributes:
 
-* subject_uri : text -- example: http://example.com/alpha.html
+* subject_uri : string+ -- example: http://example.com/alpha.html
 
-* subject_database : text -- database table name; example: "contactopensource"
+* subject_database : string+ -- database table name; example: "contactopensource"
 
-* subject_schema : text -- database table name; example: "public"
+* subject_schema : string+ -- database table name; example: "public"
 
-* subject_table : text -- database table name; example: "persons"
+* subject_table : string+ -- database table name; example: "persons"
 
 * subject_id : id -- database row id; example: 34b75621921fdc7ac83459c5c4b7dba6
 
 Predicate attributes:
 
-* predicate_uri : text -- example: http://example.com/bravo.html
+* predicate_uri : string+ -- example: http://example.com/bravo.html
 
-* predicate_database : text -- database table name; example: "contactopensource"
+* predicate_database : string+ -- database table name; example: "contactopensource"
 
-* predicate_schema : text -- database table name; example: "public"
+* predicate_schema : string+ -- database table name; example: "public"
 
-* predicate_table : text -- database table name; example: "likes"
+* predicate_table : string+ -- database table name; example: "likes"
 
 * predicate_id : id -- database row id; example: 124cf87662601612ae47379c91876e1e
 
 Object attributes:
 
-* object_uri : text -- example: http://example.com/charlie.html
+* object_uri : string+ -- example: http://example.com/charlie.html
 
-* object_database : text -- database table name; example: "contactopensource"
+* object_database : string+ -- database table name; example: "contactopensource"
 
-* object_schema : text -- database table name; example: "public"
+* object_schema : string+ -- database table name; example: "public"
 
-* object_table : text -- database table name; example: "places"
+* object_table : string+ -- database table name; example: "places"
 
 * object_id : id -- database row id; example: 9588686d2a1b4cda40cad5269c87a627
 

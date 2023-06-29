@@ -13,7 +13,7 @@ Attributes:
 
 * ability_id : ability(id)+ -- example: ability for "Biology 101".
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "Biology 101"
 

@@ -1,4 +1,4 @@
-# plan_rice
+# plan_gist
 
 Plan with GIST criteria.
 

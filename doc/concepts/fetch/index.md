@@ -6,4 +6,4 @@ Attributes:
 
 * eta : timestamp -- example: estimated time of arrival
 
-* media_type_id ~ id ~ example: media type id of "text/html"
+* media_type_id : media_type(id) -- example: media type id of "text/html"

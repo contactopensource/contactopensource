@@ -17,7 +17,7 @@ Attributes:
 
 * event_id : event(id)+ -- example: event for Alice's birthday party
 
-* locale_id : locale(id)+ -- example: locale for "English / United States"
+* locale_id : locale(id)+ -- example: locale for "English - United States"
 
 * name : string+ -- example: "Alice's birthday party"
 

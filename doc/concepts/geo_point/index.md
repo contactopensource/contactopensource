@@ -27,3 +27,22 @@ Attributes:
 * elevation_msl : meters -- example: 67.056 is 67.056 meters higher than mean sea level (MSL)
 
 * elevation_agl : meters -- example: 67.056 is 67.056 meters above ground level (AGL)
+
+* spread_as_meters : meters -- example: 1000 is 1 kilometer
+
+
+## geo_point_locale
+
+Attributes:
+
+* geo_point_id : geo_point(id)+ -- example: geo_point for Golden Gate Bridge 
+
+* locale_id : locale(id)+ -- example: locale for "English - United States"
+
+* name : string+ -- example: "Golden Gate Bridge"
+
+* summary : string -- example: "Golden Gate Bridge in San Francisco"
+
+* description : text -- example: "Golden Gate Bridge in San Francisco, CA, US"
+
+* disambiguation : text -- example: "This text is a disambiguation description that explains the difference between this item and others."
