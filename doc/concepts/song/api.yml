@@ -1,8 +1,6 @@
-- song:
-  section_list:
-    - Main:
+song:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

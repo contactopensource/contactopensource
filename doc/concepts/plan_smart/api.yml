@@ -1,27 +1,23 @@
-- plan_smart:
-    section_list:
+plan_smart:
+    attributes:
       - Main:
         - specific_id:
+          summary: specific id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - measurable_id:
+          summary: measurable id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - actionable_id:
+          summary: actionable id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - relevant_id:
+          summary: relevant id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - timely_id:
+          summary: timely id
           type: id
-          summary:
-          example:>
+          example: 

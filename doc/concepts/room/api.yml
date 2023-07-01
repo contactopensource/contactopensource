@@ -1,8 +1,6 @@
-- room:
-  section_list:
-    - Main:
+room:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

@@ -1,37 +1,29 @@
-- uri_contact:
-  section_list:
-    - Main:
+uri_contact:
+  attributes:
       - text:
+        summary: text
         type: text
-        summary:
-        example:>
-          http://example.com/index.html?alpha=bravo&charlie=delta#echo
+        example: http://example.com/index.html?alpha=bravo&charlie=delta#echo
       - label:
+        summary: label
         type: text
-        summary:
-        example:>
-          Example web page
+        example: Example web page
       - scheme:
+        summary: scheme
         type: text
-        summary:
-        example:>
-          http
+        example: http
       - authority:
+        summary: authority
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO
       - path:
         type: text
-        example:>
-          example.com/index.html
+        example: example.com/index.html
       - query:
+        summary: query
         type: text
-        summary:
-        example:>
-          alpha=bravo&charlie=delta
+        example: alpha=bravo&charlie=delta
       - fragment:
+        summary: fragment
         type: text
-        summary:
-        example:>
-          echo
+        example: echo

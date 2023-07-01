@@ -1,22 +1,19 @@
-- plan_rice:
-    section_list:
+plan_rice:
+    attributes:
       - Main:
         - reach_id:
+          summary: reach id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - impact_id:
+          summary: impact id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - confidence_id:
+          summary: confidence id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - effort_id:
+          summary: effort id
           type: id
-          summary:
-          example:>
+          example: 

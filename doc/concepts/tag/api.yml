@@ -1,13 +1,10 @@
-- tag:
-  section_list:
-    - Main:
+tag:
+  attributes:
       - text:
+        summary: text
         type: text
-        summary:
-        example:>
-          trending
+        example: trending
       - description:
+        summary: description
         type: text
-        summary:
-        example:>
-          Trending in popularity
+        example: Trending in popularity

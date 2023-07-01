@@ -1,9 +1,7 @@
-- album:
-  summary: "Any kind of art collection, such as a song album, photo album, video album."
-  section_list:
-    - Main:
+album:
+  summary: Any kind of art collection, such as a song album, photo album, video album.
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          "Homecoming" by Beyoncé
+        example: "Homecoming" by Beyoncé

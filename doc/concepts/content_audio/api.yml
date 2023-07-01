@@ -1,18 +1,15 @@
-- content_audio:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          TODO
-      - codec_id
-        type: codec.id
-        summary:
-        example:>
-          TODO
-      - duration_as_seconds:
-        type: count
-        summary:
-        example:>
-          60 means 60 seconds
+content_audio:
+  summary: Represent the content media type "audio/*". Any kind of audio, such as a song, speech, soundtrack, etc.
+  attributes:
+    name:
+      summary: name
+      type: text
+      example: "\"Blue\" - By Beyoncé"
+    codec_id:
+      summary: codec id
+      type: codec(id)
+      example: codec for MP3
+    duration_as_seconds:
+      summary: duration as seconds
+      type: count
+      example: 60 means 60 seconds

@@ -1,28 +1,23 @@
-- event:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          TODO
-      - who_as_org_id:
-        type: id
-        summary:
-        example:>
-          TODO
-      - what_as_thing_id:
-        type: id
-        summary:
-        example:>
-          TODO
-      - where_as_place_id:
-        type: id
-        summary:
-        example:>
-          TODO
-      - when_as_date_time_range:
-        type: id
-        summary:
-        example:>
-          TODO
+event:
+  attributes:
+    name:
+      summary: name
+      type: string
+      index: true
+      example: Example name
+    who_as_org_id:
+      summary: who as org id
+      type: id
+      example: TODO
+    what_as_thing_id:
+      summary: what as thing id
+      type: id
+      example: TODO
+    where_as_place_id:
+      summary: where as place id
+      type: id
+      example: TODO
+    when_as_date_time_range:
+      summary: when_as date time range
+      type: id
+      example: TODO

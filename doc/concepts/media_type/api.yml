@@ -1,34 +1,27 @@
-- media_type:
-  summary: "Media type classes"
-  section_list:
-    - Main:
+media_  summary: Media type classes
+type:
+  attributes:
       - text:
+        summary: text
         type: text
-        summary:
-        example:>
-          application/vnd.foo;charset=UTF-8
+        example: application/vnd.foo;charset=UTF-8
       - supertype:
+        summary: supertype
         type: text
-        summary:
-        example:>
-          application
+        example: application
       - subtype:
+        summary: subtype
         type: text
-        summary:
-        example:>
-          'vnd.foo' means vendor then foo namespace
+        example: 'vnd.foo' means vendor then foo namespace
       - tree:
+        summary: tree
         type: text
-        summary:
-        example:>
-          'vnd.' means vendor tree
+        example: 'vnd.' means vendor tree
       - suffix:
+        summary: suffix
         type:  text
-        summary:
-        example:>
-          '+zip' means ZIP compressed file
+        example: '+zip' means ZIP compressed file
       - parameters:
+        summary: parameters
         type: text[]
-        summary:
-        example:>
-          charset=UTF-8
+        example: charset=UTF-8

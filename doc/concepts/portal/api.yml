@@ -1,8 +1,6 @@
-- portal:
-  section_list:
-    - Main:
+portal:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

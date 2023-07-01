@@ -1,23 +1,19 @@
-- color_point_rgba_with_unit_interval:
-  section_list:
-    - Components:
-      - red:
-        type: unit_interval
-        summary:
-        example:>
-          "0.0" means zero red
-      - green:
-        type: unit_interval
-        summary:
-        example:>
-          "0.5" means half green
-      - blue:
-        type: unit_interval
-        summary:
-        example:>
-          "1.0" means full blue
-      - alpha:
-        type: unit_interval
-        summary:
-        example:>
-          "0.5" means half translucent
+color_point_rgba_with_unit_interval:
+  summary: Color point RGBA (red, green, blue, alpha) with unit interval
+  attributes:
+    red:
+      summary: red
+      type: unit_interval
+      example: 0.0 means zero red
+    green:
+      summary: green
+      type: unit_interval
+      example: 0.5 means half green
+    blue:
+      summary: blue
+      type: unit_interval
+      example:1.0 means full blue
+    alpha:
+      summary: alpha
+      type: unit_interval
+      example: 0.5 means half transparent

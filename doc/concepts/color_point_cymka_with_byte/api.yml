@@ -1,28 +1,23 @@
-- color_point_cymka_as_byte:
-  section_list:
-    - Components:
-      - cyan:
-        type: byte
-        summary:
-        example:>
-          "0x00" means zero cyan
-      - yellow:
-        type: byte
-        summary:
-        example:>
-          "0x88" means half yellow
-      - magenta:
-        type: byte
-        summary:
-        example:>
-          "0xFF" means full magenta
-      - black:
-        type: byte
-        summary:
-        example:>
-          "0x10" means a tad black
-      - alpha:
-        type: byte
-        summary:
-        example:>
-          "0x88" means half translucent
+color_point_cymka_as_byte:
+  summary: Color point CYMKA (cyan, yellow, magenta, black, alpha) as byte
+  attributes:
+    cyan:
+      summary: cyan
+      type: byte
+      example: 0x00 means zero cyan
+    yellow:
+      summary: yellow
+      type: byte
+      example: 0x88 means half yellow
+    magenta:
+      summary: magenta
+      type: byte
+      example: 0xFF means full magenta
+    black:
+      summary: black
+      type: byte
+      example: 0x10 means slightly black
+    alpha:
+      summary: alpha
+      type: byte
+      example: 0x88 means half transparent

@@ -1,22 +1,19 @@
-- plan_gist:
-    section_list:
+plan_gist:
+    attributes:
       - Main:
         - goal_id:
+          summary: goal id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - idea_id:
+          summary: idea id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - step_id:
+          summary: step id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - task_id:
+          summary: task id
           type: id
-          summary:
-          example:>
+          example: 

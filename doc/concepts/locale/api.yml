@@ -1,66 +1,54 @@
-- locale:
-  section_list:
+locale:
+  attributes:
     - Dialect:
       - text:
+        summary: text
         type: text
-        summary:
-        example:>
-          'en-US' is English language in United States country
+        example: 'en-US' is English language in United States country
       - language_code:
+        summary: language code
         type: text
-        summary:
-        example:>
-          'en' is English
+        example: 'en' is English
       - country_code:
+        summary: country code
         type: text
-        summary:
-        example:>
-          'US' is United States
+        example: 'US' is United States
       - script_code:
+        summary: See: http://www.unicode.org/iso15924/codelists.html
         type: text
-        summary: "See: http://www.unicode.org/iso15924/codelists.html"
-        example:>
-          'Latn' is Latin script
+        example: 'Latn' is Latin script
       - region_code:
+        summary: region code
         type: text
-        summary:
-        example:>
-          'QO' is Outlying Oceania
+        example: 'QO' is Outlying Oceania
       - variant_code:
+        summary: variant code
         type: text
-        summary:
-        example:>
-          'TH' is Thai digit shapes
+        example: 'TH' is Thai digit shapes
     - Separator:
       - decimal_separator:
+        summary: See: https://en.wikipedia.org/wiki/Decimal_separator
         type: text
-        summary: "See: https://en.wikipedia.org/wiki/Decimal_separator"
-        example:>
-          '.' is the decimal separator of 'en-US'
+        example: '.' is the decimal separator of 'en-US'
       - grouping_separator:
+        summary: grouping separator
         type: text
-        summary:
-        example:>
-          ',' is the grouping separator of 'en-US'
+        example: ',' is the grouping separator of 'en-US'
     - Currency:
       - currency_code:
+        summary: currency code
         type: text
-        summary:
-        example:>
-          'USD' is United States Dollar
+        example: 'USD' is United States Dollar
       - currency_symbol:
+        summary: currency symbol
         type: text
-        summary:
-        example:>
-          '$' is United States Dollar
+        example: '$' is United States Dollar
     - Quotation:
       - quotation_start_delimiter:
+        summary: quotation start delimiter
         type: text
-        summary:
-        example:>
-          '“' (U+201C) is left double quotation mark
+        example: '“' (U+201C) is left double quotation mark
       - quotation_stop_delimiter:
+        summary: quotation stop delimiter
         type: text
-        summary:
-        example:>
-          '”' (U+201D) is right double quotation mark
+        example: '”' (U+201D) is right double quotation mark

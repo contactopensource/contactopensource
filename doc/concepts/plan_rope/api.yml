@@ -1,22 +1,19 @@
-- plan_rope:
-    section_list:
+plan_rope:
+    attributes:
       - Main:
         - realistic_id:
+          summary: realistic id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - optimistic_id:
+          summary: optimistic id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - pessimistic_id:
+          summary: pessimistic id
           type: id
-          summary:
-          example:>
-            TODO
+          example: TODO
         - equilabristic_id:
+          summary: equilabristic id
           type: id
-          summary:
-          example:>
+          example: 

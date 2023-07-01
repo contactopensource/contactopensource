@@ -1,13 +1,10 @@
-- system_proc:
-  section_list:
-    - Main:
+system_proc:
+  attributes:
       - pid:
+        summary: pid
         type: integer
-        summary:
-        example:>
-          1000
+        example: 1000
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          /bin/sh --version
+        example: /bin/sh --version

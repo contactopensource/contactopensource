@@ -1,8 +1,6 @@
-- feed:
-  section_list:
-    - Main:
+feed:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

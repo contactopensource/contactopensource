@@ -1,8 +1,6 @@
-- travel:
-  section_list:
-    - Main:
+travel:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-        TODO
+        example: TODO

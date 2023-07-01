@@ -1,13 +1,10 @@
-- plan_okr:
-  section_list:
-    - Main:
+plan_okr:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO
       - metric_id:
+        summary: metric id
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

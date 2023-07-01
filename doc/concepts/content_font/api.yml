@@ -1,8 +1,7 @@
-- content_font:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          TODO
+content_font:
+  summary: Represent the content media type "font/*".
+  attributes:
+    name:
+      summary: name
+      type: text
+      example: Arial

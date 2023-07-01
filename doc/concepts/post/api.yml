@@ -1,8 +1,6 @@
-- post:
-  section_list:
-    - Main:
+post:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

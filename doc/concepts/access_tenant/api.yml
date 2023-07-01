@@ -28,3 +28,4 @@ access_tenant_locale:
     disambiguation:
       type: text
       example: "\"This text is a disambiguation description that explains the difference between this item and others.\""
+  uml: access_tenant ||-r-o{ access_tenant_locale

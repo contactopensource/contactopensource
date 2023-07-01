@@ -1,13 +1,10 @@
-- system_user:
-  section_list:
-    - Main:
+system_user:
+  attributes:
       - uid:
+        summary: uid
         type: integer
-        summary:
-        example:>
-          1000
+        example: 1000
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          alice
+        example: alice

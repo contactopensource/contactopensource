@@ -1,23 +1,18 @@
-- passport_credential:
-  section_list:
-    - Main:
+passport_credential:
+  attributes:
       - country_text:
+        summary: country text
         type: text
-        summary:
-        example:>
-          US means United States
+        example: US means United States
       - number_text:
+        summary: number text
         type: text
-        summary:
-        example:>
-          111-111-111-111
+        example: 111-111-111-111
       - valid_start_date:
+        summary: valid start date
         type: date
-        summary:
-        example:>
-          2020-01-01
+        example: 2020-01-01
       - valid_stop_date:
+        summary: valid stop date
         type: date
-        summary:
-        example:>
-          2030-01-01
+        example: 2030-01-01

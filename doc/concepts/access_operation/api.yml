@@ -6,6 +6,7 @@ access_operation:
       index: true
       example: access_operation_example
 access_operation_locale:
+  summary: Localization.
   attributes:
     access_operation_id:
       type: access_operation(id)
@@ -28,3 +29,4 @@ access_operation_locale:
     disambiguation:
       type: text
       example: "\"This text is a disambiguation description that explains the difference between this item and others.\""
+  uml: access_operation ||-r-o{ access_operation_locale

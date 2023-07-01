@@ -1,18 +1,17 @@
-- currency_type:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          United States Dollar
-      - code:
-        type: text
-        summary:
-        example:>
-          USD
-      - symbol:
-        type: text
-        summary:
-        example:>
-          $
+currency_type:
+  attributes:
+    name:
+      summary: name
+      type: text
+      index: true
+      example: United States Dollar
+    code:
+      summary: code
+      type: text
+      index: true
+      example: USD
+    symbol:
+      summary: symbol
+      type: text
+      index: true
+      example: $

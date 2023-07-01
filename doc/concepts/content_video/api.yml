@@ -1,18 +1,25 @@
-- content_video:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          Video MP4
-        - codec_id
-        type: codec.id
-        summary:
-        example:>
-          video/mp4
-      - duration_as_seconds:
-        type: count
-        summary:
-        example:>
-          video/mp4
+content_video:
+  summary: Represent the content media type "video/*". Any type of video, such as a movie, animation, clip, etc.
+  attributes:
+    name:
+      summary: name
+      type: string
+      index: true
+      example: Video MP4
+    codec_id:
+      summary: codec id
+      type: codec(id)
+      example: video/mp4
+    width_as_pixels:
+      summary: width as pixels
+      type: count
+      index: true
+    height_as_pixels:
+      summary: height as pixels
+      type: count
+      index: true
+    duration_as_seconds:
+      summary: duration as seconds
+      type: count
+      index: true
+      example: video/mp4

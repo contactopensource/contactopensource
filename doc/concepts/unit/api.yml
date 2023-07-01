@@ -1,13 +1,10 @@
-- unit:
-  section_list:
-    - Main:
+unit:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          second
+        example: second
       - symbol:
+        summary: symbol
         type: text
-        summary:
-        example:>
-          s
+        example: s

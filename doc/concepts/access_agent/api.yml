@@ -15,7 +15,7 @@ access_agent_locale:
     locale_id:
       type: locale(id)
       index: true
-      example: locale for "English United States"
+      example: locale for "English - United States"
     name:
       type: string
       index: true
@@ -29,3 +29,4 @@ access_agent_locale:
     disambiguation:
       type: text
       example: "\"This text is a disambiguation description that explains the difference between this item and others.\""
+  uml: access_agent ||-r-o{ access_agent_locale

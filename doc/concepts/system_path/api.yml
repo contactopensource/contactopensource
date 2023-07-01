@@ -1,13 +1,10 @@
-- system_path:
-  section_list:
-    - Main:
+system_path:
+  attributes:
       - iid:
+        summary: iid
         type: integer
-        summary:
-        example:>
-          10000
+        example: 10000
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          /etc/environment
+        example: /etc/environment

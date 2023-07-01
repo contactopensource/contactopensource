@@ -1,13 +1,10 @@
-- system_group:
-  section_list:
-    - Main:
+system_group:
+  attributes:
       - gid:
+        summary: gid
         type: integer
-        summary:
-        example:>
-          1000
+        example: 1000
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          administrator
+        example: administrator

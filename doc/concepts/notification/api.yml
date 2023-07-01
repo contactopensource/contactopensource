@@ -1,8 +1,6 @@
-- notification:
-  section_list:
-    - Main:
+notification:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

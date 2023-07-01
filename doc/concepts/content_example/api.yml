@@ -1,8 +1,8 @@
-- content_example:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          TODO
+content_example:
+  summary: Represent the content media type "example/*".
+  attributes:
+    name:
+      summary: name
+      type: string
+      index: true
+      example: Example name

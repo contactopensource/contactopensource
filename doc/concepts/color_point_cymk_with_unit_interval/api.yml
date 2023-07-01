@@ -1,23 +1,15 @@
-- color_point_cymk_as_unit_interval:
-  section_list:
-    - Components:
-      - cyan:
-        type: unit_interval
-        summary:
-        example:>
-          "0.0" means zero cyan
-      - yellow:
-        type: unit_interval
-        summary:
-        example:>
-          "0.5" means half yellow
-      - magenta:
-        type: unit_interval
-        summary:
-        example:>
-          "1.0" means full magenta
-      - black:
-        type: unit_interval
-        summary:
-        example:>
-          "0.1" means a tad black
+color_point_cymk_as_unit_interval:
+  summary: Color point CYMK (cyan, yellow, magenta, black) as unit interval
+  attributes:
+    cyan:
+      type: unit_interval
+      example: 0.0 means zero cyan
+    yellow:
+      type: unit_interval
+      example: 0.5 means half yellow
+    magenta:
+      type: unit_interval
+      example: 1.0 means full magenta
+    black:
+      type: unit_interval
+      example: 0.1 means slightly black

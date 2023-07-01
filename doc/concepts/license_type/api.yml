@@ -1,18 +1,14 @@
-- license_type:
-  section_list:
-    - Main:
+license_type:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          GNU General Public License v2.0
+        example: GNU General Public License v2.0
       - spdx_identifier:
+        summary: spdx identifier
         type: text
-        summary:
-        example:>
-          GPL-2.0-only
+        example: GPL-2.0-only
       - text:
+        summary: text
         type: text
-        summary:
-        example:>
-          The full text of the GNU GPL.
+        example: The full text of the GNU GPL.

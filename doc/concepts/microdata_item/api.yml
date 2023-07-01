@@ -1,15 +1,13 @@
-- microdata_item:
-  summary: "Microdata item classes"
-  section_list:
-    - Main:
-      - itemtype:
+microdata_item:
+  summary: Microdata item classes
+  attributes:
+      - item        summary: A valid URL of a vocabulary that describes the item and its properties context.
+type:
         type: URI
-        summary: A valid URL of a vocabulary that describes the item and its properties context.
-        example:>
-          http://schema.org/Person
+        example: http://schema.org/Person
       - itemprop:
-        type: text
         summary:>
+        type: text
           Indicates that its containing tag holds the value of the
           specified item property. The property's name and value context
           are described by the item's vocabulary. Properties values
@@ -17,5 +15,4 @@
           the a element and its href attribute, the img element and its
           src attribute, or other elements that link to or embed external
           resources.
-        example:>
-          name
+        example: name

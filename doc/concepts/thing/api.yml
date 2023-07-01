@@ -1,8 +1,6 @@
-- thing:
-  section_list:
-    - Main:
+thing:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

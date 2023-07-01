@@ -1,8 +1,6 @@
-- movie:
-  section_list:
-    - Main:
+movie:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

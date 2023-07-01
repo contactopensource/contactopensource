@@ -1,8 +1,6 @@
-- page:
-  section_list:
-    - Main:
+page:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO

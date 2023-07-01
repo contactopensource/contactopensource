@@ -1,13 +1,10 @@
-- plan_result:
-  section_list:
-    - Main:
+plan_result:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          TODO
+        example: TODO
       - plan_metric_id:
+        summary: plan metric id
         type: plan_metric.id
-        summary:
-        example:>
-          TODO
+        example: TODO

@@ -1,23 +1,20 @@
-- content_image:
-  section_list:
-    - Main:
-      - name:
-        type: text
-        summary:
-        example:>
-          TOODO
-      - codec_id
-        type: codec.id
-        summary:
-        example:>
-          TODO
-      - width_as_pixels:
-        type: count
-        summary:
-        example:>
-          100 pixels horizontally
-      - height_as_pixels:
-        type: count
-        summary:
-        example:>
-          100 pixels veritically
+content_image:
+  summary: Represent the content media type "image/*". Any kind of image, such as a photo, illustration, chart, etc.
+  attributes:
+    name:
+      summary: name
+      type: string
+      index: true
+      example: Example name
+    codec_id:
+      summary:
+      type: codec(id)
+      example: codec for JPEG
+    width_as_pixels:
+      summary: width as pixels
+      type: count
+      example: 100 pixels horizontally
+    height_as_pixels:
+      summary: height as pixels
+      type: count
+      example: 100 pixels vertically

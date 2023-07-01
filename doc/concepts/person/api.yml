@@ -21,102 +21,102 @@ person_locale:
   summary: Localized.
   attributes:
     given_name:
-      type: text
       summary: The person's given name(s), such as the first name in given-middle-family.
+      type: text
       example: Alice
     given_name_phonetic:
-      type: text
       summary: The person's given name(s) phonetically, such as the first name in given-middle-family.
+      type: text
       example: alice
     middle_name:
-      type: text
       summary: The person's middle name(s), such as the inner name in given-middle-family.
+      type: text
       example: Amy
     middle_name_phoenetic:
-      type: text
       summary: The person's middle name(s) phonetically, such as the inner name in given-middle-family.
+      type: text
       example: amy
     family_name:
-      type: text
       summary: The person's family name(s), such as the last name in given-middle-family.
+      type: text
       example: Adams
     family_name_phonetic:
-      type: text
       summary: The person's family name(s) phonetically, such as the last name in given-middle-family.
+      type: text
       example: adams
     legal_name:
-      type: text
       summary: The person's legal name(s), such as the full name in given-middle-family.
+      type: text
       example: Alice Amy Adams
     legal_name_phoenetic:
-      type: text
       summary: The person's legal name(s) phoentically, such as the full name in given-middle-family.
+      type: text
       example: alice amy adams
     prefix_name:
-      type: text
       summary: The person's name prefix, such Mx., Dr., Rev.
+      type: text
       example: Dr.
     prefix_name_phoenetic:
-      type: text
       summary: The person's name prefix phonetically, such mix, doctor, reverend.
+      type: text
       example: doctor
     suffix_name:
-      type: text
       summary: The person's name suffix, such Jr., Sr., III
+      type: text
       example: Jr.
     suffix_name_phoenetic:
-      type: text
       summary: The person's name suffix phonetically, such junior, senior, the third.
+      type: text
       example: junior
     salutation_name:
-      type: text
       summary: The person's salutation name, such as on a name tag.
+      type: text
       example: Dr. Adams
     salutation_name_phoenetic:
-      type: text
       summary: The person's salutation name phonetically, such as on a name tag.
+      type: text
       example: doctor adams
     addressee_name:
-      type: text
       summary: The person's addressee name, such as on a postal letter.
+      type: text
       example: Dr. Alice Adams Jr.
     addressee_name_phoenetic:
-      type: text
       summary: The person's addressee name phonetically, such as on a postal letter.
+      type: text
       example: doctor alice adams junior
     nickname:
-      type: text
       summary: The person's nickname, such as for friends and family.
+      type: text
       example: Ali
     nickname_phonetic:
-      type: text
       summary: The person's nickname phonetically, such as for friends and family.
+      type: text
       example: al-lee
     subject_pronoun:
+      summary: See: https://wikipedia.org/wiki/Subject_pronoun
       type: text
-      summary: "See: https://wikipedia.org/wiki/Subject_pronoun"
       example: "she" as in "She likes Alice."
     object_pronoun:
+      summary: See: https://wikipedia.org/wiki/Object_pronoun
       type: text
-      summary: "See: https://wikipedia.org/wiki/Object_pronoun"
       example: "her" as in "Alice likes her."
     dependent_possessive_pronoun:
+      summary: See: https://wikipedia.org/wiki/Possessive_pronoun
       type: text
-      summary: "See: https://wikipedia.org/wiki/Possessive_pronoun"
       example: "her" as in "Her ideas are good."
     independent_possessive_pronoun:
+      summary: See: https://wikipedia.org/wiki/Possessive_determiner
       type: text
-      summary: "See: https://wikipedia.org/wiki/Possessive_determiner"
       example: "hers" as in "The ideas are hers."
     reflexive_pronoun:
+      summary: See: https://wikipedia.org/wiki/Reflexive_pronoun
       type: text
-      summary: "See: https://wikipedia.org/wiki/Reflexive_pronoun"
       example: "herself" as in "She likes herself."
     intensive_pronoun:
+      summary: See: https://en.wikipedia.org/wiki/Intensive_pronoun
       type: text
-      summary: "See: https://en.wikipedia.org/wiki/Intensive_pronoun"
       example: "herself" as in "She does it herself."
     disjunctive_pronoun:
+      summary: See: https://wikipedia.org/wiki/Disjunctive_pronoun
       type: text
-      summary: "See: https://wikipedia.org/wiki/Disjunctive_pronoun"
       example: "her" as in "It is her."

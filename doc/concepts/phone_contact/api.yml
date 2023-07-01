@@ -1,45 +1,36 @@
-- phone_contact:
-  section_list:
-    - Main:
+phone_contact:
+  attributes:
       - label:
+        summary: label
         type: text
-        summary:
-        example:>
-          mobile
+        example: mobile
       - number_text:
+        summary: number text
         type: text
-        summary:
-        example:>
-          1 (415) 555-0000
+        example: 1 (415) 555-0000
     - E.164:
-      summary: "See: https://en.wikipedia.org/wiki/E.164"
+      summary: See: https://en.wikipedia.org/wiki/E.164
       - e164_text:
+        summary: e164 text
         type: varchar
-        summary:
-        example:>
-          14155550000 means United States country code, San Franicsco area code, etc.
+        example: 14155550000 means United States country code, San Franicsco area code, etc.
       - e164_country_code:
+        summary: e164 country code
         type: varchar
-        summary:
-        example:>
-          1 means United States
+        example: 1 means United States
       - e164_national_destination_code:
+        summary: e164 national destination code
         type: varchar
-        summary:
-        example:>
-          415 means a United States area code that goes to San Francisco
+        example: 415 means a United States area code that goes to San Francisco
       - e164_group_identification_code:
+        summary: e164 group identification code
         type: varchar
-        summary:
-        example:>
-          TODO
+        example: TODO
       - e164_trial_identification_code:
+        summary: e164 trial identification code
         type: varchar
-        summary:
-        example:>
-          TODO
+        example: TODO
       - e164_subscriber_number:
+        summary: e164 subscriber number
         type: varchar
-        summary:
-        example:>
-          5550000 means a local number, without country code or national destination code
+        example: 5550000 means a local number, without country code or national destination code

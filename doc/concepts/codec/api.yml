@@ -1,85 +1,68 @@
-- codec:
-  section_list:
-    - Main:
+codec:
+  attributes:
       - name:
+        summary: name
         type: text
-        summary:
-        example:>
-          Ogg Vorbis Compressed Audio
+        example: Ogg Vorbis Compressed Audio
       - code:
+        summary: code
         type: text
-        summary:
-        example:>
-          ogg
+        example: ogg
       - icon:
+        summary: icon
         type: text
-        summary:
-        example:>
-          https://example.com/image.jpg
+        example: https://example.com/image.jpg
       - link:
+        summary: link
         type: text
-        summary:
-        example:>
-          https://en.wikipedia.org/wiki/Ogg
+        example: https://en.wikipedia.org/wiki/Ogg
       - note:
+        summary: note
         type: text
-        summary:
-        example:>
-          Open source and patent free
+        example: Open source and patent free
       - creator_name:
+        summary: creator name
         type: text
-        summary:
-        example:>
-          Xiph
+        example: Xiph
       - prefer_file_extension:
+        summary: prefer file extension
         type: text
-        summary:
-        example:>
-          ogg
+        example: ogg
       - prefer_media_type_id:
+        summary: prefer media type id
         type: media_type.id
-        summary:
-        example:>
-          audio/ogg
+        example: audio/ogg
       - lossy_flag:
+        summary: true = lossy encoding; false = lossless encoding
         type: boolean
-        summary: "true = lossy encoding; false = lossless encoding"
-        example:>
-          true
+        example: true
       - floss_flag:
+        summary: floss flag
         type: boolean
-        summary:
-        example:>
-          true means free libre open source software
+        example: true means free libre open source software
     - Bit Rate
       - fixed_bit_rate:
+        summary: fixed bit rate
         type: decimal
-        summary:
-        example:>
-          22000 means 23000 samples per second
+        example: 22000 means 23000 samples per second
       - variable_bit_rate_minimum:
+        summary: variable bit rate minimum
         type: decimal
-        summary:
-        example:>
-          11000 means 11000 samples per second minimum
+        example: 11000 means 11000 samples per second minimum
       - variable_bit_rate_maximum:
+        summary: variable bit rate maximum
         type: decimal
-        summary:
-        example:>
-          44000 means 44000 samples per second maximum
+        example: 44000 means 44000 samples per second maximum
     - Channel Count
       - fixed_channel_count:
+        summary: fixed channel count
         type: integer
-        summary:
-        example:>
-          2 channel audio tyipcally means stereophonic
+        example: 2 channel audio tyipcally means stereophonic
       - variable_channel_count_minimum:
+        summary: variable channel count minimum
         type: integer
-        summary:
-        example:>
-          1 channel audio typically means monophonic
+        example: 1 channel audio typically means monophonic
       - variable_channel_count_maximum:
+        summary: variable channel_count maximum
         type: integer
-        summary:
-        example:>
-          5 channel audio typically means surround sound
+        example: 5 channel audio typically means surround sound
