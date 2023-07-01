@@ -3,21 +3,66 @@ import pprint
 import sys
 import yaml
 
+s=""
+s.__contains__
 class Entity:
-  def __init__(self, id, summary, attributes):
-    self.id = id
-    self.summary = summary
-    self.attributes = attributes
-   
+    def __init__(self, id, summary, attributes, uml = None):
+        self.id = id
+        self.summary = summary
+        self.attributes = attributes
+        self.uml = uml
+
+    def print_markdown(self):
+        print(f"# {self.id}\n")
+        print(f"{self.summary}\n")
+        print(f"Attributes:\n")
+        for attribute in self.attributes:
+            attribute.print_markdown()
+
+    def print_rails_generator(self):
+        print("rails generate scaffold \\")
+        print(f"{self.id} \\")
+        print(f"$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \\")
+        for attribute in self.attributes:
+            attribute.print_rails_generator()
+        print(f"$RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER")
+        print()
+
+    def print_plantuml(self):
+        print(f"entity {self.id} ", "{")
+        for attribute in self.attributes:
+            attribute.print_plantuml()
+        print("}")
+        if self.uml:
+            print()
+            print(self.uml)
+        print()
+
 class Attribute:
-  def __init__(self, id, type, index, example):
-    self.id = id
-    self.type = type
-    self.index = index
-    self.example = example
-    
+    def __init__(self, id, type, index, example, uml = None):
+        self.id = id
+        self.type = type
+        self.index = index
+        self.example = example
+        self.uml = uml
+
+    def print_markdown(self):
+        index_fmt = "+" if self.index else ""
+        print(f"* {self.id}: {self.type}{index_fmt} -- example: {self.example}\n")
+
+    def print_rails_generator(self):
+        type_fmt = "references" if self.type.__contains__("(id)") else self.type
+        index_fmt = ":index" if self.index else ""
+        print(f"{self.id}:{type_fmt}{index_fmt} \\")
+
+    def print_plantuml(self):
+        index_fmt = "+" if self.index else ""
+        print(f"  {self.id} : {self.type}{index_fmt}")
+        if self.uml:
+            print(self.uml)
+
 def parse_attribute(id, y):
-    return Attribute(id, y['type'], y.get('index', False), y['example'])
+    return Attribute(id, y['type'], y.get('index', False), y['example'], y.get('uml', None))
 
 def parse_attribute_kv(kv):
     return parse_attribute(*kv)
@@ -26,7 +71,7 @@ def parse_attributes(y):
     return list(map(parse_attribute_kv, y.items()))
     
 def parse_entity(id, y):
-    return Entity(id, y['summary'], parse_attributes(y['attributes']))
+    return Entity(id, y['summary'], parse_attributes(y['attributes']), y.get('uml', None))
 
 def parse_entity_kv(kv):
     return parse_entity(*kv)
@@ -34,15 +79,31 @@ def parse_entity_kv(kv):
 def parse_entities(y):
     return list(map(parse_entity_kv, y.items()))
 
+def print_markdown(entities):
+    for entity in entities:
+        entity.print_markdown()
+
+def print_rails_generator(entities):
+    print("#!/bin/sh")
+    print("set -euf")
+    print()
+    for entity in entities:
+        entity.print_rails_generator()
+
+def print_plantuml(entities):
+    print("@startuml uml")
+    print("skinparam monochrome true")
+    print("skinparam linetype ortho")
+    print("hide circle")
+    print()
+    for entity in entities:
+        entity.print_plantuml()
+    print("@enduml")
+
 y = yaml.safe_load(sys.stdin.read())
 #print(yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
-
 entities = parse_entities(y)
 
-for entity in entities:
-    print(f"## {entity.id}\n")
-    print(f"{entity.summary}\n")
-    print(f"Attributes:\n")
-    for attribute in entity.attributes:
-        index_indicator = "+" if attribute.index else ""
-        print(f"* {attribute.id}: {attribute.type}{index_indicator} -- {attribute.example}\n")
+print_markdown(entities)
+print_rails_generator(entities)
+print_plantuml(entities)
