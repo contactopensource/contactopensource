@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import pprint
+import re
 import sys
 import yaml
 
@@ -12,31 +13,31 @@ class Entity:
         self.attributes = attributes
         self.uml = uml
 
-    def print_markdown(self):
-        print(f"# {self.id}\n")
-        print(f"{self.summary}\n")
-        print(f"Attributes:\n")
+    def as_markdown(self):
+        s = f"# {self.id}\n\n"
+        s += f"{self.summary} \n\n"
+        s += f"Attributes:\n\n"
         for attribute in self.attributes:
-            attribute.print_markdown()
+            s += attribute.as_markdown()
+        return s
+    
+    def as_rails_generator(self):
+        s = "rails generate scaffold \\\n"
+        s += f"{self.id} \\\n"
+        s += "$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \\\n"
+        for attribute in self.attributes:
+            s += attribute.as_rails_generator()
+        s += "$RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER\n"
+        return s
 
-    def print_rails_generator(self):
-        print("rails generate scaffold \\")
-        print(f"{self.id} \\")
-        print(f"$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \\")
+    def as_plantuml(self):
+        s = f"entity {self.id} " + "{\n"
         for attribute in self.attributes:
-            attribute.print_rails_generator()
-        print(f"$RAILS_GENERATE_SCAFFOLD_FIELDS_AFTER")
-        print()
-
-    def print_plantuml(self):
-        print(f"entity {self.id} ", "{")
-        for attribute in self.attributes:
-            attribute.print_plantuml()
-        print("}")
+            s += attribute.as_plantuml()
+        s += "}\n"
         if self.uml:
-            print()
-            print(self.uml)
-        print()
+            s += f"\n{self.uml}\n"
+        return s
 
 class Attribute:
     def __init__(self, id, type, index, example, uml = None):
@@ -46,21 +47,40 @@ class Attribute:
         self.example = example
         self.uml = uml
 
-    def print_markdown(self):
-        index_fmt = "+" if self.index else ""
-        print(f"* {self.id}: {self.type}{index_fmt} -- example: {self.example}\n")
+    def use_join(self):
+        return self.type.__contains__("(id)")
 
-    def print_rails_generator(self):
-        type_fmt = "references" if self.type.__contains__("(id)") else self.type
-        index_fmt = ":index" if self.index else ""
-        print(f"{self.id}:{type_fmt}{index_fmt} \\")
+    def use_index(self):
+        return self.index or self.use_join()
 
-    def print_plantuml(self):
-        index_fmt = "+" if self.index else ""
-        print(f"  {self.id} : {self.type}{index_fmt}")
+    def as_plus_index(self):
+        return "+" if self.use_index() else ""
+
+    def as_markdown(self):
+        return f"* {self.id}: {self.type}{self.as_plus_index()} -- example: {self.example}\n\n"
+
+    def as_plantuml(self):
+        s = f"  {self.id} : {self.type}{self.as_plus_index()}\n"
         if self.uml:
-            print(self.uml)
+            s += f"\n{self.uml}\n"
+        return s
 
+    def as_rails_generator(self):
+        return f"{self.id}:{self.as_rails_generator_type()}{self.as_rails_generator_index()} \\\n"
+
+    def as_rails_generator_type(self):
+        if self.use_join():
+            return "references"
+        # Search for a type with a constraint e.g. "string(1)"
+        x = re.search("(string)\((\d+)\)", self.type)
+        if x:
+            # Return a quoted type and curly constraint e.g. "\"string{1}\""
+            return "\"{}{{{}}}\"".format(x.group(1), x.group(2))
+        return self.type
+
+    def as_rails_generator_index(self):
+        return ":index" if self.use_index() else ""
+        
 def parse_attribute(id, y):
     return Attribute(id, y['type'], y.get('index', False), y['example'], y.get('uml', None))
 
@@ -81,14 +101,14 @@ def parse_entities(y):
 
 def print_markdown(entities):
     for entity in entities:
-        entity.print_markdown()
+        print(entity.as_markdown())
 
 def print_rails_generator(entities):
     print("#!/bin/sh")
     print("set -euf")
     print()
     for entity in entities:
-        entity.print_rails_generator()
+        print(entity.as_rails_generator())
 
 def print_plantuml(entities):
     print("@startuml uml")
@@ -97,7 +117,7 @@ def print_plantuml(entities):
     print("hide circle")
     print()
     for entity in entities:
-        entity.print_plantuml()
+        print(entity.as_plantuml())
     print("@enduml")
 
 y = yaml.safe_load(sys.stdin.read())
