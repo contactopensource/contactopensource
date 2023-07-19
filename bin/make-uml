@@ -2,4 +2,6 @@
 
 top=$(git rev-parse --show-toplevel)
 
-find $top/doc/concepts/*/uml.plantuml -exec dirname {} \; | while read x; do test -f "$x/uml.png" || (echo "$x" && cd "$x" && plantuml uml.plantuml); done
+for subdir in packages concepts; do
+    find $top/doc/$subdir/*/uml.plantuml -exec dirname {} \; | while read x; do test -f "$x/uml.png" || (echo "$x" && cd "$x" && plantuml uml.plantuml); done
+done
