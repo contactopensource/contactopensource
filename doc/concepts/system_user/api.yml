@@ -1,10 +1,13 @@
 system_user:
+  summary: System user, such as for managing system file access.
   attributes:
-      - uid:
-        summary: uid
-        type: integer
-        example: 1000
-      - name:
-        summary: name
-        type: text
-        example: alice
+    uid:
+      summary: uid
+      type: integer
+      index: true
+      example: 1
+    key:
+      summary: key
+      type: string
+      index: true
+      example: root

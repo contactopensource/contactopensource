@@ -3,6 +3,8 @@ edge
 user
 group
 credential
+access_tenant
+access_occupancy
 access_agent
 access_assignment
 access_attribute

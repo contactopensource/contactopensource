@@ -14,7 +14,7 @@ locale:
         type: text
         example: 'US' is United States
       - script_code:
-        summary: See: http://www.unicode.org/iso15924/codelists.html
+        summary: See http://www.unicode.org/iso15924/codelists.html
         type: text
         example: 'Latn' is Latin script
       - region_code:
@@ -27,7 +27,7 @@ locale:
         example: 'TH' is Thai digit shapes
     - Separator:
       - decimal_separator:
-        summary: See: https://en.wikipedia.org/wiki/Decimal_separator
+        summary: See https://en.wikipedia.org/wiki/Decimal_separator
         type: text
         example: '.' is the decimal separator of 'en-US'
       - grouping_separator:

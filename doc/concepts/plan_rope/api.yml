@@ -1,19 +1,19 @@
 plan_rope:
-    attributes:
-      - Main:
-        - realistic_id:
-          summary: realistic id
-          type: id
-          example: TODO
-        - optimistic_id:
-          summary: optimistic id
-          type: id
-          example: TODO
-        - pessimistic_id:
-          summary: pessimistic id
-          type: id
-          example: TODO
-        - equilabristic_id:
-          summary: equilabristic id
-          type: id
-          example: 
+  summary: Plan with ROPE criteria.
+  attributes:
+    realistic_id:
+      summary: realistic id
+      type: plan_item(id)
+      example: TODO
+    optimistic_id:
+      summary: optimistic id
+      type: plan_item(id)
+      example: TODO
+    pessimistic_id:
+      summary: pessimistic id
+      type: plan_item(id)
+      example: TODO
+    equilibristic_id:
+      summary: equilibristic id
+      type: plan_item(id)
+      example: TODO

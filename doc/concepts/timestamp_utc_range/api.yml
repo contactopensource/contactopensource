@@ -1,0 +1,12 @@
+timestamp_utc_range
+  summary: timestamp UTC range
+  attributes:
+    start:
+      summary: start
+      type: timestamp
+      example: 2020-01-01T00:00:00±00:00
+    stop:
+      summary: stop
+      type: timestamp
+      example: 2030-01-01T00:00:00±00:00
+    length: decimal -- example: 3.154e+8

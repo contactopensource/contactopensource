@@ -3,9 +3,7 @@ access_permission:
   attributes:
     access_attribute_it:
       type: access_attribute(id)
-      index: true
-      example: access attribute \"reader\"
+      example: access attribute 'reader'
     access_operation_id:
       type: access_operation(id)
-      index: true
-      example: access operation \"read\"
+      example: access operation 'read'

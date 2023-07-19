@@ -1,10 +1,13 @@
 system_proc:
+  summary: System process, such as for a running program.
   attributes:
-      - pid:
-        summary: pid
-        type: integer
-        example: 1000
-      - name:
-        summary: name
-        type: text
-        example: /bin/sh --version
+    pid:
+      summary: pid
+      type: integer
+      index: true
+      example: 1000
+    key:
+      summary: name
+      type: text
+      index: true
+      example: /bin/sh --version

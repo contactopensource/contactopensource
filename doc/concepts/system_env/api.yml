@@ -1,0 +1,12 @@
+system_env:
+  summary: System environment variable, such as for managing configurations and settings.
+  attributes:
+    key:
+      summary: key
+      type: string
+      index: true
+      example: 'EDITOR'
+    value:
+      summary: value
+      type: text
+      example: '/bin/vi'

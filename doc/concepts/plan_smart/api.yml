@@ -1,23 +1,23 @@
 plan_smart:
-    attributes:
-      - Main:
-        - specific_id:
-          summary: specific id
-          type: id
-          example: TODO
-        - measurable_id:
-          summary: measurable id
-          type: id
-          example: TODO
-        - actionable_id:
-          summary: actionable id
-          type: id
-          example: TODO
-        - relevant_id:
-          summary: relevant id
-          type: id
-          example: TODO
-        - timely_id:
-          summary: timely id
-          type: id
-          example: 
+  summary: Plan with SMART criteria.
+  attributes:
+    specific_id:
+      summary: specific id
+      type: plan_item(id)
+      example: TODO
+    measurable_id:
+      summary: measurable id
+      type: plan_item(id)
+      example: TODO
+    actionable_id:
+      summary: actionable id
+      type: plan_item(id)
+      example: TODO
+    relevant_id:
+      summary: relevant id
+      type: plan_item(id)
+      example: TODO
+    timely_id:
+      summary: timely id
+      type: plan_item(id)
+      example: TODO

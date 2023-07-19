@@ -1,10 +1,11 @@
 unit:
+  summary: A unit of measurement, such as metre, gram, second
   attributes:
-      - name:
-        summary: name
-        type: text
-        example: second
-      - symbol:
-        summary: symbol
-        type: text
-        example: s
+    name:
+      summary: name
+      type: text
+      example: second
+    symbol:
+      summary: symbol
+      type: text
+      example: s

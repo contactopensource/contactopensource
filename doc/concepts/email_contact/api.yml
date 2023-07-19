@@ -1,7 +1,7 @@
 email_contact:
   attributes:
     address:
-      summary: See: https://tools.ietf.org/html/rfc5322
+      summary: See https://tools.ietf.org/html/rfc5322
       type: text
       example: Alice Adams <alice@example.com>
     display_name:

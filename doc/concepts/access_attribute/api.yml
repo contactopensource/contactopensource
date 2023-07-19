@@ -10,23 +10,21 @@ access_attribute_locale:
   attributes:
     access_attribute_id:
       type: access_attribute(id)
-      index: true
       example: id
     locale_id:
       type: locale(id)
-      index: true
-      example: locale for "English - United States"
+      example: locale for 'English - United States'
     name:
       type: string
       index: true
-      example: "\"reader\""
+      example: 'reader'
     summary:
       type: string
-      example: "\"Access attribute 'reader' provides read access.\""
+      example: 'Access attribute 'reader' provides read access.'
     description:
       type: text
-      example: "\"Access attribute 'reader' provides read access, such as for show, list, print, etc.\""
+      example: 'Access attribute 'reader' provides read access, such as for show, list, print, etc.'
     disambiguation:
       type: text
-      example: "\"This text is a disambiguation description that explains the difference between this item and others.\""
+      example: 'This text explains the difference between this item and others.'
   uml: access_attribute ||-r-o{ access_attribute_locale

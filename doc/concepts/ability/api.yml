@@ -10,23 +10,21 @@ ability_locale:
   attributes:
     ability_id:
       type: ability(id)
-      index: true
       example: id
     locale_id:
       type: locale(id)
-      index: true
-      example: locale for "English - United States"
+      example: locale for 'English - United States'
     name:
       type: string
       index: true
-      example: "\"Example Name\""
+      example: 'Example Name'
     summary:
       type: string
-      example: "\"Example summary text.\""
+      example: 'Example summary text.'
     description:
       type: text
-      example: "\"Example description text.\""
+      example: 'Example description text.'
     disambiguation:
       type: text
-      example: "This text explains the difference between this item and others."
+      example: 'This text explains the difference between this item and others.'
   uml: ability ||-r-o{ ability_locale

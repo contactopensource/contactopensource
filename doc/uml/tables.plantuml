@@ -510,7 +510,7 @@ entity color_point_kit {
   html_color_name : string+
   x11_color_name : string+
   color_naming_system_name : string+
-  pantone_matching_system_name : string+
+  pantone_color_name : string+
 }
 
 ' a.k.a. RGB-24
@@ -1060,7 +1060,7 @@ entity html_color_name {
   name : string+
 }
 
-entity pantone_matching_system {
+entity pantone_color {
   number : integer
   name : string+
 }

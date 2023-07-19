@@ -4,7 +4,7 @@
 
 ## Node
 
-Example: Alice node
+example: Alice node
 
 * id: c9d5a052adab471f2d0e63054a535793
 
@@ -18,7 +18,7 @@ Example: Alice node
 
 * number: 111.111
 
-Example: Bob node
+example: Bob node
 
 * id: 88f9eba69345b623bafcc2a50e53f2f8
 
@@ -35,7 +35,7 @@ Example: Bob node
 
 ### Person
 
-Example: Alice
+example: Alice
 
 * id: cc1143129505d87f5f0a044b7dbef236
 
@@ -43,7 +43,7 @@ Example: Alice
 
 * died_date: 2099-01-01
 
-Example: Bob
+example: Bob
 
 * id: 0f8a222d89c986b4a95ad60a55fad6e6
 
@@ -54,7 +54,7 @@ Example: Bob
 
 ### Person name
 
-Example: Dr. Alice Amy Adams Jr.
+example: Dr. Alice Amy Adams Jr.
 
 * id: cc1143129505d87f5f0a044b7dbef236
 
@@ -94,7 +94,7 @@ Example: Dr. Alice Amy Adams Jr.
 
 * nickname_phonetic: "Allee"
 
-Example: Hon. Bob Brian Brown Sr.
+example: Hon. Bob Brian Brown Sr.
 
 * id: 925561d3c5d097b690d029ef03d08721
 
@@ -137,7 +137,7 @@ Example: Hon. Bob Brian Brown Sr.
 
 ### Person pronouns
 
-Example: she, her, etc.
+example: she, her, etc.
 
 * id: cc1143129505d87f5f0a044b7dbef236
 
@@ -155,7 +155,7 @@ Example: she, her, etc.
 
 * disjunctive_pronoun: "her"
 
-Example: he, him, etc.
+example: he, him, etc.
 
 * id: b16790a15e769541cd1b81ca4fe33a72
 
@@ -177,7 +177,7 @@ Example: he, him, etc.
 
 ## Event
 
-Example: Lunch
+example: Lunch
 
 * id: d1e6f8124492cf2a0597cdb8bc059017
 
@@ -192,7 +192,7 @@ Example: Lunch
 
 ## Organizations
 
-Example: Acme Agency
+example: Acme Agency
 
 * id: 423f36dcba577aecb7c127b898c00183
 
@@ -208,7 +208,7 @@ Example: Acme Agency
 
 * star_count: 5
 
-Example: Biotech Business
+example: Biotech Business
 
 * id: 3855b426c0aa5138bbe35cb774746f48
 
@@ -227,13 +227,13 @@ Example: Biotech Business
 
 ## Date Time Range
 
-Example: one second
+example: one second
 
   * start_as_timestamp_utc: 2020-01-01T00:00:00
 
   * stop_as_timestamp_utc: 2020-01-01T00:00:01
 
-Example: one decade
+example: one decade
 
   * start_as_timestamp_utc: 2020-01-01 00:00:00
 
@@ -296,7 +296,7 @@ Modifiers:
 
 ## Email contact
 
-Example: Alice Adams <alice@example.com>
+example: Alice Adams <alice@example.com>
 
   * id: dc3200ef1e8066ab892964f9292cd15e
 
@@ -306,7 +306,7 @@ Example: Alice Adams <alice@example.com>
 
   * addr_spec: "alice@example.com"
 
-Example: Bob Brown <bob@example.com>
+example: Bob Brown <bob@example.com>
 
   * id: 92543cb0d9829d78b6188c108e25be9e
 
@@ -320,7 +320,7 @@ Example: Bob Brown <bob@example.com>
 
 ## Geo point
 
-Example: New York Grand Central
+example: New York Grand Central
 
   * id: c8fb5187e718484eefb9e8dceef4cd68
 
@@ -333,7 +333,7 @@ Example: New York Grand Central
   * elevation_as_meters: 39.6
 
 
-Example: New York Grand Central, delta -0.1 latitude, -0.1 longitude
+example: New York Grand Central, delta -0.1 latitude, -0.1 longitude
 
   * id: d3ef3da36e8e835a464b51b00ae9a827
 
@@ -345,7 +345,7 @@ Example: New York Grand Central, delta -0.1 latitude, -0.1 longitude
 
   * elevation_as_meters: 39.6
 
-Example: New York Grand Central, delta +0.1 latitude, +0.1 longitude
+example: New York Grand Central, delta +0.1 latitude, +0.1 longitude
 
   * id: 17c3d2697fea9eeeca776f855b69b394
 
@@ -357,7 +357,7 @@ Example: New York Grand Central, delta +0.1 latitude, +0.1 longitude
 
   * 39.6
 
-Example: San Francisco Ferry Building
+example: San Francisco Ferry Building
 
   * id: 6e7e03c894c96caeee4719e3dcccd339
 
@@ -369,7 +369,7 @@ Example: San Francisco Ferry Building
 
   * elevation: 12.1
 
-Example: San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude
+example: San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude
 
   * id: dffa13312090a7966cc05af0bcecebc4
 
@@ -381,7 +381,7 @@ Example: San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude
 
   * elevation: 12.1
 
-Example: San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude
+example: San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude
 
   * id: a93526cc717f3bc83e32ed2e74d1fc85
 
@@ -396,7 +396,7 @@ Example: San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude
 
 ## Geo circle
 
-Example: New York, Grand Central, radius 1 kilometer
+example: New York, Grand Central, spread 1 kilometer
 
   * id: d4677d7c8f7b034c9ba331087097ed6b
 
@@ -404,7 +404,7 @@ Example: New York, Grand Central, radius 1 kilometer
 
   * spread_as_meters: 1000
 
-Example: San Francisco, Ferry Building, radius 1 kilometer
+example: San Francisco, Ferry Building, spread 1 kilometer
 
   * id: 4b74e5d7848af524199f26ecf7348718
 
@@ -415,7 +415,7 @@ Example: San Francisco, Ferry Building, radius 1 kilometer
 
 ## Geo rectangles
 
-Example: New York, Grand Central, delta -/+ 0.1 latitude/longitude
+example: New York, Grand Central, delta -/+ 0.1 latitude/longitude
 
   * id: 353fc6f3bfc3c56a5a687f9a986af0da
 
@@ -423,7 +423,7 @@ Example: New York, Grand Central, delta -/+ 0.1 latitude/longitude
 
   * geo_point id: 17c3d2697fea9eeeca776f855b69b394 (New York Grand Central, delta +0.1 latitude, +0.1 longitude)
 
-Example: San Francisco, Ferry Building, delta -/+ 0.1 latitude/longitude
+example: San Francisco, Ferry Building, delta -/+ 0.1 latitude/longitude
 
   * id: e809d4983199ea8f89f2915846e8ab9c
 
@@ -434,7 +434,7 @@ Example: San Francisco, Ferry Building, delta -/+ 0.1 latitude/longitude
 
 ## Link contact
 
-Example: New York + Grand Central + Wikipedia link
+example: New York + Grand Central + Wikipedia link
 
   * id: 2a7b687d89d02d308347c7a207de826e
 
@@ -442,7 +442,7 @@ Example: New York + Grand Central + Wikipedia link
 
   * uri: "https://en.wikipedia.org/wiki/Grand_Central_Terminal"
 
-Example: San Francisco + Ferry Building + Wikipedia link
+example: San Francisco + Ferry Building + Wikipedia link
 
   * id: 90aa301cc861104c2646c15c2e7db529
 
@@ -453,7 +453,7 @@ Example: San Francisco + Ferry Building + Wikipedia link
 
 ## Locale
 
-Example: English language + United States
+example: English language + United States
 
   * id: 01e35cdb11f1441a22fffdbbcc398747
 
@@ -481,7 +481,7 @@ Example: English language + United States
 
   * quotation_stop_delimiter: "”"
 
-Example: Chinese language (specifically simplified Mandarin) + China
+example: Chinese language (specifically simplified Mandarin) + China
 
   * id: 0efde58a9b43066ebfb11bd1bf8d7074
 
@@ -512,7 +512,7 @@ Example: Chinese language (specifically simplified Mandarin) + China
 
 ## Media type
 
-Example: text/plain + ASCII
+example: text/plain + ASCII
 
 * id: bb40d818933e8e525d54d6cea27d573e
 
@@ -528,7 +528,7 @@ Example: text/plain + ASCII
 
 * parameters: array["charset=ASCII", "boundary=alpha"]
 
-Example: application/json + UTF-8
+example: application/json + UTF-8
 
 * id: bf029cf3b57788687fe5b0823c80e901
 
@@ -547,7 +547,7 @@ Example: application/json + UTF-8
 
 ## Things (organizations)
 
-Example: Acme Agency
+example: Acme Agency
 
 * id: 4e7e13bcc42c082e9091ba389c06ba4d
 
@@ -567,7 +567,7 @@ Example: Acme Agency
 
 * stop_date: 2099-01-01
 
-Example: Acme Agency, Art Department
+example: Acme Agency, Art Department
 
 * id: ee88f1b3d1e186faa62d881f5393e92b
 
@@ -587,7 +587,7 @@ Example: Acme Agency, Art Department
 
 * stop_date: 2099-01-01
 
-Example: Biotech Business
+example: Biotech Business
 
 * id: f78731aca36b48b1bdf723c9949e8149
 
@@ -607,7 +607,7 @@ Example: Biotech Business
 
 * stop_date: 2099-01-01
 
-Example: Biotech Business, Biology Department
+example: Biotech Business, Biology Department
 
 * id: b59698523e6b32f82fee15e4fd4ab655
 
@@ -626,7 +626,7 @@ Example: Biotech Business, Biology Department
 * stop_date: 2099-01-01
 
 
-Example: Alice's passport credential
+example: Alice's passport credential
 (
   * id: 5c6122ea2ceab2a7374bf42095c6cd3e
 
@@ -639,7 +639,7 @@ Example: Alice's passport credential
   "2030-01-01" -- valid_stop_date
 ),
 
--- Example: Bob"s passport credential
+-- example: Bob"s passport credential
 (
   * id: de2eac04da783ec19c713440e2147c75
 
@@ -835,7 +835,7 @@ INSERT INTO places VALUES
 );
 INSERT INTO postal_contacts VALUES
 
--- Example: New York + Grand Central
+-- example: New York + Grand Central
 (
   * id: f10bf169bbc1df76dc18dd007e09581a
 
@@ -850,7 +850,7 @@ INSERT INTO postal_contacts VALUES
   "1001710017" -- global_location_number_text (fake)
 ),
 
--- Example: San Francisco + Ferry Building
+-- example: San Francisco + Ferry Building
 (
   * id: d819c808f9d6f7b8c3649657693b798b
 
@@ -874,7 +874,7 @@ INSERT INTO postal_contacts VALUES
 --
 INSERT INTO tags VALUES
 
--- Example: tag for New York
+-- example: tag for New York
 (
   * id: 353fc6f3bfc3c56a5a687f9a986af0da
 
@@ -885,7 +885,7 @@ INSERT INTO tags VALUES
 
 ),
 
--- Example: tag for San Francisco
+-- example: tag for San Francisco
 (
   * id: 3bb2085aa5bce9506452fe8ebb9d0103
 
@@ -913,7 +913,7 @@ INSERT INTO tags VALUES
 --
 INSERT INTO tags VALUES
 
--- Example: Grand Central, New York, NY, US + Open Location Code
+-- example: Grand Central, New York, NY, US + Open Location Code
 (
   * id: 353fc6f3bfc3c56a5a687f9a986af0da
 
@@ -924,7 +924,7 @@ INSERT INTO tags VALUES
   "Grand Central, New York, NY, US + Open Location Code" -- description
 ),
 
--- Example: Grand Central, New York, NY, US + What3Words
+-- example: Grand Central, New York, NY, US + What3Words
 (
   * id: c2d3cea54d44a64ad5093c5aaa7076ae
 
@@ -935,7 +935,7 @@ INSERT INTO tags VALUES
   "Grand Central, New York, NY, US + What3Words" -- description
 ),
 
--- Example: Grand Central, New York, NY, US + WhatFreeWords
+-- example: Grand Central, New York, NY, US + WhatFreeWords
 (
   * id: 6e832771f5f844deabce47ebbfc8eba0
 
@@ -946,7 +946,7 @@ INSERT INTO tags VALUES
   "Grand Central, New York, NY, US + WhatFreeWords" -- description
 ),
 
--- Example: Ferry Building, San Francisco, CA, US + Open Location Code
+-- example: Ferry Building, San Francisco, CA, US + Open Location Code
 (
   * id: a15b731ccf676e1340caa969fc3a43cc
 
@@ -957,7 +957,7 @@ INSERT INTO tags VALUES
   "Ferry Building, San Francisco, CA, US + Open Location Code" -- description
 ),
 
--- Example: Ferry Building, San Francisco, CA, US + What3Words
+-- example: Ferry Building, San Francisco, CA, US + What3Words
 (
   * id: 96832a0db64a21acf88fa619ce08b93a
 
@@ -968,7 +968,7 @@ INSERT INTO tags VALUES
   "Ferry Building, San Francisco, CA, US + What3Words" -- description
 ),
 
--- Example: Ferry Building, San Francisco, CA, US + WhatFreeWords
+-- example: Ferry Building, San Francisco, CA, US + WhatFreeWords
 (
   * id: 4a7b52bd2ec81616100990b38fa6fcc6
 
@@ -980,7 +980,7 @@ INSERT INTO tags VALUES
 );
 INSERT INTO phone_contacts VALUES
 
--- Example: New York + Grand Central + telephone for Master"s Office
+-- example: New York + Grand Central + telephone for Master"s Office
 (
   * id: 8e238bdbf3b6c189f9e2ed65b2efbb45
 
@@ -996,7 +996,7 @@ INSERT INTO phone_contacts VALUES
   "3402583" -- e164_subscriber_number
 ),
 
--- Example: San Francisco + Ferry Building + telephone for Lost & Found
+-- example: San Francisco + Ferry Building + telephone for Lost & Found
 (
   * id: 7ea1eb5f6d9075eaa93d12a602dfddb5
 
@@ -1015,37 +1015,37 @@ INSERT INTO phone_contacts VALUES
 
 ## Things (fruits)
 
-Example: apple
+example: apple
 
   * id: d5c7802ecf25359ddc7dde71074f0132
 
   * name: "apple"
 
-Example: banana
+example: banana
 
   * id: deabb3e6a944fd07d5e83de4a3a237b6
 
   * name: "banana"
 
-Example: cherry
+example: cherry
 
   * id: dd17563ba36c20fd4900cc819b1aa45e
 
   name: "cherry"
 
-Example: dewberry
+example: dewberry
 
   * id: 2b543220a8ea7b20a4e2869dae62e3d4
 
   * name: "dewberry"
 
-Example: elderberry
+example: elderberry
 
   * id: d42507da2bbda9c424aca0a268ef5bee
 
   * name: "elderberry"
 
-Example: fig
+example: fig
 
   * id: 9d71ef36473db33ddc5526bd628e6adb
 

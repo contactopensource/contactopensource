@@ -49,12 +49,10 @@ geo_point_locale:
   attributes:
     geo_point_id:
       type: geo_point(id)
-      index: true
       example: id
     locale_id:
       type: locale(id)
-      index: true
-      example: locale for "English - United States"
+      example: locale for 'English - United States'
     name:
       type: string
       index: true

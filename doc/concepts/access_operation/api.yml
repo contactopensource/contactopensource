@@ -10,23 +10,21 @@ access_operation_locale:
   attributes:
     access_operation_id:
       type: access_operation(id)
-      index: true
       example: id
     locale_id:
       type: locale(id)
-      index: true
-      example: locale for "English - United States"
+      example: locale for 'English - United States'
     name:
       type: string
       index: true
-      example: "\"read\""
+      example: "'read'"
     summary:
       type: string
-      example: "\"Access operation 'read' provides read access.\""
+      example: 'Access operation 'read' provides read access.'
     description:
       type: text
-      example: "\"Access operation 'read' provides read access, such as for show, list, print, etc.\""
+      example: 'Access operation 'read' provides read access, such as for show, list, print, etc.'
     disambiguation:
       type: text
-      example: "\"This text is a disambiguation description that explains the difference between this item and others.\""
+      example: 'This text explains the difference between this item and others.'
   uml: access_operation ||-r-o{ access_operation_locale

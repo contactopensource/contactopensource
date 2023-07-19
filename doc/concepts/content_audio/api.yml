@@ -4,7 +4,7 @@ content_audio:
     name:
       summary: name
       type: text
-      example: "\"Blue\" - By Beyoncé"
+      example: 'Blue - By Beyoncé'
     codec_id:
       summary: codec id
       type: codec(id)

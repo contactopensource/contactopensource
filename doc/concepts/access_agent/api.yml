@@ -10,23 +10,21 @@ access_agent_locale:
   attributes:
     access_agent_id:
       type: access_agent(id)
-      index: true
       example: id
     locale_id:
       type: locale(id)
-      index: true
-      example: locale for "English - United States"
+      example: locale for 'English - United States'
     name:
       type: string
       index: true
-      example: "\"Alice Adams\""
+      example: 'Alice Adams'
     summary:
       type: string
-      example: "\"Access agent Alice Adams <alice@example.com>\""
+      example: 'Access agent Alice Adams <alice@example.com>'
     description:
       type: text
-      example: "\"Access agent Alice Adams <alice@example.com> https://example.com/alice\""
+      example: 'Access agent Alice Adams <alice@example.com> https://example.com/alice'
     disambiguation:
       type: text
-      example: "\"This text is a disambiguation description that explains the difference between this item and others.\""
+      example: 'This text explains the difference between this item and others.'
   uml: access_agent ||-r-o{ access_agent_locale

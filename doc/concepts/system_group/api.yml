@@ -1,10 +1,13 @@
 system_group:
+  summary: System group, such as for managing system file access.
   attributes:
-      - gid:
-        summary: gid
-        type: integer
-        example: 1000
-      - name:
-        summary: name
-        type: text
-        example: administrator
+    gid:
+      summary: gid
+      type: integer
+      index: true
+      example: 1
+    key:
+      summary: key
+      type: string
+      index: true
+      example: 'wheel'

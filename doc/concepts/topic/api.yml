@@ -1,6 +1,0 @@
-topic:
-  attributes:
-      - name:
-        summary: name
-        type: text
-        example: TODO

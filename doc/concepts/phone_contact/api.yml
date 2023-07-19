@@ -1,36 +1,38 @@
 phone_contact:
+  summary: See https://en.wikipedia.org/wiki/E.164
   attributes:
-      - label:
-        summary: label
-        type: text
-        example: mobile
-      - number_text:
-        summary: number text
-        type: text
-        example: 1 (415) 555-0000
-    - E.164:
-      summary: See: https://en.wikipedia.org/wiki/E.164
-      - e164_text:
-        summary: e164 text
-        type: varchar
-        example: 14155550000 means United States country code, San Franicsco area code, etc.
-      - e164_country_code:
-        summary: e164 country code
-        type: varchar
-        example: 1 means United States
-      - e164_national_destination_code:
-        summary: e164 national destination code
-        type: varchar
-        example: 415 means a United States area code that goes to San Francisco
-      - e164_group_identification_code:
-        summary: e164 group identification code
-        type: varchar
-        example: TODO
-      - e164_trial_identification_code:
-        summary: e164 trial identification code
-        type: varchar
-        example: TODO
-      - e164_subscriber_number:
-        summary: e164 subscriber number
-        type: varchar
-        example: 5550000 means a local number, without country code or national destination code
+    label:
+      summary: label
+      type: text
+      example: mobile
+    number_text:
+      summary: number text
+      type: text
+      example: 1 (415) 555-0000
+    e164_text:
+      summary: e164 text
+      type: string(15)
+      index: true
+      example: 14155550000 means United States country code, San Francisco area code, etc.
+    e164_country_code:
+      summary: e164 country code
+      type: string(3)
+      index: true
+      example: 1 means United States
+    e164_national_destination_code:
+      summary: e164 national destination code
+      type: string(13)
+      index: true
+      example: 415 means San Francisco area code, within United States.
+    e164_group_identification_code:
+      summary: e164 group identification code
+      type: string(4)
+      example: TODO
+    e164_trial_identification_code:
+      summary: e164 trial identification code
+      type: string(3)
+      example: TODO
+    e164_subscriber_number:
+      summary: e164 subscriber number
+      type: string(14)
+      example: 5550000 means a local number, without country code or national destination code

@@ -1,22 +1,22 @@
 color_point_kit:
   attributes:
     hex:
-      summary: hexadecimal six-character uppercase code
-      type: text
+      summary: hexadecimal-lowercase six-character code
+      type: hexdigit(6)+ 
       example: FF0088 means purple
     html_color_name:
-      summary: See: https://en.wikipedia.org/wiki/Web_colors#HTML_color_names
+      summary: See https://en.wikipedia.org/wiki/Web_colors#HTML_color_names
       type: text
       example: red
     x11_color_name:
-      summary: See: https://en.wikipedia.org/wiki/X11_color_names
+      summary: See https://en.wikipedia.org/wiki/X11_color_names
       type: text
       example: red
     color_naming_system_name:
-      summary: See: https://en.wikipedia.org/wiki/Color_Naming_System
+      summary: See https://en.wikipedia.org/wiki/Color_Naming_System
       type: text
       example: red
     pantone_color_name:
-      summary: See: https://en.wikipedia.org/wiki/Pantone
+      summary: See https://en.wikipedia.org/wiki/Pantone
       type: text
       example: red
