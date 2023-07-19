@@ -1,0 +1,30 @@
+purchase_payment:
+  summary: Purchase payment.
+  attributes:
+    key:
+      type: string
+      index: true
+      example: purchase_payment_example
+purchase_payment_locale:
+  summary: Localization.
+  attributes:
+    purchase_payment_id:
+      type: purchase_payment(id)
+      example: id
+    locale_id:
+      type: locale(id)
+      example: locale for 'English - United States'
+    name:
+      type: string
+      index: true
+      example: "'123'"
+    summary:
+      type: string
+      example: 'Payment #123 2022-01-01 $10.00'
+    description:
+      type: text
+      example: 'Payment #123, date 2022-01-01, amount $10.00'
+    disambiguation:
+      type: text
+      example: 'This text explains the difference between this item and others.'
+  uml: purchase_payment ||-r-o{ purchase_payment_locale
