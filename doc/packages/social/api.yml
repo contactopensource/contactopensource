@@ -1,0 +1,13 @@
+social:
+  summary: Social package for social-related concepts, such as social media, social networks, social sharing, etc.
+  entities:
+    post
+    feed
+    page
+    room
+    role
+    group
+    topic
+    portal
+    message
+    notification

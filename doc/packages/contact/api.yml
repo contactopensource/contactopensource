@@ -1,0 +1,7 @@
+contact:
+  summary: Contact package for contact-related concepts.
+  entities:
+    uri_contact
+    email_contact
+    phone_contact
+    postal_contact

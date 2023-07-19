@@ -1,0 +1,7 @@
+base:
+  summary: Base package for base-related concepts.
+  entities:
+    note
+    role
+    group
+    trait

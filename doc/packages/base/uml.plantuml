@@ -1,6 +1,0 @@
-package Base {
-  entity note
-  entity role
-  entity group
-  entity trait
-}

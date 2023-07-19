@@ -1,21 +1,22 @@
-package Concept {
-  entity person
-  entity person_locale
-  entity place
-  entity place_locale
-  entity thing
-  entity thing_locale
-  entity event
-  entity event_locale
-  entity artist
-  entity album
-  entity song
-  entity book
-  entity when
-  entity job_opening
-  entity movie
-  entity offer
-  entity organization
-  entity sport
-  entity travel
-}
+TODO:
+  summary: TODO
+  entities:
+    person
+    person_locale
+    place
+    place_locale
+    thing
+    thing_locale
+    event
+    event_locale
+    artist
+    album
+    song
+    book
+    when
+    job_opening
+    movie
+    offer
+    organization
+    sport
+    travel

@@ -1,0 +1,15 @@
+data:
+  summary: Data package for data-related concepts.
+  entities:
+    unit
+    tag
+    pair
+    note
+    codec
+    locale
+    calendar_system
+    measurement_system
+    media_type
+    microdata_item
+    currency_type
+    license_type

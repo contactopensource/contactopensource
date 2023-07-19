@@ -1,0 +1,5 @@
+graph:
+  summary: Graph package for graph concepts, meaning nodes and edges.
+  entities:
+    node
+    edge
