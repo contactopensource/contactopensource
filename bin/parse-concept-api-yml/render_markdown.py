@@ -1,19 +1,13 @@
-class RenderMarkdown:
+from render_abstract import RenderAbstract
+
+class RenderMarkdown(RenderAbstract):
 
     @classmethod
     def package(cls, package):
         s = f"# {package.id}\n\n"
         s += f"{package.summary} \n\n"
         s += f"Entities:\n\n"
-        for entity in package.entities:
-            s += cls.entity_id(entity)
-        return s
-
-    @classmethod
-    def entities(cls, entities):
-        s = ""
-        for entity in entities:
-            s += cls.entity(entity)
+        s += ''.join(cls.entity_id, package.entities)
         return s
 
     @classmethod

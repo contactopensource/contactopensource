@@ -1,41 +1,17 @@
 #!/usr/bin/env python3
-import pprint
-import re
 import sys
 import yaml
 
+from package import Package
+from entity import Entity
+from attribute import Attribute
+
+from render_abstract import RenderAbstract
 from render_markdown import RenderMarkdown
 from render_plantuml import RenderPlantUML
 from render_rails_generator import RenderRailsGenerator
-from render_sql import RenderSQL
-
-class Package:
-    def __init__(self, id, summary, entities, uml = None):
-        self.id = id
-        self.summary = summary
-        self.entities = entities
-        self.uml = uml
-
-class Entity:
-    def __init__(self, id, summary, attributes, uml = None):
-        self.id = id
-        self.summary = summary
-        self.attributes = attributes
-        self.uml = uml
-
-class Attribute:
-    def __init__(self, id, type, index, example, uml = None):
-        self.id = id
-        self.type = type
-        self.index = index
-        self.example = example
-        self.uml = uml
-
-    def use_join(self):
-        return self.type.__contains__("(id)")
-
-    def use_index(self):
-        return self.index or self.use_join()
+from render_postgres_migration_up import RenderPostgresMigrationUp
+from render_postgres_migration_down import RenderPostgresMigrationDown
 
 def parse_attribute(id, y):
     return Attribute(id, y['type'], y.get('index', False), y['example'], y.get('uml', None))
@@ -68,7 +44,9 @@ y = yaml.safe_load(sys.stdin.read())
 #print(yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
 entities = parse_entities(y)
 
-#print(RenderMarkdown.entities(entities))
-#print(RenderPlantUML.entities(entities))
-#print(RenderRailsGenerator.entities(entities))
-print(RenderSQL.entities(entities))
+s = RenderMarkdown.run(entities)
+s = RenderPlantUML.run(entities)
+s = RenderRailsGenerator.run(entities)
+s = RenderPostgresMigrationUp.run(entities)
+
+print(s.strip())

@@ -1,34 +1,29 @@
 import re
+from render_abstract import RenderAbstract
 
-class RenderRailsGenerator:
+class RenderRailsGenerator(RenderAbstract):
 
+    @classmethod
+    def run(cls, entities):
+        return cls.entities(entities)
+    
     @classmethod
     def package(cls, package):
         return ""
 
     @classmethod
-    def entities(cls, entities):
+    def run(cls, entities):
         s = "#!/bin/sh\n"
         s += "set -euf\n"
         s += "\n"
-        for entity in entities:
-            s += cls.entity(entity)
+        s += ''.join(map(cls.entity, entities))
         return s
 
     @classmethod
     def entity(cls, entity):
         s = "rails generate scaffold \\\n"
         s += f"    {entity.id} \\\n"
-        s += "        tenant_id:id \\\n"
-        s += "        parent_id:id \\\n"
-        s += "        set_id:id \\\n"
-        s += "        type_id:id \\\n"
-        s += "        state_id:id \\\n"
-        s += "        created_at:datetime \\\n"
-        s += "        updated_at:datetime \\\n"
-        s += "        state:text:index \\\n"
-        for attribute in entity.attributes:
-            s += "        " + cls.attribute(attribute)
+        s += ''.join(map(cls.attribute, entity.attributes))
         s += "    --force \\\n"
         s += "    --no-timestamps \\\n"
         s += "\n"
@@ -36,7 +31,13 @@ class RenderRailsGenerator:
 
     @classmethod
     def attribute(cls, attribute):
-        return f"{attribute.id}:{cls.attribute_type(attribute)}{cls.attribute_index(attribute)} \\\n"
+        return f"        {attribute.id}:{cls.attribute_type(attribute)}{cls.attribute_index(attribute)} \\\n"
+
+    attribute_type_map = {
+        'latitude', 'latitude',
+        'longitude', 'longitude',
+        'url', 'text',
+    };
 
     @classmethod
     def attribute_type(cls, attribute):
