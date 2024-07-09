@@ -17,10 +17,11 @@ Or via command line:
     LOGLEVEL=INFO parse-api-yml-to-outputs
 """
 
+import logging
 import os
+import pprint
 import sys
 import yaml
-import logging
 
 from package import Package
 from entity import Entity
@@ -105,7 +106,7 @@ def parse_entity(id, y):
     return Entity(
         id, 
         y.get('summary', None), 
-        parse_attributes(y.get('attributes', None)), 
+        parse_attributes(y.get('attributes', None)),
         y.get('uml', None)
     )
 
@@ -170,7 +171,10 @@ def parse_path(path: os.PathLike):
     with open(path, 'r') as file:
         y = yaml.safe_load(file)
         logging.info(f"\n\n###########################################\n\nYAML {concept}\n\n" + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
+
         entities = parse_entities(y)
+        for entity in entities:
+            logging.info(f"\n\n###########################################\n\nEntity {entity}\n\n")
 
         s = RenderMarkdown.run(entities)
         logging.info(f"\n\n###########################################\n\nRenderMarkdown {concept}\n\n" + s)

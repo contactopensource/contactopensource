@@ -2,10 +2,9 @@ access_assignment:
   summary: Access control assignment, which joins access_agent and access_attribute.
   context: Access
   attributes:
-    Join:
-      access_agent_id:
-        type: access_agent(id)
-        example: access agent "alice"
-      access_attribute_id:
-        type: access_attribute(id)
-        example: access attribute "reader"
+    access_agent_id:
+      type: access_agent(id)
+      example: access agent "alice"
+    access_attribute_id:
+      type: access_attribute(id)
+      example: access attribute "reader"

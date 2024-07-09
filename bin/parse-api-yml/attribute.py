@@ -34,3 +34,6 @@ class Attribute:
 
     def use_index(self):
         return self.index or self.use_join()
+
+    def __str__(self):
+        return f"id: {self.id}, type: {self.type}, index: {self.index}, example: {self.example}, uml: {self.uml}"

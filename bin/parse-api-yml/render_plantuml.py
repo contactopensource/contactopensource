@@ -28,8 +28,9 @@ class RenderPlantUML(RenderAbstract):
 
     @classmethod
     def entity(cls, entity):
-        s = f"entity {entity.id} " + "{\n"
-        s += cls.attributes(entity.attributes)
+        s = f"entity {entity.id} {{\n"
+        if entity.attributes is not None:
+            s += cls.attributes(entity.attributes)
         s += "}\n"
         if entity.uml:
             s += f"\n{entity.uml}\n"

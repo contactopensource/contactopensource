@@ -1,11 +1,10 @@
 access_permission:
-  summary: Access control permission, which joins an access_attribute and an access_operation.
+  summary: Access control permission, which joins access_attribute and access_operation.
   context: Access
   attributes:
-    Join:
-      access_attribute_it:
-        type: access_attribute(id)
-        example: access attribute "reader"
-      access_operation_id:
-        type: access_operation(id)
-        example: access operation "read"
+    access_attribute_it:
+      type: access_attribute(id)
+      example: access attribute "reader"
+    access_operation_id:
+      type: access_operation(id)
+      example: access operation "read"

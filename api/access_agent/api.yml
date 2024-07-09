@@ -1,13 +1,12 @@
 access_agent:
   summary: Access control agent.
   context: Access
+  uml: access_agent ||-r-o{ access_agent_locale
   attributes:
     key:
       type: string
       index: true
       example: access_agent_example
-  uml: access_agent ||-r-o{ access_agent_locale
-
 access_agent_locale:
   attributes:
     name:
@@ -23,3 +22,4 @@ access_agent_locale:
     disambiguation:
       type: text
       example: 'This text explains the difference between this item and others.'
+

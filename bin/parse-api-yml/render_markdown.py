@@ -7,7 +7,7 @@ class RenderMarkdown(RenderAbstract):
         s = f"# {package.id}\n\n"
         s += f"{package.summary} \n\n"
         s += f"Entities:\n\n"
-        s += ''.join(cls.entity_id, package.entities)
+        s += "\n\n".join(cls.entity_id, package.entities)
         return s
 
     @classmethod
@@ -18,10 +18,12 @@ class RenderMarkdown(RenderAbstract):
     @classmethod
     def entity(cls, entity):
         s = f"# {entity.id}\n\n"
-        s += f"{entity.summary} \n\n"
-        s += f"Attributes:\n\n"
-        for attribute in entity.attributes:
-            s += cls.attribute(attribute)
+        if entity.summary is not None:
+            s += f"{entity.summary} \n\n"
+        if entity.attributes is not None:
+            s += f"Attributes:\n\n"
+            for attribute in entity.attributes:
+                s += cls.attribute(attribute)
         return s
 
     @classmethod

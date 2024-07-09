@@ -34,7 +34,7 @@ person_locale:
       summary: The person's middle name(s), such as the inner name in given-middle-family.
       type: text
       example: Amy
-    middle_name_phoenetic:
+    middle_name_phonetic:
       summary: The person's middle name(s) phonetically, such as the inner name in given-middle-family.
       type: text
       example: amy
@@ -50,7 +50,7 @@ person_locale:
       summary: The person's legal name(s), such as the full name in given-middle-family.
       type: text
       example: Alice Amy Adams
-    legal_name_phoenetic:
+    legal_name_phonetic:
       summary: The person's legal name(s) phoentically, such as the full name in given-middle-family.
       type: text
       example: alice amy adams
@@ -58,7 +58,7 @@ person_locale:
       summary: The person's name prefix, such Mx., Dr., Rev.
       type: text
       example: Dr.
-    prefix_name_phoenetic:
+    prefix_name_phonetic:
       summary: The person's name prefix phonetically, such mix, doctor, reverend.
       type: text
       example: doctor
@@ -66,7 +66,7 @@ person_locale:
       summary: The person's name suffix, such Jr., Sr., III
       type: text
       example: Jr.
-    suffix_name_phoenetic:
+    suffix_name_phonetic:
       summary: The person's name suffix phonetically, such junior, senior, the third.
       type: text
       example: junior
@@ -74,7 +74,7 @@ person_locale:
       summary: The person's salutation name, such as on a name tag.
       type: text
       example: Dr. Adams
-    salutation_name_phoenetic:
+    salutation_name_phonetic:
       summary: The person's salutation name phonetically, such as on a name tag.
       type: text
       example: doctor adams
@@ -82,7 +82,7 @@ person_locale:
       summary: The person's addressee name, such as on a postal letter.
       type: text
       example: Dr. Alice Adams Jr.
-    addressee_name_phoenetic:
+    addressee_name_phonetic:
       summary: The person's addressee name phonetically, such as on a postal letter.
       type: text
       example: doctor alice adams junior
