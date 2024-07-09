@@ -1,0 +1,6 @@
+user:
+  summary: User.
+  attributes: 
+    id:
+      type: id
+      example: 1
