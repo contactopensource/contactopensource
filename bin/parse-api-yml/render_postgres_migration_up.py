@@ -9,7 +9,7 @@ class RenderPostgresMigrationUp(RenderAbstract):
     
     @classmethod
     def entity(cls, entity):
-        s = f"CREATE TABLE \"{entity.id}\" (\n"
+        s = f"CREATE TABLE {entity.id} (\n"
         s += ''.join(map(cls.attribute, entity.attributes))
         s += ");\n\n"
         s += ''.join(filter(lambda x: x is not None, map(cls.entity_attribute_index, repeat(entity), entity.attributes)))

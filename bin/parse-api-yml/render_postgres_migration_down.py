@@ -4,7 +4,7 @@ class RenderPostgresMigrationDown(RenderAbstract):
 
     @classmethod
     def entity(cls, entity):
-        s = f"DROP TABLE IF EXISTS \"{entity.id}\";\n"
+        s = f"DROP TABLE IF EXISTS {entity.id};\n"
         for attribute in entity.attributes:
             x = cls.entity_attribute_index(entity, attribute)
             if x != None:
