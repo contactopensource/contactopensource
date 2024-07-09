@@ -1,9 +1,0 @@
-access_permission:
-  summary: Access control permission, which joins an access_attribute and an access_operation.
-  attributes:
-    access_attribute_it:
-      type: access_attribute(id)
-      example: access attribute 'reader'
-    access_operation_id:
-      type: access_operation(id)
-      example: access operation 'read'

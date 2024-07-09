@@ -1,6 +1,0 @@
-user:
-  attributes:
-      - name:
-        summary: name
-        type: text
-        example: Alice

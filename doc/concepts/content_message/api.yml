@@ -1,5 +1,6 @@
 content_message:
   summary: Represent the content media type "message/*".
+  context: Content
   attributes:
     name:
       summary: name

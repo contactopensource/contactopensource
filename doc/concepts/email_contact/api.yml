@@ -1,4 +1,11 @@
 email_contact:
+  summary:>
+
+    An email contact, which is an email address and personal info.
+
+    See https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+
+  context: Contact
   attributes:
     address:
       summary: See https://tools.ietf.org/html/rfc5322

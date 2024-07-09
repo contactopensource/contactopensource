@@ -13,7 +13,7 @@ Attributes:
 
 * course_id : course(id)+ -- example: course for "Biology 101".
 
-* locale_id : locale(id)+ -- example: locale for "English - United States"
+* locale_id : locale(id)+ -- example: id of locale "English - United States"
 
 * name : string+ -- example: "Biology 101"
 

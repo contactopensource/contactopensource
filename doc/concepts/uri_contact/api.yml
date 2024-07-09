@@ -1,10 +1,11 @@
 uri_contact:
   summary:>
 
-    A typical web link, which is a URI plus extras for typical usage.
+    A URI contact, which is a URI plus extras for typical usage.
 
     See https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
+  context: Contact
   attributes:
     text:
       summary: text
@@ -40,7 +41,7 @@ uri_contact:
     locale_id:
       summary: Specify the locale (a.k.a. language code) of the linked document.
       type: locale(id)
-      example: locale for 'English - United States'
+      example: id of locale  'English - United States'
     media_type_id:
       summary: Specifies the media type of the linked document.
       type: media_type(id)

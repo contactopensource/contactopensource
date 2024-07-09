@@ -1,5 +1,6 @@
 media_type:
   summary: Media type classes
+  context: TODO
   attributes:
     text:
       summary: string

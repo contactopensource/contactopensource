@@ -1,5 +1,6 @@
 system_group:
   summary: System group, such as for managing system file access.
+  context: System
   attributes:
     gid:
       summary: gid

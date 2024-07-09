@@ -1,5 +1,6 @@
 person:
   summary: A person.
+  context: TODO
   attributes:
     born_date:
       type: date
@@ -19,6 +20,7 @@ person:
       example: 2070
 person_locale:
   summary: Localized.
+  context: TODO
   attributes:
     given_name:
       summary: The person's given name(s), such as the first name in given-middle-family.

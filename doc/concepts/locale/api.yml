@@ -25,7 +25,7 @@ locale:
         summary: variant code
         type: text
         example: 'TH' is Thai digit shapes
-    - Separator:
+    - Separators:
       - decimal_separator:
         summary: See https://en.wikipedia.org/wiki/Decimal_separator
         type: text

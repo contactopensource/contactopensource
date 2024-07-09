@@ -1,5 +1,6 @@
 system_env:
   summary: System environment variable, such as for managing configurations and settings.
+  context: System
   attributes:
     key:
       summary: key

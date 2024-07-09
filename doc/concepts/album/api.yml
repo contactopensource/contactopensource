@@ -1,5 +1,6 @@
 album:
   summary: Any kind of art collection, such as a song album, photo album, video album.
+  context: TODO
   attributes:
       - name:
         summary: name

@@ -1,4 +1,6 @@
 color_point_kit:
+  summary: Color point kit
+  context: Color
   attributes:
     hex:
       summary: hexadecimal-lowercase six-character code

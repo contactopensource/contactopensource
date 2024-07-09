@@ -1,0 +1,42 @@
+metadata:
+  attributes:
+    id:
+      summary: primary key id
+      type: id
+      example: UUIDv7
+    tenant_uri:
+      summary:  metadata suitable for a multi-tenant database or tenant sharding
+      type: uri
+      example: https://example.com/tenant/acme
+    created_at_timestamp_utc:
+      summary: metadata suitable for time-based synchronization
+      type: timestamp_utc
+      example: 1970-01-01T00:00:00
+    created_at_clock_count:
+      summary: metadata suitable for clock-based Lamport replication
+      type: integer_clock_count
+      example: 1
+    created_by_uri:
+      summary: metadata suitable to link to the user who created this data
+      type: uri
+      example: https://example.com/user/alice
+    updated_at_timestamp_utc:
+      summary: metadata suitable for time-based synchronization
+      type: timestamp_utc
+      example: 1970-01-01T00:00:00
+    updated_at_clock_count:
+      summary: metadata suitable for clock-based Lamport replication
+      type: clock_count
+      example: 1
+    updated_by_uri:
+      summary: metadata such as the a link to the user who is editing
+      type: uri
+      example: https://example.com/user/alice
+    type_uri:
+      summary: metadata suitable for single table inheritance or filtering
+      type: uri
+      example: https://example.com/type/example
+    state_uri:
+      summary: metadata suitable for a state machine or transition chain
+      type: uri
+      example: https://example.com/state/example

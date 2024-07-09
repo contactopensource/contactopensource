@@ -1,5 +1,6 @@
 system_path:
   summary: System path, such as for a system file.
+  context: System
   attributes:
     iid:
       summary: iid

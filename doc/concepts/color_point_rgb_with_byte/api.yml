@@ -1,5 +1,6 @@
 color_point_rgb_with_byte:
   summary: Color point RGB (red, green, blue) with byte
+  context: Color
   attributes:
     red:
       summary: red

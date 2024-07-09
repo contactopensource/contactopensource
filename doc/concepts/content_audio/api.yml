@@ -1,5 +1,6 @@
 content_audio:
   summary: Represent the content media type "audio/*". Any kind of audio, such as a song, speech, soundtrack, etc.
+  context: Content
   attributes:
     name:
       summary: name

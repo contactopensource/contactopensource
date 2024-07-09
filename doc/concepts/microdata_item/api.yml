@@ -1,5 +1,6 @@
 microdata_item:
   summary: Microdata item classes
+  context: TODO
   attributes:
       - item        summary: A valid URL of a vocabulary that describes the item and its properties context.
 type:

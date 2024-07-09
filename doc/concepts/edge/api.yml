@@ -1,6 +1,7 @@
 edge:
   summary:>
     For linking from one node to another node
+  context: Graph
   attributes:
     - Subject:
       - subject_uri:

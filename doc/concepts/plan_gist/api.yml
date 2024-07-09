@@ -1,5 +1,6 @@
 plan_gist:
   summary: Plan with GIST criteria.
+  context: Plan
   attributes:
     goal_id:
       summary: goal id
