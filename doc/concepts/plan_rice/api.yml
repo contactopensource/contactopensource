@@ -1,6 +1,6 @@
 plan_rice:
   summary: Plan with RICE criteria.
-  context: Plan
+  module: Plan
   attributes:
     reach_id:
       summary: reach id

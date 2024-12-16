@@ -219,8 +219,8 @@ CREATE TABLE `orgs` (
 CREATE TABLE `persons` (
     …
     -- Lifetime-related
-    born_date date, -- example: '2000-01-01'
-    died_date date, -- example: '2099-01-01'
+    birth_date date, -- example: '2000-01-01'
+    death_date date, -- example: '2099-01-01'
 
     -- Physical-related
     mass_as_grams numeric(12,9), -- example: TODO

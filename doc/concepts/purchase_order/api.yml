@@ -1,21 +1,20 @@
 purchase_order:
   summary: Purchase order.
-  context: Purchase
+  module: Purchase
   attributes:
     key:
       type: string
       index: true
       example: purchase_order_example
 purchase_order_locale:
-  summary: Locale.
-  context: Purchase
+  summary: locale
+  module: Purchase
   attributes:
     purchase_order_id:
       type: purchase_order(id)
       example: id
     locale_id:
       type: locale(id)
-      example: id of locale  'English - United States'
     name:
       type: string
       index: true

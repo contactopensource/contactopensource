@@ -1,6 +1,6 @@
 content_font:
   summary: Represent the content media type "font/*".
-  context: Content
+  module: Content
   attributes:
     name:
       summary: name

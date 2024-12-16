@@ -1,0 +1,13 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity access_attribute {
+  .. meta ..
+  .. card ..
+  .. main ..
+  key : string+
+}
+
+@enduml

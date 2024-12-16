@@ -1,6 +1,6 @@
 phone_contact:
   summary: See https://en.wikipedia.org/wiki/E.164
-  context: TODO
+  module: TODO
   attributes:
     label:
       summary: label

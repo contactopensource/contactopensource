@@ -1,6 +1,6 @@
 content_video:
   summary: Represent the content media type "video/*". Any type of video, such as a movie, animation, clip, etc.
-  context: Content
+  module: Content
   attributes:
     name:
       summary: name

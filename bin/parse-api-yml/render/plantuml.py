@@ -1,8 +1,11 @@
-from render_abstract import RenderAbstract
+"""
+Render a PlantUML file.
+"""
 
-class RenderPlantUML(RenderAbstract):
+from .abstract import Abstract
 
-    @classmethod
+class PlantUML(Abstract):
+
     def run(cls, entities):
         s = "@startuml uml\n"
         s += "skinparam monochrome true\n"
@@ -13,7 +16,6 @@ class RenderPlantUML(RenderAbstract):
         s += "@enduml\n"
         return s
     
-    @classmethod
     def package(cls, package):
         s = f"package {package.id} " + "{\n"
         s += ''.join(cls.entity_id, package.entities)
@@ -22,25 +24,24 @@ class RenderPlantUML(RenderAbstract):
             s += f"\n{package.uml}\n"
         return s
 
-    @classmethod
     def entity_id(cls, entity):
         return f"{entity.id}\n"
 
-    @classmethod
     def entity(cls, entity):
         s = f"entity {entity.id} {{\n"
-        if entity.attributes is not None:
-            s += cls.attributes(entity.attributes)
+        if entity.attribute_groups is not None:
+            s += cls.attribute_groups(entity.attribute_groups)
         s += "}\n"
         if entity.uml:
             s += f"\n{entity.uml}\n"
         s += "\n"
         return s
 
-    @classmethod
+    def attribute_group(cls, attribute_group):
+        return f"  .. {attribute_group.id} ..\n" + cls.attributes(attribute_group.attributes)
+
     def attribute(cls, attribute):
         return f"  {attribute.id} : {attribute.type}{cls.attribute_index(attribute)}\n"
 
-    @classmethod
     def attribute_index(cls, attribute):
         return "+" if attribute.use_index() else ""

@@ -1,10 +1,13 @@
 access_assignment:
   summary: Access control assignment, which joins access_agent and access_attribute.
-  context: Access
-  attributes:
-    access_agent_id:
-      type: access_agent(id)
-      example: access agent "alice"
-    access_attribute_id:
-      type: access_attribute(id)
-      example: access attribute "reader"
+  module: Access
+  model: Assignment
+  table: access_assignments
+  attribute_groups:
+    - join:
+      - access_agent_id:
+          type: access_agent(id)
+          example: access agent "alice"
+      - access_attribute_id:
+          type: access_attribute(id)
+          example: access attribute "reader"

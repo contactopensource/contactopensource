@@ -1,6 +1,11 @@
 user:
-  summary: User for sign up, sign in, etc.
+  summary: User for sign up, sign in, access control, authentication, authorization, tenant joins, etc.
   attributes: 
-    TODO:
-      type: TODO
-      example: TODO
+    name:
+      help: This "name" field can be whatever the application wants, such as the user's actual name, or sign in username, or social media handle, etc.
+      type: string
+      example: aliceanderson
+    email:
+      help: This "email" attribute is provided because it helps compatibility with many typical web frameworks, which default to usingan "email" attribute, such as for sign up verification, or password reset workflows.
+      type: string
+      example: alice@example.com

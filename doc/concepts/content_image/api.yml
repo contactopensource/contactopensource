@@ -1,6 +1,6 @@
 content_image:
   summary: Represent the content media type "image/*". Any kind of image, such as a photo, illustration, chart, etc.
-  context: Content
+  module: Content
   attributes:
     name:
       summary: name

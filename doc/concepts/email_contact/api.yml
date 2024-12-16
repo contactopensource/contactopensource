@@ -5,7 +5,7 @@ email_contact:
 
     See https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
-  context: Contact
+  module: Contact
   attributes:
     address:
       summary: See https://tools.ietf.org/html/rfc5322

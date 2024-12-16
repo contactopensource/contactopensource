@@ -1,6 +1,6 @@
 plan_rope:
   summary: Plan with ROPE criteria.
-  context: Plan
+  module: Plan
   attributes:
     realistic_id:
       summary: realistic id

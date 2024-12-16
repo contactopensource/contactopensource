@@ -1,6 +1,6 @@
 system_path:
   summary: System path, such as for a system file.
-  context: System
+  module: System
   attributes:
     iid:
       summary: iid

@@ -1,6 +1,6 @@
 node:
   summary: Store an arbitrary chunk of data.
-  context: Graph
+  module: Graph
   attributes:
       uri:
         summary: uri

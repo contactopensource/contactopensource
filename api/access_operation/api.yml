@@ -1,24 +1,14 @@
 access_operation:
   summary: Access control operation.
-  context: Access
-  uml: access_operation ||-r-o{ access_operation_locale
-  attributes:
-    key:
-      type: string
-      index: true
-      example: access_operation_example
-access_operation_locale:
-  attributes:
-    name:
-      type: string
-      index: true
-      example: '"read"'
-    summary:
-      type: string
-      example: 'Access operation "read" provides read access.'
-    description:
-      type: text
-      example: 'Access operation "read" provides read access, such as for show, list, print, etc.'
-    disambiguation:
-      type: text
-      example: 'This text explains the difference between this item and others.'
+  module: Access
+  model: Operation
+  table: access_operations
+  attribute_groups:
+    - meta
+    - card
+    - main:
+      - key:
+          type: string
+          index: true
+          example: access_operation_example
+    

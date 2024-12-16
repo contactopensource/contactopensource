@@ -1,6 +1,6 @@
 color_point_rgba_with_byte:
   summary: Color point RGBA (red, green, blue, alpha) with byte
-  context: Color
+  module: Color
   attributes:
     red:
       summary: red

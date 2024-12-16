@@ -1,6 +1,6 @@
 system_proc:
   summary: System process, such as for a running program.
-  context: System
+  module: System
   attributes:
     pid:
       summary: process id

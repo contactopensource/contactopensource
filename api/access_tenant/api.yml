@@ -1,24 +1,13 @@
 access_tenant:
   summary: Access control tenant.
-  context: Access
-  uml: access_tenant ||-r-o{ access_tenant_locale
+  module: Access
+  model: Tenant
+  table: access_tenants
   attributes:
-    key:
-      type: string
-      index: true
-      example: access_tenant_example
-access_tenant_locale:
-  attributes:
-    name:
-      type: string
-      index: true
-      example: 'ACME'
-    summary:
-      type: string
-      example: 'ACME Warehouse.'
-    description:
-      type: text
-      example: 'ACME Warehouse Incorporated'
-    disambiguation:
-      type: text
-      example: 'This text explains the difference between this item and others.'
+    - meta
+    - card
+    - main:
+      - key:
+          type: string
+          index: true
+          example: access_tenant_example

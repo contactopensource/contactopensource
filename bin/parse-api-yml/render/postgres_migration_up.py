@@ -1,21 +1,22 @@
+"""
+Render a PostgreSQL migration up file.
+"""
+
 from itertools import repeat
-from render_abstract import RenderAbstract
+from .abstract import Abstract
 
-class RenderPostgresMigrationUp(RenderAbstract):
+class PostgresMigrationUp(Abstract):
 
-    @classmethod
     def run(cls, entities):
         return cls.entities(entities)
     
-    @classmethod
     def entity(cls, entity):
         s = f"CREATE TABLE {entity.id} (\n"
-        s += ''.join(map(cls.attribute, entity.attributes))
+        s += ''.join(map(cls.attribute, entity.attribute_groups))
         s += ");\n\n"
-        s += ''.join(filter(lambda x: x is not None, map(cls.entity_attribute_index, repeat(entity), entity.attributes)))
+        s += ''.join(filter(lambda x: x is not None, map(cls.entity_attribute_index, repeat(entity), entity.attribute_groups)))
         return s.strip() + "\n\n"
 
-    @classmethod
     def attribute(cls, attribute):
         return f"  {attribute.id} {cls.attribute_type(attribute)},\n"
 
@@ -25,11 +26,9 @@ class RenderPostgresMigrationUp(RenderAbstract):
         'url', 'text',
     };
 
-    @classmethod
     def attribute_type(cls, attribute):
         return attribute.type
     
-    @classmethod
     def entity_attribute_index(cls, entity, attribute):
         if attribute.use_index():
             id = cls.entity_attribute_index_id(entity, attribute)

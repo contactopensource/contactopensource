@@ -1,25 +1,14 @@
 access_agent:
   summary: Access control agent.
-  context: Access
-  uml: access_agent ||-r-o{ access_agent_locale
-  attributes:
-    key:
-      type: string
-      index: true
-      example: access_agent_example
-access_agent_locale:
-  attributes:
-    name:
-      type: string
-      index: true
-      example: 'Alice Adams'
-    summary:
-      type: string
-      example: 'Access agent Alice Adams <alice@example.com>'
-    description:
-      type: text
-      example: 'Access agent Alice Adams <alice@example.com> https://example.com/alice'
-    disambiguation:
-      type: text
-      example: 'This text explains the difference between this item and others.'
-
+  module: Access
+  model: Agent
+  table: access_agents
+  attribute_groups:
+    - meta
+    - card
+    - main:
+      - key:
+          type: string
+          index: true
+          example: access_agent_example
+  # uml: access_agent ||-r-o{ access_agent_locale

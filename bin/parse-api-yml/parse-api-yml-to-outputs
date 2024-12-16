@@ -5,8 +5,8 @@ Parse the documentation api.yml files to various outputs.
 
 Example:
 
-    find api -name api.yml |
-    parse-api-yml-to-outputs
+    find ./api -name api.yml |
+    ./bin/parse-api-yml-to-outputs/parse-api-yml-to-outputs
 
 Logging is supported such as:
 
@@ -17,138 +17,38 @@ Or via command line:
     LOGLEVEL=INFO parse-api-yml-to-outputs
 """
 
+import argparse
 import logging
 import os
 import pprint
 import sys
 import yaml
+from pathlib import Path
 
 from package import Package
 from entity import Entity
+from attribute_group import AttributeGroup
 from attribute import Attribute
 
-from render_abstract import RenderAbstract
-from render_markdown import RenderMarkdown
-from render_plantuml import RenderPlantUML
-from render_rails_generator import RenderRailsGenerator
-from render_postgres_migration_up import RenderPostgresMigrationUp
-from render_postgres_migration_down import RenderPostgresMigrationDown
+from render.markdown import Markdown as RenderMarkdown
+from render.plantuml import PlantUML as RenderPlantUML
+from render.loco_generate_scaffold_html import LocoGenerateScaffoldHtml as RenderLocoGenerateScaffoldHtml
+from render.phoenix_generate import PhoenixGenerate as RenderPhoenixGenerate
+from render.postgres_migration_up import PostgresMigrationUp as RenderPostgresMigrationUp
+from render.postgres_migration_down import PostgresMigrationDown as RenderPostgresMigrationDown
+from render.rails_generate_scaffold import RailsGenerateScaffold as RenderRailsGenerateScaffold
 
-def parse_packages(y):
-    """
-    Parse packages.
+parser = argparse.ArgumentParser(
+    prog='parse-api-yml-to-outputs',
+    description='Parse the documentation api.yml files to various outputs.',
+    epilog='For help contact joel@joelparkerhenderson.com'
+)
+parser.add_argument("-w", "--write", help="Write outputs to their respective files.", action=argparse.BooleanOptionalAction)
+parser.add_argument("paths", nargs='*')
+args = parser.parse_args()
 
-    Args:
-        y: the packages yaml.
-    """
-    if y is None:
-        return None
-    return list(map(parse_package_kv, y.items()))
-
-def parse_package_kv(kv):
-    """
-    Parse package key-value pair.
-
-    Args:
-        kv: the package key-value pair.
-    """
-    if kv is None:
-        return None
-    return parse_package(*kv)
-
-def parse_package(id, y):
-    """
-    Parse package.
-
-    Args:
-        id: the package id.
-        y: the package yaml.
-    """
-    if y is None:
-        return None
-    return Package(
-        id, 
-        y.get('summary', None)
-    )
-
-def parse_entities(y):
-    """
-    Parse entities.
-
-    Args:
-        y: The entities yaml.
-    """
-    if y is None:
-        return None
-    return list(map(parse_entity_kv, y.items()))
-
-def parse_entity_kv(kv):
-    """
-    Parse entity key-value pair.
-
-    Args:
-        kv: The entity key-value pair.
-    """
-    if kv is None:
-        return None
-    return parse_entity(*kv)
-
-def parse_entity(id, y):
-    """
-    Parse entity.
-
-    Args:
-        id: The entity id.
-        y: The entity yaml.
-    """
-    if y is None:
-        return None
-    return Entity(
-        id, 
-        y.get('summary', None), 
-        parse_attributes(y.get('attributes', None)),
-        y.get('uml', None)
-    )
-
-def parse_attributes(y):
-    """
-    Parse attributes.
-
-    Args:
-        y: The attributes yaml.
-    """
-    if y is None:
-        return None
-    return list(map(parse_attribute_kv, y.items()))
-
-def parse_attribute_kv(kv):
-    """
-    Parse attribute key-value pair.
-
-    Args:
-        kv: The attribute key-value pair.
-    """
-    if kv is None:
-        return None
-    return parse_attribute(*kv)
-
-def parse_attribute(id, y):
-    """
-    Parse attribute id and YAML.
-
-    Args:
-        id: The attribute id.
-        y: The attribute yaml.
-    """
-    if y is None:
-        return None
-    return Attribute(
-        id, 
-        y.get('type', None), 
-        y.get('index', False), 
-        y.get('example', None), 
-        y.get('uml', None)
-    )
+def banner(s):
+    return f"\n\n###########################################\n#\n#  " + s + "\n#\n###########################################\n\n"
 
 def parse_path(path: os.PathLike):
     """
@@ -166,35 +66,64 @@ def parse_path(path: os.PathLike):
     """
     dirname = os.path.dirname(path) # e.g. "./api/user"
     concept = os.path.basename(dirname) # e.g. "user"
-    logging.info(f"parse_path {path} {dirname} {concept}")
 
     with open(path, 'r') as file:
+
         y = yaml.safe_load(file)
-        logging.info(f"\n\n###########################################\n\nYAML {concept}\n\n" + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
+        logging.info(banner(f"YAML {concept}") + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
 
-        entities = parse_entities(y)
+        entities = Entity.parse(y)
         for entity in entities:
-            logging.info(f"\n\n###########################################\n\nEntity {entity}\n\n")
+            logging.info(banner(f"Entity {entity}"))
 
-        s = RenderMarkdown.run(entities)
-        logging.info(f"\n\n###########################################\n\nRenderMarkdown {concept}\n\n" + s)
+        # s = RenderLocoGenerateScaffoldHtml.run(entities)
+        # print(banner(f"Rails Generator {concept}") + s)
+        # if args.write:
+            # print('write: ', dirname + '.loco.sh')
 
-        s = RenderPlantUML.run(entities)
-        logging.info(f"\n\n###########################################\n\nRenderPlantUML {concept}\n\n" + s)
+        # s = RenderMarkdown().run(entities)
+        # print(banner(f"RenderMarkdown {concept}") + s)
+        # if args.write:
+        #     f = open(dirname + '/api.md', 'w')
+        #     f.write(s)
+        #     f.close()
 
-        s = RenderRailsGenerator.run(entities)
-        logging.info(f"\n\n###########################################\n\nRails Generator {concept}\n\n" + s)
+        s = RenderPlantUML().run(entities)
+        print(banner(f"RenderPlantUML {concept}") + s)
+        if args.write:
+            f = open(dirname + '/api.plantuml', 'w')
+            f.write(s)
+            f.close()
 
-        s = RenderPostgresMigrationUp.run(entities)
-        logging.info(f"\n\n###########################################\n\nRenderPostgresMigrationUp {concept}\n\n" + s)
+        # s = RenderPostgresMigrationUp().run(entities)
+        # print(banner(f"RenderPostgresMigrationUp {concept}") + s)
+        # if args.write:
+            # print('write: ', dirname + '/api-postgres-migrate-up.sql')
 
-        s = RenderPostgresMigrationDown.run(entities)
-        logging.info(f"\n\n###########################################\n\nRenderPostgresMigrationDown {concept}\n\n" + s)
+        # s = RenderPostgresMigrationDown().run(entities)
+        # print(banner(f"RenderPostgresMigrationDown {concept}" + s)
+        # if args.write:
+            # print('write: ', dirname + '/api-postgres-migrate-down.sql')
+
+        # s = RenderPhoenixGenerate().run(entities)
+        # print(banner(f"RenderPlantUML {concept}") + s)
+        # if args.write:
+            # print('write: ', dirname + '/api-phoenix-generate.sh')
+
+        # s = RenderRailsGenerateScaffold().run(entities)
+        # print(banner(f"Rails Generator {concept}") + s)
+        # if args.write:
+            # print('write: ', dirname + '/api-rails-generate-scaffold.sh')
 
 def main():
-    logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
-    for line in sys.stdin:
-        parse_path(line.rstrip('\n'))
+    # logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))
+    if args.paths:
+        for path in args.paths:
+            parse_path(path)
+    else:
+        for line in sys.stdin:
+            parse_path(line.rstrip('\n'))
 
 if __name__ == "__main__":
+    print("parse-api-yml-to-outputs")
     main()

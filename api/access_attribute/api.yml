@@ -1,24 +1,14 @@
 access_attribute:
   summary: Access control attribute.
-  context: Access
-  uml: access_attribute ||-r-o{ access_attribute_locale
-  attributes:
-    key:
-      type: string
-      index: true
-      example: access_attribute_example
-access_attribute_locale:
-  attributes:
-    name:
-      type: string
-      index: true
-      example: '"reader"'
-    summary:
-      type: string
-      example: 'Access attribute "reader" provides read access.'
-    description:
-      type: text
-      example: 'Access attribute "reader" provides read access, such as for show, list, print, etc.'
-    disambiguation:
-      type: text
-      example: 'This text explains the difference between this item and others.'
+  module: Access
+  model: Attribute
+  table: access_attributes
+  attribute_groups:
+    - meta
+    - card
+    - main:
+      - key:
+          type: string
+          index: true
+          example: access_attribute_example
+  # uml: access_attribute ||-r-o{ access_attribute_locale

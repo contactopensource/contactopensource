@@ -1,6 +1,6 @@
 unit:
   summary: A unit of measurement, such as metre, gram, second
-  context: TODO
+  module: TODO
   attributes:
     name:
       summary: name

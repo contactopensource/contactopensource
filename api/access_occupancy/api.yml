@@ -1,10 +1,13 @@
 access_occupancy:
   summary: Access control occupancy, which joins access_tenant and access_agent.
-  context: Access
-  attributes:
-    access_tenant_it:
-      type: access_tenant.id
-      example: access tenant 'ACME'
-    access_agent_id:
-      type: access_agent.id
-      example: access agent 'alice'
+  module: Access
+  model: Occupancy
+  table: access_occupancies
+  attribute_groups:
+    - join:
+      - access_tenant_it:
+          type: access_tenant.id
+          example: access tenant 'ACME'
+      - access_agent_id:
+          type: access_agent.id
+          example: access agent 'alice'

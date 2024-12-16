@@ -45,15 +45,14 @@ geo_point:
       type: meters
       example: 1000 means 1 kilometer
 geo_point_locale:
-  summary: Locale.
-  context: TODO
+  summary: locale
+  module: TODO
   attributes:
     geo_point_id:
       type: geo_point(id)
       example: id
     locale_id:
       type: locale(id)
-      example: id of locale  'English - United States'
     name:
       type: string
       index: true

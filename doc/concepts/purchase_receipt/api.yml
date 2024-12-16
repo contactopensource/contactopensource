@@ -1,21 +1,20 @@
 purchase_receipt:
   summary: Purchase receipt.
-  context: Purchase
+  module: Purchase
   attributes:
     key:
       type: string
       index: true
       example: purchase_receipt_example
 purchase_receipt_locale:
-  summary: Locale.
-  context: Purchase
+  summary: locale
+  module: Purchase
   attributes:
     purchase_receipt_id:
       type: purchase_receipt(id)
       example: id
     locale_id:
       type: locale(id)
-      example: id of locale  'English - United States'
     name:
       type: string
       index: true

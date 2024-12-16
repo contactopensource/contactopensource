@@ -1,6 +1,6 @@
 plan_smart:
   summary: Plan with SMART criteria.
-  context: Plan
+  module: Plan
   attributes:
     specific_id:
       summary: specific id

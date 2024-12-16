@@ -1,143 +1,128 @@
 person:
-  summary: A person, such as a typical human being. The person API includes attributes that are generally the same across services, such as names and pronouns. The person API excludes attibutes that vary by service, such as a username, password, email address, phone number, organization name, etc.
-  module: TODO
-  attributes:
-    birth_date:
-      type: date
-      index: true
-      example: 1970-01-01
-    birth_year:
-      type: integer
-      index: true
-      example: 1970
-    death_date:
-      type: date
-      index: true
-      example: 2070-01-01
-    death_year:
-      type: integer
-      index: true
-      example: 2070
-person_locale:
-  summary: Locale.
-  module: TODO
-  attributes:
-    summary:
-    description:
-
-    given_name:
-      summary: The person's given name(s), such as the first name in given-middle-family.
-      type: text
-      example: Alice
-    given_name_phonetic:
-      summary: The person's given name(s) phonetically, such as the first name in given-middle-family.
-      type: text
-      example: alice
-    middle_name:
-      summary: The person's middle name(s), such as the inner name in given-middle-family.
-      type: text
-      example: Amy
-    middle_name_phonetic:
-      summary: The person's middle name(s) phonetically, such as the inner name in given-middle-family.
-      type: text
-      example: amy
-    family_name:
-      summary: The person's family name(s), such as the last name in given-middle-family.
-      type: text
-      example: Adams
-    family_name_phonetic:
-      summary: The person's family name(s) phonetically, such as the last name in given-middle-family.
-      type: text
-      example: adams
-    legal_name:
-      summary: The person's legal name(s), such as the full name in given-middle-family.
-      type: text
-      example: Alice Amy Adams
-    legal_name_phonetic:
-      summary: The person's legal name(s) phoentically, such as the full name in given-middle-family.
-      type: text
-      example: alice amy adams
-    prefix_name:
-      summary: The person's name prefix full text, such Doctor, Reverend, Mix 
-      type: text
-      example: Doctor
-    prefix_name_phonetic:
-      summary: The person's name prefix phonetically, such as doctor, reverend, mix
-      type: text
-      example: doctor
-    prefix_name_abbreviation:
-      summary: The person's name prefix abbreviation, such Dr., Rev., Mx.
-      type: text
-      example: Dr.
-    suffix_name:
-      summary: The person's name suffix full text, such Junior, Senior, The Third
-      type: text
-      example: Junior
-    suffix_name_phonetic:
-      summary: The person's name suffix phonetically, such junior, senior, the third.
-      type: text
-      example: junior
-    suffix_name_abbreviation:
-      summary: The person's name suffix abbreviation, such Jr., Sr., III
-      type: text
-      example: Jr.
-    salutation_name:
-      summary: The person's salutation name full text, such as Doctor Adams.
-      type: text
-      example: Doctor Adams
-    salutation_name_phonetic:
-      summary: The person's salutation name phonetically, such as doctor adams.
-      type: text
-      example: doctor adams
-    salutation_name_abbreviation:
-      summary: The person's salutation name abbreviation, such as on a name tag.
-      type: text
-      example: Dr. Adams
-    addressee_name:
-      summary: The person's addressee name, such as on a postal letter.
-      type: text
-      example: Doctor Alice Adams Junior
-    addressee_name_phonetic:
-      summary: The person's addressee name phonetically, such as on a postal letter.
-      type: text
-      example: doctor alice adams junior
-    addressee_name_abbreviation:
-      summary: The person's addressee name abbreviation, such as on a formal letter.
-      type: text
-      example: Dr. Alice Adams Jr.
-    nickname:
-      summary: The person's nickname, such as for friends and family.
-      type: text
-      example: Ali
-    nickname_phonetic:
-      summary: The person's nickname phonetically, such as for friends and family.
-      type: text
-      example: al-lee
-    subject_pronoun:
-      summary: See https://wikipedia.org/wiki/Subject_pronoun
-      type: text
-      example: "she" as in "She likes Alice."
-    object_pronoun:
-      summary: See https://wikipedia.org/wiki/Object_pronoun
-      type: text
-      example: "her" as in "Alice likes her."
-    dependent_possessive_pronoun:
-      summary: See https://wikipedia.org/wiki/Possessive_pronoun
-      type: text
-      example: "her" as in "Her ideas are good."
-    independent_possessive_pronoun:
-      summary: See https://wikipedia.org/wiki/Possessive_determiner
-      type: text
-      example: "hers" as in "The ideas are hers."
-    reflexive_pronoun:
-      summary: See https://wikipedia.org/wiki/Reflexive_pronoun
-      type: text
-      example: "herself" as in "She likes herself."
-    intensive_pronoun:
-      summary: See https://en.wikipedia.org/wiki/Intensive_pronoun
-      type: text
-      example: "herself" as in "She does it herself."
-    disjunctive_pronoun:
-      summary: See https://wikipedia.org/wiki/Disjunctive_pronoun
-      type: text
-      example: "her" as in "It is her."
+  summary: A person, such as a typical human being. The person API includes attributes that are generally the same across services, such as names and pronouns. The person API excludes attributes that vary by service, such as a username, password, email address, phone number, organization name, etc.
+  module: Basics
+  model: Person
+  table: persons
+  attribute_groups:
+    - metadata
+    - card
+    - names:
+      - given_name:
+          summary: The person's given name(s), such as the first name in given-middle-family.
+          type: text
+          example: Alice
+      - given_name_phonetic:
+          help: The person's given name(s) as International Phonetic Alphabet (IPA), such as the first name in given-middle-family.
+          type: text
+          example: "ˈæləs"
+      - middle_name:
+          help: The person's middle name(s), such as the inner name in given-middle-family.
+          type: text
+          example: Amy
+      - middle_name_phonetic:
+          help: The person's middle name(s) as International Phonetic Alphabet (IPA), such as the inner name in given-middle-family.
+          type: text
+          example: "ˈeɪmi"
+      - family_name:
+          help: The person's family name(s), such as the last name in given-middle-family.
+          type: text
+          example: Adams
+      - family_name_phonetic:
+          help: The person's family name(s) as International Phonetic Alphabet (IPA), such as the last name in given-middle-family.
+          type: text
+          example: "ˈædəmz"
+      - legal_name:
+          help: The person's legal name(s), such as the full name in given-middle-family.
+          type: text
+          example: Alice Amy Adams
+      - legal_name_phonetic:
+          help: The person's legal name(s) as International Phonetic Alphabet (IPA), such as the full name in given-middle-family.
+          type: text
+          example: "ˈæləs ˈeɪmi ˈædəmz"
+      - nickname:
+          help: The person's nickname, such as for friends and family.
+          type: text
+          example: Ali
+      - nickname_phonetic:
+          help: The person's nickname as International Phonetic Alphabet (IPA), such as for friends and family.
+          type: text
+          example: "ˈɑli"
+      - prefix_name:
+          help: The person's name prefix full text, such Doctor, Reverend, Mix 
+          type: text
+          example: Doctor
+      - prefix_name_phonetic:
+          help: The person's name prefix as International Phonetic Alphabet (IPA), such as doctor, reverend, mix
+          type: text
+          example: "ˈdɑktər"
+      - suffix_name:
+          help: The person's name suffix full text, such Junior, Senior, The Third
+          type: text
+          example: Junior
+      - suffix_name_phonetic:
+          help: The person's name suffix as International Phonetic Alphabet (IPA), such junior, senior, the third.
+          type: text
+          example: "ˈʤunjər"
+      - salutation_name:
+          help: The person's salutation name full text, such as Doctor Adams.
+          type: text
+          example: Doctor Adams
+      - salutation_name_phonetic:
+          help: The person's salutation name as International Phonetic Alphabet (IPA), such as doctor adams.
+          type: text
+          example: "ˈdɑktər ˈædəmz"
+      - addressee_name:
+          help: The person's addressee name, such as on a postal letter.
+          type: text
+          example: Doctor Alice Adams Junior
+      - addressee_name_phonetic:
+          help: The person's addressee name as International Phonetic Alphabet (IPA), such as on a postal letter.
+          type: text
+          example: "ˈdɑktər ˈæləs ˈædəmz ˈʤunjər"
+    - pronouns:
+      - subject_pronoun:
+          help: See https://wikipedia.org/wiki/Subject_pronoun
+          type: text
+          example: she as in "She likes Alice."
+      - object_pronoun:
+          help: See https://wikipedia.org/wiki/Object_pronoun
+          type: text
+          example: her as in "Alice likes her."
+      - dependent_possessive_pronoun:
+          help: See https://wikipedia.org/wiki/Possessive_pronoun
+          type: text
+          example: her as in "Her ideas are good."
+      - independent_possessive_pronoun:
+          help: See https://wikipedia.org/wiki/Possessive_determiner
+          type: text
+          example: hers as in "The ideas are hers."
+      - reflexive_pronoun:
+          help: See https://wikipedia.org/wiki/Reflexive_pronoun
+          type: text
+          example: herself as in "She likes herself."
+      - intensive_pronoun:
+          help: See https://en.wikipedia.org/wiki/Intensive_pronoun
+          type: text
+          example: herself as in "She does it herself."
+      - disjunctive_pronoun:
+          help: See https://wikipedia.org/wiki/Disjunctive_pronoun
+          type: text
+          example: her as in "It is her."
+    - lifetime:
+      - birth_date:
+          type: date
+          index: true
+          example: 1970-01-01
+      - birth_date_year:
+          type: integer
+          index: true
+          example: 1970
+      - death_date:
+          type: date
+          index: true
+          example: 2070-01-01
+      - death_date_year:
+          type: integer
+          index: true
+          example: 2070
+  # uml: person ||-r-o{ person_locale

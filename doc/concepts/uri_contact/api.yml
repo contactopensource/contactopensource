@@ -5,7 +5,7 @@ uri_contact:
 
     See https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
-  context: Contact
+  module: Contact
   attributes:
     text:
       summary: text
@@ -39,9 +39,7 @@ uri_contact:
       type: string
       example: hello.txt
     locale_id:
-      summary: Specify the locale (a.k.a. language code) of the linked document.
       type: locale(id)
-      example: id of locale  'English - United States'
     media_type_id:
       summary: Specifies the media type of the linked document.
       type: media_type(id)

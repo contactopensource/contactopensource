@@ -1,6 +1,6 @@
 color_point_cymka_with_unit_interval:
   summary: Color point CYMKA (cyan, yellow, magenta, black, alpha) with unit interval
-  context: Color
+  module: Color
   attributes:
     cyan:
       summary: cyan

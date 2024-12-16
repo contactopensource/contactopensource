@@ -1,17 +1,20 @@
+"""
+Render a Python Django generator.
+
+The generator generates a controller with view, templates, schema and context for an HTML resource.
+"""
+
 import re
-from render_abstract import RenderAbstract
+from .abstract import Abstract
 
-class RenderRailsGenerator(RenderAbstract):
+class DjangoGenerator(Abstract):
 
-    @classmethod
     def run(cls, entities):
         return cls.entities(entities)
     
-    @classmethod
     def package(cls, package):
         return ""
 
-    @classmethod
     def run(cls, entities):
         s = "#!/bin/sh\n"
         s += "set -euf\n"
@@ -19,17 +22,13 @@ class RenderRailsGenerator(RenderAbstract):
         s += ''.join(map(cls.entity, entities))
         return s
 
-    @classmethod
     def entity(cls, entity):
-        s = "rails generate scaffold \\\n"
-        s += f"    {entity.id} \\\n"
-        s += ''.join(map(cls.attribute, entity.attributes))
-        s += "    --force \\\n"
-        s += "    --no-timestamps \\\n"
+        s = "py manage.py startapp \\\n"
+        s += f"    {entity.module} {entity.model} {entity.table} \\\n"
+        s += ''.join(map(cls.attribute, entity.attribute_groups))
         s += "\n"
         return s
 
-    @classmethod
     def attribute(cls, attribute):
         return f"        {attribute.id}:{cls.attribute_type(attribute)}{cls.attribute_index(attribute)} \\\n"
 
@@ -39,7 +38,6 @@ class RenderRailsGenerator(RenderAbstract):
         'url', 'text',
     };
 
-    @classmethod
     def attribute_type(cls, attribute):
         if attribute.use_join():
             return "references"
@@ -50,6 +48,5 @@ class RenderRailsGenerator(RenderAbstract):
             return "\"{}{{{}}}\"".format(x.group(1), x.group(2))
         return attribute.type
 
-    @classmethod
     def attribute_index(cls, attribute):
         return ":index" if attribute.use_index() else ""

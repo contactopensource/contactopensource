@@ -1,6 +1,6 @@
 color_point_rgb_with_unit_interval:
   summary: Color point RGB (red, green, blue) with unit interval
-  context: Color
+  module: Color
   attributes:
     red:
       summary: red

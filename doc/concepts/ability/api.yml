@@ -1,16 +1,14 @@
 ability:
   summary: An ability, such as a skill or talent.
-  context: TODO
+  module: TODO
 ability_locale:
-  summary: Locale.
-  context: TODO
+  summary: locale
+  module: TODO
   attributes:
     ability_id:
       type: ability(id)
-      example: id
     locale_id:
       type: locale(id)
-      example: id of locale  'English - United States'
     name:
       type: string
       index: true

@@ -1,6 +1,6 @@
 content_multipart:
   summary: Represent the content media type "multipart/*".
-  context: Content
+  module: Content
   attributes:
     name:
       summary: name

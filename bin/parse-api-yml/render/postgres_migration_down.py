@@ -1,17 +1,19 @@
-from render_abstract import RenderAbstract
+"""
+Render a PostgreSQL migration down file.
+"""
 
-class RenderPostgresMigrationDown(RenderAbstract):
+from .abstract import Abstract
 
-    @classmethod
+class PostgresMigrationDown(Abstract):
+
     def entity(cls, entity):
         s = f"DROP TABLE IF EXISTS {entity.id};\n"
-        for attribute in entity.attributes:
+        for attribute in entity.attribute_groups:
             x = cls.entity_attribute_index(entity, attribute)
             if x != None:
                 s += x
         return s.strip() + "\n\n"
 
-    @classmethod
     def entity_attribute_index(cls, entity, attribute):
         if attribute.use_index():
             id = cls.entity_attribute_index_id(entity, attribute)

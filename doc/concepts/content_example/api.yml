@@ -1,6 +1,6 @@
 content_example:
   summary: Represent the content media type "example/*".
-  context: Content
+  module: Content
   attributes:
     name:
       summary: name

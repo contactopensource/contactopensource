@@ -1,21 +1,20 @@
 purchase_payment:
   summary: Purchase payment.
-  context: Purchase
+  module: Purchase
   attributes:
     key:
       type: string
       index: true
       example: purchase_payment_example
 purchase_payment_locale:
-  summary: Locale.
-  context: Purchase
+  summary: locale
+  module: Purchase
   attributes:
     purchase_payment_id:
       type: purchase_payment(id)
       example: id
     locale_id:
       type: locale(id)
-      example: id of locale  'English - United States'
     name:
       type: string
       index: true

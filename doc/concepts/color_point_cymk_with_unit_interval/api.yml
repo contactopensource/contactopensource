@@ -1,6 +1,6 @@
 color_point_cymk_as_unit_interval:
   summary: Color point CYMK (cyan, yellow, magenta, black) as unit interval
-  context: Color
+  module: Color
   attributes:
     cyan:
       type: unit_interval

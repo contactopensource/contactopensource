@@ -1,0 +1,25 @@
+organization:
+  summary: An organization, such as a company, team, club, congregation, etc. 
+  module: Account
+  model: Organization
+  table: organizations
+  attributes:
+    - meta
+    - card
+    - lifetime:
+      - start_date:
+          help: The start date, such as when the organization was founded.
+          type: date
+          example: 1970-01-01
+      - start_date_year:
+          help: The start date year, such as when the organization was founded.
+          type: year
+          example: 1970
+      - stop_date:
+          help: The stop date, such as when the organization was disbanded.
+          type: year
+          example: 2070-01-01
+      - stop_date_year:
+          help: The stop date year, such as when the organization was disbanded.
+          type: year
+          example: 2070

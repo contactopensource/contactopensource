@@ -1,6 +1,6 @@
 color_point_cymka_as_byte:
   summary: Color point CYMKA (cyan, yellow, magenta, black, alpha) as byte
-  context: Color
+  module: Color
   attributes:
     cyan:
       summary: cyan
