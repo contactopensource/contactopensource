@@ -23,22 +23,9 @@ Example api.yml file with attribute "Alpha" and attribute "Bravo":
 """
 
 class Attribute:
-    def __init__(self, id, help,type, index, example, uml = None):
-        self.id = id
-        self.help = help
-        self.type = type
-        self.index = index
-        self.example = example
-        self.uml = uml
-
-    def use_join(self):
-        return self.type.__contains__("(id)")
-
-    def use_index(self):
-        return self.index or self.use_join()
 
     def __str__(self):
-        return f"id: {self.id}, help: {self.help}, type: {self.type}, index: {self.index}, example: {self.example}, uml: {self.uml}"
+        return f"id: {self.id}, help: {self.help}, type: {self.type}, nullable: {self.nullable}, unique: {self.unique}, index: {self.index}, example: {self.example}, uml: {self.uml}"
 
     @classmethod
     def parse(cls, y):
@@ -70,13 +57,35 @@ class Attribute:
                 )    
             case dict():
                 (id, y), = y.items()
-                return Attribute(
-                    id,
-                    y.get('help', None), 
-                    y.get('type', None), 
-                    y.get('index', False), 
-                    y.get('example', None), 
-                    y.get('uml', None)
-                )    
+                a = Attribute();
+                a.id = id;
+                a.help = y.get('help', None)
+                a.type = y.get('type', None)
+                a.unique = y.get('unique', False)
+                a.nullable = y.get('nullable', False)
+                a.index = y.get('index', False)
+                a.example = y.get('example', None)
+                a.uml = y.get('uml', None)
+                return a
             case _:
                 raise Exception(y) 
+
+    @staticmethod
+    def parse_nullable(s):
+        if s.__contains__("?"):
+            return True
+        if s.__contains__("!"):
+            return False
+        return None
+        
+    @staticmethod
+    def parse_index(s):
+        return s.__contains__("+")
+
+    @staticmethod
+    def parse_unique(s):
+        return s.__contains__("^")
+
+    @staticmethod
+    def parse_join(s):
+        return s.type.__contains__("(id)")

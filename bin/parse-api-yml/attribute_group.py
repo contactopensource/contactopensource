@@ -17,7 +17,7 @@ Example api.yml file with AttributeGroup "alpha" and AttributeGroup "bravo" and 
 from attribute import Attribute
 
 class AttributeGroup:
-    def __init__(self, id, attributes = None):
+    def __init__(self, id, attributes = []):
         self.id = id
         self.attributes = attributes
 
@@ -50,8 +50,7 @@ class AttributeGroup:
                 return None
             case str():
                 return AttributeGroup(
-                    y,
-                    None
+                    y
                 )    
             case dict():
                 (id, y), = y.items()
