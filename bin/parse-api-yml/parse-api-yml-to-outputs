@@ -76,19 +76,19 @@ def parse_path(path: os.PathLike):
         # if args.write:
             # print('write: ', dirname + '.loco.sh')
 
-        s = render.markdown.render(entities)
-        print(banner(f"RenderMarkdown {concept}") + s)
-        if args.write:
-            f = open(dirname + '/api.md', 'w')
-            f.write(s)
-            f.close()
-
-        # s = RenderPlantUML().run(entities)
-        # print(banner(f"RenderPlantUML {concept}") + s)
+        # s = render.markdown.render(entities)
+        # print(banner(f"render markdown {concept}") + s)
         # if args.write:
-        #     f = open(dirname + '/uml.plantuml', 'w')
+        #     f = open(dirname + '/api.md', 'w')
         #     f.write(s)
         #     f.close()
+
+        s = render.plantuml.render(entities)
+        print(banner(f"render plantuml {concept}") + s)
+        if args.write:
+            f = open(dirname + '/uml.plantuml', 'w')
+            f.write(s)
+            f.close()
 
         # s = RenderPostgresMigrationUp().run(entities)
         # print(banner(f"RenderPostgresMigrationUp {concept}") + s)
