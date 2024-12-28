@@ -1,6 +1,7 @@
 """
 Render a PlantUML file.
 """
+
 from . import entity
 
 def render(entities):
