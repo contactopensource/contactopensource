@@ -4,8 +4,8 @@ access_attribute:
   model: Attribute
   table: access_attributes
   attribute_groups:
-    - meta
-    - card
+    - !include ../_meta.yml
+    - !include ../_card.yml
     - main:
       - key:
           type: string

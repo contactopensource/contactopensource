@@ -4,8 +4,8 @@ organization:
   model: Organization
   table: organizations
   attributes:
-    - meta
-    - card
+    - !include ../_meta.yml
+    - !include ../_card.yml
     - lifetime:
       - start_date:
           help: The start date, such as when the organization was founded.

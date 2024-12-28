@@ -1,0 +1,34 @@
+      card:
+      - title:
+          help: The card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name, or a project's title.
+          type: string(50)
+          index: true
+          example: Alice Anderson
+      - subtitle:
+          help: The card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle, or a project's status.
+          type: string(50)
+          index: true
+          example: "@alice"
+      - summary:
+          type: string
+          example: I am a doctor who helps treat children.
+      - description:
+          type: text
+          example: This text is a description and can be as long as you wish.
+      - disambiguation:
+          type: text
+          example: This text explains the difference between this item and others.
+      - image_1024x1024_url:
+          help: An image URL for the item, 1024x1024 pixels, which is square 1:1 aspect ratio.
+          type: url
+      - image_1024x1024_alt:
+          help: An image URL alternative text description
+          type: text
+      - emoji:
+          help: Any emoji related to the item, such as for a badge, or indicator, or expression, etc.
+          type: text
+          example: "🚀"
+      - star_count:
+          help: A star count from 0-5, such as for a rating, or review, or priority, etc.
+          type: integer
+          example: 5 for the best rating

@@ -16,5 +16,4 @@ clean:
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(@D)/api.yml
 
 */uml.png: */uml.plantuml
-	@echo "make png: " $@
-	plantuml $(@D)/api.plantuml
+	plantuml $(@D)/uml.plantuml

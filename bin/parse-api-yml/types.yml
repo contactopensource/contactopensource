@@ -1,0 +1,70 @@
+- contacts:
+  - email: 
+      help: Email address length because the email specification has pieces that total to 320, though then trims the limit downward to 254.
+      type: string(320)
+  - phone:
+      help: Arbitrary limit long enough for international numbers and extensions.
+      type: string(75)
+- internet:
+  - hostname:
+      help: POSIX standard is not to exceed 255 bytes.
+      type: string(255)
+  - uri:
+      help: URI can be arbitrarily long.
+      type: string
+  - url:
+      help: URL can be arbitrarily long.
+      type: string
+- measurements:
+  - height:
+      help: Height as meters.
+      type: decimal(15, 10)
+  - width:
+      help: Width as meters.
+      type: decimal(15, 10)
+  - depth:
+      help: Depth as meters.
+      type: decimal(15, 10)
+  - mass:
+      help: Mass a grams
+      type: decimal(15, 10)
+- geolocation:
+  - latitude:
+      help: Latitude in decimal degrees is a number in the range -90 and 90. Precision 15 and scale 10 are because we want geolocation for people.
+      type: decimal(15,10)
+  - longitude:
+      help: Longitude in decimal degrees is a number in the range -180 and 180. Precision 15 and scale 10 are because we want geolocation for people.
+      type: decimal(15,10)
+  - altitude:
+    help: Altitude in meters is a number in the range (below sea level to above sky level). Precision 15 and scale 10 are aiming for geolocation for people.
+    type: decimal(15,10)
+    altitude:
+  help: Elevation in meters is a number in the range (below sea level to above sky level). Precision 15 and scale 10 are aiming for geolocation for people.
+    type: decimal(15,10)
+- iso_3166_1:
+  - iso_3166_1_alpha_2:
+      help: ISO 3166-1 alpha-2 specifies two-letter country codes which are also used to create the ISO 3166-2 country subdivision codes and the Internet country code top-level domains.
+      type: string(2)  
+  - iso_3166_1_alpha_3:
+      help: ISO 3166-1 alpha-3 specifies three-letter country codes which may allow a better visual association between the codes and the country names than the 3166-1 alpha-2 codes.
+      type: string(3)
+  - iso_3166_1_numeric:
+      help: ISO 3166-1 numeric specifies three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.
+      type: string(3)
+- administration:
+  - timestamp_string:
+      help: Timestamp strings are good for e.g. log reports; our format has a max length of  "YYYY-DD-MMTHH:MM:SS.NNNNNNNNN+HH:MM".
+      type: string(35)
+  - uuid_string:
+      help: UUID strings are good for e.g. display; for efficiency, we usually use a database-native format.
+      type: string(36)
+  - zid_string:
+      help: ZID strings are good for e.g. display; for efficiency, we usually use a database-native format.
+      type: string(36)
+- metadata:
+  - id: 
+      help: The SQL standard uses primary keys that use GENERATED AS IDENTITY. The underlying implementation is still based on a sequence, the definition now complies with the SQL standard.
+      type: INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY
+  - lock_version:
+      help: For web frameworks e.g. Rails that use row locking using either optimistic locking or pessimistic locking.
+      type: integer

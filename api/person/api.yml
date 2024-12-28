@@ -4,8 +4,8 @@ person:
   model: Person
   table: persons
   attribute_groups:
-    - metadata
-    - card
+    - !include ../_meta.yml
+    - !include ../_card.yml
     - names:
       - given_name:
           summary: The person's given name(s), such as the first name in given-middle-family.

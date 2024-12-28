@@ -4,8 +4,8 @@ access_operation:
   model: Operation
   table: access_operations
   attribute_groups:
-    - meta
-    - card
+    - !include ../_meta.yml
+    - !include ../_card.yml
     - main:
       - key:
           type: string

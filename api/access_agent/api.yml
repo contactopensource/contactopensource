@@ -4,8 +4,8 @@ access_agent:
   model: Agent
   table: access_agents
   attribute_groups:
-    - meta
-    - card
+    - !include ../_meta.yml
+    - !include ../_card.yml
     - main:
       - key:
           type: string

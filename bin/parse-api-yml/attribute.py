@@ -66,6 +66,7 @@ class Attribute:
                 a.index = y.get('index', False)
                 a.example = y.get('example', None)
                 a.uml = y.get('uml', None)
+                a.join = Attribute.parse_join(a.type)
                 return a
             case _:
                 raise Exception(y) 
@@ -88,4 +89,7 @@ class Attribute:
 
     @staticmethod
     def parse_join(s):
-        return s.type.__contains__("(id)")
+        if s:
+            return s.__contains__("(id)")
+        else:
+            return None

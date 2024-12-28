@@ -71,10 +71,10 @@ def parse_path(path: os.PathLike):
         for entity in entities:
             logging.info(banner(f"Entity {entity}"))
 
-        # s = RenderLocoGenerateScaffoldHtml.run(entities)
-        # print(banner(f"Rails Generator {concept}") + s)
-        # if args.write:
-            # print('write: ', dirname + '.loco.sh')
+        s = render.loco_generate_scaffold_html.render(entities)
+        print(banner(f"render loco generate scaffold html {concept}") + s)
+        if args.write:
+            print('write: ', dirname + 'loco-generate-scaffold.sh')
 
         # s = render.markdown.render(entities)
         # print(banner(f"render markdown {concept}") + s)
@@ -83,30 +83,30 @@ def parse_path(path: os.PathLike):
         #     f.write(s)
         #     f.close()
 
-        s = render.plantuml.render(entities)
-        print(banner(f"render plantuml {concept}") + s)
-        if args.write:
-            f = open(dirname + '/uml.plantuml', 'w')
-            f.write(s)
-            f.close()
-
-        # s = RenderPostgresMigrationUp().run(entities)
-        # print(banner(f"RenderPostgresMigrationUp {concept}") + s)
+        # s = render.plantuml.render(entities)
+        # print(banner(f"render plantuml {concept}") + s)
         # if args.write:
-            # print('write: ', dirname + '/api-postgres-migrate-up.sql')
+        #     f = open(dirname + '/uml.plantuml', 'w')
+        #     f.write(s)
+        #     f.close()
 
-        # s = RenderPostgresMigrationDown().run(entities)
-        # print(banner(f"RenderPostgresMigrationDown {concept}" + s)
+        # s = render.postgres_migration_up.render(entities)
+        # print(banner(f"render postgres migration up {concept}") + s)
         # if args.write:
-            # print('write: ', dirname + '/api-postgres-migrate-down.sql')
+        #     print('write: ', dirname + '/postgres-migrate-up.sql')
 
-        # s = RenderPhoenixGenerate().run(entities)
-        # print(banner(f"RenderPlantUML {concept}") + s)
+        # s = render.postgres_migration_down.render(entities)
+        # print(banner(f"render postgres migration down {concept}") + s)
+        # if args.write:
+        #     print('write: ', dirname + '/postgres-migrate-down.sql')
+
+        # s = render.phoenix_generate().render(entities)
+        # print(banner(f"render phoenix generate {concept}") + s)
         # if args.write:
             # print('write: ', dirname + '/api-phoenix-generate.sh')
 
-        # s = RenderRailsGenerateScaffold().run(entities)
-        # print(banner(f"Rails Generator {concept}") + s)
+        # s = render.rails_generate_scaffold().render(entities)
+        # print(banner(f"rails generate scaffold {concept}") + s)
         # if args.write:
             # print('write: ', dirname + '/api-rails-generate-scaffold.sh')
 

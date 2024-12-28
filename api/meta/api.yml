@@ -1,35 +1,4 @@
 meta:
   summary: Metadata for database administration that we include in many other API concepts.
   attribute_groups:
-    - meta:
-      - id:
-          help: Primary key id that is optimized for speed; do not show this to users.
-          type: bigint
-          index: true
-      - zid:
-          help: Secure-random 32-character lowercase hexadecimal that is optimized for zero information; you can show this to users.
-          type: uuid
-          index: true
-      - lock_version:
-          help: This is for optimistic locking.
-          type: int
-      - created_at:
-          type: timestamp
-      - created_by:
-          help: The user/agent/service/etc. that did this.
-          type: url
-      - updated_at:
-          type: timestamp
-      - updated_by:
-          help: The user/agent/service/etc. that did this.
-          type: url
-      - retired_at:
-          type: timestamp
-      - retired_by:
-          help: The user/agent/service/etc. that did this.
-          type: url
-      - locale_id:
-          help:  An international locale identifier, such as the id of locale "English - United States".
-          type: locale(id)
-          index: true
-          example: the id of locale "English - United States".
+    - !include ../_meta.yml

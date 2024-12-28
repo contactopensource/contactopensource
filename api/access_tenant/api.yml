@@ -4,8 +4,8 @@ access_tenant:
   model: Tenant
   table: access_tenants
   attributes:
-    - meta
-    - card
+    - !include ../_meta.yml
+    - !include ../_card.yml
     - main:
       - key:
           type: string
