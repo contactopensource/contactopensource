@@ -71,10 +71,10 @@ def parse_path(path: os.PathLike):
         for entity in entities:
             logging.info(banner(f"Entity {entity}"))
 
-        s = render.loco_generate_scaffold_html.render(entities)
-        print(banner(f"render loco generate scaffold html {concept}") + s)
-        if args.write:
-            print('write: ', dirname + 'loco-generate-scaffold.sh')
+        # s = render.loco_generate_scaffold_html.render(entities)
+        # print(banner(f"render loco generate scaffold html {concept}") + s)
+        # if args.write:
+        #     print('write: ', dirname + 'loco-generate-scaffold.sh')
 
         # s = render.markdown.render(entities)
         # print(banner(f"render markdown {concept}") + s)
@@ -105,10 +105,10 @@ def parse_path(path: os.PathLike):
         # if args.write:
             # print('write: ', dirname + '/api-phoenix-generate.sh')
 
-        # s = render.rails_generate_scaffold().render(entities)
-        # print(banner(f"rails generate scaffold {concept}") + s)
-        # if args.write:
-            # print('write: ', dirname + '/api-rails-generate-scaffold.sh')
+        s = render.rails_generate_scaffold.render(entities)
+        print(banner(f"rails generate scaffold {concept}") + s)
+        if args.write:
+            print('write: ', dirname + '/api-rails-generate-scaffold.sh')
 
 def main():
     # logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))
