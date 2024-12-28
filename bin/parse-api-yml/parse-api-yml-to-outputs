@@ -71,44 +71,20 @@ def parse_path(path: os.PathLike):
         for entity in entities:
             logging.info(banner(f"Entity {entity}"))
 
-        # s = render.loco_generate_scaffold_html.render(entities)
-        # print(banner(f"render loco generate scaffold html {concept}") + s)
-        # if args.write:
-        #     print('write: ', dirname + 'loco-generate-scaffold.sh')
-
-        # s = render.markdown.render(entities)
-        # print(banner(f"render markdown {concept}") + s)
-        # if args.write:
-        #     f = open(dirname + '/api.md', 'w')
-        #     f.write(s)
-        #     f.close()
-
-        # s = render.plantuml.render(entities)
-        # print(banner(f"render plantuml {concept}") + s)
-        # if args.write:
-        #     f = open(dirname + '/uml.plantuml', 'w')
-        #     f.write(s)
-        #     f.close()
-
-        # s = render.postgres_migration_up.render(entities)
-        # print(banner(f"render postgres migration up {concept}") + s)
-        # if args.write:
-        #     print('write: ', dirname + '/postgres-migrate-up.sql')
-
-        # s = render.postgres_migration_down.render(entities)
-        # print(banner(f"render postgres migration down {concept}") + s)
-        # if args.write:
-        #     print('write: ', dirname + '/postgres-migrate-down.sql')
-
-        # s = render.phoenix_generate().render(entities)
-        # print(banner(f"render phoenix generate {concept}") + s)
-        # if args.write:
-            # print('write: ', dirname + '/api-phoenix-generate.sh')
-
-        s = render.rails_generate_scaffold.render(entities)
-        print(banner(f"rails generate scaffold {concept}") + s)
-        if args.write:
-            print('write: ', dirname + '/api-rails-generate-scaffold.sh')
+        for renderer in [
+            render.loco_generate_scaffold_html,
+            render.markdown,
+            render.plantuml,
+            render.postgres_migration_up,
+            render.postgres_migration_down,
+            render.phoenix_generate,
+            render.rails_generate_scaffold,
+        ]:
+            s = renderer.render(entities)
+            print(banner(f"{concept} {renderer.__name__}") + s)
+            if args.write:
+                with open(os.path.join(dirname, renderer.output_path()), "w") as f:
+                    f.write(s)
 
 def main():
     # logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))

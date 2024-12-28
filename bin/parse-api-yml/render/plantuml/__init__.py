@@ -2,7 +2,11 @@
 Render a PlantUML file.
 """
 
+from pathlib import Path
 from . import entity
+
+def output_path():
+    return Path("uml.plantuml")
 
 def render(entities):
     s = "@startuml uml\n"
@@ -13,3 +17,4 @@ def render(entities):
     s += ''.join(map(entity.render, entities))
     s += "@enduml\n"
     return s
+

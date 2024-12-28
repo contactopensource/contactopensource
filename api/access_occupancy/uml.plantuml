@@ -5,8 +5,8 @@ hide circle
 
 entity access_occupancy {
   .. join ..
-  access_tenant_it : access_tenant.id
-  access_agent_id : access_agent.id
+  access_tenant_it : access_tenant.id !
+  access_agent_id : access_agent.id !
 }
 
 @enduml

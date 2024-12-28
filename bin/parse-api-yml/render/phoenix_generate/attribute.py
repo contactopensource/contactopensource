@@ -1,3 +1,5 @@
+import re
+
 def render(attribute):
     return f"        {attribute.id}:{render_type(attribute)}{render_index(attribute)} \\\n"
 
@@ -12,4 +14,4 @@ def render_type(attribute):
     return attribute.type
 
 def render_index(attribute):
-    return ":index" if attribute.use_index() else ""
+    return ":index" if attribute.index else None

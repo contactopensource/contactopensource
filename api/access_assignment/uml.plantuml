@@ -5,8 +5,8 @@ hide circle
 
 entity access_assignment {
   .. join ..
-  access_agent_id : access_agent(id)+
-  access_attribute_id : access_attribute(id)+
+  access_agent_id : access_agent(id) K !
+  access_attribute_id : access_attribute(id) K !
 }
 
 @enduml

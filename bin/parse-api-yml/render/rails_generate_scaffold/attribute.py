@@ -14,4 +14,4 @@ def render_type(attribute):
     return attribute.type
     
 def render_index(attribute):
-    return ":index" if attribute.index else ""
+    return ":index" if attribute.index else None
