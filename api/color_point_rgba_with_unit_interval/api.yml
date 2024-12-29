@@ -1,0 +1,22 @@
+color_point_rgba_with_unit_interval:
+  summary: Color point RGBA (red, green, blue, alpha) with unit interval
+  module: Color
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - red:
+          summary: red
+          type: unit_interval
+          example: 0.0 means no red
+      - green:
+          summary: green
+          type: unit_interval
+          example: 0.5 means half green
+      - blue:
+          summary: blue
+          type: unit_interval
+          example: 1.0 means full blue
+      - alpha:
+          summary: alpha
+          type: unit_interval
+          example: 0.5 means half transparent

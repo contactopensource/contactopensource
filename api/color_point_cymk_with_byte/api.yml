@@ -1,0 +1,22 @@
+color_point_cymk_with_byte:
+  summary: Color point CYMK (cyan, yellow, magenta, black) with byte
+  module: Color
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - cyan:
+          summary: cyan
+          type: byte
+          example: 0x00 means no cyan
+      - yellow:
+          summary: yellow
+          type: byte
+          example: 0x88 means half yellow
+      - magenta:
+          summary: magenta
+          type: byte
+          example: 0xFF means full magenta
+      - black:
+          summary: black
+          type: byte
+          example: 0x10 means slightly black
