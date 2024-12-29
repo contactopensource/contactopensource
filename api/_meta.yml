@@ -1,4 +1,4 @@
-      meta:
+      Meta:
         - id:
             help: Primary key id that is optimized for speed; do not show this to users.
             type: bigint
@@ -27,5 +27,5 @@
             type: url
         - locale_id:
             help:  An international locale identifier, such as the id of locale "English - United States".
-            type: locale(id)
+            type: locale.id
             example: the id of locale "English - United States".
