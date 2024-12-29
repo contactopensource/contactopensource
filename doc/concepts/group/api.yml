@@ -11,10 +11,10 @@ group_locale:
   module: TODO
   attributes:
     group_id:
-      type: group(id)
+      type: group.id
       example: id
     locale_id:
-      type: locale(id)
+      type: locale.id
     name:
       type: string
       index: true

@@ -1,5 +1,5 @@
 uri_contact:
-  summary:>
+  summary: >
 
     A URI contact, which is a URI plus extras for typical usage.
 
@@ -39,8 +39,8 @@ uri_contact:
       type: string
       example: hello.txt
     locale_id:
-      type: locale(id)
+      type: locale.id
     media_type_id:
       summary: Specifies the media type of the linked document.
-      type: media_type(id)
+      type: media_type.id
       example: media type for 'audio/mp3' for a song file.

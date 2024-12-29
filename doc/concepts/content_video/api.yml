@@ -9,7 +9,7 @@ content_video:
       example: Video MP4
     codec_id:
       summary: codec id
-      type: codec(id)
+      type: codec.id
       example: video/mp4
     width_as_pixels:
       summary: width as pixels

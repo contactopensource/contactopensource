@@ -8,7 +8,7 @@ content_audio:
       example: 'Blue - By Beyoncé'
     codec_id:
       summary: codec id
-      type: codec(id)
+      type: codec.id
       example: codec for MP3
     duration_as_seconds:
       summary: duration as seconds

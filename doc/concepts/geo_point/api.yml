@@ -1,5 +1,5 @@
 geo_point:
-  summary:>
+  summary: >
 
     A geo_point is a geographic point in space, typically with a latitude, longitude, and optionally with an altitude and/or elevation.
 
@@ -49,10 +49,10 @@ geo_point_locale:
   module: TODO
   attributes:
     geo_point_id:
-      type: geo_point(id)
+      type: geo_point.id
       example: id
     locale_id:
-      type: locale(id)
+      type: locale.id
     name:
       type: string
       index: true

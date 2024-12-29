@@ -16,7 +16,7 @@ organization:
         index: true
         example: @acme
       - locale_id:
-        type: locale(id)
+        type: locale.id
       - summary:
         type: string
         example: ACME Organization is a big company.

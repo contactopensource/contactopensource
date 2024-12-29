@@ -6,7 +6,7 @@ from pathlib import Path
 from . import entity
 
 def output_path():
-    return Path("uml.plantuml")
+    return Path("uml", "uml.plantuml")
 
 def render(entities):
     s = "@startuml uml\n"

@@ -5,7 +5,7 @@ def render_options(attribute):
     options = list(filter(lambda x: x is not None, [
         render_index(attribute), 
         render_key(attribute), 
-        render_nullable(attribute), 
+        #render_nullable(attribute), 
         render_unique(attribute)
     ]))
     if len(options) > 0:
@@ -14,10 +14,10 @@ def render_options(attribute):
         return ''
 
 def render_index(attribute):
-    return "I" if (attribute.index and not attribute.join) else None
+    return "⚡" if (attribute.index and not attribute.join) else None
 
 def render_key(attribute):
-    return "K" if attribute.join else None
+    return "🔑" if (attribute.id.endswith("_id") and attribute.type.endswith(".id")) else None
 
 def render_nullable(attribute):
     match attribute.nullable:
@@ -29,5 +29,5 @@ def render_nullable(attribute):
             return None
     
 def render_unique(attribute):
-    return "U" if attribute.unique else None
+    return "➀" if attribute.unique else None
 

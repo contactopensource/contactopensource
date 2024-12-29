@@ -1,0 +1,12 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity access_permission {
+  .. join ..
+  access_attribute_it : access_attribute.id
+  access_operation_id : access_operation.id 🔑
+}
+
+@enduml

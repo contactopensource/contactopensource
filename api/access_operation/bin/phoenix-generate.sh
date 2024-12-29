@@ -12,7 +12,7 @@ mix phx.gen.html \
         updated_by:urlNone \
         retired_at:timestampNone \
         retired_by:urlNone \
-        locale_id:referencesNone \
+        locale_id:locale.idNone \
         title:"string{50}":index \
         subtitle:"string{50}":index \
         summary:stringNone \

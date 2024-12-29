@@ -6,8 +6,8 @@ access_assignment:
   attribute_groups:
     - join:
       - access_agent_id:
-          type: access_agent(id)
+          type: access_agent.id
           example: access agent "alice"
       - access_attribute_id:
-          type: access_attribute(id)
+          type: access_attribute.id
           example: access attribute "reader"

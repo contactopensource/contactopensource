@@ -3,13 +3,13 @@ set -euf
 
 cargo loco generate scaffold --html \
     card \
-        title:"string{50}" NOT NULL \
-        subtitle:"string{50}" NOT NULL \
-        summary:string NOT NULL \
-        description:text NOT NULL \
-        disambiguation:text NOT NULL \
-        image_1024x1024_url:url NOT NULL \
-        image_1024x1024_alt:text NOT NULL \
-        emoji:text NOT NULL \
-        star_count:integer NOT NULL \
+        title:"string{50}" \
+        subtitle:"string{50}" \
+        summary:string \
+        description:text \
+        disambiguation:text \
+        image_1024x1024_url:url \
+        image_1024x1024_alt:text \
+        emoji:text \
+        star_count:integer \
 

@@ -5,7 +5,7 @@ Metadata for database administration that we include in many other API concepts.
 
 ## Attributes
 
-meta:
+Meta:
 
   * id: bigint (index)
 
@@ -25,6 +25,6 @@ meta:
 
   * retired_by: url
 
-  * locale_id: locale(id) - example: the id of locale "English - United States".
+  * locale_id: locale.id - example: the id of locale "English - United States".
 
 

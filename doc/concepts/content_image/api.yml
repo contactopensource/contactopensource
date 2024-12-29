@@ -9,7 +9,7 @@ content_image:
       example: Example name
     codec_id:
       summary:
-      type: codec(id)
+      type: codec.id
       example: codec for JPEG
     width_as_pixels:
       summary: width as pixels

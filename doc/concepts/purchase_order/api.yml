@@ -11,10 +11,10 @@ purchase_order_locale:
   module: Purchase
   attributes:
     purchase_order_id:
-      type: purchase_order(id)
+      type: purchase_order.id
       example: id
     locale_id:
-      type: locale(id)
+      type: locale.id
     name:
       type: string
       index: true

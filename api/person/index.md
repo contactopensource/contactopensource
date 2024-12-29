@@ -5,7 +5,7 @@ A person, such as a typical human being. The person API includes attributes that
 
 ## Attributes
 
-meta:
+Meta:
 
   * id: bigint (index)
 
@@ -25,10 +25,10 @@ meta:
 
   * retired_by: url
 
-  * locale_id: locale(id) - example: the id of locale "English - United States".
+  * locale_id: locale.id - example: the id of locale "English - United States".
 
 
-card:
+Card:
 
   * title: string(50) (index) - example: Alice Anderson
 

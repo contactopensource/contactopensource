@@ -11,10 +11,10 @@ purchase_payment_locale:
   module: Purchase
   attributes:
     purchase_payment_id:
-      type: purchase_payment(id)
+      type: purchase_payment.id
       example: id
     locale_id:
-      type: locale(id)
+      type: locale.id
     name:
       type: string
       index: true

@@ -1,5 +1,5 @@
 edge:
-  summary:>
+  summary: >
     For linking from one node to another node
   module: Graph
   attributes:

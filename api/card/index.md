@@ -5,7 +5,7 @@ Card display tile; this is in use in many of the API concepts.
 
 ## Attributes
 
-card:
+Card:
 
   * title: string(50) (index) - example: Alice Anderson
 

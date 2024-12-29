@@ -4,17 +4,17 @@ plan_rice:
   attributes:
     reach_id:
       summary: reach id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO
     impact_id:
       summary: impact id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO
     confidence_id:
       summary: confidence id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO
     effort_id:
       summary: effort id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO

@@ -11,10 +11,10 @@ purchase_receipt_locale:
   module: Purchase
   attributes:
     purchase_receipt_id:
-      type: purchase_receipt(id)
+      type: purchase_receipt.id
       example: id
     locale_id:
-      type: locale(id)
+      type: locale.id
     name:
       type: string
       index: true

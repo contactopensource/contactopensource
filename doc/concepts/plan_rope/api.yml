@@ -4,17 +4,17 @@ plan_rope:
   attributes:
     realistic_id:
       summary: realistic id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO
     optimistic_id:
       summary: optimistic id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO
     pessimistic_id:
       summary: pessimistic id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO
     equilibristic_id:
       summary: equilibristic id
-      type: plan_item(id)
+      type: plan_item.id
       example: TODO
