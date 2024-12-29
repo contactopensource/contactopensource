@@ -23,6 +23,6 @@ def render_unique(attribute):
 
 def render_example(attribute):
     if attribute.example:
-        return f" - example: {attribute.example}\n"
+        return f" - example: {attribute.example}"
     else:
         return ''

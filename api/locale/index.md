@@ -30,48 +30,35 @@ Meta:
 
   * locale_id: locale.id - example: the id of locale "English - United States".
 
-
 Dialect:
 
   * text: text - example: 'en-US' is English language in United States country
 
-
   * language_code: text - example: 'en' is English
-
 
   * country_code: text - example: 'US' is United States
 
-
   * script_code: text - example: 'Latn' is Latin script
-
 
   * region_code: text - example: 'QO' is Outlying Oceania
 
-
   * variant_code: text - example: 'TH' is Thai digit shapes
-
 
 Separators:
 
   * decimal_separator: text - example: '.' is the decimal separator of 'en-US'
 
-
   * grouping_separator: text - example: ',' is the grouping separator of 'en-US'
-
 
 Currency:
 
   * currency_code: text - example: 'USD' is United States Dollar
 
-
   * currency_symbol: text - example: '$' is United States Dollar
 
-
-Quotation:
+Quotations:
 
   * quotation_start_delimiter: text - example: '“' (U+201C) is left double quotation mark
 
-
   * quotation_stop_delimiter: text - example: '”' (U+201D) is right double quotation mark
-
 

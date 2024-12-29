@@ -29,18 +29,13 @@ Meta:
 
   * locale_id: locale.id - example: the id of locale "English - United States".
 
-
 Main:
 
-  * key: string+ - example: 'Red 032 C'. Always use Pantone format '{name} {code} {stock}'.
+  * key: string (index) - example: 'Red 032 C'. Always use Pantone format '{name} {code} {stock}'.
 
+  * name: string (index) - example: 'Red'. Always use Pantone case, which is typically title case.
 
-  * name: string+ - example: 'Red'. Always use Pantone case, which is typically title case.
+  * code: string(3) (index) - example: '032' is red. Leading zero matters.
 
-
-  * code: string(3)+ - example: '032' is red. Leading zero matters.
-
-
-  * stock: string(1)+ - example: 'C' indicates coated stock; 'U' indicates uncoated stock.
-
+  * stock: string(1) (index) - example: 'C' indicates coated stock; 'U' indicates uncoated stock.
 

@@ -4,7 +4,7 @@ ability:
     
     Abilities are intelligent powers: they are guided by the person's intention and executing them successfully results in an action, which is not true for all types of powers. 
     
-    Abilities are closely related to but not identical with various other concepts, such as disposition, know-how, aptitude, talent, potential, and skill. 
+    https://wikipedia.org/wiki/Ability
 
   attribute_groups:
     - !include ../_meta.yml

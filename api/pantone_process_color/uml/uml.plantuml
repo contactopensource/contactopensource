@@ -16,10 +16,10 @@ entity pantone_process_color {
   retired_by : url
   locale_id : locale.id 🔑
   .. Main ..
-  key : string+
-  name : string+
-  code : string(3)+
-  stock : string(1)+
+  key : string ⚡
+  name : string ⚡
+  code : string(3) ⚡
+  stock : string(1) ⚡
 }
 
 @enduml

@@ -9,7 +9,5 @@ join:
 
   * access_agent_id: access_agent.id - example: access agent "alice"
 
-
   * access_attribute_id: access_attribute.id - example: access attribute "reader"
-
 

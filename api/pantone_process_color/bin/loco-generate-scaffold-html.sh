@@ -13,8 +13,8 @@ cargo loco generate scaffold --html \
         retired_at:timestamp \
         retired_by:url \
         locale_id:references \
-        key:string+ \
-        name:string+ \
+        key:string \
+        name:string \
         code:"string{3}" \
         stock:"string{1}" \
 

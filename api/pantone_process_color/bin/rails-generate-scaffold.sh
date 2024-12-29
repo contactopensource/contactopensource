@@ -13,10 +13,10 @@ cargo loco generate scaffold \
         retired_at:timestampNone \
         retired_by:urlNone \
         locale_id:locale.idNone \
-        key:string+None \
-        name:string+None \
-        code:"string{3}"None \
-        stock:"string{1}"None \
+        key:string:index \
+        name:string:index \
+        code:"string{3}":index \
+        stock:"string{1}":index \
     --force \
     --no-timestamps \
 

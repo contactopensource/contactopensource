@@ -27,4 +27,3 @@ Meta:
 
   * locale_id: locale.id - example: the id of locale "English - United States".
 
-

@@ -28,7 +28,7 @@ entity locale {
   .. Currency ..
   currency_code : text
   currency_symbol : text
-  .. Quotation ..
+  .. Quotations ..
   quotation_start_delimiter : text
   quotation_stop_delimiter : text
 }

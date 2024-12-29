@@ -10,7 +10,6 @@ currency_type:
 
   attribute_groups:
     - !include ../_meta.yml
-    - !include ../_card.yml
     - Main:
       - name:
           type: text
