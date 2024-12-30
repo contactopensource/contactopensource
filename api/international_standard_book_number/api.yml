@@ -1,0 +1,35 @@
+international_standard_book_number:
+  summary: |-
+    International Standard Book Number (ISBN).
+
+    https://wikipedia.org/wiki/ISBN
+
+    A 13-digit ISBN can be separated into its parts:
+
+      * prefix element (provided by GS1 barcode organization)
+      * registration group (language-sharing country group, individual country or territory)
+      * registrant
+      * publication
+      * check digit
+
+    The International ISBN Agency maintains the details of over one million ISBN prefixes and publishers in the Global Register of Publishers.[47] This database is freely searchable over the internet. 
+
+  module: Code
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - code:
+          type: string(13)
+          index: true
+    - Parts:
+      - prefix_element:
+          type: string(13)
+      - registration_group:
+          type: digit(5)
+      - registrant:
+          type: string(13)
+      - publication:
+          type: string(13)
+      - check_digit:
+          type: digit(1)

@@ -1,0 +1,9 @@
+CREATE TABLE international_standard_book_number (
+);
+
+CREATE INDEX index_international_standard_book_number_id on international_standard_book_number(id);
+CREATE INDEX index_international_standard_book_number_zid on international_standard_book_number(zid);
+CREATE INDEX index_international_standard_book_number_title on international_standard_book_number(title);
+CREATE INDEX index_international_standard_book_number_subtitle on international_standard_book_number(subtitle);
+CREATE INDEX index_international_standard_book_number_code on international_standard_book_number(code);
+
