@@ -1,0 +1,92 @@
+edge:
+  summary: |-
+    For linking from one node to another node
+  module: Graph
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Subject:
+      - subject_uri:
+          summary: type identifier, such as an RDF link, or semantic URL, or internal URN
+          type: text
+          example: http://example.com/alpha.html
+      - subject_database:
+          summary: database identifier, such as a database instance name
+          type: text
+          example: contactopensource
+      - subject_schema:
+          summary: schema identifier, such as a database instance schema name
+          type: text
+          example: public
+      - subject_table:
+          summary: table identifier, such as a database instance schema table name
+          type: text
+          example: users
+      - subject_id:
+          summary: row identifier, such as a database instance schema table row primary key
+          type: id
+          example: 34b75621921fdc7ac83459c5c4b7dba6
+    - Predicate:
+      - predicate_uri:
+          summary: type identifier, such as an RDF link, or semantic URL, or internal URN
+          type: text
+          example: http://example.com/bravo.html
+      - predicate_database:
+          summary: database identifier, such as a database instance name
+          type: text
+          example: contactopensource
+      - predicate_schema:
+          summary: schema identifier, such as a database instance schema name
+          type: text
+          example: public
+      - predicate_table:
+          summary: table identifier, such as a database instance schema table name
+          type: text
+          example: likes
+      - predicate_id:
+          summary: row indentifier, such as a database instance schema table row primary key
+          type: id
+          example: 124cf87662601612ae47379c91876e1e
+    - Object:
+      - object_uri:
+          summary: type identifier, such as an RDF link, or semantic URL, or internal URN
+          type: text
+          example: http://example.com/charlie.html
+      - object_database:
+          summary: database identifier, such as a database instance name
+          type: text
+          example: contactopensource
+      - object_schema:
+          summary: object schema
+          type: text
+          example: public
+      - object_table:
+          summary: table identifier, such as a database instance schema table name
+          type: text
+          example: post
+      - object_id:
+          summary: row indentifier, such as a database instance schema table row primary key
+          type: id
+          example: 9588686d2a1b4cda40cad5269c87a627
+    - Lifecycle:
+      - start_at_timestamp_utc:
+          summary: start at timestamp utc
+          type: timestamp
+          example: 2020-01-01T00:00:00Z
+      - stop_at_timestamp_utc:
+          summary: stop at timestamp utc
+          type: timestamp
+          example: 2020-01-01T00:00:00Z
+    - Modifiers:
+      - count:
+          summary: any kind of count, and the usage is up to the application
+          type: integer
+          example: 100
+      - unit_interval:
+          summary: any kind of unit interval, and the usage is up to the application
+          type: unit_interval
+          example: 0.1 means unit interval 10%
+      - dual_interval:
+          summary: any kind of dual intervale and the usage is up to the application
+          type: dual_interval
+          example: -0.1 means dual interval -10%

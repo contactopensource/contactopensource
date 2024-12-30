@@ -1,0 +1,37 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity edge {
+__ Subject __
+  subject_uri : text
+  subject_database : text
+  subject_schema : text
+  subject_table : text
+  subject_id : subject(id)+
+__ Predicate __
+  predicate_uri : text
+  predicate_database : text
+  predicate_schema : text
+  predicate_table : text
+  predicate_id : predicate(id)+
+__ Object __
+  object_uri : text
+  object_database : text
+  object_schema : text
+  object_table : text
+  object_id : object(id)+
+__ Lifecycle __
+  start_at_timestamp_utc : timestamp
+  stop_at_timestamp_utc : timestamp
+__ Modifiers __
+  count : integer
+  weight : decimal
+  probability : unit_interval
+  confidence : unit_interval
+  multiplier_unit_interval : unit_interval
+  multiplier_dual_interval : dual_interval
+}
+
+@enduml
