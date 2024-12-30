@@ -1,0 +1,17 @@
+measurement_unit:
+  summary: A measurement unit, such as metre, gram, second
+  module: measurement
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - name:
+          summary: name
+          type: text
+          example: second
+      - symbol:
+          summary: symbol
+          type: text
+          example: s
+      - measurement_system_id:
+          type:  measurement_system.id
+          example: \"\"metric\""
