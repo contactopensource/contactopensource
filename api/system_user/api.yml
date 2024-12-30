@@ -1,0 +1,14 @@
+system_user:
+  summary: System user, such as for managing system file access.
+  module: System
+  attributes:
+    uid:
+      summary: uid
+      type: integer
+      index: true
+      example: 1
+    key:
+      summary: key
+      type: string
+      index: true
+      example: root

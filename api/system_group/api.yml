@@ -1,0 +1,14 @@
+system_group:
+  summary: System group, such as for managing system file access.
+  module: System
+  attributes:
+    gid:
+      summary: gid
+      type: integer
+      index: true
+      example: 1
+    key:
+      summary: key
+      type: string
+      index: true
+      example: wheel

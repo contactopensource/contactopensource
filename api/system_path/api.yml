@@ -1,0 +1,14 @@
+system_path:
+  summary: System path, such as for a system file.
+  module: System
+  attributes:
+    iid:
+      summary: iid
+      type: integer
+      index: true
+      example: 10000
+    name:
+      summary: name
+      type: text
+      index: true
+      example: "/etc/environment"
