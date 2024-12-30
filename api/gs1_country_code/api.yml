@@ -1,0 +1,24 @@
+gs1_country_code:
+  summary: |-
+    GS1 country code.
+
+    https://wikipedia.org/wiki/List_of_GS1_country_codes
+
+  module: Code
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - code:
+          type: digit(3)
+          index: true
+          required: true
+          example: 100 means United States
+      - country_name:
+          type: string
+          required: false
+          example: United States
+      - explanation:
+          type: text
+          required: false
+          example: 460 code for Russia is inherited from the Soviet Union
