@@ -1,0 +1,6 @@
+content_message:
+  summary: Represent the content media type "message/*".
+  module: Content
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml

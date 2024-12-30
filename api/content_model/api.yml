@@ -1,0 +1,6 @@
+content_model:
+  summary: Represent the content media type "model/*".
+  module: Content
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml

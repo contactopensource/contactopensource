@@ -1,0 +1,19 @@
+content_image:
+  summary: Represent the content media type "image/*". Any kind of image, such as a photo, illustration, chart, etc.
+  module: Content
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - codec_id:
+          summary:
+          type: codec.id
+          example: codec for JPEG
+      - width_as_pixels:
+          summary: width as pixels
+          type: count
+          example: 100 pixels horizontally
+      - height_as_pixels:
+          summary: height as pixels
+          type: count
+          example: 100 pixels vertically

@@ -1,0 +1,6 @@
+content_application:
+  summary: Represent the content media type "application/*".
+  module: Content
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml

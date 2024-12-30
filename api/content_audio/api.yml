@@ -1,0 +1,15 @@
+content_audio:
+  summary: Represent the content media type "audio/*". Any kind of audio, such as a song, speech, soundtrack, etc.
+  module: Content
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - codec_id:
+          summary: codec id
+          type: codec.id
+          example: codec for MP3
+      - duration_as_seconds:
+          summary: duration as seconds
+          type: count
+          example: 60 means 60 seconds

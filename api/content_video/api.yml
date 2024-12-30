@@ -1,0 +1,24 @@
+content_video:
+  summary: Represent the content media type "video/*". Any type of video, such as a movie, animation, clip, etc.
+  module: Content
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - codec_id:
+          summary: codec id
+          type: codec.id
+          example: video/mp4
+      - width_as_pixels:
+          summary: width as pixels
+          type: count
+          index: true
+      - height_as_pixels:
+          summary: height as pixels
+          type: count
+          index: true
+      - duration_as_seconds:
+          summary: duration as seconds
+          type: count
+          index: true
+          example: 60 means 60 seconds
