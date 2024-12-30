@@ -1,0 +1,23 @@
+book:
+  summary: |-
+    A `book` is a typical book.
+
+    Example: "Beloved" by Toni Morrison
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - title: 
+          type: text
+          example: Beloved
+      - subtitle:
+          type: text
+          example: A Novel
+    - Codes:
+      - global_trade_item_number_id:
+          type: global_trade_item_number.id
+          example: 978-0-307-27722-1
+      - international_standard_book_number_id:
+          type: international_standard_book_number.id
+          example: 978-0-307-27722-1
