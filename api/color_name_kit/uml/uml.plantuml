@@ -1,0 +1,26 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity color_name_kit {
+  .. Meta ..
+  id : bigint ⚡
+  zid : uuid ⚡
+  lock_version : int
+  created_at : timestamp
+  created_by : url
+  updated_at : timestamp
+  updated_by : url
+  retired_at : timestamp
+  retired_by : url
+  locale_id : locale.id 🔑
+  .. Main ..
+  hex : hexdigit(6)+
+  html_color_name : text
+  x11_color_name : text
+  color_naming_system_name : text
+  pantone_process_color_name : text
+}
+
+@enduml
