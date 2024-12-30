@@ -1,0 +1,14 @@
+purchase_payment:
+  summary: |-
+    Purchase payment.
+
+    A simple example could display like this: "Purchase Payment #123, date 2022-01-01, amount $10.00"
+
+  module: Purchase
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - key:
+          type: string
+          index: true
