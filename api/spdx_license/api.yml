@@ -1,0 +1,21 @@
+spdx_license:
+  summary: |-
+    SPDX license.
+
+    Attribute examples:
+
+    * name: "GPL 3.0"
+
+    * summary: "GNU Public License version 3.0"
+
+    * description: "This is the full text of the license."
+
+    https://spdx.dev/
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - code:
+          type: string
+          index: true
+          example: "\"GPL-3.0\" means GNU Public License version 3.0"

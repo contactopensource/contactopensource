@@ -1,0 +1,12 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity license_type {
+  name : string+
+  spdx_identifier : string
+  text : text
+}
+
+@enduml
