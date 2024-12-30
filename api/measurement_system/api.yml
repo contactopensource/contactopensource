@@ -1,0 +1,19 @@
+measurement_system:
+  summary: |-
+    A measurement system, such as of distance, or time, etc.
+  
+    Examples: 
+      * the metric measurement system vs the imperial measurement system
+      * the Gregorian calendar vs the Julian calendar
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - key:
+          type: string
+          index: true
+          example: "\"metric\" or \"imperial\""
+      - formal_name:
+          type: string
+          index: true
+          example: "\"the metric measurement system\" or \"the imperial measurement system\""
