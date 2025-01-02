@@ -1,0 +1,28 @@
+virtual_international_authority_file_identifier:
+  summary: Virtual International Authority File (VIAF) identifier
+  description: |-
+    The Virtual International Authority File (VIAF) identifier
+
+    https://wikipedia.org/wiki/Virtual_International_Authority_File
+
+    A VIAF record receives a standard data number, contains the primary "see"
+    and "see also" records from the original documents, and refers to the
+    original authority records. The data is made available online and is
+    available for research and, data exchange and sharing.
+
+    Researchers group VIAF with the International Standard Name Identifier and
+    ORCID systems, describing all three as "loosely coordinated efforts to
+    standardize name forms". All three systems attempt to solve the problem of
+    author name disambiguation, which has grown in scale as the quantity of data
+    multiplies. VIAF, unlike the other two systems, is led by libraries, as
+    opposed to individual authors or creators.
+
+  module: Code
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - key:
+          type: string(22)
+          index: true
+
