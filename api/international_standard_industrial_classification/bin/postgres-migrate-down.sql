@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS international_standard_industrial_classification_isic;
+DROP INDEX IF EXISTS index_international_standard_industrial_classification_isic_id;
+DROP INDEX IF EXISTS index_international_standard_industrial_classification_isic_zid;
+DROP INDEX IF EXISTS index_international_standard_industrial_classification_isic_title;
+DROP INDEX IF EXISTS index_international_standard_industrial_classification_isic_subtitle;
+DROP INDEX IF EXISTS index_international_standard_industrial_classification_isic_key;
+
