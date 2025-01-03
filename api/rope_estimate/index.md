@@ -47,7 +47,11 @@ Card:
 
   * star_count: integer - example: 5 for the best rating
 
-Main:
+Measurement:
+
+  * measurement_unit_id: measurement_unit.id
+
+ROPE:
 
   * realistic_card_id: card.id
 
@@ -56,8 +60,4 @@ Main:
   * pessimistic_card_id: card.id
 
   * equilibristic_card_id: card.id
-
-Measurement:
-
-  * measurement_unit_id: measurement_unit.id
 

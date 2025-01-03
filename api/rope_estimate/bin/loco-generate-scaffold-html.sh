@@ -22,9 +22,9 @@ cargo loco generate scaffold --html \
         image_1024x1024_alt:text \
         emoji:text \
         star_count:integer \
+        measurement_unit_id:references \
         realistic_card_id:references:card \
         optimistic_card_id:references:card \
         pessimistic_card_id:references:card \
         equilibristic_card_id:references:card \
-        measurement_unit_id:references \
 

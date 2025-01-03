@@ -22,11 +22,11 @@ cargo loco generate scaffold \
         image_1024x1024_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
+        measurement_unit_id:measurement_unit.idNone \
         realistic_card_id:card.idNone \
         optimistic_card_id:card.idNone \
         pessimistic_card_id:card.idNone \
         equilibristic_card_id:card.idNone \
-        measurement_unit_id:measurement_unit.idNone \
     --force \
     --no-timestamps \
 

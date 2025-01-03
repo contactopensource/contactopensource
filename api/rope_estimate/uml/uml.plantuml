@@ -25,13 +25,13 @@ entity rope_estimate {
   image_1024x1024_alt : text
   emoji : text
   star_count : integer
-  .. Main ..
+  .. Measurement ..
+  measurement_unit_id : measurement_unit.id 🔑
+  .. ROPE ..
   realistic_card_id : card.id 🔑
   optimistic_card_id : card.id 🔑
   pessimistic_card_id : card.id 🔑
   equilibristic_card_id : card.id 🔑
-  .. Measurement ..
-  measurement_unit_id : measurement_unit.id 🔑
 }
 
 @enduml
