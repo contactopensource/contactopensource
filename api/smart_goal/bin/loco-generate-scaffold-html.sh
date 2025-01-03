@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    plan_smart \
+    smart_goal \
         id:bigint \
         zid:uuid \
         lock_version:int \

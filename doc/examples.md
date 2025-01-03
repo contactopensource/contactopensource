@@ -318,15 +318,15 @@ example: Bob Brown <bob@example.com>
 
 
 
-## Geo point
+## Geographic point
 
 example: New York Grand Central
 
   * id: c8fb5187e718484eefb9e8dceef4cd68
 
-  * latitude_as_meters: 40.752687
+  * latitude_as_decimal_degrees: 40.752687
 
-  * longitude_as_meters: 73.977188
+  * longitude_as_decimal_degrees: 73.977188
 
   * altitude_as_meters: 39.6
 
@@ -337,9 +337,9 @@ example: New York Grand Central, delta -0.1 latitude, -0.1 longitude
 
   * id: d3ef3da36e8e835a464b51b00ae9a827
 
-  * latitude_as_meters: 40.652687
+  * latitude_as_decimal_degrees: 40.652687
 
-  * longitude_as_meters: 73.877188
+  * longitude_as_decimal_degrees: 73.877188
 
   * altitude_as_meters: 39.6
 
@@ -481,7 +481,7 @@ example: English language + United States
 
   * quotation_stop_delimiter: "”"
 
-example: Chinese language (specifically simplified Mandarin) + China
+example: Chinese simplified Mandarin language + China
 
   * id: 0efde58a9b43066ebfb11bd1bf8d7074
 
@@ -677,7 +677,7 @@ INSERT INTO places VALUES
 
   -- Telephone: 1 (212) 340-2583 = Master"s Office
 
-  -- Geo point:
+  -- Geographic point:
   * latitude: -- 40.752687
   * longitude: -- -73.977188
 
@@ -706,7 +706,7 @@ INSERT INTO places VALUES
 
   -- Telephone: 1 (415) 983-8007 = Lost & Found
 
-  -- Geo point:
+  -- Geographic point:
   * latitude: -- 37.795563
   * longitude: -- -122.393312
 
@@ -735,7 +735,7 @@ INSERT INTO places VALUES
 
   -- Telephone: 1 (415) ???-???? = ?
 
-  -- Geo point:
+  -- Geographic point:
   * latitude: --
   * longitude: --
 
@@ -764,7 +764,7 @@ INSERT INTO places VALUES
 
   -- Telephone: 1 (415) ???-???? = ?
 
-  -- Geo point:
+  -- Geographic point:
   * latitude: --
   * longitude: --
 
@@ -794,7 +794,7 @@ INSERT INTO places VALUES
 
   -- Telephone: ? = ?
 
-  -- Geo point:
+  -- Geographic point:
   * latitude: --
   * longitude: --
 
@@ -823,7 +823,7 @@ INSERT INTO places VALUES
 
   -- Telephone: ? = ?
 
-  -- Geo point:
+  -- Geographic point:
   * latitude: --
   * longitude: --
 

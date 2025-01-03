@@ -112,7 +112,7 @@ Concepts:
 
 Plan:
 
-* [plan_smart](concepts/plan/plan_smart/)
+* [smart_goal](concepts/plan/smart_goal/)
 * [plan_objective](concepts/plan/plan_objective/)
 * [plan_result](concepts/plan/plan_result/)
 * [plan_metric](concepts/plan/plan_metric/)

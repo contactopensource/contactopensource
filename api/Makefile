@@ -1,8 +1,18 @@
 makefile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 makefile_dir := $(dir $(makefile_path))
 
-all: */index.md */bin/loco-generate-scaffold-html.sh */bin/phoenix-generate.sh */bin/postgres-migrate-down.sql */bin/postgres-migrate-up.sql */bin/rails-generate-scaffold.sh */uml/uml.plantuml */uml/uml.png
+dirs := $(dir $(wildcard */api.yml))
 
+all: \
+	$(dirs:%=%index.md) \
+	$(dirs:%=%bin/loco-generate-scaffold-html.sh) \
+	$(dirs:%=%bin/phoenix-generate.sh) \
+	$(dirs:%=%bin/postgres-migrate-down.sql) \
+	$(dirs:%=%bin/postgres-migrate-up.sql) \
+	$(dirs:%=%bin/rails-generate-scaffold.sh) \
+	$(dirs:%=%uml/uml.plantuml) \
+	$(dirs:%=%uml/uml.png)
+	
 .PHONY: clean
 clean:
 	@rm -f */index.md
@@ -14,34 +24,34 @@ clean:
 	@rm -f */uml/uml.plantuml
 	@rm -f */uml/uml.png
 
-%/index.md:
+%/index.md: %/api.yml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 
-%/bin/loco-generate-scaffold-html.sh:
+%/bin/loco-generate-scaffold-html.sh: %/api.yml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 
-%/bin/phoenix-generate.sh:
+%/bin/phoenix-generate.sh: %/api.yml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 
-%/bin/postgres-migrate-down.sql:
+%/bin/postgres-migrate-down.sql: %/api.yml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 
-%/bin/postgres-migrate-up.sql:
+%/bin/postgres-migrate-up.sql: %/api.yml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 
-%/bin/rails-generate-scaffold.sh:
+%/bin/rails-generate-scaffold.sh: %/api.yml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 
-%/uml/uml.plantuml:
+%/uml/uml.plantuml: %/api.yml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 
 %/uml/uml.png: %/uml/uml.plantuml
 	@echo $@
-	plantuml $(@D)/uml.plantuml
+	plantuml $(*)/uml/uml.plantuml

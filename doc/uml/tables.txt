@@ -66,4 +66,4 @@ travel
 plan_objective
 plan_result
 plan_metric
-plan_smart
+smart_goal

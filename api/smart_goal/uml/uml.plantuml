@@ -3,7 +3,7 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity plan_smart {
+entity smart_goal {
   .. Meta ..
   id : bigint ⚡
   zid : uuid ⚡

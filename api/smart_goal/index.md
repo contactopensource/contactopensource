@@ -1,4 +1,4 @@
-# plan_smart
+# smart_goal
 
 Plan with SMART criteria.
 

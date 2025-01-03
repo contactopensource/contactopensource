@@ -5,6 +5,6 @@ plan:
     plan_result
     plan_metric
     plan_gist
-    plan_smart
+    smart_goal
     plan_rice
-    plan_rope
+    rope_estimate

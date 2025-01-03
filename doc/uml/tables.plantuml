@@ -137,22 +137,22 @@ package Plan {
   entity plan_gist_idea
   entity plan_gist_step
   entity plan_gist_task
-  entity plan_smart
-  entity plan_smart_specific
-  entity plan_smart_measurable
-  entity plan_smart_actionable
-  entity plan_smart_relevant
-  entity plan_smart_timely
+  entity smart_goal
+  entity smart_goal_specific
+  entity smart_goal_measurable
+  entity smart_goal_actionable
+  entity smart_goal_relevant
+  entity smart_goal_timely
   entity plan_rice
   entity plan_rice_reach
   entity plan_rice_impact
   entity plan_rice_confidence
   entity plan_rice_effort
-  entity plan_rope
-  entity plan_rope_realistic
-  entity plan_rope_optimistic
-  entity plan_rope_pessimistic
-  entity plan_rope_equilibristic
+  entity rope_estimate
+  entity rope_estimate_realistic
+  entity rope_estimate_optimistic
+  entity rope_estimate_pessimistic
+  entity rope_estimate_equilibristic
 }
 
 package Code {
@@ -896,7 +896,7 @@ entity plan_gist_task {
   disambiguation : text
 }
 
-entity plan_smart {
+entity smart_goal {
   specific_id
   measurable_id
   actionable_id
@@ -904,7 +904,7 @@ entity plan_smart {
   timely_id
 }
 
-entity plan_smart_specific {
+entity smart_goal_specific {
   name : string+
   summary : string
   description : text
@@ -913,7 +913,7 @@ entity plan_smart_specific {
   value : value
 }
 
-entity plan_smart_measurable {
+entity smart_goal_measurable {
   name : string+
   summary : string
   description : text
@@ -922,7 +922,7 @@ entity plan_smart_measurable {
   value : value
 }
 
-entity plan_smart_actionable {
+entity smart_goal_actionable {
   name : string+
   summary : string
   description : text
@@ -931,7 +931,7 @@ entity plan_smart_actionable {
   value : value
 }
 
-entity plan_smart_relevant {
+entity smart_goal_relevant {
   name : string+
   summary : string
   description : text
@@ -940,7 +940,7 @@ entity plan_smart_relevant {
   value : value
 }
 
-entity plan_smart_timely {
+entity smart_goal_timely {
   name : string+
   summary : string
   description : text
@@ -992,14 +992,14 @@ entity plan_rice_effort {
   value : value
 }
 
-entity plan_rope {
+entity rope_estimate {
   realistic_id
   optimistic_id
   pessimistic_id
   equilibristic_id
 }
 
-entity plan_rope_realistic {
+entity rope_estimate_realistic {
   name : string+
   summary : string
   description : text
@@ -1008,7 +1008,7 @@ entity plan_rope_realistic {
   value : value
 }
 
-entity plan_rope_optimistic {
+entity rope_estimate_optimistic {
   name : string+
   summary : string
   description : text
@@ -1017,7 +1017,7 @@ entity plan_rope_optimistic {
   value : value
 }
 
-entity plan_rope_pessimistic {
+entity rope_estimate_pessimistic {
   name : string+
   summary : string
   description : text
@@ -1026,7 +1026,7 @@ entity plan_rope_pessimistic {
   value : value
 }
 
-entity plan_rope_equilibristic {
+entity rope_estimate_equilibristic {
   name : string+
   summary : string
   description : text

@@ -1,6 +1,12 @@
 # Color
 
-Any color and represented in a variety of ways.
+Color can be represented in a variety of ways:
+
+* Color schemes such as red green blue (rgb) or cyan yellow magenta black (cymk).
+
+* Color data types such as byte 0-255 or unit interval 0 to 1.
+
+* Color alpha transparency channel.
 
 
 ## red green blue (and alpha)
@@ -74,9 +80,9 @@ Example for light/dark themes:
 
 * light_theme_background : color_point.id -- example: white paper
 
-* dark_theme_foreground : color_point.id --  exmaple: white text
+* dark_theme_foreground : color_point.id --  example: white text
 
-* dark_theme_background : color_point.id --  exmaple: black paper
+* dark_theme_background : color_point.id --  example: black paper
 
 Example for color choices suitable for sign indicators.
 
@@ -102,9 +108,9 @@ Example for a log level theme:
 
 * warn : color_point.id -- example: the color orange means warning
 
-* notice : color_point.id -- example: the color yellow means caution
+* notice : color_point.id -- example: the color yellow is typical for caution
 
-* info : color_point.id --  exmaple: the color blue is typical for info
+* info : color_point.id --  example: the color blue is typical for info
 
 * debug : color_point.id --  example: the color gray represents all unknowns
 

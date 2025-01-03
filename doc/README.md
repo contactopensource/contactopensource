@@ -16,7 +16,7 @@ We use these categories:
 
 2. Nouns: organization, person, place, thing, event, etc.
 
-3. Annotations: tag, code, locale, media type, geo point, etc.
+3. Annotations: tag, code, locale, media type, geographic point, etc.
 
 4. Contacts: email contact, phone contact, postal contact, etc.
 
