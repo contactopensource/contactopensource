@@ -1,13 +1,14 @@
-libraries_org_identifier
-  summary: |-
-    Libraries.org identifier
-
-    Identifier for a library in the Libraries.org database
+libraries_org_identifier:
+  summary: Libraries.org identifier
+  description: |-
+    Libraries.org identifier is for a library in the Libraries.org database.
 
     https://www.wikidata.org/wiki/Property:P4848
   module: Codes
-  attributes:
-    identifier: 
-      type: string
-      example: TODO
-      index: true
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - key:
+          type: string
+          index: true

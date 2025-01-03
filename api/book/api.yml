@@ -8,7 +8,7 @@ book:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-      - title: 
+      - title:
           type: text
           example: Beloved
       - subtitle:

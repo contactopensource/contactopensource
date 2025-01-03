@@ -54,7 +54,7 @@ class Attribute:
                 return Attribute(
                     y,
                     None
-                )    
+                )
             case dict():
                 (id, y), = y.items()
                 a = Attribute();
@@ -69,7 +69,7 @@ class Attribute:
                 a.join = Attribute.parse_join(a.type)
                 return a
             case _:
-                raise Exception(y) 
+                raise Exception(y)
 
     @staticmethod
     def parse_nullable(s):
@@ -78,7 +78,7 @@ class Attribute:
         if s.__contains__("!"):
             return False
         return None
-        
+
     @staticmethod
     def parse_index(s):
         return s.__contains__("+")

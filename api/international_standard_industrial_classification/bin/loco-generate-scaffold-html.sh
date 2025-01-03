@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    international_standard_industrial_classification_isic \
+    international_standard_industrial_classification \
         id:bigint \
         zid:uuid \
         lock_version:int \

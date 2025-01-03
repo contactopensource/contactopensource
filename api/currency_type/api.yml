@@ -1,11 +1,11 @@
 currency_type:
-  summary: >
+  summary: |-
     Currency is a standardization of money in any form, in use or circulation as a medium of exchange, for example banknotes and coins.
 
     A more general definition is that a currency is a system of money in common use within a specific environment over time, especially for people in a nation state.
-    
-    Under this definition, the British Pound sterling (£), euros (€), Japanese yen (¥), and U.S. dollars (US$) are examples of (government-issued) fiat currencies. 
-    
+
+    Under this definition, the British Pound sterling (£), euros (€), Japanese yen (¥), and U.S. dollars (US$) are examples of (government-issued) fiat currencies.
+
     https://wikipedia.org/wiki/Currency
 
   attribute_groups:

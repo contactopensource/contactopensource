@@ -4,6 +4,11 @@ skinparam linetype ortho
 hide circle
 
 entity united_states_bureau_of_labor_statistics_standard_occupational_classification_2018 {
+  .. Main ..
+  group : string ⚡
+  code : string ⚡
+  title : string ⚡
+  definition : text ⚡
 }
 
 @enduml

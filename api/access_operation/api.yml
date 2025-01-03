@@ -6,9 +6,8 @@ access_operation:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
-    - main:
+    - Main:
       - key:
           type: string
           index: true
           example: access_operation_example
-    

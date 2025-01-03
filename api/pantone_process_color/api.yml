@@ -1,24 +1,24 @@
 pantone_process_color:
-  summary: >
-    Pantone Process Color numbers start with the letter P followed by a one- to three-digit number, a dash, and a one- to two-digit number. 
-    
+  summary: |-
+    Pantone Process Color numbers start with the letter P followed by a one- to three-digit number, a dash, and a one- to two-digit number.
+
     The "C" suffix indicates coated stock and the "U" uncoated.
   attribute_groups:
     - !include ../_meta.yml
     - Main:
-      - key: 
+      - key:
           type: string
           index: true
-          example: "'Red 032 C'. Always use Pantone format '{name} {code} {stock}'."
+          example: "\"Red 032 C\". Always use Pantone format \"{name} {code} {stock}\"."
       - name:
           type: string
           index: true
-          example: "'Red'. Always use Pantone case, which is typically title case."
+          example: "\"Red\". Always use Pantone case, which is typically title case."
       - code:
           type: string(3)
           index: true
-          example: "'032' is red. Leading zero matters."
-      - stock: 
+          example: "\"032\" means red. Any leading zeros matter."
+      - stock:
           type: string(1)
           index: true
-          example: "'C' indicates coated stock; 'U' indicates uncoated stock."
+          example: "\"C\" indicates coated stock; \"U\" indicates uncoated stock. Uppercase only."

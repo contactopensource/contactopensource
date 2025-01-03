@@ -48,7 +48,7 @@ person:
           type: text
           example: "ˈɑli"
       - prefix_name:
-          help: The person's name prefix full text, such Doctor, Reverend, Mix 
+          help: The person's name prefix full text, such Doctor, Reverend, Mix
           type: text
           example: Doctor
       - prefix_name_phonetic:
@@ -125,4 +125,3 @@ person:
           type: integer
           index: true
           example: 2070
-  # uml: person ||-r-o{ person_locale

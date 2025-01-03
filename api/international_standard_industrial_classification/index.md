@@ -1,4 +1,4 @@
-# international_standard_industrial_classification_isic
+# international_standard_industrial_classification
 
 International Standard Industrial Classification (ISIC)
 

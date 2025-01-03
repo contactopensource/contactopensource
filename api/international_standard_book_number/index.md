@@ -12,7 +12,7 @@ A 13-digit ISBN can be separated into its parts:
   * publication
   * check digit
 
-The International ISBN Agency maintains the details of over one million ISBN prefixes and publishers in the Global Register of Publishers.[47] This database is freely searchable over the internet. 
+The International ISBN Agency maintains the details of over one million ISBN prefixes and publishers in the Global Register of Publishers.[47] This database is freely searchable over the internet.
 
 
 ## Attributes

@@ -41,6 +41,6 @@ class Package:
         if y is None:
             return None
         return Package(
-            id, 
+            id,
             y.get('summary', None)
         )

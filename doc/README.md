@@ -485,10 +485,10 @@ CREATE TABLE `media_types` (
 ```
 
 
-### geo_points
+### geography_points
 
 ```sql
-CREATE TABLE `geo_points` (
+CREATE TABLE `geography_points` (
     …
     -- Geo-related
     latitude numeric(12,9), -- example: '37.8199' is 37.8199° N which is Golden Gate Bridge
@@ -498,10 +498,10 @@ CREATE TABLE `geo_points` (
 );
 ```
 
-### geo_point_centers
+### geography_point_centers
 
 ```sql
-CREATE TABLE `geo_point_centers` (
+CREATE TABLE `geography_point_centers` (
     …
     -- Code-related
     coder_id uuid, -- example: fda15956587d3766862f72fe5ab1feea is Open Location Code

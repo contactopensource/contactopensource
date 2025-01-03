@@ -1,9 +1,10 @@
 # ability
 
 Abilities are powers an agent has to perform various actions. They include common abilities, like walking, and rare abilities, like performing a double backflip.
-Abilities are intelligent powers: they are guided by the person's intention and executing them successfully results in an action, which is not true for all types of powers. 
-https://wikipedia.org/wiki/Ability
 
+Abilities are intelligent powers: they are guided by the person's intention and executing them successfully results in an action, which is not true for all types of powers.
+
+https://wikipedia.org/wiki/Ability
 
 
 ## Attributes

@@ -6,7 +6,7 @@ access_attribute:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
-    - main:
+    - Main:
       - key:
           type: string
           index: true

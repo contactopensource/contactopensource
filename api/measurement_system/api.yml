@@ -1,8 +1,8 @@
 measurement_system:
   summary: |-
     A measurement system, such as of distance, or time, etc.
-  
-    Examples: 
+
+    Examples:
       * the metric measurement system vs the imperial measurement system
       * the Gregorian calendar vs the Julian calendar
 

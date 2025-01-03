@@ -3,15 +3,15 @@ def render(attribute):
 
 def render_options(attribute):
     options = list(filter(lambda x: x is not None, [
-        render_index(attribute), 
-        render_nullable(attribute), 
+        render_index(attribute),
+        render_nullable(attribute),
         render_unique(attribute)
     ]))
     if len(options) > 0:
         return ' (' + ', '.join(options) + ')'
     else:
         return ''
-    
+
 def render_index(attribute):
     return "index" if attribute.index else None
 

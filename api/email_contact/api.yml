@@ -1,5 +1,5 @@
 email_contact:
-  summary: >
+  summary: |-
     An email contact, which is an email address and personal info.
 
     https://wikipedia.org/wiki/Uniform_Resource_Identifier
@@ -13,15 +13,16 @@ email_contact:
           summary: See https://tools.ietf.org/html/rfc5322
           type: text
           example: Alice Adams <alice@example.com>
+    - Parts:
       - display_name:
           summary: display name
           type: text
           example: Alice Adams
-      - local_part:
-          summary: local part
-          type: text
-          example: alice
       - addr_spec:
           summary: addr spec
           type: text
           example: alice@example.com
+      - local_part:
+          summary: local part
+          type: text
+          example: alice

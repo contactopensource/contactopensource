@@ -68,9 +68,9 @@ Color:
 
 Geo:
 
-* [geo_point](concepts/geo_point/)
-* [geo_point_code](concepts/geo_point_code/)
-* [geo_point_center](concepts/geo_point_center/)
+* [geography_point](concepts/geography_point/)
+* [geography_point_code](concepts/geography_point_code/)
+* [geography_point_center](concepts/geography_point_center/)
 
 Contacts:
 

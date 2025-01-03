@@ -3,7 +3,7 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity international_standard_industrial_classification_isic {
+entity international_standard_industrial_classification {
   .. Meta ..
   id : bigint ⚡
   zid : uuid ⚡

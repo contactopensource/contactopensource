@@ -81,9 +81,9 @@ package Color {
 }
 
 package Geo {
-  entity geo_point
-  entity geo_point_code
-  entity geo_point_center
+  entity geography_point
+  entity geography_point_code
+  entity geography_point_center
 }
 
 package Contact {
@@ -577,20 +577,20 @@ entity color_point_cymka_with_unit_interval {
 '
 '''
 
-entity geo_point {
+entity geography_point {
   latitude : numeric
   longitude : numeric
   altitude : numeric
   elevation : numeric
 }
 
-entity geo_point_code {
-  geo_point_id : text
+entity geography_point_code {
+  geography_point_id : text
   name : string+
 }
 
-entity geo_point_center {
-  geo_point_id : geo_point(id)+
+entity geography_point_center {
+  geography_point_id : geography_point(id)+
   spread_as_meters : numeric
 }
 

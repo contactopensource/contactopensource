@@ -2,7 +2,7 @@ postal_contact:
   summary: |-
     A postal address, such as for mail delivery, or map routes, or demographics.
 
-    Postal address formats are different in different places, and unlike latitude and longitude coordinates, there is no simple mapping from an address to a location. 
+    Postal address formats are different in different places, and unlike latitude and longitude coordinates, there is no simple mapping from an address to a location.
 
     https://wikipedia.org/wiki/Address
   attribute_groups:
@@ -21,7 +21,7 @@ postal_contact:
           summary: A country's regional area, such as a United States state, a Canada province, etc.  If possible, aim for ISO 3166-2.
           type: text
           example: "CA means the United States subdivision of California"
-      - district_text: 
+      - district_text:
           summary: A district is typically smaller than a region, and typically larger than a city, in countries that use such an additional layer in postal addressing, for example, prefectures in China.
           type: text
           example: "\"Kashgar Prefecture\" which is an area in China"

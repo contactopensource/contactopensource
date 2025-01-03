@@ -53,6 +53,8 @@ Main:
 
   * number_text: text (index) - example: 1 (415) 555-0000
 
+Parts:
+
   * e164_text: string(15) (index) - example: 14155550000 means United States country code, San Francisco area code, etc.
 
   * e164_country_code: string(3) (index) - example: 1 means United States

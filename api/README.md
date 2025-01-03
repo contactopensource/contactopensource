@@ -11,9 +11,9 @@ The API aims to use resources, such as typical REST-like resources, for typical 
 Each resource is defined in its own subdirectory such as:
 
 * [person/](person/)
-  
+
 * [place/](place/)
- 
+
 * [thing/](thing/)
 
 Each resource subdirectory contains a file `api.yml` that specifies details such as:
@@ -25,9 +25,9 @@ Each resource subdirectory contains a file `api.yml` that specifies details such
 * `model`: A model name that is singular, word case, and suitable for web frameworks, such as `Person`.
 
 * `table`: A table name that is plural, snake case, and suitable for databases, such as `persons`. Note that some table name conventions have special ways to handle some words, such as `persons` vs. `people`, or words that are their own plurals such as `fish` or `sheep`.
-  
+
 * `uml`: Any UML fragment that is PlantUML syntax, such as connecting UML ERD boxs by using `access_agent ||-r-o{ access_agent_locale`.
-  
+
 * `attributes`: A list of attributes, such as for the person's name, birth date, etc.
 
 
@@ -42,7 +42,7 @@ For typical cards:
   * `description`: An optional string that is plain text, as long as you wish.
 
   * `disambiguation`: An optional string that is plain text, that describes how this particular item is different than others.
-    
+
   * `locale_id`: An international locale identifier, such as the id of locale "English - United States".
 
 For typical images:
@@ -52,7 +52,7 @@ For typical images:
   * `image_1024x1024_url`: An image URL for the item, 1024x1024 pixels, which is square 1:1 aspect ratio.
 
   * `image_1024x1024_alt`: An image alternative text description for the item.
-    
+
   * `image_1920x960_url`: An image URL for the item, 1920x1024 pixels, which is landscape 2:1 aspect ratio.
 
   * `image_1920x960_alt`: An image alternative text description for the item.
@@ -73,7 +73,7 @@ For typical dates:
 The attributes aim to use specific naming conventions:
 
 * To help align with [schema.org](https://schema.org), such as the worldwide convention of `given_name` rather than the United States convention of `first_name`.
-  
+
 * To improve maintainability and clarity, such as using present tense full words like `birth_date` rather than past tense `born_on` or abbreviation `dob`.
 
 

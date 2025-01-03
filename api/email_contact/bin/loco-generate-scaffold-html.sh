@@ -24,6 +24,6 @@ cargo loco generate scaffold --html \
         star_count:integer \
         address:text \
         display_name:text \
-        local_part:text \
         addr_spec:text \
+        local_part:text \
 

@@ -27,9 +27,10 @@ entity email_contact {
   star_count : integer
   .. Main ..
   address : text
+  .. Parts ..
   display_name : text
-  local_part : text
   addr_spec : text
+  local_part : text
 }
 
 @enduml

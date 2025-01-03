@@ -1,6 +1,6 @@
-CREATE TABLE geo_point (
+CREATE TABLE geography_point (
 );
 
-CREATE INDEX index_geo_point_id on geo_point(id);
-CREATE INDEX index_geo_point_zid on geo_point(zid);
+CREATE INDEX index_geography_point_id on geography_point(id);
+CREATE INDEX index_geography_point_zid on geography_point(zid);
 

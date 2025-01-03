@@ -12,6 +12,6 @@ def render_type(attribute):
         # Return a quoted type and curly constraint e.g. "\"string{1}\""
         return "\"{}{{{}}}\"".format(x.group(1), x.group(2))
     return attribute.type
-    
+
 def render_index(attribute):
     return ":index" if attribute.index else None

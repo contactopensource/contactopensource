@@ -3,9 +3,9 @@ def render(attribute):
 
 def render_options(attribute):
     options = list(filter(lambda x: x is not None, [
-        render_index(attribute), 
-        render_key(attribute), 
-        #render_nullable(attribute), 
+        render_index(attribute),
+        render_key(attribute),
+        #render_nullable(attribute),
         render_unique(attribute)
     ]))
     if len(options) > 0:
@@ -27,7 +27,7 @@ def render_nullable(attribute):
             return "!"
         case _:
             return None
-    
+
 def render_unique(attribute):
     return "➀" if attribute.unique else None
 

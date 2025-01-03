@@ -29,13 +29,13 @@ Meta:
 
 Main:
 
-  * hex: hexdigit(6)+ - example: FF0088 means purple
+  * hex: hexdigit(6)+ - example: "FF0000" means red
 
-  * html_color_name: text - example: red
+  * html_color_name: text - example: "Red" as titlecase
 
-  * x11_color_name: text - example: red
+  * x11_color_name: text - example: "Red" as titlecase
 
-  * color_naming_system_name: text - example: red
+  * color_naming_system_name: text - example: "red" as lowercase
 
-  * pantone_process_color_name: text - example: red
+  * pantone_process_color_name: text - example: "Red 032 C" means red
 

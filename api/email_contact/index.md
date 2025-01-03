@@ -1,8 +1,8 @@
 # email_contact
 
 An email contact, which is an email address and personal info.
-https://wikipedia.org/wiki/Uniform_Resource_Identifier
 
+https://wikipedia.org/wiki/Uniform_Resource_Identifier
 
 
 ## Attributes
@@ -53,9 +53,11 @@ Main:
 
   * address: text - example: Alice Adams <alice@example.com>
 
+Parts:
+
   * display_name: text - example: Alice Adams
 
-  * local_part: text - example: alice
-
   * addr_spec: text - example: alice@example.com
+
+  * local_part: text - example: alice
 

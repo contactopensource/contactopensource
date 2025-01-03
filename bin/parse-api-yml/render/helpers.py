@@ -4,7 +4,7 @@ def sh():
 
 def replace_start(str, old, new):
     if str.startswith(old):
-        return new + str[len(old):] 
+        return new + str[len(old):]
     return str
 
 def replace_end(str, old, new):

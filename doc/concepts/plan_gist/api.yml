@@ -1,20 +1,19 @@
 plan_gist:
   summary: Plan with GIST criteria.
   module: Plan
-  attributes:
-    goal_id:
-      summary: goal id
-      type: plan_item.id
-      example: TODO
-    idea_id:
-      summary: idea id
-      type: plan_item.id
-      example: TODO
-    step_id:
-      summary: step id
-      type: plan_item.id
-      example: TODO
-    task_id:
-      summary: task id
-      type: plan_item.id
-      example: TODO
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - goal_id:
+          summary: goal id
+          type: plan_item.id
+      - idea_id:
+          summary: idea id
+          type: plan_item.id
+      - step_id:
+          summary: step id
+          type: plan_item.id
+      - task_id:
+          summary: task id
+          type: plan_item.id

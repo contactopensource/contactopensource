@@ -1,7 +1,7 @@
 media_type:
-  summary: >
-    A media type is a two-part identifier for file formats and content formats. Their purpose is comparable to filename extensions and uniform type identifiers, in that they identify the intended data format. 
-    
+  summary: |-
+    A media type is a two-part identifier for file formats and content formats. Their purpose is comparable to filename extensions and uniform type identifiers, in that they identify the intended data format.
+
     A media type is also known as an HTTP Content Type, or a Multipurpose Internet Mail Extensions (MIME) type.
 
     https://wikipedia.org/wiki/Media_type
@@ -13,24 +13,24 @@ media_type:
       - text:
           summary: string
           type: string
-          example: "'application/vnd.foo;charset=UTF-8'"
+          example: "\"application/vnd.foo;charset=UTF-8\""
       - supertype:
           summary: supertype
           type: string
-          example: "'application' means an application"
+          example: "\"application\" means an application"
       - subtype:
           summary: subtype
           type: string
-          example: "'vnd.foo' means vendor then foo namespace"
+          example: "\"vnd.foo\" means vendor then foo namespace"
       - tree:
           summary: tree
           type: string
-          example: "'vnd.' means vendor tree"
+          example: "\"vnd.\" means vendor tree"
       - suffix:
           summary: suffix
           type:  string
-          example: "'+zip' means ZIP compressed file"
+          example: "\"+zip\" means ZIP compressed file"
       - parameters:
           summary: parameters
           type: string[]
-          example: "charset=UTF-8"
+          example: "\"charset=UTF-8\" means character set is Unicode Transformation Format 8"

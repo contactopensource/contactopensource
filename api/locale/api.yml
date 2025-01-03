@@ -1,7 +1,7 @@
 locale:
   summary: >
-    A locale (in computer software) is a set of parameters that defines the user's language, region, and any special variant preferences that the user wants to see in their user interface. 
-    
+    A locale (in computer software) is a set of parameters that defines the user's language, region, and any special variant preferences that the user wants to see in their user interface.
+
     Locale is an important aspect of i18n.
 
     https://wikipedia.org/wiki/Locale_(computer_software)

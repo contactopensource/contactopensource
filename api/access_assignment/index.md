@@ -5,7 +5,7 @@ Access control assignment, which joins access_agent and access_attribute.
 
 ## Attributes
 
-join:
+Join:
 
   * access_agent_id: access_agent.id - example: access agent "alice"
 

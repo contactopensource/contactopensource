@@ -1,6 +1,10 @@
 # measurement_system
 
-Measurement system, such as the metric measurement system, or imperial measurement system.
+A measurement system, such as of distance, or time, etc.
+
+Examples:
+  * the metric measurement system vs the imperial measurement system
+  * the Gregorian calendar vs the Julian calendar
 
 
 ## Attributes
@@ -27,27 +31,9 @@ Meta:
 
   * locale_id: locale.id - example: the id of locale "English - United States".
 
-Card:
-
-  * title: string(50) (index) - example: Alice Anderson
-
-  * subtitle: string(50) (index) - example: @alice
-
-  * summary: string - example: I am a doctor who helps treat children.
-
-  * description: text - example: This text is a description and can be as long as you wish.
-
-  * disambiguation: text - example: This text explains the difference between this item and others.
-
-  * image_1024x1024_url: url
-
-  * image_1024x1024_alt: text
-
-  * emoji: text - example: 🚀
-
-  * star_count: integer - example: 5 for the best rating
-
 Main:
 
   * key: string (index) - example: "metric" or "imperial"
+
+  * formal_name: string (index) - example: "the metric measurement system" or "the imperial measurement system"
 

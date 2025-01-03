@@ -1,4 +1,4 @@
 geo:
   summary: Geo package for geo-related concepts, such as geography, geolocation, geofencing, etc.
   entities:
-    geo_point
+    geography_point

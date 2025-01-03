@@ -8,18 +8,18 @@ international_standard_classification_of_occupations_2008:
   module: Codes
   attribute_groups:
     - Main:
-      - group: 
+      - group:
           type: string
           example: TODO
           index: true
-      - code: 
+      - code:
           type: string
           example: TODO
           index: true
-      - title: 
+      - title:
           type: string
           example: TODO
           index: true
-      - definition: 
+      - definition:
           type: string
           example: TODO

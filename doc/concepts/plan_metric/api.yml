@@ -8,4 +8,3 @@ plan_metric:
         summary: value
         type: numeric
         example: TODO
-          

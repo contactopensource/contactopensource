@@ -6,9 +6,8 @@ access_agent:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
-    - main:
+    - Main:
       - key:
           type: string
           index: true
           example: access_agent_example
-  # uml: access_agent ||-r-o{ access_agent_locale

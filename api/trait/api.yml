@@ -1,7 +1,7 @@
 trait:
   summary: |-
     A trait is a distinguishing quality or characteristic, such as one belonging to a person.
-    
+
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

@@ -47,7 +47,7 @@ Card:
 
   * star_count: integer - example: 5 for the best rating
 
-main:
+Main:
 
   * key: string (index) - example: access_agent_example
 

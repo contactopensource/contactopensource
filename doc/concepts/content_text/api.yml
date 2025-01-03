@@ -1,9 +1,0 @@
-content_text:
-  summary: Represent the content media type "text/*".
-  module: Content
-  attributes:
-    name:
-      summary: name
-      type: string
-      index: true
-      example: Example name

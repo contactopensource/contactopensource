@@ -2,6 +2,8 @@
 
 GS1 country code.
 
+https://wikipedia.org/wiki/GS1
+
 https://wikipedia.org/wiki/List_of_GS1_country_codes
 
 

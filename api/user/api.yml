@@ -1,6 +1,6 @@
 user:
   summary: User for sign up, sign in, access control, authentication, authorization, tenant joins, etc.
-  attributes: 
+  attributes:
     name:
       help: This "name" field can be whatever the application wants, such as the user's actual name, or sign in username, or social media handle, etc.
       type: string

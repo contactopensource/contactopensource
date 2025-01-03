@@ -1,7 +1,8 @@
-geo_point:
+geography_point:
   summary: |-
-
-    A geo_point is a geographic point in space, typically with a latitude, longitude, and optionally with an altitude and/or elevation.
+    A geography_point is a geographic point in space, typically with a latitude, longitude, and optionally with an altitude and/or elevation.
+  description: |-
+    A geography_point is a geographic point in space, typically with a latitude, longitude, and optionally with an altitude and/or elevation.
 
     Comparison of altitude and elevation:
 
@@ -9,11 +10,17 @@ geo_point:
 
       * The elevation of an object is its height on the earth's surface, typically compared to mean sea level (MSL) or above ground level (AGL).
 
-    Examples: 
-    
-      * An airplane in flight has an altitude, not an elevation. 
-      
+    Examples:
+
+      * An airplane in flight has an altitude, not an elevation.
+
       * A mountain has an elevation, not an altitude.
+
+    Terminology:
+
+      * Above mean sea level (MSL) is a.k.a. "true" such as "true altitude".
+
+      * Above ground level (AGL) is a.k.a. "absolute" such as "absolute altitude".
 
     Calculations:
 

@@ -27,7 +27,7 @@ def render_nullable(attribute):
     #     return ' NOT NULL'
     # else:
     #     return ''
-    
+
 def render_unique(attribute):
     return ''
     #TODO

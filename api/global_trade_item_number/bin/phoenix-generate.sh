@@ -23,8 +23,8 @@ mix phx.gen.html \
         emoji:textNone \
         star_count:integerNone \
         code:digit(14):index \
-        prefix:string:index \
-        item:string:index \
+        prefix:digit(3):index \
+        item:digit(9):index \
         check_digit:digit(1)None \
         indicator_digit:digit(1)None \
     --force \

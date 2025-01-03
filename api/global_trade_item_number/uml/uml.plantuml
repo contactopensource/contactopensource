@@ -27,8 +27,9 @@ entity global_trade_item_number {
   star_count : integer
   .. Main ..
   code : digit(14) ⚡
-  prefix : string ⚡
-  item : string ⚡
+  .. Parts ..
+  prefix : digit(3) ⚡
+  item : digit(9) ⚡
   check_digit : digit(1)
   indicator_digit : digit(1)
 }

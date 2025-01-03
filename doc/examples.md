@@ -400,7 +400,7 @@ example: New York, Grand Central, spread 1 kilometer
 
   * id: d4677d7c8f7b034c9ba331087097ed6b
 
-  * center_as_geo_point_id: c8fb5187e718484eefb9e8dceef4cd68
+  * center_as_geography_point_id: c8fb5187e718484eefb9e8dceef4cd68
 
   * spread_as_meters: 1000
 
@@ -408,7 +408,7 @@ example: San Francisco, Ferry Building, spread 1 kilometer
 
   * id: 4b74e5d7848af524199f26ecf7348718
 
-  * center_as_geo_point_id: "6e7e03c894c96caeee4719e3dcccd339" as id
+  * center_as_geography_point_id: "6e7e03c894c96caeee4719e3dcccd339" as id
 
   * spread_as_meters: 1000
 
@@ -419,17 +419,17 @@ example: New York, Grand Central, delta -/+ 0.1 latitude/longitude
 
   * id: 353fc6f3bfc3c56a5a687f9a986af0da
 
-  * geo_point_id: d3ef3da36e8e835a464b51b00ae9a827 (New York Grand Central, delta -0.1 latitude, -0.1 longitude)
+  * geography_point_id: d3ef3da36e8e835a464b51b00ae9a827 (New York Grand Central, delta -0.1 latitude, -0.1 longitude)
 
-  * geo_point id: 17c3d2697fea9eeeca776f855b69b394 (New York Grand Central, delta +0.1 latitude, +0.1 longitude)
+  * geography_point id: 17c3d2697fea9eeeca776f855b69b394 (New York Grand Central, delta +0.1 latitude, +0.1 longitude)
 
 example: San Francisco, Ferry Building, delta -/+ 0.1 latitude/longitude
 
   * id: e809d4983199ea8f89f2915846e8ab9c
 
-  * geo_point_id: dffa13312090a7966cc05af0bcecebc4 (San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude)
+  * geography_point_id: dffa13312090a7966cc05af0bcecebc4 (San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude)
 
-  * geo_point_id: a93526cc717f3bc83e32ed2e74d1fc85 (San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude)
+  * geography_point_id: a93526cc717f3bc83e32ed2e74d1fc85 (San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude)
 
 
 ## Link contact

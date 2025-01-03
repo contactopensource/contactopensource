@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold \
-    geo_point \
+    geography_point \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

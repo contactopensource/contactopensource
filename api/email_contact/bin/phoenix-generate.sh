@@ -24,8 +24,8 @@ mix phx.gen.html \
         star_count:integerNone \
         address:textNone \
         display_name:textNone \
-        local_part:textNone \
         addr_spec:textNone \
+        local_part:textNone \
     --force \
     --no-timestamps \
 

@@ -47,7 +47,7 @@ def banner(s):
 def parse_path(path: os.PathLike):
     """
     Parse path to a project API file e.g. "./api/user/api.yml"
- 
+
     Args:
         path (path): The path to parse e.g. "./api/user/api.yml"
 

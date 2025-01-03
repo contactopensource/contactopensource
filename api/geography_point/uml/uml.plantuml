@@ -3,7 +3,7 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity geo_point {
+entity geography_point {
   .. Meta ..
   id : bigint ⚡
   zid : uuid ⚡

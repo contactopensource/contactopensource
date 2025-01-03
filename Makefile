@@ -1,5 +1,1 @@
-all: uml
-
-.PHONY: uml
-uml:
-	bin/make-uml
+top = $(shell git rev-parse --show-toplevel)

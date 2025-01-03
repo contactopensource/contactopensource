@@ -11,7 +11,7 @@ Example api.yml file:
       uml: …
       attribute_groups: …
 """
-  
+
 #from functools import reduce
 from itertools import chain
 from attribute_group import AttributeGroup
@@ -28,7 +28,7 @@ class Entity:
 
     def attributes(self):
         return list(chain(map(lambda x: x.attributes, self.attribute_groups)))
-    
+
     def __str__(self):
         return f"id: {self.id}, summary: {self.summary}, module: {self.module}, model: {self.model}, table: {self.table}, uml: {self.uml}, attribute_groups: {self.attribute_groups}"
 
@@ -56,11 +56,11 @@ class Entity:
             return None
         (id, y) = y
         return Entity(
-            id, 
-            y.get('summary', None), 
+            id,
+            y.get('summary', None),
             y.get('module', None),
             y.get('model', None),
-            y.get('table', None), 
+            y.get('table', None),
             y.get('uml', None),
             AttributeGroup.parse(y.get('attribute_groups', [])),
         )

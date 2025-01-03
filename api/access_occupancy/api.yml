@@ -7,7 +7,7 @@ access_occupancy:
     - join:
       - access_tenant_it:
           type: access_tenant.id
-          example: access tenant 'ACME'
+          example: "access tenant \"ACME\""
       - access_agent_id:
           type: access_agent.id
-          example: access agent 'alice'
+          example: "access agent \"alice\""

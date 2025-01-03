@@ -14,6 +14,7 @@ phone_contact:
           type: text
           index: true
           example: 1 (415) 555-0000
+    - Parts:
       - e164_text:
           summary: e164 text
           type: string(15)

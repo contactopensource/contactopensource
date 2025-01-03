@@ -51,12 +51,12 @@ class AttributeGroup:
             case str():
                 return AttributeGroup(
                     y
-                )    
+                )
             case dict():
                 (id, y), = y.items()
                 return AttributeGroup(
                     id,
                     Attribute.parse(y)
-                )    
+                )
             case _:
-                raise Exception(y) 
+                raise Exception(y)

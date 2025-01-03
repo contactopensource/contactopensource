@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-rails generate scaffold 
+rails generate scaffold
 plan_okr \
 	$RAILS_GENERATE_SCAFFOLD_FIELDS_BEFORE \
     objective_id:references:index \

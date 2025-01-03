@@ -1,8 +1,0 @@
-content_font:
-  summary: Represent the content media type "font/*".
-  module: Content
-  attributes:
-    name:
-      summary: name
-      type: text
-      example: Arial

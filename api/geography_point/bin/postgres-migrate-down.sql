@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS geo_point;
-DROP INDEX IF EXISTS index_geo_point_id;
-DROP INDEX IF EXISTS index_geo_point_zid;
+DROP TABLE IF EXISTS geography_point;
+DROP INDEX IF EXISTS index_geography_point_id;
+DROP INDEX IF EXISTS index_geography_point_zid;
 

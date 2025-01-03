@@ -77,8 +77,8 @@ color_point_cymk_with_unit_interval -[hidden] color_point_cymka_with_byte
 color_point_cymka_with_byte -r-> color_point_cymka_with_unit_interval
 
 '' package Geo
-geo_point -[hidden] geo_point_code
-geo_point_code -[hidden] geo_point_center
+geography_point -[hidden] geography_point_code
+geography_point_code -[hidden] geography_point_center
 
 '' package Social
 post -[hidden] feed

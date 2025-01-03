@@ -6,21 +6,21 @@ color_name_kit:
     - Main:
       - hex:
           summary: hexadecimal-lowercase six-character code
-          type: hexdigit(6)+ 
-          example: FF0088 means purple
+          type: hexdigit(6)+
+          example: "\"FF0000\" means red"
       - html_color_name:
-          summary: See https://en.wikipedia.org/wiki/Web_colors#HTML_color_names
+          summary: See https://wikipedia.org/wiki/Web_colors#HTML_color_names
           type: text
-          example: red
+          example: "\"Red\" as titlecase"
       - x11_color_name:
           summary: See https://en.wikipedia.org/wiki/X11_color_names
           type: text
-          example: red
+          example: "\"Red\" as titlecase"
       - color_naming_system_name:
           summary: See https://en.wikipedia.org/wiki/Color_Naming_System
           type: text
-          example: red
+          example: "\"red\" as lowercase"
       - pantone_process_color_name:
           summary: See https://en.wikipedia.org/wiki/Pantone
           type: text
-          example: red
+          example: "\"Red 032 C\" means red"

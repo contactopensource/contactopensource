@@ -25,7 +25,7 @@ entity access_agent {
   image_1024x1024_alt : text
   emoji : text
   star_count : integer
-  .. main ..
+  .. Main ..
   key : string ⚡
 }
 

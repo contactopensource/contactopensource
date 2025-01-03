@@ -28,6 +28,7 @@ entity phone_contact {
   .. Main ..
   label : text
   number_text : text ⚡
+  .. Parts ..
   e164_text : string(15) ⚡
   e164_country_code : string(3) ⚡
   e164_national_destination_code : string(13) ⚡

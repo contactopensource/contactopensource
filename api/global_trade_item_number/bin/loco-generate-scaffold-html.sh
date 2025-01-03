@@ -23,8 +23,8 @@ cargo loco generate scaffold --html \
         emoji:text \
         star_count:integer \
         code:digit(14) \
-        prefix:string \
-        item:string \
+        prefix:digit(3) \
+        item:digit(9) \
         check_digit:digit(1) \
         indicator_digit:digit(1) \
 

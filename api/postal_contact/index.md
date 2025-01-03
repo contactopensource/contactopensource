@@ -2,7 +2,7 @@
 
 A postal address, such as for mail delivery, or map routes, or demographics.
 
-Postal address formats are different in different places, and unlike latitude and longitude coordinates, there is no simple mapping from an address to a location. 
+Postal address formats are different in different places, and unlike latitude and longitude coordinates, there is no simple mapping from an address to a location.
 
 https://wikipedia.org/wiki/Address
 

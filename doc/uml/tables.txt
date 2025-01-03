@@ -32,9 +32,9 @@ content_multipart
 content_text
 content_video
 color_point
-geo_point
-geo_point_code
-geo_point_center
+geography_point
+geography_point_code
+geography_point_center
 uri_contact
 email_contact
 phone_contact

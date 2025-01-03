@@ -1,13 +1,8 @@
-timestamp_utc_range
-  summary: timestamp UTC range
-  module: TODO
-  attributes:
-    start:
-      summary: start
-      type: timestamp
-      example: 2020-01-01T00:00:00±00:00
-    stop:
-      summary: stop
-      type: timestamp
-      example: 2030-01-01T00:00:00±00:00
-    length: decimal -- example: 3.154e+8
+    - start:
+        summary: start
+        type: timestamp_utc
+        example: 2020-01-01T00:00:00±00:00
+    - stop:
+        summary: stop
+        type: timestamp_utc
+        example: 2030-01-01T00:00:00±00:00

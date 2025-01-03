@@ -4,7 +4,7 @@ access_assignment:
   model: Assignment
   table: access_assignments
   attribute_groups:
-    - join:
+    - Join:
       - access_agent_id:
           type: access_agent.id
           example: access agent "alice"
