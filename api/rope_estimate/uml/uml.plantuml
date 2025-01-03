@@ -1,0 +1,37 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity rope_estimate {
+  .. Meta ..
+  id : bigint ⚡
+  zid : uuid ⚡
+  lock_version : int
+  created_at : timestamp
+  created_by : url
+  updated_at : timestamp
+  updated_by : url
+  retired_at : timestamp
+  retired_by : url
+  locale_id : locale.id 🔑
+  .. Card ..
+  title : string(50) ⚡
+  subtitle : string(50) ⚡
+  summary : string
+  description : text
+  disambiguation : text
+  image_1024x1024_url : url
+  image_1024x1024_alt : text
+  emoji : text
+  star_count : integer
+  .. Main ..
+  realistic_card_id : card.id 🔑
+  optimistic_card_id : card.id 🔑
+  pessimistic_card_id : card.id 🔑
+  equilibristic_card_id : card.id 🔑
+  .. Measurement ..
+  measurement_unit_id : measurement_unit.id 🔑
+}
+
+@enduml
