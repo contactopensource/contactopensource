@@ -1,0 +1,17 @@
+    - cron_schedule_posix_string:
+        help: A cron schedule POSIX string that describes how to schedule time-based jobs.
+        description: |-
+            A cron schedule POSIX string that describes how to schedule time-based jobs.
+
+            https://wikipedia.org/wiki/Cron
+
+            There are 5 fields:
+
+            * minute (0-59)
+            * hour (0-23)
+            * month day (1 - 31)
+            * month (1-12 meaning January to December)
+            * week day (0 - 6 meaning Sunday to Monday) 
+
+        type: string
+        index: false
