@@ -1,0 +1,19 @@
+plan_gist:
+  summary: Plan with GIST criteria.
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - goal_id:
+          summary: "Goal"
+          type: card.id
+      - idea_id:
+          summary: "Idea"
+          type: card.id
+      - step_id:
+          summary: "Step"
+          type: card.id
+      - task_id:
+          summary: "Task"
+          type: card.id
