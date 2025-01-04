@@ -1,0 +1,49 @@
+tz_database_2024b:
+  summary: The tz database for time zones of the world.
+  description: |-
+    The tz database is a collaborative compilation of information about the world's time zones and rules for observing daylight saving time, primarily intended for use with computer programs and operating systems.
+    
+    https://en.wikipedia.org/wiki/Tz_database
+
+    The file contains a table with the following columns:
+    
+    1. Country code: ISO 3166 2-character country code.  See the file `iso3166.tab'."
+
+    2.  Latitude and longitude of the zone's principal location
+        in ISO 6709 sign-degrees-minutes-seconds format,
+        either +-DDMM+-DDDMM or +-DDMMSS+-DDDMMSS,
+        first latitude (+ is north), then longitude (+ is east).
+
+    3.  Zone name used in value of TZ environment variable.
+
+    4.  Comment; present if and only if the country has multiple rows.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - country_code:
+          summary: "Country code: ISO 3166 2-character country code.  See the file `iso3166.tab'."
+          type: string(2)
+          index: true
+          example: "\"US\" means United States."
+      - country_id:
+          type: country.id
+      - latitude_as_iso_6709:
+          type: iso_6709
+          index: false
+      - latitude_as_decimal_degrees:
+          type: decimal_degrees
+          index: true
+      - longitude_as_iso_6709:
+          type: text
+          index: false
+      - longitude_as_decimal_degrees:
+          type: decimal_degrees
+          index: true
+      - name:
+          type: text
+          index: true
+      - comment:
+          type: text
+          index: false
