@@ -49,13 +49,13 @@ Card:
 
 Main:
 
-  * specific: card.id
+  * specific_card_id: card.id
 
-  * measurable: card.id
+  * measurable_card_id: card.id
 
-  * achievable: card.id
+  * achievable_card_id: card.id
 
-  * relevant: card.id
+  * relevant_card_id: card.id
 
-  * timely: card.id
+  * timely_card_id: card.id
 

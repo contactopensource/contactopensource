@@ -22,10 +22,15 @@ cargo loco generate scaffold \
         image_1024x1024_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
-        reach:card.idNone \
-        impact:card.idNone \
-        confidence:card.idNone \
-        effort_id:card.idNone \
+        score:numberNone \
+        reach_card_id:card.idNone \
+        reach_value:numberNone \
+        impact_card_id:card.idNone \
+        impact_value:numberNone \
+        confidence_card_id:card.idNone \
+        confidence_value:numberNone \
+        effort_card_id:card.idNone \
+        effort_value:numberNone \
     --force \
     --no-timestamps \
 

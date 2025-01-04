@@ -49,11 +49,21 @@ Card:
 
 Main:
 
-  * reach: card.id
+  * score: number
 
-  * impact: card.id
+  * reach_card_id: card.id
 
-  * confidence: card.id
+  * reach_value: number
 
-  * effort_id: card.id
+  * impact_card_id: card.id
+
+  * impact_value: number
+
+  * confidence_card_id: card.id
+
+  * confidence_value: number
+
+  * effort_card_id: card.id
+
+  * effort_value: number
 

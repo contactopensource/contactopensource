@@ -19,18 +19,18 @@ plan_smart:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-      - specific:
+      - specific_card_id:
           help: "Specific: target one area clearly and precisely."
           type: card.id
-      - measurable:
+      - measurable_card_id:
           help: "Measurable: quantify progress toward success by using metrics."
           type: card.id
-      - achievable:
+      - achievable_card_id:
           help: "Achievable: able to start, able to continue, and able to accomplish."
           type: card.id
-      - relevant:
+      - relevant_card_id:
           help: "Relevant: closely connected to what's happening and being considered."
           type: card.id
-      - timely:
+      - timely_card_id:
           help: "Timely: occurring at a favorable or useful time and opportune."
           type: card.id

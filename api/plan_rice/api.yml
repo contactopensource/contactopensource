@@ -5,15 +5,30 @@ plan_rice:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-      - reach:
+      - score:
+          summary: "RICE score = Reach * Impact * Confidence / Effort"
+          type: number
+      - reach_card_id:
           summary: "Reach: The number of people or customers who will be affected by the idea."
           type: card.id
-      - impact:
+      - reach_value: 
+          summary: "Reach value"
+          type: number
+      - impact_card_id:
           summary: "Impact: The potential value or impact of the idea."
           type: card.id
-      - confidence:
+      - impact_value:
+          summary: "Impact value"
+          type: number
+      - confidence_card_id:
           summary: "Confidence: The level of certainty in the estimates"
           type: card.id
-      - effort_id:
+      - confidence_value:
+          summary: "Confidence value"
+          type: number
+      - effort_card_id:
           summary: "Effort: The resources required to complete the project, such as time and money."
           type: card.id
+      - effort_value:
+          summary: "Effort value"
+          type: number 

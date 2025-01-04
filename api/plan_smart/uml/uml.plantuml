@@ -26,11 +26,11 @@ entity plan_smart {
   emoji : text
   star_count : integer
   .. Main ..
-  specific : card.id
-  measurable : card.id
-  achievable : card.id
-  relevant : card.id
-  timely : card.id
+  specific_card_id : card.id 🔑
+  measurable_card_id : card.id 🔑
+  achievable_card_id : card.id 🔑
+  relevant_card_id : card.id 🔑
+  timely_card_id : card.id 🔑
 }
 
 @enduml

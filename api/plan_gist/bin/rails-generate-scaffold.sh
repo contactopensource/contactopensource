@@ -22,10 +22,10 @@ cargo loco generate scaffold \
         image_1024x1024_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
-        goal_id:card.idNone \
-        idea_id:card.idNone \
-        step_id:card.idNone \
-        task_id:card.idNone \
+        goal_card_id:card.idNone \
+        idea_card_id:card.idNone \
+        step_card_id:card.idNone \
+        task_card_id:card.idNone \
     --force \
     --no-timestamps \
 

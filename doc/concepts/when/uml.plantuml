@@ -1,6 +1,0 @@
-entity when {
-  year : number
-  month : number
-  monthday : number
-  recurring : TODO
-}

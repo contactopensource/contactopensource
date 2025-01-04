@@ -22,9 +22,9 @@ cargo loco generate scaffold --html \
         image_1024x1024_alt:text \
         emoji:text \
         star_count:integer \
-        specific:card.id \
-        measurable:card.id \
-        achievable:card.id \
-        relevant:card.id \
-        timely:card.id \
+        specific_card_id:references:card \
+        measurable_card_id:references:card \
+        achievable_card_id:references:card \
+        relevant_card_id:references:card \
+        timely_card_id:references:card \
 

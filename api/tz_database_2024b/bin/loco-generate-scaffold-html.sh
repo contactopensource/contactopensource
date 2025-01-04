@@ -24,9 +24,9 @@ cargo loco generate scaffold --html \
         star_count:integer \
         country_code:"string{2}" \
         country_id:references \
-        latitude_as_iso_6709:iso_6709 \
+        latitude_as_decimal_minute_second:iso_6709 \
         latitude_as_decimal_degrees:decimal_degrees \
-        longitude_as_iso_6709:text \
+        longitude_as_decimal_minute_second:text \
         longitude_as_decimal_degrees:decimal_degrees \
         name:text \
         comment:text \

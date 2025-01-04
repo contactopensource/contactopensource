@@ -5,15 +5,15 @@ plan_gist:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-      - goal_id:
+      - goal_card_id:
           summary: "Goal"
           type: card.id
-      - idea_id:
+      - idea_card_id:
           summary: "Idea"
           type: card.id
-      - step_id:
+      - step_card_id:
           summary: "Step"
           type: card.id
-      - task_id:
+      - task_card_id:
           summary: "Task"
           type: card.id

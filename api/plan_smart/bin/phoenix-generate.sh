@@ -22,11 +22,11 @@ mix phx.gen.html \
         image_1024x1024_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
-        specific:card.idNone \
-        measurable:card.idNone \
-        achievable:card.idNone \
-        relevant:card.idNone \
-        timely:card.idNone \
+        specific_card_id:card.idNone \
+        measurable_card_id:card.idNone \
+        achievable_card_id:card.idNone \
+        relevant_card_id:card.idNone \
+        timely_card_id:card.idNone \
     --force \
     --no-timestamps \
 

@@ -22,8 +22,13 @@ cargo loco generate scaffold --html \
         image_1024x1024_alt:text \
         emoji:text \
         star_count:integer \
-        reach:card.id \
-        impact:card.id \
-        confidence:card.id \
-        effort_id:references:card \
+        score:number \
+        reach_card_id:references:card \
+        reach_value:number \
+        impact_card_id:references:card \
+        impact_value:number \
+        confidence_card_id:references:card \
+        confidence_value:number \
+        effort_card_id:references:card \
+        effort_value:number \
 

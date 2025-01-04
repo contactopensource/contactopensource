@@ -2,9 +2,7 @@ plan:
   summary: Plan package for plan-related concepts, such as for project management, task tracking, work breakdown structure, etc.
   concept:
     plan_okr
-    plan_result
-    plan_metric
     plan_gist
-    smart_goal
+    plan_smart
     plan_rice
-    rope_estimate
+    plan_rope

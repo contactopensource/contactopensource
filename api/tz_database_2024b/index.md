@@ -53,11 +53,11 @@ Main:
 
   * country_id: country.id
 
-  * latitude_as_iso_6709: iso_6709
+  * latitude_as_decimal_minute_second: iso_6709
 
   * latitude_as_decimal_degrees: decimal_degrees (index)
 
-  * longitude_as_iso_6709: text
+  * longitude_as_decimal_minute_second: text
 
   * longitude_as_decimal_degrees: decimal_degrees (index)
 

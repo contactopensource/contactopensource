@@ -49,11 +49,11 @@ Card:
 
 Main:
 
-  * goal_id: card.id
+  * goal_card_id: card.id
 
-  * idea_id: card.id
+  * idea_card_id: card.id
 
-  * step_id: card.id
+  * step_card_id: card.id
 
-  * task_id: card.id
+  * task_card_id: card.id
 

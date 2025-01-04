@@ -2,47 +2,78 @@
 
 ## Suffixes
 
-* foo_group: a collection of foos.
+* foo_group: a collection of foos. Example: the entity `user_group` has a list of entities of type `user`.
 
-* foo_range: start, stop.
-
+* foo_range: start, stop. Example: the entity `date_range` has attributes `date.start` and `date.stop`.
 
 ## Resources
+
+* place
+
+* job_opening
+
+* sport
+
+* thing
+
+* travel
+
+* offer
+
+* role: A `role` is any kind of role, such as for participation in a group, or a position on a team, or a job in a company, etc.
+
+Creative-related:
 
 * artist
 
 * album: Any kind of art collection, such as a song album, photo album, video album.
     example: "Homecoming" by Beyoncé
 
+* song: A `song` is a typical recording artist song. Example: "Welcome" is a song on the album "Homecoming" by the artist Beyoncé.
+
+Social-related:
+
 * feed
 
-* place
+* page
 
 * post
 
 * message
 
+* notification - For a notification, such as a social media notification.
+
 * portal
 
 * room
 
-* job_opening
-
-* song: A `song` is a typical recording artist song. Example: "Welcome" is a song on the album "Homecoming" by the artist Beyoncé.
-
-* sport
-
-* thing
-
 * topic
 
-* travel
+Medical-related:
 
-* offer
+* Diagnostic codes such as ICD-9-CM, ICD-10, ICD-10-CM, ICD-11, ICD-11-CM (?)
 
-* notification - For a notification, such as a social media notification.
+* diagnosis-related group (DRG)
 
-* role: A `role` is any kind of role, such as for participation in a group, or a position on a team, or a job in a company, etc.
+* Procedural codes. Examples: CPT, HCPCS, ICPM, ICHI
+
+* Pharmaceutical codes. Examples: ATC, NDC, ICD-11
+    
+* Topographical codes that indicate a specific location in the body. Examples: ICD-O, SNOMED, ICD-11
+
+* https://en.wikipedia.org/wiki/International_Classification_of_Functioning,_Disability_and_Health
+  
+* https://en.wikipedia.org/wiki/International_Classification_of_Health_Interventions
+
+* https://en.wikipedia.org/wiki/Anatomical_Therapeutic_Chemical_Classification_System
+
+* https://en.wikipedia.org/wiki/Procedure_code
+  
+* https://en.wikipedia.org/wiki/ICD-10
+
+* https://en.wikipedia.org/wiki/ICD-10_Procedure_Coding_System
+
+* https://en.wikipedia.org/wiki/Healthcare_Common_Procedure_Coding_System
 
 
 ## Codes
@@ -50,8 +81,6 @@
 * https://wikipedia.org/wiki/Faceted_Application_of_Subject_Terminology
 * https://wikipedia.org/wiki/International_Standard_Name_Identifier
 * https://wikipedia.org/wiki/International_Standard_Authority_Data_Number
-
-
 
 ## Metadata
 
@@ -104,3 +133,7 @@ Attributes:
 * posix_cron_pattern:  text
   
 * eta : timestamp -- example: estimated time of arrival
+
+## Standards
+
+* https://wikipedia.org/wiki/ISO_6709: Standard representation of geographic point location by coordinates

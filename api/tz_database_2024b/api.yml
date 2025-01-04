@@ -29,13 +29,13 @@ tz_database_2024b:
           example: "\"US\" means United States."
       - country_id:
           type: country.id
-      - latitude_as_iso_6709:
+      - latitude_as_decimal_minute_second:
           type: iso_6709
           index: false
       - latitude_as_decimal_degrees:
           type: decimal_degrees
           index: true
-      - longitude_as_iso_6709:
+      - longitude_as_decimal_minute_second:
           type: text
           index: false
       - longitude_as_decimal_degrees:

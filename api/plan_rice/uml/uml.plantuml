@@ -26,10 +26,15 @@ entity plan_rice {
   emoji : text
   star_count : integer
   .. Main ..
-  reach : card.id
-  impact : card.id
-  confidence : card.id
-  effort_id : card.id 🔑
+  score : number
+  reach_card_id : card.id 🔑
+  reach_value : number
+  impact_card_id : card.id 🔑
+  impact_value : number
+  confidence_card_id : card.id 🔑
+  confidence_value : number
+  effort_card_id : card.id 🔑
+  effort_value : number
 }
 
 @enduml

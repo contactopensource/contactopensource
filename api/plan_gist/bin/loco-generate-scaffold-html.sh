@@ -22,8 +22,8 @@ cargo loco generate scaffold --html \
         image_1024x1024_alt:text \
         emoji:text \
         star_count:integer \
-        goal_id:references:card \
-        idea_id:references:card \
-        step_id:references:card \
-        task_id:references:card \
+        goal_card_id:references:card \
+        idea_card_id:references:card \
+        step_card_id:references:card \
+        task_card_id:references:card \
 
