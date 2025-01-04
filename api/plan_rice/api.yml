@@ -1,0 +1,19 @@
+plan_rice:
+  summary: Plan with RICE criteria.
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - reach:
+          summary: "Reach: The number of people or customers who will be affected by the idea."
+          type: card.id
+      - impact:
+          summary: "Impact: The potential value or impact of the idea."
+          type: card.id
+      - confidence:
+          summary: "Confidence: The level of certainty in the estimates"
+          type: card.id
+      - effort_id:
+          summary: "Effort: The resources required to complete the project, such as time and money."
+          type: card.id
