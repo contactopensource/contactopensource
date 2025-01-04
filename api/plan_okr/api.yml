@@ -1,0 +1,13 @@
+plan_okr:
+  summary: Plan with Objective and Key Results (OKR)
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - objective_card_id:
+          summary: "Objective"
+          type: card.id
+      - key_result_card_ids:
+          summary: "Key Results"
+          type: card.id[]

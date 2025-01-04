@@ -1,0 +1,13 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity plan_okr {
+  objective_id : plan_item(id)+
+  key_result_0_id: plan_item(id)+
+  key_result_1_id: plan_item(id)+
+  key_result_2_id: plan_item(id)+
+}
+
+@enduml
