@@ -1,0 +1,13 @@
+geographic_area:
+  summary: Geographic area
+  module: Geographic
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - population_count:
+          type: count
+      - area_as_meter2:
+          type: meter2
+      - center_geographic_point:
+          type: geographic_point
