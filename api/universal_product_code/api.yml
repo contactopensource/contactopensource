@@ -1,0 +1,11 @@
+universal_product_code:
+  summary: Universal Product Code (UPC)
+  module: Code
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - code:
+          type: string
+          index: true
+      - image_url:
+          type: url
