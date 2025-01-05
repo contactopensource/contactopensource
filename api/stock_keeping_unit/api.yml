@@ -1,0 +1,10 @@
+stock_keeping_unit:
+  summary: Stock Keeping Unit (SKU)
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - code:
+          help: Code
+          type: text
+          index: true
