@@ -10,10 +10,10 @@ content_image:
           type: codec.id
           example: codec for JPEG
       - width_as_pixels:
-          summary: width as pixels
+          help: width as pixels
           type: count
           example: 100 pixels horizontally
       - height_as_pixels:
-          summary: height as pixels
+          help: height as pixels
           type: count
           example: 100 pixels vertically

@@ -6,8 +6,8 @@ plan_okr:
     - !include ../_card.yml
     - Main:
       - objective_card_id:
-          summary: "Objective"
+          help: "Objective"
           type: card.id
       - key_result_card_ids:
-          summary: "Key Results"
+          help: "Key Results"
           type: card.id[]

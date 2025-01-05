@@ -8,15 +8,15 @@ passport:
         - country_id: 
             type: country.id
         - number_text:
-            summary: number text
+            help: number text
             type: text
             index: true
             example: 111-111-111-111
         - start_date:
-            summary: valid start date
+            help: valid start date
             type: date
             example: 2020-01-01
         - stop_date:
-            summary: valid stop date
+            help: valid stop date
             type: date
             example: 2030-01-01

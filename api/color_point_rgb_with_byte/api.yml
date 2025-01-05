@@ -5,14 +5,14 @@ color_point_rgb_with_byte:
     - !include ../_meta.yml
     - Main:
       - red:
-          summary: red
+          help: red
           type: byte
           example: 0x00 means no red
       - green:
-          summary: green
+          help: green
           type: byte
           example: 0x88 means half green
       - blue:
-          summary: blue
+          help: blue
           type: byte
           example: 0xFF means full blue

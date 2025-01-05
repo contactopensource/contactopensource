@@ -7,7 +7,7 @@ Such identifiers are used to look up product information in a database (often by
 A GTIN code is made up of four parts:
 
   * prefix,
-      summary: GS1 prefix, typically a company-specific prefix
+      help: GS1 prefix, typically a company-specific prefix
       type: digit(3)
       index: true
       required: true

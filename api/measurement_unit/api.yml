@@ -5,11 +5,11 @@ measurement_unit:
     - !include ../_meta.yml
     - Main:
       - name:
-          summary: name
+          help: name
           type: text
           example: second
       - symbol:
-          summary: symbol
+          help: symbol
           type: text
           example: s
       - measurement_system_id:

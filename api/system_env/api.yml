@@ -5,11 +5,11 @@ system_env:
     - !include ../_meta.yml
     - Main:
       - key:
-          summary: key
+          help: key
           type: string
           index: true
           example: "\"EDITOR\""
       - value:
-          summary: value
+          help: value
           type: text
           example: "\"/bin/vi\""

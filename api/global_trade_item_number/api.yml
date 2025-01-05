@@ -7,7 +7,7 @@ global_trade_item_number:
     A GTIN code is made up of four parts:
 
       * prefix,
-          summary: GS1 prefix, typically a company-specific prefix
+          help: GS1 prefix, typically a company-specific prefix
           type: digit(3)
           index: true
           required: true
@@ -39,7 +39,7 @@ global_trade_item_number:
           required: true
     - Parts:
       - prefix:
-          summary: GS1 prefix, typically a company-specific prefix
+          help: GS1 prefix, typically a company-specific prefix
           type: digit(3)
           index: true
           required: true

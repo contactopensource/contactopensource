@@ -11,26 +11,26 @@ media_type:
     - !include ../_card.yml
     - Main:
       - text:
-          summary: string
+          help: string
           type: string
           example: "\"application/vnd.foo;charset=UTF-8\""
       - supertype:
-          summary: supertype
+          help: supertype
           type: string
           example: "\"application\" means an application"
       - subtype:
-          summary: subtype
+          help: subtype
           type: string
           example: "\"vnd.foo\" means vendor then foo namespace"
       - tree:
-          summary: tree
+          help: tree
           type: string
           example: "\"vnd.\" means vendor tree"
       - suffix:
-          summary: suffix
+          help: suffix
           type:  string
           example: "\"+zip\" means ZIP compressed file"
       - parameters:
-          summary: parameters
+          help: parameters
           type: string[]
           example: "\"charset=UTF-8\" means character set is Unicode Transformation Format 8"

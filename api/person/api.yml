@@ -8,7 +8,7 @@ person:
     - !include ../_card.yml
     - names:
       - given_name:
-          summary: The person's given name(s), such as the first name in given-middle-family.
+          help: The person's given name(s), such as the first name in given-middle-family.
           type: text
           example: Alice
       - given_name_phonetic:

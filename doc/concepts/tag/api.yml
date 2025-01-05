@@ -1,10 +1,10 @@
 tag:
   attributes:
       - text:
-        summary: text
+        help: text
         type: text
         example: trending
       - description:
-        summary: description
+        help: description
         type: text
         example: Trending in popularity

@@ -1,8 +1,8 @@
     - start:
-        summary: start
+        help: start
         type: timestamp_utc
         example: 2020-01-01T00:00:00±00:00
     - stop:
-        summary: stop
+        help: stop
         type: timestamp_utc
         example: 2030-01-01T00:00:00±00:00

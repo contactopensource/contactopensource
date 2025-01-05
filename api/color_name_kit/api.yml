@@ -5,22 +5,22 @@ color_name_kit:
     - !include ../_meta.yml
     - Main:
       - hex:
-          summary: hexadecimal-lowercase six-character code
+          help: hexadecimal-lowercase six-character code
           type: hexdigit(6)+
           example: "\"FF0000\" means red"
       - html_color_name:
-          summary: See https://wikipedia.org/wiki/Web_colors#HTML_color_names
+          help: See https://wikipedia.org/wiki/Web_colors#HTML_color_names
           type: text
           example: "\"Red\" as titlecase"
       - x11_color_name:
-          summary: See https://en.wikipedia.org/wiki/X11_color_names
+          help: See https://en.wikipedia.org/wiki/X11_color_names
           type: text
           example: "\"Red\" as titlecase"
       - color_naming_system_name:
-          summary: See https://en.wikipedia.org/wiki/Color_Naming_System
+          help: See https://en.wikipedia.org/wiki/Color_Naming_System
           type: text
           example: "\"red\" as lowercase"
       - pantone_process_color_name:
-          summary: See https://en.wikipedia.org/wiki/Pantone
+          help: See https://en.wikipedia.org/wiki/Pantone
           type: text
           example: "\"Red 032 C\" means red"

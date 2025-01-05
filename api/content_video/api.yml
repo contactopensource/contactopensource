@@ -6,19 +6,19 @@ content_video:
     - !include ../_card.yml
     - Main:
       - codec_id:
-          summary: codec id
+          help: codec id
           type: codec.id
           example: video/mp4
       - width_as_pixels:
-          summary: width as pixels
+          help: width as pixels
           type: count
           index: true
       - height_as_pixels:
-          summary: height as pixels
+          help: height as pixels
           type: count
           index: true
       - duration_as_seconds:
-          summary: duration as seconds
+          help: duration as seconds
           type: count
           index: true
           example: 60 means 60 seconds

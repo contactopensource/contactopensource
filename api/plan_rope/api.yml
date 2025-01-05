@@ -16,18 +16,18 @@ plan_rope:
     - !include ../_card.yml
     - Measurement:
       - measurement_unit_id:
-          summary: measurement unit
+          help: measurement unit
           type: measurement_unit.id
     - ROPE:
       - realistic:
-          summary: "Realistic estimate. This is based on work being typical, reasonable, plausible, and usual."
+          help: "Realistic estimate. This is based on work being typical, reasonable, plausible, and usual."
           type: card.id
       - optimistic:
-          summary: "Optimistic estimate. This is based on work turning out to be notably easy, or fast, or lucky."
+          help: "Optimistic estimate. This is based on work turning out to be notably easy, or fast, or lucky."
           type: card.id
       - pessimistic:
-          summary: "Pessimistic estimate. This is based on work turning out to be notably hard, or slow, or unlucky."
+          help: "Pessimistic estimate. This is based on work turning out to be notably hard, or slow, or unlucky."
           type: card.id
       - equilibristic:
-          summary: "Equilibristic estimate. This is based on success as 50% likely such as for critical chains and simulations."
+          help: "Equilibristic estimate. This is based on success as 50% likely such as for critical chains and simulations."
           type: card.id

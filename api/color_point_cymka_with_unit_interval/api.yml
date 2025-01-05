@@ -5,22 +5,22 @@ color_point_cymka_with_unit_interval:
     - !include ../_meta.yml
     - Main:
       - cyan:
-          summary: cyan
+          help: cyan
           type: unit_interval
           example: 0.0 means no cyan
       - yellow:
-          summary: yellow
+          help: yellow
           type: unit_interval
           example: 0.5 means half yellow
       - magenta:
-          summary: magenta
+          help: magenta
           type: unit_interval
           example: 1.0 means full magenta
       - black:
-          summary: black
+          help: black
           type: unit_interval
           example: 0.1 means slightly black
       - alpha:
-          summary: alpha
+          help: alpha
           type: unit_interval
           example: 0.5 means half transparent

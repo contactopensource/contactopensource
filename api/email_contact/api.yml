@@ -10,19 +10,19 @@ email_contact:
     - !include ../_card.yml
     - Main:
       - address:
-          summary: See https://tools.ietf.org/html/rfc5322
+          help: See https://tools.ietf.org/html/rfc5322
           type: text
           example: Alice Adams <alice@example.com>
     - Parts:
       - display_name:
-          summary: display name
+          help: display name
           type: text
           example: Alice Adams
       - addr_spec:
-          summary: addr spec
+          help: addr spec
           type: text
           example: alice@example.com
       - local_part:
-          summary: local part
+          help: local part
           type: text
           example: alice

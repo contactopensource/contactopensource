@@ -6,14 +6,14 @@ plan_gist:
     - !include ../_card.yml
     - Main:
       - goal_card_id:
-          summary: "Goal"
+          help: "Goal"
           type: card.id
       - idea_card_id:
-          summary: "Idea"
+          help: "Idea"
           type: card.id
       - step_card_id:
-          summary: "Step"
+          help: "Step"
           type: card.id
       - task_card_id:
-          summary: "Task"
+          help: "Task"
           type: card.id

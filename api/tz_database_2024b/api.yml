@@ -23,7 +23,7 @@ tz_database_2024b:
     - !include ../_card.yml
     - Main:
       - country_code:
-          summary: "Country code: ISO 3166 2-character country code.  See the file `iso3166.tab'."
+          help: "Country code: ISO 3166 2-character country code.  See the file `iso3166.tab'."
           type: string(2)
           index: true
           example: "\"US\" means United States."
