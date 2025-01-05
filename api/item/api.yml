@@ -1,0 +1,17 @@
+item:
+  summary: Generic item suitable for demonstrations
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Sketches:
+      - geographic_point_id:
+          help: Generic geographic point, such as the item's current location.
+          type: geographic_point.id
+      - color_point_rgb_with_unit_interval_id:
+          help: Generic color point, such as the item's current color
+          type: color_point_rgb_with_unit_interval.id
+    - Codes:
+      - quick_response_code_id:
+          type: quick_response_code.id
+      - universal_product_code_id:
+          type: universal_product_code.id
