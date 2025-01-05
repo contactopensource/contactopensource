@@ -1,0 +1,11 @@
+quick_response_code:
+  summary: Quick Response (QR) code
+  module: Code
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - code:
+          type: string
+          index: true
+      - image_url:
+          type: url
