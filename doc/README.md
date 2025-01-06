@@ -72,7 +72,7 @@ CREATE TABLE `examples` (
     type_id text, -- for optional single table inheritance
     state_id text, -- for optional state machine transition
 
-    -- Meta-related -- the intent is to describe the content fields below.
+    -- Meta-related -- the intent is to describe the content attributes below.
     uri text, -- example: 'https://example.com/example.txt'
 
     …
@@ -143,9 +143,9 @@ This table has a goal to be fully workable with RDF concepts.
 
 If possible, this table will be improved to use a better way of
 linking to internal data. For example, we would prefer to phase out
-the individual fields for table name and row id, and instead simply
-use the URI fields along with a URI that points to internal data.
-Currently, many tools and frameworks expect separate fields for
+the individual attributes for table name and row id, and instead simply
+use the URI attributes along with a URI that points to internal data.
+Currently, many tools and frameworks expect separate attributes for
 the table name and row id, such as to do poly-to-poly joins.
 
 ```sql

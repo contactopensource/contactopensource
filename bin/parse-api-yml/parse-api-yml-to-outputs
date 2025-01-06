@@ -52,11 +52,13 @@ def parse_path(path: os.PathLike):
         path (path): The path to parse e.g. "./api/user/api.yml"
 
     Outputs:
-        api.md (markdown file)
-        uml.plantuml (UML PlantUML file)
-        postgres-migration-up.sql
-        postgres-migration-down.sql
-        ruby-on-rails-generate.sh (Ruby On Rails generator file)
+        index.md (markdown file)
+        bin/django-model.py (Django model file)
+        bin/loco-generate-scaffold-html.sh (Loco.rs generate scaffold HTML file)
+        bin/postgres-migration-up.sql
+        bin/postgres-migration-down.sql
+        bin/ruby-on-rails-generate.sh (Ruby On Rails generator file)
+        uml/uml.plantuml (UML PlantUML file)
     """
     dirname = os.path.dirname(path) # e.g. "./api/user"
     concept = os.path.basename(dirname) # e.g. "user"
@@ -71,6 +73,7 @@ def parse_path(path: os.PathLike):
             logging.info(banner(f"Entity {entity}"))
 
         for renderer in [
+            render.django_model,
             render.loco_generate_scaffold_html,
             render.markdown,
             render.plantuml,

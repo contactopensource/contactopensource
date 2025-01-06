@@ -1,4 +1,5 @@
 system_user:
+  model: SystamUser
   summary: System user, such as for managing system file access.
   module: System
   attributes:

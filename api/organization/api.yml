@@ -1,4 +1,5 @@
 organization:
+  model: Organization
   summary: An organization, such as a company, team, club, congregation, etc.
   module: Account
   model: Organization

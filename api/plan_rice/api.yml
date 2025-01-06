@@ -1,4 +1,5 @@
 plan_rice:
+  model: PlanRICE
   summary: Plan with RICE criteria.
   module: Plan
   attribute_groups:
@@ -11,7 +12,7 @@ plan_rice:
       - reach_card_id:
           help: "Reach: The number of people or customers who will be affected by the idea."
           type: card.id
-      - reach_value: 
+      - reach_value:
           help: "Reach value"
           type: number
       - impact_card_id:
@@ -31,4 +32,4 @@ plan_rice:
           type: card.id
       - effort_value:
           help: "Effort value"
-          type: number 
+          type: number

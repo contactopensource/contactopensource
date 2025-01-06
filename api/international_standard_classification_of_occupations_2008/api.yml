@@ -1,4 +1,5 @@
 international_standard_classification_of_occupations_2008:
+  model: InternationalStandard_ClassificationOfOccupations2008
   summary: |-
     International Labor Organization (ILO) International Standard Classification of Occupations (ISCO)
 

@@ -65,7 +65,7 @@ For typical dates:
 
 * `start_date` and `stop_date`: When the item starts and stops, such as an organization's founding date and dissolution date. Note the API favors the wording `start` and `stop` rather than `begin` and `end`.
 
-* `*_date: If your needs include tracking a date as an ISO year and ISO week, then consider adding a field `*_date_iso_year` and `*_date_iso_week`, or a generated column such as `select extract('isoyear' from my_date) as my_date_iso_year;` and `extract('week' from my_date) as my_date_iso_week;`
+* `*_date: If your needs include tracking a date as an ISO year and ISO week, then consider adding a attribute `*_date_iso_year` and `*_date_iso_week`, or a generated column such as `select extract('isoyear' from my_date) as my_date_iso_year;` and `extract('week' from my_date) as my_date_iso_week;`
 
 
 ## Attribute conventions
@@ -77,4 +77,18 @@ The attributes aim to use specific naming conventions:
 * To improve maintainability and clarity, such as using present tense full words like `birth_date` rather than past tense `born_on` or abbreviation `dob`.
 
 
+## api.yml attribute keys
 
+* null: Can the attribute be null? Examples: the missing value NULL or missing value nil. This setting affects the database table attribute, and also application validation logic.
+
+* blank: Can the attribute be blank? Examples: the empty string "" or the empty array []. This setting affects the database table attribute, and also application validation logic.
+
+* db_name: The attribute's database column name. Default is attribute.id.
+
+* db_comment: The attribute's database column comment. Default is attribute.summary. This is useful for documentation for developers who look directly at databases.
+
+* db_default: The attribute's database default value. This can be a literal value or a database function, such as the PostgreSQL function `NOW()` that returns the current date and time.
+
+* db_index: The attribute's database index type, such as "b-tree", "hash", "gist", "sp-gist", "gin", "brin". Notice: this meaning may change in the future.
+
+* db_tablespace: The name of the database tablespace to use for this attribute's index, if this attribute is indexed. The default is the project’s DEFAULT_INDEX_TABLESPACE setting, if set, or the db_tablespace of the model, if any. If the backend doesn’t support tablespaces for indexes, this option is ignored.

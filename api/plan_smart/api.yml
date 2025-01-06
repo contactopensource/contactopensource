@@ -1,4 +1,5 @@
 plan_smart:
+  model: PlanSMART
   summary: Plan with SMART criteria.
   description: |-
 

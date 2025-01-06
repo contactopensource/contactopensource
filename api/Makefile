@@ -6,6 +6,7 @@ dirs := $(dir $(wildcard */api.yml))
 all: \
 	$(dirs:%=%index.md) \
 	$(dirs:%=%bin) \
+	$(dirs:%=%bin/django-model.py) \
 	$(dirs:%=%bin/loco-generate-scaffold-html.sh) \
 	$(dirs:%=%bin/phoenix-generate.sh) \
 	$(dirs:%=%bin/postgres-migrate-down.sql) \
@@ -18,6 +19,7 @@ all: \
 .PHONY: clean
 clean:
 	@rm -f */index.md
+	@rm -f */bin/django-model.py
 	@rm -f */bin/loco-generate-scaffold-html.sh
 	@rm -f */bin/phoenix-generate.sh
 	@rm -f */bin/postgres-migrate-down.sql
@@ -35,6 +37,10 @@ clean:
 	mkdir -p $@
 
 %/index.md: %/api.yml | %/bin %/uml
+	@echo $@
+	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
+
+%/bin/django-model.py: %/api.yml | %/bin %/uml
 	@echo $@
 	../bin/parse-api-yml/parse-api-yml-to-outputs -w $(makefile_dir)$(*)/api.yml
 

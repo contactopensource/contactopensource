@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    international_standard_identifier_for_libraries_and_related_organizations \
+    international_standard_identifier_for_libraries_and_related_organization \
         id:bigint \
         zid:uuid \
         lock_version:int \

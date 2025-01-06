@@ -1,4 +1,5 @@
 measurement_unit:
+  model: MeasurementUnit
   summary: A measurement unit, such as metre, gram, second
   module: measurement
   attribute_groups:

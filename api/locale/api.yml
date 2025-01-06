@@ -1,4 +1,5 @@
 locale:
+  model: Locale
   summary: >
     A locale (in computer software) is a set of parameters that defines the user's language, region, and any special variant preferences that the user wants to see in their user interface.
 

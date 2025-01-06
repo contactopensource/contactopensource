@@ -1,4 +1,5 @@
 quick_response_code:
+  model: QuickResponseCode
   summary: Quick Response (QR) code
   module: Code
   attribute_groups:

@@ -3,7 +3,7 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity international_standard_identifier_for_libraries_and_related_organizations {
+entity international_standard_identifier_for_libraries_and_related_organization {
   .. Meta ..
   id : bigint ⚡
   zid : uuid ⚡

@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Plan None None \
+    Plan PlanSMART None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

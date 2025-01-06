@@ -1,4 +1,5 @@
 system_proc:
+  model: SystemProc
   summary: System process, such as for a running program.
   module: System
   attributes:

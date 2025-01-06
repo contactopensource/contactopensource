@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    None None None \
+    None StockKeepingUnit None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

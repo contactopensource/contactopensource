@@ -1,4 +1,5 @@
 gs1_country_code:
+  model: GS1CountryCode
   summary: |-
     GS1 country code.
 

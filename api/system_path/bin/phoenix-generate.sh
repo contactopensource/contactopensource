@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    System None None \
+    System SystemPath None \
     --force \
     --no-timestamps \
 

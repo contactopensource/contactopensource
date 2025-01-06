@@ -58,17 +58,17 @@ Medical-related:
 * Procedural codes. Examples: CPT, HCPCS, ICPM, ICHI
 
 * Pharmaceutical codes. Examples: ATC, NDC, ICD-11
-    
+
 * Topographical codes that indicate a specific location in the body. Examples: ICD-O, SNOMED, ICD-11
 
 * https://en.wikipedia.org/wiki/International_Classification_of_Functioning,_Disability_and_Health
-  
+
 * https://en.wikipedia.org/wiki/International_Classification_of_Health_Interventions
 
 * https://en.wikipedia.org/wiki/Anatomical_Therapeutic_Chemical_Classification_System
 
 * https://en.wikipedia.org/wiki/Procedure_code
-  
+
 * https://en.wikipedia.org/wiki/ICD-10
 
 * https://en.wikipedia.org/wiki/ICD-10_Procedure_Coding_System
@@ -131,7 +131,7 @@ Attributes:
 * media_type_id : media_type(id) -- example: media type id of "text/json"
 
 * posix_cron_pattern:  text
-  
+
 * eta : timestamp -- example: estimated time of arrival
 
 ## Standards

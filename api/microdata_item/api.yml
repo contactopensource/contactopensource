@@ -1,4 +1,5 @@
 microdata_item:
+  model: MicrodataItem
   summary: Microdata item
   description: |-
     Microdata item specification for identifying content such as text, images, videos, etc.

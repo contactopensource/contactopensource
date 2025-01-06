@@ -223,7 +223,7 @@ TODO:
 * color_hex_upper_string
 * emoji
 * event_name
-* field_name
+* attribute_name
 * hex_upper_string
 * image_uri
 * json_value

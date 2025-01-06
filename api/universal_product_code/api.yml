@@ -1,4 +1,5 @@
 universal_product_code:
+  model: UniversalProductCode
   summary: Universal Product Code (UPC)
   module: Code
   attribute_groups:

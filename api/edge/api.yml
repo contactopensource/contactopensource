@@ -1,4 +1,5 @@
 edge:
+  model: Edge
   summary: |-
     For linking from one node to another node
   module: Graph

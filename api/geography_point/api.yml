@@ -1,4 +1,5 @@
 geography_point:
+  model: GeographyPoint
   summary: |-
     A geography_point is a geographic point in space, typically with a latitude, longitude, and optionally with an altitude and/or elevation.
   description: |-

@@ -1,4 +1,5 @@
 phone_contact:
+  model: PhoneContact
   summary: See https://en.wikipedia.org/wiki/E.164
   attribute_groups:
   attribute_groups:

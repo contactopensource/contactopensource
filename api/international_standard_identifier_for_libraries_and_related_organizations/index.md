@@ -1,4 +1,4 @@
-# international_standard_identifier_for_libraries_and_related_organizations
+# international_standard_identifier_for_libraries_and_related_organization
 
 International Standard Identifier for Libraries and Related Organizations (ISIL)
 

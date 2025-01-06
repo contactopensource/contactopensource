@@ -1,4 +1,5 @@
 system_path:
+  model: SystemPath
   summary: System path, such as for a system file.
   module: System
   attributes:

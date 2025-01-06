@@ -11,7 +11,7 @@ We use these naming conventions:
 * Write-only user name: contactopensource_writer
 
 
-## Common fields
+## Common attributes
 
 Metadata:
 

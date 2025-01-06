@@ -1,10 +1,11 @@
 international_standard_industrial_classification:
+  model: InternationalStandardIndustrialClassification
   summary: International Standard Industrial Classification (ISIC)
   description: |-
 
     https://wikipedia.org/wiki/International_Standard_Industrial_Classification
 
-    The International Standard Industrial Classification of All Economic Activities (ISIC) is a United Nations industry classification system. Wide use has been made of ISIC in classifying data according to kind of economic activity in the fields of employment and health data.
+    The International Standard Industrial Classification of All Economic Activities (ISIC) is a United Nations industry classification system. Wide use has been made of ISIC in classifying data according to kind of economic activity in the attributes of employment and health data.
 
     It is maintained by the United Nations Statistics Division.
 

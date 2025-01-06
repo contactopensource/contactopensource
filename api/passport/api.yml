@@ -1,11 +1,12 @@
 passport:
+  model: Passport
   summary: Passport credential, such as a government passport for international travel.
   module: Credential
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - country_id: 
+        - country_id:
             type: country.id
         - number_text:
             help: number text

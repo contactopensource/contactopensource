@@ -1,4 +1,5 @@
 stock_keeping_unit:
+  model: StockKeepingUnit
   summary: Stock Keeping Unit (SKU)
   attribute_groups:
     - !include ../_meta.yml

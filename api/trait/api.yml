@@ -1,4 +1,5 @@
 trait:
+  model: Trait
   summary: |-
     A trait is a distinguishing quality or characteristic, such as one belonging to a person.
 

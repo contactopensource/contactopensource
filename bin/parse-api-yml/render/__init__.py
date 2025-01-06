@@ -1,5 +1,6 @@
 from .markdown import *
 from .plantuml import *
+from .django_model import *
 from .loco_generate_scaffold_html import *
 from .phoenix_generate import *
 from .postgres_migration_up import *
