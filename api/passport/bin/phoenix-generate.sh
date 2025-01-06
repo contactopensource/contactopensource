@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Credential Passport None \
+    Credential None None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

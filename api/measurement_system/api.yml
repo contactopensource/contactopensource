@@ -1,5 +1,4 @@
 measurement_system:
-  model: MeasurementSystem
   summary: |-
     A measurement system, such as of distance, or time, etc.
 

@@ -2,16 +2,6 @@
 
 SPDX license.
 
-Attribute examples:
-
-* name: "GPL 3.0"
-
-* summary: "GNU Public License version 3.0"
-
-* description: "This is the full text of the license."
-
-https://spdx.dev/
-
 
 ## Attributes
 

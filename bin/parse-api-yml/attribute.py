@@ -59,6 +59,9 @@ class Attribute:
                 (id, y), = y.items()
                 a = Attribute();
                 a.id = id;
+                a.title = y.get('title', a.id.replace("_", " ").title())
+                a.model = y.get('title', a.title.replace(" ", ""))
+                a.plural = y.get('plural', a.id + "s")
                 a.help = y.get('help', None)
                 a.type = y.get('type', None)
                 a.unique = y.get('unique', False)

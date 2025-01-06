@@ -1,5 +1,4 @@
 global_trade_item_number:
-  model: GlocalTradeItemNumber
   summary: |-
     A Global Trade Item Number (GTIN) is an identifier for trade items, developed by the international organization GS1.
 

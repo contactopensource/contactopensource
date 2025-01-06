@@ -1,5 +1,4 @@
 user:
-  model: User
   summary: User for sign up, sign in, access control, authentication, authorization, tenant joins, etc.
   attributes:
     name:

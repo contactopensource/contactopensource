@@ -1,8 +1,7 @@
 access_attribute:
   summary: Access control attribute.
   module: Access
-  model: Attribute
-  table: access_attributes
+  plural: access_attributes
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

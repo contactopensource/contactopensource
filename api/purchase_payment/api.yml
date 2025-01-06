@@ -1,5 +1,4 @@
 purchase_payment:
-  model: PurchasePayment
   summary: |-
     Purchase payment.
 

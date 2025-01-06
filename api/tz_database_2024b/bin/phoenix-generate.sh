@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    None TZDatabase2024b None \
+    None None None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

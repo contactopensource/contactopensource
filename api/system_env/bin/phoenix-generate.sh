@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    System SystemEnv None \
+    System None None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

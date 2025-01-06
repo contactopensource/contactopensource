@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Access Operation access_operations \
+    Access None None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

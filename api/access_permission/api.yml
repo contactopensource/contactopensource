@@ -1,8 +1,9 @@
 access_permission:
   summary: Access control permission, which joins access_attribute and access_operation.
   module: Access
-  model: Permission
-  table: access_permissions
+  title: AccessPermission
+  model: AccessPermission
+  plural: access_permissions
   attribute_groups:
     - join:
       - access_attribute_it:

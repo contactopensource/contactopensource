@@ -1,5 +1,5 @@
 plan_rope:
-  model: PlanROPE
+  title: PlanROPE
   summary: Plan with ROPE estimation criteria.
   description: |-
     Plan with ROPE estimation criteria:

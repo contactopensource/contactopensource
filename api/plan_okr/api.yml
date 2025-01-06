@@ -1,5 +1,5 @@
 plan_okr:
-  model: PlanOKR
+  title: PlanOKR
   summary: Plan with Objective and Key Results (OKR)
   module: Plan
   attribute_groups:

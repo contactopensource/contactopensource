@@ -1,8 +1,7 @@
 access_occupancy:
   summary: Access control occupancy, which joins access_tenant and access_agent.
   module: Access
-  model: Occupancy
-  table: access_occupancies
+  plural: access_occupancies
   attribute_groups:
     - join:
       - access_tenant_it:

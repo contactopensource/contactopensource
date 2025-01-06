@@ -1,8 +1,7 @@
 access_agent:
   summary: Access control agent.
   module: Access
-  model: Agent
-  table: access_agents
+  plural: access_agents
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

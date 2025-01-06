@@ -1,4 +1,5 @@
 color_point_rgba_with_unit_interval:
+  title: Color Point RGBA With Unit Interval
   summary: Color point RGBA (red, green, blue, alpha) with unit interval
   module: Color
   attribute_groups:

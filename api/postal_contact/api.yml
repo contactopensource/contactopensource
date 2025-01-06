@@ -1,5 +1,4 @@
 postal_contact:
-  model: PostalContact
   summary: |-
     A postal address, such as for mail delivery, or map routes, or demographics.
 

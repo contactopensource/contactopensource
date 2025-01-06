@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Code GS1CountryCode None \
+    Code None None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

@@ -1,5 +1,4 @@
 tz_database_2024b:
-  model: TZDatabase2024b
   summary: The tz database for time zones of the world.
   description: |-
     The tz database is a collaborative compilation of information about the world's time zones and rules for observing daylight saving time, primarily intended for use with computer programs and operating systems.

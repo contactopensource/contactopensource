@@ -1,5 +1,4 @@
 node:
-  model: Node
   summary: Store an arbitrary chunk of data.
   module: Graph
   attribute_groups:

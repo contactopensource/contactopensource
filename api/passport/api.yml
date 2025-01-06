@@ -1,5 +1,4 @@
 passport:
-  model: Passport
   summary: Passport credential, such as a government passport for international travel.
   module: Credential
   attribute_groups:

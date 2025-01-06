@@ -1,5 +1,4 @@
 email_contact:
-  wordcap: EmailContact
   summary: |-
     An email contact, which is an email address and personal info.
 

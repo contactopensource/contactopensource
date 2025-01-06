@@ -1,6 +1,6 @@
 spdx_license:
-  model: SPDXLicense
-  summary: |-
+  summary: SPDX license.
+  description: |-
     SPDX license.
 
     Attribute examples:

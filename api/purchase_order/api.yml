@@ -1,5 +1,4 @@
 purchase_order:
-  model: PurchaseOrder
   summary: |-
     Purchase order.
 

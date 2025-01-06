@@ -1,4 +1,5 @@
 color_point_rgb_with_byte:
+  title: Color Point RGB With Byte
   summary: Color point RGB (red, green, blue) with byte
   module: Color
   attribute_groups:

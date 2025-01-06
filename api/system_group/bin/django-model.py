@@ -1,5 +1,5 @@
 #!/bin/sh
 set -euf
 
-class SystemGroup(models.Model):
+class None(models.Model):
 

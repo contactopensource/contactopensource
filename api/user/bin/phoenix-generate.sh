@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    None User None \
+    None None None \
     --force \
     --no-timestamps \
 

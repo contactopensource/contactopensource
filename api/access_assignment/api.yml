@@ -1,8 +1,7 @@
 access_assignment:
   summary: Access control assignment, which joins access_agent and access_attribute.
   module: Access
-  model: Assignment
-  table: access_assignments
+  plural: access_assignments
   attribute_groups:
     - Join:
       - access_agent_id:

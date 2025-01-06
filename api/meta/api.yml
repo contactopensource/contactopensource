@@ -1,5 +1,4 @@
 meta:
-  model: Meta
   summary: Metadata for database administration that we include in many other API concepts.
   attribute_groups:
     - !include ../_meta.yml

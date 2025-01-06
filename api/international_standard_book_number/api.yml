@@ -1,5 +1,4 @@
 international_standard_book_number:
-  model: InternationalStandardBookNumber
   summary: |-
     International Standard Book Number (ISBN).
 

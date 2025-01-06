@@ -1,5 +1,4 @@
 media_type:
-  model: MediaType
   summary: |-
     A media type is a two-part identifier for file formats and content formats. Their purpose is comparable to filename extensions and uniform type identifiers, in that they identify the intended data format.
 

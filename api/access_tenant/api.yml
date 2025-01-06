@@ -1,8 +1,6 @@
 access_tenant:
   summary: Access control tenant.
   module: Access
-  model: Tenant
-  table: access_tenants
   attributes:
     - !include ../_meta.yml
     - !include ../_card.yml

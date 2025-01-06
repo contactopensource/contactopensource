@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-class MeasurementUnit(models.Model):
+class None(models.Model):
         id = models.UnknownAttribute("Primary key id that is optimized for speed; do not show this to users.")
         zid = models.UUIDAttribute("Secure-random 32-character lowercase hexadecimal that is optimized for zero information; you can show this to users.")
         lock_version = models.UnknownAttribute("This is for optimistic locking.")

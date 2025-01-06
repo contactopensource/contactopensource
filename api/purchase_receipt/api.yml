@@ -1,5 +1,4 @@
 purchase_receipt:
-  model: PurchaseReceipt
   summary: |-
     Purchase receipt.
 

@@ -1,5 +1,5 @@
 plan_gist:
-  model: PlanGIST
+  title: PlanGIST
   summary: Plan with GIST criteria.
   module: Plan
   attribute_groups:

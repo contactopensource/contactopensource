@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Account Organization organizations \
+    Account Organization None \
     --force \
     --no-timestamps \
 

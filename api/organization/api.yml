@@ -1,9 +1,9 @@
 organization:
-  model: Organization
   summary: An organization, such as a company, team, club, congregation, etc.
   module: Account
+  title: Organization
   model: Organization
-  table: organizations
+  plural: organizations
   attributes:
     - !include ../_meta.yml
     - !include ../_card.yml

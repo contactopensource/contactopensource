@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Contact URIContact None \
+    Contact None None \
     --force \
     --no-timestamps \
 

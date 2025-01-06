@@ -1,4 +1,5 @@
 color_point_rgb_with_unit_interval:
+  title: Color Point RGB With Unit Interval
   summary: Color point RGB (red, green, blue) with unit interval
   module: Color
   attribute_groups:

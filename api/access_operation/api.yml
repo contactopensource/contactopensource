@@ -1,8 +1,7 @@
 access_operation:
   summary: Access control operation.
   module: Access
-  model: Operation
-  table: access_operations
+  plural: access_operations
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

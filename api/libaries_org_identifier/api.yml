@@ -1,5 +1,4 @@
 libraries_org_identifier:
-  model: LibrariesOrgIdentifier
   summary: Libraries.org identifier
   description: |-
     Libraries.org identifier is for a library in the Libraries.org database.

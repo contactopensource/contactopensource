@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Codes InternationalStandard_ClassificationOfOccupations2008 None \
+    Codes None None \
         group:string:index \
         code:string:index \
         title:string:index \

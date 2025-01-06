@@ -83,6 +83,12 @@ The attributes aim to use specific naming conventions:
 
 * blank: Can the attribute be blank? Examples: the empty string "" or the empty array []. This setting affects the database table attribute, and also application validation logic.
 
+* unique: Do the attribute's values need to be unique?
+
+* tip: Text to show to a user who's interacting with the attribute, such as tool tip text that displays when a user is focusing on a web form field.
+
+Database-specific keys:
+
 * db_name: The attribute's database column name. Default is attribute.id.
 
 * db_comment: The attribute's database column comment. Default is attribute.summary. This is useful for documentation for developers who look directly at databases.
@@ -92,3 +98,7 @@ The attributes aim to use specific naming conventions:
 * db_index: The attribute's database index type, such as "b-tree", "hash", "gist", "sp-gist", "gin", "brin". Notice: this meaning may change in the future.
 
 * db_tablespace: The name of the database tablespace to use for this attribute's index, if this attribute is indexed. The default is the project’s DEFAULT_INDEX_TABLESPACE setting, if set, or the db_tablespace of the model, if any. If the backend doesn’t support tablespaces for indexes, this option is ignored.
+
+Python Django keys:
+
+* django_verbose_name

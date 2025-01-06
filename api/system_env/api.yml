@@ -1,5 +1,4 @@
 system_env:
-  model: SystemEnv
   summary: System environment variable, such as for managing configurations and settings.
   module: System
   attribute_groups:

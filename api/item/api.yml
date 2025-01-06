@@ -1,5 +1,4 @@
 item:
-  model: Item
   summary: Generic item suitable for demonstrations
   attribute_groups:
     - !include ../_meta.yml

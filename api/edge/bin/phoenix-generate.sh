@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Graph Edge None \
+    Graph None None \
         id:bigint:index \
         zid:uuid:index \
         lock_version:intNone \

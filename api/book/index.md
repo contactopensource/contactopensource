@@ -1,8 +1,6 @@
 # book
 
-A `book` is a typical book.
-
-Example: "Beloved" by Toni Morrison
+A book is a typical book.
 
 
 ## Attributes

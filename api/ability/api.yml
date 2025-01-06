@@ -1,4 +1,5 @@
 ability:
+  plural: abilities
   summary: |-
     Abilities are powers an agent has to perform various actions. They include common abilities, like walking, and rare abilities, like performing a double backflip.
 

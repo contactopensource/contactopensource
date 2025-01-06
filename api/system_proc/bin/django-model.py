@@ -1,5 +1,5 @@
 #!/bin/sh
 set -euf
 
-class SystemProc(models.Model):
+class None(models.Model):
 

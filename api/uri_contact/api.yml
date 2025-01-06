@@ -1,5 +1,5 @@
 uri_contact:
-  model: URIContact
+  title: URIContact
   summary: |-
     A URI contact, which is a URI plus extras for typical usage.
 

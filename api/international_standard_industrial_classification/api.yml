@@ -1,5 +1,4 @@
 international_standard_industrial_classification:
-  model: InternationalStandardIndustrialClassification
   summary: International Standard Industrial Classification (ISIC)
   description: |-
 

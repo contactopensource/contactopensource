@@ -1,5 +1,4 @@
 geographic_area:
-  wordcap: GeographicArea
   summary: Geographic area
   module: Geographic
   attribute_groups:

@@ -1,4 +1,5 @@
 color_point_cymk_with_byte:
+  title: Color Point CYMK With Byte
   summary: Color point CYMK (cyan, yellow, magenta, black) with byte
   module: Color
   attribute_groups:
