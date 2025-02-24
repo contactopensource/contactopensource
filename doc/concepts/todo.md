@@ -137,3 +137,95 @@ Attributes:
 ## Standards
 
 * https://wikipedia.org/wiki/ISO_6709: Standard representation of geographic point location by coordinates
+
+
+
+## How to represent a person's birth date and similar dates?
+
+Some data models represent a person's birth date by using the person table, such as:
+
+```
+person
+------
+id : uuid
+born : date
+```
+
+We prefer refactoring a person's birth date into an event table, such as:
+
+```
+person
+------
+id : uuid
+
+event
+-----
+id : uuid
+key : text (e.g. "born", "died", "married", "graduated", etc.)
+date : date
+```
+
+
+### Why?
+
+Some data models need more flexibility, such as enabling a person to input their born month and month day, but not the year, such as:
+
+person
+------
+id : uuid
+born_year : integer
+born_month : integer
+born_month_day : integer
+```
+
+Some data models, such as for medical purposes, need additional dates for additonal life events, such as:
+
+```
+person
+------
+id : uuid
+born : date
+died : date
+…
+```
+
+Some data models, such as for insurance purposes, need ranges, such as:
+
+person
+------
+id : uuid
+born_range_start : date
+born_range_stop : date
+…
+```
+
+Some data models, such as for historical purposes, need a flag to indicate an approximate, such as:
+
+person
+------
+id : uuid
+born : date
+born_is_circa : boolean
+…
+```
+
+Therefore we recommend refactoring all person dates into events:
+
+```
+person
+------
+id : uuid
+…
+
+event
+-----
+id : uuid
+key : text (e.g. "born", "died", "married", "graduated", etc.)
+date : date (e.g. 1970-01-01)
+timestamp_as_utc : timestamp (e.g. 1970-01-01T00:00:00Z)
+year : integer (e.g. 1970)
+month : integer (e.g. 1 means January)
+monthday : integer (e.g. 1 means the month's first day)
+circa : boolean (e.g. true means the date is approximate)
+…
+
