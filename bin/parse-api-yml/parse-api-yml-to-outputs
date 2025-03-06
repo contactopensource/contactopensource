@@ -3,10 +3,17 @@
 """
 Parse the documentation api.yml files to various outputs.
 
-Example:
+Syntax can use args or stdin:
 
-    find ./api -name api.yml |
-    ./bin/parse-api-yml-to-outputs/parse-api-yml-to-outputs
+    parse-api-yml-to-outputs path...
+
+    path... | parse-api-yml-to-outputs
+
+Examples:
+
+    ./bin/parse-api-yml/parse-api-yml-to-outputs ./api/user/api.yml
+
+    find ./api -name api.yml | ./bin/parse-api-yml/parse-api-yml-to-outputs
 
 Logging is supported such as:
 
