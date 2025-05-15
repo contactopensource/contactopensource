@@ -18,7 +18,6 @@ export decimal_degrees="decimal{15,10}"
 export unit_interval="float"
 export dual_interval="float"
 
-
 dir=$HOME/git/contactopensource/contactopensource/doc/concepts
 
 $dir/access_tenant/rails-generate.sh

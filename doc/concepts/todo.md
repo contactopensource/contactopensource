@@ -75,7 +75,6 @@ Medical-related:
 
 * https://en.wikipedia.org/wiki/Healthcare_Common_Procedure_Coding_System
 
-
 ## Codes
 
 * https://wikipedia.org/wiki/Faceted_Application_of_Subject_Terminology
@@ -139,7 +138,6 @@ Attributes:
 * https://wikipedia.org/wiki/ISO_6709: Standard representation of geographic point location by coordinates
 
 
-
 ## How to represent a person's birth date and similar dates?
 
 Some data models represent a person's birth date by using the person table, such as:
@@ -164,7 +162,6 @@ id : uuid
 key : text (e.g. "born", "died", "married", "graduated", etc.)
 date : date
 ```
-
 
 ### Why?
 

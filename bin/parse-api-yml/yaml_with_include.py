@@ -6,9 +6,7 @@ import logging
 import os.path
 import functools
 
-
 log = logging.getLogger(__name__)
-
 
 class ExtLoaderMeta(type):
 
@@ -20,7 +18,6 @@ class ExtLoaderMeta(type):
         cls.add_constructor('!include', cls.construct_include)
 
         return cls
-
 
 class ExtLoader(yaml.Loader, metaclass=ExtLoaderMeta):
     """YAML Loader with `!include` constructor."""
@@ -48,7 +45,6 @@ class ExtLoader(yaml.Loader, metaclass=ExtLoaderMeta):
                 return yaml.load(f, ExtLoader)
             else:
                 return ''.join(f.readlines())
-
 
 # Set MyLoader as default.
 load = functools.partial(yaml.load, Loader=ExtLoader)

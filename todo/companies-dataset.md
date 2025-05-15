@@ -1,6 +1,5 @@
 # Companies dataset
 
-
 Free Dataset - Companies
 Overview
 

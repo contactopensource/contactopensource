@@ -26,6 +26,8 @@ mix phx.gen.html \
         number_text:text:index \
         start_date:dateNone \
         stop_date:dateNone \
+        four_corner_open_photo_url:urlNone \
+        four_corner_face_photo_url:urlNone \
     --force \
     --no-timestamps \
 

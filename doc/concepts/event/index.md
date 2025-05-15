@@ -10,7 +10,6 @@ Lifetime attributes:
 
 * duration_as_seconds : count -- example: 3600 seconds (1 hour)
 
-
 ## event locale
 
 Attributes:

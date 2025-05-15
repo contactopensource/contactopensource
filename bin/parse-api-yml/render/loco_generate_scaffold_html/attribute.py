@@ -17,7 +17,7 @@ def render_type(attribute):
     x = re.search("(string)\((\d+)\)", attribute.type)
     if x:
         # Return a quoted type and curly constraint e.g. "\"string{1}\""
-        # TODO: return CHECK(length(VALUE)=3) or CHECK(VALUE ~ '^[[:alpha:]]{3}$') or similar. 
+        # TODO: return CHECK(length(VALUE)=3) or CHECK(VALUE ~ '^[[:alpha:]]{3}$') or similar.
         return "\"{}{{{}}}\"".format(x.group(1), x.group(2))
     return attribute.type
 

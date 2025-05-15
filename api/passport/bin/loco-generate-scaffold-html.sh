@@ -26,4 +26,6 @@ cargo loco generate scaffold --html \
         number_text:text \
         start_date:date \
         stop_date:date \
+        four_corner_open_photo_url:url \
+        four_corner_face_photo_url:url \
 

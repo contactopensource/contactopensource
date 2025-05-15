@@ -57,3 +57,7 @@ Main:
 
   * stop_date: date - example: 2030-01-01
 
+  * four_corner_open_photo_url: url
+
+  * four_corner_face_photo_url: url
+

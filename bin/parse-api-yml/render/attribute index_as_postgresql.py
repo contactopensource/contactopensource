@@ -23,4 +23,3 @@ ALTER TABLE "{attribute.table_name}"
 CREATE INDEX "index_{entity.id}_{attribute.id}_{attribute.fk_id}" ON "{entity.table_id}" ("question_id");
 """
 
-

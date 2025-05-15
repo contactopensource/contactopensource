@@ -3,7 +3,6 @@
 Contents:
 * [](#)
 
-
 ## Introduction
 
 ContactOpenSource is software that helps you manage contact information lists, such as people you know, and their email addresses, phone numbers, web links, and more.
@@ -22,11 +21,9 @@ We use these categories:
 
 5. Details: personal name, personal pronoun, etc.
 
-
 ## Codes
 
 Codes are ways to categorize nodes and classify them. We want to provide many kinds of codes.
-
 
 ### Geo codes
 
@@ -35,7 +32,6 @@ Codes are ways to categorize nodes and classify them. We want to provide many ki
 * [What Three Words](https://what3words.com)
 
 * [What Free Words](https://whatfreewords.org)
-
 
 ### Business codes
 
@@ -49,11 +45,9 @@ Codes that are typically for business organizations:
 
 * international_standard_of_industrial_classification_rev_4_code. See https://schema.org/isicV4 https://wikipedia.org/wiki/International_Standard_Industrial_Classification
 
-
 ### TODO
 
 * ISO 15511:2011 = Information and documentation — International standard identifier for libraries and related organizations (ISIL)
-
 
 ## Schema
 
@@ -79,7 +73,6 @@ CREATE TABLE `examples` (
 );
 ```
 
-
 ### nodes
 
 ```sql
@@ -92,7 +85,6 @@ CREATE TABLE `nodes` (
 );
 ```
 
-
 ### edges
 
 The 'edges' table is a kind of linking table with special capabilties.
@@ -102,37 +94,37 @@ An edge row can associate up to three concepts: subject, predicate, object.
 This kind of association has similarities to a data "semantic triple",
 and the metadata data model Resource Description Framework (RDF).
 
-  * See https://en.wikipedia.org/wiki/Semantic_triple
+*  See https://en.wikipedia.org/wiki/Semantic_triple
 
-  * See https://en.wikipedia.org/wiki/Resource_Description_Framework
+*  See https://en.wikipedia.org/wiki/Resource_Description_Framework
 
 Each concept can be a either a URI or a database table name and row id.
 This enables links similar to RDF triples or polymorphic joins.
 
  For example, link two URIs anywhere on the internet, such as two people:
 
-  * subject_uri: http://example.com/alice-adams.html
+*  subject_uri: http://example.com/alice-adams.html
 
-  * object_uri: http://example.com/bob-brown.html
+*  object_uri: http://example.com/bob-brown.html
 
 For example, link from a person's information in this database schema
 to an organization's information in this database schema:
 
-  * subject_table: persons
+*  subject_table: persons
 
-  * subject_id: 34b75621921fdc7ac83459c5c4b7dba6
+*  subject_id: 34b75621921fdc7ac83459c5c4b7dba6
 
-  * object_table: orgs
+*  object_table: orgs
 
-  * object_id: 9588686d2a1b4cda40cad5269c87a627
+*  object_id: 9588686d2a1b4cda40cad5269c87a627
 
 For example, link a person in this database schema to an external URI:
 
-  * subject_table: persons
+*  subject_table: persons
 
-  * subject_id: 34b75621921fdc7ac83459c5c4b7dba6
+*  subject_id: 34b75621921fdc7ac83459c5c4b7dba6
 
-  * object_uri: http://example.com/bob-brown.html
+*  object_uri: http://example.com/bob-brown.html
 
 Each edge row must have a subject and object.
 
@@ -184,7 +176,6 @@ CREATE TABLE `edges` (
 );
 ```
 
-
 ### orgs
 
 ```sql
@@ -212,7 +203,6 @@ CREATE TABLE `orgs` (
 );
 ```
 
-
 ### persons
 
 ```sql
@@ -232,7 +222,6 @@ CREATE TABLE `persons` (
     org_role text -- example: 'Manager of Widgets'
 );
 ```
-
 
 ### person_names
 
@@ -270,7 +259,6 @@ CREATE TABLE `person_names` (
 );
 ```
 
-
 ### places
 
 ```sql
@@ -305,7 +293,6 @@ CREATE TABLE `events` (
     duration_as_seconds numeric(20,9) -- example: 3600 seconds is 1 hour
 ```
 
-
 ### uri_contacts
 
 ```sql
@@ -328,7 +315,6 @@ CREATE TABLE `email_contacts` (
 );
 ```
 
-
 ### phone_contacts
 
 ```sql
@@ -347,7 +333,6 @@ CREATE TABLE `phone_contacts` (
     e164_subscriber_number varchar(14) -- example: '5550000' -- see https://en.wikipedia.org/wiki/E.164
 ```
 
-
 ### postal_contacts
 
 ```sql
@@ -364,7 +349,6 @@ CREATE TABLE `postal_contacts` (
     global_location_number_text text -- see: https://schema.org/globalLocationNumber https://en.wikipedia.org/wiki/Global_Location_Number
 );
 ```
-
 
 ### passport_credentials
 
@@ -407,7 +391,6 @@ CREATE TABLE `passport_credentials` (
     text text -- example: 'trending'
 );
 ```
-
 
 ### locales
 
@@ -483,7 +466,6 @@ CREATE TABLE `media_types` (
     parameters text[] -- example: 'charset=UTF-8',
 );
 ```
-
 
 ### geography_points
 

@@ -11,9 +11,15 @@ Syntax can use args or stdin:
 
 Examples:
 
-    ./bin/parse-api-yml/parse-api-yml-to-outputs ./api/user/api.yml
+    ./bin/parse-api-yml/parse-api-yml-to-outputs ./api/person/api.yml
 
     find ./api -name api.yml | ./bin/parse-api-yml/parse-api-yml-to-outputs
+
+Writing output is supported such as:
+
+    ./bin/parse-api-yml/parse-api-yml-to-outputs --write ./api/person/api.yml
+
+    find ./api -name api.yml | ./bin/parse-api-yml/parse-api-yml-to-outputs --write
 
 Logging is supported such as:
 
@@ -22,6 +28,13 @@ Logging is supported such as:
 Or via command line:
 
     LOGLEVEL=INFO parse-api-yml-to-outputs
+
+All together:
+
+    LOGLEVEL=INFO ./bin/parse-api-yml/parse-api-yml-to-outputs --write ./api/person/api.yml
+
+    LOGLEVEL=INFO find ./api -name api.yml | ./bin/parse-api-yml/parse-api-yml-to-outputs --write
+
 """
 
 import argparse
@@ -53,10 +66,10 @@ def banner(s):
 
 def parse_path(path: os.PathLike):
     """
-    Parse path to a project API file e.g. "./api/user/api.yml"
+    Parse path to a project API file e.g. "./api/person/api.yml"
 
     Args:
-        path (path): The path to parse e.g. "./api/user/api.yml"
+        path (path): The path to parse e.g. "./api/person/api.yml"
 
     Outputs:
         index.md (markdown file)
@@ -96,7 +109,7 @@ def parse_path(path: os.PathLike):
                     f.write(s)
 
 def main():
-    # logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))
+    logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))
     if args.paths:
         for path in args.paths:
             parse_path(path)
@@ -105,5 +118,4 @@ def main():
             parse_path(line.rstrip('\n'))
 
 if __name__ == "__main__":
-    print("parse-api-yml-to-outputs")
     main()

@@ -8,7 +8,6 @@ Color can be represented in a variety of ways:
 
 * Color alpha transparency channel.
 
-
 ## red green blue (and alpha)
 
 * [color_point_rgb_with_byte](../color_point_rgb_with_byte): red, green, blue, implemented with byte
@@ -19,7 +18,6 @@ Color can be represented in a variety of ways:
 
 * [color_point_rgba_with_unit_interval](../color_point_rgba_with_unit_interval): red, green, blue, alpha, implemented with unit interval
 
-
 ## cyan yellow magenta (and alpha)
 
 * [color_point_cymk_with_byte](../color_point_cymk_with_byte): cyan, yellow, magenta, black, implemented with byte
@@ -29,7 +27,6 @@ Color can be represented in a variety of ways:
 * [color_point_cymka_with_byte](../color_point_cymka_with_byte): cyan, yellow, magenta, black, alpha, implemented with byte
 
 * [color_point_cymka_with_unit_interval](../color_point_cymka_with_unit_interval): cyan, yellow, magenta, black, alpha, implemented with unit interval
-
 
 ## Other
 
@@ -44,7 +41,6 @@ Attributes for code names:
 * color_naming_system_name : string+ -- see https://en.wikipedia.org/wiki/Color_Naming_System
 
 * pantone_color_name : string+ -- see https://en.wikipedia.org/wiki/Pantone
-
 
 ## Themes
 

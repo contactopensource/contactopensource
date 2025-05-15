@@ -10,7 +10,6 @@ We use these naming conventions:
 
 * Write-only user name: contactopensource_writer
 
-
 ## Common attributes
 
 Metadata:
@@ -30,7 +29,6 @@ Metadata:
 * type_id ~ for optional type, such as a typecast, or single table inheritance.
 
 * state_id ~ for optional state, such as a state machine, or state transition.
-
 
 ## Patterns
 

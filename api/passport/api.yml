@@ -20,3 +20,9 @@ passport:
             help: valid stop date
             type: date
             example: 2030-01-01
+        - four_corner_open_photo_url:
+            help: Link to a photo that clearly shows the four corner perspective of the passport, specifically open to show the owner information and owner signature. This is suitable for a government verification, or background check, or security approval, etc.
+            type: url
+        - four_corner_face_photo_url:
+            help: Link to a photo that clearly shows the four corner perspective of the passport, specifically with a clear face view of the owner holding the passport open to show the owner information and owner signature. This is suitable for a government verification, or background check, or security approval, etc.
+            type: url

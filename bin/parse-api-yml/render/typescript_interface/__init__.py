@@ -14,7 +14,7 @@ Usage:
 
 ```typescript
 let p: Person = {
-    name: "Alice", 
+    name: "Alice",
     age: 21
 };
 

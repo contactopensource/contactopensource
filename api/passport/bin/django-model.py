@@ -25,4 +25,6 @@ class None(models.Model):
         number_text = models.TextAttribute("number text")
         start_date = models.DateAttribute("valid start date")
         stop_date = models.DateAttribute("valid stop date")
+        four_corner_open_photo_url = models.URLAttribute("Link to a photo that clearly shows the four corner perspective of the passport, specifically open to show the owner information and owner signature. This is suitable for a government verification, or background check, or security approval, etc.")
+        four_corner_face_photo_url = models.URLAttribute("Link to a photo that clearly shows the four corner perspective of the passport, specifically with a clear face view of the owner holding the passport open to show the owner information and owner signature. This is suitable for a government verification, or background check, or security approval, etc.")
 

@@ -10,7 +10,6 @@ Attributes:
 
 * key : string+
 
-
 ## tag_locale
 
 * tag_id : tag(id)+

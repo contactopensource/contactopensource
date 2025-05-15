@@ -32,7 +32,6 @@ example: Bob node
 
 * number: 222.222
 
-
 ### Person
 
 example: Alice
@@ -50,7 +49,6 @@ example: Bob
 * birth_date: 2000-01-01
 
 * death_date: 2099-01-01
-
 
 ### Person name
 
@@ -134,7 +132,6 @@ example: Hon. Bob Brian Brown Sr.
 
 * nickname_phonetic: "Bobby"
 
-
 ### Person pronouns
 
 example: she, her, etc.
@@ -174,7 +171,6 @@ example: he, him, etc.
 * disjunctive_pronoun: "him"
 
 
-
 ## Event
 
 example: Lunch
@@ -188,7 +184,6 @@ example: Lunch
 * stop_timestamp_utc: "2030-01-01 00:00:00", "YYYY-MM-DD HH24:MI:SS")
 
 * duration_in_seconds: 3600 (one hour)
-
 
 ## Organizations
 
@@ -224,291 +219,282 @@ example: Biotech Business
 
 * star_count: 3
 
-
 ## Date Time Range
 
 example: one second
 
-  * start_as_timestamp_utc: 2020-01-01T00:00:00
+*  start_as_timestamp_utc: 2020-01-01T00:00:00
 
-  * stop_as_timestamp_utc: 2020-01-01T00:00:01
+*  stop_as_timestamp_utc: 2020-01-01T00:00:01
 
 example: one decade
 
-  * start_as_timestamp_utc: 2020-01-01 00:00:00
+*  start_as_timestamp_utc: 2020-01-01 00:00:00
 
-  * stop_as_timestamp_utc: 2030-01-01 00:00:00
-
+*  stop_as_timestamp_utc: 2030-01-01 00:00:00
 
 ## Edge
 
 Subject:
 
-  * subject_uri: "http://example.com/alpha.html"
+*  subject_uri: "http://example.com/alpha.html"
 
-  * subject_database: "example_database_1"
+*  subject_database: "example_database_1"
 
-  * subject_schema: "example_schema_1"
+*  subject_schema: "example_schema_1"
 
-  * subject_table: "example_table_1"
+*  subject_table: "example_table_1"
 
-  * subject_id: 694492e037227acf0a264d235f18d1e9
+*  subject_id: 694492e037227acf0a264d235f18d1e9
 
 Predicate:
 
-  * predicate_uri: "http://example.com/bravo.html"
+*  predicate_uri: "http://example.com/bravo.html"
 
-  * predicate_database: "example_database_2"
+*  predicate_database: "example_database_2"
 
-  * predicate_schema: "example_schema_2"
+*  predicate_schema: "example_schema_2"
 
-  * predicate_table: "example_table_2"
+*  predicate_table: "example_table_2"
 
-  * predicate_id: c65f170fb20902c65170d0e406ee25ba
+*  predicate_id: c65f170fb20902c65170d0e406ee25ba
 
 Object:
 
-  * object_uri: "http://example.com/charlie.html"
+*  object_uri: "http://example.com/charlie.html"
 
-  * object_database: "example_database"
+*  object_database: "example_database"
 
-  * object_schema: "example_schema"
+*  object_schema: "example_schema"
 
-  * object_table: "example_table"
+*  object_table: "example_table"
 
-  * object_id: 52afcf33f8ffec0d0154fb2373c13898
+*  object_id: 52afcf33f8ffec0d0154fb2373c13898
 
 Lifecycle:
 
-  * start_at_timestamp_utc: 2020-01-01T00:00:00
+*  start_at_timestamp_utc: 2020-01-01T00:00:00
 
-  * stop_at_timestamp_utc: 2020-01-01T00:00:00
+*  stop_at_timestamp_utc: 2020-01-01T00:00:00
 
 Modifiers:
 
-  * count: 8
+*  count: 8
 
-  * weight: 8.8
+*  weight: 8.8
 
-  * unit_interval: 0.8 (a.k.a. 80%)
+*  unit_interval: 0.8 (a.k.a. 80%)
 
-  * dual_interval: -0.8 (a.k.a. -80%)
+*  dual_interval: -0.8 (a.k.a. -80%)
 
 ## Email contact
 
 example: Alice Adams <alice@example.com>
 
-  * id: dc3200ef1e8066ab892964f9292cd15e
+*  id: dc3200ef1e8066ab892964f9292cd15e
 
-  * address: "Alice Adams <alice@example.com>"
+*  address: "Alice Adams <alice@example.com>"
 
-  * display_name: "Alice Adams"
+*  display_name: "Alice Adams"
 
-  * addr_spec: "alice@example.com"
+*  addr_spec: "alice@example.com"
 
 example: Bob Brown <bob@example.com>
 
-  * id: 92543cb0d9829d78b6188c108e25be9e
+*  id: 92543cb0d9829d78b6188c108e25be9e
 
-  * address: "Bob Brown <bob@example.com>"
+*  address: "Bob Brown <bob@example.com>"
 
-  * display_name: "Bob Brown"
+*  display_name: "Bob Brown"
 
-  * addr_spec: "bob@example.com"
-
+*  addr_spec: "bob@example.com"
 
 
 ## Geographic point
 
 example: New York Grand Central
 
-  * id: c8fb5187e718484eefb9e8dceef4cd68
+*  id: c8fb5187e718484eefb9e8dceef4cd68
 
-  * latitude_as_decimal_degrees: 40.752687
+*  latitude_as_decimal_degrees: 40.752687
 
-  * longitude_as_decimal_degrees: 73.977188
+*  longitude_as_decimal_degrees: 73.977188
 
-  * altitude_as_meters: 39.6
+*  altitude_as_meters: 39.6
 
-  * elevation_as_meters: 39.6
-
+*  elevation_as_meters: 39.6
 
 example: New York Grand Central, delta -0.1 latitude, -0.1 longitude
 
-  * id: d3ef3da36e8e835a464b51b00ae9a827
+*  id: d3ef3da36e8e835a464b51b00ae9a827
 
-  * latitude_as_decimal_degrees: 40.652687
+*  latitude_as_decimal_degrees: 40.652687
 
-  * longitude_as_decimal_degrees: 73.877188
+*  longitude_as_decimal_degrees: 73.877188
 
-  * altitude_as_meters: 39.6
+*  altitude_as_meters: 39.6
 
-  * elevation_as_meters: 39.6
+*  elevation_as_meters: 39.6
 
 example: New York Grand Central, delta +0.1 latitude, +0.1 longitude
 
-  * id: 17c3d2697fea9eeeca776f855b69b394
+*  id: 17c3d2697fea9eeeca776f855b69b394
 
-  * latitude: 40.852687
+*  latitude: 40.852687
 
-  * longitude: 74.077188
+*  longitude: 74.077188
 
-  * altitude: 39.6
+*  altitude: 39.6
 
-  * 39.6
+*  39.6
 
 example: San Francisco Ferry Building
 
-  * id: 6e7e03c894c96caeee4719e3dcccd339
+*  id: 6e7e03c894c96caeee4719e3dcccd339
 
-  * latitude: 37.795563
+*  latitude: 37.795563
 
-  * longitude: -122.393312
+*  longitude: -122.393312
 
-  * altitude: 12.1
+*  altitude: 12.1
 
-  * elevation: 12.1
+*  elevation: 12.1
 
 example: San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude
 
-  * id: dffa13312090a7966cc05af0bcecebc4
+*  id: dffa13312090a7966cc05af0bcecebc4
 
-  * latitude: 37.695563
+*  latitude: 37.695563
 
-  * longitude: -122.293312
+*  longitude: -122.293312
 
-  * altitude: 12.1
+*  altitude: 12.1
 
-  * elevation: 12.1
+*  elevation: 12.1
 
 example: San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude
 
-  * id: a93526cc717f3bc83e32ed2e74d1fc85
+*  id: a93526cc717f3bc83e32ed2e74d1fc85
 
-  * latitude: 37.805563
+*  latitude: 37.805563
 
-  * longitude: -122.493312
+*  longitude: -122.493312
 
-  * altitude: 12.1
+*  altitude: 12.1
 
-  * elevation: 12.1
-
+*  elevation: 12.1
 
 ## Geo circle
 
 example: New York, Grand Central, spread 1 kilometer
 
-  * id: d4677d7c8f7b034c9ba331087097ed6b
+*  id: d4677d7c8f7b034c9ba331087097ed6b
 
-  * center_as_geography_point_id: c8fb5187e718484eefb9e8dceef4cd68
+*  center_as_geography_point_id: c8fb5187e718484eefb9e8dceef4cd68
 
-  * spread_as_meters: 1000
+*  spread_as_meters: 1000
 
 example: San Francisco, Ferry Building, spread 1 kilometer
 
-  * id: 4b74e5d7848af524199f26ecf7348718
+*  id: 4b74e5d7848af524199f26ecf7348718
 
-  * center_as_geography_point_id: "6e7e03c894c96caeee4719e3dcccd339" as id
+*  center_as_geography_point_id: "6e7e03c894c96caeee4719e3dcccd339" as id
 
-  * spread_as_meters: 1000
-
+*  spread_as_meters: 1000
 
 ## Geo rectangles
 
 example: New York, Grand Central, delta -/+ 0.1 latitude/longitude
 
-  * id: 353fc6f3bfc3c56a5a687f9a986af0da
+*  id: 353fc6f3bfc3c56a5a687f9a986af0da
 
-  * geography_point_id: d3ef3da36e8e835a464b51b00ae9a827 (New York Grand Central, delta -0.1 latitude, -0.1 longitude)
+*  geography_point_id: d3ef3da36e8e835a464b51b00ae9a827 (New York Grand Central, delta -0.1 latitude, -0.1 longitude)
 
-  * geography_point id: 17c3d2697fea9eeeca776f855b69b394 (New York Grand Central, delta +0.1 latitude, +0.1 longitude)
+*  geography_point id: 17c3d2697fea9eeeca776f855b69b394 (New York Grand Central, delta +0.1 latitude, +0.1 longitude)
 
 example: San Francisco, Ferry Building, delta -/+ 0.1 latitude/longitude
 
-  * id: e809d4983199ea8f89f2915846e8ab9c
+*  id: e809d4983199ea8f89f2915846e8ab9c
 
-  * geography_point_id: dffa13312090a7966cc05af0bcecebc4 (San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude)
+*  geography_point_id: dffa13312090a7966cc05af0bcecebc4 (San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude)
 
-  * geography_point_id: a93526cc717f3bc83e32ed2e74d1fc85 (San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude)
-
+*  geography_point_id: a93526cc717f3bc83e32ed2e74d1fc85 (San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude)
 
 ## Link contact
 
 example: New York + Grand Central + Wikipedia link
 
-  * id: 2a7b687d89d02d308347c7a207de826e
+*  id: 2a7b687d89d02d308347c7a207de826e
 
-  * label: "New York Grand Central by Wikipedia"
+*  label: "New York Grand Central by Wikipedia"
 
-  * uri: "https://en.wikipedia.org/wiki/Grand_Central_Terminal"
+*  uri: "https://en.wikipedia.org/wiki/Grand_Central_Terminal"
 
 example: San Francisco + Ferry Building + Wikipedia link
 
-  * id: 90aa301cc861104c2646c15c2e7db529
+*  id: 90aa301cc861104c2646c15c2e7db529
 
-  * label: "San Franciso Ferry Building by Wikipedia"
+*  label: "San Franciso Ferry Building by Wikipedia"
 
-  * uri: "https://en.wikipedia.org/wiki/San_Francisco_Ferry_Building"
-
+*  uri: "https://en.wikipedia.org/wiki/San_Francisco_Ferry_Building"
 
 ## Locale
 
 example: English language + United States
 
-  * id: 01e35cdb11f1441a22fffdbbcc398747
+*  id: 01e35cdb11f1441a22fffdbbcc398747
 
-  * text: "en-US"
+*  text: "en-US"
 
-  * language_code: "en"
+*  language_code: "en"
 
-  * country_code: "US"
+*  country_code: "US"
 
-  * script_code: "Latn"
+*  script_code: "Latn"
 
-  * region_code: ""
+*  region_code: ""
 
-  * variant_code: ""
+*  variant_code: ""
 
-  * decimal_separator: "."
+*  decimal_separator: "."
 
-  * grouping_separator: ","
+*  grouping_separator: ","
 
-  * currency_code: "USD"
+*  currency_code: "USD"
 
-  * currency_symbol: "$"
+*  currency_symbol: "$"
 
-  * quotation_start_delimiter: "“"
+*  quotation_start_delimiter: "“"
 
-  * quotation_stop_delimiter: "”"
+*  quotation_stop_delimiter: "”"
 
 example: Chinese simplified Mandarin language + China
 
-  * id: 0efde58a9b43066ebfb11bd1bf8d7074
+*  id: 0efde58a9b43066ebfb11bd1bf8d7074
 
-  * text: "zh-CN"
+*  text: "zh-CN"
 
-  * language_code: "zh"
+*  language_code: "zh"
 
-  * country_code: "CN"
+*  country_code: "CN"
 
-  * script_code: "Hans"
+*  script_code: "Hans"
 
-  * region_code: ""
+*  region_code: ""
 
-  * variant_code: ""
+*  variant_code: ""
 
-  * decimal_separator: "."
+*  decimal_separator: "."
 
-  * grouping_separator: " "
+*  grouping_separator: " "
 
-  * currency_code: "CNY"
+*  currency_code: "CNY"
 
-  * currency_symbol: "¥"
+*  currency_symbol: "¥"
 
-  * quotation_start_delimiter: "「"
+*  quotation_start_delimiter: "「"
 
-  * quotation_stop_delimiter: "」"
-
+*  quotation_stop_delimiter: "」"
 
 ## Media type
 
@@ -543,7 +529,6 @@ example: application/json + UTF-8
 * suffix: "+json"
 
 * parameters: array["charset=UTF-16", "boundary=bravo"]
-
 
 ## Things (organizations)
 
@@ -625,243 +610,240 @@ example: Biotech Business, Biology Department
 
 * stop_date: 2099-01-01
 
-
 example: Alice's passport credential
 (
-  * id: 5c6122ea2ceab2a7374bf42095c6cd3e
+*  id: 5c6122ea2ceab2a7374bf42095c6cd3e
 
   -- Passport-related
-  * country_text: "US"
-  * number_text: "111-111-111-111"
+*  country_text: "US"
+*  number_text: "111-111-111-111"
 
   -- Time-related
-  * valid_start_date: "2020-01-01"
+*  valid_start_date: "2020-01-01"
   "2030-01-01" -- valid_stop_date
 ),
 
 -- example: Bob"s passport credential
 (
-  * id: de2eac04da783ec19c713440e2147c75
+*  id: de2eac04da783ec19c713440e2147c75
 
   -- Passport-related
-  * country_text: "US"
-  * number_text: "888-888-888-888"
+*  country_text: "US"
+*  number_text: "888-888-888-888"
 
   -- Time-related
-  * valid_start_date: "2020-01-01"
+*  valid_start_date: "2020-01-01"
   "2030-01-01" -- valid_stop_date
 
 );
-
 
 
 INSERT INTO places VALUES
 
 -- New York + Grand Central
 (
-  * id: a1b32e52b344acb5187b1749c6697982
+*  id: a1b32e52b344acb5187b1749c6697982
 
   -- Place-related
   "Grand Central in New York" -- name
 
   -- Postal contact:
-  * addressee: -- "Grand Central"
-  * street_address: -- "89 E 42nd St"
-  * premise_address: -- "Master""s Office"
-  * locality_name: -- "New York"
-  * region_code: -- "NY"
-  * postal_code: -- "10017"
-  * country_code: -- "US"
-  * continent_code: -- "NA"
-  * neighborhood_name: -- "Midtown"
+*  addressee: -- "Grand Central"
+*  street_address: -- "89 E 42nd St"
+*  premise_address: -- "Master""s Office"
+*  locality_name: -- "New York"
+*  region_code: -- "NY"
+*  postal_code: -- "10017"
+*  country_code: -- "US"
+*  continent_code: -- "NA"
+*  neighborhood_name: -- "Midtown"
 
   -- Telephone: 1 (212) 340-2583 = Master"s Office
 
   -- Geographic point:
-  * latitude: -- 40.752687
-  * longitude: -- -73.977188
+*  latitude: -- 40.752687
+*  longitude: -- -73.977188
 
   -- Geo codes:
-  * https://plus.codes: -- "87G8Q23F+34"
-  * What3Words.com: -- "rubble.occurs.holds"
-  * WhatFreeWords.org: -- "burst.fully.things"
+*  https://plus.codes: -- "87G8Q23F+34"
+*  What3Words.com: -- "rubble.occurs.holds"
+*  WhatFreeWords.org: -- "burst.fully.things"
   -- TODO -- global location number
 ),
 
 -- San Francisco + Ferry Building
 (
-  * id: 650044c3f694a056d370ad88dc75aa7b
+*  id: 650044c3f694a056d370ad88dc75aa7b
   "Ferry Building in San Francisco" -- name
 
   -- Postal contact:
-  * addressee: -- "Ferry Building"
-  * street_address: -- "1 Ferry Building"
-  * premise_address: -- "Lost & Found"
-  * locality_name: -- "San Francisco"
-  * region_code: -- "CA"
-  * postal_code: -- "94111"
-  * country_code: -- "US"
-  * continent_code: -- "NA"
-  * neighborhood_name: -- "Downtown"
+*  addressee: -- "Ferry Building"
+*  street_address: -- "1 Ferry Building"
+*  premise_address: -- "Lost & Found"
+*  locality_name: -- "San Francisco"
+*  region_code: -- "CA"
+*  postal_code: -- "94111"
+*  country_code: -- "US"
+*  continent_code: -- "NA"
+*  neighborhood_name: -- "Downtown"
 
   -- Telephone: 1 (415) 983-8007 = Lost & Found
 
   -- Geographic point:
-  * latitude: -- 37.795563
-  * longitude: -- -122.393312
+*  latitude: -- 37.795563
+*  longitude: -- -122.393312
 
   -- Geo codes:
-  * https://plus.codes: -- "849VQJW4+6M"
-  * https://what3words.com: -- "banks.issues.socket"
-  * https://whatfreewords.org: -- "solid.cracks.solar"
+*  https://plus.codes: -- "849VQJW4+6M"
+*  https://what3words.com: -- "banks.issues.socket"
+*  https://whatfreewords.org: -- "solid.cracks.solar"
   -- TODO -- global location number
 ),
 
 -- New York + Public Library
 (
-  * id: c1346940d621bb901eb2ea3f904f5229
+*  id: c1346940d621bb901eb2ea3f904f5229
   "Public Library in San Francisco" -- name
 
   -- Postal contact:
-  * addressee: -- "NYPL"
-  * street_address: -- ""
-  * premise_address: -- ""
-  * locality_name: -- "New York"
-  * region_code: -- "NY"
-  * postal_code: -- ""
-  * country_code: -- "US"
-  * continent_code: -- "NA"
-  * neighborhood_name: -- "Downtown"
+*  addressee: -- "NYPL"
+*  street_address: -- ""
+*  premise_address: -- ""
+*  locality_name: -- "New York"
+*  region_code: -- "NY"
+*  postal_code: -- ""
+*  country_code: -- "US"
+*  continent_code: -- "NA"
+*  neighborhood_name: -- "Downtown"
 
   -- Telephone: 1 (415) ???-???? = ?
 
   -- Geographic point:
-  * latitude: --
-  * longitude: --
+*  latitude: --
+*  longitude: --
 
   -- Geo codes:
-  * https://plus.codes: -- ""
-  * https://what3words.com: -- ""
-  * https://whatfreewords.org: -- ""
+*  https://plus.codes: -- ""
+*  https://what3words.com: -- ""
+*  https://whatfreewords.org: -- ""
   -- TODO -- global location number
 );
 
 -- San Francisco + Public Library
 (
-  * id: 8188e32e580c55d15d1ccd14373a2f88
+*  id: 8188e32e580c55d15d1ccd14373a2f88
   "Public Library in San Francisco" -- name
 
   -- Postal contact:
-  * addressee: -- "SFPL"
-  * street_address: -- ""
-  * premise_address: -- ""
-  * locality_name: -- "San Francisco"
-  * region_code: -- "CA"
-  * postal_code: -- ""
-  * country_code: -- "US"
-  * continent_code: -- "NA"
-  * neighborhood_name: -- "Downtown"
+*  addressee: -- "SFPL"
+*  street_address: -- ""
+*  premise_address: -- ""
+*  locality_name: -- "San Francisco"
+*  region_code: -- "CA"
+*  postal_code: -- ""
+*  country_code: -- "US"
+*  continent_code: -- "NA"
+*  neighborhood_name: -- "Downtown"
 
   -- Telephone: 1 (415) ???-???? = ?
 
   -- Geographic point:
-  * latitude: --
-  * longitude: --
+*  latitude: --
+*  longitude: --
 
   -- Geo codes:
-  * https://plus.codes: -- ""
-  * https://what3words.com: -- ""
-  * https://whatfreewords.org: -- ""
+*  https://plus.codes: -- ""
+*  https://what3words.com: -- ""
+*  https://whatfreewords.org: -- ""
   -- TODO -- global location number
 )
 
-
 -- North Pole
 (
-  * id: decb4d70ba8fe75f5a40d99bc884a1fd
+*  id: decb4d70ba8fe75f5a40d99bc884a1fd
   "North Pole" -- name
 
   -- Postal contact:
-  * addressee: -- ""
-  * street_address: -- ""
-  * premise_address: -- ""
-  * locality_name: -- ""
-  * region_code: -- ""
-  * postal_code: -- ""
-  * country_code: -- ""
-  * continent_code: -- ""
-  * neighborhood_name: -- ""
+*  addressee: -- ""
+*  street_address: -- ""
+*  premise_address: -- ""
+*  locality_name: -- ""
+*  region_code: -- ""
+*  postal_code: -- ""
+*  country_code: -- ""
+*  continent_code: -- ""
+*  neighborhood_name: -- ""
 
   -- Telephone: ? = ?
 
   -- Geographic point:
-  * latitude: --
-  * longitude: --
+*  latitude: --
+*  longitude: --
 
   -- Geo codes:
-  * https://plus.codes: -- ""
-  * https://what3words.com: -- ""
-  * https://whatfreewords.org: -- ""
-  * global location number: -- ""
+*  https://plus.codes: -- ""
+*  https://what3words.com: -- ""
+*  https://whatfreewords.org: -- ""
+*  global location number: -- ""
 )
 
 -- South Pole
 (
-  * id: 3263f3d7175b51d3365e7f40d32ab654
+*  id: 3263f3d7175b51d3365e7f40d32ab654
   "South Pole" -- name
 
   -- Postal contact:
-  * addressee: -- ""
-  * street_address: -- ""
-  * premise_address: -- ""
-  * locality_name: -- ""
-  * region_code: -- ""
-  * postal_code: -- ""
-  * country_code: -- ""
-  * continent_code: -- ""
-  * neighborhood_name: -- ""
+*  addressee: -- ""
+*  street_address: -- ""
+*  premise_address: -- ""
+*  locality_name: -- ""
+*  region_code: -- ""
+*  postal_code: -- ""
+*  country_code: -- ""
+*  continent_code: -- ""
+*  neighborhood_name: -- ""
 
   -- Telephone: ? = ?
 
   -- Geographic point:
-  * latitude: --
-  * longitude: --
+*  latitude: --
+*  longitude: --
 
   -- Geo codes:
-  * https://plus.codes: -- ""
-  * https://what3words.com: -- ""
-  * https://whatfreewords.org: -- ""
-  * global location number: -- ""
+*  https://plus.codes: -- ""
+*  https://what3words.com: -- ""
+*  https://whatfreewords.org: -- ""
+*  global location number: -- ""
 );
 INSERT INTO postal_contacts VALUES
 
 -- example: New York + Grand Central
 (
-  * id: f10bf169bbc1df76dc18dd007e09581a
+*  id: f10bf169bbc1df76dc18dd007e09581a
 
   -- Postal-related
-  * country_text: "US"
-  * region_text: "NY"
-  * locality_text: "New York"
-  * neighborhood_text: "Midtown"
-  * postal_code_text: "10017"
-  * street_address_text: "89 E 42nd St"
-  * premise_address_text: "Master""s Office"
+*  country_text: "US"
+*  region_text: "NY"
+*  locality_text: "New York"
+*  neighborhood_text: "Midtown"
+*  postal_code_text: "10017"
+*  street_address_text: "89 E 42nd St"
+*  premise_address_text: "Master""s Office"
   "1001710017" -- global_location_number_text (fake)
 ),
 
 -- example: San Francisco + Ferry Building
 (
-  * id: d819c808f9d6f7b8c3649657693b798b
+*  id: d819c808f9d6f7b8c3649657693b798b
 
   -- Postal-related
-  * country_text: "US"
-  * region_text: "CA"
-  * locality_text: "San Francisco"
-  * neighborhood_text: "Downtown"
-  * postal_code_text: "94111"
-  * street_address_text: "1 Ferry Building"
-  * premise_address_text: "Lost & Found"
+*  country_text: "US"
+*  region_text: "CA"
+*  locality_text: "San Francisco"
+*  neighborhood_text: "Downtown"
+*  postal_code_text: "94111"
+*  street_address_text: "1 Ferry Building"
+*  premise_address_text: "Lost & Found"
   "9411194111" -- global_location_number_text (fake)
 );
 -- Example of tags that are each a simple hashtag word
@@ -876,22 +858,22 @@ INSERT INTO tags VALUES
 
 -- example: tag for New York
 (
-  * id: 353fc6f3bfc3c56a5a687f9a986af0da
+*  id: 353fc6f3bfc3c56a5a687f9a986af0da
 
   -- Tag-related
-  * set_id for Twitter: 6a8c63f0505bb15f17f13ecc0265f450
-  * parent_id: NULL
+*  set_id for Twitter: 6a8c63f0505bb15f17f13ecc0265f450
+*  parent_id: NULL
   "newyork" -- text
 
 ),
 
 -- example: tag for San Francisco
 (
-  * id: 3bb2085aa5bce9506452fe8ebb9d0103
+*  id: 3bb2085aa5bce9506452fe8ebb9d0103
 
   -- Tag-related
-  * set_id for Twitter: 6a8c63f0505bb15f17f13ecc0265f450
-  * parent_id: NULL
+*  set_id for Twitter: 6a8c63f0505bb15f17f13ecc0265f450
+*  parent_id: NULL
   "sanfrancisco" -- text
 
 );
@@ -915,138 +897,137 @@ INSERT INTO tags VALUES
 
 -- example: Grand Central, New York, NY, US + Open Location Code
 (
-  * id: 353fc6f3bfc3c56a5a687f9a986af0da
+*  id: 353fc6f3bfc3c56a5a687f9a986af0da
 
   -- Code-related
-  * set_id for Open Location Code: 03d0ca793b075f06f2fb6eb41084abd5
-  * parent_id: NULL
-  * text: "87G8Q23F+34"
+*  set_id for Open Location Code: 03d0ca793b075f06f2fb6eb41084abd5
+*  parent_id: NULL
+*  text: "87G8Q23F+34"
   "Grand Central, New York, NY, US + Open Location Code" -- description
 ),
 
 -- example: Grand Central, New York, NY, US + What3Words
 (
-  * id: c2d3cea54d44a64ad5093c5aaa7076ae
+*  id: c2d3cea54d44a64ad5093c5aaa7076ae
 
   -- Code-related
-  * set_id for What3Words: b712df2becc88dcb7201572e1bbc0980
-  * parent_id: NULL
-  * text: "rubble.occurs.holds"
+*  set_id for What3Words: b712df2becc88dcb7201572e1bbc0980
+*  parent_id: NULL
+*  text: "rubble.occurs.holds"
   "Grand Central, New York, NY, US + What3Words" -- description
 ),
 
 -- example: Grand Central, New York, NY, US + WhatFreeWords
 (
-  * id: 6e832771f5f844deabce47ebbfc8eba0
+*  id: 6e832771f5f844deabce47ebbfc8eba0
 
   -- Code-related
-  * set_id for WhatFreeWords: fb126177afe10f5dbe512449a81df9f3
-  * parent_id: NULL
-  * text: "burst.fully.things"
+*  set_id for WhatFreeWords: fb126177afe10f5dbe512449a81df9f3
+*  parent_id: NULL
+*  text: "burst.fully.things"
   "Grand Central, New York, NY, US + WhatFreeWords" -- description
 ),
 
 -- example: Ferry Building, San Francisco, CA, US + Open Location Code
 (
-  * id: a15b731ccf676e1340caa969fc3a43cc
+*  id: a15b731ccf676e1340caa969fc3a43cc
 
   -- Code-related
-  * set_id for Open Location Code: 03d0ca793b075f06f2fb6eb41084abd5
-  * parent_id: NULL
-  * text: "849VQJW4+6M"
+*  set_id for Open Location Code: 03d0ca793b075f06f2fb6eb41084abd5
+*  parent_id: NULL
+*  text: "849VQJW4+6M"
   "Ferry Building, San Francisco, CA, US + Open Location Code" -- description
 ),
 
 -- example: Ferry Building, San Francisco, CA, US + What3Words
 (
-  * id: 96832a0db64a21acf88fa619ce08b93a
+*  id: 96832a0db64a21acf88fa619ce08b93a
 
   -- Code-related
-  * set_id for What3Words: b712df2becc88dcb7201572e1bbc0980
-  * parent_id: NULL
-  * text: "banks.issues.socket"
+*  set_id for What3Words: b712df2becc88dcb7201572e1bbc0980
+*  parent_id: NULL
+*  text: "banks.issues.socket"
   "Ferry Building, San Francisco, CA, US + What3Words" -- description
 ),
 
 -- example: Ferry Building, San Francisco, CA, US + WhatFreeWords
 (
-  * id: 4a7b52bd2ec81616100990b38fa6fcc6
+*  id: 4a7b52bd2ec81616100990b38fa6fcc6
 
   -- Code-related
-  * set_id for WhatFreeWords: fb126177afe10f5dbe512449a81df9f3
-  * parent_id: NULL
-  * text: "solid.cracks.solar"
+*  set_id for WhatFreeWords: fb126177afe10f5dbe512449a81df9f3
+*  parent_id: NULL
+*  text: "solid.cracks.solar"
   "Ferry Building, San Francisco, CA, US + WhatFreeWords" -- description
 );
 INSERT INTO phone_contacts VALUES
 
 -- example: New York + Grand Central + telephone for Master"s Office
 (
-  * id: 8e238bdbf3b6c189f9e2ed65b2efbb45
+*  id: 8e238bdbf3b6c189f9e2ed65b2efbb45
 
   -- Telephone-related
-  * label: "Master""s Office"
-  * number_text: "1 (212) 340-2583"
+*  label: "Master""s Office"
+*  number_text: "1 (212) 340-2583"
   -- E.164-related -- see https://en.wikipedia.org/wiki/E.164
-  * e164_text: "12123402583"
-  * e164_country_code: "1"
-  * e164_national_destination_code: "212"
-  * e164_group_identification_code: ""
-  * e164_trial_identification_code: ""
+*  e164_text: "12123402583"
+*  e164_country_code: "1"
+*  e164_national_destination_code: "212"
+*  e164_group_identification_code: ""
+*  e164_trial_identification_code: ""
   "3402583" -- e164_subscriber_number
 ),
 
 -- example: San Francisco + Ferry Building + telephone for Lost & Found
 (
-  * id: 7ea1eb5f6d9075eaa93d12a602dfddb5
+*  id: 7ea1eb5f6d9075eaa93d12a602dfddb5
 
   -- Telephone-related
-  * label: "Lost & Found"
-  * number_text: "1 (415) 983-8007"
+*  label: "Lost & Found"
+*  number_text: "1 (415) 983-8007"
   -- E.164-related -- see https://en.wikipedia.org/wiki/E.164
-  * e164_text: "14159838007"
-  * e164_country_code: "1"
-  * e164_national_destination_code: "415"
-  * e164_group_identification_code: ""
-  * e164_trial_identification_code: ""
+*  e164_text: "14159838007"
+*  e164_country_code: "1"
+*  e164_national_destination_code: "415"
+*  e164_group_identification_code: ""
+*  e164_trial_identification_code: ""
   "4159838007" -- e164_subscriber_number
 );
-
 
 ## Things (fruits)
 
 example: apple
 
-  * id: d5c7802ecf25359ddc7dde71074f0132
+*  id: d5c7802ecf25359ddc7dde71074f0132
 
-  * name: "apple"
+*  name: "apple"
 
 example: banana
 
-  * id: deabb3e6a944fd07d5e83de4a3a237b6
+*  id: deabb3e6a944fd07d5e83de4a3a237b6
 
-  * name: "banana"
+*  name: "banana"
 
 example: cherry
 
-  * id: dd17563ba36c20fd4900cc819b1aa45e
+*  id: dd17563ba36c20fd4900cc819b1aa45e
 
   name: "cherry"
 
 example: dewberry
 
-  * id: 2b543220a8ea7b20a4e2869dae62e3d4
+*  id: 2b543220a8ea7b20a4e2869dae62e3d4
 
-  * name: "dewberry"
+*  name: "dewberry"
 
 example: elderberry
 
-  * id: d42507da2bbda9c424aca0a268ef5bee
+*  id: d42507da2bbda9c424aca0a268ef5bee
 
-  * name: "elderberry"
+*  name: "elderberry"
 
 example: fig
 
-  * id: 9d71ef36473db33ddc5526bd628e6adb
+*  id: 9d71ef36473db33ddc5526bd628e6adb
 
-  * name: "fig"
+*  name: "fig"

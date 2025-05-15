@@ -259,7 +259,6 @@ package Access {
   entity access_operation_locale
 }
 
-
 entity access_tenant {
 }
 
@@ -859,7 +858,6 @@ entity plan_metric {
   name : string+
   value : numeric
 }
-
 
 entity plan_gist {
   goal_id
