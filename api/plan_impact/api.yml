@@ -1,0 +1,10 @@
+plan_output:
+  summary: |-
+    Plan impact, such as creating value, or important growth, or significant transformation. 
+    
+    These concepts are related: plan output, plan outcome, plan impact.
+    
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
