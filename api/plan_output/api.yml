@@ -1,0 +1,11 @@
+plan_output:
+  plural: plan_outputs
+  summary: |-
+    Plan output, such as a deliverable, or object, or work product, etc. 
+    
+    These concepts are related: plan output, plan outcome, plan impact.
+
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
