@@ -1,0 +1,10 @@
+plan_output:
+  summary: |-
+    Plan outcome, such as a relevant change, or important effect, or significant shift. 
+    
+    These concepts are related: plan output, plan outcome, plan impact.
+    
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
