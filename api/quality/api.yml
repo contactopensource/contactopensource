@@ -1,0 +1,12 @@
+quality:
+  plural: qualities
+  summary: |-
+    Qualities are TODO. For example, accessibility, scalability, and usability.
+
+    Qualities are TODO.
+
+    https://wikipedia.org/wiki/Quality
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
