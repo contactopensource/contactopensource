@@ -1,9 +1,9 @@
 access_assignment:
   summary: Access control assignment, which joins access_agent and access_attribute.
   module: Access
-  associations: |-
-    belongs_to: access_agent
-    belongs_to: access_attribute
+  associations:
+    - belongs_to: access_agent
+    - belongs_to: access_attribute
   attribute_groups:
     - Join:
       - access_agent_id:

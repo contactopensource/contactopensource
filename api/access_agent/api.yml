@@ -1,11 +1,11 @@
 access_agent:
   summary: Access control agent.
   module: Access
-  associations: |-
-    has_many: access_occupancies
-    has_many: access_tenants, through: :access_occupancies
-    has_many: access_assignments
-    has_many: access_attributes, through: :access_assignments
+  associations:
+    - has_many: access_occupancies
+    - has_many: access_tenants, through: :access_occupancies
+    - has_many: access_assignments
+    - has_many: access_attributes, through: :access_assignments
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

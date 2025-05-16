@@ -2,16 +2,16 @@ plan:
   title: Plan
   summary: Plan
   module: Plan
-  associations: :-
-    has_many: plan_okrs
-    has_many: plan_gists
-    has_many: plan_rices
-    has_many: plan_ropes
-    has_many: plan_smarts
-    has_many: plan_outputs
-    has_many: plan_outcomes
-    has_many: plan_impacts
-    has_many: plan_milestones
+  associations:
+    - has_many: plan_okrs
+    - has_many: plan_gists
+    - has_many: plan_rices
+    - has_many: plan_ropes
+    - has_many: plan_smarts
+    - has_many: plan_outputs
+    - has_many: plan_outcomes
+    - has_many: plan_impacts
+    - has_many: plan_milestones
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

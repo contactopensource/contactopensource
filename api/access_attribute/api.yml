@@ -1,11 +1,11 @@
 access_attribute:
   summary: Access control attribute.
   module: Access
-  associations: |-
-    has_many: access_assignments
-    has_many: access_agents, through: :access_assignments
-    has_many: access_permissions
-    has_many: access_operations, through: :access_permissions
+  associations:
+    - has_many: access_assignments
+    - has_many: access_agents, through: :access_assignments
+    - has_many: access_permissions
+    - has_many: access_operations, through: :access_permissions
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

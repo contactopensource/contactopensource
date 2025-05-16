@@ -2,9 +2,9 @@ access_occupancy:
   summary: Access control occupancy, which joins access_tenant and access_agent.
   module: Access
   snake_case_plural: access_occupancies
-  associations: |-
-    belongs_to: access_tenant
-    belongs_to: access_agent
+  associations:
+    - belongs_to: access_tenant
+    - belongs_to: access_agent
   attribute_groups:
     - join:
       - access_tenant_id:
