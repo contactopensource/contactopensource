@@ -7,33 +7,33 @@ Color point RGBA (red, green, blue, alpha) with byte
 
 Meta:
 
-  * id: bigint (index)
+* id: bigint (index)
 
-  * zid: uuid (index)
+* zid: uuid (index)
 
-  * lock_version: int
+* lock_version: int
 
-  * created_at: timestamp
+* created_at: timestamp
 
-  * created_by: url
+* created_by: url
 
-  * updated_at: timestamp
+* updated_at: timestamp
 
-  * updated_by: url
+* updated_by: url
 
-  * retired_at: timestamp
+* retired_at: timestamp
 
-  * retired_by: url
+* retired_by: url
 
-  * locale_id: locale.id - example: the id of locale "English - United States".
+* locale_id: locale.id - example: the id of locale "English - United States".
 
 Main:
 
-  * red: byte - example: 0x00 means no red
+* red: byte - example: 0x00 means no red
 
-  * green: byte - example: 0x88 means half green
+* green: byte - example: 0x88 means half green
 
-  * blue: byte - example: 0xFF means full blue
+* blue: byte - example: 0xFF means full blue
 
-  * alpha: byte - example: 0x88 means half translucent
+* alpha: byte - example: 0x88 means half translucent
 

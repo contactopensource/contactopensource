@@ -1,5 +1,5 @@
 disability:
-  plural: disabilities
+  snake_case_plural: disabilities
   summary: |-
     Disability is the experience of any condition that makes it more difficult for a person to do certain activities or have equitable access within a given society.
    

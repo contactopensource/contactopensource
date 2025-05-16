@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     color_point_cymk_as_unit_interval \
         id:bigint:index \
         zid:uuid:index \

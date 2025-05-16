@@ -3,7 +3,7 @@ organization:
   module: Account
   title: Organization
   model: Organization
-  plural: organizations
+  snake_case_plural: organizations
   attributes:
     - !include ../_meta.yml
     - !include ../_card.yml

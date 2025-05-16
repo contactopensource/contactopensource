@@ -1,5 +1,5 @@
 quality:
-  plural: qualities
+  snake_case_plural: qualities
   summary: |-
     Qualities are TODO. For example, accessibility, scalability, and usability.
 

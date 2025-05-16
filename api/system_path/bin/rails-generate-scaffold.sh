@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     system_path \
     --force \
     --no-timestamps \

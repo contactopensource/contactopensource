@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     tz_database_2024b \
         id:bigint:index \
         zid:uuid:index \

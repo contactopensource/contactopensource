@@ -89,17 +89,18 @@ def parse_path(path: os.PathLike):
         logging.info(banner(f"YAML {concept}") + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
 
         entities = Entity.parse(y)
+
         for entity in entities:
             logging.info(banner(f"Entity {entity}"))
 
         for renderer in [
-            render.django_model,
-            render.loco_generate_scaffold_html,
-            render.markdown,
-            render.plantuml,
-            render.postgres_migration_up,
-            render.postgres_migration_down,
-            render.phoenix_generate,
+        #     render.django_model,
+        #     render.loco_generate_scaffold_html,
+        #     render.markdown,
+        #     render.plantuml,
+        #     render.postgres_migration_up,
+        #     render.postgres_migration_down,
+        #     render.phoenix_generate,
             render.rails_generate_scaffold,
         ]:
             s = renderer.render(entities)
@@ -109,7 +110,9 @@ def parse_path(path: os.PathLike):
                     f.write(s)
 
 def main():
+    exit
     logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))
+    logging.info("main()")
     if args.paths:
         for path in args.paths:
             parse_path(path)

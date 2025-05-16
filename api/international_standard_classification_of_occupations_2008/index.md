@@ -11,11 +11,11 @@ ISCO-08 is the ISCO version adopted in 2008 through a resolution of a Tripartite
 
 Main:
 
-  * group: string (index) - example: TODO
+* group: string (index) - example: TODO
 
-  * code: string (index) - example: TODO
+* code: string (index) - example: TODO
 
-  * title: string (index) - example: TODO
+* title: string (index) - example: TODO
 
-  * definition: string - example: TODO
+* definition: string - example: TODO
 

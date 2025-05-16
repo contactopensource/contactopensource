@@ -17,20 +17,23 @@ from itertools import chain
 from attribute_group import AttributeGroup
 
 class Entity:
-    def __init__(self, id, summary, module, model, table, uml = None, attribute_groups = []):
+    def __init__(self, id):
         self.id = id
-        self.summary = summary
-        self.module = module
-        self.model = model
-        self.table = table
-        self.uml = uml
-        self.attribute_groups = attribute_groups
+        self.snake_case_singular = None
+        self.snake_case_plural = None
+        self.summary = None
+        self.module = None
+        self.model = None
+        self.associations = None
+        self.table = None
+        self.uml = None
+        self.attribute_groups = None
 
     def attributes(self):
         return list(chain(map(lambda x: x.attributes, self.attribute_groups)))
 
     def __str__(self):
-        return f"id: {self.id}, summary: {self.summary}, module: {self.module}, model: {self.model}, table: {self.table}, uml: {self.uml}, attribute_groups: {self.attribute_groups}"
+        return f"id: {self.id}, snake_case_singular: {self.snake_case_singular}, snake_case_plural: {self.snake_case_plural}, summary: {self.summary}, module: {self.module}, model: {self.model}, table: {self.table}, uml: {self.uml}, attribute_groups: {self.attribute_groups}"
 
     @classmethod
     def parse(cls, y):
@@ -55,12 +58,14 @@ class Entity:
         if y is None:
             return None
         (id, y) = y
-        return Entity(
-            id,
-            y.get('summary', None),
-            y.get('module', None),
-            y.get('model', None),
-            y.get('table', None),
-            y.get('uml', None),
-            AttributeGroup.parse(y.get('attribute_groups', [])),
-        )
+        entity = Entity(id)
+        entity.snake_case_singular = y.get('snake_case_singular', id)
+        entity.snake_case_plural = y.get('snake_case_plural', None)
+        entity.summary = y.get('summary', None)
+        entity.module = y.get('module', None)
+        entity.model = y.get('model', None)
+        entity.associations = y.get('associations', None)
+        entity.table = y.get('table', None)
+        entity.uml = y.get('uml', None)
+        entity.attribute_groups = AttributeGroup.parse(y.get('attribute_groups', []))
+        return entity

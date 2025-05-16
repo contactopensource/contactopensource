@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     international_standard_classification_of_occupations_2008 \
         group:string:index \
         code:string:index \

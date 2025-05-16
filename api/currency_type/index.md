@@ -13,31 +13,31 @@ https://wikipedia.org/wiki/Currency
 
 Meta:
 
-  * id: bigint (index)
+* id: bigint (index)
 
-  * zid: uuid (index)
+* zid: uuid (index)
 
-  * lock_version: int
+* lock_version: int
 
-  * created_at: timestamp
+* created_at: timestamp
 
-  * created_by: url
+* created_by: url
 
-  * updated_at: timestamp
+* updated_at: timestamp
 
-  * updated_by: url
+* updated_by: url
 
-  * retired_at: timestamp
+* retired_at: timestamp
 
-  * retired_by: url
+* retired_by: url
 
-  * locale_id: locale.id - example: the id of locale "English - United States".
+* locale_id: locale.id - example: the id of locale "English - United States".
 
 Main:
 
-  * name: text (index) - example: United States Dollar
+* name: text (index) - example: United States Dollar
 
-  * code: text (index) - example: USD
+* code: text (index) - example: USD
 
-  * symbol: text (index) - example: $
+* symbol: text (index) - example: $
 

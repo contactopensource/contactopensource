@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     pantone_process_color \
         id:bigint:index \
         zid:uuid:index \

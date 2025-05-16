@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     international_standard_identifier_for_libraries_and_related_organization \
         id:bigint:index \
         zid:uuid:index \

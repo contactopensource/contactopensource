@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     access_agent \
         id:bigint:index \
         zid:uuid:index \

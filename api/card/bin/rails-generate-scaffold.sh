@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     card \
         title:"string{50}":index \
         subtitle:"string{50}":index \

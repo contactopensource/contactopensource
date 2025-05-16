@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     medical_current_procedural_terminology_code_2025 \
         id:bigint:index \
         zid:uuid:index \

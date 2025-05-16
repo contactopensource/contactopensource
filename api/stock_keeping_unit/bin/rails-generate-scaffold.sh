@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-cargo loco generate scaffold \
+rails generate scaffold \
     stock_keeping_unit \
         id:bigint:index \
         zid:uuid:index \

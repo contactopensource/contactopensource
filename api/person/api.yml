@@ -3,7 +3,7 @@ person:
   module: Basics
   title: Person
   model: Person
-  plural: persons
+  snake_case_plural: persons
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
