@@ -1,11 +1,17 @@
 plan_gist:
   title: PlanGIST
-  summary: Plan with GIST criteria.
+  summary: |-
+    Plan GIST criteria: Goal, Idea, Step, Task.
+    
   module: Plan
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
+        - plan_id:
+          help: "Plan"
+          type: plan.id
+          asscociation: belongs_to: plan
       - goal_card_id:
           help: "Goal"
           type: card.id

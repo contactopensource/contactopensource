@@ -1,7 +1,13 @@
 plan_milestone:
   title: PlanMilestone
-  summary: Plan milestone, such as a given deliverable at a given time.
+  summary: :-
+    Plan milestone, such as a given deliverable at a given time.
   module: Plan
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - Main:
+        - plan_id:
+          help: "Plan"
+          type: plan.id
+          asscociation: belongs_to: plan

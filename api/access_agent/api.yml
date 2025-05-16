@@ -1,7 +1,6 @@
 access_agent:
   summary: Access control agent.
   module: Access
-  snake_case_plural: access_agents
   associations: |-
     has_many: access_occupancies
     has_many: access_tenants, through: :access_occupancies

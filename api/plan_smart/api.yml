@@ -1,8 +1,8 @@
 plan_smart:
   title: PlanSMART
-  summary: Plan with SMART criteria.
+  summary: |-
+    Plan SMART criteria: Specific, Measurable, Achievable, Relevant, Timely.
   description: |-
-
     A Plan with these aspects:
 
     * Specific: target one area clearly and precisely.
@@ -19,6 +19,11 @@ plan_smart:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - Main:
+        - plan_id:
+          help: "Plan"
+          type: plan.id
+          asscociation: belongs_to: plan
     - Main:
       - specific_card_id:
           help: "Specific: target one area clearly and precisely."

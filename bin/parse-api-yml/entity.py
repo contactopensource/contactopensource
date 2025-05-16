@@ -60,7 +60,7 @@ class Entity:
         (id, y) = y
         entity = Entity(id)
         entity.snake_case_singular = y.get('snake_case_singular', id)
-        entity.snake_case_plural = y.get('snake_case_plural', None)
+        entity.snake_case_plural = y.get('snake_case_plural', f"{id}s")
         entity.summary = y.get('summary', None)
         entity.module = y.get('module', None)
         entity.model = y.get('model', None)

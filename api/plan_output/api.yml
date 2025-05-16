@@ -1,5 +1,4 @@
 plan_output:
-  snake_case_plural: plan_outputs
   summary: |-
     Plan output, such as a deliverable, or object, or work product, etc. 
     
@@ -9,3 +8,8 @@ plan_output:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - Main:
+        - plan_id:
+          help: "Plan"
+          type: plan.id
+          asscociation: belongs_to: plan

@@ -1,7 +1,6 @@
 access_attribute:
   summary: Access control attribute.
   module: Access
-  snake_case_plural: access_attributes
   associations: |-
     has_many: access_assignments
     has_many: access_agents, through: :access_assignments

@@ -8,3 +8,8 @@ plan_output:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - Main:
+        - plan_id:
+          help: "Plan"
+          type: plan.id
+          asscociation: belongs_to: plan

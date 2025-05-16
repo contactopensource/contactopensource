@@ -1,11 +1,17 @@
 plan_rice:
   title: PlanRICE
-  summary: Plan with RICE criteria.
+  summary: |-
+    Plan RICE criteria: Reach, Impact, Confidence, Effort.
+
   module: Plan
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
+        - plan_id:
+          help: "Plan"
+          type: plan.id
+          asscociation: belongs_to: plan
       - score:
           help: "RICE score = Reach * Impact * Confidence / Effort"
           type: number

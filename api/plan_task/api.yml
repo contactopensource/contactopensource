@@ -1,7 +1,14 @@
 plan_task:
   title: PlanTask
-  summary: Plan task, such as a todo item.
+  summary: |-
+    Plan task, such as a todo item.
+    
   module: Plan
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - Main:
+        - plan_id:
+          help: "Plan"
+          type: plan.id
+          asscociation: belongs_to: plan

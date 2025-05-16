@@ -1,7 +1,6 @@
 access_operation:
   summary: Access control operation.
   module: Access
-  snake_case_plural: access_operations
   associations: |-
     has_many: access_permissions
     has_many: access_attributes, through: :access_permissions

@@ -3,7 +3,6 @@ access_permission:
   module: Access
   title: AccessPermission
   model: AccessPermission
-  snake_case_plural: access_permissions
   attribute_groups:
     - join:
       - access_attribute_it:
