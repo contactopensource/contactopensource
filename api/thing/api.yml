@@ -1,0 +1,17 @@
+thing:
+  title: Thing
+  model: Thing
+  summary: |-
+
+    A thing, such as an item or object.
+
+  description: |-
+
+    A thing, such as an item or object.
+
+    This is one of the big 3 nouns: person, place, thing.
+
+  module: Basics
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
