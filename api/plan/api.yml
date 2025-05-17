@@ -1,18 +1,48 @@
 plan:
   title: Plan
-  summary: Plan
+  model: Plan
+  summary: |-
+
+    A plan is typically a group of steps to accomplish something.
+
+  description: |-
+
+    A plan is typically any diagram or list of steps with details of timing and
+    resources, used to achieve an objective to do something. It is commonly
+    understood as a temporal set of intended actions through which one expects
+    to achieve a goal.
+
+    Plans can be formal or informal:
+
+    * Structured and formal plans, used by multiple people, are more likely to
+    occur in projects, diplomacy, careers, economic development, military
+    campaigns, combat, sports, games, or in the conduct of other business. In
+    most cases, the absence of a well-laid plan can have adverse effects: for
+    example, a non-robust project plan can cost the organization time and
+    money.
+
+    * Informal or ad hoc plans are created by individuals in all of their
+    pursuits.
+
+    The most popular ways to describe plans are by their breadth, time frame,
+    and specificity; however, these planning classifications are not independent
+    of one another. For instance, there is a close relationship between the
+    short- and long-term categories and the strategic and operational
+    categories.
+
+  links:
+    - https://en.wikipedia.org/wiki/Plan
   module: Plan
-  associations:
-    - has_many: plan_okrs
-    - has_many: plan_gists
-    - has_many: plan_rices
-    - has_many: plan_ropes
-    - has_many: plan_smarts
-    - has_many: plan_outputs
-    - has_many: plan_outcomes
-    - has_many: plan_impacts
-    - has_many: plan_milestones
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
-    - Main:
+  rails_model_extras: |-
+    has_many: plan_gists
+    has_many: plan_impacts
+    has_many: plan_milestones
+    has_many: plan_okrs
+    has_many: plan_outcomes
+    has_many: plan_outputs
+    has_many: plan_rices
+    has_many: plan_ropes
+    has_many: plan_smarts
