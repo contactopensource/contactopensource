@@ -1,0 +1,19 @@
+place:
+  title: Place
+  model: Place
+  summary: |-
+
+    A place, such as a location, region, area, zone, etc.
+
+  description: |-
+
+    A place, such as a location, region, area, zone, etc.
+
+    This is one of the big 3 nouns: person, place, thing.
+
+  module: Basics
+  title: Place
+  model: Place
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
