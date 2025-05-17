@@ -1,0 +1,36 @@
+international_classification_of_diseases_11:
+  title: International Classification of Diseases (ICD) 11
+  title: InternationalClassificationOfDiseases11
+  summary: |-
+
+    The International Classification of Diseases, Eleventh Edition, is a set of
+    medical codes.
+
+  description: |-
+
+    The International Classification of Diseases, Eleventh Edition, is a set of
+    medical codes.
+
+    Examples:
+
+    * G10 Huntington's disease.
+
+    * K26.1 Acute duodenal ulcer with perforation.
+
+    * A37.81 Whooping cough due to other Bordetella species with pneumonia.
+
+    * I25.111 Atherosclerotic heart disease of native coronary artery with angina pectoris with documented spasm.
+
+    https://icd.who.int/
+
+  links:
+    - https://en.wikipedia.org/wiki/ICD-11-CM
+  module: Codes
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - code:
+          type: string
+          index: true
+          example: G10 means Huntington's disease
