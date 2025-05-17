@@ -1,0 +1,46 @@
+plan_budget:
+  title: Plan Budget
+  model: PlanBudget
+  summary: |-
+
+    Plan budget, such as the cost.
+
+  description: |-
+
+    Plan budget, such as how much the plan costs and/or how many people will
+    work on it and/or what resources it need.
+
+    A budget is a calculation plan, usually but not always financial, for a
+    defined period, often one year or a month. A budget may include anticipated
+    sales volumes and revenues, resource quantities including time, costs and
+    expenses, environmental impacts such as greenhouse gas emissions, other
+    impacts, assets, liabilities and cash flows.
+
+    Companies, governments, families, and other organizations use budgets to
+    express strategic plans of activities in measurable terms.
+
+    Preparing a budget allows companies, authorities, private entities or
+    families to establish priorities and evaluate the achievement of their
+    objectives. To achieve these goals it may be necessary to incur a deficit
+    (expenses exceed income) or, on the contrary, it may be possible to save, in
+    which case the budget will present a surplus (income exceed expenses).
+
+    In the field of commerce, a budget is also a financial document or report
+    that details the cost that a service will have if performed. Whoever makes
+    the budget must adhere to it and cannot change it if the client accepts the
+    service.
+
+    A budget expresses intended expenditures along with proposals for how to
+    meet them with resources. A budget may express a surplus, providing
+    resources for use at a future time, or a deficit in which expenditures
+    exceed income or other resources.
+
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - plan_id:
+          type: plan.id
+  rails_model_extras: |-
+    belongs_to: plan
