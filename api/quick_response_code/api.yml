@@ -1,5 +1,32 @@
 quick_response_code:
-  summary: Quick Response (QR) code
+  title: Quick-Response (QR) Code
+  title: QuickResponseCode
+  summary: |-
+
+    A quick-response (QR) code is a type of two-dimensional matrix barcode.
+
+  description: |-
+
+    A quick-response (QR) code is a type of two-dimensional matrix barcode.
+
+    It features black squares on a white background with fiducial markers,
+    readable by imaging devices like cameras, and processed using Reed–Solomon
+    error correction until the image can be appropriately interpreted. The
+    required data is then extracted from patterns that are present in both the
+    horizontal and the vertical components of the QR image.
+
+    Whereas a barcode is a machine-readable optical image that contains
+    information specific to the labeled item, the QR code contains the data for
+    a locator, an identifier, and web-tracking. To store data efficiently, QR
+    codes use four standardized modes of encoding: numeric, alphanumeric, byte
+    or binary, and kanji.[5] Compared to standard UPC barcodes, the QR labeling
+    system was applied beyond the automobile industry because of faster reading
+    of the optical image and greater data-storage capacity in applications such
+    as product tracking, item identification, time tracking, document
+    management, and general marketing.[4]
+
+  links:
+    - https://en.wikipedia.org/wiki/QR_code
   module: Code
   attribute_groups:
     - !include ../_meta.yml

@@ -1,9 +1,34 @@
 purchase_order:
+  title: Purchase Order
+  model: PurchaseOrder
   summary: |-
+
+    Purchase order.
+
+    A purchase order, often abbreviated to PO, is a commercial document issued by a buyer to a seller.
+
+  descripion: |-
+
+    A purchase order, often abbreviated to PO, is a commercial document issued by a buyer to a seller.
+
     Purchase order.
 
     A simple example could display like this: "Purchase Order #123, date 2022-01-01, amount $10.00"
 
+    A purchase order indicate types, quantities, and agreed prices for products
+    or services required. It is used to control the purchasing of products and
+    services from external suppliers. Purchase orders can be an essential part
+    of enterprise resource planning system orders.
+
+    An indent is a purchase order often placed through an agent (indent agent)
+    under specified conditions of sale.
+
+    The issue of a purchase order does not itself form a contract. If no prior
+    contract exists, then it is the acceptance of the order by the seller that
+    forms a contract between the buyer and seller.
+
+  links:
+    - https://en.wikipedia.org/wiki/Purchase_order
   module: Purchase
   attribute_groups:
     - !include ../_meta.yml

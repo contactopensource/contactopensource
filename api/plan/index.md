@@ -8,9 +8,7 @@ A plan is typically a group of steps to accomplish something.
 
 Meta:
 
-  * id: bigint (index)
-
-  * zid: uuid (index)
+  * id: uuid (index)
 
   * lock_version: int
 

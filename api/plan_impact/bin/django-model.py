@@ -1,9 +1,8 @@
 #!/bin/sh
 set -euf
 
-class None(models.Model):
-        id = models.UnknownAttribute("Primary key id that is optimized for speed; do not show this to users.")
-        zid = models.UUIDAttribute("Secure-random 32-character lowercase hexadecimal that is optimized for zero information; you can show this to users.")
+class Impact(models.Model):
+        id = models.UUIDAttribute("Primary key id that is a secure-random 32-character lowercase hexadecimal, optimized for zero information rather than speed and memory; you can show this id to users.")
         lock_version = models.UnknownAttribute("This is for optimistic locking.")
         created_at = models.UnknownAttribute("None")
         created_by = models.URLAttribute("The user/agent/service/etc. that did this.")
@@ -21,4 +20,5 @@ class None(models.Model):
         image_1024x1024_alt = models.TextAttribute("An image URL alternative text description")
         emoji = models.TextAttribute("Any emoji related to the item, such as for a badge, or indicator, or expression, etc.")
         star_count = models.IntegerAttribute("A star count from 0-5, such as for a rating, or review, or priority, etc.")
+        plan_id = models.UnknownAttribute("None")
 

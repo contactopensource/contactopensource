@@ -1,7 +1,14 @@
 plan_output:
+  title: Plan Output
+  model: PlanOutput
   summary: |-
-    Plan output, such as a deliverable, or object, or work product, etc. 
-    
+
+    Plan output, such as a deliverable, or object, or work product, etc.
+
+  description: |-
+
+    Plan output, such as a deliverable, or object, or work product, etc.
+
     These concepts are related: plan output, plan outcome, plan impact.
 
   module: Plan
@@ -9,7 +16,7 @@ plan_output:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
+      - plan_id:
           type: plan.id
-          asscociation: belongs_to: plan
+  rails_model_extras: |-
+    belongs_to: plan

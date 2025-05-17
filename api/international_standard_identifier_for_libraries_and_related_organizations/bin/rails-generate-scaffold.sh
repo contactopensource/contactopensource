@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     international_standard_identifier_for_libraries_and_related_organization \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

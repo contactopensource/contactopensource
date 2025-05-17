@@ -5,8 +5,7 @@ hide circle
 
 entity medical_current_procedural_terminology_code_2025 {
   .. Meta ..
-  id : bigint ⚡
-  zid : uuid ⚡
+  id : uuid ⚡
   lock_version : int
   created_at : timestamp
   created_by : url

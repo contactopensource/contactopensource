@@ -1,9 +1,18 @@
 purchase_receipt:
+  title: Purchase Receipt
+  model: PurchaseReceipt
   summary: |-
+
+    Purchase receipt.
+
+  description: |-
+
     Purchase receipt.
 
     A simple example could look display like this: "Purchase Receipt #123, date 2022-01-01, price $10.00"
 
+  links:
+    - https://en.wikipedia.org/wiki/Receipt
   module: Purchase
   attribute_groups:
     - !include ../_meta.yml

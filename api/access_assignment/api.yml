@@ -1,9 +1,15 @@
 access_assignment:
-  summary: Access control assignment, which joins access_agent and access_attribute.
+  title: Access Assignment
+  model: AccessAssignment
+  summary: |-
+
+    Access control assignment, which joins access_agent and access_attribute.
+
+  description: |-
+
+    Access control assignment, which joins access_agent and access_attribute.
+
   module: Access
-  associations:
-    - belongs_to: access_agent
-    - belongs_to: access_attribute
   attribute_groups:
     - Join:
       - access_agent_id:
@@ -12,3 +18,6 @@ access_assignment:
       - access_attribute_id:
           type: access_attribute.id
           example: access attribute "reader"
+  rails_model_extras: |-
+    belongs_to: access_agent
+    belongs_to: access_attribute

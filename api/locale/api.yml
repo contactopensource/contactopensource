@@ -1,11 +1,22 @@
 locale:
-  summary: >
-    A locale (in computer software) is a set of parameters that defines the user's language, region, and any special variant preferences that the user wants to see in their user interface.
+  title: locale
+  model: locale
+  summary: |-
 
-    Locale is an important aspect of i18n.
+    A locale (in software) is a set of parameters for user preferences.
 
-    https://wikipedia.org/wiki/Locale_(computer_software)
+  description: |-
 
+    A locale (in software) is a set of parameters for user preferences.
+
+    A locale typically defines the user's language, region, date format,
+    currency format, and any special variant preferences that the user wants to
+    see in their user interface.
+
+    A locale is an important aspect of i18n.
+
+  links:
+    - https://wikipedia.org/wiki/Locale_(computer_software)
   attribute_groups:
     - !include ../_meta.yml
     - Dialect:

@@ -1,24 +1,30 @@
 ethnicity:
-  summary:  Ethnic category
+  title:  Ethnic Category
+  model:  EthnicCategory
+  summary:  |-
+
+    An ethnic category is a group of people who identify with each other.
+
   description: |-
+
     An ethnicity or ethnic category is a group of people who identify with each
     other on the basis of perceived shared attributes that distinguish them from
     other groups.
-   
+
     Those attributes can include a people of a common language, culture, common
     sets of ancestry, traditions, society, religion, history, or social
     treatment.
-   
+
     Ethnicity may be construed as an inherited or societally imposed construct.
     Ethnic membership tends to be defined by a shared cultural heritage,
     ancestry, origin myth, history, homeland, language, dialect, religion,
     mythology, folklore, ritual, cuisine, dressing style, art, or physical
     appearance.
 
-    https://en.wikipedia.org/wiki/Ethnicity
-
     https://www.cia.gov/the-world-factbook/field/ethnic-groups/
 
+  links:
+    - https://en.wikipedia.org/wiki/Ethnicity
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

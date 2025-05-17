@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS virtual_international_authority_file_identifier;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_id;
-DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_zid;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_title;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_subtitle;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_key;

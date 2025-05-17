@@ -1,6 +1,26 @@
 color_point_cymka_as_byte:
   title: Color Point CYMKA With Byte
-  summary: Color point CYMKA (cyan, yellow, magenta, black, alpha) as byte
+  model: Color Point CYMKA With Byte
+  summary: |-
+
+    Color point CYMKA (cyan, yellow, magenta, black, alpha) as byte
+
+  description: |-
+
+    Color point CYMKA:
+
+    * Cyan channel
+
+    * Yellow channel
+
+    * Magenta channel
+
+    * Black channel
+
+    * Alpha channel
+
+    Measurement uses byte.
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

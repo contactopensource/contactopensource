@@ -2,9 +2,8 @@
 set -euf
 
 rails generate scaffold \
-    spdx_license \
-        id:bigint:index \
-        zid:uuid:index \
+    software_package_data_exchange_license \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

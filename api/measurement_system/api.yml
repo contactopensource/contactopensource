@@ -1,10 +1,19 @@
 measurement_system:
+  title: Measurement System
+  model: MeasurementSystem
   summary: |-
+
+    A measurement system, such as of distance, or time, etc.
+
+  description: |-
+
     A measurement system, such as of distance, or time, etc.
 
     Examples:
-      * the metric measurement system vs the imperial measurement system
-      * the Gregorian calendar vs the Julian calendar
+
+    * the metric measurement system vs the imperial measurement system
+
+    * the Gregorian calendar vs the Julian calendar
 
   attribute_groups:
     - !include ../_meta.yml

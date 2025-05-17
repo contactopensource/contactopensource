@@ -1,5 +1,16 @@
 content_video:
-  summary: Represent the content media type "video/*". Any type of video, such as a movie, animation, clip, etc.
+  title: Content Video
+  model: ContentVideo
+  summary: |-
+
+    Represent the content media type "video/*".
+
+  summary: |-
+
+    Represent the content media type "video/*".
+
+    This is for any type of video, such as a movie, animation, clip, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

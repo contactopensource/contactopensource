@@ -1,12 +1,20 @@
 gs1_country_code:
   title: GS1 Country Code
+  model: GS1CountryCode
   summary: |-
+
     GS1 country code.
 
-    https://wikipedia.org/wiki/GS1
+  description: |-
 
-    https://wikipedia.org/wiki/List_of_GS1_country_codes
+    GS1 country code.
 
+    GS1 is a not-for-profit, international organization developing and
+    maintaining its own standards for barcodes and the corresponding issue
+    company prefixes. See https://wikipedia.org/wiki/GS1.
+
+  links:
+    - https://wikipedia.org/wiki/List_of_GS1_country_codes
   module: Code
   attribute_groups:
     - !include ../_meta.yml

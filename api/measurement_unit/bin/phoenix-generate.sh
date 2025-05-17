@@ -2,9 +2,8 @@
 set -euf
 
 mix phx.gen.html \
-    measurement None None \
-        id:bigint:index \
-        zid:uuid:index \
+    measurement MeasurementUnit None \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

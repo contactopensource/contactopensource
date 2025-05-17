@@ -1,5 +1,16 @@
 phone_contact:
-  summary: See https://en.wikipedia.org/wiki/E.164
+  title: Phone Contact
+  model: PhoneContact
+  summary: |-
+
+    See https://en.wikipedia.org/wiki/E.164
+
+  description: |-
+
+   See https://en.wikipedia.org/wiki/E.164
+
+  links:
+    - https://en.wikipedia.org/wiki/E.164
   attribute_groups:
   attribute_groups:
     - !include ../_meta.yml

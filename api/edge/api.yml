@@ -1,6 +1,14 @@
 edge:
+  title: Edge
+  model: Edge
   summary: |-
-    For linking from one node to another node
+
+    An edge is for linking from one node to another node.
+
+  description: |-
+
+    An edge is for linking from one node to another node.
+
   module: Graph
   attribute_groups:
     - !include ../_meta.yml

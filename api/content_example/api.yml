@@ -1,5 +1,16 @@
 content_example:
-  summary: Represent the content media type "example/*".
+  title: Content Example
+  model: ContentExample
+  summary: |-
+
+    Represent the content media type "example/*".
+
+  description: |-
+
+    Represent the content media type "example/*".
+
+    This is for any kind of example, such as example data, example code, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

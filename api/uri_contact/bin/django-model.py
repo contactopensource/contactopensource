@@ -1,5 +1,5 @@
 #!/bin/sh
 set -euf
 
-class None(models.Model):
+class URIContact(models.Model):
 

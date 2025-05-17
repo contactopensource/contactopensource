@@ -8,9 +8,7 @@ A place, such as a location, region, area, zone, etc.
 
 Meta:
 
-  * id: bigint (index)
-
-  * zid: uuid (index)
+  * id: uuid (index)
 
   * lock_version: int
 

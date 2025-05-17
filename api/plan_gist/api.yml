@@ -1,17 +1,31 @@
 plan_gist:
-  title: PlanGIST
+  title: Plan GIST
+  model: PlanGIST
   summary: |-
+
     Plan GIST criteria: Goal, Idea, Step, Task.
-    
+
+  description: |-
+  
+    Plan GIST criteria:
+
+    * Goal
+
+    * Idea
+
+    * Step
+
+    * Task
+
+    TODO: Link
+
   module: Plan
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
+      - plan_id:
           type: plan.id
-          asscociation: belongs_to: plan
       - goal_card_id:
           help: "Goal"
           type: card.id
@@ -24,3 +38,5 @@ plan_gist:
       - task_card_id:
           help: "Task"
           type: card.id
+  rails_model_extras: |-
+    belongs_to: plan

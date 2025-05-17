@@ -3,8 +3,7 @@ set -euf
 
 cargo loco generate scaffold --html \
     item \
-        id:bigint \
-        zid:uuid \
+        id:uuid \
         lock_version:int \
         created_at:timestamp \
         created_by:url \
@@ -25,5 +24,6 @@ cargo loco generate scaffold --html \
         geographic_point_id:references \
         color_point_rgb_with_unit_interval_id:references \
         quick_response_code_id:references \
+        stock_keeping_unit_id:references \
         universal_product_code_id:references \
 

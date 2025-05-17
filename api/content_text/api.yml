@@ -1,5 +1,12 @@
 content_text:
-  summary: Represent the content media type "text/*".
+  title: Content Text
+  model: ContentText
+  summary: |-
+
+    Represent the content media type "text/*".
+
+    This is for any kind of text, such as plain text, HTML text, YAML text, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

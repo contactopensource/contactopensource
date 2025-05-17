@@ -1,5 +1,16 @@
 content_font:
-  summary: Represent the content media type "font/*".
+  title: Content Font
+  model: ContentFont
+  summary: |-
+
+    Represent the content media type "font/*".
+
+  description: |-
+
+    Represent the content media type "font/*".
+
+    This is for any kind of font, such as TrueType font, OpenType font, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

@@ -1,7 +1,6 @@
-CREATE TABLE spdx_license (
+CREATE TABLE software_package_data_exchange_license (
 );
 
-CREATE INDEX index_spdx_license_id on spdx_license(id);
-CREATE INDEX index_spdx_license_zid on spdx_license(zid);
-CREATE INDEX index_spdx_license_code on spdx_license(code);
+CREATE INDEX index_software_package_data_exchange_license_id on software_package_data_exchange_license(id);
+CREATE INDEX index_software_package_data_exchange_license_code on software_package_data_exchange_license(code);
 

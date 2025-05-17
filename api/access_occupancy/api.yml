@@ -1,15 +1,24 @@
 access_occupancy:
-  summary: Access control occupancy, which joins access_tenant and access_agent.
+  title: Access Occupancy
+  model: AccessOccupancy
+  summary: |-
+
+    Access control occupancy, which joins access_tenant and access_agent.
+
+  description: |-
+
+    Access control occupancy, which joins access_tenant and access_agent.
+
   module: Access
   snake_case_plural: access_occupancies
-  associations:
-    - belongs_to: access_tenant
-    - belongs_to: access_agent
   attribute_groups:
-    - join:
+    - Join:
       - access_tenant_id:
           type: access_tenant.id
           example: "access tenant \"ACME\""
       - access_agent_id:
           type: access_agent.id
           example: "access agent \"alice\""
+  rails_model_extras:
+    belongs_to: access_tenant
+    belongs_to: access_agent

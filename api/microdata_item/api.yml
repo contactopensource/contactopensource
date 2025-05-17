@@ -1,10 +1,27 @@
 microdata_item:
-  summary: Microdata item
-  description: |-
+  title: Microdata Item
+  model: MicrodataItem
+  summary: |-
+
     Microdata item specification for identifying content such as text, images, videos, etc.
 
-    https://wikipedia.org/wiki/Microdata_(HTML)
+  description: |-
 
+    Microdata item specification for identifying content such as text, images, videos, etc.
+
+    Microdata is a WHATWG HTML specification used to nest metadata within
+    existing content on web pages. Search engines, web crawlers, and browsers
+    can extract and process Microdata from a web page and use it to provide a
+    richer browsing experience for users. Search engines benefit greatly from
+    direct access to Microdata because it allows them to understand the
+    information on web pages and provide more relevant results to users.
+    Microdata uses a supporting vocabulary to describe an item and name-value
+    pairs to assign values to its properties. Microdata is an attempt to provide
+    a simpler way of annotating HTML elements with machine-readable tags than
+    the similar approaches of using RDFa and microformats.
+
+  links:
+    - https://wikipedia.org/wiki/Microdata_(HTML)
   attribute_groups:
     - !include ../_meta.yml
     - Main:

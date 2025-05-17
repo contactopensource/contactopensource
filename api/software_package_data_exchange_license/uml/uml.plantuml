@@ -3,10 +3,9 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity spdx_license {
+entity software_package_data_exchange_license {
   .. Meta ..
-  id : bigint ⚡
-  zid : uuid ⚡
+  id : uuid ⚡
   lock_version : int
   created_at : timestamp
   created_by : url

@@ -1,5 +1,5 @@
 #!/bin/sh
 set -euf
 
-class None(models.Model):
+class SystemUser(models.Model):
 

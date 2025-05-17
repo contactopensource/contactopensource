@@ -1,6 +1,24 @@
 color_point_cymk_with_byte:
   title: Color Point CYMK With Byte
-  summary: Color point CYMK (cyan, yellow, magenta, black) with byte
+  model: ColorPointCYMKWithByte
+  summary: |-
+
+    Color point CYMK (cyan, yellow, magenta, black) with byte
+
+  description: |-
+
+    Color point CYMK:
+
+    * Cyan channel
+
+    * Yellow channel
+
+    * Magenta channel
+
+    * Black channel
+
+    Measurement uses byte.
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

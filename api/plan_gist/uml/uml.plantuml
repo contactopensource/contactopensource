@@ -5,8 +5,7 @@ hide circle
 
 entity plan_gist {
   .. Meta ..
-  id : bigint ⚡
-  zid : uuid ⚡
+  id : uuid ⚡
   lock_version : int
   created_at : timestamp
   created_by : url
@@ -26,6 +25,7 @@ entity plan_gist {
   emoji : text
   star_count : integer
   .. Main ..
+  plan_id : plan.id 🔑
   goal_card_id : card.id 🔑
   idea_card_id : card.id 🔑
   step_card_id : card.id 🔑

@@ -1,12 +1,35 @@
 quality:
-  snake_case_plural: qualities
+  title: Quality
+  model: Quality
   summary: |-
-    Qualities are TODO. For example, accessibility, scalability, and usability.
 
-    Qualities are TODO.
+    A quality is an attribute or a property characteristic of an object.
+
+  description: |-
+
+    A quality is an attribute or a property characteristic of an object.
+
+    Examples of qualities in people:
+
+    * Honesty
+
+    * Reliability
+
+    * Empathy
+
+    Examples of qualities in software:
+
+    * Accessibility
+
+    * Scalability
+
+    * Usability
 
     https://wikipedia.org/wiki/Quality
 
+  links:
+    - https://en.wikipedia.org/wiki/Quality_(philosophy)
+  snake_case_plural: qualities
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

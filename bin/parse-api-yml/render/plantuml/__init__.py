@@ -17,4 +17,3 @@ def render(entities):
     s += ''.join(map(entity.render, entities))
     s += "@enduml\n"
     return s
-

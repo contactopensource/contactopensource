@@ -1,9 +1,14 @@
 access_operation:
-  summary: Access control operation.
+  title: Access Operation
+  model: AccessOperation
+  summary: |-
+
+    Access control operation.
+
+  description: |-
+
+    Access control operation.
   module: Access
-  associations:
-    - has_many: access_permissions
-    - has_many: access_attributes, through: :access_permissions
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
@@ -12,3 +17,6 @@ access_operation:
           type: string
           index: true
           example: access_operation_example
+  rails_model_extras: |-
+    has_many: access_permissions
+    has_many: access_attributes, through: :access_permissions

@@ -1,6 +1,24 @@
 color_point_rgba_with_byte:
   title: Color Point RGBA With Byte
-  summary: Color point RGBA (red, green, blue, alpha) with byte
+  model: ColorPointRGBAWithByte
+  summary: |-
+
+    Color point RGBA (red, green, blue, alpha) with byte
+
+  description: |-
+
+    Color point RGBA:
+
+    * Red channel
+
+    * Green channel
+
+    * Blue channel
+
+    * Alpha channel
+
+    Measurment uses byte.
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

@@ -1,8 +1,18 @@
 pantone_process_color:
+  title: Pantone Process Color
+  model: PantoneProcessColor
   summary: |-
+
+    Pantone Process Color number, which requires a license to use.
+
+  description: |-
+
+    Pantone Process Color number, which requires a license to use.
+
     Pantone Process Color numbers start with the letter P followed by a one- to three-digit number, a dash, and a one- to two-digit number.
 
     The "C" suffix indicates coated stock and the "U" uncoated.
+
   attribute_groups:
     - !include ../_meta.yml
     - Main:

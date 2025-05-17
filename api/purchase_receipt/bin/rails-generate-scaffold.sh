@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     purchase_receipt \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

@@ -1,5 +1,6 @@
 # item
 
+
 Generic item suitable for demonstrations
 
 
@@ -7,55 +8,55 @@ Generic item suitable for demonstrations
 
 Meta:
 
-* id: bigint (index)
+  * id: uuid (index)
 
-* zid: uuid (index)
+  * lock_version: int
 
-* lock_version: int
+  * created_at: timestamp
 
-* created_at: timestamp
+  * created_by: url
 
-* created_by: url
+  * updated_at: timestamp
 
-* updated_at: timestamp
+  * updated_by: url
 
-* updated_by: url
+  * retired_at: timestamp
 
-* retired_at: timestamp
+  * retired_by: url
 
-* retired_by: url
-
-* locale_id: locale.id - example: the id of locale "English - United States".
+  * locale_id: locale.id - example: the id of locale "English - United States".
 
 Card:
 
-* title: string(50) (index) - example: Alice Anderson
+  * title: string(50) (index) - example: Alice Anderson
 
-* subtitle: string(50) (index) - example: @alice
+  * subtitle: string(50) (index) - example: @alice
 
-* summary: string - example: I am a doctor who helps treat children.
+  * summary: string - example: I am a doctor who helps treat children.
 
-* description: text - example: This text is a description and can be as long as you wish.
+  * description: text - example: This text is a description and can be as long as you wish.
 
-* disambiguation: text - example: This text explains the difference between this item and others.
+  * disambiguation: text - example: This text explains the difference between this item and others.
 
-* image_1024x1024_url: url
+  * image_1024x1024_url: url
 
-* image_1024x1024_alt: text
+  * image_1024x1024_alt: text
 
-* emoji: text - example: 🚀
+  * emoji: text - example: 🚀
 
-* star_count: integer - example: 5 for the best rating
+  * star_count: integer - example: 5 for the best rating
 
 Sketches:
 
-* geographic_point_id: geographic_point.id
+  * geographic_point_id: geographic_point.id
 
-* color_point_rgb_with_unit_interval_id: color_point_rgb_with_unit_interval.id
+  * color_point_rgb_with_unit_interval_id: color_point_rgb_with_unit_interval.id
 
 Codes:
 
-* quick_response_code_id: quick_response_code.id
+  * quick_response_code_id: quick_response_code.id
 
-* universal_product_code_id: universal_product_code.id
+  * stock_keeping_unit_id: stock_keeping_unit.id
+
+  * universal_product_code_id: universal_product_code.id
 

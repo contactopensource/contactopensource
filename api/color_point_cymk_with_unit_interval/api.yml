@@ -1,6 +1,24 @@
 color_point_cymk_as_unit_interval:
   title: Color Point CYMK With Unit Interval
-  summary: Color point CYMK (cyan, yellow, magenta, black) as unit interval
+  model: ColorPointCYMKWithUnitInterval
+  summary: |-
+
+    Color point CYMK (cyan, yellow, magenta, black) as unit interval
+
+  description: |-
+
+    Color point CYMK:
+
+    * Cyan channel
+
+    * Yellow channel
+
+    * Magenta channel
+
+    * Black channel
+
+    Measurement uses unit interval.
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

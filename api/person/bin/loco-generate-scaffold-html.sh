@@ -3,8 +3,7 @@ set -euf
 
 cargo loco generate scaffold --html \
     person \
-        id:bigint \
-        zid:uuid \
+        id:uuid \
         lock_version:int \
         created_at:timestamp \
         created_by:url \

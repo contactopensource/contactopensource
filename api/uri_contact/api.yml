@@ -1,12 +1,17 @@
 uri_contact:
-  title: URIContact
+  title: URI Contact
+  model: URIContact
   summary: |-
+
+    A URI contact, which is a URI plus extras for typical usage.
+
+  description: |-
+
     A URI contact, which is a URI plus extras for typical usage.
 
     See https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
 
   module: Contact
-  titlecase: URIContact
   attributes:
     text:
       summary: text

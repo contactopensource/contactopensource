@@ -1,5 +1,16 @@
 content_model:
-  summary: Represent the content media type "model/*".
+  title: Content Model
+  model: ContentModel
+  summary: |-
+
+    Represent the content media type "model/*".
+
+  description: |-
+
+    Represent the content media type "model/*".
+
+    This is for any kind of model, such as 3D model, 2D model, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

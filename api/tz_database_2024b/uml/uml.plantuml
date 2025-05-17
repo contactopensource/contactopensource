@@ -5,8 +5,7 @@ hide circle
 
 entity tz_database_2024b {
   .. Meta ..
-  id : bigint ⚡
-  zid : uuid ⚡
+  id : uuid ⚡
   lock_version : int
   created_at : timestamp
   created_by : url

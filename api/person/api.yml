@@ -1,8 +1,21 @@
 person:
-  summary: A person, such as a typical human being. The person API includes attributes that are generally the same across services, such as names and pronouns. The person API excludes attributes that vary by service, such as a username, password, email address, phone number, organization name, etc.
-  module: Basics
   title: Person
   model: Person
+  summary: |-
+
+    A person, such as a typical human being.
+
+  summary: |-
+    A person, such as a typical human being.
+
+    The person API includes attributes that are generally the same
+    across services, such as names and pronouns. The person API
+    excludes attributes that vary by service, such as a username,
+    password, email address, phone number, organization name, etc.
+
+    This is one of the big 3 nouns: person, place, thing.
+
+  module: Basics
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

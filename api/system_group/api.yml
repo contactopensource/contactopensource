@@ -1,5 +1,14 @@
 system_group:
-  summary: System group, such as for managing system file access.
+  title: System Group
+  model: SystemGroup
+  summary: |-
+
+    System group, such as for managing system file access.
+
+  descripion: |-
+
+    System group, such as for managing system file access.
+
   module: System
   attributes:
     gid:

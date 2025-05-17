@@ -129,6 +129,11 @@ package Concept {
 }
 
 package Plan {
+  entity plan_budget
+  entity plan_milestone
+  entity plan_output
+  entity plan_outcome
+  entity plan_impact
   entity plan_objective
   entity plan_result
   entity plan_metric

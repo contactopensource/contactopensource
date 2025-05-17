@@ -1,17 +1,28 @@
 plan_rice:
-  title: PlanRICE
+  title: Plan RICE
+  model: PlanRICE
   summary: |-
+
     Plan RICE criteria: Reach, Impact, Confidence, Effort.
 
-  module: Plan
+  description: |-
+
+    Plan RICE criteria:
+
+    * Reach: The number of people or customers who will be affected by the idea."
+
+    * Impact: The potential value or impact of the idea.
+
+    * Confidence: The level of certainty in the estimates.
+
+    * Effort: The resources required to complete the project, such as time and money.
+
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
+      - plan_id:
           type: plan.id
-          asscociation: belongs_to: plan
       - score:
           help: "RICE score = Reach * Impact * Confidence / Effort"
           type: number
@@ -39,3 +50,5 @@ plan_rice:
       - effort_value:
           help: "Effort value"
           type: number
+  rails_model_extras: |-
+    belongs_to: plan

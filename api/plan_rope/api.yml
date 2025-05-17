@@ -1,26 +1,32 @@
 plan_rope:
   title: PlanROPE
+  model: PlanROPE
   summary: |-
+
     Plan ROPE estimation criteria: Realistic, Optimistic, Pessimistic, Equilibristic.
+
   description: |-
-    A Plan with ROPE estimation criteria:
+
+    Plan ROPE estimation criteria: Realistic, Optimistic, Pessimistic, Equilibristic.
 
     * Realistic: based on work being typical, reasonable, plausible, and usual.
+
     * Optimistic: based on work turning out to be notably easy, or fast, or lucky.
+
     * Pessimistic: based on work turning out to be notably hard, or slow, or unlucky.
+
     * Equilibristic: based on success as 50% likely such as for critical chains and simulations.
 
     https://github.com/SixArm/project-management-rope-estimate
 
-  module: Plan
+    TODO: Add plan links.
+
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
+      - plan_id:
           type: plan.id
-          asscociation: belongs_to: plan
     - Measurement:
       - measurement_unit_id:
           help: measurement unit
@@ -38,3 +44,5 @@ plan_rope:
       - equilibristic:
           help: "Equilibristic estimate. This is based on success as 50% likely such as for critical chains and simulations."
           type: card.id
+  rails_model_extras: |-
+    belongs_to: plan

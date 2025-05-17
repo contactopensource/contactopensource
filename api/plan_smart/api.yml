@@ -1,8 +1,14 @@
 plan_smart:
-  title: PlanSMART
+  title: Plan SMART
+  model: PlanSMART
   summary: |-
+
     Plan SMART criteria: Specific, Measurable, Achievable, Relevant, Timely.
+
   description: |-
+
+    Plan SMART criteria: Specific, Measurable, Achievable, Relevant, Timely.
+
     A Plan with these aspects:
 
     * Specific: target one area clearly and precisely.
@@ -15,15 +21,16 @@ plan_smart:
 
     * Timely: occurring at a favorable or useful time and opportune.
 
-  module: Plan
+    TODO: Add plan links.
+
+  links:
+    - https://en.wikipedia.org/wiki/SMART_criteria
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
+      - plan_id:
           type: plan.id
-          asscociation: belongs_to: plan
     - Main:
       - specific_card_id:
           help: "Specific: target one area clearly and precisely."
@@ -40,3 +47,5 @@ plan_smart:
       - timely_card_id:
           help: "Timely: occurring at a favorable or useful time and opportune."
           type: card.id
+  rails_model_extras: |-
+    belongs_to: plan

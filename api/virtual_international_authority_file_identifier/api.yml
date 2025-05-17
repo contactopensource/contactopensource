@@ -1,7 +1,13 @@
 virtual_international_authority_file_identifier:
-  summary: Virtual International Authority File (VIAF) identifier
+  title: Virtual Internaional Authority File Indentifier
+  model: VirtualInternaionalAuthorityFileIndentifier
+  summary: |-
+
+    Virtual International Authority File (VIAF) identifier
+
   description: |-
-    The Virtual International Authority File (VIAF) identifier
+
+    Virtual International Authority File (VIAF) identifier
 
     https://wikipedia.org/wiki/Virtual_International_Authority_File
 
@@ -25,4 +31,3 @@ virtual_international_authority_file_identifier:
       - key:
           type: string(22)
           index: true
-

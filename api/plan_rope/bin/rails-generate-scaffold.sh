@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     plan_rope \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \
@@ -22,6 +21,7 @@ rails generate scaffold \
         image_1024x1024_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
+        plan_id:plan.idNone \
         measurement_unit_id:measurement_unit.idNone \
         realistic:card.idNone \
         optimistic:card.idNone \

@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     color_point_cymk_as_unit_interval \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

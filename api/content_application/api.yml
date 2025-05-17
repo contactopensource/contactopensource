@@ -1,5 +1,16 @@
 content_application:
-  summary: Represent the content media type "application/*".
+  title: Content Application
+  model: ContentApplication
+  summary: |-
+
+    Represent the content media type "application/*".
+
+  description: |-
+
+    Represent the content media type "application/*".
+
+    This is for any kind of application, such as application/json, application/xml, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

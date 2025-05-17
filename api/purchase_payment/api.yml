@@ -1,9 +1,41 @@
 purchase_payment:
+  title: Purchase Payment
+  model: PurchasePayment
   summary: |-
-    Purchase payment.
 
-    A simple example could display like this: "Purchase Payment #123, date 2022-01-01, amount $10.00"
+    Purchase payment by one party to another in exchange for goods or services.
 
+  description: |-
+
+    Purchase payment by one party to another in exchange for goods or services.
+
+    A simple example could display like this:
+
+    * Purchase Payment
+      id: 4d3ea5cc67dcc4f886945c11b6134426,
+      date: 2025-01-01,
+      amount: $10.00 USD,
+      from: alice@example.com,
+      to: bob@example.com.
+
+    A payment is the tender of something of value, such as money or its
+    equivalent, by one party (such as a person or company) to another in
+    exchange for goods or services provided by them, or to fulfill a legal
+    obligation or philanthropy desire. The party making the payment is commonly
+    called the payer, while the payee is the party receiving the payment. Whilst
+    payments are often made voluntarily, some payments are compulsory, such as
+    payment of a fine.
+
+    Payments can be effected in a number of ways, for example:
+
+    * the use of money, whether through cash, cheque, mobile payment or bank
+    transfers.
+
+    * the transfer of anything of value, such as stock, or using barter, the
+    exchange of one good or service for another.
+
+  links:
+    - https://en.wikipedia.org/wiki/Payment
   module: Purchase
   attribute_groups:
     - !include ../_meta.yml

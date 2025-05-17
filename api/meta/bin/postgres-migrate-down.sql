@@ -1,4 +1,3 @@
 DROP TABLE IF EXISTS meta;
 DROP INDEX IF EXISTS index_meta_id;
-DROP INDEX IF EXISTS index_meta_zid;
 

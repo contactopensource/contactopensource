@@ -2,9 +2,8 @@
 set -euf
 
 mix phx.gen.html \
-    Plan None None \
-        id:bigint:index \
-        zid:uuid:index \
+    None PlanROPE None \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \
@@ -22,6 +21,7 @@ mix phx.gen.html \
         image_1024x1024_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
+        plan_id:plan.idNone \
         measurement_unit_id:measurement_unit.idNone \
         realistic:card.idNone \
         optimistic:card.idNone \

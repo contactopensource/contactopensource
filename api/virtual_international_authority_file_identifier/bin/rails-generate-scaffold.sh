@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     virtual_international_authority_file_identifier \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

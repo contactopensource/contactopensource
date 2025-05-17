@@ -1,5 +1,14 @@
 system_path:
-  summary: System path, such as for a system file.
+  title: System Path
+  title: SystemPath
+  summary: |-
+
+    System path, such as for a system file.
+
+  description: |-
+
+    System path, such as for a system file.
+
   module: System
   attributes:
     iid:

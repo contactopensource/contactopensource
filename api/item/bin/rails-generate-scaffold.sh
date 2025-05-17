@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     item \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \
@@ -25,6 +24,7 @@ rails generate scaffold \
         geographic_point_id:geographic_point.idNone \
         color_point_rgb_with_unit_interval_id:color_point_rgb_with_unit_interval.idNone \
         quick_response_code_id:quick_response_code.idNone \
+        stock_keeping_unit_id:stock_keeping_unit.idNone \
         universal_product_code_id:universal_product_code.idNone \
     --force \
     --no-timestamps \

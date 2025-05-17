@@ -1,6 +1,24 @@
 color_point_rgba_with_unit_interval:
   title: Color Point RGBA With Unit Interval
-  summary: Color point RGBA (red, green, blue, alpha) with unit interval
+  model: ColorPointRGBAWithUnitInterval
+  summary: |-
+
+    Color point RGBA (red, green, blue, alpha) with unit interval
+
+  description: |-
+
+    Color point RGBA:
+
+    * Red channel
+
+    * Green channel
+
+    * Blue channel
+
+    * Alpha channel
+
+    Measurements use unit interval.
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

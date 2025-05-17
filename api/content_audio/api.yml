@@ -1,5 +1,16 @@
 content_audio:
-  summary: Represent the content media type "audio/*". Any kind of audio, such as a song, speech, soundtrack, etc.
+  title: Content Audio
+  model: ContentAudio
+  summary: |-
+
+    Represent the content media type "audio/*".
+
+  description: |-
+
+    Represent the content media type "audio/*".
+
+    This is for any kind of audio, such as a song, speech, soundtrack, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

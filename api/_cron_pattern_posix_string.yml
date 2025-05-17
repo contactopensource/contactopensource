@@ -3,8 +3,6 @@
         description: |-
             A cron schedule POSIX string that describes how to schedule time-based jobs.
 
-            https://wikipedia.org/wiki/Cron
-
             There are 5 attributes:
 
             * minute (0-59)
@@ -13,5 +11,7 @@
             * month (1-12 meaning January to December)
             * week day (0 - 6 meaning Sunday to Monday)
 
+        links: 
+          - https://wikipedia.org/wiki/Cron          
         type: string
         index: false

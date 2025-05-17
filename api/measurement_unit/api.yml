@@ -1,5 +1,14 @@
 measurement_unit:
-  summary: A measurement unit, such as metre, gram, second
+  title: Measurement Unit
+  model: MeasurementUnit
+  summary: |-
+
+    A measurement unit, such as metre, gram, second
+
+  description: |-
+
+    A measurement unit, such as metre, gram, second
+
   module: measurement
   attribute_groups:
     - !include ../_meta.yml

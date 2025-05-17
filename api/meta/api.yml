@@ -1,4 +1,13 @@
 meta:
-  summary: Metadata for database administration that we include in many other API concepts.
+  title: Meta
+  model: Meta
+  summary: |-
+
+    Metadata for systems administration that we include in many other API concepts.
+
+  description: |-
+
+    Metadata for systems administration that we include in many other API concepts.
+
   attribute_groups:
     - !include ../_meta.yml

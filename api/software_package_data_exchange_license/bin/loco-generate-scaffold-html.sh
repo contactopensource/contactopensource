@@ -2,9 +2,8 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    spdx_license \
-        id:bigint \
-        zid:uuid \
+    software_package_data_exchange_license \
+        id:uuid \
         lock_version:int \
         created_at:timestamp \
         created_by:url \

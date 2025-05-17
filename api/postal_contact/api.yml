@@ -1,10 +1,18 @@
 postal_contact:
+  title: Postal Contact
+  model: PostalContact
   summary: |-
+
+    A postal address, such as for mail delivery, or map routes, or demographics.
+
+  description: |-
+
     A postal address, such as for mail delivery, or map routes, or demographics.
 
     Postal address formats are different in different places, and unlike latitude and longitude coordinates, there is no simple mapping from an address to a location.
 
-    https://wikipedia.org/wiki/Address
+  links:
+    - https://wikipedia.org/wiki/Address
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

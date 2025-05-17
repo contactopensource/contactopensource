@@ -1,5 +1,33 @@
 universal_product_code:
-  summary: Universal Product Code (UPC)
+  title: Universal Product Code (UPC)
+  model: UniversalProductCode
+  summary: |-
+
+    The Universal Product Code (UPC) is a barcode symbology that is used worldwide for tracking trade items in stores.
+
+  description: |-
+
+    The Universal Product Code (UPC) is a barcode symbology that is used worldwide for tracking trade items in stores.
+
+    The chosen symbology has bars (or spaces) of exactly 1, 2, 3, or 4 units
+    wide each; each decimal digit to be encoded consists of two bars and two
+    spaces chosen to have a total width of 7 units, in both an "even" and an
+    "odd" parity form, which enables being scanned in either direction. Special
+    "guard patterns" (3 or 5 units wide, not encoding a digit) are intermixed to
+    help decoding.
+
+    A UPC (technically, a UPC-A) consists of 12 digits that are uniquely
+    assigned to each trade item. The international GS1 organisation assigns the
+    digits used for both the UPC and the related International Article Number
+    (EAN) barcode.[1] UPC data structures are a component of Global Trade Item
+    Numbers (GTINs) and follow the global GS1 specification, which is based on
+    international standards. Some retailers, such as clothing and furniture, do
+    not use the GS1 system, instead using other barcode symbologies or article
+    number systems. Some retailers use the EAN/UPC barcode symbology, but do not
+    use a GTIN for products sold only in their own stores.
+
+  links:
+    - https://en.wikipedia.org/wiki/Universal_Product_Code
   module: Code
   attribute_groups:
     - !include ../_meta.yml

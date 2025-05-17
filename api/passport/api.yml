@@ -1,5 +1,24 @@
 passport:
-  summary: Passport credential, such as a government passport for international travel.
+  title: Passport
+  model: Passport
+  summary: |-
+
+    A passport credential, such as a government passport for travel.
+
+  description: |-
+
+    A passport credential, such as a government passport for travel.
+
+    A passport is an official travel document issued by a government that
+    certifies a person's identity and nationality for international travel.[1] A
+    passport allows its bearer to enter and temporarily reside in a foreign
+    country, access local aid and protection, and obtain consular assistance
+    from their government. In addition to facilitating travel, passports are a
+    key mechanism for border security and regulating migration; they may also
+    serve as official identification for various domestic purposes.
+
+  links:
+    - https://en.wikipedia.org/wiki/Passport
   module: Credential
   attribute_groups:
     - !include ../_meta.yml

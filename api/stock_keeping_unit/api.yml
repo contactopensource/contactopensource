@@ -1,5 +1,36 @@
 stock_keeping_unit:
-  summary: Stock Keeping Unit (SKU)
+  title: Stock Keeping Unit (SKU)
+  model: StockKeepingUnit
+  summary: |-
+
+    Stock Keeping Unit (SKU) is the unit of measure in which the stocks
+    of a material are managed
+
+  description: |-
+
+    Stock Keeping Unit (SKU)
+
+    In inventory management, a stock keeping unit (abbreviated as SKU,
+    pronounced es-kay-YOO or SKEW[1]) is the unit of measure in which the stocks
+    of a material are managed. It is a distinct type of item for sale,[2]
+    purchase, or tracking in inventory,[3] such as a product or service, and all
+    attributes associated with the item type that distinguish it from other item
+    types (for a product, these attributes can include manufacturer,
+    description, material, size, color, packaging, and warranty terms). When a
+    business records the inventory of its stock, it counts the quantity it has
+    of each unit, or SKU.
+
+    SKU can also refer to a unique identifier or code, sometimes represented via
+    a barcode for scanning and tracking, which refers to the particular stock
+    keeping unit. These identifiers are not regulated or standardized. When a
+    company receives items from a vendor, it has a choice of maintaining the
+    vendor's SKU or creating its own.[4] This makes them distinct from Global
+    Trade Item Number (GTIN), which are standard, global tracking units. The
+    Universal Product Code (UPC), European Article Number (EAN), and Australian
+    Product Number (APN) are special cases of GTINs.
+
+  links:
+    - https://en.wikipedia.org/wiki/Stock_keeping_unit
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

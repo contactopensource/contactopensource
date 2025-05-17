@@ -1,11 +1,15 @@
 access_attribute:
-  summary: Access control attribute.
+  title: Access Attribute
+  model: AccessAttribute
+  summary: |-
+
+    Access control attribute.
+
+  description: |-
+
+    Access control attribute.
+
   module: Access
-  associations:
-    - has_many: access_assignments
-    - has_many: access_agents, through: :access_assignments
-    - has_many: access_permissions
-    - has_many: access_operations, through: :access_permissions
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
@@ -15,3 +19,8 @@ access_attribute:
           index: true
           example: access_attribute_example
   # uml: access_attribute ||-r-o{ access_attribute_locale
+  rails_model_extras: |-
+    has_many: access_assignments
+    has_many: access_agents, through: :access_assignments
+    has_many: access_permissions
+    has_many: access_operations, through: :access_permissions

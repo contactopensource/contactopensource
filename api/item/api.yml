@@ -1,5 +1,14 @@
 item:
-  summary: Generic item suitable for demonstrations
+  title: Item
+  model: Item
+  summary: |-
+
+    Generic item suitable for demonstrations
+
+  description: |-
+
+    Generic item suitable for demonstrations
+
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
@@ -13,5 +22,7 @@ item:
     - Codes:
       - quick_response_code_id:
           type: quick_response_code.id
+      - stock_keeping_unit_id:
+          type: stock_keeping_unit.id
       - universal_product_code_id:
           type: universal_product_code.id

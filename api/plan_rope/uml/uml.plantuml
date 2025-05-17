@@ -5,8 +5,7 @@ hide circle
 
 entity plan_rope {
   .. Meta ..
-  id : bigint ⚡
-  zid : uuid ⚡
+  id : uuid ⚡
   lock_version : int
   created_at : timestamp
   created_by : url
@@ -25,6 +24,8 @@ entity plan_rope {
   image_1024x1024_alt : text
   emoji : text
   star_count : integer
+  .. Main ..
+  plan_id : plan.id 🔑
   .. Measurement ..
   measurement_unit_id : measurement_unit.id 🔑
   .. ROPE ..

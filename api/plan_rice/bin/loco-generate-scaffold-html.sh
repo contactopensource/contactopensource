@@ -3,8 +3,7 @@ set -euf
 
 cargo loco generate scaffold --html \
     plan_rice \
-        id:bigint \
-        zid:uuid \
+        id:uuid \
         lock_version:int \
         created_at:timestamp \
         created_by:url \
@@ -22,6 +21,7 @@ cargo loco generate scaffold --html \
         image_1024x1024_alt:text \
         emoji:text \
         star_count:integer \
+        plan_id:references \
         score:number \
         reach_card_id:references:card \
         reach_value:number \

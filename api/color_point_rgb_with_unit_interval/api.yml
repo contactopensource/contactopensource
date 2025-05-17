@@ -1,6 +1,22 @@
 color_point_rgb_with_unit_interval:
   title: Color Point RGB With Unit Interval
-  summary: Color point RGB (red, green, blue) with unit interval
+  model: ColorPointRGBWithUnitInterval
+  summary: |-
+
+    Color point RGB (red, green, blue) with unit interval
+
+  description: |-
+
+    Color point RGB:
+
+    * Red channel
+
+    * Green channel
+
+    * Blue channel
+
+    Measurement uses unit interval.
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

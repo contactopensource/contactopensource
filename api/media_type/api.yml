@@ -1,11 +1,22 @@
 media_type:
+  title: Media Type
+  model: MediaType
   summary: |-
-    A media type is a two-part identifier for file formats and content formats. Their purpose is comparable to filename extensions and uniform type identifiers, in that they identify the intended data format.
 
-    A media type is also known as an HTTP Content Type, or a Multipurpose Internet Mail Extensions (MIME) type.
+    A media type is an identifier for file formats and content formats.
 
-    https://wikipedia.org/wiki/Media_type
+  description: |-
 
+    A media type is an identifier for file formats and content formats.
+
+    A media type purpose is comparable to filename extensions and uniform type
+    identifiers, in that they identify the intended data format.
+
+    A media type is also known as an HTTP Content Type, or a Multipurpose
+    Internet Mail Extensions (MIME) type.
+
+  links:
+    - https://wikipedia.org/wiki/Media_type
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

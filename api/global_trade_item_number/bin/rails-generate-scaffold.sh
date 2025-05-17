@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     global_trade_item_number \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

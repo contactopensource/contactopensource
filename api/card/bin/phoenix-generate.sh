@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    None None None \
+    None Card None \
         title:"string{50}":index \
         subtitle:"string{50}":index \
         summary:stringNone \

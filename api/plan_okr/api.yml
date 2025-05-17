@@ -1,19 +1,47 @@
 plan_okr:
-  title: PlanOKR
+  title: Plan OKR
+  model: PlanOKR
   summary: |-
+
     Plan Objective and Key Results (OKR)
+
+  description: |-
+
+    Plan Objective and Key Results (OKR)
+
+    Objectives and key results (OKR, alternatively OKRs) is a goal-setting
+    framework used by individuals, teams, and organizations to define measurable
+    goals and track their outcomes.
+
+    OKRs comprise an objective (a significant, concrete, clearly defined goal)
+    and 3–5 key results (measurable success criteria used to track the
+    achievement of that goal).
+
+    An objective should also be inspirational for the individual, team, or
+    organization that is working towards them. An objectives can also be
+    supported by initiatives, which are the plans and activities that help to
+    move forward the key results and achieve the objective.
+
+    Key results should be measurable, either on a 0–100% scale or with any
+    numerical value (e.g. count, dollar amount, or percentage) that can be used
+    by planners and decision makers to determine whether those involved in
+    working towards the key result have been successful. There should be no
+    opportunity for "grey area" when defining a key result.[3]
+
+  links:
+    - https://en.wikipedia.org/wiki/Objectives_and_key_results
   module: Plan
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
       - plan_id:
-        help: "Plan"
-        type: plan.id
-        asscociation: belongs_to: plan
+          type: plan.id
       - objective_card_id:
           help: "Objective"
           type: card.id
       - key_result_card_ids:
           help: "Key Results"
           type: card.id[]
+  rails_model_extras: |-
+    belongs_to: plan

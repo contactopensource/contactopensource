@@ -1,6 +1,22 @@
 color_point_rgb_with_byte:
   title: Color Point RGB With Byte
-  summary: Color point RGB (red, green, blue) with byte
+  model: ColorPointRGBWithByte
+  summary: |-
+
+    Color point RGB (red, green, blue) with byte
+
+  description: |-
+
+    Color point RGB:
+
+    * Red channel
+
+    * Green channel
+
+    * Blue channel
+
+    Measurement uses byte.
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

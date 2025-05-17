@@ -1,5 +1,14 @@
 access_tenant:
-  summary: Access control tenant.
+  title: Access Tenant
+  model: AccessTenant
+  summary: |-
+
+    Access control tenant.
+
+  description: |-
+
+    Access control tenant.
+
   module: Access
   attributes:
     - !include ../_meta.yml

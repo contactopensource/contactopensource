@@ -2,9 +2,8 @@
 set -euf
 
 mix phx.gen.html \
-    Access None None \
-        id:bigint:index \
-        zid:uuid:index \
+    Access AccessAgent None \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

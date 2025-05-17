@@ -5,8 +5,7 @@ hide circle
 
 entity plan_okr {
   .. Meta ..
-  id : bigint ⚡
-  zid : uuid ⚡
+  id : uuid ⚡
   lock_version : int
   created_at : timestamp
   created_by : url
@@ -26,6 +25,7 @@ entity plan_okr {
   emoji : text
   star_count : integer
   .. Main ..
+  plan_id : plan.id 🔑
   objective_card_id : card.id 🔑
   key_result_card_ids : card.id[]
 }

@@ -1,7 +1,33 @@
 organization:
-  summary: An organization, such as a company, team, club, congregation, etc.
-  module: Account
   title: Organization
+  model: Organization
+  summary: |-
+
+    An organization, such as a company, team, club, congregation, etc.
+
+  description: |-
+
+    An organization, such as a company, team, club, congregation, etc.
+
+    An organization or organisation (Commonwealth English; see spelling
+    differences), is an entity—such as a company, or corporation or an
+    institution (formal organization), or an association—comprising one or more
+    people and having a particular purpose.
+
+    There are a variety of types of organizations, including corporations,
+    governments, non-governmental organizations, political organizations,
+    international organizations, religious organizations, armed forces,
+    charities, not-for-profit corporations, partnerships, cooperatives,
+    educational institutions, sports teams, secret societies, resistance
+    movements.
+
+    Organizations and institutions can be synonymous, or can be distinct in the
+    sense that organizations contain internal institutions (that govern
+    interactions between the members of the organizations).
+
+    Compare the concept of social groups, which may include non-organizations.
+
+  module: Account
   model: Organization
   snake_case_plural: organizations
   attributes:

@@ -1,5 +1,14 @@
 system_user:
-  summary: System user, such as for managing system file access.
+  title: System User
+  model: SystemUser
+  summary: |-
+
+    System user, such as for managing system file access.
+
+  description: |-
+
+    System user, such as for managing system file access.
+
   module: System
   attributes:
     uid:

@@ -2,9 +2,8 @@
 set -euf
 
 mix phx.gen.html \
-    Color None None \
-        id:bigint:index \
-        zid:uuid:index \
+    Color Color Point CYMKA With Byte None \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

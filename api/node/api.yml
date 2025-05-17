@@ -1,5 +1,16 @@
 node:
-  summary: Store an arbitrary chunk of data.
+  title: Node
+  model: Node
+  summary: |-
+
+    A node is a way to store an arbitrary chunk of data.
+
+  description: |-
+
+    A node is a way to store an arbitrary chunk of data.
+
+    A node can be connected to another node via an edge.
+
   module: Graph
   attribute_groups:
     - !include ../_meta.yml

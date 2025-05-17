@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     medical_current_procedural_terminology_code_2025 \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

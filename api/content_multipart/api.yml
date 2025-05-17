@@ -1,5 +1,16 @@
 content_multipart:
-  summary: Represent the content media type "multipart/*".
+  title: Content Multipart
+  model: ContentMultipart
+  summary: |-
+
+    Represent the content media type "multipart/*".
+
+  description: |-
+
+    Represent the content media type "multipart/*".
+
+    This is for any type of multipart content, such as multipart/form-data, multipart/alternative, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

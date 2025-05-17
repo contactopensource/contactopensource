@@ -8,9 +8,7 @@ A thing, such as an item or object.
 
 Meta:
 
-  * id: bigint (index)
-
-  * zid: uuid (index)
+  * id: uuid (index)
 
   * lock_version: int
 

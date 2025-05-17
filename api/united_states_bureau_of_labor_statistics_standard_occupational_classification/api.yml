@@ -1,8 +1,15 @@
 united_states_bureau_of_labor_statistics_standard_occupational_classification_2018:
+  title: United States (US) Bureau of Labor StatisticsS (BLS) Standard Occupational Classification (SOC) 2018
+  model: UnitedStatesBureauOfLaborStatisticsStandardOccupationalClassification2018
   summary: |-
+
     United States (US) Bureau of Labor Statistics (BLS) Standard Occupational Classification (SOC)
+
   description: |-
-    United States (US) Bureau of Labor Statistics (BLS) Standard Occupational Classification (SOC) is a formal government list of work role group categories, code numbers, job titles, and responsibility definitions.
+
+    United States (US) Bureau of Labor Statistics (BLS) Standard Occupational
+    Classification (SOC) is a formal government list of work role group
+    categories, code numbers, job titles, and responsibility definitions.
 
     The current version as of this writing is US BLS SOC 2018.
 
@@ -19,6 +26,7 @@ united_states_bureau_of_labor_statistics_standard_occupational_classification_20
     * SOC Title
 
     * SOC Definition
+
   attribute_groups:
     - Main:
       - group:

@@ -1,5 +1,4 @@
-DROP TABLE IF EXISTS spdx_license;
-DROP INDEX IF EXISTS index_spdx_license_id;
-DROP INDEX IF EXISTS index_spdx_license_zid;
-DROP INDEX IF EXISTS index_spdx_license_code;
+DROP TABLE IF EXISTS software_package_data_exchange_license;
+DROP INDEX IF EXISTS index_software_package_data_exchange_license_id;
+DROP INDEX IF EXISTS index_software_package_data_exchange_license_code;
 

@@ -1,7 +1,13 @@
-spdx_license:
-  summary: SPDX license.
+software_package_data_exchange_license:
+  title: Software Package Data Exchange (SPDX) License
+  model: SoftwarePackageDataExchangeLicense
+  summary: |-
+
+    Software Package Data Exchange (SPDX) license.
+
   description: |-
-    SPDX license.
+
+    Software_Package_Data_Exchange (SPDX) license.
 
     Attribute examples:
 
@@ -13,6 +19,8 @@ spdx_license:
 
     https://spdx.dev/
 
+  links:
+    - https://en.wikipedia.org/wiki/Software_Package_Data_Exchange
   attribute_groups:
     - !include ../_meta.yml
     - Main:

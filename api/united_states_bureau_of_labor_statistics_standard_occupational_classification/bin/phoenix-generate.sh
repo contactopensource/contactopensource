@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    None None None \
+    None UnitedStatesBureauOfLaborStatisticsStandardOccupationalClassification2018 None \
         group:string:index \
         code:string:index \
         title:string:index \

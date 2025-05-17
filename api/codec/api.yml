@@ -1,12 +1,20 @@
 codec:
-  summary:  A codec is a computer hardware or software component that encodes or decodes a data stream or signal.
+  title: Codec
+  model: Codec
+  summary:  |-
+
+    A codec encodes or decodes a data stream or signal.
+
   description: |-
-    A codec is a computer hardware or software component that encodes or decodes a data stream or signal.
+
+    A codec encodes or decodes a data stream or signal.
+
+    A codec is typically a computer software program or a computer hardware device.
 
     Codec is a portmanteau of coder/decoder.
 
-    https://wikipedia.org/wiki/Codec
-
+  links:
+    - https://wikipedia.org/wiki/Codec
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

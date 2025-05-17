@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS phone_contact;
 DROP INDEX IF EXISTS index_phone_contact_id;
-DROP INDEX IF EXISTS index_phone_contact_zid;
 DROP INDEX IF EXISTS index_phone_contact_title;
 DROP INDEX IF EXISTS index_phone_contact_subtitle;
 DROP INDEX IF EXISTS index_phone_contact_number_text;

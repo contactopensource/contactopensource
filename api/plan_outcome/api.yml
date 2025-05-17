@@ -1,15 +1,23 @@
-plan_output:
+plan_outcome:
+  title: Plan Outcome
+  model: PlanOutcome
   summary: |-
-    Plan outcome, such as a relevant change, or important effect, or significant shift. 
-    
+
+    Plan outcome, such as a relevant change, or important effect, or significant shift.
+
+  description: |-
+
+    Plan outcome, such as a relevant change, or important effect, or significant shift.
+
     These concepts are related: plan output, plan outcome, plan impact.
-    
+
   module: Plan
+  model: Outcome
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
+      - plan_id:
           type: plan.id
-          asscociation: belongs_to: plan
+  rails_model_extras: |-
+    belongs_to: plan

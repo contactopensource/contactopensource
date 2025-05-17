@@ -1,5 +1,16 @@
 content_image:
-  summary: Represent the content media type "image/*". Any kind of image, such as a photo, illustration, chart, etc.
+  title: Content Image
+  model: ContentImage
+  summary: |-
+
+    Represent the content media type "image/*".
+
+  description: |-
+
+      Represent the content media type "image/*".
+
+      Ths is for any kind of image, such as a photo, illustration, chart, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

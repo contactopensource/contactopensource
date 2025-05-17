@@ -1,5 +1,14 @@
 geographic_area:
-  summary: Geographic area
+  title: Geographic Area
+  model: GeographicArea
+  summary: |-
+
+    Geographic area
+
+  description: |-
+
+    Geographic area
+
   module: Geographic
   attribute_groups:
     - !include ../_meta.yml

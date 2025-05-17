@@ -1,5 +1,14 @@
 system_proc:
-  summary: System process, such as for a running program.
+  title: System Proc
+  model: SystemProc
+  summary: |-
+
+    System process, such as for a running program.
+
+  description: |-
+
+    System process, such as for a running program.
+
   module: System
   attributes:
     pid:

@@ -1,15 +1,23 @@
-plan_output:
+plan_impact:
+  title: Plan Impact
+  model: PlanImpact
   summary: |-
-    Plan impact, such as creating value, or important growth, or significant transformation. 
-    
+
+    Plan impact, such as creating value, or important growth, or significant transformation.
+
+  descriptoin: |-
+
+    Plan impact, such as creating value, or important growth, or significant transformation.
+
     These concepts are related: plan output, plan outcome, plan impact.
-    
+
   module: Plan
+  model: Impact
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
+      - plan_id:
           type: plan.id
-          asscociation: belongs_to: plan
+  rails_model_extras: |-
+    belongs_to: plan

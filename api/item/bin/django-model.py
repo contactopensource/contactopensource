@@ -1,9 +1,8 @@
 #!/bin/sh
 set -euf
 
-class None(models.Model):
-        id = models.UnknownAttribute("Primary key id that is optimized for speed; do not show this to users.")
-        zid = models.UUIDAttribute("Secure-random 32-character lowercase hexadecimal that is optimized for zero information; you can show this to users.")
+class Item(models.Model):
+        id = models.UUIDAttribute("Primary key id that is a secure-random 32-character lowercase hexadecimal, optimized for zero information rather than speed and memory; you can show this id to users.")
         lock_version = models.UnknownAttribute("This is for optimistic locking.")
         created_at = models.UnknownAttribute("None")
         created_by = models.URLAttribute("The user/agent/service/etc. that did this.")
@@ -24,5 +23,6 @@ class None(models.Model):
         geographic_point_id = models.UnknownAttribute("Generic geographic point, such as the item's current location.")
         color_point_rgb_with_unit_interval_id = models.UnknownAttribute("Generic color point, such as the item's current color")
         quick_response_code_id = models.UnknownAttribute("None")
+        stock_keeping_unit_id = models.UnknownAttribute("None")
         universal_product_code_id = models.UnknownAttribute("None")
 

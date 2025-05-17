@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Access None None \
+    Access AccessTenant None \
     --force \
     --no-timestamps \
 

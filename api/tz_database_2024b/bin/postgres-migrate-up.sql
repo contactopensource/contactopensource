@@ -2,7 +2,6 @@ CREATE TABLE tz_database_2024b (
 );
 
 CREATE INDEX index_tz_database_2024b_id on tz_database_2024b(id);
-CREATE INDEX index_tz_database_2024b_zid on tz_database_2024b(zid);
 CREATE INDEX index_tz_database_2024b_title on tz_database_2024b(title);
 CREATE INDEX index_tz_database_2024b_subtitle on tz_database_2024b(subtitle);
 CREATE INDEX index_tz_database_2024b_country_code on tz_database_2024b(country_code);

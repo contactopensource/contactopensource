@@ -1,5 +1,14 @@
 access_permission:
-  summary: Access control permission, which joins access_attribute and access_operation.
+  title: Access Permission
+  model: AccessPermission
+  summary: |-
+
+    Access control permission, which joins access_attribute and access_operation.
+
+  description: |-
+
+    Access control permission, which joins access_attribute and access_operation.
+
   module: Access
   title: AccessPermission
   model: AccessPermission

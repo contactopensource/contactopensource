@@ -1,13 +1,54 @@
 plan_milestone:
-  title: PlanMilestone
+  title: Plan Milestone
+  model: PlanMilestone
   summary: :-
+
     Plan milestone, such as a given deliverable at a given time.
+
+  descipriont: :-
+
+    Plan milestone, such as a given deliverable at a given time.
+
+    A milestone is a tool used in project management to mark a specific point
+    along a project timeline. These points may signal anchors such as a project
+    start and end date, or a need for external review or input and budget
+    checks. Some contracts for products include a "milestone fee" that may be
+    paid out when certain points are achieved.
+
+    In many instances, milestones do not impact project duration. Instead, they
+    focus on major progress points that must be reached to achieve success.
+
+    Milestones can add significant value to project scheduling. When combined
+    with a scheduling methodology such as program evaluation and review
+    technique or the critical path method, milestones allow project managers to
+    much more accurately determine whether or not the project is on schedule. By
+    constraining the dates associated with milestones, the critical path can be
+    determined for major schedule intervals in addition to the entire project.
+    Slack/float can also be calculated on each schedule interval. This
+    segmentation of the project schedule into intervals allows earlier
+    indication of schedule problems and a better view into the activities for
+    which completion is critical.
+
+    Milestones are like dashboard reviews of a project. A number of activities,
+    which were planned at the beginning of the project with their individual
+    timelines, are reviewed for their status. This process also gives an
+    opportunity to check the health of the project.
+
+    Milestones are frequently used to monitor the progress, but limitations to
+    their effectiveness exist. They usually show progress only on the critical
+    path, and ignore noncritical activities. Resources are commonly moved from
+    noncritical activities to critical activities to ensure that milestones are
+    met. This gives the impression that the project is on schedule, when
+    actually some activities are being ignored.
+
+  links:
+    - https://en.wikipedia.org/wiki/Milestone_(project_management)
   module: Plan
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
     - Main:
-        - plan_id:
-          help: "Plan"
-          type: plan.id
-          asscociation: belongs_to: plan
+      - plan_id:
+         type: plan.id
+  rails_model_extras: |-
+      belongs_to: plan

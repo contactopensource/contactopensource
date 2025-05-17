@@ -2,9 +2,8 @@
 set -euf
 
 mix phx.gen.html \
-    None None None \
-        id:bigint:index \
-        zid:uuid:index \
+    None Item None \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \
@@ -25,6 +24,7 @@ mix phx.gen.html \
         geographic_point_id:geographic_point.idNone \
         color_point_rgb_with_unit_interval_id:color_point_rgb_with_unit_interval.idNone \
         quick_response_code_id:quick_response_code.idNone \
+        stock_keeping_unit_id:stock_keeping_unit.idNone \
         universal_product_code_id:universal_product_code.idNone \
     --force \
     --no-timestamps \

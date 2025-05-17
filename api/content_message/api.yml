@@ -1,5 +1,16 @@
 content_message:
-  summary: Represent the content media type "message/*".
+  title: Content Message
+  model: ContentMessage
+  summary: |-
+
+    Represent the content media type "message/*".
+
+  description: |-
+
+    Represent the content media type "message/*".
+
+    This is for any kind of message, such as email message, chat message, etc.
+
   module: Content
   attribute_groups:
     - !include ../_meta.yml

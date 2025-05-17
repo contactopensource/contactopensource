@@ -1,20 +1,26 @@
 medical_current_procedural_terminology_code_2025:
-  summary: Current Procedural Terminology (CPT) code active as of 2025-01.
-  module: Codes
+  title: Medical Current Procedural Terminology Code 2025
+  model: MedicalCurrentProceduralTerminologyCode2025
+  summary: |-
+
+    Current Procedural Terminology (CPT) code active as of 2025-01.
+
   description: |-
+
     The Current Procedural Terminology (CPT) code set describes medical,
     surgical, and diagnostic services and is designed to communicate uniform
-    information about medical services and procedures among physicians,
-    coders, patients, accreditation organizations, and payers for
-    administrative, financial, and analytical purposes.
+    information about medical services and procedures among physicians, coders,
+    patients, accreditation organizations, and payers for administrative,
+    financial, and analytical purposes.
 
     CPT coding is similar to ICD-10-CM coding, except that it identifies the
-    services rendered, rather than the diagnosis on the claim. Whilst the ICD-10-PCS
-    codes also contains procedure codes, those are only used in the inpatient
-    setting.
+    services rendered, rather than the diagnosis on the claim. Whilst the
+    ICD-10-PCS codes also contains procedure codes, those are only used in the
+    inpatient setting.
 
-    https://wikipedia.org/wiki/Current_Procedural_Terminology
-
+  links:
+    - https://wikipedia.org/wiki/Current_Procedural_Terminology
+  module: Codes
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

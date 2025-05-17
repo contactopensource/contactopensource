@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS international_classification_of_diseases_11;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_id;
-DROP INDEX IF EXISTS index_international_classification_of_diseases_11_zid;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_title;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_subtitle;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_code;

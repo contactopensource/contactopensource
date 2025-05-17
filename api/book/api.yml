@@ -1,9 +1,16 @@
 book:
-  summary: A book is a typical book.
+  title: Book
+  model: Book
+  summary: |-
+
+    A book is a typical book.
+
   description: |-
+
     A `book` is a typical book.
 
     Example: "Beloved" by Toni Morrison
+
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

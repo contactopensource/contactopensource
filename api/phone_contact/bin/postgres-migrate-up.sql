@@ -2,7 +2,6 @@ CREATE TABLE phone_contact (
 );
 
 CREATE INDEX index_phone_contact_id on phone_contact(id);
-CREATE INDEX index_phone_contact_zid on phone_contact(zid);
 CREATE INDEX index_phone_contact_title on phone_contact(title);
 CREATE INDEX index_phone_contact_subtitle on phone_contact(subtitle);
 CREATE INDEX index_phone_contact_number_text on phone_contact(number_text);

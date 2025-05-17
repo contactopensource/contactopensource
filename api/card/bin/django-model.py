@@ -1,7 +1,7 @@
 #!/bin/sh
 set -euf
 
-class None(models.Model):
+class Card(models.Model):
         title = models.UnknownAttribute("The card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name, or a project's title.")
         subtitle = models.UnknownAttribute("The card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle, or a project's status.")
         summary = models.TextAttribute("None")

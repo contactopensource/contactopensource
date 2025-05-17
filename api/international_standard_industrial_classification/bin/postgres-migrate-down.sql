@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS international_standard_industrial_classification;
 DROP INDEX IF EXISTS index_international_standard_industrial_classification_id;
-DROP INDEX IF EXISTS index_international_standard_industrial_classification_zid;
 DROP INDEX IF EXISTS index_international_standard_industrial_classification_title;
 DROP INDEX IF EXISTS index_international_standard_industrial_classification_subtitle;
 DROP INDEX IF EXISTS index_international_standard_industrial_classification_key;

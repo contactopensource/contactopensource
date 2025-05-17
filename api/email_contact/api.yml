@@ -1,9 +1,16 @@
 email_contact:
+  title: Email Contact
+  model: EmailContact
   summary: |-
+
     An email contact, which is an email address and personal info.
 
-    https://wikipedia.org/wiki/Uniform_Resource_Identifier
+  description: |-
 
+    An email contact, which is an email address and personal info.
+
+  links:
+    - https://wikipedia.org/wiki/Uniform_Resource_Identifier
   module: Contact
   attribute_groups:
     - !include ../_meta.yml

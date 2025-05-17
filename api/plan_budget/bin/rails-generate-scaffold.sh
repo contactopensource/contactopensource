@@ -3,8 +3,7 @@ set -euf
 
 rails generate scaffold \
     plan_budget \
-        id:bigint:index \
-        zid:uuid:index \
+        id:uuid:index \
         lock_version:intNone \
         created_at:timestampNone \
         created_by:urlNone \

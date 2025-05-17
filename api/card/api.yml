@@ -1,4 +1,13 @@
 card:
-  summary: Card display tile; this is in use in many of the API concepts.
+  title: Card
+  model: Card
+  summary: |-
+
+    Card display tile; this is in use in many of the API concepts.
+
+  description: |-
+
+    Card display tile; this is in use in many of the API concepts.
+
   attribute_groups:
     - !include ../_card.yml
