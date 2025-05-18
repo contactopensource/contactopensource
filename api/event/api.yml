@@ -1,0 +1,40 @@
+event:
+  title: Event
+  model: Event
+  summary:  |-
+
+    An event is a generic concept of anything that happens over time.
+
+  description: |-
+
+    An event is a generic concept of anything that happens over time.
+
+    This can include anything from a get-together, to a lifetime, to a era.
+
+  links:
+    - https://en.wikipedia.org/wiki/Event
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - start_timestamp_local:
+          type: timestamp
+          example: 2020-01-01T00:00:00 New York City
+      - stop_timestamp_local: 
+          type: timestamp
+          example: 2020-01-01T00:00:00 New York City
+      - start_timestamp_utc:
+          type: timestamp
+          example: 2020-01-01T00:00:00±00:00±00:00
+      - stop_timestamp_utc: 
+          type: timestamp 
+          example: 2020-01-01T00:00:00±00:00±00:00
+      - duration_as_seconds: 
+          type: count
+          example: 3600 seconds (1 hour)
+      - recurring: 
+          type: boolean
+          example: true means the event is recurring
+      - recurring_desecription: 
+          type: text
+          example: This event happens every Saturday at noon in New York City
