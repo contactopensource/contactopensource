@@ -1,0 +1,23 @@
+purchase:
+  title: Purchase
+  model: Purchase
+  summary: |-
+
+    A purchase is typically a purchaser purchasing something from a purchasee.
+
+  description: |-
+
+    A purchase is typically a purchaser purchasing something from a purchasee.
+
+    For example, a buyer pays money to a seller in order to buy an item.
+
+  links:
+    - https://en.wikipedia.org/wiki/Purchase
+  module: Purchase
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+  rails_model_extras: |-
+    has_many: purchase_orders
+    has_many: purchase_payments
+    has_many: purchase_receipts
