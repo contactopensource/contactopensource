@@ -3,27 +3,26 @@ set -euf
 
 rails generate scaffold \
     locale \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
-        text:textNone \
-        language_code:textNone \
-        country_code:textNone \
-        script_code:textNone \
-        region_code:textNone \
-        variant_code:textNone \
-        decimal_separator:textNone \
-        grouping_separator:textNone \
-        currency_code:textNone \
-        currency_symbol:textNone \
-        quotation_start_delimiter:textNone \
-        quotation_stop_delimiter:textNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
+        text:text \
+        language_code:text \
+        country_code:text \
+        script_code:text \
+        region_code:text \
+        variant_code:text \
+        decimal_separator:text \
+        grouping_separator:text \
+        currency_code:text \
+        currency_symbol:text \
+        quotation_start_delimiter:text \
+        quotation_stop_delimiter:text \
     --force \
     --no-timestamps \
 

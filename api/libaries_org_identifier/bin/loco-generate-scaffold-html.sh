@@ -4,7 +4,7 @@ set -euf
 cargo loco generate scaffold --html \
     libraries_org_identifier \
         id:uuid \
-        lock_version:int \
+        lock_version:integer \
         created_at:timestamp \
         created_by:url \
         updated_at:timestamp \

@@ -3,8 +3,8 @@ set -euf
 
 rails generate scaffold \
     access_occupancy \
-        access_tenant_id:access_tenant.idNone \
-        access_agent_id:access_agent.idNone \
+        access_tenant_id:references \
+        access_agent_id:references \
     --force \
     --no-timestamps \
 

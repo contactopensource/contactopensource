@@ -3,27 +3,26 @@ set -euf
 
 rails generate scaffold \
     gs1_country_code \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
         title:"string{50}":index \
         subtitle:"string{50}":index \
-        summary:stringNone \
-        description:textNone \
-        disambiguation:textNone \
-        image_1024x1024_url:urlNone \
-        image_1024x1024_alt:textNone \
-        emoji:textNone \
-        star_count:integerNone \
+        summary:string \
+        description:text \
+        disambiguation:text \
+        image_1024x1024_url:text \
+        image_1024x1024_alt:text \
+        emoji:text \
+        star_count:integer \
         code:digit(3):index \
-        country_name:stringNone \
-        explanation:textNone \
+        country_name:string \
+        explanation:text \
     --force \
     --no-timestamps \
 

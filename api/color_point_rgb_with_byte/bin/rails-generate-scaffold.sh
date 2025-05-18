@@ -3,18 +3,17 @@ set -euf
 
 rails generate scaffold \
     color_point_rgb_with_byte \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
-        red:byteNone \
-        green:byteNone \
-        blue:byteNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
+        red:byte \
+        green:byte \
+        blue:byte \
     --force \
     --no-timestamps \
 

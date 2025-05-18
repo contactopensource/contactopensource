@@ -3,32 +3,31 @@ set -euf
 
 rails generate scaffold \
     tz_database_2024b \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
         title:"string{50}":index \
         subtitle:"string{50}":index \
-        summary:stringNone \
-        description:textNone \
-        disambiguation:textNone \
-        image_1024x1024_url:urlNone \
-        image_1024x1024_alt:textNone \
-        emoji:textNone \
-        star_count:integerNone \
+        summary:string \
+        description:text \
+        disambiguation:text \
+        image_1024x1024_url:text \
+        image_1024x1024_alt:text \
+        emoji:text \
+        star_count:integer \
         country_code:"string{2}":index \
-        country_id:country.idNone \
-        latitude_as_decimal_minute_second:iso_6709None \
+        country_id:references \
+        latitude_as_decimal_minute_second:iso_6709 \
         latitude_as_decimal_degrees:decimal_degrees:index \
-        longitude_as_decimal_minute_second:textNone \
+        longitude_as_decimal_minute_second:text \
         longitude_as_decimal_degrees:decimal_degrees:index \
         name:text:index \
-        comment:textNone \
+        comment:text \
     --force \
     --no-timestamps \
 

@@ -3,49 +3,48 @@ set -euf
 
 rails generate scaffold \
     person \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
         title:"string{50}":index \
         subtitle:"string{50}":index \
-        summary:stringNone \
-        description:textNone \
-        disambiguation:textNone \
-        image_1024x1024_url:urlNone \
-        image_1024x1024_alt:textNone \
-        emoji:textNone \
-        star_count:integerNone \
-        given_name:textNone \
-        given_name_phonetic:textNone \
-        middle_name:textNone \
-        middle_name_phonetic:textNone \
-        family_name:textNone \
-        family_name_phonetic:textNone \
-        legal_name:textNone \
-        legal_name_phonetic:textNone \
-        nickname:textNone \
-        nickname_phonetic:textNone \
-        prefix_name:textNone \
-        prefix_name_phonetic:textNone \
-        suffix_name:textNone \
-        suffix_name_phonetic:textNone \
-        salutation_name:textNone \
-        salutation_name_phonetic:textNone \
-        addressee_name:textNone \
-        addressee_name_phonetic:textNone \
-        subject_pronoun:textNone \
-        object_pronoun:textNone \
-        dependent_possessive_pronoun:textNone \
-        independent_possessive_pronoun:textNone \
-        reflexive_pronoun:textNone \
-        intensive_pronoun:textNone \
-        disjunctive_pronoun:textNone \
+        summary:string \
+        description:text \
+        disambiguation:text \
+        image_1024x1024_url:text \
+        image_1024x1024_alt:text \
+        emoji:text \
+        star_count:integer \
+        given_name:text \
+        given_name_phonetic:text \
+        middle_name:text \
+        middle_name_phonetic:text \
+        family_name:text \
+        family_name_phonetic:text \
+        legal_name:text \
+        legal_name_phonetic:text \
+        nickname:text \
+        nickname_phonetic:text \
+        prefix_name:text \
+        prefix_name_phonetic:text \
+        suffix_name:text \
+        suffix_name_phonetic:text \
+        salutation_name:text \
+        salutation_name_phonetic:text \
+        addressee_name:text \
+        addressee_name_phonetic:text \
+        subject_pronoun:text \
+        object_pronoun:text \
+        dependent_possessive_pronoun:text \
+        independent_possessive_pronoun:text \
+        reflexive_pronoun:text \
+        intensive_pronoun:text \
+        disjunctive_pronoun:text \
         birth_date:date:index \
         birth_date_year:integer:index \
         death_date:date:index \

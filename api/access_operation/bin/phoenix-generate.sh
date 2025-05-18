@@ -4,7 +4,7 @@ set -euf
 mix phx.gen.html \
     Access AccessOperation None \
         id:uuid:index \
-        lock_version:intNone \
+        lock_version:integerNone \
         created_at:timestampNone \
         created_by:urlNone \
         updated_at:timestampNone \

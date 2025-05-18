@@ -5,7 +5,7 @@
             index: true
         - lock_version:
             help: This is for optimistic locking.
-            type: int
+            type: integer
         - created_at:
             type: timestamp
         - created_by:

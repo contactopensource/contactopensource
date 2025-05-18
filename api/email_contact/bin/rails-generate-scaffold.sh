@@ -3,28 +3,27 @@ set -euf
 
 rails generate scaffold \
     email_contact \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
         title:"string{50}":index \
         subtitle:"string{50}":index \
-        summary:stringNone \
-        description:textNone \
-        disambiguation:textNone \
-        image_1024x1024_url:urlNone \
-        image_1024x1024_alt:textNone \
-        emoji:textNone \
-        star_count:integerNone \
-        address:textNone \
-        display_name:textNone \
-        addr_spec:textNone \
-        local_part:textNone \
+        summary:string \
+        description:text \
+        disambiguation:text \
+        image_1024x1024_url:text \
+        image_1024x1024_alt:text \
+        emoji:text \
+        star_count:integer \
+        address:text \
+        display_name:text \
+        addr_spec:text \
+        local_part:text \
     --force \
     --no-timestamps \
 

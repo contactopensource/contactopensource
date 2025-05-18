@@ -3,20 +3,19 @@ set -euf
 
 rails generate scaffold \
     color_name_kit \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
-        hex:hexdigit(6)+None \
-        html_color_name:textNone \
-        x11_color_name:textNone \
-        color_naming_system_name:textNone \
-        pantone_process_color_name:textNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
+        hex:hexdigit(6)+ \
+        html_color_name:text \
+        x11_color_name:text \
+        color_naming_system_name:text \
+        pantone_process_color_name:text \
     --force \
     --no-timestamps \
 

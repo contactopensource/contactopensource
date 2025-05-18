@@ -6,7 +6,7 @@ rails generate scaffold \
         group:string:index \
         code:string:index \
         title:string:index \
-        definition:stringNone \
+        definition:string \
     --force \
     --no-timestamps \
 

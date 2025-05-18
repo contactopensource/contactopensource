@@ -16,7 +16,7 @@ Meta:
 
   * id: uuid (index)
 
-  * lock_version: int
+  * lock_version: integer
 
   * created_at: timestamp
 

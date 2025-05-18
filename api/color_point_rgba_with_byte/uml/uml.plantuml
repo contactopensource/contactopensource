@@ -6,7 +6,7 @@ hide circle
 entity color_point_rgba_with_byte {
   .. Meta ..
   id : uuid ⚡
-  lock_version : int
+  lock_version : integer
   created_at : timestamp
   created_by : url
   updated_at : timestamp

@@ -3,35 +3,34 @@ set -euf
 
 rails generate scaffold \
     postal_contact \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
         title:"string{50}":index \
         subtitle:"string{50}":index \
-        summary:stringNone \
-        description:textNone \
-        disambiguation:textNone \
-        image_1024x1024_url:urlNone \
-        image_1024x1024_alt:textNone \
-        emoji:textNone \
-        star_count:integerNone \
-        freeform:textNone \
-        country_text:textNone \
-        country_subdivision_text:textNone \
-        district_text:textNone \
-        locality_text:textNone \
-        locality_subdivision_text:textNone \
-        neighborhood_text:textNone \
-        postal_code_text:textNone \
-        street_address_text:textNone \
-        premise_address_text:textNone \
-        global_location_number_text:textNone \
+        summary:string \
+        description:text \
+        disambiguation:text \
+        image_1024x1024_url:text \
+        image_1024x1024_alt:text \
+        emoji:text \
+        star_count:integer \
+        freeform:text \
+        country_text:text \
+        country_subdivision_text:text \
+        district_text:text \
+        locality_text:text \
+        locality_subdivision_text:text \
+        neighborhood_text:text \
+        postal_code_text:text \
+        street_address_text:text \
+        premise_address_text:text \
+        global_location_number_text:text \
     --force \
     --no-timestamps \
 

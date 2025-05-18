@@ -3,21 +3,20 @@ set -euf
 
 rails generate scaffold \
     geography_point \
-        id:uuid:index \
-        lock_version:intNone \
-        created_at:timestampNone \
-        created_by:urlNone \
-        updated_at:timestampNone \
-        updated_by:urlNone \
-        retired_at:timestampNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
-        latitude_as_decimal_degrees:decimal_degreesNone \
-        longitude_as_decimal_degrees:decimal_degreesNone \
-        altitude_agl_as_meters:metersNone \
-        altitude_msl_as_meters:metersNone \
-        elevation_agl_as_meters:metersNone \
-        elevation_msl_as_meters:metersNone \
+        lock_version:integer \
+        created_at:timestamp \
+        created_by:text \
+        updated_at:timestamp \
+        updated_by:text \
+        retired_at:timestamp \
+        retired_by:text \
+        locale_id:references \
+        latitude_as_decimal_degrees:decimal_degrees \
+        longitude_as_decimal_degrees:decimal_degrees \
+        altitude_agl_as_meters:meters \
+        altitude_msl_as_meters:meters \
+        elevation_agl_as_meters:meters \
+        elevation_msl_as_meters:meters \
     --force \
     --no-timestamps \
 

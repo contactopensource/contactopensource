@@ -6,7 +6,7 @@ hide circle
 entity software_package_data_exchange_license {
   .. Meta ..
   id : uuid ⚡
-  lock_version : int
+  lock_version : integer
   created_at : timestamp
   created_by : url
   updated_at : timestamp

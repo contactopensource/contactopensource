@@ -3,8 +3,8 @@ set -euf
 
 rails generate scaffold \
     access_permission \
-        access_attribute_it:access_attribute.idNone \
-        access_operation_id:access_operation.idNone \
+        access_attribute_it:references \
+        access_operation_id:references \
     --force \
     --no-timestamps \
 

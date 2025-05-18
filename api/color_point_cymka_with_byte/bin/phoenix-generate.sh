@@ -4,7 +4,7 @@ set -euf
 mix phx.gen.html \
     Color Color Point CYMKA With Byte None \
         id:uuid:index \
-        lock_version:intNone \
+        lock_version:integerNone \
         created_at:timestampNone \
         created_by:urlNone \
         updated_at:timestampNone \
