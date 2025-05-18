@@ -1,0 +1,25 @@
+tag:
+  title: Tag
+  model: Tag
+  summary:  |-
+
+    A tag is one word that annotates something.
+
+  description: |-
+
+    A tag is one word that annotates something.
+
+  links:
+    - https://en.wikipedia.org/wiki/Tag
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - key:
+          help: text
+          type: string
+          example: hot
+      - description:
+          help: description
+          type: text
+          example: THe hot tag means this is trending in popularity.
