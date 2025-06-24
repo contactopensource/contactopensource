@@ -1,7 +1,6 @@
     - cron_schedule_posix_string:
         help: A cron schedule POSIX string that describes how to schedule time-based jobs.
-        description: |-
-            A cron schedule POSIX string that describes how to schedule time-based jobs.
+        description: |summary:        A cron schedule POSIX string that describes how to schedule time-based jobs.
 
             There are 5 attributes:
 

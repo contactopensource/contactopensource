@@ -2,7 +2,6 @@
 
 Contents:
 * [](#)
-
 ## Introduction
 
 ContactOpenSource is software that helps you manage contact information lists, such as people you know, and their email addresses, phone numbers, web links, and more.
@@ -32,7 +31,6 @@ Codes are ways to categorize nodes and classify them. We want to provide many ki
 * [What Three Words](https://what3words.com)
 
 * [What Free Words](https://whatfreewords.org)
-
 ### Business codes
 
 Codes that are typically for business organizations:
@@ -48,7 +46,6 @@ Codes that are typically for business organizations:
 ### TODO
 
 * ISO 15511:2011 = Information and documentation — International standard identifier for libraries and related organizations (ISIL)
-
 ## Schema
 
 All tables have these metadata columns:
@@ -72,7 +69,6 @@ CREATE TABLE `examples` (
     …
 );
 ```
-
 ### nodes
 
 ```sql
@@ -84,7 +80,6 @@ CREATE TABLE `nodes` (
     xml xml -- example: '<?xml version=\'1.0\'?><example>hello world</example>'
 );
 ```
-
 ### edges
 
 The 'edges' table is a kind of linking table with special capabilties.
@@ -175,7 +170,6 @@ CREATE TABLE `edges` (
     dual_interval numeric(10,9) -- dual interval, -1 to 1 inclusive; example: -0.1 means dual interval -10%
 );
 ```
-
 ### orgs
 
 ```sql
@@ -202,7 +196,6 @@ CREATE TABLE `orgs` (
     international_standard_of_industrial_classification_rev_4_code char(5) -- see: https://schema.org/isicV4 https://wikipedia.org/wiki/International_Standard_Industrial_Classification
 );
 ```
-
 ### persons
 
 ```sql
@@ -222,7 +215,6 @@ CREATE TABLE `persons` (
     org_role text -- example: 'Manager of Widgets'
 );
 ```
-
 ### person_names
 
 ```sql
@@ -258,7 +250,6 @@ CREATE TABLE `person_names` (
     disjunctive_pronoun text -- example: 'her' as in 'It is her.'; see https://wikipedia.org/wiki/Disjunctive_pronoun
 );
 ```
-
 ### places
 
 ```sql
@@ -268,7 +259,6 @@ CREATE TABLE `places` (
     name text -- example: 'Grand Central in New York City'
 );
 ```
-
 ### things
 
 ```sql
@@ -278,7 +268,6 @@ CREATE TABLE `things` (
     name text -- example: 'tool'
 );
 ```
-
 ### events
 
 ```sql
@@ -292,7 +281,6 @@ CREATE TABLE `events` (
     stop_timestamp_utc timestamp, --  example: 2020-01-01T00:00:00 always UTC
     duration_as_seconds numeric(20,9) -- example: 3600 seconds is 1 hour
 ```
-
 ### uri_contacts
 
 ```sql
@@ -302,7 +290,6 @@ CREATE TABLE `uri_contacts` (
     label text, -- example: 'Example web page'
     uri text -- example: 'http://example.com/example.html'
 ```
-
 ### email_contacts
 
 ```sql
@@ -314,7 +301,6 @@ CREATE TABLE `email_contacts` (
     addr_spec text -- example: 'alice@example.com'
 );
 ```
-
 ### phone_contacts
 
 ```sql
@@ -332,7 +318,6 @@ CREATE TABLE `phone_contacts` (
     e164_trial_identification_code varchar(3), -- example: TODO
     e164_subscriber_number varchar(14) -- example: '5550000' -- see https://en.wikipedia.org/wiki/E.164
 ```
-
 ### postal_contacts
 
 ```sql
@@ -349,7 +334,6 @@ CREATE TABLE `postal_contacts` (
     global_location_number_text text -- see: https://schema.org/globalLocationNumber https://en.wikipedia.org/wiki/Global_Location_Number
 );
 ```
-
 ### passport_credentials
 
 ```sql
@@ -364,7 +348,6 @@ CREATE TABLE `passport_credentials` (
     valid_stop_date date -- example: 2030-01-01
 );
 ```
-
 ### contacts
 
 ```sql
@@ -381,7 +364,6 @@ CREATE TABLE `contacts` (
     star_count int2 -- example: '5' means 5-star rating
 );
 ```
-
 ### passport_credentials
 
 ```sql
@@ -391,7 +373,6 @@ CREATE TABLE `passport_credentials` (
     text text -- example: 'trending'
 );
 ```
-
 ### locales
 
 ```sql
@@ -421,7 +402,6 @@ CREATE TABLE `locales` (
     -- usesMetricSystem: Bool -- A Boolean that is true if the locale uses the metric system.
 );
 ```
-
 ### media_types
 
 Media types are also known and MIME types.
@@ -466,7 +446,6 @@ CREATE TABLE `media_types` (
     parameters text[] -- example: 'charset=UTF-8',
 );
 ```
-
 ### geography_points
 
 ```sql
@@ -479,7 +458,6 @@ CREATE TABLE `geography_points` (
     elevation numeric(20,9) -- example: '67.056' is 67.056 meters to global sea level
 );
 ```
-
 ### geography_point_centers
 
 ```sql
@@ -494,7 +472,6 @@ CREATE TABLE `geography_point_centers` (
     elevation numeric(20,9) -- example: '67.056' is 67.056 meters to global sea level
 );
 ```
-
 ### isicv4s
 
 ```sql

@@ -137,7 +137,6 @@ Attributes:
 
 * https://wikipedia.org/wiki/ISO_6709: Standard representation of geographic point location by coordinates
 
-
 ## How to represent a person's birth date and similar dates?
 
 Some data models represent a person's birth date by using the person table, such as:
@@ -162,7 +161,6 @@ id : uuid
 key : text (e.g. "born", "died", "married", "graduated", etc.)
 date : date
 ```
-
 ### Why?
 
 Some data models need more flexibility, such as enabling a person to input their born month and month day, but not the year, such as:

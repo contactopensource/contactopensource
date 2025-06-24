@@ -2,13 +2,9 @@ TODO:
   summary: TODO
   entities:
     person
-    person_locale
     place
-    place_locale
     thing
-    thing_locale
     event
-    event_locale
     artist
     album
     song

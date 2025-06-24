@@ -1,7 +1,7 @@
-# virtual_international_authority_file_identifier
+# international_standard_industrial_classification
 
 
-Virtual International Authority File (VIAF) identifier
+International Standard Industrial Classification (ISIC)
 
 ## Attributes
 
@@ -47,5 +47,5 @@ Card:
 
 Main:
 
-* key: string(22) (index)
+* key: string (index)
 

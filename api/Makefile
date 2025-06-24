@@ -1,3 +1,24 @@
+# Makefile for the Contact Open Source API folder.
+#
+# Each API subdirectory contains an `api.yml` file that defines the API.
+# This Makefile generates various outputs based on the `api.yml` file.
+# This requires the tool `bin/parse-api-yml` which generates the outputs.
+#
+# The goal is these files:
+#
+# ```
+# api.yml
+# index.md
+# bin/django-model.py
+# bin/loco-generate-scaffold-html.sh
+# bin/phoenix-generate.sh
+# bin/postgres-migrate-down.sql
+# bin/postgres-migrate-up.sql
+# bin/rails-generate-scaffold.sh
+# uml/uml.plantuml
+# uml/uml.png
+# ```
+
 makefile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 makefile_dir := $(dir $(makefile_path))
 

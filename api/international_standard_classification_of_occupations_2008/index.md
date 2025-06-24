@@ -3,16 +3,15 @@
 
 International Labor Organization (ILO) International Standard Classification of Occupations (ISCO)
 
-
 ## Attributes
 
 Main:
 
-  * group: string (index) - example: TODO
+* group: string (index) - example: TODO
 
-  * code: string (index) - example: TODO
+* code: string (index) - example: TODO
 
-  * title: string (index) - example: TODO
+* title: string (index) - example: TODO
 
-  * definition: string - example: TODO
+* definition: string - example: TODO
 

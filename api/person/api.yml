@@ -5,14 +5,18 @@ person:
 
     A person, such as a typical human being.
 
-  summary: |-
-    A person, such as a typical human being.
+  description: |-
 
-    The person API includes attributes that are generally the same
-    across services, such as names and pronouns. The person API
-    excludes attributes that vary by service, such as a username,
-    password, email address, phone number, organization name, etc.
+    The person API includes attributes that are reliable among all services,
+    such as a person's name and pronouns. For example, if a person changes their
+    name or pronouns, we intend for all services to update the name and pronouns.
 
+    The person API excludes attributes that vary by service, such as a username,
+    password, email address, phone number, organization name, government id, etc.
+
+    If you're building a service that works differently, such as a a service where
+    a person can have multiple names or pronouns, then best to create your own API.
+    
     This is one of the big 3 nouns: person, place, thing.
 
   module: Basics

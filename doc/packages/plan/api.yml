@@ -1,8 +1,14 @@
 plan:
   summary: Plan package for plan-related concepts, such as for project management, task tracking, work breakdown structure, etc.
-  concept:
+  entities:
+    plan
+    plan_budget
+    plan_impact
     plan_okr
+    plan_outcome
+    plan_output
     plan_gist
+    plan_milestone
     plan_smart
     plan_rice
     plan_rope

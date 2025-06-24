@@ -37,6 +37,7 @@ plan:
     - !include ../_meta.yml
     - !include ../_card.yml
   rails_model_extras: |-
+    has_many: plan_budgets
     has_many: plan_gists
     has_many: plan_impacts
     has_many: plan_milestones

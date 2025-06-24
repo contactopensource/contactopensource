@@ -14,12 +14,14 @@ cargo loco generate scaffold --html \
         locale_id:references \
         title:"string{50}" \
         subtitle:"string{50}" \
-        summary:string \
+        summary:"string{255}" \
         description:text \
         disambiguation:text \
         image_1024x1024_url:url \
         image_1024x1024_alt:text \
         emoji:text \
         star_count:integer \
+        quick_response_code_id:references \
+        universal_product_code_id:references \
         key:string \
 

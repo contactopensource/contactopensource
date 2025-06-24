@@ -1,7 +1,6 @@
 # Examples
 
 * []()
-
 ## Node
 
 example: Alice node
@@ -131,7 +130,6 @@ example: Hon. Bob Brian Brown Sr.
 * nickname: "Bobby"
 
 * nickname_phonetic: "Bobby"
-
 ### Person pronouns
 
 example: she, her, etc.
@@ -170,7 +168,6 @@ example: he, him, etc.
 
 * disjunctive_pronoun: "him"
 
-
 ## Event
 
 example: Lunch
@@ -184,7 +181,6 @@ example: Lunch
 * stop_timestamp_utc: "2030-01-01 00:00:00", "YYYY-MM-DD HH24:MI:SS")
 
 * duration_in_seconds: 3600 (one hour)
-
 ## Organizations
 
 example: Acme Agency
@@ -286,7 +282,6 @@ Modifiers:
 *  unit_interval: 0.8 (a.k.a. 80%)
 
 *  dual_interval: -0.8 (a.k.a. -80%)
-
 ## Email contact
 
 example: Alice Adams <alice@example.com>
@@ -308,7 +303,6 @@ example: Bob Brown <bob@example.com>
 *  display_name: "Bob Brown"
 
 *  addr_spec: "bob@example.com"
-
 
 ## Geographic point
 
@@ -419,7 +413,6 @@ example: San Francisco, Ferry Building, delta -/+ 0.1 latitude/longitude
 *  geography_point_id: dffa13312090a7966cc05af0bcecebc4 (San Francisco Ferry Building, delta -0.1 latitude, -0.1 longitude)
 
 *  geography_point_id: a93526cc717f3bc83e32ed2e74d1fc85 (San Francisco Ferry Building, delta +0.1 latitude, +0.1 longitude)
-
 ## Link contact
 
 example: New York + Grand Central + Wikipedia link
@@ -437,7 +430,6 @@ example: San Francisco + Ferry Building + Wikipedia link
 *  label: "San Franciso Ferry Building by Wikipedia"
 
 *  uri: "https://en.wikipedia.org/wiki/San_Francisco_Ferry_Building"
-
 ## Locale
 
 example: English language + United States
@@ -495,7 +487,6 @@ example: Chinese simplified Mandarin language + China
 *  quotation_start_delimiter: "「"
 
 *  quotation_stop_delimiter: "」"
-
 ## Media type
 
 example: text/plain + ASCII
@@ -529,7 +520,6 @@ example: application/json + UTF-8
 * suffix: "+json"
 
 * parameters: array["charset=UTF-16", "boundary=bravo"]
-
 ## Things (organizations)
 
 example: Acme Agency
@@ -993,7 +983,6 @@ INSERT INTO phone_contacts VALUES
 *  e164_trial_identification_code: ""
   "4159838007" -- e164_subscriber_number
 );
-
 ## Things (fruits)
 
 example: apple

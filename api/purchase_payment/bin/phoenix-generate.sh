@@ -14,13 +14,15 @@ mix phx.gen.html \
         locale_id:locale.idNone \
         title:"string{50}":index \
         subtitle:"string{50}":index \
-        summary:stringNone \
+        summary:"string{255}"None \
         description:textNone \
         disambiguation:textNone \
         image_1024x1024_url:urlNone \
         image_1024x1024_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
+        quick_response_code_id:quick_response_code.idNone \
+        universal_product_code_id:universal_product_code.idNone \
         key:string:index \
     --force \
     --no-timestamps \

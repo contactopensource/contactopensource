@@ -18,7 +18,7 @@ Color can be represented in a variety of ways:
 
 * [color_point_rgba_with_unit_interval](../color_point_rgba_with_unit_interval): red, green, blue, alpha, implemented with unit interval
 
-## cyan yellow magenta (and alpha)
+## cyan yellow magenta black (and alpha)
 
 * [color_point_cymk_with_byte](../color_point_cymk_with_byte): cyan, yellow, magenta, black, implemented with byte
 

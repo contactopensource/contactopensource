@@ -50,5 +50,4 @@ plan_milestone:
     - Main:
       - plan_id:
          type: plan.id
-  rails_model_extras: |-
-      belongs_to: plan
+  rails_model_extras: |summary:  belongs_to: plan

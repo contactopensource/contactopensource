@@ -1,13 +1,10 @@
 ability:
   title: Ability
   model: Ability
-  summary: |-
-
-    Abilities are powers an agent has to perform various actions.
-
+  summary: An ability is a power an agent has to perform various actions.
   description: |-
 
-    Abilities are powers an agent has to perform various actions.
+    An ability is a power an agent has to perform various actions.
 
     These include common abilities, like walking, and rare abilities, like performing a double backflip.
 

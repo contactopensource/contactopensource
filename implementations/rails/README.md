@@ -10,7 +10,6 @@ To help with this, we will set our source path to this repo, and our destination
 export src="$HOME/git/contactopensource/contactopensource/implementations/rails"
 export dst="$HOME/git/my-rails-projects/contact"
 ```
-
 ## Configure generators
 
 Configure the Rails generators to use the primary key type UUID.
@@ -28,7 +27,6 @@ Rails.application.config.generators do |g|
   g.orm :active_record, primary_key_type: :uuid
 end
 ```
-
 ## Enable extension pgcrypto
 
 Enable the  Postgres database extenstion `pgcrypto`, which generates secure random UUID data.

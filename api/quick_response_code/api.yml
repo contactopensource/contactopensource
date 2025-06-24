@@ -35,4 +35,8 @@ quick_response_code:
           type: string
           index: true
       - image_url:
+          help: An image for the item, as a URL.
           type: url
+      - image_alt:
+          help: An image for the item, as an alternate text description.
+          type: text

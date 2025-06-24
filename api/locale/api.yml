@@ -1,3 +1,10 @@
+# TODO
+# * locale_calendar
+# * locale_exemplar_character_set
+# * locale_collation_dentifier
+# * locale_collator_identifier
+# * use_metric_system_flag
+
 locale:
   title: locale
   model: locale
@@ -54,10 +61,14 @@ locale:
           type: text
           example: "',' is the grouping separator of 'en-US'"
     - Currency:
-      - currency_code:
-          help: currency code
+      - currency_name:
+          help: currency name in locale language
           type: text
-          example: "'USD' is United States Dollar"
+          example: "United States Dollar"
+      - currency_code:
+          help: currency code in locale language
+          type: text
+          example: "'USD' means United States Dollar"
       - currency_symbol:
           help: currency symbol
           type: text
