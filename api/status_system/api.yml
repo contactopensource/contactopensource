@@ -1,0 +1,37 @@
+status_system:
+  title: Status System
+  model: Status System
+  summary: |-
+
+    Status System, such as categories for:
+
+    * Red, Amber, Green
+
+    * Small, Medium, Large
+
+    * Error, Warning, Information
+
+  description: |-
+
+    Status System, such as for status categorization.
+
+    Examples:
+
+    * Red, Amber, Green
+
+    * Small, Medium, Large
+
+    * Error, Warning, Information
+
+  module: status
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - key:
+          type: string
+          index: true
+          example: "rag"
+      - formal_name:
+          type: string
+          index: true
+          example: "Red Amber Green"
