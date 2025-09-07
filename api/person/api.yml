@@ -16,7 +16,7 @@ person:
 
     If you're building a service that works differently, such as a a service where
     a person can have multiple names or pronouns, then best to create your own API.
-    
+
     This is one of the big 3 nouns: person, place, thing.
 
   module: Basics

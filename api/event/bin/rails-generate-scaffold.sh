@@ -28,7 +28,7 @@ rails generate scaffold \
         stop_timestamp_utc:timestamp \
         duration_as_seconds:count \
         recurring:boolean \
-        recurring_desecription:text \
+        recurring_description:text \
     --force \
     --no-timestamps \
 

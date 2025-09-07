@@ -80,6 +80,7 @@ CREATE TABLE `nodes` (
     xml xml -- example: '<?xml version=\'1.0\'?><example>hello world</example>'
 );
 ```
+
 ### edges
 
 The 'edges' table is a kind of linking table with special capabilties.
@@ -487,3 +488,23 @@ CREATE TABLE `isicv4s` (
     name text -- example: 'Agriculture, forestry and fishing' is code 'A'
 );
 ```
+
+## Range
+
+In our work, we use the term "Range" to mean a lower bound and upper bound.
+
+* We're making a pragmatic choice favoring everyday developers.
+
+* We're not making a purist choice for computer scientists or statisticians.
+
+Be aware in computer science, the term range may refer to one of three things:
+
+* The possible values that may be stored in a variable.
+
+* The upper and lower bounds of a group.
+
+* An alternative to iterator.
+
+Be aware in statistics, the term range refers to:
+
+* The difference between the lower bound and upper bound.

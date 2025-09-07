@@ -29,7 +29,7 @@ mix phx.gen.html \
         stop_timestamp_utc:timestampNone \
         duration_as_seconds:countNone \
         recurring:booleanNone \
-        recurring_desecription:textNone \
+        recurring_description:textNone \
     --force \
     --no-timestamps \
 

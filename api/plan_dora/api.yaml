@@ -7,14 +7,14 @@ plan_rope:
 
   description: |-
 
-    Plan DORA metrics: 
+    Plan DORA metrics:
 
     * Change Lead Time - Time to implement, test, and deliver code for a feature (measured from first commit to deployment)
-    
+
     * Deployment Frequency - Number of deployments in a given duration of time
-    
+
     * Change Failure Rate - Percentage of failed changes over all changes (regardless of success)
-    
+
     * Mean Time to Recovery (MTTR) - Time it takes to restore service after production failure
 
     <https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment>
@@ -37,7 +37,7 @@ plan_rope:
           help: "Change Failure Rate - Percentage of failed changes over all changes (regardless of success)"
           type: value
           measurement_unit: id
-      - mean_time_to_recovery:    
+      - mean_time_to_recovery:
           help: "Mean Time to Recovery - Time it takes to restore service after production failure"
           type: value
           measurement_unit: id

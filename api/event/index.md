@@ -63,5 +63,5 @@ Main:
 
 * recurring: boolean - example: true means the event is recurring
 
-* recurring_desecription: text - example: This event happens every Saturday at noon in New York City
+* recurring_description: text - example: This event happens every Saturday at noon in New York City
 

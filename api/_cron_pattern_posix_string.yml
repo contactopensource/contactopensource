@@ -10,7 +10,7 @@
             * month (1-12 meaning January to December)
             * week day (0 - 6 meaning Sunday to Monday)
 
-        links: 
-          - https://wikipedia.org/wiki/Cron          
+        links:
+          - https://wikipedia.org/wiki/Cron
         type: string
         index: false

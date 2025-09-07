@@ -20,21 +20,21 @@ event:
       - start_timestamp_local:
           type: timestamp
           example: 2020-01-01T00:00:00 New York City
-      - stop_timestamp_local: 
+      - stop_timestamp_local:
           type: timestamp
           example: 2020-01-01T00:00:00 New York City
       - start_timestamp_utc:
           type: timestamp
           example: 2020-01-01T00:00:00±00:00±00:00
-      - stop_timestamp_utc: 
-          type: timestamp 
+      - stop_timestamp_utc:
+          type: timestamp
           example: 2020-01-01T00:00:00±00:00±00:00
-      - duration_as_seconds: 
+      - duration_as_seconds:
           type: count
           example: 3600 seconds (1 hour)
-      - recurring: 
+      - recurring:
           type: boolean
           example: true means the event is recurring
-      - recurring_desecription: 
+      - recurring_description:
           type: text
           example: This event happens every Saturday at noon in New York City

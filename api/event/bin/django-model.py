@@ -28,5 +28,5 @@ class Event(models.Model):
         stop_timestamp_utc = models.UnknownAttribute("None")
         duration_as_seconds = models.UnknownAttribute("None")
         recurring = models.UnknownAttribute("None")
-        recurring_desecription = models.TextAttribute("None")
+        recurring_description = models.TextAttribute("None")
 
