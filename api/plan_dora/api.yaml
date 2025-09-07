@@ -1,0 +1,45 @@
+plan_rope:
+  title: PlanDORA
+  model: PlanDORA
+  summary: |-
+
+    Plan DORA metrics, typically for DevOps performance.
+
+  description: |-
+
+    Plan DORA metrics: 
+
+    * Change Lead Time - Time to implement, test, and deliver code for a feature (measured from first commit to deployment)
+    
+    * Deployment Frequency - Number of deployments in a given duration of time
+    
+    * Change Failure Rate - Percentage of failed changes over all changes (regardless of success)
+    
+    * Mean Time to Recovery (MTTR) - Time it takes to restore service after production failure
+
+    <https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment>
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - plan_id:
+          type: plan.id
+      - change_lead_time:
+          help: "Change Lead Time - Time to implement, test, and deliver code for a feature (measured from first commit to deployment)"
+          type: value
+          measurement_unit: id
+      - deployment_frequency:
+          help: "Deployment Frequency - Number of deployments in a given duration of time"
+          type: value
+          measurement_unit: id
+      - change_failure_rate:
+          help: "Change Failure Rate - Percentage of failed changes over all changes (regardless of success)"
+          type: value
+          measurement_unit: id
+      - mean_time_to_recovery:    
+          help: "Mean Time to Recovery - Time it takes to restore service after production failure"
+          type: value
+          measurement_unit: id
+  rails_model_extras: |-
+    belongs_to: plan
