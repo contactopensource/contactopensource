@@ -3,11 +3,14 @@ measurement_unit:
   model: MeasurementUnit
   summary: |-
 
-    A measurement unit, such as metre, gram, second
+    A measurement unit, such as metre, second, metre/second, etc.
 
   description: |-
 
-    A measurement unit, such as metre, gram, second
+    A measurement unit, such as metre, second, metre/second, etc.
+
+    If the measurement unit is a ratio, such as metres/second,
+    then use the attributes for numerator and denominator.
 
   module: measurement
   attribute_groups:
@@ -23,4 +26,11 @@ measurement_unit:
           example: s
       - measurement_system_id:
           type:  measurement_system.id
-          example: \"\"metric\""
+          example: metric
+    - Ratio:
+      - numerator:
+          type: measurement_unit.id
+          example: metre
+      - denominator:
+          type: measurement_unit.id
+          example: second

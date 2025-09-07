@@ -11,7 +11,9 @@ measurement_system:
 
     Examples:
 
-    * the metric measurement system vs the imperial measurement system
+    * [International System of Units](https://en.wikipedia.org/wiki/International_System_of_Units)
+
+    * [Imperial System](https://en.wikipedia.org/wiki/Imperial_System)
 
     * the Gregorian calendar vs the Julian calendar
 
@@ -21,8 +23,8 @@ measurement_system:
       - key:
           type: string
           index: true
-          example: "\"metric\" or \"imperial\""
+          example: "si"
       - formal_name:
           type: string
           index: true
-          example: "\"the metric measurement system\" or \"the imperial measurement system\""
+          example: "International System of Units"
