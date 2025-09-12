@@ -39,15 +39,12 @@ united_kingdom_standard_occupational_classification_2020:
     - Main:
       - code:
           type: string
-          example: TODO
+          example: "2211"
           index: true
       - title:
           type: string
-          example: TODO
+          example: Generalist Medical Practitioners
           index: true
       - definition:
           type: string
           example: TODO
-      - url:
-          type: url
-          example: https://ddat-capability-framework.service.gov.uk/role/chief-technology-officer
