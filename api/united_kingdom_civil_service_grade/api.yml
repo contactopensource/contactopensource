@@ -1,0 +1,108 @@
+united_kingdom_civil_service_grade:
+  title: United Kingdom (UK) Civil Service Grade
+  model: UnitedKingdomCivilServiceGrade
+  summary: |-
+
+    United Kingdom (UK) Civil Service Grade
+
+  description: |-
+
+    United Kingdom civil servants’ seniority is denoted by their grade:
+    
+    - Administrative Assistant (AA)
+    - Administrative Officer (AO)
+    - Executive officer (EO)
+    - Higher Executive Officer (HEO)
+    - Senior Executive Officer (SEO)
+    - Grade 7
+    - Grade 6
+    - Senior Civil Service 1 (SCS1)
+    - Senior Civil Service 2 (SCS2)
+    - Senior Civil Service 3 (SCS3)
+    - Senior Civil Service 4 (SCS4)
+
+    ## Administrative Assistant (AA)
+
+    Estimate minimum salary: £23,286.
+
+    AAs work in a supporting administrative role with no line management responsibilities, and within a team structure. AAs are offered as apprentice opportunities. AAs are entry level positions.
+
+    Equivalent job titles include Assistant, Office Assistant, Sales Assistant and Executive Assistant.
+
+    ## Administrative Officer (AO)
+
+    Estimate minimum salary: £23,811.
+
+    AOs work in a supporting administrative role with no line management responsibilities, and within a team structure. AOs are offered as apprentice opportunities.
+
+    Equivalent job titles include Administrator, Office Administrator, Sales Administrator and Executive Administrator.
+
+    ## Executive Officer (EO)
+
+    Estimate minimum salary: £27,470.
+
+    EOs work across the full range of policy and corporate service areas. are involved in problem solving, business planning and policymaking, at the very highest levels of government,  EOs usually work within a supportive team structure, under the direction of relevant team leaders. They can also hold individual responsibility for pieces of work within a programme or project.
+
+    Equivalent job titles include Supervisor, Senior Administrator and Office Manager.
+
+    ## Higher Executive Officer (HEO)
+
+    Estimate minimum salary: £32,136.
+
+    HEOs work across the full range of policy and corporate service areas. They make significant contributions toward decision-making at the very highest levels of government in areas such as business planning or policy implementation. Working within a supportive team structure, under the direction of relevant team leaders, HEOs can also hold individual responsibility for specialised pieces of work within a programme or project.
+
+    Equivalent job titles include Supervisor, Team Leader, Senior Advisor and Office Manager.
+
+    ## Senior Executive Officer (SEO)
+
+    Estimate minimum salary: £39,439.
+
+    SEOs work across the full range of policy and corporate service areas, often dealing with diverse issues, interacting with businesses or governments at a very senior level. SEOs contribute significantly to high level decision-making for business planning, policy implementation and strategy development. They will often manage teams and their workloads, and delegate tasks.
+
+    Equivalent job titles include Senior Team Leader, Junior Manager and Senior Supervisor.
+
+    ## Grade 7 (G7)
+
+    Estimate minimum salary: £52,120. 
+
+    G7s are accountable for outcomes in their policy area, and responsible for setting priorities, agreeing targets and allocating responsibilities to their team,  They develop deep specialisms on key aspects of their policy or sector, and take on highly complex work. In addition, G7s devise new means of managing and implementing policy, within set budgets and tight timescales. They use strong influencing skills to broker solutions across organisational boundaries.
+
+    Equivalent job titles include Manager, Deputy Operations Manager and Deputy Head of Department or Area.
+
+    ## Grade 6 (G6)
+
+    Estimate minimum salary: £62,605. 
+
+    G6s typically lead several complex work streams, often with stakeholders in several interdependent departmental functions, and with significant line management responsibilities for large teams headed by several G7s. G6s may also be specialists in a particular area. Typically, they report into senior civil servants and have exposure to executive committees, Director Generals and Ministers.
+
+    Equivalent job titles include Operations Manager, Senior Manager and Head of Department or Area.
+
+    ## SCS1 Deputy Director
+
+    ## SCS2 Director
+
+    ## SCS3 Director General
+
+    ## SCS4 Permanent Secretary
+
+  module: Codes
+  attribute_groups:
+    - Main:
+      - step:
+          type: integer
+          example: 1
+          index: true
+      - label:
+          type: string
+          example: Administrative Assistant
+          index: true
+      - abbreviation:
+          type: string
+          example: AA
+          index: true
+      - minimum_salary:
+          type: integer
+          example: 23,286
+      - definition:
+          type: string
+          example: Evidence provided wholly exceeds expectation at this level
