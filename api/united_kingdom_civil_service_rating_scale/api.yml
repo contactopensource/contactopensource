@@ -1,0 +1,34 @@
+united_kingdom_civil_service_rating_scale:
+  title: United Kingdom (UK) Civil Service Rating Scale
+  model: UnitedKingdomCivilServiceRatingScale
+  summary: |-
+
+    United Kingdom (UK) Civil Service Rating Scale
+
+  description: |-
+
+    United Kingdom organisations often use this rating scale for recruitment.
+
+    Rating | Label | Definition 	
+    1 | Not Demonstrated          |	No positive evidence
+    2 | Minimal Demonstration     |	Limited positive evidence
+    3 | Moderate Demonstration    | Moderate positive evidence
+    4 | Acceptable Demonstration 	| Adequate positive evidence
+    5 | Good Demonstration 	      | Substantial positive evidence
+    6 | Strong Demonstration 	    | Substantial, positive evidence and includes some evidence of exceeding expectations
+    7 | Outstanding Demonstration |	Evidence provided wholly exceeds expectation at this level
+
+  module: Codes
+  attribute_groups:
+    - Main:
+      - rating:
+          type: integer
+          example: 7
+          index: true
+      - label:
+          type: string
+          example: Outstanding Demonstration
+          index: true
+      - definition:
+          type: string
+          example: Evidence provided wholly exceeds expectation at this level
