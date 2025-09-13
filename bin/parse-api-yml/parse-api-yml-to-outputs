@@ -92,6 +92,7 @@ def parse_path(path: os.PathLike):
             logging.info(banner(f"{entity.id}"))
 
         for renderer in [
+            render.ash,
             render.django_model,
             render.loco_generate_scaffold_html,
             render.markdown,
