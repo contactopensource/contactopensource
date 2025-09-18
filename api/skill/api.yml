@@ -1,0 +1,28 @@
+ability:
+  title: Skill
+  model: Skill
+  summary: A skill is the ability to act with determined results with good execution.
+  description: |-
+
+    A skill is the ability to act with determined results with good execution
+    often within a given amount of time, energy, or both.
+    
+    Skills can often be categorized into domain-general and domain-specific
+    skills. 
+    
+    Domain-general skill examples: 
+    - time management
+    - teamwork
+    - leadership
+    
+    Domain-specific skill examples: 
+    - software programming
+    - medical surgery
+    - aviation piloting
+
+  links:
+    - https://wikipedia.org/wiki/Skill
+  snake_case_plural: abilities
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
