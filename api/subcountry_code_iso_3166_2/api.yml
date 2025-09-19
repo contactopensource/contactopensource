@@ -1,0 +1,18 @@
+subcountry_code_iso_3166_2:
+  title: Subcountry Code ISO 3166-2
+  model: SubcountryCodeIso3166Dash2
+  summary: |-
+
+    Subcountry Code ISO 3166-2
+
+  description: |-
+
+    <https://en.wikipedia.org/wiki/ISO_3166-2>
+
+  attribute_groups:
+    - Main:
+      - alpha_2:string(2):
+          help: TODO
+          type: string(2)
+      - country_code_iso_3166_1_id:
+          type: references
