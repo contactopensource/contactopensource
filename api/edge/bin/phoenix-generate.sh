@@ -17,8 +17,8 @@ mix phx.gen.html \
         summary:stringNone \
         description:textNone \
         disambiguation:textNone \
-        image_1024x1024_url:urlNone \
-        image_1024x1024_alt:textNone \
+        image_1080x1080_url:urlNone \
+        image_1080x1080_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
         subject_uri:textNone \

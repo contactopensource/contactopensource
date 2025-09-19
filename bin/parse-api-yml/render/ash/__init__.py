@@ -2,6 +2,8 @@
 Render a Mix Ash generator that runs `mix ash.gen.resource`.
 
 The generator generates a controller with view, templates, schema and context.
+
+<https://hexdocs.pm/ash/Mix.Tasks.Ash.Gen.Resource.html>
 """
 
 from pathlib import Path

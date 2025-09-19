@@ -18,11 +18,23 @@
         - disambiguation:
             type: text
             example: This text explains the difference between this item and others.
-        - image_1024x1024_url:
-            help: An image for the item, 1024x1024 pixels, which is square 1:1 aspect ratio, as a URL.
+        - image_1080x1080_url:
+            help: An image for the item, 1080x1080 pixels, which is square 1:1 aspect ratio, as a URL.
             type: url
-        - image_1024x1024_alt:
-            help: An image for the item, 1024x1024 pixels, which is square 1:1 aspect ratio, as an alternate text description.
+        - image_1080x1080_alt:
+            help: An image for the item, 1080x1080 pixels, which is square 1:1 aspect ratio, as an alternate text description.
+            type: text
+        - image_1920x1080_url:
+            help: An image for the item, 1920x1080 pixels, which is landscape aspect ratio, as a URL.
+            type: url
+        - image_1920x1080_alt:
+            help: An image for the item, 1920x1080 pixels, which is landscape aspect ratio, as an alternate text description.
+            type: text
+        - image_1080x1920_url:
+            help: An image for the item, 1920x1080 pixels, which is landscape aspect ratio, as a URL.
+            type: url
+        - image_1080x1920_alt:
+            help: An image for the item, 1920x1080 pixels, which is landscape aspect ratio, as an alternate text description.
             type: text
         - emoji:
             help: Any emoji related to the item, such as for a badge, or indicator, or expression, etc.

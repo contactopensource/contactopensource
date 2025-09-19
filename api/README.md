@@ -32,6 +32,18 @@ Each resource subdirectory contains a file `api.yml` that specifies details such
 
 * `attributes`: A list of attributes, such as for the person's name, birth date, etc.
 
+Ash modifiers TODO
+
+* `primary_key`
+
+* `array`
+  
+* `public`
+  
+* `sensitive`
+
+* `required`
+
 ## Attribute examples
 
 For typical cards:
@@ -50,15 +62,15 @@ For typical images:
 
 * `image_url`: An image URL that should render for the item, such as a person's photo. Note that the API generally aims for application-specific dynamic scaling of an image, such as for showing a thumbnail.
 
-* `image_1024x1024_url`: An image URL for the item, 1024x1024 pixels, which is square 1:1 aspect ratio.
+* `image_1080x1080_url`: An image URL for the item, 1080x1080 pixels, which is square 1:1 aspect ratio.
 
-* `image_1024x1024_alt`: An image alternative text description for the item.
+* `image_1080x1080_alt`: An image alternative text description for the item.
 
 * `image_1920x960_url`: An image URL for the item, 1920x1024 pixels, which is landscape 2:1 aspect ratio.
 
 * `image_1920x960_alt`: An image alternative text description for the item.
 
-* `image_960x1920_url`: An image URL for the item, 1024x1024 pixels, which is portrait 1:2 aspect ratio.
+* `image_960x1920_url`: An image URL for the item, 1080x1080 pixels, which is portrait 1:2 aspect ratio.
 
 * `image_960x1920_alt`: An image alternative text description for the item.
 

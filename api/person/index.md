@@ -43,9 +43,9 @@ Card:
 
 * disambiguation: text - example: This text explains the difference between this item and others.
 
-* image_1024x1024_url: url
+* image_1080x1080_url: url
 
-* image_1024x1024_alt: text
+* image_1080x1080_alt: text
 
 * emoji: text - example: 🚀
 

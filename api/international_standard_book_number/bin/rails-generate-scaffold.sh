@@ -16,8 +16,8 @@ rails generate scaffold \
         summary:string \
         description:text \
         disambiguation:text \
-        image_1024x1024_url:text \
-        image_1024x1024_alt:text \
+        image_1080x1080_url:text \
+        image_1080x1080_alt:text \
         emoji:text \
         star_count:integer \
         code:"string{13}":index \
