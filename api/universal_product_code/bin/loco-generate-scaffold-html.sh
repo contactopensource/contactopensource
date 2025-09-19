@@ -14,4 +14,5 @@ cargo loco generate scaffold --html \
         locale_id:references \
         code:string \
         image_url:url \
+        image_alt:text \
 

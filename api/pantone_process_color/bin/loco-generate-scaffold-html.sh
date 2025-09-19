@@ -14,6 +14,6 @@ cargo loco generate scaffold --html \
         locale_id:references \
         key:string \
         name:string \
-        code:"string{3}" \
-        stock:"string{1}" \
+        code:string \
+        stock:string \
 

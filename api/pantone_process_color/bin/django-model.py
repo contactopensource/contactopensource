@@ -13,6 +13,6 @@ class PantoneProcessColor(models.Model):
         locale_id = models.UnknownAttribute("An international locale identifier, such as the id of locale "English - United States".")
         key = models.TextAttribute("None")
         name = models.TextAttribute("None")
-        code = models.UnknownAttribute("None")
-        stock = models.UnknownAttribute("None")
+        code = models.TextAttribute("None")
+        stock = models.TextAttribute("None")
 

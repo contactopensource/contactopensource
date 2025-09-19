@@ -11,21 +11,29 @@ rails generate scaffold \
         retired_at:timestamp \
         retired_by:text \
         locale_id:references \
-        title:"string{50}":index \
-        subtitle:"string{50}":index \
+        title:string:index \
+        subtitle:string:index \
         summary:string \
         description:text \
         disambiguation:text \
-        image_1080x1080_url:text \
-        image_1080x1080_alt:text \
+        avatar_image_400x400_url:text \
+        avatar_image_400x400_alt:text \
+        main_image_1080x1080_url:text \
+        main_image_1080x1080_alt:text \
+        main_image_1920x1080_url:text \
+        main_image_1920x1080_alt:text \
+        main_image_1080x1920_url:text \
+        main_image_1080x1920_alt:text \
         emoji:text \
         star_count:integer \
-        code:"string{13}":index \
-        prefix_element:"string{13}" \
-        registration_group:digit(5) \
-        registrant:"string{13}" \
-        publication:"string{13}" \
-        check_digit:digit(1) \
+        quick_response_code_id:references \
+        universal_product_code_id:references \
+        code:string:index \
+        prefix_element:string \
+        registration_group:digit \
+        registrant:string \
+        publication:string \
+        check_digit:digit \
     --force \
     --no-timestamps \
 

@@ -13,6 +13,7 @@ rails generate scaffold \
         locale_id:references \
         code:string:index \
         image_url:text \
+        image_alt:text \
     --force \
     --no-timestamps \
 

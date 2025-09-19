@@ -1,0 +1,22 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity status_system {
+  .. Meta ..
+  id : uuid ⚡
+  lock_version : integer
+  created_at : timestamp
+  created_by : url
+  updated_at : timestamp
+  updated_by : url
+  retired_at : timestamp
+  retired_by : url
+  locale_id : locale.id 🔑
+  .. Main ..
+  key : string ⚡
+  formal_name : string ⚡
+}
+
+@enduml

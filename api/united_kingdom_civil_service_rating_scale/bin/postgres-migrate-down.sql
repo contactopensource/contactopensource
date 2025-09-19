@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS united_kingdom_civil_service_rating_scale;
+DROP INDEX IF EXISTS index_united_kingdom_civil_service_rating_scale_rating;
+DROP INDEX IF EXISTS index_united_kingdom_civil_service_rating_scale_label;
+

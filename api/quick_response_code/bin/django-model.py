@@ -12,5 +12,6 @@ class None(models.Model):
         retired_by = models.URLAttribute("The user/agent/service/etc. that did this.")
         locale_id = models.UnknownAttribute("An international locale identifier, such as the id of locale "English - United States".")
         code = models.TextAttribute("None")
-        image_url = models.URLAttribute("None")
+        image_url = models.URLAttribute("An image for the item, as a URL.")
+        image_alt = models.TextAttribute("An image for the item, as an alternate text description.")
 

@@ -12,21 +12,29 @@ cargo loco generate scaffold --html \
         retired_at:timestamp \
         retired_by:url \
         locale_id:references \
-        title:"string{50}" \
-        subtitle:"string{50}" \
+        title:string \
+        subtitle:string \
         summary:string \
         description:text \
         disambiguation:text \
-        image_1080x1080_url:url \
-        image_1080x1080_alt:text \
+        avatar_image_400x400_url:url \
+        avatar_image_400x400_alt:url \
+        main_image_1080x1080_url:url \
+        main_image_1080x1080_alt:text \
+        main_image_1920x1080_url:url \
+        main_image_1920x1080_alt:text \
+        main_image_1080x1920_url:url \
+        main_image_1080x1920_alt:text \
         emoji:text \
         star_count:integer \
+        quick_response_code_id:references \
+        universal_product_code_id:references \
         label:text \
         number_text:text \
-        e164_text:"string{15}" \
-        e164_country_code:"string{3}" \
-        e164_national_destination_code:"string{13}" \
-        e164_group_identification_code:"string{4}" \
-        e164_trial_identification_code:"string{3}" \
-        e164_subscriber_number:"string{14}" \
+        e164_text:string \
+        e164_country_code:string \
+        e164_national_destination_code:string \
+        e164_group_identification_code:string \
+        e164_trial_identification_code:string \
+        e164_subscriber_number:string \
 

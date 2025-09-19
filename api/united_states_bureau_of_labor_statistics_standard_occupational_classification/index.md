@@ -3,15 +3,16 @@
 
 United States (US) Bureau of Labor Statistics (BLS) Standard Occupational Classification (SOC)
 
+
 ## Attributes
 
 Main:
 
-* group: string (index)
+  * group: string (index)
 
-* code: string (index)
+  * code: string (index)
 
-* title: string (index)
+  * title: string (index)
 
-* definition: text (index)
+  * definition: text (index)
 

@@ -15,6 +15,8 @@ mix phx.gen.html \
         name:textNone \
         symbol:textNone \
         measurement_system_id:measurement_system.idNone \
+        numerator:measurement_unit.idNone \
+        denominator:measurement_unit.idNone \
     --force \
     --no-timestamps \
 

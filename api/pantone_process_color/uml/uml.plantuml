@@ -17,8 +17,8 @@ entity pantone_process_color {
   .. Main ..
   key : string ⚡
   name : string ⚡
-  code : string(3) ⚡
-  stock : string(1) ⚡
+  code : string ⚡
+  stock : string ⚡
 }
 
 @enduml

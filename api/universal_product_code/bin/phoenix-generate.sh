@@ -14,6 +14,7 @@ mix phx.gen.html \
         locale_id:locale.idNone \
         code:string:index \
         image_url:urlNone \
+        image_alt:textNone \
     --force \
     --no-timestamps \
 

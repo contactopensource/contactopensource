@@ -1,0 +1,6 @@
+CREATE TABLE united_kingdom_civil_service_rating_scale (
+);
+
+CREATE INDEX index_united_kingdom_civil_service_rating_scale_rating on united_kingdom_civil_service_rating_scale(rating);
+CREATE INDEX index_united_kingdom_civil_service_rating_scale_label on united_kingdom_civil_service_rating_scale(label);
+

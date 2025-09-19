@@ -15,7 +15,7 @@ entity color_name_kit {
   retired_by : url
   locale_id : locale.id 🔑
   .. Main ..
-  hex : hexdigit(6)+
+  hex : hexdigit
   html_color_name : text
   x11_color_name : text
   color_naming_system_name : text

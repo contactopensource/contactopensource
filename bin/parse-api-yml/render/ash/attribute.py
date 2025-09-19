@@ -9,23 +9,26 @@ Modifiers: primary_key, array, public, sensitive, and required. i.e -a name:stri
 import re
 
 def render(attribute):
+    if attribute.id == "id":
+        return ""
     return f"    --attribute {attribute.id}:{render_type(attribute)}{render_modifiers(attribute)} \\\n"
 
 def render_type(attribute):
-    if attribute.join:
+    if hasattr(attribute, 'join') and attribute.join:
         return "references"
-    return attribute.type # TODO cut constraint
+    attribute.type = re.sub(r'\(.*', r'', attribute.type)
+    return attribute.type
 
 def render_modifiers(attribute):
     s = ""
-    if attribute.primary_key:
+    if hasattr(attribute, 'primary_key') and attribute.primary_key:
         s += ":primary_key" 
-    if attribute.array:
+    if hasattr(attribute, 'array') and attribute.array:
         s += ":array" 
-    if attribute.public:
+    if hasattr(attribute, 'public') and attribute.public:
         s += ":public" 
-    if attribute.sensitive:
+    if hasattr(attribute, 'sensitive') and attribute.sensitive:
         s += ":sensitive" 
-    if attribute.sensitive:
+    if hasattr(attribute, 'sensitive') and attribute.sensitive:
         s += ":required" 
     return s

@@ -2,37 +2,38 @@
 
 Color name kit
 
+
 ## Attributes
 
 Meta:
 
-* id: uuid (index)
+  * id: uuid (index)
 
-* lock_version: integer
+  * lock_version: integer
 
-* created_at: timestamp
+  * created_at: timestamp
 
-* created_by: url
+  * created_by: url
 
-* updated_at: timestamp
+  * updated_at: timestamp
 
-* updated_by: url
+  * updated_by: url
 
-* retired_at: timestamp
+  * retired_at: timestamp
 
-* retired_by: url
+  * retired_by: url
 
-* locale_id: locale.id - example: the id of locale "English - United States".
+  * locale_id: locale.id - example: the id of locale "English - United States".
 
 Main:
 
-* hex: hexdigit(6)+ - example: "FF0000" means red
+  * hex: hexdigit - example: "FF0000" means red
 
-* html_color_name: text - example: "Red" as titlecase
+  * html_color_name: text - example: "Red" as titlecase
 
-* x11_color_name: text - example: "Red" as titlecase
+  * x11_color_name: text - example: "Red" as titlecase
 
-* color_naming_system_name: text - example: "red" as lowercase
+  * color_naming_system_name: text - example: "red" as lowercase
 
-* pantone_process_color_name: text - example: "Red 032 C" means red
+  * pantone_process_color_name: text - example: "Red 032 C" means red
 

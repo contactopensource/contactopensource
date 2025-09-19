@@ -1,6 +1,7 @@
 ability:
   title: Skill
   model: Skill
+  module: Works
   summary: A skill is the ability to act with determined results with good execution.
   description: |-
 

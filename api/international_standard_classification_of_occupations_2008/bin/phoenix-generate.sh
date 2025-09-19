@@ -2,8 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Codes InternationalLaborOrganizationInternationalStandardClassificationOfOccupations None \
-        group:string:index \
+    Codes InternationalLaborOrganizationInternationalStandardClassificationOfOccupations2008 None \
         code:string:index \
         title:string:index \
         definition:stringNone \

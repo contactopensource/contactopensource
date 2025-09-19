@@ -11,7 +11,7 @@ rails generate scaffold \
         retired_at:timestamp \
         retired_by:text \
         locale_id:references \
-        hex:hexdigit(6)+ \
+        hex:hexdigit \
         html_color_name:text \
         x11_color_name:text \
         color_naming_system_name:text \

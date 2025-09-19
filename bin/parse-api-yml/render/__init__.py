@@ -1,3 +1,4 @@
+from .ash import *
 from .markdown import *
 from .plantuml import *
 from .django_model import *

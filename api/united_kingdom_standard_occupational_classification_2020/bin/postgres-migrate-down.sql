@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS united_kingdom_standard_occupational_classification_2020;
+DROP INDEX IF EXISTS index_united_kingdom_standard_occupational_classification_2020_code;
+DROP INDEX IF EXISTS index_united_kingdom_standard_occupational_classification_2020_title;
+

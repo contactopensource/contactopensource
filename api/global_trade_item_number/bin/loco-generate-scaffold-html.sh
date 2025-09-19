@@ -12,18 +12,26 @@ cargo loco generate scaffold --html \
         retired_at:timestamp \
         retired_by:url \
         locale_id:references \
-        title:"string{50}" \
-        subtitle:"string{50}" \
+        title:string \
+        subtitle:string \
         summary:string \
         description:text \
         disambiguation:text \
-        image_1080x1080_url:url \
-        image_1080x1080_alt:text \
+        avatar_image_400x400_url:url \
+        avatar_image_400x400_alt:url \
+        main_image_1080x1080_url:url \
+        main_image_1080x1080_alt:text \
+        main_image_1920x1080_url:url \
+        main_image_1920x1080_alt:text \
+        main_image_1080x1920_url:url \
+        main_image_1080x1920_alt:text \
         emoji:text \
         star_count:integer \
-        code:digit(14) \
-        prefix:digit(3) \
-        item:digit(9) \
-        check_digit:digit(1) \
-        indicator_digit:digit(1) \
+        quick_response_code_id:references \
+        universal_product_code_id:references \
+        code:digit \
+        prefix:digit \
+        item:digit \
+        check_digit:digit \
+        indicator_digit:digit \
 

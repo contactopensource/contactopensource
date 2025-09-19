@@ -18,5 +18,6 @@ are described by the item's vocabulary. Properties values
 usually consist of string values, but can also use URLs using
 the a element and its href attribute, the img element and its
 src attribute, or other elements that link to or embed external
-resources.")
+resources.
+")
 

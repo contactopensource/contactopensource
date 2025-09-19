@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS united_kingdom_civil_service_grade;
+DROP INDEX IF EXISTS index_united_kingdom_civil_service_grade_step;
+DROP INDEX IF EXISTS index_united_kingdom_civil_service_grade_label;
+DROP INDEX IF EXISTS index_united_kingdom_civil_service_grade_abbreviation;
+

@@ -20,6 +20,7 @@ mix phx.gen.html \
         variant_code:textNone \
         decimal_separator:textNone \
         grouping_separator:textNone \
+        currency_name:textNone \
         currency_code:textNone \
         currency_symbol:textNone \
         quotation_start_delimiter:textNone \

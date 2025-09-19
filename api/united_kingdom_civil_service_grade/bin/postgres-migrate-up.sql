@@ -1,0 +1,7 @@
+CREATE TABLE united_kingdom_civil_service_grade (
+);
+
+CREATE INDEX index_united_kingdom_civil_service_grade_step on united_kingdom_civil_service_grade(step);
+CREATE INDEX index_united_kingdom_civil_service_grade_label on united_kingdom_civil_service_grade(label);
+CREATE INDEX index_united_kingdom_civil_service_grade_abbreviation on united_kingdom_civil_service_grade(abbreviation);
+

@@ -25,6 +25,7 @@ entity locale {
   decimal_separator : text
   grouping_separator : text
   .. Currency ..
+  currency_name : text
   currency_code : text
   currency_symbol : text
   .. Quotations ..

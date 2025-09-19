@@ -12,7 +12,7 @@ mix phx.gen.html \
         retired_at:timestampNone \
         retired_by:urlNone \
         locale_id:locale.idNone \
-        hex:hexdigit(6)+None \
+        hex:hexdigitNone \
         html_color_name:textNone \
         x11_color_name:textNone \
         color_naming_system_name:textNone \

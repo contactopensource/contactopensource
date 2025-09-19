@@ -1,5 +1,4 @@
 DROP TABLE IF EXISTS international_standard_classification_of_occupations_2008;
-DROP INDEX IF EXISTS index_international_standard_classification_of_occupations_2008_group;
 DROP INDEX IF EXISTS index_international_standard_classification_of_occupations_2008_code;
 DROP INDEX IF EXISTS index_international_standard_classification_of_occupations_2008_title;
 

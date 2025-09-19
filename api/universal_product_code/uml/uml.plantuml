@@ -17,6 +17,7 @@ entity universal_product_code {
   .. Main ..
   code : string ⚡
   image_url : url
+  image_alt : text
 }
 
 @enduml

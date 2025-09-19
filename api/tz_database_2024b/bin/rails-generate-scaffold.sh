@@ -11,16 +11,24 @@ rails generate scaffold \
         retired_at:timestamp \
         retired_by:text \
         locale_id:references \
-        title:"string{50}":index \
-        subtitle:"string{50}":index \
+        title:string:index \
+        subtitle:string:index \
         summary:string \
         description:text \
         disambiguation:text \
-        image_1080x1080_url:text \
-        image_1080x1080_alt:text \
+        avatar_image_400x400_url:text \
+        avatar_image_400x400_alt:text \
+        main_image_1080x1080_url:text \
+        main_image_1080x1080_alt:text \
+        main_image_1920x1080_url:text \
+        main_image_1920x1080_alt:text \
+        main_image_1080x1920_url:text \
+        main_image_1080x1920_alt:text \
         emoji:text \
         star_count:integer \
-        country_code:"string{2}":index \
+        quick_response_code_id:references \
+        universal_product_code_id:references \
+        country_code:string:index \
         country_id:references \
         latitude_as_decimal_minute_second:iso_6709 \
         latitude_as_decimal_degrees:decimal_degrees:index \

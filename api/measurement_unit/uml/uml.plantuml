@@ -18,6 +18,9 @@ entity measurement_unit {
   name : text
   symbol : text
   measurement_system_id : measurement_system.id 🔑
+  .. Ratio ..
+  numerator : measurement_unit.id
+  denominator : measurement_unit.id
 }
 
 @enduml

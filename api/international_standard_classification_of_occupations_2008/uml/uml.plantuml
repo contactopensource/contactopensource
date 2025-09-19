@@ -5,7 +5,6 @@ hide circle
 
 entity international_standard_classification_of_occupations_2008 {
   .. Main ..
-  group : string ⚡
   code : string ⚡
   title : string ⚡
   definition : string

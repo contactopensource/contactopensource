@@ -12,23 +12,31 @@ mix phx.gen.html \
         retired_at:timestampNone \
         retired_by:urlNone \
         locale_id:locale.idNone \
-        title:"string{50}":index \
-        subtitle:"string{50}":index \
+        title:string:index \
+        subtitle:string:index \
         summary:stringNone \
         description:textNone \
         disambiguation:textNone \
-        image_1080x1080_url:urlNone \
-        image_1080x1080_alt:textNone \
+        avatar_image_400x400_url:urlNone \
+        avatar_image_400x400_alt:urlNone \
+        main_image_1080x1080_url:urlNone \
+        main_image_1080x1080_alt:textNone \
+        main_image_1920x1080_url:urlNone \
+        main_image_1920x1080_alt:textNone \
+        main_image_1080x1920_url:urlNone \
+        main_image_1080x1920_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
+        quick_response_code_id:quick_response_code.idNone \
+        universal_product_code_id:universal_product_code.idNone \
         label:textNone \
         number_text:text:index \
-        e164_text:"string{15}":index \
-        e164_country_code:"string{3}":index \
-        e164_national_destination_code:"string{13}":index \
-        e164_group_identification_code:"string{4}"None \
-        e164_trial_identification_code:"string{3}"None \
-        e164_subscriber_number:"string{14}"None \
+        e164_text:string:index \
+        e164_country_code:string:index \
+        e164_national_destination_code:string:index \
+        e164_group_identification_code:stringNone \
+        e164_trial_identification_code:stringNone \
+        e164_subscriber_number:stringNone \
     --force \
     --no-timestamps \
 

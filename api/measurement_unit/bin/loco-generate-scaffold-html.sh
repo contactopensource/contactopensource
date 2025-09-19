@@ -15,4 +15,6 @@ cargo loco generate scaffold --html \
         name:text \
         symbol:text \
         measurement_system_id:references \
+        numerator:measurement_unit.id \
+        denominator:measurement_unit.id \
 

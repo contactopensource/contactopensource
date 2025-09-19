@@ -13,8 +13,8 @@ rails generate scaffold \
         locale_id:references \
         key:string:index \
         name:string:index \
-        code:"string{3}":index \
-        stock:"string{1}":index \
+        code:string:index \
+        stock:string:index \
     --force \
     --no-timestamps \
 

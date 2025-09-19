@@ -14,6 +14,8 @@ rails generate scaffold \
         name:text \
         symbol:text \
         measurement_system_id:references \
+        numerator:references \
+        denominator:references \
     --force \
     --no-timestamps \
 

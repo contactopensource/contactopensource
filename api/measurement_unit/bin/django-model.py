@@ -14,4 +14,6 @@ class MeasurementUnit(models.Model):
         name = models.TextAttribute("name")
         symbol = models.TextAttribute("symbol")
         measurement_system_id = models.UnknownAttribute("None")
+        numerator = models.UnknownAttribute("None")
+        denominator = models.UnknownAttribute("None")
 

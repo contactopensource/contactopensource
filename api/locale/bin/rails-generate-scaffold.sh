@@ -19,6 +19,7 @@ rails generate scaffold \
         variant_code:text \
         decimal_separator:text \
         grouping_separator:text \
+        currency_name:text \
         currency_code:text \
         currency_symbol:text \
         quotation_start_delimiter:text \

@@ -1,0 +1,15 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity united_kingdom_civil_service_grade {
+  .. Main ..
+  step : integer ⚡
+  label : string ⚡
+  abbreviation : string ⚡
+  minimum_salary : integer
+  definition : string
+}
+
+@enduml
