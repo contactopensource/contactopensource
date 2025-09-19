@@ -1,0 +1,16 @@
+country_code_iso_3166_1:
+  title: Country Code ISO 3166-1
+  model: CountryCodeIso3166Dash1
+  summary: |-
+
+    Country Code ISO 3166-1
+
+  description: |-
+
+    <https://en.wikipedia.org/wiki/ISO_3166-1>
+
+  attribute_groups:
+    - Main:
+      - alpha_2:string(2):
+          help: TODO
+          type: string(2)
