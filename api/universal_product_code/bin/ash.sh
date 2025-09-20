@@ -19,3 +19,5 @@ mix ash.gen.resource \
     --attribute image_url:url \
     --attribute image_alt:text \
 
+mix ash.codegen create_universal_product_code
+mix ash.migrate

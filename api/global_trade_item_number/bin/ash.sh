@@ -38,3 +38,5 @@ mix ash.gen.resource \
     --attribute check_digit:digit \
     --attribute indicator_digit:digit \
 
+mix ash.codegen create_global_trade_item_number
+mix ash.migrate

@@ -43,3 +43,5 @@ mix ash.gen.resource \
     --attribute effort_card_id:card.id \
     --attribute effort_value:number \
 
+mix ash.codegen create_plan_rice
+mix ash.migrate

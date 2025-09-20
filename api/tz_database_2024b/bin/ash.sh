@@ -41,3 +41,5 @@ mix ash.gen.resource \
     --attribute name:text \
     --attribute comment:text \
 
+mix ash.codegen create_tz_database_2024b
+mix ash.migrate

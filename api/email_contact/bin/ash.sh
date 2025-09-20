@@ -37,3 +37,5 @@ mix ash.gen.resource \
     --attribute addr_spec:text \
     --attribute local_part:text \
 
+mix ash.codegen create_email_contact
+mix ash.migrate

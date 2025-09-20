@@ -20,3 +20,5 @@ mix ash.gen.resource \
     --attribute blue:byte \
     --attribute alpha:byte \
 
+mix ash.codegen create_color_point_rgba_with_byte
+mix ash.migrate

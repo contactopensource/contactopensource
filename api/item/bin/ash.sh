@@ -38,3 +38,5 @@ mix ash.gen.resource \
     --attribute stock_keeping_unit_id:stock_keeping_unit.id \
     --attribute universal_product_code_id:universal_product_code.id \
 
+mix ash.codegen create_item
+mix ash.migrate

@@ -18,3 +18,5 @@ mix ash.gen.resource \
     --attribute key:string \
     --attribute formal_name:string \
 
+mix ash.codegen create_status_system
+mix ash.migrate

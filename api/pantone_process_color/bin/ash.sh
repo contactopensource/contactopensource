@@ -20,3 +20,5 @@ mix ash.gen.resource \
     --attribute code:string \
     --attribute stock:string \
 
+mix ash.codegen create_pantone_process_color
+mix ash.migrate

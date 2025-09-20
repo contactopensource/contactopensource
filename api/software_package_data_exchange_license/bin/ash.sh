@@ -17,3 +17,5 @@ mix ash.gen.resource \
     --attribute locale_id:locale.id \
     --attribute code:string \
 
+mix ash.codegen create_software_package_data_exchange_license
+mix ash.migrate

@@ -8,3 +8,5 @@ mix ash.gen.resource \
     --extend postgres \
     --uuid-primary-key id \
 
+mix ash.codegen create_uri_contact
+mix ash.migrate

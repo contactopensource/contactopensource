@@ -10,3 +10,5 @@ mix ash.gen.resource \
     --attribute access_agent_id:access_agent.id \
     --attribute access_attribute_id:access_attribute.id \
 
+mix ash.codegen create_access_assignment
+mix ash.migrate

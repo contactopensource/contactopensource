@@ -39,3 +39,5 @@ mix ash.gen.resource \
     --attribute relevant_card_id:card.id \
     --attribute timely_card_id:card.id \
 
+mix ash.codegen create_plan_smart
+mix ash.migrate

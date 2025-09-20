@@ -36,3 +36,5 @@ mix ash.gen.resource \
     --attribute objective_card_id:card.id \
     --attribute key_result_card_ids:card.id[] \
 
+mix ash.codegen create_plan_okr
+mix ash.migrate

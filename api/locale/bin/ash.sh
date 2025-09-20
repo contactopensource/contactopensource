@@ -29,3 +29,5 @@ mix ash.gen.resource \
     --attribute quotation_start_delimiter:text \
     --attribute quotation_stop_delimiter:text \
 
+mix ash.codegen create_locale
+mix ash.migrate

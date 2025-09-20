@@ -33,3 +33,5 @@ mix ash.gen.resource \
     --attribute quick_response_code_id:quick_response_code.id \
     --attribute universal_product_code_id:universal_product_code.id \
 
+mix ash.codegen create_content_application
+mix ash.migrate

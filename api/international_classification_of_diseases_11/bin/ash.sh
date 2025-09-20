@@ -34,3 +34,5 @@ mix ash.gen.resource \
     --attribute universal_product_code_id:universal_product_code.id \
     --attribute code:string \
 
+mix ash.codegen create_international_classification_of_diseases_11
+mix ash.migrate

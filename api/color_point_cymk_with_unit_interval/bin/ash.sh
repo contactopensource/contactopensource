@@ -20,3 +20,5 @@ mix ash.gen.resource \
     --attribute magenta:unit_interval \
     --attribute black:unit_interval \
 
+mix ash.codegen create_color_point_cymk_as_unit_interval
+mix ash.migrate

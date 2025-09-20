@@ -12,3 +12,5 @@ mix ash.gen.resource \
     --attribute title:string \
     --attribute definition:text \
 
+mix ash.codegen create_united_states_bureau_of_labor_statistics_standard_occupational_classification_2018
+mix ash.migrate

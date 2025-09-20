@@ -19,3 +19,5 @@ mix ash.gen.resource \
     --attribute image_url:url \
     --attribute image_alt:text \
 
+mix ash.codegen create_quick_response_code
+mix ash.migrate

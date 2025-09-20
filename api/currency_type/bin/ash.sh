@@ -19,3 +19,5 @@ mix ash.gen.resource \
     --attribute code:text \
     --attribute symbol:text \
 
+mix ash.codegen create_currency_type
+mix ash.migrate

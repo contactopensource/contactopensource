@@ -18,3 +18,5 @@ mix ash.gen.resource \
     --attribute itemtype:URL \
     --attribute itemprop:text \
 
+mix ash.codegen create_microdata_item
+mix ash.migrate

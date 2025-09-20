@@ -49,3 +49,5 @@ mix ash.gen.resource \
     --attribute variable_channel_count_minimum:integer \
     --attribute variable_channel_count_maximum:integer \
 
+mix ash.codegen create_codec
+mix ash.migrate

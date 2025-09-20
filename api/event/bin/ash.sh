@@ -40,3 +40,5 @@ mix ash.gen.resource \
     --attribute recurring:boolean \
     --attribute recurring_description:text \
 
+mix ash.codegen create_event
+mix ash.migrate

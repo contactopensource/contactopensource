@@ -21,3 +21,5 @@ mix ash.gen.resource \
     --attribute black:byte \
     --attribute alpha:byte \
 
+mix ash.codegen create_color_point_cymka_as_byte
+mix ash.migrate

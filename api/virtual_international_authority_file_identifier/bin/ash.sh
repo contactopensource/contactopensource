@@ -34,3 +34,5 @@ mix ash.gen.resource \
     --attribute universal_product_code_id:universal_product_code.id \
     --attribute key:string \
 
+mix ash.codegen create_virtual_international_authority_file_identifier
+mix ash.migrate

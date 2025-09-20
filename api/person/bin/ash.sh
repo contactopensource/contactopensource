@@ -62,3 +62,5 @@ mix ash.gen.resource \
     --attribute death_date:date \
     --attribute death_date_year:integer \
 
+mix ash.codegen create_person
+mix ash.migrate

@@ -19,3 +19,5 @@ mix ash.gen.resource \
     --attribute green:unit_interval \
     --attribute blue:unit_interval \
 
+mix ash.codegen create_color_point_rgb_with_unit_interval
+mix ash.migrate

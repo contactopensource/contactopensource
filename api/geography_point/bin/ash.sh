@@ -22,3 +22,5 @@ mix ash.gen.resource \
     --attribute elevation_agl_as_meters:meters \
     --attribute elevation_msl_as_meters:meters \
 
+mix ash.codegen create_geography_point
+mix ash.migrate

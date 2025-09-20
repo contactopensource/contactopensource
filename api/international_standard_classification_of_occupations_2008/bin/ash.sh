@@ -11,3 +11,5 @@ mix ash.gen.resource \
     --attribute title:string \
     --attribute definition:string \
 
+mix ash.codegen create_international_standard_classification_of_occupations_2008
+mix ash.migrate

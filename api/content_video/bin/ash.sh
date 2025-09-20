@@ -37,3 +37,5 @@ mix ash.gen.resource \
     --attribute height_as_pixels:count \
     --attribute duration_as_seconds:count \
 
+mix ash.codegen create_content_video
+mix ash.migrate

@@ -10,3 +10,5 @@ mix ash.gen.resource \
     --attribute alpha_2:string(2):string \
     --attribute country_code_iso_3166_1_id:references \
 
+mix ash.codegen create_subcountry_code_iso_3166_2
+mix ash.migrate

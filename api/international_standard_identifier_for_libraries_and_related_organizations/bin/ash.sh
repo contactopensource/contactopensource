@@ -36,3 +36,5 @@ mix ash.gen.resource \
     --attribute prefix:varchar \
     --attribute suffix:varchar \
 
+mix ash.codegen create_international_standard_identifier_for_libraries_and_related_organization
+mix ash.migrate

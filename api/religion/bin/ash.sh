@@ -34,3 +34,5 @@ mix ash.gen.resource \
     --attribute universal_product_code_id:universal_product_code.id \
     --attribute name:text \
 
+mix ash.codegen create_religion
+mix ash.migrate

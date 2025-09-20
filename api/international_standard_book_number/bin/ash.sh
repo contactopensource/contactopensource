@@ -39,3 +39,5 @@ mix ash.gen.resource \
     --attribute publication:string \
     --attribute check_digit:digit \
 
+mix ash.codegen create_international_standard_book_number
+mix ash.migrate

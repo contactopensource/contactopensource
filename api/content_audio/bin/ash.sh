@@ -35,3 +35,5 @@ mix ash.gen.resource \
     --attribute codec_id:codec.id \
     --attribute duration_as_seconds:count \
 
+mix ash.codegen create_content_audio
+mix ash.migrate

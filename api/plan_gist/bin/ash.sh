@@ -38,3 +38,5 @@ mix ash.gen.resource \
     --attribute step_card_id:card.id \
     --attribute task_card_id:card.id \
 
+mix ash.codegen create_plan_gist
+mix ash.migrate

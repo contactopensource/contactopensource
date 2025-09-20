@@ -41,3 +41,5 @@ mix ash.gen.resource \
     --attribute e164_trial_identification_code:string \
     --attribute e164_subscriber_number:string \
 
+mix ash.codegen create_phone_contact
+mix ash.migrate

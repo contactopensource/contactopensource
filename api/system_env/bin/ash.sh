@@ -18,3 +18,5 @@ mix ash.gen.resource \
     --attribute key:string \
     --attribute value:text \
 
+mix ash.codegen create_system_env
+mix ash.migrate

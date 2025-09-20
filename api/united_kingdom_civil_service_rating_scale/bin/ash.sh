@@ -11,3 +11,5 @@ mix ash.gen.resource \
     --attribute label:string \
     --attribute definition:string \
 
+mix ash.codegen create_united_kingdom_civil_service_rating_scale
+mix ash.migrate

@@ -36,3 +36,5 @@ mix ash.gen.resource \
     --attribute stop:timestamp \
     --attribute duration_as_seconds:count \
 
+mix ash.codegen create_tag
+mix ash.migrate

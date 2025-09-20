@@ -21,3 +21,5 @@ mix ash.gen.resource \
     --attribute numerator:measurement_unit.id \
     --attribute denominator:measurement_unit.id \
 
+mix ash.codegen create_measurement_unit
+mix ash.migrate

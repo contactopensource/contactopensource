@@ -10,3 +10,5 @@ mix ash.gen.resource \
     --attribute access_tenant_id:access_tenant.id \
     --attribute access_agent_id:access_agent.id \
 
+mix ash.codegen create_access_occupancy
+mix ash.migrate

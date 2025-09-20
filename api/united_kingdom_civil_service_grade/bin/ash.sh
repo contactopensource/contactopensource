@@ -13,3 +13,5 @@ mix ash.gen.resource \
     --attribute minimum_salary:integer \
     --attribute definition:string \
 
+mix ash.codegen create_united_kingdom_civil_service_grade
+mix ash.migrate

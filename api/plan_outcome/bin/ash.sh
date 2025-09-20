@@ -34,3 +34,5 @@ mix ash.gen.resource \
     --attribute universal_product_code_id:universal_product_code.id \
     --attribute plan_id:plan.id \
 
+mix ash.codegen create_plan_outcome
+mix ash.migrate

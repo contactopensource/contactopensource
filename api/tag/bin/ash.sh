@@ -35,3 +35,5 @@ mix ash.gen.resource \
     --attribute key:string \
     --attribute description:text \
 
+mix ash.codegen create_tag
+mix ash.migrate

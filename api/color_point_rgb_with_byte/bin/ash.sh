@@ -19,3 +19,5 @@ mix ash.gen.resource \
     --attribute green:byte \
     --attribute blue:byte \
 
+mix ash.codegen create_color_point_rgb_with_byte
+mix ash.migrate

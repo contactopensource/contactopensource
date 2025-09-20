@@ -36,3 +36,5 @@ mix ash.gen.resource \
     --attribute width_as_pixels:count \
     --attribute height_as_pixels:count \
 
+mix ash.codegen create_content_image
+mix ash.migrate

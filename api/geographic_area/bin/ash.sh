@@ -36,3 +36,5 @@ mix ash.gen.resource \
     --attribute area_as_meter2:meter2 \
     --attribute center_geographic_point:geographic_point \
 
+mix ash.codegen create_geographic_area
+mix ash.migrate

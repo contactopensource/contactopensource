@@ -9,3 +9,5 @@ mix ash.gen.resource \
     --uuid-primary-key id \
     --attribute alpha_2:string(2):string \
 
+mix ash.codegen create_country_code_iso_3166_1
+mix ash.migrate

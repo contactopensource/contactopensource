@@ -37,3 +37,5 @@ mix ash.gen.resource \
     --attribute global_trade_item_number_id:global_trade_item_number.id \
     --attribute international_standard_book_number_id:international_standard_book_number.id \
 
+mix ash.codegen create_book
+mix ash.migrate

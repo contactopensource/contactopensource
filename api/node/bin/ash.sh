@@ -38,3 +38,5 @@ mix ash.gen.resource \
     --attribute xml:xml \
     --attribute number:numeric \
 
+mix ash.codegen create_node
+mix ash.migrate

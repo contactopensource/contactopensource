@@ -39,3 +39,5 @@ mix ash.gen.resource \
     --attribute four_corner_open_photo_url:url \
     --attribute four_corner_face_photo_url:url \
 
+mix ash.codegen create_passport
+mix ash.migrate

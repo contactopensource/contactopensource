@@ -16,3 +16,5 @@ mix ash.gen.resource \
     --attribute retired_by:url \
     --attribute locale_id:locale.id \
 
+mix ash.codegen create_meta
+mix ash.migrate

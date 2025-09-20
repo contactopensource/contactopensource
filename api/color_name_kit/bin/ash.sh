@@ -21,3 +21,5 @@ mix ash.gen.resource \
     --attribute color_naming_system_name:text \
     --attribute pantone_process_color_name:text \
 
+mix ash.codegen create_color_name_kit
+mix ash.migrate

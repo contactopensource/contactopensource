@@ -36,3 +36,5 @@ mix ash.gen.resource \
     --attribute country_name:string \
     --attribute explanation:text \
 
+mix ash.codegen create_gs1_country_code
+mix ash.migrate

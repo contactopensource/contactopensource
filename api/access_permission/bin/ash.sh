@@ -10,3 +10,5 @@ mix ash.gen.resource \
     --attribute access_attribute_it:access_attribute.id \
     --attribute access_operation_id:access_operation.id \
 
+mix ash.codegen create_access_permission
+mix ash.migrate

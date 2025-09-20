@@ -44,3 +44,5 @@ mix ash.gen.resource \
     --attribute premise_address_text:text \
     --attribute global_location_number_text:text \
 
+mix ash.codegen create_postal_contact
+mix ash.migrate

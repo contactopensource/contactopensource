@@ -39,3 +39,5 @@ mix ash.gen.resource \
     --attribute suffix:string \
     --attribute parameters:string[] \
 
+mix ash.codegen create_media_type
+mix ash.migrate

@@ -53,3 +53,5 @@ mix ash.gen.resource \
     --attribute unit_interval:unit_interval \
     --attribute dual_interval:dual_interval \
 
+mix ash.codegen create_edge
+mix ash.migrate

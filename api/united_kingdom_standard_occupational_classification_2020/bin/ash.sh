@@ -11,3 +11,5 @@ mix ash.gen.resource \
     --attribute title:string \
     --attribute definition:string \
 
+mix ash.codegen create_united_kingdom_standard_occupational_classification_2020
+mix ash.migrate

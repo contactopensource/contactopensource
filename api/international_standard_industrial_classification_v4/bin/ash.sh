@@ -35,3 +35,5 @@ mix ash.gen.resource \
     --attribute code:string \
     --attribute name:string \
 
+mix ash.codegen create_international_standard_industrial_classification_v4
+mix ash.migrate

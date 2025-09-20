@@ -39,3 +39,5 @@ mix ash.gen.resource \
     --attribute pessimistic:card.id \
     --attribute equilibristic:card.id \
 
+mix ash.codegen create_plan_rope
+mix ash.migrate
