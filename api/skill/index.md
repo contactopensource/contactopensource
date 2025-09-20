@@ -1,4 +1,4 @@
-# ability
+# skill
 
 A skill is the ability to act with determined results with good execution.
 

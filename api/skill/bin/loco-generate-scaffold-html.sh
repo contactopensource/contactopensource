@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    ability \
+    skill \
         id:uuid \
         lock_version:integer \
         created_at:timestamp \

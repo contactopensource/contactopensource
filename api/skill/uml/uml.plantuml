@@ -3,7 +3,7 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity ability {
+entity skill {
   .. Meta ..
   id : uuid ⚡
   lock_version : integer

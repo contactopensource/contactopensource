@@ -2,7 +2,7 @@
 set -euf
 
 rails generate scaffold \
-    ability \
+    skill \
         lock_version:integer \
         created_at:timestamp \
         created_by:text \

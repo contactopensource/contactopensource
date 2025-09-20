@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS ability;
-DROP INDEX IF EXISTS index_ability_id;
-DROP INDEX IF EXISTS index_ability_title;
-DROP INDEX IF EXISTS index_ability_subtitle;
+DROP TABLE IF EXISTS skill;
+DROP INDEX IF EXISTS index_skill_id;
+DROP INDEX IF EXISTS index_skill_title;
+DROP INDEX IF EXISTS index_skill_subtitle;
 

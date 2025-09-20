@@ -1,7 +1,7 @@
-CREATE TABLE ability (
+CREATE TABLE skill (
 );
 
-CREATE INDEX index_ability_id on ability(id);
-CREATE INDEX index_ability_title on ability(title);
-CREATE INDEX index_ability_subtitle on ability(subtitle);
+CREATE INDEX index_skill_id on skill(id);
+CREATE INDEX index_skill_title on skill(title);
+CREATE INDEX index_skill_subtitle on skill(subtitle);
 
