@@ -1,4 +1,6 @@
 DROP TABLE IF EXISTS lumina_foundation_skill_level;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_id;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_title;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_subtitle;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_number;
-DROP INDEX IF EXISTS index_lumina_foundation_skill_level_label;
 

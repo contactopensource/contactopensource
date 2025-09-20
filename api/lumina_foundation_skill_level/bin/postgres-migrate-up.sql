@@ -1,6 +1,8 @@
 CREATE TABLE lumina_foundation_skill_level (
 );
 
+CREATE INDEX index_lumina_foundation_skill_level_id on lumina_foundation_skill_level(id);
+CREATE INDEX index_lumina_foundation_skill_level_title on lumina_foundation_skill_level(title);
+CREATE INDEX index_lumina_foundation_skill_level_subtitle on lumina_foundation_skill_level(subtitle);
 CREATE INDEX index_lumina_foundation_skill_level_number on lumina_foundation_skill_level(number);
-CREATE INDEX index_lumina_foundation_skill_level_label on lumina_foundation_skill_level(label);
 

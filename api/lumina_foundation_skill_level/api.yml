@@ -23,17 +23,21 @@ lumina_foundation_skill_level:
     
     Level 8: Master. You are completely autonomous, and you are regarded as a domain leader and scholar. You have your choice of projects, and you likely select those that will allow you to create significant impact in the field and offer new ideas or practices.
 
+    The implementation is mostly covered by _card.yml:
+
+      - title:
+          type: string
+          example: Distinguished
+      - description:
+          type: string
+          example: You've likely successfully led teams … 
+
   module: Codes
   attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
     - Main:
       - number:
           type: integer
           example: 7
           index: true
-      - label:
-          type: string
-          example: Distinguished
-          index: true
-      - description:
-          type: string
-          example: You've likely successfully led teams … 
