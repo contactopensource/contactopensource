@@ -9,4 +9,7 @@ def render(entity):
     s += "    --uuid-primary-key id \\\n"
     s += ''.join(map(attribute_group.render, entity.attribute_groups))
     s += "\n"
+    s += f"mix ash.codegen create_{entity.id}\n"
+    s += "mix ash.migrate\n"
+
     return s
