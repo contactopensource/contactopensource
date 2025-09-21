@@ -23,7 +23,6 @@ skill:
 
   links:
     - https://wikipedia.org/wiki/Skill
-  snake_case_plural: abilities
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
