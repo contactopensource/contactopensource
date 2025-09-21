@@ -6,11 +6,11 @@ mix phx.gen.html \
         id:uuid:index \
         sign:char:index \
         lock_version:integerNone \
-        created_at:timestamp_utc_usec:index \
+        created_at:timestamp:index \
         created_by:url:index \
-        updated_at:timestamp_utc_usec:index \
+        updated_at:timestamp:index \
         updated_by:url:index \
-        deleted_at:timestamp_utc_usec:index \
+        deleted_at:timestamp:index \
         deleted_by:url:index \
         locale_id:locale.id:index \
         title:string:index \
@@ -45,8 +45,8 @@ mix phx.gen.html \
         object_schema:textNone \
         object_table:textNone \
         object_id:idNone \
-        start_at_timestamp_utc:timestamp_utc_usecNone \
-        stop_at_timestamp_utc:timestamp_utc_usecNone \
+        start_at_timestamp_utc:timestampNone \
+        stop_at_timestamp_utc:timestampNone \
         count:integerNone \
         unit_interval:unit_intervalNone \
         dual_interval:dual_intervalNone \

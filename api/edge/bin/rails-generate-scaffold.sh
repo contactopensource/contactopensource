@@ -5,11 +5,11 @@ rails generate scaffold \
     edge \
         sign:char:index \
         lock_version:integer \
-        created_at:timestamp_utc_usec:index \
+        created_at:timestamp:index \
         created_by:text:index \
-        updated_at:timestamp_utc_usec:index \
+        updated_at:timestamp:index \
         updated_by:text:index \
-        deleted_at:timestamp_utc_usec:index \
+        deleted_at:timestamp:index \
         deleted_by:text:index \
         locale_id:references:index \
         title:string:index \
@@ -44,8 +44,8 @@ rails generate scaffold \
         object_schema:text \
         object_table:text \
         object_id:id \
-        start_at_timestamp_utc:timestamp_utc_usec \
-        stop_at_timestamp_utc:timestamp_utc_usec \
+        start_at_timestamp_utc:timestamp \
+        stop_at_timestamp_utc:timestamp \
         count:integer \
         unit_interval:unit_interval \
         dual_interval:dual_interval \

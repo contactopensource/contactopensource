@@ -31,3 +31,9 @@ mix ash.migrate
 #     index[:code]
 #     index[:title]
 #     index[:definition]
+#
+#
+# Change the attributes created_at and updated_at to:
+#
+#   create_timestamp :created_at
+#   update_timestamp :updated_at

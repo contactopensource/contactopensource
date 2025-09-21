@@ -13,3 +13,21 @@ mix ash.gen.resource \
 mix ash.codegen create_subcountry_code_iso_3166_2
 mix ash.migrate
 
+### Extra ###
+#
+# Edit file lib/my_app/my_domain/subcountry_code_iso_3166_2.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#
+#
+# Change the attributes created_at and updated_at to:
+#
+#   create_timestamp :created_at
+#   update_timestamp :updated_at

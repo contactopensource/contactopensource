@@ -21,6 +21,13 @@ def render(attribute):
 def render_type(attribute):
     if hasattr(attribute, 'join') and attribute.join:
         return "references"
+    # Adjust as needed for Ash API; ideally remove these if/when Ash improves.
+    match attribute.type:
+        case "char":
+             attribute.type = "string"
+        case "timestamp_utc_usec":
+             attribute.type = "timestamp"
+    # Trim any parentheses e.g. from "string(80)" into "string" because of Ash API.
     attribute.type = re.sub(r'\(.*', r'', attribute.type)
     return attribute.type
 
@@ -34,7 +41,7 @@ def render_modifiers(attribute):
         s += ":public" 
     if hasattr(attribute, 'sensitive') and attribute.sensitive:
         s += ":sensitive" 
-    if hasattr(attribute, 'sensitive') and attribute.sensitive:
+    if hasattr(attribute, 'required') and attribute.sensitive:
         s += ":required" 
     return s
 

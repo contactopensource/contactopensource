@@ -13,3 +13,21 @@ mix ash.gen.resource \
 mix ash.codegen create_access_permission
 mix ash.migrate
 
+### Extra ###
+#
+# Edit file lib/my_app/access/access_permission.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#
+#
+# Change the attributes created_at and updated_at to:
+#
+#   create_timestamp :created_at
+#   update_timestamp :updated_at

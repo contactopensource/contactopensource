@@ -16,15 +16,15 @@ Meta:
 
   * lock_version: integer
 
-  * created_at: timestamp_utc_usec (index)
+  * created_at: timestamp (index)
 
   * created_by: url (index)
 
-  * updated_at: timestamp_utc_usec (index)
+  * updated_at: timestamp (index)
 
   * updated_by: url (index)
 
-  * deleted_at: timestamp_utc_usec (index)
+  * deleted_at: timestamp (index)
 
   * deleted_by: url (index)
 

@@ -9,11 +9,11 @@ mix ash.gen.resource \
     --uuid-primary-key id \
     --attribute sign:char \
     --attribute lock_version:integer \
-    --attribute created_at:timestamp_utc_usec \
+    --attribute created_at:timestamp \
     --attribute created_by:url \
-    --attribute updated_at:timestamp_utc_usec \
+    --attribute updated_at:timestamp \
     --attribute updated_by:url \
-    --attribute deleted_at:timestamp_utc_usec \
+    --attribute deleted_at:timestamp \
     --attribute deleted_by:url \
     --attribute locale_id:locale.id \
     --attribute red:byte \
@@ -43,3 +43,9 @@ mix ash.migrate
 #     index[:deleted_at]
 #     index[:deleted_by]
 #     index[:locale_id]
+#
+#
+# Change the attributes created_at and updated_at to:
+#
+#   create_timestamp :created_at
+#   update_timestamp :updated_at

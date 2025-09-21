@@ -6,11 +6,11 @@ cargo loco generate scaffold --html \
         id:uuid \
         sign:char \
         lock_version:integer \
-        created_at:timestamp_utc_usec \
+        created_at:timestamp \
         created_by:url \
-        updated_at:timestamp_utc_usec \
+        updated_at:timestamp \
         updated_by:url \
-        deleted_at:timestamp_utc_usec \
+        deleted_at:timestamp \
         deleted_by:url \
         locale_id:references \
         title:string \
@@ -45,8 +45,8 @@ cargo loco generate scaffold --html \
         object_schema:text \
         object_table:text \
         object_id:id \
-        start_at_timestamp_utc:timestamp_utc_usec \
-        stop_at_timestamp_utc:timestamp_utc_usec \
+        start_at_timestamp_utc:timestamp \
+        stop_at_timestamp_utc:timestamp \
         count:integer \
         unit_interval:unit_interval \
         dual_interval:dual_interval \

@@ -8,6 +8,9 @@ def render(entity):
         x = attribute_group.render(x)
         output['script'] += x['script']
         output['extra'] += x['extra']
+
+    ### Script ###
+
     s = "mix ash.gen.resource \\\n"
     s += f"    MyApp.{entity.module}.{entity.model} \\\n"
     s += "    --conflicts replace \\\n"
@@ -19,17 +22,23 @@ def render(entity):
     s += f"mix ash.codegen create_{entity.id}\n"
     s += "mix ash.migrate\n"
     s += "\n"
-    if output['extra'] != "":
-        if entity.module == None:
-            domain = "my_domain"
-        else:
-            domain = snake_case(entity.module)
-        s += "### Extra ###\n#\n"
-        s += f"# Edit file lib/my_app/{domain}/{entity.id}.ex\n#\n"
-        s += "# Find this section:\n#\n"
-        s += "#   postgres do\n"
-        s += "#     table …\n"
-        s += "#     repo …\n#\n"
-        s += "# Add this:\n#\n"
-        s += output['extra']
+
+    ### Extra ###
+
+    if entity.module == None:
+        domain = "my_domain"
+    else:
+        domain = snake_case(entity.module)
+    s += "### Extra ###\n#\n"
+    s += f"# Edit file lib/my_app/{domain}/{entity.id}.ex\n#\n"
+    s += "# Find this section:\n#\n"
+    s += "#   postgres do\n"
+    s += "#     table …\n"
+    s += "#     repo …\n#\n"
+    s += "# Add this:\n#\n"
+    s += output['extra']
+    s += "#\n#\n"
+    s += "# Change the attributes created_at and updated_at to:\n#\n"
+    s += "#   create_timestamp :created_at\n"
+    s += "#   update_timestamp :updated_at\n"
     return s
