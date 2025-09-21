@@ -13,8 +13,8 @@ mix ash.gen.resource \
     --attribute created_by:url \
     --attribute updated_at:timestamp_utc_usec \
     --attribute updated_by:url \
-    --attribute retired_at:timestamp_utc_usec \
-    --attribute retired_by:url \
+    --attribute deleted_at:timestamp_utc_usec \
+    --attribute deleted_by:url \
     --attribute locale_id:locale.id \
     --attribute title:string \
     --attribute subtitle:string \
@@ -39,3 +39,27 @@ mix ash.gen.resource \
 
 mix ash.codegen create_gs1_country_code
 mix ash.migrate
+
+### Extra ###
+#
+# Edit file lib/my_app/code/gs1_country_code.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#     index[:sign]
+#     index[:created_at]
+#     index[:created_by]
+#     index[:updated_at]
+#     index[:updated_by]
+#     index[:deleted_at]
+#     index[:deleted_by]
+#     index[:locale_id]
+#     index[:title]
+#     index[:subtitle]
+#     index[:code]

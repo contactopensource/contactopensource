@@ -27,3 +27,18 @@ mix ash.gen.resource \
 
 mix ash.codegen create_card
 mix ash.migrate
+
+### Extra ###
+#
+# Edit file lib/my_app/my_domain/card.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#     index[:title]
+#     index[:subtitle]

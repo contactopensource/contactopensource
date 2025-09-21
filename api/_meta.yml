@@ -6,26 +6,37 @@
         - sign:
             help:  A sign character such as an emoji to indicate status, or categorization, or label, or importance; this item is intended to be user-visible, and intended to be shown early in an list of items, such as immediately after the primary key id, and before any item title.
             type: char
+            index: true
             example: the emoji "green check mark" for the semantics of "this item is complete".
         - lock_version:
             help: This is for optimistic locking.
             type: integer
         - created_at:
+            help: The time when this happened.
             type: timestamp_utc_usec
+            index: true
         - created_by:
             help: The user/agent/service/etc. that did this.
             type: url
+            index: true
         - updated_at:
+            help: The time when this happened.
             type: timestamp_utc_usec
+            index: true
         - updated_by:
             help: The user/agent/service/etc. that did this.
             type: url
-        - retired_at:
+            index: true
+        - deleted_at:
+            help: The time when this happened.
             type: timestamp_utc_usec
-        - retired_by:
+            index: true
+        - deleted_by:
             help: The user/agent/service/etc. that did this.
             type: url
+            index: true
         - locale_id:
             help:  An international locale identifier, such as the id of locale "English - United States".
             type: locale.id
             example: the id of locale "English - United States".
+            index: true

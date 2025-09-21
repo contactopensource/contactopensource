@@ -2,6 +2,14 @@ CREATE TABLE global_trade_item_number (
 );
 
 CREATE INDEX index_global_trade_item_number_id on global_trade_item_number(id);
+CREATE INDEX index_global_trade_item_number_sign on global_trade_item_number(sign);
+CREATE INDEX index_global_trade_item_number_created_at on global_trade_item_number(created_at);
+CREATE INDEX index_global_trade_item_number_created_by on global_trade_item_number(created_by);
+CREATE INDEX index_global_trade_item_number_updated_at on global_trade_item_number(updated_at);
+CREATE INDEX index_global_trade_item_number_updated_by on global_trade_item_number(updated_by);
+CREATE INDEX index_global_trade_item_number_deleted_at on global_trade_item_number(deleted_at);
+CREATE INDEX index_global_trade_item_number_deleted_by on global_trade_item_number(deleted_by);
+CREATE INDEX index_global_trade_item_number_locale_id on global_trade_item_number(locale_id);
 CREATE INDEX index_global_trade_item_number_title on global_trade_item_number(title);
 CREATE INDEX index_global_trade_item_number_subtitle on global_trade_item_number(subtitle);
 CREATE INDEX index_global_trade_item_number_code on global_trade_item_number(code);

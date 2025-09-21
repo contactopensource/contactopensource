@@ -4,15 +4,15 @@ set -euf
 mix phx.gen.html \
     None Ability None \
         id:uuid:index \
-        sign:charNone \
+        sign:char:index \
         lock_version:integerNone \
-        created_at:timestamp_utc_usecNone \
-        created_by:urlNone \
-        updated_at:timestamp_utc_usecNone \
-        updated_by:urlNone \
-        retired_at:timestamp_utc_usecNone \
-        retired_by:urlNone \
-        locale_id:locale.idNone \
+        created_at:timestamp_utc_usec:index \
+        created_by:url:index \
+        updated_at:timestamp_utc_usec:index \
+        updated_by:url:index \
+        deleted_at:timestamp_utc_usec:index \
+        deleted_by:url:index \
+        locale_id:locale.id:index \
         title:string:index \
         subtitle:string:index \
         summary:stringNone \

@@ -6,15 +6,15 @@ hide circle
 entity gs1_country_code {
   .. Meta ..
   id : uuid ⚡
-  sign : char
+  sign : char ⚡
   lock_version : integer
-  created_at : timestamp_utc_usec
-  created_by : url
-  updated_at : timestamp_utc_usec
-  updated_by : url
-  retired_at : timestamp_utc_usec
-  retired_by : url
-  locale_id : locale.id 🔑
+  created_at : timestamp_utc_usec ⚡
+  created_by : url ⚡
+  updated_at : timestamp_utc_usec ⚡
+  updated_by : url ⚡
+  deleted_at : timestamp_utc_usec ⚡
+  deleted_by : url ⚡
+  locale_id : locale.id ⚡ 🔑
   .. Card ..
   title : string ⚡
   subtitle : string ⚡

@@ -1,4 +1,11 @@
+import logging
 from . import attribute
 
 def render(attribute_group):
-    return ''.join(map(attribute.render, attribute_group.attributes))
+    logging.info("attribute_group.py render(attribute_group)")
+    output = {'script': '', 'extra': ''}
+    for x in attribute_group.attributes:
+        x = attribute.render(x)
+        output['script'] += x['script']
+        output['extra'] += x['extra']
+    return output

@@ -6,12 +6,17 @@ Attribute
 Modifiers: primary_key, array, public, sensitive, and required. i.e -a name:string:required
 """
 
+import logging
 import re
 
 def render(attribute):
+    logging.info("attribute.py render(attribute)")
+    output = {'script': '', 'extra': ''}
     if attribute.id == "id":
-        return ""
-    return f"    --attribute {attribute.id}:{render_type(attribute)}{render_modifiers(attribute)} \\\n"
+        return output
+    output['script'] = f"    --attribute {attribute.id}:{render_type(attribute)}{render_modifiers(attribute)} \\\n"
+    output['extra'] = render_index(attribute)
+    return output
 
 def render_type(attribute):
     if hasattr(attribute, 'join') and attribute.join:
@@ -32,3 +37,8 @@ def render_modifiers(attribute):
     if hasattr(attribute, 'sensitive') and attribute.sensitive:
         s += ":required" 
     return s
+
+def render_index(attribute):
+    if hasattr(attribute, 'index') and attribute.index:
+        return f"#     index[:{attribute.id}]\n"
+    return ''

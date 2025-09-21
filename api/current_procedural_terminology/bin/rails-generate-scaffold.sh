@@ -3,15 +3,15 @@ set -euf
 
 rails generate scaffold \
     medical_current_procedural_terminology_code_2025 \
-        sign:char \
+        sign:char:index \
         lock_version:integer \
-        created_at:timestamp_utc_usec \
-        created_by:text \
-        updated_at:timestamp_utc_usec \
-        updated_by:text \
-        retired_at:timestamp_utc_usec \
-        retired_by:text \
-        locale_id:references \
+        created_at:timestamp_utc_usec:index \
+        created_by:text:index \
+        updated_at:timestamp_utc_usec:index \
+        updated_by:text:index \
+        deleted_at:timestamp_utc_usec:index \
+        deleted_by:text:index \
+        locale_id:references:index \
         title:string:index \
         subtitle:string:index \
         summary:string \

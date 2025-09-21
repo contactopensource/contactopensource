@@ -15,3 +15,19 @@ mix ash.gen.resource \
 
 mix ash.codegen create_united_kingdom_civil_service_grade
 mix ash.migrate
+
+### Extra ###
+#
+# Edit file lib/my_app/codes/united_kingdom_civil_service_grade.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#     index[:step]
+#     index[:label]
+#     index[:abbreviation]

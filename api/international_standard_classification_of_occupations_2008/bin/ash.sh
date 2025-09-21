@@ -13,3 +13,18 @@ mix ash.gen.resource \
 
 mix ash.codegen create_international_standard_classification_of_occupations_2008
 mix ash.migrate
+
+### Extra ###
+#
+# Edit file lib/my_app/codes/international_standard_classification_of_occupations_2008.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#     index[:code]
+#     index[:title]

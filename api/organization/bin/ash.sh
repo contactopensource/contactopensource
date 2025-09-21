@@ -10,3 +10,4 @@ mix ash.gen.resource \
 
 mix ash.codegen create_organization
 mix ash.migrate
+

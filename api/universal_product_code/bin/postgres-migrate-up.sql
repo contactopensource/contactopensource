@@ -2,5 +2,13 @@ CREATE TABLE universal_product_code (
 );
 
 CREATE INDEX index_universal_product_code_id on universal_product_code(id);
+CREATE INDEX index_universal_product_code_sign on universal_product_code(sign);
+CREATE INDEX index_universal_product_code_created_at on universal_product_code(created_at);
+CREATE INDEX index_universal_product_code_created_by on universal_product_code(created_by);
+CREATE INDEX index_universal_product_code_updated_at on universal_product_code(updated_at);
+CREATE INDEX index_universal_product_code_updated_by on universal_product_code(updated_by);
+CREATE INDEX index_universal_product_code_deleted_at on universal_product_code(deleted_at);
+CREATE INDEX index_universal_product_code_deleted_by on universal_product_code(deleted_by);
+CREATE INDEX index_universal_product_code_locale_id on universal_product_code(locale_id);
 CREATE INDEX index_universal_product_code_code on universal_product_code(code);
 

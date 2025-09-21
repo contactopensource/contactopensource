@@ -1,5 +1,13 @@
 DROP TABLE IF EXISTS lumina_foundation_skill_level;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_id;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_sign;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_created_at;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_created_by;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_updated_at;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_updated_by;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_deleted_at;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_deleted_by;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_locale_id;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_title;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_subtitle;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_number;

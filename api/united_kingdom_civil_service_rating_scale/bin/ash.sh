@@ -13,3 +13,18 @@ mix ash.gen.resource \
 
 mix ash.codegen create_united_kingdom_civil_service_rating_scale
 mix ash.migrate
+
+### Extra ###
+#
+# Edit file lib/my_app/codes/united_kingdom_civil_service_rating_scale.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#     index[:rating]
+#     index[:label]

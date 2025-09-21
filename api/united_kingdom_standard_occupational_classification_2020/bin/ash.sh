@@ -13,3 +13,18 @@ mix ash.gen.resource \
 
 mix ash.codegen create_united_kingdom_standard_occupational_classification_2020
 mix ash.migrate
+
+### Extra ###
+#
+# Edit file lib/my_app/codes/united_kingdom_standard_occupational_classification_2020.ex
+#
+# Find this section:
+#
+#   postgres do
+#     table …
+#     repo …
+#
+# Add this:
+#
+#     index[:code]
+#     index[:title]

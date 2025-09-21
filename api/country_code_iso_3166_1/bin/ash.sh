@@ -11,3 +11,4 @@ mix ash.gen.resource \
 
 mix ash.codegen create_country_code_iso_3166_1
 mix ash.migrate
+

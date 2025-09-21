@@ -12,3 +12,4 @@ mix ash.gen.resource \
 
 mix ash.codegen create_access_assignment
 mix ash.migrate
+

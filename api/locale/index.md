@@ -10,23 +10,23 @@ Meta:
 
   * id: uuid (index)
 
-  * sign: char - example: the emoji "green check mark" for the semantics of "this item is complete".
+  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
-  * created_at: timestamp_utc_usec
+  * created_at: timestamp_utc_usec (index)
 
-  * created_by: url
+  * created_by: url (index)
 
-  * updated_at: timestamp_utc_usec
+  * updated_at: timestamp_utc_usec (index)
 
-  * updated_by: url
+  * updated_by: url (index)
 
-  * retired_at: timestamp_utc_usec
+  * deleted_at: timestamp_utc_usec (index)
 
-  * retired_by: url
+  * deleted_by: url (index)
 
-  * locale_id: locale.id - example: the id of locale "English - United States".
+  * locale_id: locale.id (index) - example: the id of locale "English - United States".
 
 Dialect:
 

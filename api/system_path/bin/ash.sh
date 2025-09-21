@@ -10,3 +10,4 @@ mix ash.gen.resource \
 
 mix ash.codegen create_system_path
 mix ash.migrate
+

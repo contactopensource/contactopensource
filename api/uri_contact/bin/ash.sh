@@ -10,3 +10,4 @@ mix ash.gen.resource \
 
 mix ash.codegen create_uri_contact
 mix ash.migrate
+
