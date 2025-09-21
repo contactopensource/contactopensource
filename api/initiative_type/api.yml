@@ -1,0 +1,21 @@
+initiative_type:
+  title: Initiative Type
+  model: InitiativeType
+  module: Works
+  summary: Initiative type for the initiative model.
+  description: |-
+
+    Initiative type examples:
+
+    - Product
+    - Project
+    - Program
+    - Portfolio
+    - Service
+    - Support
+
+  links:
+    - https://wikipedia.org/wiki/Initiative
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
