@@ -7,12 +7,13 @@ mix ash.gen.resource \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
+    --attribute sign:char \
     --attribute lock_version:integer \
-    --attribute created_at:timestamp \
+    --attribute created_at:timestamp_utc_usec \
     --attribute created_by:url \
-    --attribute updated_at:timestamp \
+    --attribute updated_at:timestamp_utc_usec \
     --attribute updated_by:url \
-    --attribute retired_at:timestamp \
+    --attribute retired_at:timestamp_utc_usec \
     --attribute retired_by:url \
     --attribute locale_id:locale.id \
     --attribute title:string \
@@ -32,8 +33,8 @@ mix ash.gen.resource \
     --attribute star_count:integer \
     --attribute quick_response_code_id:quick_response_code.id \
     --attribute universal_product_code_id:universal_product_code.id \
-    --attribute start:timestamp \
-    --attribute stop:timestamp \
+    --attribute start:timestamp_utc_usec \
+    --attribute stop:timestamp_utc_usec \
     --attribute duration_as_seconds:count \
 
 mix ash.codegen create_tag

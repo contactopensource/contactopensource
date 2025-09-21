@@ -3,12 +3,13 @@ set -euf
 
 rails generate scaffold \
     tag \
+        sign:char \
         lock_version:integer \
-        created_at:timestamp \
+        created_at:timestamp_utc_usec \
         created_by:text \
-        updated_at:timestamp \
+        updated_at:timestamp_utc_usec \
         updated_by:text \
-        retired_at:timestamp \
+        retired_at:timestamp_utc_usec \
         retired_by:text \
         locale_id:references \
         title:string:index \
@@ -28,8 +29,8 @@ rails generate scaffold \
         star_count:integer \
         quick_response_code_id:references \
         universal_product_code_id:references \
-        start:timestamp \
-        stop:timestamp \
+        start:timestamp_utc_usec \
+        stop:timestamp_utc_usec \
         duration_as_seconds:count \
     --force \
     --no-timestamps \

@@ -6,12 +6,13 @@ hide circle
 entity tag {
   .. Meta ..
   id : uuid ⚡
+  sign : char
   lock_version : integer
-  created_at : timestamp
+  created_at : timestamp_utc_usec
   created_by : url
-  updated_at : timestamp
+  updated_at : timestamp_utc_usec
   updated_by : url
-  retired_at : timestamp
+  retired_at : timestamp_utc_usec
   retired_by : url
   locale_id : locale.id 🔑
   .. Card ..
@@ -33,8 +34,8 @@ entity tag {
   quick_response_code_id : quick_response_code.id 🔑
   universal_product_code_id : universal_product_code.id 🔑
   .. Main ..
-  start : timestamp
-  stop : timestamp
+  start : timestamp_utc_usec
+  stop : timestamp_utc_usec
   duration_as_seconds : count
 }
 

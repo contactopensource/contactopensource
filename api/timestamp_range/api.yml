@@ -16,11 +16,11 @@ tag:
     - Main:
       - start:
           help: start
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2020-01-01T00:00:00±00:00
       - stop:
           help: stop
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2030-01-01T00:00:00±00:00
       - duration_as_seconds:
           type: count

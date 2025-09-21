@@ -4,12 +4,13 @@ set -euf
 mix phx.gen.html \
     None Event None \
         id:uuid:index \
+        sign:charNone \
         lock_version:integerNone \
-        created_at:timestampNone \
+        created_at:timestamp_utc_usecNone \
         created_by:urlNone \
-        updated_at:timestampNone \
+        updated_at:timestamp_utc_usecNone \
         updated_by:urlNone \
-        retired_at:timestampNone \
+        retired_at:timestamp_utc_usecNone \
         retired_by:urlNone \
         locale_id:locale.idNone \
         title:string:index \
@@ -29,10 +30,10 @@ mix phx.gen.html \
         star_count:integerNone \
         quick_response_code_id:quick_response_code.idNone \
         universal_product_code_id:universal_product_code.idNone \
-        start_timestamp_local:timestampNone \
-        stop_timestamp_local:timestampNone \
-        start_timestamp_utc:timestampNone \
-        stop_timestamp_utc:timestampNone \
+        start_timestamp_local:timestamp_utc_usecNone \
+        stop_timestamp_local:timestamp_utc_usecNone \
+        start_timestamp_utc:timestamp_utc_usecNone \
+        stop_timestamp_utc:timestamp_utc_usecNone \
         duration_as_seconds:countNone \
         recurring:booleanNone \
         recurring_description:textNone \

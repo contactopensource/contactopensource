@@ -18,16 +18,16 @@ event:
     - !include ../_card.yml
     - Main:
       - start_timestamp_local:
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2020-01-01T00:00:00 New York City
       - stop_timestamp_local:
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2020-01-01T00:00:00 New York City
       - start_timestamp_utc:
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2020-01-01T00:00:00±00:00±00:00
       - stop_timestamp_utc:
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2020-01-01T00:00:00±00:00±00:00
       - duration_as_seconds:
           type: count

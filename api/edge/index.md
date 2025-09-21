@@ -10,17 +10,19 @@ Meta:
 
   * id: uuid (index)
 
+  * sign: char - example: the emoji "green check mark" for the semantics of "this item is complete".
+
   * lock_version: integer
 
-  * created_at: timestamp
+  * created_at: timestamp_utc_usec
 
   * created_by: url
 
-  * updated_at: timestamp
+  * updated_at: timestamp_utc_usec
 
   * updated_by: url
 
-  * retired_at: timestamp
+  * retired_at: timestamp_utc_usec
 
   * retired_by: url
 
@@ -100,9 +102,9 @@ Object:
 
 Lifecycle:
 
-  * start_at_timestamp_utc: timestamp - example: 2020-01-01 00:00:00+00:00
+  * start_at_timestamp_utc: timestamp_utc_usec - example: 2020-01-01 00:00:00+00:00
 
-  * stop_at_timestamp_utc: timestamp - example: 2020-01-01 00:00:00+00:00
+  * stop_at_timestamp_utc: timestamp_utc_usec - example: 2020-01-01 00:00:00+00:00
 
 Modifiers:
 

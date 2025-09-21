@@ -7,8 +7,8 @@ mix ash.gen.resource \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute start:timestamp_utc \
-    --attribute stop:timestamp_utc \
+    --attribute start:timestamp_utc_usec_utc \
+    --attribute stop:timestamp_utc_usec_utc \
     --attribute duration_as_seconds:count \
 
 mix ash.codegen create_tag

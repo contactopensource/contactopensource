@@ -10,17 +10,19 @@ Meta:
 
   * id: uuid (index)
 
+  * sign: char - example: the emoji "green check mark" for the semantics of "this item is complete".
+
   * lock_version: integer
 
-  * created_at: timestamp
+  * created_at: timestamp_utc_usec
 
   * created_by: url
 
-  * updated_at: timestamp
+  * updated_at: timestamp_utc_usec
 
   * updated_by: url
 
-  * retired_at: timestamp
+  * retired_at: timestamp_utc_usec
 
   * retired_by: url
 
@@ -64,9 +66,9 @@ Card:
 
 Main:
 
-  * start: timestamp - example: 2020-01-01T00:00:00±00:00
+  * start: timestamp_utc_usec - example: 2020-01-01T00:00:00±00:00
 
-  * stop: timestamp - example: 2030-01-01T00:00:00±00:00
+  * stop: timestamp_utc_usec - example: 2030-01-01T00:00:00±00:00
 
   * duration_as_seconds: count - example: 3600 seconds (1 hour)
 

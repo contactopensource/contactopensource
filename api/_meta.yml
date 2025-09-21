@@ -3,21 +3,25 @@
             help: Primary key id that is a secure-random 32-character lowercase hexadecimal, optimized for zero information rather than speed and memory; you can show this id to users.
             type: uuid
             index: true
+        - sign:
+            help:  A sign character such as an emoji to indicate status, or categorization, or label, or importance; this item is intended to be user-visible, and intended to be shown early in an list of items, such as immediately after the primary key id, and before any item title.
+            type: char
+            example: the emoji "green check mark" for the semantics of "this item is complete".
         - lock_version:
             help: This is for optimistic locking.
             type: integer
         - created_at:
-            type: timestamp
+            type: timestamp_utc_usec
         - created_by:
             help: The user/agent/service/etc. that did this.
             type: url
         - updated_at:
-            type: timestamp
+            type: timestamp_utc_usec
         - updated_by:
             help: The user/agent/service/etc. that did this.
             type: url
         - retired_at:
-            type: timestamp
+            type: timestamp_utc_usec
         - retired_by:
             help: The user/agent/service/etc. that did this.
             type: url

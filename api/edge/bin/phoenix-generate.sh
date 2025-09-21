@@ -4,12 +4,13 @@ set -euf
 mix phx.gen.html \
     Graph Edge None \
         id:uuid:index \
+        sign:charNone \
         lock_version:integerNone \
-        created_at:timestampNone \
+        created_at:timestamp_utc_usecNone \
         created_by:urlNone \
-        updated_at:timestampNone \
+        updated_at:timestamp_utc_usecNone \
         updated_by:urlNone \
-        retired_at:timestampNone \
+        retired_at:timestamp_utc_usecNone \
         retired_by:urlNone \
         locale_id:locale.idNone \
         title:string:index \
@@ -44,8 +45,8 @@ mix phx.gen.html \
         object_schema:textNone \
         object_table:textNone \
         object_id:idNone \
-        start_at_timestamp_utc:timestampNone \
-        stop_at_timestamp_utc:timestampNone \
+        start_at_timestamp_utc:timestamp_utc_usecNone \
+        stop_at_timestamp_utc:timestamp_utc_usecNone \
         count:integerNone \
         unit_interval:unit_intervalNone \
         dual_interval:dual_intervalNone \

@@ -7,12 +7,13 @@ mix ash.gen.resource \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
+    --attribute sign:char \
     --attribute lock_version:integer \
-    --attribute created_at:timestamp \
+    --attribute created_at:timestamp_utc_usec \
     --attribute created_by:url \
-    --attribute updated_at:timestamp \
+    --attribute updated_at:timestamp_utc_usec \
     --attribute updated_by:url \
-    --attribute retired_at:timestamp \
+    --attribute retired_at:timestamp_utc_usec \
     --attribute retired_by:url \
     --attribute locale_id:locale.id \
     --attribute title:string \
@@ -47,8 +48,8 @@ mix ash.gen.resource \
     --attribute object_schema:text \
     --attribute object_table:text \
     --attribute object_id:id \
-    --attribute start_at_timestamp_utc:timestamp \
-    --attribute stop_at_timestamp_utc:timestamp \
+    --attribute start_at_timestamp_utc:timestamp_utc_usec \
+    --attribute stop_at_timestamp_utc:timestamp_utc_usec \
     --attribute count:integer \
     --attribute unit_interval:unit_interval \
     --attribute dual_interval:dual_interval \

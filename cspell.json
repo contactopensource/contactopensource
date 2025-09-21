@@ -15,7 +15,8 @@
         "collectivities",
         "societally",
         "subcountry",
-        "tablespace"
+        "tablespace",
+	"timestamp_utc_usec"
     ],
     "ignoreWords": [],
     "import": []

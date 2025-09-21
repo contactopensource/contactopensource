@@ -79,11 +79,11 @@ edge:
     - Lifecycle:
       - start_at_timestamp_utc:
           help: start at timestamp utc
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2020-01-01T00:00:00Z
       - stop_at_timestamp_utc:
           help: stop at timestamp utc
-          type: timestamp
+          type: timestamp_utc_usec
           example: 2020-01-01T00:00:00Z
     - Modifiers:
       - count:

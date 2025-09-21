@@ -7,10 +7,10 @@ initiative_type:
 
     Initiative type examples:
 
-    - Product
-    - Project
-    - Program
     - Portfolio
+    - Product
+    - Program
+    - Project
     - Service
     - Support
 

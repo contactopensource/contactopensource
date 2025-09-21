@@ -3,12 +3,13 @@ set -euf
 
 rails generate scaffold \
     edge \
+        sign:char \
         lock_version:integer \
-        created_at:timestamp \
+        created_at:timestamp_utc_usec \
         created_by:text \
-        updated_at:timestamp \
+        updated_at:timestamp_utc_usec \
         updated_by:text \
-        retired_at:timestamp \
+        retired_at:timestamp_utc_usec \
         retired_by:text \
         locale_id:references \
         title:string:index \
@@ -43,8 +44,8 @@ rails generate scaffold \
         object_schema:text \
         object_table:text \
         object_id:id \
-        start_at_timestamp_utc:timestamp \
-        stop_at_timestamp_utc:timestamp \
+        start_at_timestamp_utc:timestamp_utc_usec \
+        stop_at_timestamp_utc:timestamp_utc_usec \
         count:integer \
         unit_interval:unit_interval \
         dual_interval:dual_interval \
