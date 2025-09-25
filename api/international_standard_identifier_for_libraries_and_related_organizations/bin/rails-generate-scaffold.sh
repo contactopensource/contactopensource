@@ -3,7 +3,7 @@ set -euf
 
 rails generate scaffold \
     international_standard_identifier_for_libraries_and_related_organization \
-        sign:char:index \
+        sign:string:index \
         lock_version:integer \
         created_at:timestamp:index \
         created_by:text:index \

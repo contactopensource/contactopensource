@@ -3,7 +3,7 @@ set -euf
 
 rails generate scaffold \
     software_package_data_exchange_license \
-        sign:char:index \
+        sign:string:index \
         lock_version:integer \
         created_at:timestamp:index \
         created_by:text:index \

@@ -4,7 +4,7 @@ set -euf
 mix phx.gen.html \
     None TzDatabase2024b None \
         id:uuid:index \
-        sign:char:index \
+        sign:string:index \
         lock_version:integerNone \
         created_at:timestamp:index \
         created_by:url:index \

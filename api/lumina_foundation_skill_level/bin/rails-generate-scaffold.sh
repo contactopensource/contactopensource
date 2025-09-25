@@ -3,7 +3,7 @@ set -euf
 
 rails generate scaffold \
     lumina_foundation_skill_level \
-        sign:char:index \
+        sign:string:index \
         lock_version:integer \
         created_at:timestamp:index \
         created_by:text:index \

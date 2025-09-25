@@ -7,6 +7,28 @@ mix ash.gen.resource \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
+    --attribute sign:string \
+    --attribute lock_version:integer \
+    --attribute created_at:timestamp \
+    --attribute created_by:url \
+    --attribute updated_at:timestamp \
+    --attribute updated_by:url \
+    --attribute deleted_at:timestamp \
+    --attribute deleted_by:url \
+    --attribute locale_id:locale.id \
+    --attribute name:string \
+    --attribute url:url \
+    --attribute description:string \
+    --attribute level_1_as_markdown:markdown \
+    --attribute level_1_as_html:html \
+    --attribute level_2_as_markdown:markdown \
+    --attribute level_2_as_html:html \
+    --attribute level_3_as_markdown:html \
+    --attribute level_3_as_html:html \
+    --attribute level_4_as_markdown:html \
+    --attribute level_4_as_html:html \
+    --attribute roles_that_require_this_skill_as_markdown:html \
+    --attribute roles_that_require_this_skill_as_html:html \
 
 mix ash.codegen create_united_kingdom_government_digital_and_data_profession_capability_framework_skill
 mix ash.migrate
@@ -23,6 +45,14 @@ mix ash.migrate
 #
 # Add this:
 #
+#     index[:sign]
+#     index[:created_at]
+#     index[:created_by]
+#     index[:updated_at]
+#     index[:updated_by]
+#     index[:deleted_at]
+#     index[:deleted_by]
+#     index[:locale_id]
 #
 #
 # Change the attributes created_at and updated_at to:

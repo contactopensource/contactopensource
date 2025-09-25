@@ -25,8 +25,10 @@ def render_type(attribute):
     match attribute.type:
         case "char":
              attribute.type = "string"
-        case "timestamp_utc_usec":
-             attribute.type = "timestamp"
+        case "timestamp":
+             attribute.type = "utc_datetime_usec"             
+        case "url":
+             attribute.type = "string"
     # Trim any parentheses e.g. from "string(80)" into "string" because of Ash API.
     attribute.type = re.sub(r'\(.*', r'', attribute.type)
     return attribute.type

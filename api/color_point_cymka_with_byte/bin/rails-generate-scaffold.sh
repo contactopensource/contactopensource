@@ -3,7 +3,7 @@ set -euf
 
 rails generate scaffold \
     color_point_cymka_as_byte \
-        sign:char:index \
+        sign:string:index \
         lock_version:integer \
         created_at:timestamp:index \
         created_by:text:index \

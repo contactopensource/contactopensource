@@ -7,7 +7,7 @@ mix ash.gen.resource \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:char \
+    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp \
     --attribute created_by:url \
