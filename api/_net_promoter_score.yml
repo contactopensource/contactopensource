@@ -1,0 +1,37 @@
+    - net_promoter_score:
+      - customer_net_promoter_score_actual_value:
+          help: Customer Net Promoter Score (CNPS) actual value
+          type: float
+      - customer_net_promoter_score_target_value:
+          help: Customer Net Promoter Score (CNPS) target value
+          type: float
+      - customer_net_promoter_score_unit:
+          help: Customer Net Promoter Score (CNPS) unit
+          type: text
+      - customer_net_promoter_score_description_as_markdown:
+          help: Customer Net Promoter Score (CNPS) description as markdown
+          type: text
+      - user_net_promoter_score_actual_value:
+          help: User Net Promoter Score (UNPS) actual value
+          type: float
+      - user_net_promoter_score_target_value:
+          help: User Net Promoter Score (UNPS) target value
+          type: float
+      - user_net_promoter_score_unit:
+          help: User Net Promoter Score (UNPS) unit
+          type: text
+      - user_net_promoter_score_description_as_markdown:
+          help: User Net Promoter Score (UNPS) description as markdown
+          type: text
+      - worker_net_promoter_score_actual_value:
+          help: Worker Net Promoter Score (WNPS actual value)
+          type: float
+      - worker_net_promoter_score_target_value:
+          help: Worker Net Promoter Score (WNPS) target value
+          type: float
+      - worker_net_promoter_score_unit:
+          help: Worker Net Promoter Score (WNPS) unit
+          type: text
+      - worker_net_promoter_score_description_as_markdown:
+          help: Worker Net Promoter Score (WNPS) description as markdown
+          type: text
