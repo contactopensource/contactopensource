@@ -1,0 +1,35 @@
+united_kingdom_government_digital_and_data_profession_capability_framework_role:
+  title: United Kingdom (UK) Government Digital And Data (GDAD) Profession Capability Framework (PCF) Role
+  model: UnitedKingdomGovernmentDigitalAndDataProfessionCapabilityFrameworkRole
+  short_id: uk_gdad_pcf_role
+  short_model: UKGDADPCFRole
+  summary: |-
+
+    United Kingdom (UK) Government Digital And Data (GDAD) Profession Capability Framework (PCF) Role
+
+    <https://ddat-capability-framework.service.gov.uk/>
+
+  description: |-
+
+    Each role level (such as junior business analyst or senior business analyst) in this framework includes a list of required skills. Each skill is assigned one of 4 skill levels, reflecting the required proficiency: awareness, working, practitioner or expert.
+
+    <https://ddat-capability-framework.service.gov.uk/skillss#agile-and-lean-practices>
+    
+    Download the official files as CSV:
+
+    <https://ddat-capability-framework.service.gov.uk/download>
+
+  attributes:
+    united_kingdom_government_digital_and_data_profession_capability_framework_role_family_id:
+      type: if
+      example: IT Operations
+    title:
+      type: string
+      example: Application operations engineer
+    url:
+      type: url
+      example: https://ddat-capability-framework.service.gov.uk/role/application-operations-engineer
+    description:
+      type: string
+      example: An application operations engineer supports, manages and maintains a single application or a suite of applications.",Senior application operations engineer,"Dealing with more complex issues, a senior application operations engineer is responsible for code deployment and co-ordinating change-based activities, such as taking services live. Depending on the complexity and size of a project and the likely impact it will have on the business, you might manage and maintain certain aspects of an application.
+      
