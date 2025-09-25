@@ -1,0 +1,66 @@
+      earned_value_management:
+        - earned_value_management_planned_value:
+            help: Earned Value Management (EVM) Planned Value (PV)
+            type: decimal
+        - earned_value_management_earned_value:
+            help: Earned Value Management (EVM) Earned Value (EV)
+            type: decimal
+        - earned_value_management_actual_cost:
+            help: Earned Value Management (EVM) Actual Cost (AC)
+            type: decimal
+        - earned_value_management_cost_variance:
+            help: |-
+              Earned Value Management (EVM) Cost Variance (CV)
+
+              - Cost Variance (CV) = Earned Value (EV) – Actual Cost (AC)
+
+              - Positive: ahead of budget a.k.a. cost underrun
+
+              - Negative: behind budget a.k.a. cost overrun
+            type: decimal
+            sql: earned_value_management_cost_variance GENERATED ALWAYS AS (earned_value_management_earned_value - earned_value_management_actual_cost)
+        - earned_value_management_cost_variance_ratio:
+            help: Earned Value Management (EVM) Cost Variance Ratio (CVR)
+            type: decimal
+            sql: earned_value_management_cost_variance_ratio GENERATED ALWAYS AS (earned_value_management_cost_variance / earned_value_management_earned_value)
+        - earned_value_management_cost_performance_index:
+            help: |-
+              Earned Value Management (EVM) Cost Performance Index (CVI)
+
+              - Cost Performance Index (CPI) = Earned Value (EV) / Actual Cost (AC)
+
+              - Positive: cost is less than budgeted
+
+              - Negative: cost is greater than budgeted
+            type: decimal
+            sql: earned_value_management_cost_performance_index  GENERATED ALWAYS AS (earned_value_management_earned_value / earned_value_management_actual_cost)
+        - earned_value_management_schedule_variance:
+            help: |-
+              Earned Value Management (EVM) Schedule Variance (SV)
+
+              - Schedule Variance (SV) = Earned Value (EV) – Planned Value (PV)
+
+              - Positive: ahead of schedule a.k.a. time underrun
+
+              - Negative: behind schedule a.,k.a. time overrun
+            type: decimal
+            sql: earned_value_management_schedule_variance GENERATED ALWAYS AS (earned_value_management_earned_value - earned_value_management_planned_value)
+        - earned_value_management_schedule_variance_ratio:
+            help: Earned Value Management (EVM) Schedule Variance Ratio (SVR)
+            type: decimal
+            sql: earned_value_management_schedule_variance_ratio GENERATED ALWAYS AS (earned_value_management_schedule_variance / earned_value_management_planned_value)
+        - earned_value_management_schedule_performance_index:
+            help: |-
+              Earned Value Management (EVM) Schedule Performance Index (SPI)
+
+              - Schedule Performance Index (SPI) = Earned Value (EV) / Planned Value (PV)
+
+              - Positive: ahead of schedule
+
+              - Negative: behind schedule
+            type: decimal
+            sql: earned_value_management_schedule_performance_index GENERATED (earned_value_management_earned_value / earned_value_management_planned_value)
+
+
+
+
