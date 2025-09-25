@@ -10,7 +10,7 @@ Meta:
 
   * id: uuid (index)
 
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
+  * sign: string (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
@@ -42,10 +42,3 @@ Main:
 
   * elevation_msl_as_meters: meters - example: 67.056 meters relative to mean sea level
 
-## Precision
-
-latitude(9, 7) means 9 total digits with 7 behind the comma e.g. 12.1234567.
-
-longitude(10, 7) means 10 total digits with 7 behind the comma e.g. 123.1234567.
-
-This gives centimeter precision.

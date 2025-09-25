@@ -6,7 +6,7 @@ hide circle
 entity plan_okr {
   .. Meta ..
   id : uuid ⚡
-  sign : char ⚡
+  sign : string ⚡
   lock_version : integer
   created_at : timestamp ⚡
   created_by : url ⚡

@@ -33,7 +33,9 @@ geography_point:
 
     Note about mean sea level:
 
-      * Mean sea level changes over time. For this and other reasons, recorded measurements of elevation above sea level might differ from the actual elevation of a given location over sea level at a given moment.
+      * Mean sea level changes over time. For this and other reasons, recorded
+      measurements of elevation above sea level might differ from the actual
+      elevation of a given location over sea level at a given moment.
 
   attribute_groups:
     - !include ../_meta.yml
