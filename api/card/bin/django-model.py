@@ -2,9 +2,11 @@
 set -euf
 
 class Card(models.Model):
-        title = models.TextAttribute("The card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name.")
-        subtitle = models.TextAttribute("The card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle.")
-        summary = models.TextAttribute("None")
+        sign = models.UnknownAttribute("An option one-character sign, such as an emoji indicator.")
+        kind = models.TextAttribute("A category class, such as a useful way to sort or subset the resource.")
+        title = models.UnknownAttribute("The card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name.")
+        subtitle = models.UnknownAttribute("The card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle.")
+        summary = models.UnknownAttribute("None")
         description = models.TextAttribute("None")
         disambiguation = models.TextAttribute("None")
         avatar_image_400x400_url = models.URLAttribute("An avatar image for the item, 400x400 pixels, which is square 1:1 aspect ratio and the same size as other popular social networks, and will look good within a circle mask, as a URL.")

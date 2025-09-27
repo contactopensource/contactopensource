@@ -7,7 +7,9 @@ DROP INDEX IF EXISTS index_credential_updated_at;
 DROP INDEX IF EXISTS index_credential_updated_by;
 DROP INDEX IF EXISTS index_credential_deleted_at;
 DROP INDEX IF EXISTS index_credential_deleted_by;
-DROP INDEX IF EXISTS index_credential_locale_id;
+DROP INDEX IF EXISTS index_credential_locale_code;
+DROP INDEX IF EXISTS index_credential_sign;
+DROP INDEX IF EXISTS index_credential_kind;
 DROP INDEX IF EXISTS index_credential_title;
 DROP INDEX IF EXISTS index_credential_subtitle;
 

@@ -27,11 +27,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:group]
-#     index[:code]
-#     index[:title]
-#     index[:definition]
-#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

@@ -8,5 +8,5 @@ Country Code ISO 3166-1
 
 Main:
 
-  * alpha_2:string(2): string
+  * alpha_2:string(2): string(2)
 

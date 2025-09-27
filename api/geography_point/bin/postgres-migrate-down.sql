@@ -7,5 +7,5 @@ DROP INDEX IF EXISTS index_geography_point_updated_at;
 DROP INDEX IF EXISTS index_geography_point_updated_by;
 DROP INDEX IF EXISTS index_geography_point_deleted_at;
 DROP INDEX IF EXISTS index_geography_point_deleted_by;
-DROP INDEX IF EXISTS index_geography_point_locale_id;
+DROP INDEX IF EXISTS index_geography_point_locale_code;
 

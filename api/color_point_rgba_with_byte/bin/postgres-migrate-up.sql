@@ -9,5 +9,5 @@ CREATE INDEX index_color_point_rgba_with_byte_updated_at on color_point_rgba_wit
 CREATE INDEX index_color_point_rgba_with_byte_updated_by on color_point_rgba_with_byte(updated_by);
 CREATE INDEX index_color_point_rgba_with_byte_deleted_at on color_point_rgba_with_byte(deleted_at);
 CREATE INDEX index_color_point_rgba_with_byte_deleted_by on color_point_rgba_with_byte(deleted_by);
-CREATE INDEX index_color_point_rgba_with_byte_locale_id on color_point_rgba_with_byte(locale_id);
+CREATE INDEX index_color_point_rgba_with_byte_locale_code on color_point_rgba_with_byte(locale_code);
 

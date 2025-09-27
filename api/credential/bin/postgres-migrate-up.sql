@@ -9,7 +9,9 @@ CREATE INDEX index_credential_updated_at on credential(updated_at);
 CREATE INDEX index_credential_updated_by on credential(updated_by);
 CREATE INDEX index_credential_deleted_at on credential(deleted_at);
 CREATE INDEX index_credential_deleted_by on credential(deleted_by);
-CREATE INDEX index_credential_locale_id on credential(locale_id);
+CREATE INDEX index_credential_locale_code on credential(locale_code);
+CREATE INDEX index_credential_sign on credential(sign);
+CREATE INDEX index_credential_kind on credential(kind);
 CREATE INDEX index_credential_title on credential(title);
 CREATE INDEX index_credential_subtitle on credential(subtitle);
 

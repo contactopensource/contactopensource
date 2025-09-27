@@ -9,7 +9,9 @@ CREATE INDEX index_edge_updated_at on edge(updated_at);
 CREATE INDEX index_edge_updated_by on edge(updated_by);
 CREATE INDEX index_edge_deleted_at on edge(deleted_at);
 CREATE INDEX index_edge_deleted_by on edge(deleted_by);
-CREATE INDEX index_edge_locale_id on edge(locale_id);
+CREATE INDEX index_edge_locale_code on edge(locale_code);
+CREATE INDEX index_edge_sign on edge(sign);
+CREATE INDEX index_edge_kind on edge(kind);
 CREATE INDEX index_edge_title on edge(title);
 CREATE INDEX index_edge_subtitle on edge(subtitle);
 

@@ -4,18 +4,20 @@ set -euf
 cargo loco generate scaffold --html \
     event \
         id:uuid \
-        sign:string \
+        sign:char \
         lock_version:integer \
-        created_at:timestamp \
+        created_at:timestamp_utc_usec \
         created_by:url \
-        updated_at:timestamp \
+        updated_at:timestamp_utc_usec \
         updated_by:url \
-        deleted_at:timestamp \
+        deleted_at:timestamp_utc_usec \
         deleted_by:url \
-        locale_id:references \
-        title:string \
-        subtitle:string \
-        summary:string \
+        locale_code:string \
+        sign:"string{1}" \
+        kind:string \
+        title:"string{50}" \
+        subtitle:"string{50}" \
+        summary:"string{72}" \
         description:text \
         disambiguation:text \
         avatar_image_400x400_url:url \
@@ -30,10 +32,10 @@ cargo loco generate scaffold --html \
         star_count:integer \
         quick_response_code_id:references \
         universal_product_code_id:references \
-        start_timestamp_local:timestamp \
-        stop_timestamp_local:timestamp \
-        start_timestamp_utc:timestamp \
-        stop_timestamp_utc:timestamp \
+        start_timestamp_local:timestamp_utc_usec \
+        stop_timestamp_local:timestamp_utc_usec \
+        start_timestamp_utc:timestamp_utc_usec \
+        stop_timestamp_utc:timestamp_utc_usec \
         duration_as_seconds:count \
         recurring:boolean \
         recurring_description:text \

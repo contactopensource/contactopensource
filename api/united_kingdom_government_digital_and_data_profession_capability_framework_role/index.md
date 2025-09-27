@@ -12,27 +12,27 @@ Meta:
 
   * id: uuid (index)
 
-  * sign: string (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
+  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
-  * created_at: timestamp (index)
+  * created_at: timestamp_utc_usec (index)
 
   * created_by: url (index)
 
-  * updated_at: timestamp (index)
+  * updated_at: timestamp_utc_usec (index)
 
   * updated_by: url (index)
 
-  * deleted_at: timestamp (index)
+  * deleted_at: timestamp_utc_usec (index)
 
   * deleted_by: url (index)
 
-  * locale_id: locale.id (index) - example: the id of locale "English - United States".
+  * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
 Main:
 
-  * family_id: united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id - example: IT Operations
+  * family_id: united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id (index) - example: IT Operations
 
   * name: string - example: Application operations engineer
 
@@ -44,5 +44,5 @@ Main:
 
   * level_description: string - example: TODO
 
-  * senior_civil_service_flag: boolean
+  * senior_civil_service_flag: boolean - example: True
 

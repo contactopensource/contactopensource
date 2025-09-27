@@ -9,6 +9,6 @@ CREATE INDEX index_quick_response_code_updated_at on quick_response_code(updated
 CREATE INDEX index_quick_response_code_updated_by on quick_response_code(updated_by);
 CREATE INDEX index_quick_response_code_deleted_at on quick_response_code(deleted_at);
 CREATE INDEX index_quick_response_code_deleted_by on quick_response_code(deleted_by);
-CREATE INDEX index_quick_response_code_locale_id on quick_response_code(locale_id);
+CREATE INDEX index_quick_response_code_locale_code on quick_response_code(locale_code);
 CREATE INDEX index_quick_response_code_code on quick_response_code(code);
 

@@ -9,7 +9,9 @@ CREATE INDEX index_skill_updated_at on skill(updated_at);
 CREATE INDEX index_skill_updated_by on skill(updated_by);
 CREATE INDEX index_skill_deleted_at on skill(deleted_at);
 CREATE INDEX index_skill_deleted_by on skill(deleted_by);
-CREATE INDEX index_skill_locale_id on skill(locale_id);
+CREATE INDEX index_skill_locale_code on skill(locale_code);
+CREATE INDEX index_skill_sign on skill(sign);
+CREATE INDEX index_skill_kind on skill(kind);
 CREATE INDEX index_skill_title on skill(title);
 CREATE INDEX index_skill_subtitle on skill(subtitle);
 

@@ -3,9 +3,11 @@ set -euf
 
 cargo loco generate scaffold --html \
     card \
-        title:string \
-        subtitle:string \
-        summary:string \
+        sign:"string{1}" \
+        kind:string \
+        title:"string{50}" \
+        subtitle:"string{50}" \
+        summary:"string{72}" \
         description:text \
         disambiguation:text \
         avatar_image_400x400_url:url \

@@ -9,7 +9,9 @@ CREATE INDEX index_plan_task_updated_at on plan_task(updated_at);
 CREATE INDEX index_plan_task_updated_by on plan_task(updated_by);
 CREATE INDEX index_plan_task_deleted_at on plan_task(deleted_at);
 CREATE INDEX index_plan_task_deleted_by on plan_task(deleted_by);
-CREATE INDEX index_plan_task_locale_id on plan_task(locale_id);
+CREATE INDEX index_plan_task_locale_code on plan_task(locale_code);
+CREATE INDEX index_plan_task_sign on plan_task(sign);
+CREATE INDEX index_plan_task_kind on plan_task(kind);
 CREATE INDEX index_plan_task_title on plan_task(title);
 CREATE INDEX index_plan_task_subtitle on plan_task(subtitle);
 

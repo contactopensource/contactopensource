@@ -8,7 +8,7 @@ Subcountry Code ISO 3166-2
 
 Main:
 
-  * alpha_2:string(2): string
+  * alpha_2:string(2): string(2)
 
   * country_code_iso_3166_1_id: references
 

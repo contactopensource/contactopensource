@@ -9,5 +9,5 @@ CREATE INDEX index_measurement_unit_updated_at on measurement_unit(updated_at);
 CREATE INDEX index_measurement_unit_updated_by on measurement_unit(updated_by);
 CREATE INDEX index_measurement_unit_deleted_at on measurement_unit(deleted_at);
 CREATE INDEX index_measurement_unit_deleted_by on measurement_unit(deleted_by);
-CREATE INDEX index_measurement_unit_locale_id on measurement_unit(locale_id);
+CREATE INDEX index_measurement_unit_locale_code on measurement_unit(locale_code);
 

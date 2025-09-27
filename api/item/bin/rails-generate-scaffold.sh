@@ -3,18 +3,20 @@ set -euf
 
 rails generate scaffold \
     item \
-        sign:string:index \
+        sign:char:index \
         lock_version:integer \
-        created_at:timestamp:index \
+        created_at:timestamp_utc_usec:index \
         created_by:text:index \
-        updated_at:timestamp:index \
+        updated_at:timestamp_utc_usec:index \
         updated_by:text:index \
-        deleted_at:timestamp:index \
+        deleted_at:timestamp_utc_usec:index \
         deleted_by:text:index \
-        locale_id:references:index \
-        title:string:index \
-        subtitle:string:index \
-        summary:string \
+        locale_code:string:index \
+        sign:"string{1}":index \
+        kind:string:index \
+        title:"string{50}":index \
+        subtitle:"string{50}":index \
+        summary:"string{72}" \
         description:text \
         disambiguation:text \
         avatar_image_400x400_url:text \

@@ -3,9 +3,11 @@ set -euf
 
 rails generate scaffold \
     card \
-        title:string:index \
-        subtitle:string:index \
-        summary:string \
+        sign:"string{1}":index \
+        kind:string:index \
+        title:"string{50}":index \
+        subtitle:"string{50}":index \
+        summary:"string{72}" \
         description:text \
         disambiguation:text \
         avatar_image_400x400_url:text \

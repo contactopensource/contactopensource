@@ -7,7 +7,9 @@ DROP INDEX IF EXISTS index_initiative_type_updated_at;
 DROP INDEX IF EXISTS index_initiative_type_updated_by;
 DROP INDEX IF EXISTS index_initiative_type_deleted_at;
 DROP INDEX IF EXISTS index_initiative_type_deleted_by;
-DROP INDEX IF EXISTS index_initiative_type_locale_id;
+DROP INDEX IF EXISTS index_initiative_type_locale_code;
+DROP INDEX IF EXISTS index_initiative_type_sign;
+DROP INDEX IF EXISTS index_initiative_type_kind;
 DROP INDEX IF EXISTS index_initiative_type_title;
 DROP INDEX IF EXISTS index_initiative_type_subtitle;
 

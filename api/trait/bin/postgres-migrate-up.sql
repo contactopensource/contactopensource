@@ -9,7 +9,9 @@ CREATE INDEX index_trait_updated_at on trait(updated_at);
 CREATE INDEX index_trait_updated_by on trait(updated_by);
 CREATE INDEX index_trait_deleted_at on trait(deleted_at);
 CREATE INDEX index_trait_deleted_by on trait(deleted_by);
-CREATE INDEX index_trait_locale_id on trait(locale_id);
+CREATE INDEX index_trait_locale_code on trait(locale_code);
+CREATE INDEX index_trait_sign on trait(sign);
+CREATE INDEX index_trait_kind on trait(kind);
 CREATE INDEX index_trait_title on trait(title);
 CREATE INDEX index_trait_subtitle on trait(subtitle);
 

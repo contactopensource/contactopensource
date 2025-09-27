@@ -9,7 +9,9 @@ CREATE INDEX index_plan_budget_updated_at on plan_budget(updated_at);
 CREATE INDEX index_plan_budget_updated_by on plan_budget(updated_by);
 CREATE INDEX index_plan_budget_deleted_at on plan_budget(deleted_at);
 CREATE INDEX index_plan_budget_deleted_by on plan_budget(deleted_by);
-CREATE INDEX index_plan_budget_locale_id on plan_budget(locale_id);
+CREATE INDEX index_plan_budget_locale_code on plan_budget(locale_code);
+CREATE INDEX index_plan_budget_sign on plan_budget(sign);
+CREATE INDEX index_plan_budget_kind on plan_budget(kind);
 CREATE INDEX index_plan_budget_title on plan_budget(title);
 CREATE INDEX index_plan_budget_subtitle on plan_budget(subtitle);
 

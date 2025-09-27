@@ -1,6 +1,8 @@
 international_standard_industrial_classification_v4:
   title: International Standard Industrial Classification (ISIC) V4
   model: InternationalStandardIndustrialClassificationV4
+  short_model: ISICV4
+  short_id: isic_v4
   summary: |-
 
     International Standard Industrial Classification (ISIC)

@@ -22,16 +22,17 @@ def render_type(attribute):
     if hasattr(attribute, 'join') and attribute.join:
         return "references"
     # Adjust as needed for Ash API; ideally remove these if/when Ash improves.
+    type = attribute.type
     match attribute.type:
         case "char":
-             attribute.type = "string"
+             type = "string"
         case "timestamp":
-             attribute.type = "utc_datetime_usec"             
+             type = "utc_datetime_usec"             
         case "url":
-             attribute.type = "string"
+             type = "text"
     # Trim any parentheses e.g. from "string(80)" into "string" because of Ash API.
-    attribute.type = re.sub(r'\(.*', r'', attribute.type)
-    return attribute.type
+    type = re.sub(r'\(.*', r'', type)
+    return type
 
 def render_modifiers(attribute):
     s = ""
@@ -48,6 +49,11 @@ def render_modifiers(attribute):
     return s
 
 def render_index(attribute):
+    s = ''
     if hasattr(attribute, 'index') and attribute.index:
-        return f"#     index[:{attribute.id}]\n"
-    return ''
+        s = '#     index[:{attribute.id}]'
+        if isinstance(attribute.index, str):
+            words = set(attribute.index.split())
+            if "unique" in words:
+                s+= ", unique: true"
+    return s

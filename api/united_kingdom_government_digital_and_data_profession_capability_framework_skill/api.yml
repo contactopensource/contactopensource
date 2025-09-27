@@ -21,13 +21,19 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
       - name:
           type: string
           example: Agile and Lean practices
+          required: true
+          public: true
       - url:
           type: url
           example: https://ddat-capability-framework.service.gov.uk/skills#agile-and-lean-practices
+          required: true
+          public: true
       - description:
           type: string
           example: Agile and Lean practices involves encouraging teams to build incrementally, test and iterate their work based on regular feedback and other useful data. …
-      - level_1_as_markdown:
+          required: true
+          public: true
+      - level_1_description_as_markdown:
           help: Skill level 1 is "Awareness"; this field is the exact markdown from the official download CSV.
           type: markdown
           example: |-
@@ -35,7 +41,9 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             - explain the basic principles of Agile and Lean methodology
             - discuss ways to apply Agile and Lean principles in a multi-disciplinary team
             - explain why iteration is important
-      - level_1_as_html:
+          required: true
+          public: true
+      - level_1_description_as_html:
           help: Skill level 1 is "Awareness"; this field is the cache conversion into HTML list items.
           type: html
           example: |-
@@ -45,7 +53,9 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             <li>discuss ways to apply Agile and Lean principles in a multi-disciplinary team</li>
             <li>explain why iteration is important</li>
             </ul>
-      - level_2_as_markdown:
+          required: true
+          public: true
+      - level_2_description_as_markdown:
           help: Skill level 2 is "Working"; this field is the exact markdown from the official download CSV.
           type: markdown
           example: |-
@@ -54,7 +64,9 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             - provide a clear, open and transparent framework in which teams can deliver
             - show an awareness of Agile tools and are starting to use them intelligently
             - visualise and make visible the work of the team
-      - level_2_as_html:
+          required: true
+          public: true
+      - level_2_description_as_html:
           help: Skill level 2 is "Working"; this field is the cache conversion into HTML list items.
           type: html
           example: |-
@@ -65,7 +77,9 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             <li>show an awareness of Agile tools and are starting to use them intelligently</li>
             <li>visualise and make visible the work of the team</li>
             </ul>
-      - level_3_as_markdown:
+          required: true
+          public: true
+      - level_3_description_as_markdown:
           help: Skill level 3 is "Practitioner; this field is the exact markdown from the official download CSV.
           type: html
           example: |-
@@ -75,7 +89,9 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             - use a blended approach depending on the context
             - help teams to measure, evaluate and visualise outcomes
             - encourage reflective practice to improve ways of working
-      - level_3_as_html:
+          required: true
+          public: true
+      - level_3_description_as_html:
           help: Skill level 3 is "Practitioner"; this field is the cache conversion into HTML list items.
           type: html
           example: |-
@@ -84,7 +100,9 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             <li>use a blended approach depending on the context</li>
             <li>help teams to measure, evaluate and visualise outcomes</li>
             <li>encourage reflective practice to improve ways of working</li>
-      - level_4_as_markdown:
+          required: true
+          public: true
+      - level_4_description_as_markdown:
           help: Skill level 4 is "Expert"; this field is the exact markdown from the official download CSV.
           type: html
           example: |-
@@ -93,7 +111,7 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             - create and tailor the right approach for a team, challenging, evaluating and iterating the approach through the life cycle
             - experiment with new and innovative ways of working to improve delivery across the organisation
             - act as a recognised expert and advocate for Agile and Lean approaches
-      - level_4_as_html:
+      - level_4_description_as_html:
           help: Skill level 4 is "Expert"; this field is the cache conversion into HTML list items.
           type: html
           example: |-
@@ -104,11 +122,15 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             <li>experiment with new and innovative ways of working to improve delivery across the organisation</li>
             <li>act as a recognised expert and advocate for Agile and Lean approaches</li>
             </ul>
+          required: true
+          public: true
       - roles_that_require_this_skill_as_markdown:
           help: Roles that require this skill; this field is the exact markdown from the official download CSV.
           type: html
           example: |-
             Delivery manager, Product manager, Programme delivery manager
+          required: true
+          public: true
       - roles_that_require_this_skill_as_html:
           help: Roles that require this skill; this field is the cache conversion into HTML list items.
           type: html
@@ -119,3 +141,5 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             <li><a href="https://ddat-capability-framework.service.gov.uk/role/product-manager">Product manager</li>
             <li><a href="https://ddat-capability-framework.service.gov.uk/role/programme-delivery-manager">Programme delivery manager</a></li>
             </ul>
+          required: true
+          public: true

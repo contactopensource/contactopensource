@@ -12,23 +12,23 @@ Meta:
 
   * id: uuid (index)
 
-  * sign: string (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
+  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
-  * created_at: timestamp (index)
+  * created_at: timestamp_utc_usec (index)
 
   * created_by: url (index)
 
-  * updated_at: timestamp (index)
+  * updated_at: timestamp_utc_usec (index)
 
   * updated_by: url (index)
 
-  * deleted_at: timestamp (index)
+  * deleted_at: timestamp_utc_usec (index)
 
   * deleted_by: url (index)
 
-  * locale_id: locale.id (index) - example: the id of locale "English - United States".
+  * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
 Main:
 
@@ -38,25 +38,25 @@ Main:
 
   * description: string - example: Agile and Lean practices involves encouraging teams to build incrementally, test and iterate their work based on regular feedback and other useful data. …
 
-  * level_1_as_markdown: markdown - example: You can:
+  * level_1_description_as_markdown: markdown - example: You can:
 - explain the basic principles of Agile and Lean methodology
 - discuss ways to apply Agile and Lean principles in a multi-disciplinary team
 - explain why iteration is important
 
-  * level_1_as_html: html - example: You can:
+  * level_1_description_as_html: html - example: You can:
 <ul>
 <li>explain the basic principles of Agile and Lean methodology.</li>
 <li>discuss ways to apply Agile and Lean principles in a multi-disciplinary team</li>
 <li>explain why iteration is important</li>
 </ul>
 
-  * level_2_as_markdown: markdown - example: You can:
+  * level_2_description_as_markdown: markdown - example: You can:
 - demonstrate experience in applying Agile principles in practice
 - provide a clear, open and transparent framework in which teams can deliver
 - show an awareness of Agile tools and are starting to use them intelligently
 - visualise and make visible the work of the team
 
-  * level_2_as_html: html - example: You can:
+  * level_2_description_as_html: html - example: You can:
 <ul>
 <li>demonstrate experience in applying Agile principles in practice</li>
 <li>provide a clear, open and transparent framework in which teams can deliver</li>
@@ -64,26 +64,26 @@ Main:
 <li>visualise and make visible the work of the team</li>
 </ul>
 
-  * level_3_as_markdown: html - example: You can:
+  * level_3_description_as_markdown: html - example: You can:
 - compare and select the most appropriate delivery methods and processes
 - recognise, reflect and adapt when something does not work, encouraging experimentation
 - use a blended approach depending on the context
 - help teams to measure, evaluate and visualise outcomes
 - encourage reflective practice to improve ways of working
 
-  * level_3_as_html: html - example: <li>compare and select the most appropriate delivery methods and processes</li>
+  * level_3_description_as_html: html - example: <li>compare and select the most appropriate delivery methods and processes</li>
 <li>recognise, reflect and adapt when something does not work, encouraging experimentation</li>
 <li>use a blended approach depending on the context</li>
 <li>help teams to measure, evaluate and visualise outcomes</li>
 <li>encourage reflective practice to improve ways of working</li>
 
-  * level_4_as_markdown: html - example: You can:
+  * level_4_description_as_markdown: html - example: You can:
 - coach and lead teams in Agile and Lean good practices
 - create and tailor the right approach for a team, challenging, evaluating and iterating the approach through the life cycle
 - experiment with new and innovative ways of working to improve delivery across the organisation
 - act as a recognised expert and advocate for Agile and Lean approaches
 
-  * level_4_as_html: html - example: You can:
+  * level_4_description_as_html: html - example: You can:
 <ul>
 <li>coach and lead teams in Agile and Lean good practices</li>
 <li>create and tailor the right approach for a team, challenging, evaluating and iterating the approach through the life cycle</li>

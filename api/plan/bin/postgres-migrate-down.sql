@@ -7,7 +7,9 @@ DROP INDEX IF EXISTS index_plan_updated_at;
 DROP INDEX IF EXISTS index_plan_updated_by;
 DROP INDEX IF EXISTS index_plan_deleted_at;
 DROP INDEX IF EXISTS index_plan_deleted_by;
-DROP INDEX IF EXISTS index_plan_locale_id;
+DROP INDEX IF EXISTS index_plan_locale_code;
+DROP INDEX IF EXISTS index_plan_sign;
+DROP INDEX IF EXISTS index_plan_kind;
 DROP INDEX IF EXISTS index_plan_title;
 DROP INDEX IF EXISTS index_plan_subtitle;
 

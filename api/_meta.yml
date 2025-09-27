@@ -35,8 +35,8 @@
             help: The user/agent/service/etc. that did this.
             type: url
             index: true
-        - locale_id:
+        - locale_code:
             help:  An international locale identifier, such as the id of locale "English - United States".
-            type: locale.id
-            example: the id of locale "English - United States".
+            type: string
+            example: the locale code "en-US" means "English - United States".
             index: true

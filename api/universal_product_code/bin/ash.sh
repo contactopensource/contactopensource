@@ -9,15 +9,15 @@ mix ash.gen.resource \
     --uuid-primary-key id \
     --attribute sign:string \
     --attribute lock_version:integer \
-    --attribute created_at:timestamp \
-    --attribute created_by:url \
-    --attribute updated_at:timestamp \
-    --attribute updated_by:url \
-    --attribute deleted_at:timestamp \
-    --attribute deleted_by:url \
-    --attribute locale_id:locale.id \
+    --attribute created_at:timestamp_utc_usec \
+    --attribute created_by:text \
+    --attribute updated_at:timestamp_utc_usec \
+    --attribute updated_by:text \
+    --attribute deleted_at:timestamp_utc_usec \
+    --attribute deleted_by:text \
+    --attribute locale_code:string \
     --attribute code:string \
-    --attribute image_url:url \
+    --attribute image_url:text \
     --attribute image_alt:text \
 
 mix ash.codegen create_universal_product_code
@@ -35,16 +35,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:sign]
-#     index[:created_at]
-#     index[:created_by]
-#     index[:updated_at]
-#     index[:updated_by]
-#     index[:deleted_at]
-#     index[:deleted_by]
-#     index[:locale_id]
-#     index[:code]
-#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

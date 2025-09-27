@@ -5,6 +5,9 @@
         - deployment_frequency_target_value:
             help: Deployment frequency target value
             type: float
+        - deployment_frequency_ratio:
+            help: Deployment frequency ratio (actual value / target value)
+            type: float
         - deployment_frequency_unit:
             help: Deployment frequency unit
             type: text
@@ -16,6 +19,9 @@
             type: float
         - lead_time_for_changes_target_value:
             help: Lead time for changes target value
+            type: float
+        - lead_time_for_changes_ratio:
+            help: Lead time for changes ratio (actual value / target value)
             type: float
         - lead_time_for_changes_unit:
             help: Lead time for changes unit
@@ -29,6 +35,9 @@
         - change_failure_rate_target_value:
             help: Change failure rate target value
             type: float
+        - change_failure_rate_ratio:
+            help: Change failure rate ratio (actual value / target value)
+            type: float
         - change_failure_rate_unit:
             help: Change failure rate unit
             type: text
@@ -40,6 +49,9 @@
             type: float
         - mean_time_to_recovery_target_value:
             help: Mean time to recovery target value
+            type: float
+        - mean_time_to_recovery_ratio:
+            help: Mean time to recovery (actual value / target value)
             type: float
         - mean_time_to_recovery_unit:
             help: Mean time to recovery unit

@@ -9,5 +9,5 @@ CREATE INDEX index_color_point_cymka_as_byte_updated_at on color_point_cymka_as_
 CREATE INDEX index_color_point_cymka_as_byte_updated_by on color_point_cymka_as_byte(updated_by);
 CREATE INDEX index_color_point_cymka_as_byte_deleted_at on color_point_cymka_as_byte(deleted_at);
 CREATE INDEX index_color_point_cymka_as_byte_deleted_by on color_point_cymka_as_byte(deleted_by);
-CREATE INDEX index_color_point_cymka_as_byte_locale_id on color_point_cymka_as_byte(locale_id);
+CREATE INDEX index_color_point_cymka_as_byte_locale_code on color_point_cymka_as_byte(locale_code);
 

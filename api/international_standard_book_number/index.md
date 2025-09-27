@@ -10,31 +10,35 @@ Meta:
 
   * id: uuid (index)
 
-  * sign: string (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
+  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
-  * created_at: timestamp (index)
+  * created_at: timestamp_utc_usec (index)
 
   * created_by: url (index)
 
-  * updated_at: timestamp (index)
+  * updated_at: timestamp_utc_usec (index)
 
   * updated_by: url (index)
 
-  * deleted_at: timestamp (index)
+  * deleted_at: timestamp_utc_usec (index)
 
   * deleted_by: url (index)
 
-  * locale_id: locale.id (index) - example: the id of locale "English - United States".
+  * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
 Card:
 
-  * title: string (index) - example: Alice Anderson
+  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
 
-  * subtitle: string (index) - example: @alice
+  * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
 
-  * summary: string - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
+  * title: string(50) (index) - example: Alice Anderson
+
+  * subtitle: string(50) (index) - example: @alice
+
+  * summary: string(72) - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
 
   * description: text - example: This text is a description and can be as long as you wish.
 
@@ -66,17 +70,17 @@ Card:
 
 Main:
 
-  * code: string (index)
+  * code: string(13) (index)
 
 Parts:
 
-  * prefix_element: string
+  * prefix_element: string(13)
 
-  * registration_group: digit
+  * registration_group: digit(5)
 
-  * registrant: string
+  * registrant: string(13)
 
-  * publication: string
+  * publication: string(13)
 
-  * check_digit: digit
+  * check_digit: digit(1)
 

@@ -4,18 +4,20 @@ set -euf
 mix phx.gen.html \
     Graph Edge None \
         id:uuid:index \
-        sign:string:index \
+        sign:char:index \
         lock_version:integerNone \
-        created_at:timestamp:index \
+        created_at:timestamp_utc_usec:index \
         created_by:url:index \
-        updated_at:timestamp:index \
+        updated_at:timestamp_utc_usec:index \
         updated_by:url:index \
-        deleted_at:timestamp:index \
+        deleted_at:timestamp_utc_usec:index \
         deleted_by:url:index \
-        locale_id:locale.id:index \
-        title:string:index \
-        subtitle:string:index \
-        summary:stringNone \
+        locale_code:string:index \
+        sign:"string{1}":index \
+        kind:string:index \
+        title:"string{50}":index \
+        subtitle:"string{50}":index \
+        summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \
         avatar_image_400x400_url:urlNone \
@@ -45,8 +47,8 @@ mix phx.gen.html \
         object_schema:textNone \
         object_table:textNone \
         object_id:idNone \
-        start_at_timestamp_utc:timestampNone \
-        stop_at_timestamp_utc:timestampNone \
+        start_at_timestamp_utc:timestamp_utc_usecNone \
+        stop_at_timestamp_utc:timestamp_utc_usecNone \
         count:integerNone \
         unit_interval:unit_intervalNone \
         dual_interval:dual_intervalNone \

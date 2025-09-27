@@ -8,11 +8,15 @@ Card display tile; this is in use in many of the API concepts.
 
 Card:
 
-  * title: string (index) - example: Alice Anderson
+  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
 
-  * subtitle: string (index) - example: @alice
+  * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
 
-  * summary: string - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
+  * title: string(50) (index) - example: Alice Anderson
+
+  * subtitle: string(50) (index) - example: @alice
+
+  * summary: string(72) - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
 
   * description: text - example: This text is a description and can be as long as you wish.
 

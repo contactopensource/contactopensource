@@ -6,19 +6,21 @@ hide circle
 entity phone_contact {
   .. Meta ..
   id : uuid ⚡
-  sign : string ⚡
+  sign : char ⚡
   lock_version : integer
-  created_at : timestamp ⚡
+  created_at : timestamp_utc_usec ⚡
   created_by : url ⚡
-  updated_at : timestamp ⚡
+  updated_at : timestamp_utc_usec ⚡
   updated_by : url ⚡
-  deleted_at : timestamp ⚡
+  deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
-  locale_id : locale.id ⚡ 🔑
+  locale_code : string ⚡
   .. Card ..
-  title : string ⚡
-  subtitle : string ⚡
-  summary : string
+  sign : string(1) ⚡
+  kind : string ⚡
+  title : string(50) ⚡
+  subtitle : string(50) ⚡
+  summary : string(72)
   description : text
   disambiguation : text
   avatar_image_400x400_url : url
@@ -37,12 +39,12 @@ entity phone_contact {
   label : text
   number_text : text ⚡
   .. Parts ..
-  e164_text : string ⚡
-  e164_country_code : string ⚡
-  e164_national_destination_code : string ⚡
-  e164_group_identification_code : string
-  e164_trial_identification_code : string
-  e164_subscriber_number : string
+  e164_text : string(15) ⚡
+  e164_country_code : string(3) ⚡
+  e164_national_destination_code : string(13) ⚡
+  e164_group_identification_code : string(4)
+  e164_trial_identification_code : string(3)
+  e164_subscriber_number : string(14)
 }
 
 @enduml

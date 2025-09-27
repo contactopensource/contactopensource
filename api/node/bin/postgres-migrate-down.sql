@@ -7,7 +7,9 @@ DROP INDEX IF EXISTS index_node_updated_at;
 DROP INDEX IF EXISTS index_node_updated_by;
 DROP INDEX IF EXISTS index_node_deleted_at;
 DROP INDEX IF EXISTS index_node_deleted_by;
-DROP INDEX IF EXISTS index_node_locale_id;
+DROP INDEX IF EXISTS index_node_locale_code;
+DROP INDEX IF EXISTS index_node_sign;
+DROP INDEX IF EXISTS index_node_kind;
 DROP INDEX IF EXISTS index_node_title;
 DROP INDEX IF EXISTS index_node_subtitle;
 

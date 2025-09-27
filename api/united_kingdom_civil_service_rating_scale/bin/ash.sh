@@ -26,9 +26,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:rating]
-#     index[:label]
-#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

@@ -3,18 +3,20 @@ set -euf
 
 rails generate scaffold \
     phone_contact \
-        sign:string:index \
+        sign:char:index \
         lock_version:integer \
-        created_at:timestamp:index \
+        created_at:timestamp_utc_usec:index \
         created_by:text:index \
-        updated_at:timestamp:index \
+        updated_at:timestamp_utc_usec:index \
         updated_by:text:index \
-        deleted_at:timestamp:index \
+        deleted_at:timestamp_utc_usec:index \
         deleted_by:text:index \
-        locale_id:references:index \
-        title:string:index \
-        subtitle:string:index \
-        summary:string \
+        locale_code:string:index \
+        sign:"string{1}":index \
+        kind:string:index \
+        title:"string{50}":index \
+        subtitle:"string{50}":index \
+        summary:"string{72}" \
         description:text \
         disambiguation:text \
         avatar_image_400x400_url:text \
@@ -31,12 +33,12 @@ rails generate scaffold \
         universal_product_code_id:references \
         label:text \
         number_text:text:index \
-        e164_text:string:index \
-        e164_country_code:string:index \
-        e164_national_destination_code:string:index \
-        e164_group_identification_code:string \
-        e164_trial_identification_code:string \
-        e164_subscriber_number:string \
+        e164_text:"string{15}":index \
+        e164_country_code:"string{3}":index \
+        e164_national_destination_code:"string{13}":index \
+        e164_group_identification_code:"string{4}" \
+        e164_trial_identification_code:"string{3}" \
+        e164_subscriber_number:"string{14}" \
     --force \
     --no-timestamps \
 

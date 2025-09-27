@@ -3,9 +3,11 @@ set -euf
 
 mix phx.gen.html \
     None Card None \
-        title:string:index \
-        subtitle:string:index \
-        summary:stringNone \
+        sign:"string{1}":index \
+        kind:string:index \
+        title:"string{50}":index \
+        subtitle:"string{50}":index \
+        summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \
         avatar_image_400x400_url:urlNone \

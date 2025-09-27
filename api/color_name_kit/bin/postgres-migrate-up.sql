@@ -9,5 +9,5 @@ CREATE INDEX index_color_name_kit_updated_at on color_name_kit(updated_at);
 CREATE INDEX index_color_name_kit_updated_by on color_name_kit(updated_by);
 CREATE INDEX index_color_name_kit_deleted_at on color_name_kit(deleted_at);
 CREATE INDEX index_color_name_kit_deleted_by on color_name_kit(deleted_by);
-CREATE INDEX index_color_name_kit_locale_id on color_name_kit(locale_id);
+CREATE INDEX index_color_name_kit_locale_code on color_name_kit(locale_code);
 

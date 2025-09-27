@@ -4,26 +4,26 @@ set -euf
 cargo loco generate scaffold --html \
     united_kingdom_government_digital_and_data_profession_capability_framework_skill \
         id:uuid \
-        sign:string \
+        sign:char \
         lock_version:integer \
-        created_at:timestamp \
+        created_at:timestamp_utc_usec \
         created_by:url \
-        updated_at:timestamp \
+        updated_at:timestamp_utc_usec \
         updated_by:url \
-        deleted_at:timestamp \
+        deleted_at:timestamp_utc_usec \
         deleted_by:url \
-        locale_id:references \
+        locale_code:string \
         name:string \
         url:url \
         description:string \
-        level_1_as_markdown:markdown \
-        level_1_as_html:html \
-        level_2_as_markdown:markdown \
-        level_2_as_html:html \
-        level_3_as_markdown:html \
-        level_3_as_html:html \
-        level_4_as_markdown:html \
-        level_4_as_html:html \
+        level_1_description_as_markdown:markdown \
+        level_1_description_as_html:html \
+        level_2_description_as_markdown:markdown \
+        level_2_description_as_html:html \
+        level_3_description_as_markdown:html \
+        level_3_description_as_html:html \
+        level_4_description_as_markdown:html \
+        level_4_description_as_html:html \
         roles_that_require_this_skill_as_markdown:html \
         roles_that_require_this_skill_as_html:html \
 

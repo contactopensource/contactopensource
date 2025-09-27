@@ -4,18 +4,20 @@ set -euf
 cargo loco generate scaffold --html \
     international_standard_book_number \
         id:uuid \
-        sign:string \
+        sign:char \
         lock_version:integer \
-        created_at:timestamp \
+        created_at:timestamp_utc_usec \
         created_by:url \
-        updated_at:timestamp \
+        updated_at:timestamp_utc_usec \
         updated_by:url \
-        deleted_at:timestamp \
+        deleted_at:timestamp_utc_usec \
         deleted_by:url \
-        locale_id:references \
-        title:string \
-        subtitle:string \
-        summary:string \
+        locale_code:string \
+        sign:"string{1}" \
+        kind:string \
+        title:"string{50}" \
+        subtitle:"string{50}" \
+        summary:"string{72}" \
         description:text \
         disambiguation:text \
         avatar_image_400x400_url:url \
@@ -30,10 +32,10 @@ cargo loco generate scaffold --html \
         star_count:integer \
         quick_response_code_id:references \
         universal_product_code_id:references \
-        code:string \
-        prefix_element:string \
-        registration_group:digit \
-        registrant:string \
-        publication:string \
-        check_digit:digit \
+        code:"string{13}" \
+        prefix_element:"string{13}" \
+        registration_group:digit(5) \
+        registrant:"string{13}" \
+        publication:"string{13}" \
+        check_digit:digit(1) \
 
