@@ -1,13 +1,14 @@
-    - dora_metrics:
+      dora_metrics:
         - deployment_frequency_actual_value:
             help: Deployment frequency actual value
-            type: float
+            type: decimal
         - deployment_frequency_target_value:
             help: Deployment frequency target value
-            type: float
+            type: decimal
         - deployment_frequency_ratio:
             help: Deployment frequency ratio (actual value / target value)
-            type: float
+            type: decimal
+            sql: deployment_frequency_ratio decimal generated always as (deployment_frequency_actual_value / deployment_frequency_target_value) stored,
         - deployment_frequency_unit:
             help: Deployment frequency unit
             type: text
@@ -16,13 +17,14 @@
             type: text
         - lead_time_for_changes_actual_value:
             help: Lead time for changes actual value
-            type: float
+            type: decimal
         - lead_time_for_changes_target_value:
             help: Lead time for changes target value
-            type: float
+            type: decimal
         - lead_time_for_changes_ratio:
             help: Lead time for changes ratio (actual value / target value)
-            type: float
+            type: decimal
+            sql: lead_time_for_changes_ratio decimal generated always as (lead_time_for_changes_actual_value / lead_time_for_changes_target_value)
         - lead_time_for_changes_unit:
             help: Lead time for changes unit
             type: text
@@ -31,13 +33,14 @@
             type: text
         - change_failure_rate_actual_value:
             help: Change failure rate actual value
-            type: float
+            type: decimal
         - change_failure_rate_target_value:
             help: Change failure rate target value
-            type: float
+            type: decimal
         - change_failure_rate_ratio:
             help: Change failure rate ratio (actual value / target value)
-            type: float
+            type: decimal
+            sql: change_failure_rate_ratio decimal generated always as (change_failure_rate_actual_value / change_failure_rate_target_value) stored
         - change_failure_rate_unit:
             help: Change failure rate unit
             type: text
@@ -46,13 +49,14 @@
             type: text
         - mean_time_to_recovery_actual_value:
             help: Mean time to recovery actual value
-            type: float
+            type: decimal
         - mean_time_to_recovery_target_value:
             help: Mean time to recovery target value
-            type: float
+            type: decimal
         - mean_time_to_recovery_ratio:
             help: Mean time to recovery (actual value / target value)
-            type: float
+            type: decimal
+            sqL: mean_time_to_recovery_ratio decimal generated always as (mean_time_to_recovery_actual_value / mean_time_to_recovery_target_value)
         - mean_time_to_recovery_unit:
             help: Mean time to recovery unit
             type: text
