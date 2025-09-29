@@ -1,49 +1,49 @@
-    - halstead_complexity:
-      - halstead_complexity_volume_actual_value:
-          help: Halstead complexity volume actual value
-          type: decimal
-      - halstead_complexity_volume_target_value:
-          help: Halstead complexity target value
-          type: decimal
-      - halstead_complexity_volume_ratio:
-          help: Halstead complexity volume ratio (actual value / target value)
-          type: decimal
-          sql: halstead_complexity_volume_ratio DECIMAL GENERATED ALWAYS AS (halstead_complexity_volume_actual_value - halstead_complexity_volume_target_value) STORED
-      - halstead_complexity_volume_unit:
-          help: Halstead complexity volume unit
-          type: text
-      - halstead_complexity_volume_description:
-          help: Halstead complexity volume description
-          type: text
-      - halstead_complexity_difficulty_actual_value:
-          help: Halstead complexity difficulty actual value
-          type: decimal
-      - halstead_complexity_difficulty_target_value:
-          help: Halstead complexity difficulty target value
-          type: decimal
-      - halstead_complexity_difficulty_ratio:
-          help: Halstead complexity difficulty ratio (actual value / target value)
-          type: decimal
-          sql: halstead_complexity_difficulty_ratio DECIMAL GENERATED ALWAYS AS (halstead_complexity_difficulty_actual_value - halstead_complexity_difficulty_target_value) STORED
-      - halstead_complexity_difficulty_unit:
-          help: Halstead complexity difficulty unit
-          type: text      
-      - halstead_complexity_difficulty_description:
-          help: Halstead complexity difficulty description
-          type: text
-      - halstead_complexity_effort_actual_value:
-          help: Halstead complexity effort actual value
-          type: decimal
-      - halstead_complexity_effort_target_value:
-          help: Halstead complexity effort target value
-          type: decimal
-      - halstead_complexity_effort_ratio:
-          help: Halstead complexity effort ratio (actual value / target value)
-          type: decimal
-          sql: halstead_complexity_effort_ratio DECIMAL GENERATED ALWAYS AS (halstead_complexity_effort_actual_value - halstead_complexity_effort_target_value) STORED
-      - halstead_complexity_effort_unit:
-          help: Halstead complexity effort unit
-          type: decimal
-      - halstead_complexity_effort_description:
-          help: Halstead complexity effort description
-          type: decimal
+      halstead_complexity:
+        - halstead_complexity_volume_actual_value:
+            help: Halstead complexity volume actual value
+            type: decimal
+        - halstead_complexity_volume_target_value:
+            help: Halstead complexity target value
+            type: decimal
+        - halstead_complexity_volume_ratio:
+            help: Halstead complexity volume ratio (actual value / target value)
+            type: decimal
+            sql: halstead_complexity_volume_ratio DECIMAL GENERATED ALWAYS AS (halstead_complexity_volume_actual_value - halstead_complexity_volume_target_value) STORED
+        - halstead_complexity_volume_unit:
+            help: Halstead complexity volume unit
+            type: text
+        - halstead_complexity_volume_description:
+            help: Halstead complexity volume description
+            type: text
+        - halstead_complexity_difficulty_actual_value:
+            help: Halstead complexity difficulty actual value
+            type: decimal
+        - halstead_complexity_difficulty_target_value:
+            help: Halstead complexity difficulty target value
+            type: decimal
+        - halstead_complexity_difficulty_ratio:
+            help: Halstead complexity difficulty ratio (actual value / target value)
+            type: decimal
+            sql: halstead_complexity_difficulty_ratio DECIMAL GENERATED ALWAYS AS (halstead_complexity_difficulty_actual_value - halstead_complexity_difficulty_target_value) STORED
+        - halstead_complexity_difficulty_unit:
+            help: Halstead complexity difficulty unit
+            type: text
+        - halstead_complexity_difficulty_description:
+            help: Halstead complexity difficulty description
+            type: text
+        - halstead_complexity_effort_actual_value:
+            help: Halstead complexity effort actual value
+            type: decimal
+        - halstead_complexity_effort_target_value:
+            help: Halstead complexity effort target value
+            type: decimal
+        - halstead_complexity_effort_ratio:
+            help: Halstead complexity effort ratio (actual value / target value)
+            type: decimal
+            sql: halstead_complexity_effort_ratio DECIMAL GENERATED ALWAYS AS (halstead_complexity_effort_actual_value - halstead_complexity_effort_target_value) STORED
+        - halstead_complexity_effort_unit:
+            help: Halstead complexity effort unit
+            type: decimal
+        - halstead_complexity_effort_description:
+            help: Halstead complexity effort description
+            type: decimal
