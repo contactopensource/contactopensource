@@ -1,0 +1,33 @@
+      burn_rate:
+        - burn_rate_net_cash_per_week_actual_value:
+            help: Burn rate net cash per week actual value
+            type: decimal
+        - burn_rate_net_cash_per_week_target_value:
+            help: Burn rate net cash per week target value
+            type: decimal
+        - burn_rate_net_cash_per_week_ratio:
+            help: Burn rate net cash per week ratio (actual value / target value)
+            type: decimal
+            sql: burn_rate_net_cash_per_week_ratio DECIMAL GENERATED ALWAYS AS (burn_rate_net_cash_per_week_actual_value / burn_rate_net_cash_per_week_target_value) STORED
+        - burn_rate_net_cash_per_week_unit:
+            help: Burn rate net cash per week unit
+            type: string
+        - burn_rate_net_cash_per_week_description:
+            help: Burn rate net cash per week description
+            type: string
+        - burn_rate_net_time_per_week_actual_value:
+            help: Burn rate net time per week actual value
+            type: decimal
+        - burn_rate_net_time_per_week_target_value:
+            help: Burn rate net time per week target value
+            type: decimal
+        - burn_rate_net_time_per_week_ratio:
+            help: Burn rate net time per week ratio (actual value / target value)
+            type: decimal
+            sql: burn_rate_net_time_per_week_ratio DECIMAL GENERATED ALWAYS AS (burn_rate_net_time_per_week_actual_value / burn_rate_net_time_per_week_target_value) STORED
+        - burn_rate_net_time_per_week_unit:
+            help: Burn rate net time per week unit
+            type: string
+        - burn_rate_net_time_per_week_description:
+            help: Burn rate net time per week description
+            type: string
