@@ -13,8 +13,8 @@ united_kingdom_standard_occupational_classification_2020:
 
     The Standard Occupational Classification, often abbreviated as the SOC, is
     the system used by the United Kingdom's Office for National Statistics (ONS)
-    to classify people for statistical purposes according to their job. 
-    
+    to classify people for statistical purposes according to their job.
+
     Under this system, a job is defined as "a set of tasks or duties to be
     carried out by one person". The SOC classifies jobs according to the level
     and specialisation of skill. The SOC was introduced in 1990.[2] It has
@@ -29,9 +29,9 @@ united_kingdom_standard_occupational_classification_2020:
     - Major Group is denoted by a 1-digit code, example 2 Professionals
 
     - Sub-Major Group is denoted by a 2-digit codes, example 22 Health Professionals
-    
+
     - Minor Groups are denoted by 3-digit codes, example 221 Medical doctors
-    
+
     - Unit Groups are denoted by 4-digit codes, example 2211 Generalist Medical Practitioners
 
   module: Codes

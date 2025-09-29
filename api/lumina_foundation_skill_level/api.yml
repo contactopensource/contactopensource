@@ -8,19 +8,19 @@ lumina_foundation_skill_level:
   description: |-
 
     Level 1: Beginner. You work best within a structured environment with supervision, predetermined processes, and set criteria to judge output against.
-    
+
     Level 2: Capable. You can solve basic problems and complete tasks on your own—but when a complex issue arises, you'll likely need some help.
-    
+
     Level 3: Intermediate. For the most part, you can work independently on new challenges. You know enough about your skills to be self-critical, and know the difference between good work and great work. You've also become good at setting your own goals to measure progress.
-    
+
     Level 4: Effective. You can work independently on complex projects. When those projects are complete, you're able to look at your work and accurately evaluate whether it was successful. While supervision isn't necessary, you value external input and feedback on your work.
-    
+
     Level 5: Experienced. You can operate as a one-person show, which means you're autonomous. You can lead an initiative and see it through to the end with little to no supervision. You can plan the process you'll use, apply that plan, and evaluate the effectiveness of it while considering alternatives and the potential outcomes. You're likely trusted when it comes to your domain. Others may come to you with ideas, situations, or problems and ask for your insight or potential solutions.
-    
+
     Level 6: Advanced. You can work well independently on very complex projects. You've applied your unique viewpoint to solve complicated issues, and you innovate to help the field advance. You're likely good at communicating problems and potential solutions, and can lead teams of practitioners.
-    
+
     Level 7: Distinguished. You've likely successfully led teams as they work on big initiatives that push the boundaries of your field. And you can do it all—whether you're still a practitioner or you spend the bulk of your time leading others, your judgment is well-respected from those within your domain.
-    
+
     Level 8: Master. You are completely autonomous, and you are regarded as a domain leader and scholar. You have your choice of projects, and you likely select those that will allow you to create significant impact in the field and offer new ideas or practices.
 
     The implementation is mostly covered by _card.yml:
@@ -30,7 +30,7 @@ lumina_foundation_skill_level:
           example: Distinguished
       - description:
           type: string
-          example: You've likely successfully led teams … 
+          example: You've likely successfully led teams …
 
   module: Codes
   attribute_groups:

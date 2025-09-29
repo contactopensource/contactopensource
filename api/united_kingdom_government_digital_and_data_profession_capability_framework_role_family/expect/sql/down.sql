@@ -1,0 +1,3 @@
+DROP INDEX IF EXISTS uk_gdad_pcf_role_families_locale_code_index;
+DROP INDEX IF EXISTS uk_gdad_pcf_role_families_name_index;
+DROP INDEX IF EXISTS uk_gdad_pcf_role_families_name_index_tpo;

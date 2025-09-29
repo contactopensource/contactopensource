@@ -5,7 +5,7 @@ In our work, we use the term "Range" to mean a lower bound and upper bound.
 In everyday programming, this typically looks like one of these:
 
 * `range(start, stop)`
-  
+
 * `range(begin, end)`
 
 * `range(lower, upper)`

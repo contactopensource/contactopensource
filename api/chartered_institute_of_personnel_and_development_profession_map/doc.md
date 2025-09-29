@@ -102,7 +102,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core knowledge
 | Culture and behaviour
-| Understanding people's behaviour and creating the right organisation culture. 
+| Understanding people's behaviour and creating the right organisation culture.
 |-
 | Core knowledge
 | Business acumen
@@ -110,7 +110,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core knowledge
 | Evidence-based practice
-| Using evidence and data to create insight, problem solve, develop ideas and measure impact. 
+| Using evidence and data to create insight, problem solve, develop ideas and measure impact.
 |-
 | Core knowledge
 | Technology and people
@@ -242,7 +242,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core knowledge
 | People practice
-| Wellbeing 
+| Wellbeing
 | What wellbeing is and why it’s important
 | Why wellbeing is important, and the different factors that impact wellbeing
 | How to integrate wellbeing into people practices
@@ -437,7 +437,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core knowledge
 | Business acumen
-| Brand 
+| Brand
 | What employer brand is and why it’s important
 | How employer brand and reputation is shaped and formed
 | How your organisation contributes towards society and how this impacts employer brand and reputation
@@ -469,7 +469,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core knowledge
 | Evidence-based practice
-| Research 
+| Research
 | How to access research via websites (such as the CIPD website)
 | How to access published research relating to your area of work
 | How to use relevant research (published or commissioned) to inform your approach
@@ -605,7 +605,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core behaviours
 | Ethical practice
-| Transparency 
+| Transparency
 | Handle personal data and information in a professional manner
 | Provide explanations and reasons for the choices you make and the advice you provide
 | Encourage transparency in decision-making and communication where possible
@@ -613,7 +613,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core behaviours
 | Ethical practice
-| Integrity 
+| Integrity
 | Demonstrate honesty in dealings with others
 | Demonstrate professionalism and consistency in what you say and do in order to build trust
 | Visibly and consistently role-model professional principles, values and personal integrity to build trust
@@ -621,7 +621,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core behaviours
 | Professional courage and influence
-| Courage 
+| Courage
 | Contribute views and opinions clearly
 | Contribute to discussions and respond to questions in an informed and confident way
 | Challenge constructively and confidently in the face of opposition
@@ -629,7 +629,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core behaviours
 | Professional courage and influence
-| Communication 
+| Communication
 | Provide information accurately and in a timely way
 | Communicate key information in a clear and engaging way to influence others
 | Communicate with impact, and make complex things clear, to enable a way forward
@@ -709,7 +709,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core behaviours
 | Working inclusively
-| Inclusivity 
+| Inclusivity
 | Show sensitivity and respect to others
 | Get to know people as individuals so you can work together more effectively
 | Role-model and advocate the value of including others and embracing difference
@@ -853,7 +853,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core behaviours
 | Insights focused
-| Gaining evidence 
+| Gaining evidence
 | Accurately retrieve and collate data to inform decisions
 | Identify sources of evidence (eg internal data, professional opinion and external practice) and how best to acquire them
 | Acquire and source multiple sources of evidence (eg internal and external professional expertise, research and stakeholder concerns and values) to test assumptions and ideas
@@ -894,7 +894,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Core behaviours
 | Situational decision-making
-| Decision-making 
+| Decision-making
 | N/A
 | Identify the different options or solutions available and the benefits and risks of each
 | Consider different options and make decisions by balancing opportunity, risk and alignment to professional values
@@ -950,7 +950,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Specialist knowledge
 | Employee experience
-| Trust 
+| Trust
 | How trust affects the working relationship
 | Different trust models and how they can be used to improve relationships at work
 | How to build a culture of trust across the organisation for workers and other stakeholders
@@ -1087,7 +1087,7 @@ Chartered Fellow level is equivalent to Chartered Fellow (Chartered FCIPD).
 |-
 | Specialist knowledge
 | Equality, diversity and inclusion
-| EDI issues 
+| EDI issues
 | The key EDI issues in your organisation
 | The key EDI issues in your organisation, and how to raise awareness of these
 | The key issues and nuances around EDI in the organisation, and how to ensure they are challenged and addressed

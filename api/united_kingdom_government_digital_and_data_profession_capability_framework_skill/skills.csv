@@ -101,7 +101,7 @@ Analysis,"Analysis involves examining, interpreting and analysing data to help m
 - provide direction and lead on change regarding factors that feed into analysis
 - monitor changes in the technical environment and assess whether risks are still at acceptable levels or whether previous decisions need to be revisited
 - direct and influence others on best practice and policy",Security architect
-Analysis and insight,"Analysis and insight involves examining, interpreting and analysing data to help make informed decisions.",This skill level is currently not defined.,"You can: 
+Analysis and insight,"Analysis and insight involves examining, interpreting and analysing data to help make informed decisions.",This skill level is currently not defined.,"You can:
 - understand and work with colleagues to apply core techniques for analysis and insight
 - present clear insights that colleagues can understand and use","You can:
 - understand and help teams to apply a range of techniques to analyse data and provide insight
@@ -349,7 +349,7 @@ Communicating analysis and insight,,"You can:
 - present analysis and visualisations in clear ways to communicate complex messages
 - communicate negative and positive information to stakeholders
 - give tactical and strategic recommendations","You can:
-- communicate relevant, compelling stories using the most appropriate medium 
+- communicate relevant, compelling stories using the most appropriate medium
 - make complex recommendations at a tactical and strategic level","Data governance manager, Performance analyst, Digital portfolio manager, Digital evaluator"
 Communicating between the technical and non-technical,Communicating between the technical and non-technical involves conveying information using the most effective medium and language for the audience.,"You can:
 - explain why it's important to communicate technical concepts in non-technical language
@@ -539,7 +539,7 @@ Data development process,,This skill level is currently not defined.,"You can:
 - build teams to complete data integration services","You can:
 - establish enterprise-scale data integration procedures across the data development life cycle, and ensure that teams adhere to them
 - manage resources to ensure that data services work effectively at an enterprise level",Data engineer
-Data engineering,"Data engineering involves ensuring the correct systems are available to enable the collection, analysis and extrapolation of data.","You can: 
+Data engineering,"Data engineering involves ensuring the correct systems are available to enable the collection, analysis and extrapolation of data.","You can:
 - explain why you need engineering support to design and provide products for the organisation
 - explain why you need to cleanse and prepare data for use in data science products
 - explain different architectures, including cloud and on-premise, and data manipulation and transformation tools","You can:
@@ -622,7 +622,7 @@ Data literacy improvement,,This skill level is currently not defined.,"You can:
 - persuade senior decision-makers that data literacy is a vital part of a data-driven culture, enabling effective decision-making at all levels",Data governance manager
 Data management,"Data management involves the application of data governance policies, including the tools, procedures and methods that manage data access, sharing, dissemination and protection.","You can:
 - explain the importance of data governance policies
-- explain how data management tools, procedures and methods relate to a specific project","You can: 
+- explain how data management tools, procedures and methods relate to a specific project","You can:
 - follow organisational data governance, including policies on data access, sharing, dissemination and protection
 - participate in or deliver data management across services or products
 - use appropriate data management tools, procedures and methods with some support","You can:
@@ -716,7 +716,7 @@ Data standards,Data standards involve established practices to make it easier an
 - use data policies, processes and standards effectively
 - work with subject matter experts to develop standards, policies and guidance to protect data
 - monitor compliance with policies and standards in a team and take action if needed
--  analyse the impact if a standard is breached","You can: 
+-  analyse the impact if a standard is breached","You can:
 - create data standards for different subjects and ensure senior leaders understand them
 - work with subject matter experts across the organisation to introduce data standards best practice
 - monitor compliance with policies and standards in the organisation
@@ -781,7 +781,7 @@ Design communication,Communication involves conveying information using the most
 - clearly explain complex problems and ideas to teams or stakeholders outside of design
 - clearly document and communicate design decisions, related risks and any unresolved issues
 - build consensus around a design approach, for example, by asking difficult questions and challenging assumptions","You can:
-- gain support for design decisions and design strategy from senior leaders 
+- gain support for design decisions and design strategy from senior leaders
 - communicate design strategy across organisational boundaries
 - coach others in how to effectively communicate design
 - develop or introduce more effective methods of communicating design and working in the open","Graphic designer, Interaction designer, Service designer"
@@ -843,9 +843,9 @@ Designing together,,"You can:
 - give and receive constructive design feedback","You can:
 - advise others how to effectively plan and run design sessions with a team, users or stakeholders
 - adapt a design session to ensure you achieve a useful outcome
-- effectively involve the right people throughout the design process 
+- effectively involve the right people throughout the design process
 - work across team or profession boundaries, for example with policy teams","You can:
-- effectively plan and run design sessions that include senior leaders or stakeholders 
+- effectively plan and run design sessions that include senior leaders or stakeholders
 - help teams connect and work across organisational boundaries
 - coach other designers in how to involve stakeholders of any level in the design process
 - develop or introduce more effective ways to design together","Graphic designer, Interaction designer, Service designer"
@@ -908,7 +908,7 @@ Enabling and informing risk-based decisions,,This skill level is currently not d
 - apply risk methodologies at the most complex levels of risk","Data governance manager, Security architect"
 "Ensuring resilience of digital, data and technology","You can:
 - be accountable for digital, data and technology resilience across the organisation
-- advocate for the appropriate level of investment to support organisational resilience 
+- advocate for the appropriate level of investment to support organisational resilience
 - ensure that risks, including cyber security, privacy and compliance risks, are addressed by governance, operational processes, delivery practices and the strategic selection of suppliers
 Examples of leadership using this skill:
 - directing the digital, data and technology environment so the organisation can safely and securely harness innovative practices and emerging technologies
@@ -1025,7 +1025,7 @@ Governance and assurance,Governance and assurance involves ensuring appropriate 
 - follow appropriate governance and assurance processes
 - contribute to deciding what governance and assurance is required for a product or service","You can:
 - develop appropriate governance and assurance processes
-- identify and recommend improvements to governance and assurance processes 
+- identify and recommend improvements to governance and assurance processes
 - support others in following or applying governance and assurance processes","You can:
 - ensure appropriate and proportionate governance and assurance is in place and is continuously improved, aligned to organisational and government needs
 - guide teams through governance and assurance processes, such as service assessments, to ensure standards are met
@@ -1082,7 +1082,7 @@ Iterative design,,"You can:
 IT infrastructure,"IT infrastructure involves ensuring systems and processes are available, adaptable, reliable and secure.","You can:
 - support infrastructure solutions and services, and other computer, storage, networking, physical infrastructure, software, commercial-off-the-shelf (COTS) software and open source packages and solutions
 - support virtual and cloud computing, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS)","You can:
-- build, configure, administer and support infrastructure solutions and services, for example, networking and physical infrastructure, commercial-off-the-shelf (COTS) software, open source packages and solutions, or virtual and cloud computing","You can: 
+- build, configure, administer and support infrastructure solutions and services, for example, networking and physical infrastructure, commercial-off-the-shelf (COTS) software, open source packages and solutions, or virtual and cloud computing","You can:
 - design and implement infrastructure solutions and services, for example, networking and physical infrastructure, commercial-off-the-shelf (COTS) software, open source packages and solutions, or virtual and cloud computing","You can:
 - lead teams and departments in the design, implementation, administration and support of infrastructure solutions and services","Network architect, Infrastructure engineer"
 IT service reporting,IT service reporting involves analysing data to understand how an IT product or service has performed against the Key Performance Indicators (KPIs).,"You can:
@@ -1152,7 +1152,7 @@ Leading digital products and services,"You can:
 - ensure roadmaps meet organisational strategic aims and that responsibility for delivery of the roadmap is shared appropriately across business areas
 - decide when to manage, maintain or evolve products and services to deliver organisational outcomes and support seamless user journeys
 Examples of leadership using this skill:
-- partnering with senior leaders to determine how potential blockers in roadmaps will be managed 
+- partnering with senior leaders to determine how potential blockers in roadmaps will be managed
 - managing expectations on what the organisation has the capacity to deliver and pushing back when needed
 - directing and agreeing resource, guidance and investment to ensure opportunities for innovation are acted upon, and live products and services are continuously developed",,,,,Chief digital and information officer
 Leading performance and benefits,"Leading performance and benefits involves using appropriate measures, metrics, data and insights to ensure the delivery of valuable outcomes and business benefits.","You can:
@@ -1243,7 +1243,7 @@ Managing a data project,"Managing a data project involves understanding, plannin
 - plan and implement different stages of the data project life cycle
 - communicate progress of data projects with stakeholders
 - adapt teams' ways of working to deliver different project outcomes and requirements","You can:
-- advise on problem statement development, ensuring standards are met 
+- advise on problem statement development, ensuring standards are met
 - oversee and advise on the planning and implemation of the project life cycle on varied data projects
 - share good practice in adapting teams' ways of working to deliver project outcomes
 - lead and develop stakeholder relationships for your team's data projects",Data analyst
@@ -1442,8 +1442,8 @@ Product leadership,"Product leadership involves advocating for product managemen
 - lead on coaching and mentoring for product management in your organisation
 - lead some activities in cross-government communities, establishing and maintaining wider relationships across the profession
 - represent product management in your organisation in conversations with senior stakeholders",Product manager
-Product management,"Product management involves making sure that products provide value and drive the right outcomes, whilst balancing user and business needs. This is achieved by working with other professions in your team to frame the problem and make decisions on priorities for your delivery teams.","You can: 
-- explain the value of using a product management approach to provide value and drive the right outcomes","You can: 
+Product management,"Product management involves making sure that products provide value and drive the right outcomes, whilst balancing user and business needs. This is achieved by working with other professions in your team to frame the problem and make decisions on priorities for your delivery teams.","You can:
+- explain the value of using a product management approach to provide value and drive the right outcomes","You can:
 - create and prioritise actionable goals for your teams, balancing user needs and business perspectives
 - make or recommend an evidence-based decision using insight and data
 - use a range of product management methods, for example, prioritisation and roadmapping
@@ -1575,7 +1575,7 @@ Examples of leadership using this skill:
 - educating senior leaders on the importance of security in the development of services and products
 - deciding when exceptions to security policy and processes are allowed
 - getting support for investment to ensure appropriate security in the organisation’s supply chain",,,,,Chief information security officer
-Security technology,Security technology involves understanding security architectures and identifying vulnerabilities to prevent and respond to cyber breaches.,"You can: 
+Security technology,Security technology involves understanding security architectures and identifying vulnerabilities to prevent and respond to cyber breaches.,"You can:
 - describe some security architectures
 - explain why security technology is important","You can:
 - explain the effect of vulnerabilities on current and future designs
@@ -1775,7 +1775,7 @@ Systems design (frontend developer),,"You can:
 - ensure others follow relevant technical strategies, policies, standards and practices
 - work with well understood technology and can identify appropriate patterns to make effective use of technologies’ best features",Frontend developer
 Systems integration,"Systems integration involves identifying points of connection between different systems and processes, or opportunities to combine them, and designing how the components communicate.","You can:
-- explain the process and principles of integrating systems. 
+- explain the process and principles of integrating systems.
 - describe challenges of designing, building and testing interfaces between systems","You can:
 - build and test simple interfaces between systems
 - work on more complex integration as part of a wider team","You can:

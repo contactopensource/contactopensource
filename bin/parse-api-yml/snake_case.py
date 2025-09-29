@@ -8,7 +8,7 @@ def snake_case(text):
     """
     Snake case conversion that handles multiple scenarios:
     - camelCase -> camel_case
-    - PascalCase -> pascal_case  
+    - PascalCase -> pascal_case
     - kebab-case -> kebab_case
     - spaces -> underscores
     - multiple separators -> single underscore
@@ -18,22 +18,22 @@ def snake_case(text):
     """
     if not text:
         return text
-    
+
     # Replace non-alphanumeric characters (except underscores) with underscores
     text = re.sub(r'[^a-zA-Z0-9_]', '_', text)
-    
+
     # Handle transitions from lowercase/numbers to uppercase
     text = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', text)
-    
+
     # Handle transitions from multiple uppercase to lowercase (for acronyms)
     text = re.sub(r'([A-Z]+)([A-Z][a-z])', r'\1_\2', text)
-    
+
     # Clean up multiple consecutive underscores
     text = re.sub(r'_+', '_', text)
-    
+
     # Remove leading and trailing underscores
     text = text.strip('_')
-    
+
     # Convert to lowercase
     return text.lower()
 
@@ -42,7 +42,7 @@ def test_snake_case_functions():
     """Test the snake case functions with various inputs."""
     test_cases = [
         "camelCase",
-        "PascalCase", 
+        "PascalCase",
         "snake_case",
         "kebab-case",
         "UPPER_CASE",
@@ -59,7 +59,7 @@ def test_snake_case_functions():
         "parseXMLFromURL",
         ""
     ]
-    
+
     for test in test_cases:
         print(f"'{test}'".ljust(20), end="")
         try:
@@ -73,7 +73,7 @@ def test_snake_case_functions():
 if __name__ == "__main__":
     test_cases = [
         "camelCase",
-        "PascalCase", 
+        "PascalCase",
         "snake_case",
         "kebab-case",
         "UPPER_CASE",

@@ -37,9 +37,9 @@ Ash modifiers TODO
 * `primary_key`
 
 * `array`
-  
+
 * `public`
-  
+
 * `sensitive`
 
 * `required`

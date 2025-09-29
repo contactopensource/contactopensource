@@ -27,7 +27,7 @@ def render_type(attribute):
         case "char":
              type = "string"
         case "timestamp":
-             type = "utc_datetime_usec"             
+             type = "utc_datetime_usec"
         case "url":
              type = "text"
     # Trim any parentheses e.g. from "string(80)" into "string" because of Ash API.
@@ -37,15 +37,15 @@ def render_type(attribute):
 def render_modifiers(attribute):
     s = ""
     if hasattr(attribute, 'primary_key') and attribute.primary_key:
-        s += ":primary_key" 
+        s += ":primary_key"
     if hasattr(attribute, 'array') and attribute.array:
-        s += ":array" 
+        s += ":array"
     if hasattr(attribute, 'public') and attribute.public:
-        s += ":public" 
+        s += ":public"
     if hasattr(attribute, 'sensitive') and attribute.sensitive:
-        s += ":sensitive" 
+        s += ":sensitive"
     if hasattr(attribute, 'required') and attribute.sensitive:
-        s += ":required" 
+        s += ":required"
     return s
 
 def render_index(attribute):

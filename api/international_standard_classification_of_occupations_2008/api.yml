@@ -23,9 +23,9 @@ international_standard_classification_of_occupations_2008:
     - Major Group is denoted by a 1-digit code, example 2 Professionals
 
     - Sub-Major Group is denoted by a 2-digit codes, example 22 Health Professionals
-    
+
     - Minor Groups are denoted by 3-digit codes, example 221 Medical doctors
-    
+
     - Unit Groups are denoted by 4-digit codes, example 2211 Generalist Medical Practitioners
 
   module: Codes

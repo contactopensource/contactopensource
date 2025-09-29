@@ -1,0 +1,167 @@
+initiative:
+  title: Initiative
+  model: Initiative
+  module: Works
+  summary: Initiative
+  description: |-
+
+    An initiative is a catch-all term for all of these and more:
+
+    - Portfolio
+    - Product
+    - Program
+    - Project
+    - Practice
+    - Service
+    - Support
+
+  links:
+    - https://wikipedia.org/wiki/Initiative
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main
+      - status
+          type: string
+      - tags, {:array type: string}
+      - url
+          type: string
+      - email
+          type: string
+      - phone
+          type: string
+      - messaging
+          type: string
+      - postal
+          type: string
+      - orcid_pid
+          type: string
+      - rdf_type
+          type: string
+      - linkedin_url
+          type: string
+      - github_url
+          type: string
+      - codeberg_url
+          type: string
+      - agents_as_url
+          type: string
+      - agents_as_markdown
+          type: string
+      - home_emoji_url
+          type: string
+      - bellhop_bell_emoji_url
+          type: string
+      - target_emoji_url
+          type: string
+      - gear_emoji_url
+          type: string
+      - spiral_calendar_emoji_url
+          type: string
+      - sparkles_emoji_url
+          type: string
+      - speech_bubble_emoji_url
+          type: string
+      - newspaper_emoji_url
+          type: string
+      - bar_chart_emoji_url
+          type: string
+      - movie_camera_emoji_url
+          type: string
+      - construction_worker_emoji_url
+          type: string
+      - crystal_ball_emoji_url
+          type: string
+      - butterfly_emoji_url
+          type: string
+      - lady_beetle_emoji_url
+          type: string
+      - note
+          type: string
+      - email_distribution_list
+          type: string
+      - daisyui_timeline_html
+          type: string
+      - org_mode
+          type: string
+      - task_list_as_markdown
+          type: string
+      - ways_of_working_as_markdown
+          type: string
+      - objectives_and_key_results_as_markdown
+          type: string
+      - key_performance_indicators_as_markdown
+          type: string
+      - glossary_as_url
+          type: string
+      - glossary_as_markdown
+          type: string
+    - !include ../_business_analysis.yml
+      - code_of_conduct_url
+          type: string
+      - code_of_conduct_as_markdown
+          type: string
+      - license_url
+          type: string
+      - license_as_markdown
+          type: string
+      - arc42_as_url
+          type: string
+      - arc42_as_markdown
+          type: string
+      - explain_stakeholders_as_markdown
+          type: string
+      - explain_history_as_markdown
+          type: string
+      - explain_authentication_as_markdown
+          type: string
+      - explain_authorization_as_markdown
+          type: string
+      - explain_use_cases_as_markdown
+          type: string
+      - explain_demographics_as_markdown
+          type: string
+      - explain_ui_as_markdown
+          type: string
+      - explain_api_as_markdown
+          type: string
+      - explain_data_as_markdown
+          type: string
+      - explain_mobile_as_markdown
+          type: string
+      - explain_legal_as_markdown
+          type: string
+      - explain_financial_as_markdown
+          type: string
+      - explain_service_level_agreement_as_markdown
+          type: string
+      - explain_disaster_recovery_as_markdown
+          type: string
+    - !include ../quality_documentation.yml
+      - apache_echart_as_url
+          type: string
+      - apache_echart_as_typescript
+          type: string
+      - active_users_actual_value
+          type: integer
+      - active_users_target_value
+          type: integer
+      - active_users_unit
+          type: string
+      - active_users_description
+          type: string
+      - uptime_percentage_actual_value
+          type: decimal
+      - uptime_percentage_target_value
+          type: decimal
+      - uptime_percentage_unit
+          type: string
+      - uptime_percentage_description
+          type: string
+    - !include ../_burn_rate.yml
+    - !include ../_net_promoter_score.yml
+    - !include ../_earned_value_management.yml
+    - !include ../_total_project_control.yml
+    - !include ../_code_metrics.yml
+    - !include ../_halsted_complexity.yml
+    - !include ../_dora_metrics.yml
