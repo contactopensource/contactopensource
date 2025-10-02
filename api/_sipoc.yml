@@ -1,0 +1,31 @@
+      sipoc:
+        - sipoc_suppliers_as_url:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) suppliers description as URL
+            type: url
+        - sipoc_suppliers_as_markdown:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) suppliers description as markdown
+            type: markdown
+        - sipoc_inputs_as_url:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) inputs description as URL
+            type: url
+        - sipoc_inputs_as_markdown:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) inputs description as markdown
+            type: markdown
+        - sipoc_processes_as_url:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) processes description as URL
+            type: url
+        - sipoc_processes_as_markdown:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) processes description as markdown
+            type: markdown
+        - sipoc_outputs_as_url:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) outputs description as URL
+            type: url
+        - sipoc_outputs_as_markdown:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) outputs description as markdown
+            type: markdown
+        - sipoc_customers_as_url:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) customers description as URL
+            type: url
+        - sipoc_customers_as_markdown:
+            help: Suppliers Inputs Processes Outputs Customers (SIPOC) customers description as markdown
+            type: markdown
