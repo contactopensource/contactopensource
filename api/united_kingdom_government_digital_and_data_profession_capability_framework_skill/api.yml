@@ -2,7 +2,7 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
   title: United Kingdom (UK) Government Digital And Data (GDAD) Profession Capability Framework (PCF) Skill
   model: UnitedKingdomGovernmentDigitalAndDataProfessionCapabilityFrameworkSkill
   short_id: uk_gdad_pcf_skill
-  short_model: UKGDADPCFSkill
+  short_model: UkGdadPcfSkill
   summary: |-
 
     United Kingdom (UK) Government Digital And Data (GDAD) Profession Capability Framework (PCF) Skill
@@ -143,3 +143,21 @@ united_kingdom_government_digital_and_data_profession_capability_framework_skill
             </ul>
           required: true
           public: true
+  trigram: |-
+    CREATE INDEX uk_gdad_pcf_skills_index_gto
+      ON uk_gdad_pcf_skills
+      USING GIN ((
+        name
+          || ' ' ||
+        description
+          || ' ' ||
+        level_1_description_as_markdown
+          || ' ' ||
+        level_2_description_as_markdown
+          || ' ' ||
+        level_3_description_as_markdown
+          || ' ' ||
+        level_4_description_as_markdown
+          || ' ' ||
+        roles_that_require_this_skill_as_markdown
+      ) gin_trgm_ops);

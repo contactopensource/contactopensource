@@ -1,6 +1,8 @@
 united_kingdom_standard_occupational_classification_2020:
   title: United Kingdom (UK) Standard Occupational Classification (SOC) 2020
   model: UnitedKingdomStandardOccupationalClassification2020
+  short_id: uk_soc_2020
+  short_model: UkSoc2020
   summary: |-
 
     United Kingdom (UK) Standard Occupational Classification (SOC) 2020

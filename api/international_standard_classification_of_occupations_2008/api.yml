@@ -33,12 +33,28 @@ international_standard_classification_of_occupations_2008:
     - Main:
       - code:
           type: string
-          example: TODO
+          example: "2211"
+          required: true
+          public: true
           index: true
-      - title:
+      - name:
           type: string
-          example: TODO
+          example: Generalist Medical Practitioners
+          required: true
+          public: true
           index: true
       - definition:
           type: string
-          example: TODO
+          example: Generalist Medical Practitioners diagnose, treat and prevent human illness …
+          required: true
+          public: true
+  trigram: |-
+    CREATE INDEX ilo_isco_2008s_index_gto
+      ON ilo_isco_2008s
+      USING GIN ((
+        code
+          || ' ' ||
+        name
+          || ' ' ||
+        definition
+      ) gin_trgm_ops);

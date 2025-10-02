@@ -25,7 +25,7 @@ lumina_foundation_skill_level:
 
     The implementation is mostly covered by _card.yml:
 
-      - title:
+      - name:
           type: string
           example: Distinguished
       - description:
@@ -41,3 +41,13 @@ lumina_foundation_skill_level:
           type: integer
           example: 7
           index: true
+  trigram: |-
+    CREATE INDEX lumina_foundation_skill_levels_name_index_gto
+      ON lumina_foundation_skill_levels
+      USING GIN ((
+        number
+          || ' ' ||
+        name
+          || ' ' ||
+        description
+      ) gin_trgm_ops);

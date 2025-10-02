@@ -2,7 +2,7 @@ united_kingdom_government_digital_and_data_profession_capability_framework_role:
   title: United Kingdom (UK) Government Digital And Data (GDAD) Profession Capability Framework (PCF) Role
   model: UnitedKingdomGovernmentDigitalAndDataProfessionCapabilityFrameworkRole
   short_id: uk_gdad_pcf_role
-  short_model: UKGDADPCFRole
+  short_model: UkGdadPcfRole
   summary: |-
 
     United Kingdom (UK) Government Digital And Data (GDAD) Profession Capability Framework (PCF) Role
@@ -29,24 +29,21 @@ united_kingdom_government_digital_and_data_profession_capability_framework_role:
           required: true
           public: true
           index: true
-          null: false
       - name:
           help: The name of the role
           type: string
           example: Application operations engineer
           required: true
           public: true
-          null: false
       - url:
           help: The link to the UK GDAD PCF role
           type: url
           example: https://ddat-capability-framework.service.gov.uk/role/application-operations-engineer
           required: true
           public: true
-          null: false
-      - description:
+      - description_as_markdown:
           help: The short description and typical responsibilities for the role in general
-          type: string
+          type: markdown
           example: An application operations engineer supports, manages and maintains a single application or a suite of applications.",Senior application operations engineer,"Dealing with more complex issues, a senior application operations engineer is responsible for code deployment and co-ordinating change-based activities, such as taking services live. Depending on the complexity and size of a project and the likely impact it will have on the business, you might manage and maintain certain aspects of an application.
           required: true
           public: true
@@ -56,9 +53,9 @@ united_kingdom_government_digital_and_data_profession_capability_framework_role:
           example: TODO
           required: true
           public: true
-      - level_description:
+      - level_description_as_markdown:
           help: The short description and typical responsibilities for each role level
-          type: string
+          type: markdown
           example: TODO
           required: true
           public: true
@@ -72,3 +69,19 @@ united_kingdom_government_digital_and_data_profession_capability_framework_role:
       # - skill description - the short descriptions of what each skill involves
       # - skill level name - one of ‘awareness’, ‘working’, ‘practitioner’ or ‘expert’
       # - skill level description - what you are able to do with the skills if you have that level of proficiency
+  trigram: |-
+    CREATE INDEX uk_gdad_pcf_roles_index_gto
+      ON uk_gdad_pcf_roles
+      USING GIN ((
+        locale_code
+          || ' ' ||
+        family
+          || ' ' ||
+        name
+          || ' ' ||
+        description_as_markdown
+          || ' ' ||
+        level_name
+          || ' ' ||
+        level_description_as_markdown
+      ) gin_trgm_ops);
