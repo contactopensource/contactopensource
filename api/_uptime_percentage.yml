@@ -1,0 +1,19 @@
+    uptime_percentage:
+      - uptime_percentage_actual_value:
+          help: Uptime percentage actual value
+          type: decimal
+          index: true
+      - uptime_percentage_target_value:
+          help: Uptime percentage target value
+          type: decimal
+          index: true
+      - uptime_percentage_ratio:
+          help: Uptime percentage ratio = (actual value / target value)
+          type: decimal
+          index: true
+      - uptime_percentage_unit:
+          help: Uptime percentage unit
+          type: string
+      - uptime_percentage_description:
+          help: Uptime percentage description
+          type: string
