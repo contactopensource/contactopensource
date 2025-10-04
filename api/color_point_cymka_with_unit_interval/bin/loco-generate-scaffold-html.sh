@@ -4,7 +4,6 @@ set -euf
 cargo loco generate scaffold --html \
     color_point_cymka_with_unit_interval \
         id:uuid \
-        sign:char \
         lock_version:integer \
         created_at:timestamp_utc_usec \
         created_by:url \

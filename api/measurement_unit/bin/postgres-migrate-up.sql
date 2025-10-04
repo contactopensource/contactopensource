@@ -2,7 +2,6 @@ CREATE TABLE measurement_unit (
 );
 
 CREATE INDEX index_measurement_unit_id on measurement_unit(id);
-CREATE INDEX index_measurement_unit_sign on measurement_unit(sign);
 CREATE INDEX index_measurement_unit_created_at on measurement_unit(created_at);
 CREATE INDEX index_measurement_unit_created_by on measurement_unit(created_by);
 CREATE INDEX index_measurement_unit_updated_at on measurement_unit(updated_at);

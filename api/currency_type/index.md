@@ -6,11 +6,9 @@ Currency is a standardization of money in any form.
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 

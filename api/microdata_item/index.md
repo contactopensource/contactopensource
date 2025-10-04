@@ -6,11 +6,9 @@ Microdata item specification for identifying content such as text, images, video
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 

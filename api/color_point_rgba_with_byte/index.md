@@ -6,11 +6,9 @@ Color point RGBA (red, green, blue, alpha) with byte
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 

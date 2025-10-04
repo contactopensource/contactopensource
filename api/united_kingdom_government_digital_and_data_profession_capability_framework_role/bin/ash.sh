@@ -7,7 +7,6 @@ mix ash.gen.resource \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp_utc_usec \
     --attribute created_by:text \
@@ -19,9 +18,9 @@ mix ash.gen.resource \
     --attribute family_id:united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id \
     --attribute name:string \
     --attribute url:text \
-    --attribute description:string \
+    --attribute description_as_markdown:markdown \
     --attribute level_name:string \
-    --attribute level_description:string \
+    --attribute level_description_as_markdown:markdown \
     --attribute senior_civil_service_flag:boolean \
 
 mix ash.codegen create_united_kingdom_government_digital_and_data_profession_capability_framework_role
@@ -39,7 +38,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

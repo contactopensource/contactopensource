@@ -3,7 +3,6 @@ set -euf
 
 rails generate scaffold \
     pantone_process_color \
-        sign:char:index \
         lock_version:integer \
         created_at:timestamp_utc_usec:index \
         created_by:text:index \

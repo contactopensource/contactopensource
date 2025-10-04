@@ -4,7 +4,6 @@ set -euf
 cargo loco generate scaffold --html \
     united_kingdom_government_digital_and_data_profession_capability_framework_skill \
         id:uuid \
-        sign:char \
         lock_version:integer \
         created_at:timestamp_utc_usec \
         created_by:url \

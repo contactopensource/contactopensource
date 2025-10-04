@@ -6,11 +6,9 @@ A codec encodes or decodes a data stream or signal.
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
@@ -28,15 +26,15 @@ Meta:
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
-Card:
+card:
 
   * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
 
   * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
 
-  * title: string(50) (index) - example: Alice Anderson
+  * name: string(50) (index) - example: Alice Anderson
 
-  * subtitle: string(50) (index) - example: @alice
+  * subname: string(50) (index) - example: @alice
 
   * summary: string(72) - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
 

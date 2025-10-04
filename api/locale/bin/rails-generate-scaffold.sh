@@ -3,7 +3,6 @@ set -euf
 
 rails generate scaffold \
     locale \
-        sign:char:index \
         lock_version:integer \
         created_at:timestamp_utc_usec:index \
         created_by:text:index \

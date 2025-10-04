@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS virtual_international_authority_file_identifier;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_id;
-DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_sign;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_created_at;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_created_by;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_updated_at;
@@ -10,7 +9,7 @@ DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_delet
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_locale_code;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_sign;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_kind;
-DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_title;
-DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_subtitle;
+DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_name;
+DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_subname;
 DROP INDEX IF EXISTS index_virtual_international_authority_file_identifier_key;
 

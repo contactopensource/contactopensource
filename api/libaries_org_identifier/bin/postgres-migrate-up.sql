@@ -2,7 +2,6 @@ CREATE TABLE libraries_org_identifier (
 );
 
 CREATE INDEX index_libraries_org_identifier_id on libraries_org_identifier(id);
-CREATE INDEX index_libraries_org_identifier_sign on libraries_org_identifier(sign);
 CREATE INDEX index_libraries_org_identifier_created_at on libraries_org_identifier(created_at);
 CREATE INDEX index_libraries_org_identifier_created_by on libraries_org_identifier(created_by);
 CREATE INDEX index_libraries_org_identifier_updated_at on libraries_org_identifier(updated_at);
@@ -12,7 +11,7 @@ CREATE INDEX index_libraries_org_identifier_deleted_by on libraries_org_identifi
 CREATE INDEX index_libraries_org_identifier_locale_code on libraries_org_identifier(locale_code);
 CREATE INDEX index_libraries_org_identifier_sign on libraries_org_identifier(sign);
 CREATE INDEX index_libraries_org_identifier_kind on libraries_org_identifier(kind);
-CREATE INDEX index_libraries_org_identifier_title on libraries_org_identifier(title);
-CREATE INDEX index_libraries_org_identifier_subtitle on libraries_org_identifier(subtitle);
+CREATE INDEX index_libraries_org_identifier_name on libraries_org_identifier(name);
+CREATE INDEX index_libraries_org_identifier_subname on libraries_org_identifier(subname);
 CREATE INDEX index_libraries_org_identifier_key on libraries_org_identifier(key);
 

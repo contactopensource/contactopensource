@@ -9,8 +9,8 @@ mix ash.gen.resource \
     --uuid-primary-key id \
     --attribute sign:string \
     --attribute kind:string \
-    --attribute title:string \
-    --attribute subtitle:string \
+    --attribute name:string \
+    --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \

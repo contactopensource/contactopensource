@@ -4,7 +4,6 @@ set -euf
 mix phx.gen.html \
     Content ContentApplication None \
         id:uuid:index \
-        sign:char:index \
         lock_version:integerNone \
         created_at:timestamp_utc_usec:index \
         created_by:url:index \
@@ -15,8 +14,8 @@ mix phx.gen.html \
         locale_code:string:index \
         sign:"string{1}":index \
         kind:string:index \
-        title:"string{50}":index \
-        subtitle:"string{50}":index \
+        name:"string{50}":index \
+        subname:"string{50}":index \
         summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \

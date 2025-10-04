@@ -2,7 +2,6 @@ CREATE TABLE locale (
 );
 
 CREATE INDEX index_locale_id on locale(id);
-CREATE INDEX index_locale_sign on locale(sign);
 CREATE INDEX index_locale_created_at on locale(created_at);
 CREATE INDEX index_locale_created_by on locale(created_by);
 CREATE INDEX index_locale_updated_at on locale(updated_at);

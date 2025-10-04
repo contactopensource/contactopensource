@@ -2,7 +2,6 @@ CREATE TABLE stock_keeping_unit (
 );
 
 CREATE INDEX index_stock_keeping_unit_id on stock_keeping_unit(id);
-CREATE INDEX index_stock_keeping_unit_sign on stock_keeping_unit(sign);
 CREATE INDEX index_stock_keeping_unit_created_at on stock_keeping_unit(created_at);
 CREATE INDEX index_stock_keeping_unit_created_by on stock_keeping_unit(created_by);
 CREATE INDEX index_stock_keeping_unit_updated_at on stock_keeping_unit(updated_at);
@@ -12,7 +11,7 @@ CREATE INDEX index_stock_keeping_unit_deleted_by on stock_keeping_unit(deleted_b
 CREATE INDEX index_stock_keeping_unit_locale_code on stock_keeping_unit(locale_code);
 CREATE INDEX index_stock_keeping_unit_sign on stock_keeping_unit(sign);
 CREATE INDEX index_stock_keeping_unit_kind on stock_keeping_unit(kind);
-CREATE INDEX index_stock_keeping_unit_title on stock_keeping_unit(title);
-CREATE INDEX index_stock_keeping_unit_subtitle on stock_keeping_unit(subtitle);
+CREATE INDEX index_stock_keeping_unit_name on stock_keeping_unit(name);
+CREATE INDEX index_stock_keeping_unit_subname on stock_keeping_unit(subname);
 CREATE INDEX index_stock_keeping_unit_code on stock_keeping_unit(code);
 

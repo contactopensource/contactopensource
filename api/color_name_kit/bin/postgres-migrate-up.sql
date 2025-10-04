@@ -2,7 +2,6 @@ CREATE TABLE color_name_kit (
 );
 
 CREATE INDEX index_color_name_kit_id on color_name_kit(id);
-CREATE INDEX index_color_name_kit_sign on color_name_kit(sign);
 CREATE INDEX index_color_name_kit_created_at on color_name_kit(created_at);
 CREATE INDEX index_color_name_kit_created_by on color_name_kit(created_by);
 CREATE INDEX index_color_name_kit_updated_at on color_name_kit(updated_at);

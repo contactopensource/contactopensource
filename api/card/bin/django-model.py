@@ -4,8 +4,8 @@ set -euf
 class Card(models.Model):
         sign = models.UnknownAttribute("An option one-character sign, such as an emoji indicator.")
         kind = models.TextAttribute("A category class, such as a useful way to sort or subset the resource.")
-        title = models.UnknownAttribute("The card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name.")
-        subtitle = models.UnknownAttribute("The card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle.")
+        name = models.UnknownAttribute("The card name a.k.a. card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name.")
+        subname = models.UnknownAttribute("The card subname a.k.a. card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle.")
         summary = models.UnknownAttribute("None")
         description = models.TextAttribute("None")
         disambiguation = models.TextAttribute("None")

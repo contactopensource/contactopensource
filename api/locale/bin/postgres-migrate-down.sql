@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS locale;
 DROP INDEX IF EXISTS index_locale_id;
-DROP INDEX IF EXISTS index_locale_sign;
 DROP INDEX IF EXISTS index_locale_created_at;
 DROP INDEX IF EXISTS index_locale_created_by;
 DROP INDEX IF EXISTS index_locale_updated_at;

@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS person;
 DROP INDEX IF EXISTS index_person_id;
-DROP INDEX IF EXISTS index_person_sign;
 DROP INDEX IF EXISTS index_person_created_at;
 DROP INDEX IF EXISTS index_person_created_by;
 DROP INDEX IF EXISTS index_person_updated_at;
@@ -10,8 +9,8 @@ DROP INDEX IF EXISTS index_person_deleted_by;
 DROP INDEX IF EXISTS index_person_locale_code;
 DROP INDEX IF EXISTS index_person_sign;
 DROP INDEX IF EXISTS index_person_kind;
-DROP INDEX IF EXISTS index_person_title;
-DROP INDEX IF EXISTS index_person_subtitle;
+DROP INDEX IF EXISTS index_person_name;
+DROP INDEX IF EXISTS index_person_subname;
 DROP INDEX IF EXISTS index_person_birth_date;
 DROP INDEX IF EXISTS index_person_birth_date_year;
 DROP INDEX IF EXISTS index_person_death_date;

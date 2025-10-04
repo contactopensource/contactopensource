@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS plan_rope;
 DROP INDEX IF EXISTS index_plan_rope_id;
-DROP INDEX IF EXISTS index_plan_rope_sign;
 DROP INDEX IF EXISTS index_plan_rope_created_at;
 DROP INDEX IF EXISTS index_plan_rope_created_by;
 DROP INDEX IF EXISTS index_plan_rope_updated_at;
@@ -10,6 +9,6 @@ DROP INDEX IF EXISTS index_plan_rope_deleted_by;
 DROP INDEX IF EXISTS index_plan_rope_locale_code;
 DROP INDEX IF EXISTS index_plan_rope_sign;
 DROP INDEX IF EXISTS index_plan_rope_kind;
-DROP INDEX IF EXISTS index_plan_rope_title;
-DROP INDEX IF EXISTS index_plan_rope_subtitle;
+DROP INDEX IF EXISTS index_plan_rope_name;
+DROP INDEX IF EXISTS index_plan_rope_subname;
 

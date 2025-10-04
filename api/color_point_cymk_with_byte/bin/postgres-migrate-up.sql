@@ -2,7 +2,6 @@ CREATE TABLE color_point_cymk_with_byte (
 );
 
 CREATE INDEX index_color_point_cymk_with_byte_id on color_point_cymk_with_byte(id);
-CREATE INDEX index_color_point_cymk_with_byte_sign on color_point_cymk_with_byte(sign);
 CREATE INDEX index_color_point_cymk_with_byte_created_at on color_point_cymk_with_byte(created_at);
 CREATE INDEX index_color_point_cymk_with_byte_created_by on color_point_cymk_with_byte(created_by);
 CREATE INDEX index_color_point_cymk_with_byte_updated_at on color_point_cymk_with_byte(updated_at);

@@ -2,7 +2,9 @@ from .ash import *
 from .markdown import *
 from .plantuml import *
 from .django_model import *
+from .loco_generate_scaffold_api import *
 from .loco_generate_scaffold_html import *
+from .loco_generate_scaffold_htmx import *
 from .phoenix_generate import *
 from .postgres_migration_up import *
 from .postgres_migration_down import *

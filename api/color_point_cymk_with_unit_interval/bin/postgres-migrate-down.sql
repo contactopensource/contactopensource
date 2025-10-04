@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS color_point_cymk_as_unit_interval;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_id;
-DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_sign;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_created_at;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_created_by;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_updated_at;

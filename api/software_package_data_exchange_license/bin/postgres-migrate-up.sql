@@ -2,7 +2,6 @@ CREATE TABLE software_package_data_exchange_license (
 );
 
 CREATE INDEX index_software_package_data_exchange_license_id on software_package_data_exchange_license(id);
-CREATE INDEX index_software_package_data_exchange_license_sign on software_package_data_exchange_license(sign);
 CREATE INDEX index_software_package_data_exchange_license_created_at on software_package_data_exchange_license(created_at);
 CREATE INDEX index_software_package_data_exchange_license_created_by on software_package_data_exchange_license(created_by);
 CREATE INDEX index_software_package_data_exchange_license_updated_at on software_package_data_exchange_license(updated_at);

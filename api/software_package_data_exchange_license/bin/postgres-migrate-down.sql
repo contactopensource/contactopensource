@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS software_package_data_exchange_license;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_id;
-DROP INDEX IF EXISTS index_software_package_data_exchange_license_sign;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_created_at;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_created_by;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_updated_at;

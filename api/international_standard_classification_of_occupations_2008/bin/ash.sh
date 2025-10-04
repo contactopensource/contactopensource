@@ -8,7 +8,7 @@ mix ash.gen.resource \
     --extend postgres \
     --uuid-primary-key id \
     --attribute code:string \
-    --attribute title:string \
+    --attribute name:string \
     --attribute definition:string \
 
 mix ash.codegen create_international_standard_classification_of_occupations_2008

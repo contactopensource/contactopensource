@@ -31,7 +31,12 @@
             type: url
             index: true
         - locale_code:
-            help:  An international locale identifier, such as the id of locale "English - United States".
+            help: An international locale identifier, such as the id of locale "English - United States".
             type: string
             example: the locale code "en-US" means "English - United States".
+            index: true
+        - tagging:
+            help: A tagging list that is space-separated and without any hash marks.
+            type: string
+            example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
             index: true

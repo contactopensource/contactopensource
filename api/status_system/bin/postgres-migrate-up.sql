@@ -2,7 +2,6 @@ CREATE TABLE status_system (
 );
 
 CREATE INDEX index_status_system_id on status_system(id);
-CREATE INDEX index_status_system_sign on status_system(sign);
 CREATE INDEX index_status_system_created_at on status_system(created_at);
 CREATE INDEX index_status_system_created_by on status_system(created_by);
 CREATE INDEX index_status_system_updated_at on status_system(updated_at);

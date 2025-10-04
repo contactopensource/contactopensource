@@ -1,14 +1,4 @@
       card:
-        - sign:
-            help:  An option one-character sign, such as an emoji indicator.
-            type: string(1)
-            example: a green check mark emoji to indicate that this instance is complete.
-            index: true
-        - kind:
-            help: A category class, such as a useful way to sort or subset the resource.
-            type: string
-            example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
-            index: true
         - name:
             help: The card name a.k.a. card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name.
             type: string(50)
@@ -28,6 +18,16 @@
         - disambiguation:
             type: text
             example: This text explains the difference between this item and others.
+        - sign:
+            help:  An option one-character sign, such as an emoji indicator.
+            type: string(1)
+            example: a green check mark emoji to indicate that this instance is complete.
+            index: true
+        - kind:
+            help: A category class, such as a useful way to sort or subset the resource.
+            type: string
+            example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
+            index: true
         - avatar_image_400x400_url:
             help: An avatar image for the item, 400x400 pixels, which is square 1:1 aspect ratio and the same size as other popular social networks, and will look good within a circle mask, as a URL.
             type: url

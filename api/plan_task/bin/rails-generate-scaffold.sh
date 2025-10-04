@@ -3,7 +3,6 @@ set -euf
 
 rails generate scaffold \
     plan_task \
-        sign:char:index \
         lock_version:integer \
         created_at:timestamp_utc_usec:index \
         created_by:text:index \
@@ -14,8 +13,8 @@ rails generate scaffold \
         locale_code:string:index \
         sign:"string{1}":index \
         kind:string:index \
-        title:"string{50}":index \
-        subtitle:"string{50}":index \
+        name:"string{50}":index \
+        subname:"string{50}":index \
         summary:"string{72}" \
         description:text \
         disambiguation:text \

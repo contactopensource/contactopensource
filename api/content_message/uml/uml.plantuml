@@ -4,9 +4,8 @@ skinparam linetype ortho
 hide circle
 
 entity content_message {
-  .. Meta ..
+  .. meta ..
   id : uuid ⚡
-  sign : char ⚡
   lock_version : integer
   created_at : timestamp_utc_usec ⚡
   created_by : url ⚡
@@ -15,11 +14,11 @@ entity content_message {
   deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
   locale_code : string ⚡
-  .. Card ..
+  .. card ..
   sign : string(1) ⚡
   kind : string ⚡
-  title : string(50) ⚡
-  subtitle : string(50) ⚡
+  name : string(50) ⚡
+  subname : string(50) ⚡
   summary : string(72)
   description : text
   disambiguation : text

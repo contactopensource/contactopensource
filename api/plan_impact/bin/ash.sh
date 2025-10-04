@@ -7,7 +7,6 @@ mix ash.gen.resource \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp_utc_usec \
     --attribute created_by:text \
@@ -18,8 +17,8 @@ mix ash.gen.resource \
     --attribute locale_code:string \
     --attribute sign:string \
     --attribute kind:string \
-    --attribute title:string \
-    --attribute subtitle:string \
+    --attribute name:string \
+    --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
@@ -52,7 +51,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

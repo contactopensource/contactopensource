@@ -2,7 +2,6 @@ CREATE TABLE measurement_system (
 );
 
 CREATE INDEX index_measurement_system_id on measurement_system(id);
-CREATE INDEX index_measurement_system_sign on measurement_system(sign);
 CREATE INDEX index_measurement_system_created_at on measurement_system(created_at);
 CREATE INDEX index_measurement_system_created_by on measurement_system(created_by);
 CREATE INDEX index_measurement_system_updated_at on measurement_system(updated_at);

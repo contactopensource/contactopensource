@@ -2,7 +2,6 @@ CREATE TABLE lumina_foundation_skill_level (
 );
 
 CREATE INDEX index_lumina_foundation_skill_level_id on lumina_foundation_skill_level(id);
-CREATE INDEX index_lumina_foundation_skill_level_sign on lumina_foundation_skill_level(sign);
 CREATE INDEX index_lumina_foundation_skill_level_created_at on lumina_foundation_skill_level(created_at);
 CREATE INDEX index_lumina_foundation_skill_level_created_by on lumina_foundation_skill_level(created_by);
 CREATE INDEX index_lumina_foundation_skill_level_updated_at on lumina_foundation_skill_level(updated_at);
@@ -12,7 +11,7 @@ CREATE INDEX index_lumina_foundation_skill_level_deleted_by on lumina_foundation
 CREATE INDEX index_lumina_foundation_skill_level_locale_code on lumina_foundation_skill_level(locale_code);
 CREATE INDEX index_lumina_foundation_skill_level_sign on lumina_foundation_skill_level(sign);
 CREATE INDEX index_lumina_foundation_skill_level_kind on lumina_foundation_skill_level(kind);
-CREATE INDEX index_lumina_foundation_skill_level_title on lumina_foundation_skill_level(title);
-CREATE INDEX index_lumina_foundation_skill_level_subtitle on lumina_foundation_skill_level(subtitle);
+CREATE INDEX index_lumina_foundation_skill_level_name on lumina_foundation_skill_level(name);
+CREATE INDEX index_lumina_foundation_skill_level_subname on lumina_foundation_skill_level(subname);
 CREATE INDEX index_lumina_foundation_skill_level_number on lumina_foundation_skill_level(number);
 

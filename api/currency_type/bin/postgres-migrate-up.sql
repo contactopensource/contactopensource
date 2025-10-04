@@ -2,7 +2,6 @@ CREATE TABLE currency_type (
 );
 
 CREATE INDEX index_currency_type_id on currency_type(id);
-CREATE INDEX index_currency_type_sign on currency_type(sign);
 CREATE INDEX index_currency_type_created_at on currency_type(created_at);
 CREATE INDEX index_currency_type_created_by on currency_type(created_by);
 CREATE INDEX index_currency_type_updated_at on currency_type(updated_at);

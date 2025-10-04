@@ -6,11 +6,9 @@ Metadata for systems administration that we include in many other API concepts.
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 

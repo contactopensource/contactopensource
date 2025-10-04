@@ -6,7 +6,7 @@
             help: Deployment frequency target value
             type: decimal
         - deployment_frequency_ratio:
-            help: Deployment frequency ratio (actual value / target value)
+            help: Deployment frequency ratio = (actual value / target value)
             type: decimal
             sql: deployment_frequency_ratio decimal generated always as (deployment_frequency_actual_value / deployment_frequency_target_value) stored,
         - deployment_frequency_unit:
@@ -22,7 +22,7 @@
             help: Lead time for changes target value
             type: decimal
         - lead_time_for_changes_ratio:
-            help: Lead time for changes ratio (actual value / target value)
+            help: Lead time for changes ratio = (actual value / target value)
             type: decimal
             sql: lead_time_for_changes_ratio decimal generated always as (lead_time_for_changes_actual_value / lead_time_for_changes_target_value)
         - lead_time_for_changes_unit:
@@ -38,7 +38,7 @@
             help: Change failure rate target value
             type: decimal
         - change_failure_rate_ratio:
-            help: Change failure rate ratio (actual value / target value)
+            help: Change failure rate ratio = (actual value / target value)
             type: decimal
             sql: change_failure_rate_ratio decimal generated always as (change_failure_rate_actual_value / change_failure_rate_target_value) stored
         - change_failure_rate_unit:

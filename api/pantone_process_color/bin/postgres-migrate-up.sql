@@ -2,7 +2,6 @@ CREATE TABLE pantone_process_color (
 );
 
 CREATE INDEX index_pantone_process_color_id on pantone_process_color(id);
-CREATE INDEX index_pantone_process_color_sign on pantone_process_color(sign);
 CREATE INDEX index_pantone_process_color_created_at on pantone_process_color(created_at);
 CREATE INDEX index_pantone_process_color_created_by on pantone_process_color(created_by);
 CREATE INDEX index_pantone_process_color_updated_at on pantone_process_color(updated_at);

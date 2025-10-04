@@ -2,7 +2,6 @@ CREATE TABLE ability (
 );
 
 CREATE INDEX index_ability_id on ability(id);
-CREATE INDEX index_ability_sign on ability(sign);
 CREATE INDEX index_ability_created_at on ability(created_at);
 CREATE INDEX index_ability_created_by on ability(created_by);
 CREATE INDEX index_ability_updated_at on ability(updated_at);
@@ -12,6 +11,6 @@ CREATE INDEX index_ability_deleted_by on ability(deleted_by);
 CREATE INDEX index_ability_locale_code on ability(locale_code);
 CREATE INDEX index_ability_sign on ability(sign);
 CREATE INDEX index_ability_kind on ability(kind);
-CREATE INDEX index_ability_title on ability(title);
-CREATE INDEX index_ability_subtitle on ability(subtitle);
+CREATE INDEX index_ability_name on ability(name);
+CREATE INDEX index_ability_subname on ability(subname);
 

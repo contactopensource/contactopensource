@@ -3,7 +3,6 @@ set -euf
 
 rails generate scaffold \
     united_kingdom_government_digital_and_data_profession_capability_framework_skill \
-        sign:char:index \
         lock_version:integer \
         created_at:timestamp_utc_usec:index \
         created_by:text:index \

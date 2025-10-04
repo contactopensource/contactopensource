@@ -8,9 +8,9 @@ International Labor Organization (ILO) International Standard Classification of 
 
 Main:
 
-  * code: string (index) - example: TODO
+  * code: string (index) - example: 2211
 
-  * title: string (index) - example: TODO
+  * name: string (index) - example: Generalist Medical Practitioners
 
-  * definition: string - example: TODO
+  * definition: string - example: Generalist Medical Practitioners diagnose, treat and prevent human illness …
 

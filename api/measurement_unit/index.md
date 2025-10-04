@@ -6,11 +6,9 @@ A measurement unit, such as metre, second, metre/second, etc.
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 

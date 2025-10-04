@@ -2,7 +2,6 @@ CREATE TABLE color_point_cymk_as_unit_interval (
 );
 
 CREATE INDEX index_color_point_cymk_as_unit_interval_id on color_point_cymk_as_unit_interval(id);
-CREATE INDEX index_color_point_cymk_as_unit_interval_sign on color_point_cymk_as_unit_interval(sign);
 CREATE INDEX index_color_point_cymk_as_unit_interval_created_at on color_point_cymk_as_unit_interval(created_at);
 CREATE INDEX index_color_point_cymk_as_unit_interval_created_by on color_point_cymk_as_unit_interval(created_by);
 CREATE INDEX index_color_point_cymk_as_unit_interval_updated_at on color_point_cymk_as_unit_interval(updated_at);

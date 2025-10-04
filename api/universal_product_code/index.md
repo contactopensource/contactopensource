@@ -6,11 +6,9 @@ The Universal Product Code (UPC) is a barcode symbology that is used worldwide f
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 

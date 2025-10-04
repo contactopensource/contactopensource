@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS international_classification_of_diseases_11;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_id;
-DROP INDEX IF EXISTS index_international_classification_of_diseases_11_sign;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_created_at;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_created_by;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_updated_at;
@@ -10,7 +9,7 @@ DROP INDEX IF EXISTS index_international_classification_of_diseases_11_deleted_b
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_locale_code;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_sign;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_kind;
-DROP INDEX IF EXISTS index_international_classification_of_diseases_11_title;
-DROP INDEX IF EXISTS index_international_classification_of_diseases_11_subtitle;
+DROP INDEX IF EXISTS index_international_classification_of_diseases_11_name;
+DROP INDEX IF EXISTS index_international_classification_of_diseases_11_subname;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_code;
 

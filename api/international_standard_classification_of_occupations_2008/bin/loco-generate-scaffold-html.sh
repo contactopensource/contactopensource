@@ -4,6 +4,6 @@ set -euf
 cargo loco generate scaffold --html \
     international_standard_classification_of_occupations_2008 \
         code:string \
-        title:string \
+        name:string \
         definition:string \
 

@@ -4,9 +4,8 @@ skinparam linetype ortho
 hide circle
 
 entity status_system {
-  .. Meta ..
+  .. meta ..
   id : uuid ⚡
-  sign : char ⚡
   lock_version : integer
   created_at : timestamp_utc_usec ⚡
   created_by : url ⚡

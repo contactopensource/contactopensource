@@ -4,7 +4,6 @@ set -euf
 mix phx.gen.html \
     None UnitedKingdomGovernmentDigitalAndDataProfessionCapabilityFrameworkRole None \
         id:uuid:index \
-        sign:char:index \
         lock_version:integerNone \
         created_at:timestamp_utc_usec:index \
         created_by:url:index \
@@ -16,9 +15,9 @@ mix phx.gen.html \
         family_id:united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id:index \
         name:stringNone \
         url:urlNone \
-        description:stringNone \
+        description_as_markdown:markdownNone \
         level_name:stringNone \
-        level_description:stringNone \
+        level_description_as_markdown:markdownNone \
         senior_civil_service_flag:booleanNone \
     --force \
     --no-timestamps \
