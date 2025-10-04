@@ -1,0 +1,19 @@
+    active_users:
+      - active_users_actual_value:
+          help: Active users actual value
+          type: decimal
+          index: true
+      - active_users_target_value:
+          help: Active users target value
+          type: decimal
+          index: true
+      - active_users_ratio:
+          help: Active users ratio = (actual value / target value)
+          type: decimal
+          index: true
+      - active_users_unit:
+          help: Active users unit
+          type: string
+      - active_users_description:
+          help: Active users description
+          type: string
