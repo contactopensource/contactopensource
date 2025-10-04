@@ -1,37 +1,37 @@
       net_promoter_score:
-        - customer_net_promoter_score_actual_value:
-            help: Customer Net Promoter Score (CNPS) actual value
+        - net_promoter_score_customer_actual_value:
+            help: Net Promoter Score (NPS) via customer perspective, actual value
             type: float
-        - customer_net_promoter_score_target_value:
-            help: Customer Net Promoter Score (CNPS) target value
+        - net_promoter_score_customer_target_value:
+            help: Net Promoter Score (NPS) via customer perspective, target value
             type: float
-        - customer_net_promoter_score_unit:
-            help: Customer Net Promoter Score (CNPS) unit
+        - net_promoter_score_customer_unit:
+            help: Net Promoter Score (NPS) via customer perspective, unit
             type: text
-        - customer_net_promoter_score_description_as_markdown:
-            help: Customer Net Promoter Score (CNPS) description as markdown
+        - net_promoter_score_customer_description_as_markdown:
+            help: Net Promoter Score (NPS) via customer perspective, description as markdown
             type: text
-        - user_net_promoter_score_actual_value:
-            help: User Net Promoter Score (UNPS) actual value
+        - net_promoter_score_user_actual_value:
+            help: Net Promoter Score (NPS) via user perspective, actual value
             type: float
-        - user_net_promoter_score_target_value:
-            help: User Net Promoter Score (UNPS) target value
+        - net_promoter_score_user_target_value:
+            help: Net Promoter Score (NPS) via user perspective, target value
             type: float
-        - user_net_promoter_score_unit:
-            help: User Net Promoter Score (UNPS) unit
+        - net_promoter_score_user_unit:
+            help: Net Promoter Score (NPS) via user perspective, unit
             type: text
-        - user_net_promoter_score_description_as_markdown:
-            help: User Net Promoter Score (UNPS) description as markdown
+        - net_promoter_score_user_description_as_markdown:
+            help: Net Promoter Score (NPS) via user perspective, description as markdown
             type: text
-        - worker_net_promoter_score_actual_value:
-            help: Worker Net Promoter Score (WNPS actual value)
+        - net_promoter_score_worker_actual_value:
+            help: Net Promoter Score (NPS) via worker perspective, actual value
             type: float
-        - worker_net_promoter_score_target_value:
-            help: Worker Net Promoter Score (WNPS) target value
+        - net_promoter_score_worker_target_value:
+            help: Net Promoter Score (NPS) via worker perspective, target value
             type: float
-        - worker_net_promoter_score_unit:
-            help: Worker Net Promoter Score (WNPS) unit
+        - net_promoter_score_worker_unit:
+            help: Net Promoter Score (NPS) via worker perspective, unit
             type: text
-        - worker_net_promoter_score_description_as_markdown:
-            help: Worker Net Promoter Score (WNPS) description as markdown
+        - net_promoter_score_worker_description_as_markdown:
+            help: Net Promoter Score (NPS) via worker perspective, description as markdown
             type: text
