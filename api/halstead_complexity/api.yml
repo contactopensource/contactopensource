@@ -1,0 +1,59 @@
+halstead_complexity:
+  title: Halstead complexity
+  model: HalsteadComplexity
+  summary: Halstead complexity
+  description: |-
+
+    Halstead complexity
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - volume_actual:
+          help: Halstead complexity volume actual value
+          type: decimal
+      - volume_target:
+          help: Halstead complexity target value
+          type: decimal
+      - volume_ratio:
+          help: Halstead complexity volume ratio = (actual / target)
+          type: decimal
+          sql: volume_ratio DECIMAL GENERATED ALWAYS AS (volume_actual / volume_target) STORED
+      - volume_unit:
+          help: Halstead complexity volume unit
+          type: text
+      - volume_description:
+          help: Halstead complexity volume description
+          type: text
+      - difficulty_actual:
+          help: Halstead complexity difficulty actual value
+          type: decimal
+      - difficulty_target:
+          help: Halstead complexity difficulty target value
+          type: decimal
+      - difficulty_ratio:
+          help: Halstead complexity difficulty ratio = (actual / target)
+          type: decimal
+          sql: difficulty_ratio DECIMAL GENERATED ALWAYS AS (difficulty_actual / difficulty_target) STORED
+      - difficulty_unit:
+          help: Halstead complexity difficulty unit
+          type: text
+      - difficulty_description:
+          help: Halstead complexity difficulty description
+          type: text
+      - effort_actual:
+          help: Halstead complexity effort actual value
+          type: decimal
+      - effort_target:
+          help: Halstead complexity effort target value
+          type: decimal
+      - effort_ratio:
+          help: Halstead complexity effort ratio = (actual / target)
+          type: decimal
+          sql: effort_ratio DECIMAL GENERATED ALWAYS AS (effort_actual / effort_target) STORED
+      - effort_unit:
+          help: Halstead complexity effort unit
+          type: decimal
+      - effort_description:
+          help: Halstead complexity effort description
+          type: decimal

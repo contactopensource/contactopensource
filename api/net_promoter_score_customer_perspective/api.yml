@@ -1,0 +1,27 @@
+net_promoter_score_customer_perspective:
+  title: Net Promoter Score (NPS) customer perspective
+  model: NetPromoterScoreKitCustomerPerspective
+  summary: Net Promoter Score (NPS) customer perspective
+  description: |-
+
+    Net Promoter Score (NPS) customer_perspective
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - actual:
+          help: Actual value
+          type: decimal
+      - target:
+          help: Target value
+          type: decimal
+      - ratio:
+          help: Ratio = (actual / target)
+          type: decimal
+          sql: ratio DECIMAL GENERATED ALWAYS AS (actual / target) STORED
+      - unit:
+          help: unit
+          type: text
+      - description_as_markdown:
+          help: Net Promoter Score (NPS)  customer perspective, description as markdown
+          type: text

@@ -1,0 +1,28 @@
+net_promoter_score_worker_perspective:
+  title: Net Promoter Score (NPS) worker perspective
+  model: NetPromoterScoreWorkerPerspective
+  summary: Net Promoter Score (NPS) work perspective
+
+  description: |-
+
+    Net Promoter Score (NPS) worker perspective
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - actual:
+          help: Actual value
+          type: decimal
+      - target:
+          help: Target value
+          type: decimal
+      - ratio:
+          help: Ratio = (actual / target)
+          type: decimal
+          sql: ratio DECIMAL GENERATED ALWAYS AS (actual / target) STORED
+      - unit:
+          help: Unit
+          type: text
+      - description_as_markdown:
+          help: Description as markdown
+          type: text

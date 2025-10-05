@@ -1,0 +1,37 @@
+    business_analysis_kit:
+      - six_pager_double_sider_as_url:
+          help: Six-pager double-sider explanation, as URL
+          type: url
+      - six_pager_double_sider_as_markdown:
+          help: Six-pager double-sider explanation, as markdown
+          type: markdown
+      - swot_as_url:
+          help: Strengths Weaknesses Opportunities Threats (SWOT), as URL
+          type: url
+      - swot_as_markdown:
+          help: Strengths Weaknesses Opportunities Threats (SWOT), as markdown
+          type: markdown
+      - porters_five_forces_as_url:
+          help: Porter's Five Forces, as URL
+          type: url
+      - porters_five_forces_as_markdown:
+          help: Porter's Five Forces, as markdown
+          type: markdown
+      - pestle_as_url:
+          help: Political, Economic, Sociological, Technological, Legal, Environmental (PESTLE), as URL
+          type: url
+      - pestle_as_markdown:
+          help: Political, Economic, Sociological, Technological, Legal, Environmental (PESTLE), as markdown
+          type: markdown
+      - roles_and_responsibilities_as_url:
+          help: Roles and Responsibilities, as URL
+          type: url
+      - roles_and_responsibilities_as_markdown:
+          help: Roles and Responsibilities, as markdown
+          type: markdown
+      - responsibility_assignment_matrix_as_url:
+          help: Responsibility Assignment Matrix (RAM) such as a RASCIO Matrix, as URL
+          type: url
+      - responsibility_assignment_matrix_as_markdown:
+          help: Responsibility Assignment Matrix (RAM) such as a RASCIO Matrix, as markdown
+          type: markdown

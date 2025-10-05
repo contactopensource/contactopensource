@@ -1,0 +1,17 @@
+    burn_rate_net_time_per_week:
+      - burn_rate_net_time_per_week_actual:
+          help: Burn rate net time per week actual value
+          type: decimal
+      - burn_rate_net_time_per_week_target:
+          help: Burn rate net time per week target value
+          type: decimal
+      - burn_rate_net_time_per_week_ratio:
+          help: Burn rate net time per week ratio = (actual / target)
+          type: decimal
+          sql: burn_rate_net_time_per_week_ratio DECIMAL GENERATED ALWAYS AS (burn_rate_net_time_per_week_actual / burn_rate_net_time_per_week_target) STORED
+      - burn_rate_net_time_per_week_unit:
+          help: Burn rate net time per week unit
+          type: string
+      - burn_rate_net_time_per_week_description:
+          help: Burn rate net time per week description
+          type: string

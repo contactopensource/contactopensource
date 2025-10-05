@@ -1,0 +1,29 @@
+uptime_percentage:
+  title: Uptime percentage
+  model: UptimePercentage
+  summary: Uptime percentage
+  description: |-
+
+    Uptime percentage metric: actual, target, ratio, unit, description.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - actual:
+          help: Uptime percentage actual value
+          type: decimal
+          index: true
+      - target:
+          help: Uptime percentage target value
+          type: decimal
+          index: true
+      - ratio:
+          help: Uptime percentage ratio = (actual / target)
+          type: decimal
+          index: true
+      - unit:
+          help: Uptime percentage unit
+          type: string
+      - description:
+          help: Uptime percentage description
+          type: string

@@ -1,0 +1,30 @@
+active_users:
+  title: Active users
+  model: ActiveUsers
+  summary: Active users measurement
+  description: |-
+
+    Active users measurement, such as active users per week.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - actual:
+          help: Active users actual value
+          type: decimal
+          index: true
+      - expect:
+          help: Active users target value
+          type: decimal
+          index: true
+      - ratio:
+          help: Active users ratio = (actual / target)
+          type: decimal
+          index: true
+          sql: ratio DECIMAL GENERATED ALWAYS AS (actual / target) STORED
+      - unit:
+          help: Active users unit
+          type: string
+      - description:
+          help: Active users description
+          type: string

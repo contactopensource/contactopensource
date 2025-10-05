@@ -1,0 +1,17 @@
+      net_promoter_score_worker_perspective:
+        - net_promoter_score_worker_actual:
+            help: Net Promoter Score (NPS) worker perspective, actual value
+            type: decimal
+        - net_promoter_score_worker_target:
+            help: Net Promoter Score (NPS) worker perspective, target value
+            type: decimal
+        - net_promoter_score_worker_ratio:
+            help: Net Promoter Score (NPS) worker perspective, ratio = (actual / target)
+            type: decimal
+            sql: net_promoter_score_worker_ratio DECIMAL GENERATED ALWAYS AS (net_promoter_score_worker_actual / net_promoter_score_worker_target) STORED
+        - net_promoter_score_worker_unit:
+            help: Net Promoter Score (NPS) worker perspective, unit
+            type: text
+        - net_promoter_score_worker_description_as_markdown:
+            help: Net Promoter Score (NPS) worker perspective, description as markdown
+            type: text

@@ -1,0 +1,27 @@
+burn_rate_net_time_per_week:
+  title:  Burn rate net time per week
+  model: BurnRateNetTimePerWeek
+  summary: Burn rate net time per week
+  description: |-
+
+    Burn rate net time per week, with actual, target, ratio, unit, description.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - actual:
+          help: Burn rate net time per week actual value
+          type: decimal
+      - target:
+          help: Burn rate net time per week target value
+          type: decimal
+      - ratio:
+          help: Burn rate net time per week ratio = (actual / target)
+          type: decimal
+          sql: ratio DECIMAL GENERATED ALWAYS AS (actual / target) STORED
+      - unit:
+          help: Burn rate net time per week unit
+          type: string
+      - description:
+          help: Burn rate net time per week description
+          type: string

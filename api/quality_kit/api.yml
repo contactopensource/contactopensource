@@ -1,0 +1,107 @@
+quality_kit:
+  title: Quality kit
+  model: QualityKit
+  summary: Quality kit
+  description: |-
+
+    Quality kit.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - quality_availability_as_url:
+          help: Quality documentation about availability, as URL
+          type: url
+      - quality_availability_as_markdown:
+          help: Quality documentation about availability, as markdown
+          type: markdown
+      - quality_certifiability_as_url:
+          help: Quality documentation about certifiability, as URL
+          type: url
+      - quality_certifiability_as_markdown:
+          help: Quality documentation about certifiability, as markdown
+          type: markdown
+      - quality_compatibility_as_url:
+          help: Quality documentation about compatibility, as URL
+          type: url
+      - quality_compatibility_as_markdown:
+          help: Quality documentation about compatibility, as markdown
+          type: markdown
+      - quality_efficiency_as_url:
+          help: Quality documentation about efficiency, as URL
+          type: url
+      - quality_efficiency_as_markdown:
+          help: Quality documentation about efficiency, as markdown
+          type: markdown
+      - quality_governability_as_url:
+          help: Quality documentation about governability, as URL
+          type: url
+      - quality_governability_as_markdown:
+          help: Quality documentation about governability, as markdown
+          type: markdown
+      - quality_maintainability_as_url:
+          help: Quality documentation about maintainability, as URL
+          type: url
+      - quality_maintainability_as_markdown:
+          help: Quality documentation about maintainability, as markdown
+          type: markdown
+      - quality_observability_as_url:
+          help: Quality documentation about observability, as URL
+          type: markdown
+      - quality_observability_as_markdown:
+          help: Quality documentation about observability, as markdown
+          type: markdown
+      - quality_operability_as_markdown:
+          help: Quality documentation about operability, as URL
+          type: url
+      - quality_operability_as_markdown:
+          help: Quality documentation about operability, as markdown
+          type: markdown
+      - quality_recoverability_as_url:
+          help: Quality documentation about recoverability, as URL
+          type: url
+      - quality_recoverability_as_markdown:
+          help: Quality documentation about recoverability, as markdown
+          type: markdown
+      - quality_scalability_as_url:
+          help: Quality documentation about scalability, as URL
+          type: url
+      - quality_scalability_as_markdown:
+          help: Quality documentation about scalability, as markdown
+          type: markdown
+      - quality_security_as_url:
+          help: Quality documentation about security, as URL
+          type: url
+      - quality_security_as_markdown:
+          help: Quality documentation about security, as markdown
+          type: markdown
+      - quality_suitability_as_url:
+          help: Quality documentation about suitability, as URL
+          type: markdown
+      - quality_suitability_as_markdown:
+          help: Quality documentation about suitability, as markdown
+          type: markdown
+      - quality_testability_as_url:
+          help: Quality documentation about testability, as URL
+          type: url
+      - quality_testability_as_markdown:
+          help: Quality documentation about testability, as markdown
+          type: markdown
+      - quality_transferability_as_url:
+          help: Quality documentation about transferability, as URL
+          type: url
+      - quality_transferability_as_markdown:
+          help: Quality documentation about transferability, as markdown
+          type: markdown
+      - quality_translatability_as_url:
+          help: Quality documentation about translatability, as URL
+          type: url
+      - quality_translatability_as_markdown:
+          help: Quality documentation about translatability, as markdown
+          type: markdown
+      - quality_warrantability_as_url:
+          help: Quality documentation about warrantability, as URL
+          type: url
+      - quality_warrantability_as_markdown:
+          help: Quality documentation about warrantability, as markdown
+          type: markdown

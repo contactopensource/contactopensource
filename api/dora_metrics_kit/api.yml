@@ -1,0 +1,75 @@
+dora_metrics_kit:
+  title: DORA metrics kit
+  model: DoraMetricsKit
+  summary: DORA metrics kit
+  description: |-
+
+    DORA metrics kit
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - deployment_frequency_actual:
+          help: Deployment frequency actual value
+          type: decimal
+      - deployment_frequency_target:
+          help: Deployment frequency target value
+          type: decimal
+      - deployment_frequency_ratio:
+          help: Deployment frequency ratio = (actual / target)
+          type: decimal
+          sql: deployment_frequency_ratio decimal generated always as (deployment_frequency_actual / deployment_frequency_target) STORED,
+      - deployment_frequency_unit:
+          help: Deployment frequency unit
+          type: text
+      - deployment_frequency_description:
+          help: deployment frequency description
+          type: text
+      - lead_time_for_changes_actual:
+          help: Lead time for changes actual value
+          type: decimal
+      - lead_time_for_changes_target:
+          help: Lead time for changes target value
+          type: decimal
+      - lead_time_for_changes_ratio:
+          help: Lead time for changes ratio = (actual / target)
+          type: decimal
+          sql: lead_time_for_changes_ratio decimal generated always as (lead_time_for_changes_actual / lead_time_for_changes_expect)
+      - lead_time_for_changes_unit:
+          help: Lead time for changes unit
+          type: text
+      - lead_time_for_changes_description:
+          help: Lead time for changes description
+          type: text
+      - change_failure_rate_actual:
+          help: Change failure rate actual value
+          type: decimal
+      - change_failure_rate_target:
+          help: Change failure rate target value
+          type: decimal
+      - change_failure_rate_ratio:
+          help: Change failure rate ratio = (actual / target)
+          type: decimal
+          sql: change_failure_rate_ratio decimal generated always as (change_failure_rate_actual / change_failure_rate_target) STORED
+      - change_failure_rate_unit:
+          help: Change failure rate unit
+          type: text
+      - change_failure_rate_description:
+          help: Change failure rate description
+          type: text
+      - mean_time_to_recovery_actual:
+          help: Mean time to recovery actual value
+          type: decimal
+      - mean_time_to_recovery_target:
+          help: Mean time to recovery target value
+          type: decimal
+      - mean_time_to_recovery_ratio:
+          help: Mean time to recovery (actual / target)
+          type: decimal
+          sqL: mean_time_to_recovery_ratio decimal generated always as (mean_time_to_recovery_actual / mean_time_to_recovery_expect)
+      - mean_time_to_recovery_unit:
+          help: Mean time to recovery unit
+          type: text
+      - mean_time_to_recovery_description:
+          help: Mean time to recovery description
+          type: text

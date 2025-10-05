@@ -1,0 +1,16 @@
+      net_promoter_score_user_perspective:
+        - net_promoter_score_user_actual:
+            help: Net Promoter Score (NPS) user perspective, actual value
+            type: decimal
+        - net_promoter_score_user_target:
+            help: Net Promoter Score (NPS) user perspective, target value
+            type: decimal
+        - net_promoter_score_user_ratio:
+            help: Net Promoter Score (NPS) user perspective, ratio = (actual / target)
+            type: decimal
+            sql: net_promoter_score_user_ratio DECIMAL GENERATED ALWAYS AS (net_promoter_score_user_actual / net_promoter_score_user_target) STORED
+        - net_promoter_score_user_unit:
+            help: Net Promoter Score (NPS) user perspective, unit
+            type: text
+        - net_promoter_score_user_description_as_markdown:
+            help: Net Promoter Score (NPS) user perspective, description as markdown
