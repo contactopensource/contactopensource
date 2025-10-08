@@ -41,8 +41,8 @@ international_standard_classification_of_occupations_2008:
           example: Generalist Medical Practitioners
           required: true
           index: true
-      - definition:
-          type: string
+      - definition_as_markdown:
+          type: markdown
           example: Generalist Medical Practitioners diagnose, treat and prevent human illness …
           required: true
   trigram: |-
@@ -53,5 +53,5 @@ international_standard_classification_of_occupations_2008:
           || ' ' ||
         name
           || ' ' ||
-        definition
+        definition_as_markdown
       ) gin_trgm_ops);
