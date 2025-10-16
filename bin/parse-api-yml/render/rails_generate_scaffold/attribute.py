@@ -1,6 +1,6 @@
 import re
 
-def render(attribute):
+def render(args, attribute):
     # If the attribute is the primary key id, then we can skip it,
     # because the Rails generator does this automatically for us.
     if attribute.id == "id":

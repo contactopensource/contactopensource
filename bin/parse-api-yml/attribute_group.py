@@ -14,6 +14,7 @@ Example api.yml file with AttributeGroup "alpha" and AttributeGroup "bravo" and 
           …
 """
 
+from functools import partial
 from attribute import Attribute
 
 class AttributeGroup:
@@ -25,7 +26,7 @@ class AttributeGroup:
         return f"id: {self.id}, attributes: {self.attributes}"
 
     @classmethod
-    def parse(cls, y):
+    def parse(cls, args, y):
         """
         Parse attribute groups.
 
@@ -34,10 +35,10 @@ class AttributeGroup:
         """
         if y is None:
             return None
-        return list(map(AttributeGroup.parse_one, y))
+        return list(map(partial(AttributeGroup.parse_one, args), y))
 
     @classmethod
-    def parse_one(cls, y):
+    def parse_one(cls, args, y):
         """
         Parse one attribute group, which is a string (i.e. title) or dict (i.e. key-value pair).
 
@@ -56,7 +57,7 @@ class AttributeGroup:
                 (id, y), = y.items()
                 return AttributeGroup(
                     id,
-                    Attribute.parse(y)
+                    Attribute.parse(args, y)
                 )
             case _:
                 raise Exception(y)

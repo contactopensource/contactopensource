@@ -1,10 +1,11 @@
+from functools import partial
 from . import attribute_group
 
-def render(entity):
+def render(args, entity):
     s = f"rails generate scaffold \\\n"
     s += f"    {entity.id} \\\n"
     if entity.attribute_groups is not None:
-        s += ''.join(map(attribute_group.render, entity.attribute_groups))
+        s += ''.join(map(partial(attribute_group.render, args), entity.attribute_groups))
     s += "    --force \\\n"
     s += "    --no-timestamps \\\n"
     s += "\n"

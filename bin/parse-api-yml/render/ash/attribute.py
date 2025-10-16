@@ -9,7 +9,7 @@ Modifiers: primary_key, array, public, sensitive, and required. i.e -a name:stri
 import logging
 import re
 
-def render(attribute):
+def render(args, attribute):
     logging.info("attribute.py render(attribute)")
     output = {'script': '', 'extra': ''}
     if attribute.id == "id":

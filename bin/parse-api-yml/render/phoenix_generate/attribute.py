@@ -1,6 +1,6 @@
 import re
 
-def render(attribute):
+def render(args, attribute):
     return f"        {attribute.id}:{render_type(attribute)}{render_index(attribute)} \\\n"
 
 def render_type(attribute):

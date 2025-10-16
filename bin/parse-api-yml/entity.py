@@ -13,6 +13,7 @@ Example api.yml file:
 """
 
 #from functools import reduce
+from functools import partial
 from itertools import chain
 from attribute_group import AttributeGroup
 
@@ -21,6 +22,8 @@ class Entity:
         self.id = id
         self.snake_case_singular = None
         self.snake_case_plural = None
+        self.title_case_singular = None
+        self.title_case_plural = None
         self.summary = None
         self.module = None
         self.model = None
@@ -36,7 +39,7 @@ class Entity:
         return f"id: {self.id}, snake_case_singular: {self.snake_case_singular}, snake_case_plural: {self.snake_case_plural}, summary: {self.summary}, module: {self.module}, model: {self.model}, table: {self.table}, uml: {self.uml}, attribute_groups: {self.attribute_groups}"
 
     @classmethod
-    def parse(cls, y):
+    def parse(cls, args, y):
         """
         Parse entities.
 
@@ -45,10 +48,10 @@ class Entity:
         """
         if y is None:
             return None
-        return list(map(Entity.parse_one, y.items()))
+        return list(map(partial(Entity.parse_one, args), y.items()))
 
     @classmethod
-    def parse_one(cls, y):
+    def parse_one(cls, args, y):
         """
         Parse entity key-value pair.
 
@@ -61,11 +64,13 @@ class Entity:
         entity = Entity(id)
         entity.snake_case_singular = y.get('snake_case_singular', id)
         entity.snake_case_plural = y.get('snake_case_plural', f"{id}s")
+        entity.title_case_singular = y.get('title_case_singular', entity.snake_case_singular.title().replace('_',''))
+        entity.title_case_plural = y.get('title_case_plural',  entity.snake_case_plural.title().replace('_',''))
         entity.summary = y.get('summary', None)
         entity.module = y.get('module', None)
         entity.model = y.get('model', None)
         entity.associations = y.get('associations', None)
         entity.table = y.get('table', None)
         entity.uml = y.get('uml', None)
-        entity.attribute_groups = AttributeGroup.parse(y.get('attribute_groups', []))
+        entity.attribute_groups = AttributeGroup.parse(args, y.get('attribute_groups', []))
         return entity

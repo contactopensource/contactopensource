@@ -58,6 +58,8 @@ parser = argparse.ArgumentParser(
     epilog='For help contact joel@joelparkerhenderson.com'
 )
 parser.add_argument("-w", "--write", help="Write outputs to their respective files.", action=argparse.BooleanOptionalAction)
+parser.add_argument("--app-name-title-case", help="Application name as title case, such as \"MyApp\".", default='MyApp')
+parser.add_argument("--app-name-snake-case", help="Application name as snake case, such as \"my_app\".", default='my_app')
 parser.add_argument("paths", nargs='*')
 args = parser.parse_args()
 
@@ -87,7 +89,7 @@ def parse_path(path: os.PathLike):
     with open(path, 'r') as file:
         y = yaml.load(file)
         logging.debug(f"parse_path path: {path}, concept: {concept}, yaml.dump: " + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
-        entities = Entity.parse(y)
+        entities = Entity.parse(args, y)
         for entity in entities:
             logging.info(banner(f"{entity.id}"))
 
@@ -102,7 +104,7 @@ def parse_path(path: os.PathLike):
             render.phoenix_generate,
             render.rails_generate_scaffold,
         ]:
-            s = renderer.render(entities)
+            s = renderer.render(args, entities)
             logging.info(banner(f"{concept} {renderer.__name__}") + s)
             if args.write:
                 with open(os.path.join(dirname, renderer.output_path()), "w") as f:

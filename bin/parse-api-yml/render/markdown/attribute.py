@@ -1,4 +1,4 @@
-def render(attribute):
+def render(args, attribute):
     return f"  * {attribute.id}: {attribute.type}{render_options(attribute)}{render_example(attribute)}\n\n"
 
 def render_options(attribute):

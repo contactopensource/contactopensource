@@ -1,6 +1,6 @@
 from . import attribute_group
 
-def render(entity):
+def render(args, entity):
     s = f"DROP TABLE IF EXISTS {entity.id};\n"
     for attribute_group in entity.attribute_groups:
         for attribute in attribute_group.attributes:

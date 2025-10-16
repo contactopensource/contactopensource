@@ -1,6 +1,7 @@
+from functools import partial
 from . import attribute_group
 
-def render(entity):
+def render(args, entity):
     s = f"# {entity.id}\n\n"
     if entity.summary is not None:
         s += f"{entity.summary}\n\n\n"
@@ -9,5 +10,5 @@ def render(entity):
     # s += f"* model: {entity.model}\n\n"
     # s += f"* table: {entity.table}\n\n"
     if entity.attribute_groups is not None:
-        s += f"## Attributes\n\n" + ''.join(map(attribute_group.render, entity.attribute_groups))
+        s += f"## Attributes\n\n" + ''.join(map(partial(attribute_group.render, args), entity.attribute_groups))
     return s

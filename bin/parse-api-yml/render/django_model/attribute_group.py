@@ -1,4 +1,5 @@
+from functools import partial
 from . import attribute
 
-def render(attribute_group):
-    return ''.join(map(attribute.render, attribute_group.attributes))
+def render(args, attribute_group):
+    return ''.join(map(partial(attribute.render, args), attribute_group.attributes))

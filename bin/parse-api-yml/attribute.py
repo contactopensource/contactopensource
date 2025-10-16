@@ -22,13 +22,15 @@ Example api.yml file with attribute "Alpha" and attribute "Bravo":
             uml: …
 """
 
+from functools import partial
+
 class Attribute:
 
     def __str__(self):
         return f"id: {self.id}, help: {self.help}, type: {self.type}, nullable: {self.nullable}, unique: {self.unique}, index: {self.index}, example: {self.example}, uml: {self.uml}"
 
     @classmethod
-    def parse(cls, y):
+    def parse(cls, args, y):
         """
         Parse attributes.
 
@@ -37,10 +39,10 @@ class Attribute:
         """
         if y is None:
             return None
-        return list(map(Attribute.parse_one, y))
+        return list(map(partial(Attribute.parse_one, args), y))
 
     @classmethod
-    def parse_one(cls, y):
+    def parse_one(cls, args, y):
         """
         Parse attribute id and YAML.
 

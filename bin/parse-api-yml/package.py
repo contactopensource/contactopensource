@@ -8,7 +8,7 @@ class Package:
     def __str__(self):
         return f"id: {self.id}, summary: {self.summary}, entities: {self.entities}, uml: {self.uml}"
 
-    def parse(cls, y):
+    def parse(cls, args, y):
         """
         Parse packages.
 
@@ -19,7 +19,7 @@ class Package:
             return None
         return list(map(parse_one, y.items()))
 
-    def parse_one(cls, y):
+    def parse_one(cls, args, y):
         """
         Parse package key-value pair.
 

@@ -1,8 +1,9 @@
+from functools import partial
 from . import attribute_group
 
-def render(entity):
+def render(args, entity):
     s = f"CREATE TABLE {entity.id} (\n"
-    # s += ''.join(map(attribute_group.render, entity.attribute_groups))
+    # s += ''.join(map(partial(attribute_group.render, args), entity.attribute_groups))
     s += ");\n\n"
     if entity.attribute_groups is not None:
         for attribute_group in entity.attribute_groups:

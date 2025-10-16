@@ -13,7 +13,7 @@ CREATE INDEX "polls_choice_question_id_c5b4b260" ON "polls_choice" ("question_id
 ```
 """
 
-def render(attribute):
+def render(args, attribute):
     return f"""
 ALTER TABLE "{attribute.table_name}"
   ADD CONSTRAINT "index_{attribute.id}_fk_{attribute.references_table_id}"

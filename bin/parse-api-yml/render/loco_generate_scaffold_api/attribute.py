@@ -1,6 +1,6 @@
 import re
 
-def render(attribute):
+def render(args, attribute):
     return f"        {attribute.id}:{render_type(attribute)}{render_nullable(attribute)}{render_unique(attribute)} \\\n"
 
 def render_id(attribute):
@@ -14,7 +14,7 @@ def render_type(attribute):
             return "references"
         return "references:" + attribute.type[:-3]
     # Search for a type with a constraint e.g. "string(1)"
-    x = re.search("(string)\((\d+)\)", attribute.type)
+    x = re.search("string\((\d+)\)", attribute.type)
     if x:
         # Return a quoted type and curly constraint e.g. "\"string{1}\""
         # TODO: return CHECK(length(VALUE)=3) or CHECK(VALUE ~ '^[[:alpha:]]{3}$') or similar.

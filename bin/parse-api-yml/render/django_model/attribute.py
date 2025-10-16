@@ -1,4 +1,4 @@
-def render(attribute):
+def render(args, attribute):
     return f"        {attribute.id} = models.{render_type(attribute)}(\"{attribute.help}\")\n"
 
 attribute_type_to_attribute = {
