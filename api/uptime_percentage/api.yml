@@ -11,15 +11,15 @@ uptime_percentage:
     - Main:
       - actual:
           help: Uptime percentage actual value
-          type: decimal
+          type: numeric(7,2)
           index: true
       - target:
           help: Uptime percentage target value
-          type: decimal
+          type: numeric(7,2)
           index: true
       - ratio:
           help: Uptime percentage ratio = (actual / target)
-          type: decimal
+          type: numeric(7,2)
           index: true
       - unit:
           help: Uptime percentage unit

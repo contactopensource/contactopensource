@@ -1,17 +1,17 @@
-      net_promoter_score_worker_perspective:
-        - net_promoter_score_worker_actual:
+      net_promoter_score_worker_perspective_:
+        - net_promoter_score_worker_perspective_actual:
             help: Net Promoter Score (NPS) worker perspective, actual value
             type: decimal
-        - net_promoter_score_worker_target:
-            help: Net Promoter Score (NPS) worker perspective, target value
+        - net_promoter_score_worker_perspective_expect:
+            help: Net Promoter Score (NPS) worker perspective, expect value
             type: decimal
-        - net_promoter_score_worker_ratio:
-            help: Net Promoter Score (NPS) worker perspective, ratio = (actual / target)
+        - net_promoter_score_worker_perspective_ratio:
+            help: Net Promoter Score (NPS) worker perspective, ratio = (actual / expect)
             type: decimal
-            sql: net_promoter_score_worker_ratio DECIMAL GENERATED ALWAYS AS (net_promoter_score_worker_actual / net_promoter_score_worker_target) STORED
-        - net_promoter_score_worker_unit:
+            sql: net_promoter_score_worker_perspective_ratio DECIMAL GENERATED ALWAYS AS (net_promoter_score_worker_perspective_actual / net_promoter_score_worker_perspective_expect) STORED
+        - net_promoter_score_worker_perspective_unit:
             help: Net Promoter Score (NPS) worker perspective, unit
             type: text
-        - net_promoter_score_worker_description_as_markdown:
+        - net_promoter_score_worker_perspective_description_as_markdown:
             help: Net Promoter Score (NPS) worker perspective, description as markdown
             type: text

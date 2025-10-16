@@ -14,6 +14,7 @@ entity color_name_kit {
   deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
   locale_code : string ⚡
+  tagging : string ⚡
   .. Main ..
   hex : hexdigit(6)+
   html_color_name : text

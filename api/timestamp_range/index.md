@@ -1,4 +1,4 @@
-# tag
+# timestamp_range
 
 
 A timestamp range is a period between two timestamp values.
@@ -26,11 +26,9 @@ meta:
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
+
 card:
-
-  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
-
-  * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
 
   * name: string(50) (index) - example: Alice Anderson
 
@@ -41,6 +39,10 @@ card:
   * description: text - example: This text is a description and can be as long as you wish.
 
   * disambiguation: text - example: This text explains the difference between this item and others.
+
+  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
+
+  * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
 
   * avatar_image_400x400_url: url
 

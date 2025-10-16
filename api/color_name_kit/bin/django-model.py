@@ -11,6 +11,7 @@ class ColorNameKit(models.Model):
         deleted_at = models.UnknownAttribute("The time when this happened.")
         deleted_by = models.URLAttribute("The user/agent/service/etc. that did this.")
         locale_code = models.TextAttribute("An international locale identifier, such as the id of locale "English - United States".")
+        tagging = models.TextAttribute("A tagging list that is space-separated and without any hash marks.")
         hex = models.UnknownAttribute("hexadecimal-lowercase six-character code")
         html_color_name = models.TextAttribute("See https://wikipedia.org/wiki/Web_colors#HTML_color_names")
         x11_color_name = models.TextAttribute("See https://en.wikipedia.org/wiki/X11_color_names")

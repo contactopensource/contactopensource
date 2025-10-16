@@ -7,6 +7,7 @@ DROP INDEX IF EXISTS index_measurement_system_updated_by;
 DROP INDEX IF EXISTS index_measurement_system_deleted_at;
 DROP INDEX IF EXISTS index_measurement_system_deleted_by;
 DROP INDEX IF EXISTS index_measurement_system_locale_code;
+DROP INDEX IF EXISTS index_measurement_system_tagging;
 DROP INDEX IF EXISTS index_measurement_system_key;
 DROP INDEX IF EXISTS index_measurement_system_formal_name;
 

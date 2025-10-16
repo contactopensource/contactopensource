@@ -6,11 +6,9 @@ A quick-response (QR) code is a type of two-dimensional matrix barcode.
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
@@ -27,6 +25,8 @@ Meta:
   * deleted_by: url (index)
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
+
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
 
 Main:
 

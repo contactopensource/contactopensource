@@ -28,6 +28,8 @@ meta:
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
+
 Main:
 
   * family_id: united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id (index) - example: IT Operations

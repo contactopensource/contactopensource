@@ -7,9 +7,10 @@ DROP INDEX IF EXISTS index_stock_keeping_unit_updated_by;
 DROP INDEX IF EXISTS index_stock_keeping_unit_deleted_at;
 DROP INDEX IF EXISTS index_stock_keeping_unit_deleted_by;
 DROP INDEX IF EXISTS index_stock_keeping_unit_locale_code;
-DROP INDEX IF EXISTS index_stock_keeping_unit_sign;
-DROP INDEX IF EXISTS index_stock_keeping_unit_kind;
+DROP INDEX IF EXISTS index_stock_keeping_unit_tagging;
 DROP INDEX IF EXISTS index_stock_keeping_unit_name;
 DROP INDEX IF EXISTS index_stock_keeping_unit_subname;
+DROP INDEX IF EXISTS index_stock_keeping_unit_sign;
+DROP INDEX IF EXISTS index_stock_keeping_unit_kind;
 DROP INDEX IF EXISTS index_stock_keeping_unit_code;
 

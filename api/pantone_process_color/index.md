@@ -26,6 +26,8 @@ meta:
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
+
 Main:
 
   * key: string (index) - example: "Red 032 C". Always use Pantone format "{name} {code} {stock}".

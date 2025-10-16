@@ -4,7 +4,6 @@ set -euf
 cargo loco generate scaffold --html \
     quick_response_code \
         id:uuid \
-        sign:char \
         lock_version:integer \
         created_at:timestamp_utc_usec \
         created_by:url \
@@ -13,6 +12,7 @@ cargo loco generate scaffold --html \
         deleted_at:timestamp_utc_usec \
         deleted_by:url \
         locale_code:string \
+        tagging:string \
         code:string \
         image_url:url \
         image_alt:text \

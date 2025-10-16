@@ -14,6 +14,7 @@ entity united_kingdom_government_digital_and_data_profession_capability_framewor
   deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
   locale_code : string ⚡
+  tagging : string ⚡
   .. Main ..
   name : string
   url : url

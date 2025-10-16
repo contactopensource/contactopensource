@@ -1,0 +1,30 @@
+#!/bin/sh
+set -euf
+
+class CodeMetricsKit(models.Model):
+        id = models.UUIDAttribute("Primary key id that is a secure-random 32-character lowercase hexadecimal, optimized for zero information rather than speed and memory; you can show this id to users.")
+        lock_version = models.IntegerAttribute("This is for optimistic locking.")
+        created_at = models.UnknownAttribute("The time when this happened.")
+        created_by = models.URLAttribute("The user/agent/service/etc. that did this.")
+        updated_at = models.UnknownAttribute("The time when this happened.")
+        updated_by = models.URLAttribute("The user/agent/service/etc. that did this.")
+        deleted_at = models.UnknownAttribute("The time when this happened.")
+        deleted_by = models.URLAttribute("The user/agent/service/etc. that did this.")
+        locale_code = models.TextAttribute("An international locale identifier, such as the id of locale "English - United States".")
+        tagging = models.TextAttribute("A tagging list that is space-separated and without any hash marks.")
+        maintainability_index_actual = models.UnknownAttribute("Maintainability index actual value")
+        maintainability_index_target = models.UnknownAttribute("Maintainability index target value")
+        maintainability_index_ratio = models.UnknownAttribute("Maintainability index ration (actual / target)")
+        maintainability_index_unit = models.TextAttribute("Maintainability index unit")
+        maintainability_index_description = models.TextAttribute("Maintainability index description")
+        line_count_actual = models.UnknownAttribute("Line count actual value")
+        line_count_target = models.UnknownAttribute("Line count target value")
+        line_count_ratio = models.UnknownAttribute("Line count ratio = (actual / target)")
+        line_count_unit = models.TextAttribute("Line count unit")
+        line_count_description = models.TextAttribute("Line count description")
+        test_automation_code_coverage_actual = models.UnknownAttribute("Test automation code coverage actual value")
+        test_automation_code_coverage_target = models.UnknownAttribute("Test automation code coverage target value")
+        test_automation_code_coverage_ratio = models.UnknownAttribute("Test automation code coverage ratio = (actual / target)")
+        test_automation_code_coverage_unit = models.TextAttribute("Test automation code coverage unit")
+        test_automation_code_coverage_description = models.TextAttribute("Test automation code coverage description")
+

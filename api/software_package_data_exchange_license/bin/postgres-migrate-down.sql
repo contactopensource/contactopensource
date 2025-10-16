@@ -7,5 +7,6 @@ DROP INDEX IF EXISTS index_software_package_data_exchange_license_updated_by;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_deleted_at;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_deleted_by;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_locale_code;
+DROP INDEX IF EXISTS index_software_package_data_exchange_license_tagging;
 DROP INDEX IF EXISTS index_software_package_data_exchange_license_code;
 

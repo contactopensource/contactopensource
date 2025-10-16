@@ -12,5 +12,5 @@ Main:
 
   * name: string (index) - example: Generalist Medical Practitioners
 
-  * definition: string - example: Generalist Medical Practitioners diagnose, treat and prevent human illness …
+  * definition_as_markdown: markdown - example: Generalist Medical Practitioners diagnose, treat and prevent human illness …
 

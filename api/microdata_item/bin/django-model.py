@@ -11,6 +11,7 @@ class MicrodataItem(models.Model):
         deleted_at = models.UnknownAttribute("The time when this happened.")
         deleted_by = models.URLAttribute("The user/agent/service/etc. that did this.")
         locale_code = models.TextAttribute("An international locale identifier, such as the id of locale "English - United States".")
+        tagging = models.TextAttribute("A tagging list that is space-separated and without any hash marks.")
         itemtype = models.UnknownAttribute("A valid URL of a vocabulary that describes the item and its properties context.")
         itemprop = models.TextAttribute("Indicates that its containing tag holds the value of the
 specified item property. The property's name and value context

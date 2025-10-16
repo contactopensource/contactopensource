@@ -12,13 +12,14 @@ mix phx.gen.html \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:url:index \
         locale_code:string:index \
-        sign:"string{1}":index \
-        kind:string:index \
+        tagging:string:index \
         name:"string{50}":index \
         subname:"string{50}":index \
         summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \
+        sign:"string{1}":index \
+        kind:string:index \
         avatar_image_400x400_url:urlNone \
         avatar_image_400x400_alt:urlNone \
         main_image_1080x1080_url:urlNone \
@@ -41,9 +42,9 @@ mix phx.gen.html \
         prefer_media_type_id:media_type.idNone \
         lossy_flag:booleanNone \
         floss_flag:booleanNone \
-        fixed_bit_rate:decimalNone \
-        variable_bit_rate_minimum:decimalNone \
-        variable_bit_rate_maximum:decimalNone \
+        fixed_bit_rate:numeric(7,2)None \
+        variable_bit_rate_minimum:numeric(7,2)None \
+        variable_bit_rate_maximum:numeric(7,2)None \
         fixed_channel_count:integerNone \
         variable_channel_count_minimum:integerNone \
         variable_channel_count_maximum:integerNone \

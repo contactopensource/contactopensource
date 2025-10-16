@@ -7,13 +7,20 @@ initiative_type:
 
     Initiative type examples:
 
+    - Experiment
+    - Package
     - Portfolio
+    - Proof
     - Product
     - Program
     - Project
     - Practice
+    - Process
+    - Offering
     - Service
+    - Solution
     - Support
+    - Venture
 
   links:
     - https://wikipedia.org/wiki/Initiative

@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.Meta \
+    MyApp.None.metas \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,10 +15,30 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
+    --attribute tagging:string \
 
-mix ash.codegen create_meta
+mix ash.codegen create_metas
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_metas.exs
+
+mkdir -p lib/my_app_web/live/metas
+touch lib/my_app_web/live/metas/form_live.ex
+touch lib/my_app_web/live/metas/index_live.ex
+touch lib/my_app_web/live/metas/show_live.ex
+
+mkdir -p test/my_app_web/live/metas
+touch test/my_app_web/live/metas/form_live.ex
+touch test/my_app_web/live/metas/index_live.ex
+touch test/my_app_web/live/metas/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/metas", Metas.IndexLive
+live "/metas/new", Metas.FormLive, :new
+live "/metas/:id", Metas.ShowLive
+live "/metas/:id/edit", Metas.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/meta.ex
@@ -31,7 +51,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

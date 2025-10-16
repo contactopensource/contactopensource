@@ -7,8 +7,9 @@ DROP INDEX IF EXISTS index_plan_task_updated_by;
 DROP INDEX IF EXISTS index_plan_task_deleted_at;
 DROP INDEX IF EXISTS index_plan_task_deleted_by;
 DROP INDEX IF EXISTS index_plan_task_locale_code;
-DROP INDEX IF EXISTS index_plan_task_sign;
-DROP INDEX IF EXISTS index_plan_task_kind;
+DROP INDEX IF EXISTS index_plan_task_tagging;
 DROP INDEX IF EXISTS index_plan_task_name;
 DROP INDEX IF EXISTS index_plan_task_subname;
+DROP INDEX IF EXISTS index_plan_task_sign;
+DROP INDEX IF EXISTS index_plan_task_kind;
 

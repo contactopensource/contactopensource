@@ -12,6 +12,7 @@ mix phx.gen.html \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:url:index \
         locale_code:string:index \
+        tagging:string:index \
         family_id:united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id:index \
         name:stringNone \
         url:urlNone \

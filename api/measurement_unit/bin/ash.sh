@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.measurement.MeasurementUnit \
+    MyApp.measurement.measurement_units \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,15 +15,35 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
+    --attribute tagging:string \
     --attribute name:text \
     --attribute symbol:text \
     --attribute measurement_system_id:measurement_system.id \
     --attribute numerator:measurement_unit.id \
     --attribute denominator:measurement_unit.id \
 
-mix ash.codegen create_measurement_unit
+mix ash.codegen create_measurement_units
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_measurement_units.exs
+
+mkdir -p lib/my_app_web/live/measurement_units
+touch lib/my_app_web/live/measurement_units/form_live.ex
+touch lib/my_app_web/live/measurement_units/index_live.ex
+touch lib/my_app_web/live/measurement_units/show_live.ex
+
+mkdir -p test/my_app_web/live/measurement_units
+touch test/my_app_web/live/measurement_units/form_live.ex
+touch test/my_app_web/live/measurement_units/index_live.ex
+touch test/my_app_web/live/measurement_units/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/measurement_units", MeasurementUnits.IndexLive
+live "/measurement_units/new", MeasurementUnits.FormLive, :new
+live "/measurement_units/:id", MeasurementUnits.ShowLive
+live "/measurement_units/:id/edit", MeasurementUnits.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/measurement/measurement_unit.ex
@@ -36,7 +56,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

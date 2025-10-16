@@ -7,8 +7,9 @@ DROP INDEX IF EXISTS index_content_font_updated_by;
 DROP INDEX IF EXISTS index_content_font_deleted_at;
 DROP INDEX IF EXISTS index_content_font_deleted_by;
 DROP INDEX IF EXISTS index_content_font_locale_code;
-DROP INDEX IF EXISTS index_content_font_sign;
-DROP INDEX IF EXISTS index_content_font_kind;
+DROP INDEX IF EXISTS index_content_font_tagging;
 DROP INDEX IF EXISTS index_content_font_name;
 DROP INDEX IF EXISTS index_content_font_subname;
+DROP INDEX IF EXISTS index_content_font_sign;
+DROP INDEX IF EXISTS index_content_font_kind;
 

@@ -7,9 +7,10 @@ DROP INDEX IF EXISTS index_international_standard_book_number_updated_by;
 DROP INDEX IF EXISTS index_international_standard_book_number_deleted_at;
 DROP INDEX IF EXISTS index_international_standard_book_number_deleted_by;
 DROP INDEX IF EXISTS index_international_standard_book_number_locale_code;
-DROP INDEX IF EXISTS index_international_standard_book_number_sign;
-DROP INDEX IF EXISTS index_international_standard_book_number_kind;
+DROP INDEX IF EXISTS index_international_standard_book_number_tagging;
 DROP INDEX IF EXISTS index_international_standard_book_number_name;
 DROP INDEX IF EXISTS index_international_standard_book_number_subname;
+DROP INDEX IF EXISTS index_international_standard_book_number_sign;
+DROP INDEX IF EXISTS index_international_standard_book_number_kind;
 DROP INDEX IF EXISTS index_international_standard_book_number_code;
 

@@ -26,6 +26,8 @@ meta:
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
+
 Main:
 
   * code: string (index) - example: "GPL-3.0" means GNU Public License version 3.0

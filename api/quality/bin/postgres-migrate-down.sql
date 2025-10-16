@@ -7,8 +7,9 @@ DROP INDEX IF EXISTS index_quality_updated_by;
 DROP INDEX IF EXISTS index_quality_deleted_at;
 DROP INDEX IF EXISTS index_quality_deleted_by;
 DROP INDEX IF EXISTS index_quality_locale_code;
-DROP INDEX IF EXISTS index_quality_sign;
-DROP INDEX IF EXISTS index_quality_kind;
+DROP INDEX IF EXISTS index_quality_tagging;
 DROP INDEX IF EXISTS index_quality_name;
 DROP INDEX IF EXISTS index_quality_subname;
+DROP INDEX IF EXISTS index_quality_sign;
+DROP INDEX IF EXISTS index_quality_kind;
 

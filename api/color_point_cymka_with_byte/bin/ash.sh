@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Color.Color Point CYMKA With Byte \
+    MyApp.Color.color_point_cymka_as_bytes \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,15 +15,35 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
+    --attribute tagging:string \
     --attribute cyan:byte \
     --attribute yellow:byte \
     --attribute magenta:byte \
     --attribute black:byte \
     --attribute alpha:byte \
 
-mix ash.codegen create_color_point_cymka_as_byte
+mix ash.codegen create_color_point_cymka_as_bytes
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_color_point_cymka_as_bytes.exs
+
+mkdir -p lib/my_app_web/live/color_point_cymka_as_bytes
+touch lib/my_app_web/live/color_point_cymka_as_bytes/form_live.ex
+touch lib/my_app_web/live/color_point_cymka_as_bytes/index_live.ex
+touch lib/my_app_web/live/color_point_cymka_as_bytes/show_live.ex
+
+mkdir -p test/my_app_web/live/color_point_cymka_as_bytes
+touch test/my_app_web/live/color_point_cymka_as_bytes/form_live.ex
+touch test/my_app_web/live/color_point_cymka_as_bytes/index_live.ex
+touch test/my_app_web/live/color_point_cymka_as_bytes/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/color_point_cymka_as_bytes", ColorPointCymkaAsBytes.IndexLive
+live "/color_point_cymka_as_bytes/new", ColorPointCymkaAsBytes.FormLive, :new
+live "/color_point_cymka_as_bytes/:id", ColorPointCymkaAsBytes.ShowLive
+live "/color_point_cymka_as_bytes/:id/edit", ColorPointCymkaAsBytes.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/color/color_point_cymka_as_byte.ex
@@ -36,7 +56,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

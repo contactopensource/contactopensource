@@ -1,0 +1,13 @@
+CREATE TABLE burn_rate_net_cash_per_week (
+);
+
+CREATE INDEX index_burn_rate_net_cash_per_week_id on burn_rate_net_cash_per_week(id);
+CREATE INDEX index_burn_rate_net_cash_per_week_created_at on burn_rate_net_cash_per_week(created_at);
+CREATE INDEX index_burn_rate_net_cash_per_week_created_by on burn_rate_net_cash_per_week(created_by);
+CREATE INDEX index_burn_rate_net_cash_per_week_updated_at on burn_rate_net_cash_per_week(updated_at);
+CREATE INDEX index_burn_rate_net_cash_per_week_updated_by on burn_rate_net_cash_per_week(updated_by);
+CREATE INDEX index_burn_rate_net_cash_per_week_deleted_at on burn_rate_net_cash_per_week(deleted_at);
+CREATE INDEX index_burn_rate_net_cash_per_week_deleted_by on burn_rate_net_cash_per_week(deleted_by);
+CREATE INDEX index_burn_rate_net_cash_per_week_locale_code on burn_rate_net_cash_per_week(locale_code);
+CREATE INDEX index_burn_rate_net_cash_per_week_tagging on burn_rate_net_cash_per_week(tagging);
+

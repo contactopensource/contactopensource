@@ -9,4 +9,5 @@ CREATE INDEX index_locale_updated_by on locale(updated_by);
 CREATE INDEX index_locale_deleted_at on locale(deleted_at);
 CREATE INDEX index_locale_deleted_by on locale(deleted_by);
 CREATE INDEX index_locale_locale_code on locale(locale_code);
+CREATE INDEX index_locale_tagging on locale(tagging);
 

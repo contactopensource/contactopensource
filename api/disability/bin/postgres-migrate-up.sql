@@ -9,8 +9,9 @@ CREATE INDEX index_disability_updated_by on disability(updated_by);
 CREATE INDEX index_disability_deleted_at on disability(deleted_at);
 CREATE INDEX index_disability_deleted_by on disability(deleted_by);
 CREATE INDEX index_disability_locale_code on disability(locale_code);
-CREATE INDEX index_disability_sign on disability(sign);
-CREATE INDEX index_disability_kind on disability(kind);
+CREATE INDEX index_disability_tagging on disability(tagging);
 CREATE INDEX index_disability_name on disability(name);
 CREATE INDEX index_disability_subname on disability(subname);
+CREATE INDEX index_disability_sign on disability(sign);
+CREATE INDEX index_disability_kind on disability(kind);
 

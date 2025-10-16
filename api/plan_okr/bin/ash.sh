@@ -2,12 +2,11 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Plan.PlanOKR \
+    MyApp.Plan.plan_okrs \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp_utc_usec \
     --attribute created_by:text \
@@ -16,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
-    --attribute title:string \
-    --attribute subtitle:string \
+    --attribute tagging:string \
+    --attribute name:string \
+    --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -39,9 +39,28 @@ mix ash.gen.resource \
     --attribute objective_card_id:card.id \
     --attribute key_result_card_ids:card.id[] \
 
-mix ash.codegen create_plan_okr
+mix ash.codegen create_plan_okrs
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_plan_okrs.exs
+
+mkdir -p lib/my_app_web/live/plan_okrs
+touch lib/my_app_web/live/plan_okrs/form_live.ex
+touch lib/my_app_web/live/plan_okrs/index_live.ex
+touch lib/my_app_web/live/plan_okrs/show_live.ex
+
+mkdir -p test/my_app_web/live/plan_okrs
+touch test/my_app_web/live/plan_okrs/form_live.ex
+touch test/my_app_web/live/plan_okrs/index_live.ex
+touch test/my_app_web/live/plan_okrs/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/plan_okrs", PlanOkrs.IndexLive
+live "/plan_okrs/new", PlanOkrs.FormLive, :new
+live "/plan_okrs/:id", PlanOkrs.ShowLive
+live "/plan_okrs/:id/edit", PlanOkrs.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/plan/plan_okr.ex

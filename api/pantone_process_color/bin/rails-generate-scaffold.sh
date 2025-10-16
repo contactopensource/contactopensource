@@ -11,6 +11,7 @@ rails generate scaffold \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:text:index \
         locale_code:string:index \
+        tagging:string:index \
         key:string:index \
         name:string:index \
         code:"string{3}":index \

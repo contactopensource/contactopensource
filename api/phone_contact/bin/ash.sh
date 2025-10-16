@@ -2,12 +2,11 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.PhoneContact \
+    MyApp.None.phone_contacts \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp_utc_usec \
     --attribute created_by:text \
@@ -16,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
-    --attribute title:string \
-    --attribute subtitle:string \
+    --attribute tagging:string \
+    --attribute name:string \
+    --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -44,9 +44,28 @@ mix ash.gen.resource \
     --attribute e164_trial_identification_code:string \
     --attribute e164_subscriber_number:string \
 
-mix ash.codegen create_phone_contact
+mix ash.codegen create_phone_contacts
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_phone_contacts.exs
+
+mkdir -p lib/my_app_web/live/phone_contacts
+touch lib/my_app_web/live/phone_contacts/form_live.ex
+touch lib/my_app_web/live/phone_contacts/index_live.ex
+touch lib/my_app_web/live/phone_contacts/show_live.ex
+
+mkdir -p test/my_app_web/live/phone_contacts
+touch test/my_app_web/live/phone_contacts/form_live.ex
+touch test/my_app_web/live/phone_contacts/index_live.ex
+touch test/my_app_web/live/phone_contacts/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/phone_contacts", PhoneContacts.IndexLive
+live "/phone_contacts/new", PhoneContacts.FormLive, :new
+live "/phone_contacts/:id", PhoneContacts.ShowLive
+live "/phone_contacts/:id/edit", PhoneContacts.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/phone_contact.ex

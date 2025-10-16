@@ -12,6 +12,7 @@ cargo loco generate scaffold --html \
         deleted_at:timestamp_utc_usec \
         deleted_by:url \
         locale_code:string \
+        tagging:string \
         itemtype:URL \
         itemprop:text \
 

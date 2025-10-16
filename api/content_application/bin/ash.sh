@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Content.ContentApplication \
+    MyApp.Content.content_applications \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -35,9 +36,28 @@ mix ash.gen.resource \
     --attribute quick_response_code_id:quick_response_code.id \
     --attribute universal_product_code_id:universal_product_code.id \
 
-mix ash.codegen create_content_application
+mix ash.codegen create_content_applications
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_content_applications.exs
+
+mkdir -p lib/my_app_web/live/content_applications
+touch lib/my_app_web/live/content_applications/form_live.ex
+touch lib/my_app_web/live/content_applications/index_live.ex
+touch lib/my_app_web/live/content_applications/show_live.ex
+
+mkdir -p test/my_app_web/live/content_applications
+touch test/my_app_web/live/content_applications/form_live.ex
+touch test/my_app_web/live/content_applications/index_live.ex
+touch test/my_app_web/live/content_applications/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/content_applications", ContentApplications.IndexLive
+live "/content_applications/new", ContentApplications.FormLive, :new
+live "/content_applications/:id", ContentApplications.ShowLive
+live "/content_applications/:id/edit", ContentApplications.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/content/content_application.ex
@@ -50,7 +70,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

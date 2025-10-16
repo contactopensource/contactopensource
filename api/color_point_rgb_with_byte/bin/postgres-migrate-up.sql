@@ -2,7 +2,6 @@ CREATE TABLE color_point_rgb_with_byte (
 );
 
 CREATE INDEX index_color_point_rgb_with_byte_id on color_point_rgb_with_byte(id);
-CREATE INDEX index_color_point_rgb_with_byte_sign on color_point_rgb_with_byte(sign);
 CREATE INDEX index_color_point_rgb_with_byte_created_at on color_point_rgb_with_byte(created_at);
 CREATE INDEX index_color_point_rgb_with_byte_created_by on color_point_rgb_with_byte(created_by);
 CREATE INDEX index_color_point_rgb_with_byte_updated_at on color_point_rgb_with_byte(updated_at);
@@ -10,4 +9,5 @@ CREATE INDEX index_color_point_rgb_with_byte_updated_by on color_point_rgb_with_
 CREATE INDEX index_color_point_rgb_with_byte_deleted_at on color_point_rgb_with_byte(deleted_at);
 CREATE INDEX index_color_point_rgb_with_byte_deleted_by on color_point_rgb_with_byte(deleted_by);
 CREATE INDEX index_color_point_rgb_with_byte_locale_code on color_point_rgb_with_byte(locale_code);
+CREATE INDEX index_color_point_rgb_with_byte_tagging on color_point_rgb_with_byte(tagging);
 

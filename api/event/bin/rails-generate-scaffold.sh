@@ -3,7 +3,6 @@ set -euf
 
 rails generate scaffold \
     event \
-        sign:char:index \
         lock_version:integer \
         created_at:timestamp_utc_usec:index \
         created_by:text:index \
@@ -12,13 +11,14 @@ rails generate scaffold \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:text:index \
         locale_code:string:index \
-        sign:"string{1}":index \
-        kind:string:index \
-        title:"string{50}":index \
-        subtitle:"string{50}":index \
+        tagging:string:index \
+        name:"string{50}":index \
+        subname:"string{50}":index \
         summary:"string{72}" \
         description:text \
         disambiguation:text \
+        sign:"string{1}":index \
+        kind:string:index \
         avatar_image_400x400_url:text \
         avatar_image_400x400_alt:text \
         main_image_1080x1080_url:text \

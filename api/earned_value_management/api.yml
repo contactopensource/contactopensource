@@ -11,13 +11,13 @@ earned_value_management:
     - Main:
       - planned_value:
           help: Earned Value Management (EVM) Planned Value (PV)
-          type: decimal
+          type: numeric(7,2)
       - earned_value:
           help: Earned Value Management (EVM) Earned Value (EV)
-          type: decimal
+          type: numeric(7,2)
       - actual_cost:
           help: Earned Value Management (EVM) Actual Cost (AC)
-          type: decimal
+          type: numeric(7,2)
       - cost_variance:
           help: |-
             Earned Value Management (EVM) Cost Variance (CV)
@@ -27,11 +27,11 @@ earned_value_management:
             - Positive: ahead of budget a.k.a. cost underrun
 
             - Negative: behind budget a.k.a. cost overrun
-          type: decimal
+          type: numeric(7,2)
           sql: earned_value_management_cost_variance DECIMAL GENERATED ALWAYS AS (earned_value_management_earned_value - actual_cost) STORED
       - cost_variance_ratio:
           help: Earned Value Management (EVM) Cost Variance Ratio (CVR)
-          type: decimal
+          type: numeric(7,2)
           sql: earned_value_management_cost_variance_ratio DECIMAL GENERATED ALWAYS AS ((earned_value_management_earned_value - actual_cost) / earned_value_management_earned_value) STORED
       - cost_performance_index:
           help: |-
@@ -42,7 +42,7 @@ earned_value_management:
             - Positive: cost is less than budgeted
 
             - Negative: cost is greater than budgeted
-          type: decimal
+          type: numeric(7,2)
           sql: earned_value_management_cost_performance_index  DECIMAL GENERATED ALWAYS AS (earned_value_management_earned_value / earned_value_management_actual_cost) STORED
       - schedule_variance:
           help: |-
@@ -53,11 +53,11 @@ earned_value_management:
             - Positive: ahead of schedule a.k.a. time underrun
 
             - Negative: behind schedule a.,k.a. time overrun
-          type: decimal
+          type: numeric(7,2)
           sql: earned_value_management_schedule_variance DECIMAL GENERATED ALWAYS AS (earned_value_management_earned_value - planned_value) STORED
       - schedule_variance_ratio:
           help: Earned Value Management (EVM) Schedule Variance Ratio (SVR)
-          type: decimal
+          type: numeric(7,2)
           sql: earned_value_management_schedule_variance_ratio DECIMAL GENERATED ALWAYS AS ((earned_value_management_earned_value - planned_value) / earned_value_management_planned_value) STORED
       - schedule_performance_index:
           help: |-
@@ -68,7 +68,7 @@ earned_value_management:
             - Positive: ahead of schedule
 
             - Negative: behind schedule
-          type: decimal
+          type: numeric(7,2)
           sql: earned_value_management_schedule_performance_index DECIMAL GENERATED (earned_value_management_earned_value / earned_value_management_planned_value) STORED
 
 

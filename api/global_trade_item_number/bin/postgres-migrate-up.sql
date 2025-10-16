@@ -9,10 +9,11 @@ CREATE INDEX index_global_trade_item_number_updated_by on global_trade_item_numb
 CREATE INDEX index_global_trade_item_number_deleted_at on global_trade_item_number(deleted_at);
 CREATE INDEX index_global_trade_item_number_deleted_by on global_trade_item_number(deleted_by);
 CREATE INDEX index_global_trade_item_number_locale_code on global_trade_item_number(locale_code);
-CREATE INDEX index_global_trade_item_number_sign on global_trade_item_number(sign);
-CREATE INDEX index_global_trade_item_number_kind on global_trade_item_number(kind);
+CREATE INDEX index_global_trade_item_number_tagging on global_trade_item_number(tagging);
 CREATE INDEX index_global_trade_item_number_name on global_trade_item_number(name);
 CREATE INDEX index_global_trade_item_number_subname on global_trade_item_number(subname);
+CREATE INDEX index_global_trade_item_number_sign on global_trade_item_number(sign);
+CREATE INDEX index_global_trade_item_number_kind on global_trade_item_number(kind);
 CREATE INDEX index_global_trade_item_number_code on global_trade_item_number(code);
 CREATE INDEX index_global_trade_item_number_prefix on global_trade_item_number(prefix);
 CREATE INDEX index_global_trade_item_number_item on global_trade_item_number(item);

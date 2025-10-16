@@ -11,13 +11,14 @@ rails generate scaffold \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:text:index \
         locale_code:string:index \
-        sign:"string{1}":index \
-        kind:string:index \
+        tagging:string:index \
         name:"string{50}":index \
         subname:"string{50}":index \
         summary:"string{72}" \
         description:text \
         disambiguation:text \
+        sign:"string{1}":index \
+        kind:string:index \
         avatar_image_400x400_url:text \
         avatar_image_400x400_alt:text \
         main_image_1080x1080_url:text \
@@ -40,9 +41,9 @@ rails generate scaffold \
         prefer_media_type_id:references \
         lossy_flag:boolean \
         floss_flag:boolean \
-        fixed_bit_rate:decimal \
-        variable_bit_rate_minimum:decimal \
-        variable_bit_rate_maximum:decimal \
+        fixed_bit_rate:numeric(7,2) \
+        variable_bit_rate_minimum:numeric(7,2) \
+        variable_bit_rate_maximum:numeric(7,2) \
         fixed_channel_count:integer \
         variable_channel_count_minimum:integer \
         variable_channel_count_maximum:integer \

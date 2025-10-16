@@ -2,12 +2,11 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.MediaType \
+    MyApp.None.media_types \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp_utc_usec \
     --attribute created_by:text \
@@ -16,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
-    --attribute title:string \
-    --attribute subtitle:string \
+    --attribute tagging:string \
+    --attribute name:string \
+    --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -42,9 +42,28 @@ mix ash.gen.resource \
     --attribute suffix:string \
     --attribute parameters:string[] \
 
-mix ash.codegen create_media_type
+mix ash.codegen create_media_types
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_media_types.exs
+
+mkdir -p lib/my_app_web/live/media_types
+touch lib/my_app_web/live/media_types/form_live.ex
+touch lib/my_app_web/live/media_types/index_live.ex
+touch lib/my_app_web/live/media_types/show_live.ex
+
+mkdir -p test/my_app_web/live/media_types
+touch test/my_app_web/live/media_types/form_live.ex
+touch test/my_app_web/live/media_types/index_live.ex
+touch test/my_app_web/live/media_types/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/media_types", MediaTypes.IndexLive
+live "/media_types/new", MediaTypes.FormLive, :new
+live "/media_types/:id", MediaTypes.ShowLive
+live "/media_types/:id/edit", MediaTypes.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/media_type.ex

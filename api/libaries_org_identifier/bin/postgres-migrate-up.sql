@@ -9,9 +9,10 @@ CREATE INDEX index_libraries_org_identifier_updated_by on libraries_org_identifi
 CREATE INDEX index_libraries_org_identifier_deleted_at on libraries_org_identifier(deleted_at);
 CREATE INDEX index_libraries_org_identifier_deleted_by on libraries_org_identifier(deleted_by);
 CREATE INDEX index_libraries_org_identifier_locale_code on libraries_org_identifier(locale_code);
-CREATE INDEX index_libraries_org_identifier_sign on libraries_org_identifier(sign);
-CREATE INDEX index_libraries_org_identifier_kind on libraries_org_identifier(kind);
+CREATE INDEX index_libraries_org_identifier_tagging on libraries_org_identifier(tagging);
 CREATE INDEX index_libraries_org_identifier_name on libraries_org_identifier(name);
 CREATE INDEX index_libraries_org_identifier_subname on libraries_org_identifier(subname);
+CREATE INDEX index_libraries_org_identifier_sign on libraries_org_identifier(sign);
+CREATE INDEX index_libraries_org_identifier_kind on libraries_org_identifier(kind);
 CREATE INDEX index_libraries_org_identifier_key on libraries_org_identifier(key);
 

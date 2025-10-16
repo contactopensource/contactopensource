@@ -12,14 +12,14 @@ net_promoter_score_worker_perspective:
     - Main:
       - actual:
           help: Actual value
-          type: decimal
-      - target:
+          type: numeric(7,2)
+      - expect:
           help: Target value
-          type: decimal
+          type: numeric(7,2)
       - ratio:
-          help: Ratio = (actual / target)
-          type: decimal
-          sql: ratio DECIMAL GENERATED ALWAYS AS (actual / target) STORED
+          help: Ratio = (actual / expect)
+          type: numeric(7,2)
+          sql: ratio DECIMAL GENERATED ALWAYS AS (actual / expect) STORED
       - unit:
           help: Unit
           type: text

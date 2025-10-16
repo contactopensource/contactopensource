@@ -9,5 +9,6 @@ CREATE INDEX index_universal_product_code_updated_by on universal_product_code(u
 CREATE INDEX index_universal_product_code_deleted_at on universal_product_code(deleted_at);
 CREATE INDEX index_universal_product_code_deleted_by on universal_product_code(deleted_by);
 CREATE INDEX index_universal_product_code_locale_code on universal_product_code(locale_code);
+CREATE INDEX index_universal_product_code_tagging on universal_product_code(tagging);
 CREATE INDEX index_universal_product_code_code on universal_product_code(code);
 

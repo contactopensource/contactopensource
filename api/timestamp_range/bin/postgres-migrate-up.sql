@@ -1,16 +1,17 @@
-CREATE TABLE tag (
+CREATE TABLE timestamp_range (
 );
 
-CREATE INDEX index_tag_id on tag(id);
-CREATE INDEX index_tag_created_at on tag(created_at);
-CREATE INDEX index_tag_created_by on tag(created_by);
-CREATE INDEX index_tag_updated_at on tag(updated_at);
-CREATE INDEX index_tag_updated_by on tag(updated_by);
-CREATE INDEX index_tag_deleted_at on tag(deleted_at);
-CREATE INDEX index_tag_deleted_by on tag(deleted_by);
-CREATE INDEX index_tag_locale_code on tag(locale_code);
-CREATE INDEX index_tag_sign on tag(sign);
-CREATE INDEX index_tag_kind on tag(kind);
-CREATE INDEX index_tag_name on tag(name);
-CREATE INDEX index_tag_subname on tag(subname);
+CREATE INDEX index_timestamp_range_id on timestamp_range(id);
+CREATE INDEX index_timestamp_range_created_at on timestamp_range(created_at);
+CREATE INDEX index_timestamp_range_created_by on timestamp_range(created_by);
+CREATE INDEX index_timestamp_range_updated_at on timestamp_range(updated_at);
+CREATE INDEX index_timestamp_range_updated_by on timestamp_range(updated_by);
+CREATE INDEX index_timestamp_range_deleted_at on timestamp_range(deleted_at);
+CREATE INDEX index_timestamp_range_deleted_by on timestamp_range(deleted_by);
+CREATE INDEX index_timestamp_range_locale_code on timestamp_range(locale_code);
+CREATE INDEX index_timestamp_range_tagging on timestamp_range(tagging);
+CREATE INDEX index_timestamp_range_name on timestamp_range(name);
+CREATE INDEX index_timestamp_range_subname on timestamp_range(subname);
+CREATE INDEX index_timestamp_range_sign on timestamp_range(sign);
+CREATE INDEX index_timestamp_range_kind on timestamp_range(kind);
 

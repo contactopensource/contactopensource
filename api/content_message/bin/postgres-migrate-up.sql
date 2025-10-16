@@ -9,8 +9,9 @@ CREATE INDEX index_content_message_updated_by on content_message(updated_by);
 CREATE INDEX index_content_message_deleted_at on content_message(deleted_at);
 CREATE INDEX index_content_message_deleted_by on content_message(deleted_by);
 CREATE INDEX index_content_message_locale_code on content_message(locale_code);
-CREATE INDEX index_content_message_sign on content_message(sign);
-CREATE INDEX index_content_message_kind on content_message(kind);
+CREATE INDEX index_content_message_tagging on content_message(tagging);
 CREATE INDEX index_content_message_name on content_message(name);
 CREATE INDEX index_content_message_subname on content_message(subname);
+CREATE INDEX index_content_message_sign on content_message(sign);
+CREATE INDEX index_content_message_kind on content_message(kind);
 

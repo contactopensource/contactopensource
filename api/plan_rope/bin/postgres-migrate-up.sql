@@ -9,8 +9,9 @@ CREATE INDEX index_plan_rope_updated_by on plan_rope(updated_by);
 CREATE INDEX index_plan_rope_deleted_at on plan_rope(deleted_at);
 CREATE INDEX index_plan_rope_deleted_by on plan_rope(deleted_by);
 CREATE INDEX index_plan_rope_locale_code on plan_rope(locale_code);
-CREATE INDEX index_plan_rope_sign on plan_rope(sign);
-CREATE INDEX index_plan_rope_kind on plan_rope(kind);
+CREATE INDEX index_plan_rope_tagging on plan_rope(tagging);
 CREATE INDEX index_plan_rope_name on plan_rope(name);
 CREATE INDEX index_plan_rope_subname on plan_rope(subname);
+CREATE INDEX index_plan_rope_sign on plan_rope(sign);
+CREATE INDEX index_plan_rope_kind on plan_rope(kind);
 

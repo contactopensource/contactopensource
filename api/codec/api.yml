@@ -62,15 +62,15 @@ codec:
     - Bit Rate:
       - fixed_bit_rate:
           help: fixed bit rate
-          type: decimal
+          type: numeric(7,2)
           example: 22000 means 23000 samples per second
       - variable_bit_rate_minimum:
           help: variable bit rate minimum
-          type: decimal
+          type: numeric(7,2)
           example: 11000 means 11000 samples per second minimum
       - variable_bit_rate_maximum:
           help: variable bit rate maximum
-          type: decimal
+          type: numeric(7,2)
           example: 44000 means 44000 samples per second maximum
     - Channel Count:
       - fixed_channel_count:

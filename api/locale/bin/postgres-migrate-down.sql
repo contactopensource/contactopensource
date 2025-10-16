@@ -7,4 +7,5 @@ DROP INDEX IF EXISTS index_locale_updated_by;
 DROP INDEX IF EXISTS index_locale_deleted_at;
 DROP INDEX IF EXISTS index_locale_deleted_by;
 DROP INDEX IF EXISTS index_locale_locale_code;
+DROP INDEX IF EXISTS index_locale_tagging;
 

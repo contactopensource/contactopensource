@@ -7,9 +7,10 @@ DROP INDEX IF EXISTS index_access_attribute_updated_by;
 DROP INDEX IF EXISTS index_access_attribute_deleted_at;
 DROP INDEX IF EXISTS index_access_attribute_deleted_by;
 DROP INDEX IF EXISTS index_access_attribute_locale_code;
-DROP INDEX IF EXISTS index_access_attribute_sign;
-DROP INDEX IF EXISTS index_access_attribute_kind;
+DROP INDEX IF EXISTS index_access_attribute_tagging;
 DROP INDEX IF EXISTS index_access_attribute_name;
 DROP INDEX IF EXISTS index_access_attribute_subname;
+DROP INDEX IF EXISTS index_access_attribute_sign;
+DROP INDEX IF EXISTS index_access_attribute_kind;
 DROP INDEX IF EXISTS index_access_attribute_key;
 

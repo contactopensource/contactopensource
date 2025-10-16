@@ -5,7 +5,7 @@ mix phx.gen.html \
     Codes InternationalLaborOrganizationInternationalStandardClassificationOfOccupations2008 None \
         code:string:index \
         name:string:index \
-        definition:stringNone \
+        definition_as_markdown:markdownNone \
     --force \
     --no-timestamps \
 

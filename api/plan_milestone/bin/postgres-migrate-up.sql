@@ -9,8 +9,9 @@ CREATE INDEX index_plan_milestone_updated_by on plan_milestone(updated_by);
 CREATE INDEX index_plan_milestone_deleted_at on plan_milestone(deleted_at);
 CREATE INDEX index_plan_milestone_deleted_by on plan_milestone(deleted_by);
 CREATE INDEX index_plan_milestone_locale_code on plan_milestone(locale_code);
-CREATE INDEX index_plan_milestone_sign on plan_milestone(sign);
-CREATE INDEX index_plan_milestone_kind on plan_milestone(kind);
+CREATE INDEX index_plan_milestone_tagging on plan_milestone(tagging);
 CREATE INDEX index_plan_milestone_name on plan_milestone(name);
 CREATE INDEX index_plan_milestone_subname on plan_milestone(subname);
+CREATE INDEX index_plan_milestone_sign on plan_milestone(sign);
+CREATE INDEX index_plan_milestone_kind on plan_milestone(kind);
 

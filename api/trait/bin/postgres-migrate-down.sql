@@ -7,8 +7,9 @@ DROP INDEX IF EXISTS index_trait_updated_by;
 DROP INDEX IF EXISTS index_trait_deleted_at;
 DROP INDEX IF EXISTS index_trait_deleted_by;
 DROP INDEX IF EXISTS index_trait_locale_code;
-DROP INDEX IF EXISTS index_trait_sign;
-DROP INDEX IF EXISTS index_trait_kind;
+DROP INDEX IF EXISTS index_trait_tagging;
 DROP INDEX IF EXISTS index_trait_name;
 DROP INDEX IF EXISTS index_trait_subname;
+DROP INDEX IF EXISTS index_trait_sign;
+DROP INDEX IF EXISTS index_trait_kind;
 

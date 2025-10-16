@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS color_point_rgb_with_unit_interval;
 DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_id;
-DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_sign;
 DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_created_at;
 DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_created_by;
 DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_updated_at;
@@ -8,4 +7,5 @@ DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_updated_by;
 DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_deleted_at;
 DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_deleted_by;
 DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_locale_code;
+DROP INDEX IF EXISTS index_color_point_rgb_with_unit_interval_tagging;
 

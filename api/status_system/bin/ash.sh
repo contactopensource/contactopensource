@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.status.Status System \
+    MyApp.status.status_systems \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,12 +15,32 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
+    --attribute tagging:string \
     --attribute key:string \
     --attribute formal_name:string \
 
-mix ash.codegen create_status_system
+mix ash.codegen create_status_systems
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_status_systems.exs
+
+mkdir -p lib/my_app_web/live/status_systems
+touch lib/my_app_web/live/status_systems/form_live.ex
+touch lib/my_app_web/live/status_systems/index_live.ex
+touch lib/my_app_web/live/status_systems/show_live.ex
+
+mkdir -p test/my_app_web/live/status_systems
+touch test/my_app_web/live/status_systems/form_live.ex
+touch test/my_app_web/live/status_systems/index_live.ex
+touch test/my_app_web/live/status_systems/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/status_systems", StatusSystems.IndexLive
+live "/status_systems/new", StatusSystems.FormLive, :new
+live "/status_systems/:id", StatusSystems.ShowLive
+live "/status_systems/:id/edit", StatusSystems.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/status/status_system.ex
@@ -33,7 +53,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

@@ -11,13 +11,13 @@ burn_rate_net_time_per_week:
     - Main:
       - actual:
           help: Burn rate net time per week actual value
-          type: decimal
+          type: numeric(7,2)
       - target:
           help: Burn rate net time per week target value
-          type: decimal
+          type: numeric(7,2)
       - ratio:
           help: Burn rate net time per week ratio = (actual / target)
-          type: decimal
+          type: numeric(7,2)
           sql: ratio DECIMAL GENERATED ALWAYS AS (actual / target) STORED
       - unit:
           help: Burn rate net time per week unit

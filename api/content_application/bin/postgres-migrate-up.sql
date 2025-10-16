@@ -9,8 +9,9 @@ CREATE INDEX index_content_application_updated_by on content_application(updated
 CREATE INDEX index_content_application_deleted_at on content_application(deleted_at);
 CREATE INDEX index_content_application_deleted_by on content_application(deleted_by);
 CREATE INDEX index_content_application_locale_code on content_application(locale_code);
-CREATE INDEX index_content_application_sign on content_application(sign);
-CREATE INDEX index_content_application_kind on content_application(kind);
+CREATE INDEX index_content_application_tagging on content_application(tagging);
 CREATE INDEX index_content_application_name on content_application(name);
 CREATE INDEX index_content_application_subname on content_application(subname);
+CREATE INDEX index_content_application_sign on content_application(sign);
+CREATE INDEX index_content_application_kind on content_application(kind);
 

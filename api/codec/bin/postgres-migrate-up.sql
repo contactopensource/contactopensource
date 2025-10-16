@@ -9,8 +9,9 @@ CREATE INDEX index_codec_updated_by on codec(updated_by);
 CREATE INDEX index_codec_deleted_at on codec(deleted_at);
 CREATE INDEX index_codec_deleted_by on codec(deleted_by);
 CREATE INDEX index_codec_locale_code on codec(locale_code);
-CREATE INDEX index_codec_sign on codec(sign);
-CREATE INDEX index_codec_kind on codec(kind);
+CREATE INDEX index_codec_tagging on codec(tagging);
 CREATE INDEX index_codec_name on codec(name);
 CREATE INDEX index_codec_subname on codec(subname);
+CREATE INDEX index_codec_sign on codec(sign);
+CREATE INDEX index_codec_kind on codec(kind);
 

@@ -9,6 +9,7 @@ CREATE INDEX index_measurement_system_updated_by on measurement_system(updated_b
 CREATE INDEX index_measurement_system_deleted_at on measurement_system(deleted_at);
 CREATE INDEX index_measurement_system_deleted_by on measurement_system(deleted_by);
 CREATE INDEX index_measurement_system_locale_code on measurement_system(locale_code);
+CREATE INDEX index_measurement_system_tagging on measurement_system(tagging);
 CREATE INDEX index_measurement_system_key on measurement_system(key);
 CREATE INDEX index_measurement_system_formal_name on measurement_system(formal_name);
 

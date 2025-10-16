@@ -2,12 +2,11 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Color.ColorPointRGBWithByte \
+    MyApp.Color.color_point_rgb_with_bytes \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp_utc_usec \
     --attribute created_by:text \
@@ -16,13 +15,33 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
+    --attribute tagging:string \
     --attribute red:byte \
     --attribute green:byte \
     --attribute blue:byte \
 
-mix ash.codegen create_color_point_rgb_with_byte
+mix ash.codegen create_color_point_rgb_with_bytes
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_color_point_rgb_with_bytes.exs
+
+mkdir -p lib/my_app_web/live/color_point_rgb_with_bytes
+touch lib/my_app_web/live/color_point_rgb_with_bytes/form_live.ex
+touch lib/my_app_web/live/color_point_rgb_with_bytes/index_live.ex
+touch lib/my_app_web/live/color_point_rgb_with_bytes/show_live.ex
+
+mkdir -p test/my_app_web/live/color_point_rgb_with_bytes
+touch test/my_app_web/live/color_point_rgb_with_bytes/form_live.ex
+touch test/my_app_web/live/color_point_rgb_with_bytes/index_live.ex
+touch test/my_app_web/live/color_point_rgb_with_bytes/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/color_point_rgb_with_bytes", ColorPointRgbWithBytes.IndexLive
+live "/color_point_rgb_with_bytes/new", ColorPointRgbWithBytes.FormLive, :new
+live "/color_point_rgb_with_bytes/:id", ColorPointRgbWithBytes.ShowLive
+live "/color_point_rgb_with_bytes/:id/edit", ColorPointRgbWithBytes.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/color/color_point_rgb_with_byte.ex

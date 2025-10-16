@@ -7,8 +7,9 @@ DROP INDEX IF EXISTS index_plan_gist_updated_by;
 DROP INDEX IF EXISTS index_plan_gist_deleted_at;
 DROP INDEX IF EXISTS index_plan_gist_deleted_by;
 DROP INDEX IF EXISTS index_plan_gist_locale_code;
-DROP INDEX IF EXISTS index_plan_gist_sign;
-DROP INDEX IF EXISTS index_plan_gist_kind;
+DROP INDEX IF EXISTS index_plan_gist_tagging;
 DROP INDEX IF EXISTS index_plan_gist_name;
 DROP INDEX IF EXISTS index_plan_gist_subname;
+DROP INDEX IF EXISTS index_plan_gist_sign;
+DROP INDEX IF EXISTS index_plan_gist_kind;
 

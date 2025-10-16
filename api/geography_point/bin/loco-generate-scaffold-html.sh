@@ -12,6 +12,7 @@ cargo loco generate scaffold --html \
         deleted_at:timestamp_utc_usec \
         deleted_by:url \
         locale_code:string \
+        tagging:string \
         latitude_as_decimal_degrees:decimal_degrees \
         longitude_as_decimal_degrees:decimal_degrees \
         altitude_agl_as_meters:meters \

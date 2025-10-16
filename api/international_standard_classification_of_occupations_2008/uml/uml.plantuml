@@ -7,7 +7,7 @@ entity international_standard_classification_of_occupations_2008 {
   .. Main ..
   code : string ⚡
   name : string ⚡
-  definition : string
+  definition_as_markdown : markdown
 }
 
 @enduml

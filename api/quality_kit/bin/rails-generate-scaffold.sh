@@ -1,0 +1,49 @@
+#!/bin/sh
+set -euf
+
+rails generate scaffold \
+    quality_kit \
+        lock_version:integer \
+        created_at:timestamp_utc_usec:index \
+        created_by:text:index \
+        updated_at:timestamp_utc_usec:index \
+        updated_by:text:index \
+        deleted_at:timestamp_utc_usec:index \
+        deleted_by:text:index \
+        locale_code:string:index \
+        tagging:string:index \
+        quality_availability_as_url:text \
+        quality_availability_as_markdown:markdown \
+        quality_certifiability_as_url:text \
+        quality_certifiability_as_markdown:markdown \
+        quality_compatibility_as_url:text \
+        quality_compatibility_as_markdown:markdown \
+        quality_efficiency_as_url:text \
+        quality_efficiency_as_markdown:markdown \
+        quality_governability_as_url:text \
+        quality_governability_as_markdown:markdown \
+        quality_maintainability_as_url:text \
+        quality_maintainability_as_markdown:markdown \
+        quality_observability_as_url:markdown \
+        quality_observability_as_markdown:markdown \
+        quality_operability_as_markdown:text \
+        quality_operability_as_markdown:markdown \
+        quality_recoverability_as_url:text \
+        quality_recoverability_as_markdown:markdown \
+        quality_scalability_as_url:text \
+        quality_scalability_as_markdown:markdown \
+        quality_security_as_url:text \
+        quality_security_as_markdown:markdown \
+        quality_suitability_as_url:markdown \
+        quality_suitability_as_markdown:markdown \
+        quality_testability_as_url:text \
+        quality_testability_as_markdown:markdown \
+        quality_transferability_as_url:text \
+        quality_transferability_as_markdown:markdown \
+        quality_translatability_as_url:text \
+        quality_translatability_as_markdown:markdown \
+        quality_warrantability_as_url:text \
+        quality_warrantability_as_markdown:markdown \
+    --force \
+    --no-timestamps \
+

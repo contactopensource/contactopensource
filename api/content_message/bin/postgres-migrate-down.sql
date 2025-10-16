@@ -7,8 +7,9 @@ DROP INDEX IF EXISTS index_content_message_updated_by;
 DROP INDEX IF EXISTS index_content_message_deleted_at;
 DROP INDEX IF EXISTS index_content_message_deleted_by;
 DROP INDEX IF EXISTS index_content_message_locale_code;
-DROP INDEX IF EXISTS index_content_message_sign;
-DROP INDEX IF EXISTS index_content_message_kind;
+DROP INDEX IF EXISTS index_content_message_tagging;
 DROP INDEX IF EXISTS index_content_message_name;
 DROP INDEX IF EXISTS index_content_message_subname;
+DROP INDEX IF EXISTS index_content_message_sign;
+DROP INDEX IF EXISTS index_content_message_kind;
 

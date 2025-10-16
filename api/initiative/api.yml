@@ -23,8 +23,10 @@ initiative:
     - !include ../_card.yml
     - Main:
       - status:
+          help: Status
           type: string
       - tagging:
+          help: Tagging
           type: string
       - url:
           type: url
@@ -146,14 +148,17 @@ initiative:
           type: url
       - apache_echart_as_typescript:
           type: string
-    - !include ../_business_analysis.yml
-    - !include ../_quality_documentation.yml
-    - !include ../_burn_rate.yml
-    - !include ../_net_promoter_score.yml
-    - !include ../_earned_value_management.yml
-    - !include ../_total_project_control.yml
-    - !include ../_active_users.yml
-    - !include ../_uptime_percentage.yml
-    - !include ../_code_metrics.yml
-    - !include ../_halsted_complexity.yml
-    - !include ../_dora_metrics.yml
+    - !include ../business_analysis_kit/api-include.yml
+    - !include ../quality_kit/api-include.yml
+    - !include ../burn_rate_net_cash_per_week/api-include.yml
+    - !include ../burn_rate_net_time_per_week/api-include.yml
+    - !include ../net_promoter_score_customer_perspective/api-include.yml
+    - !include ../net_promoter_score_user_perspective/api-include.yml
+    - !include ../net_promoter_score_worker_perspective/api-include.yml
+    - !include ../earned_value_management/api-include.yml
+    - !include ../total_project_control/api-include.yml
+    - !include ../active_users/api-include.yml
+    - !include ../uptime_percentage/api-include.yml
+    - !include ../code_metrics_kit/api-include.yml
+    - !include ../halstead_complexity/api-include.yml
+    - !include ../dora_metrics_kit/api-include.yml

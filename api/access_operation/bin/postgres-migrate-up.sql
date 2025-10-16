@@ -9,9 +9,10 @@ CREATE INDEX index_access_operation_updated_by on access_operation(updated_by);
 CREATE INDEX index_access_operation_deleted_at on access_operation(deleted_at);
 CREATE INDEX index_access_operation_deleted_by on access_operation(deleted_by);
 CREATE INDEX index_access_operation_locale_code on access_operation(locale_code);
-CREATE INDEX index_access_operation_sign on access_operation(sign);
-CREATE INDEX index_access_operation_kind on access_operation(kind);
+CREATE INDEX index_access_operation_tagging on access_operation(tagging);
 CREATE INDEX index_access_operation_name on access_operation(name);
 CREATE INDEX index_access_operation_subname on access_operation(subname);
+CREATE INDEX index_access_operation_sign on access_operation(sign);
+CREATE INDEX index_access_operation_kind on access_operation(kind);
 CREATE INDEX index_access_operation_key on access_operation(key);
 

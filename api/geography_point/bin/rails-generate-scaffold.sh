@@ -11,6 +11,7 @@ rails generate scaffold \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:text:index \
         locale_code:string:index \
+        tagging:string:index \
         latitude_as_decimal_degrees:decimal_degrees \
         longitude_as_decimal_degrees:decimal_degrees \
         altitude_agl_as_meters:meters \

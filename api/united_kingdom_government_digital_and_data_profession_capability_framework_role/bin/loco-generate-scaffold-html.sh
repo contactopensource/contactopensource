@@ -12,6 +12,7 @@ cargo loco generate scaffold --html \
         deleted_at:timestamp_utc_usec \
         deleted_by:url \
         locale_code:string \
+        tagging:string \
         family_id:references:united_kingdom_government_digital_and_data_profession_capability_framework_role_family \
         name:string \
         url:url \

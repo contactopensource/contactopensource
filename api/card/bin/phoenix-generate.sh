@@ -3,13 +3,13 @@ set -euf
 
 mix phx.gen.html \
     None Card None \
-        sign:"string{1}":index \
-        kind:string:index \
         name:"string{50}":index \
         subname:"string{50}":index \
         summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \
+        sign:"string{1}":index \
+        kind:string:index \
         avatar_image_400x400_url:urlNone \
         avatar_image_400x400_alt:urlNone \
         main_image_1080x1080_url:urlNone \

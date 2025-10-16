@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Basics.Thing \
+    MyApp.Basics.things \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -35,9 +36,28 @@ mix ash.gen.resource \
     --attribute quick_response_code_id:quick_response_code.id \
     --attribute universal_product_code_id:universal_product_code.id \
 
-mix ash.codegen create_thing
+mix ash.codegen create_things
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_things.exs
+
+mkdir -p lib/my_app_web/live/things
+touch lib/my_app_web/live/things/form_live.ex
+touch lib/my_app_web/live/things/index_live.ex
+touch lib/my_app_web/live/things/show_live.ex
+
+mkdir -p test/my_app_web/live/things
+touch test/my_app_web/live/things/form_live.ex
+touch test/my_app_web/live/things/index_live.ex
+touch test/my_app_web/live/things/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/things", Things.IndexLive
+live "/things/new", Things.FormLive, :new
+live "/things/:id", Things.ShowLive
+live "/things/:id/edit", Things.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/basics/thing.ex
@@ -50,7 +70,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

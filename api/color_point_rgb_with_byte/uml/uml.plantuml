@@ -4,9 +4,8 @@ skinparam linetype ortho
 hide circle
 
 entity color_point_rgb_with_byte {
-  .. Meta ..
+  .. meta ..
   id : uuid ⚡
-  sign : char ⚡
   lock_version : integer
   created_at : timestamp_utc_usec ⚡
   created_by : url ⚡
@@ -15,6 +14,7 @@ entity color_point_rgb_with_byte {
   deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
   locale_code : string ⚡
+  tagging : string ⚡
   .. Main ..
   red : byte
   green : byte

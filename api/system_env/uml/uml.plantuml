@@ -14,6 +14,7 @@ entity system_env {
   deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
   locale_code : string ⚡
+  tagging : string ⚡
   .. Main ..
   key : string ⚡
   value : text

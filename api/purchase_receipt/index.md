@@ -6,11 +6,9 @@ Purchase receipt.
 
 ## Attributes
 
-Meta:
+meta:
 
   * id: uuid (index)
-
-  * sign: char (index) - example: the emoji "green check mark" for the semantics of "this item is complete".
 
   * lock_version: integer
 
@@ -28,21 +26,23 @@ Meta:
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
-Card:
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
 
-  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
+card:
 
-  * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
+  * name: string(50) (index) - example: Alice Anderson
 
-  * title: string(50) (index) - example: Alice Anderson
-
-  * subtitle: string(50) (index) - example: @alice
+  * subname: string(50) (index) - example: @alice
 
   * summary: string(72) - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
 
   * description: text - example: This text is a description and can be as long as you wish.
 
   * disambiguation: text - example: This text explains the difference between this item and others.
+
+  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
+
+  * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
 
   * avatar_image_400x400_url: url
 

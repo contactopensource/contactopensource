@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.Religion \
+    MyApp.None.religions \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -36,9 +37,28 @@ mix ash.gen.resource \
     --attribute universal_product_code_id:universal_product_code.id \
     --attribute name:text \
 
-mix ash.codegen create_religion
+mix ash.codegen create_religions
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_religions.exs
+
+mkdir -p lib/my_app_web/live/religions
+touch lib/my_app_web/live/religions/form_live.ex
+touch lib/my_app_web/live/religions/index_live.ex
+touch lib/my_app_web/live/religions/show_live.ex
+
+mkdir -p test/my_app_web/live/religions
+touch test/my_app_web/live/religions/form_live.ex
+touch test/my_app_web/live/religions/index_live.ex
+touch test/my_app_web/live/religions/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/religions", Religions.IndexLive
+live "/religions/new", Religions.FormLive, :new
+live "/religions/:id", Religions.ShowLive
+live "/religions/:id/edit", Religions.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/religion.ex
@@ -51,7 +71,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

@@ -9,4 +9,5 @@ CREATE INDEX index_color_point_cymk_with_byte_updated_by on color_point_cymk_wit
 CREATE INDEX index_color_point_cymk_with_byte_deleted_at on color_point_cymk_with_byte(deleted_at);
 CREATE INDEX index_color_point_cymk_with_byte_deleted_by on color_point_cymk_with_byte(deleted_by);
 CREATE INDEX index_color_point_cymk_with_byte_locale_code on color_point_cymk_with_byte(locale_code);
+CREATE INDEX index_color_point_cymk_with_byte_tagging on color_point_cymk_with_byte(tagging);
 

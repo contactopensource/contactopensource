@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.Codec \
+    MyApp.None.codecs \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -44,16 +45,35 @@ mix ash.gen.resource \
     --attribute prefer_media_type_id:media_type.id \
     --attribute lossy_flag:boolean \
     --attribute floss_flag:boolean \
-    --attribute fixed_bit_rate:decimal \
-    --attribute variable_bit_rate_minimum:decimal \
-    --attribute variable_bit_rate_maximum:decimal \
+    --attribute fixed_bit_rate:numeric \
+    --attribute variable_bit_rate_minimum:numeric \
+    --attribute variable_bit_rate_maximum:numeric \
     --attribute fixed_channel_count:integer \
     --attribute variable_channel_count_minimum:integer \
     --attribute variable_channel_count_maximum:integer \
 
-mix ash.codegen create_codec
+mix ash.codegen create_codecs
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_codecs.exs
+
+mkdir -p lib/my_app_web/live/codecs
+touch lib/my_app_web/live/codecs/form_live.ex
+touch lib/my_app_web/live/codecs/index_live.ex
+touch lib/my_app_web/live/codecs/show_live.ex
+
+mkdir -p test/my_app_web/live/codecs
+touch test/my_app_web/live/codecs/form_live.ex
+touch test/my_app_web/live/codecs/index_live.ex
+touch test/my_app_web/live/codecs/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/codecs", Codecs.IndexLive
+live "/codecs/new", Codecs.FormLive, :new
+live "/codecs/:id", Codecs.ShowLive
+live "/codecs/:id/edit", Codecs.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/codec.ex
@@ -66,7 +86,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

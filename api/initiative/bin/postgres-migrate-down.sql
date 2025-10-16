@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS initiative;
+DROP INDEX IF EXISTS index_initiative_id;
+DROP INDEX IF EXISTS index_initiative_created_at;
+DROP INDEX IF EXISTS index_initiative_created_by;
+DROP INDEX IF EXISTS index_initiative_updated_at;
+DROP INDEX IF EXISTS index_initiative_updated_by;
+DROP INDEX IF EXISTS index_initiative_deleted_at;
+DROP INDEX IF EXISTS index_initiative_deleted_by;
+DROP INDEX IF EXISTS index_initiative_locale_code;
+DROP INDEX IF EXISTS index_initiative_tagging;
+DROP INDEX IF EXISTS index_initiative_name;
+DROP INDEX IF EXISTS index_initiative_subname;
+DROP INDEX IF EXISTS index_initiative_sign;
+DROP INDEX IF EXISTS index_initiative_kind;
+DROP INDEX IF EXISTS index_initiative_active_users_actual;
+DROP INDEX IF EXISTS index_initiative_active_users_target;
+DROP INDEX IF EXISTS index_initiative_active_users_ratio;
+DROP INDEX IF EXISTS index_initiative_uptime_percentage_actual;
+DROP INDEX IF EXISTS index_initiative_uptime_percentage_target;
+DROP INDEX IF EXISTS index_initiative_uptime_percentage_ratio;
+

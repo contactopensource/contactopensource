@@ -18,20 +18,59 @@ business_analysis_kit:
         - swot_as_url:
             help: Strengths Weaknesses Opportunities Threats (SWOT), as URL
             type: url
-        - swot_as_markdown:
-            help: Strengths Weaknesses Opportunities Threats (SWOT), as markdown
+        - swot_strengths_as_markdown:
+            help: Strengths
+            type: markdown
+        - swot_weaknesses_as_markdown:
+            help: Weaknesses
+            type: markdown
+        - swot_opportunities_as_markdown:
+            help: Opportunities
+            type: markdown
+        - swot_threats_as_markdown:
+            help: Threats
             type: markdown
         - porters_five_forces_as_url:
             help: Porter's Five Forces, as URL
             type: url
-        - porters_five_forces_as_markdown:
-            help: Porter's Five Forces, as markdown
+        - porters_five_forces_entrants_as_markdown:
+            help: Threat Of Entrants
             type: markdown
-        - pestle_as_url:
+        - porters_five_forces_substitutes_as_markdown:
+            help: Threat Of Substitutes
+            type: markdown
+        - porters_five_forces_customers_as_markdown:
+            help: Bargaining Power Of Customers
+            type: markdown
+        - porters_five_forces_suppliers_as_markdown:
+            help: Bargaining Power Of Suppliers
+            type: markdown
+        - porters_five_forces_competitors_as_markdown:
+            help: Rivalry Of Competitors
+            type: markdown
+        - steeple_as_url:
             help: Political, Economic, Sociological, Technological, Legal, Environmental (PESTLE), as URL
             type: url
-        - pestle_as_markdown:
-            help: Political, Economic, Sociological, Technological, Legal, Environmental (PESTLE), as markdown
+        - steeple_sociological_as_markdown:
+            help: Sociological
+            type: markdown
+        - steeple_technological_as_markdown:
+            help: Technological
+            type: markdown
+        - steeple_economic_as_markdown:
+            help: Economic
+            type: markdown
+        - steeple_environmental_as_markdown:
+            help: Environmental
+            type: markdown
+        - steeple_political_as_markdown:
+            help: Political
+            type: markdown
+        - steeple_legal_as_markdown:
+            help: Legal
+            type: markdown
+        - steeple_ethical_as_markdown:
+            help: Ethical
             type: markdown
         - roles_and_responsibilities_as_url:
             help: Roles and Responsibilities, as URL

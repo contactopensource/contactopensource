@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Plan.Outcome \
+    MyApp.Plan.plan_outcomes \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -36,9 +37,28 @@ mix ash.gen.resource \
     --attribute universal_product_code_id:universal_product_code.id \
     --attribute plan_id:plan.id \
 
-mix ash.codegen create_plan_outcome
+mix ash.codegen create_plan_outcomes
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_plan_outcomes.exs
+
+mkdir -p lib/my_app_web/live/plan_outcomes
+touch lib/my_app_web/live/plan_outcomes/form_live.ex
+touch lib/my_app_web/live/plan_outcomes/index_live.ex
+touch lib/my_app_web/live/plan_outcomes/show_live.ex
+
+mkdir -p test/my_app_web/live/plan_outcomes
+touch test/my_app_web/live/plan_outcomes/form_live.ex
+touch test/my_app_web/live/plan_outcomes/index_live.ex
+touch test/my_app_web/live/plan_outcomes/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/plan_outcomes", PlanOutcomes.IndexLive
+live "/plan_outcomes/new", PlanOutcomes.FormLive, :new
+live "/plan_outcomes/:id", PlanOutcomes.ShowLive
+live "/plan_outcomes/:id/edit", PlanOutcomes.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/plan/plan_outcome.ex
@@ -51,7 +71,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

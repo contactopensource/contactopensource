@@ -9,8 +9,9 @@ CREATE INDEX index_ethnicity_updated_by on ethnicity(updated_by);
 CREATE INDEX index_ethnicity_deleted_at on ethnicity(deleted_at);
 CREATE INDEX index_ethnicity_deleted_by on ethnicity(deleted_by);
 CREATE INDEX index_ethnicity_locale_code on ethnicity(locale_code);
-CREATE INDEX index_ethnicity_sign on ethnicity(sign);
-CREATE INDEX index_ethnicity_kind on ethnicity(kind);
+CREATE INDEX index_ethnicity_tagging on ethnicity(tagging);
 CREATE INDEX index_ethnicity_name on ethnicity(name);
 CREATE INDEX index_ethnicity_subname on ethnicity(subname);
+CREATE INDEX index_ethnicity_sign on ethnicity(sign);
+CREATE INDEX index_ethnicity_kind on ethnicity(kind);
 

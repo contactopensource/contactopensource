@@ -7,8 +7,9 @@ DROP INDEX IF EXISTS index_plan_outcome_updated_by;
 DROP INDEX IF EXISTS index_plan_outcome_deleted_at;
 DROP INDEX IF EXISTS index_plan_outcome_deleted_by;
 DROP INDEX IF EXISTS index_plan_outcome_locale_code;
-DROP INDEX IF EXISTS index_plan_outcome_sign;
-DROP INDEX IF EXISTS index_plan_outcome_kind;
+DROP INDEX IF EXISTS index_plan_outcome_tagging;
 DROP INDEX IF EXISTS index_plan_outcome_name;
 DROP INDEX IF EXISTS index_plan_outcome_subname;
+DROP INDEX IF EXISTS index_plan_outcome_sign;
+DROP INDEX IF EXISTS index_plan_outcome_kind;
 

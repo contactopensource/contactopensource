@@ -1,0 +1,13 @@
+CREATE TABLE earned_value_management (
+);
+
+CREATE INDEX index_earned_value_management_id on earned_value_management(id);
+CREATE INDEX index_earned_value_management_created_at on earned_value_management(created_at);
+CREATE INDEX index_earned_value_management_created_by on earned_value_management(created_by);
+CREATE INDEX index_earned_value_management_updated_at on earned_value_management(updated_at);
+CREATE INDEX index_earned_value_management_updated_by on earned_value_management(updated_by);
+CREATE INDEX index_earned_value_management_deleted_at on earned_value_management(deleted_at);
+CREATE INDEX index_earned_value_management_deleted_by on earned_value_management(deleted_by);
+CREATE INDEX index_earned_value_management_locale_code on earned_value_management(locale_code);
+CREATE INDEX index_earned_value_management_tagging on earned_value_management(tagging);
+

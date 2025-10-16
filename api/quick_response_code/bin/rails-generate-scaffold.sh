@@ -3,7 +3,6 @@ set -euf
 
 rails generate scaffold \
     quick_response_code \
-        sign:char:index \
         lock_version:integer \
         created_at:timestamp_utc_usec:index \
         created_by:text:index \
@@ -12,6 +11,7 @@ rails generate scaffold \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:text:index \
         locale_code:string:index \
+        tagging:string:index \
         code:string:index \
         image_url:text \
         image_alt:text \

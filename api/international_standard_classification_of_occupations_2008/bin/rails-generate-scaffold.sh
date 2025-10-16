@@ -5,7 +5,7 @@ rails generate scaffold \
     international_standard_classification_of_occupations_2008 \
         code:string:index \
         name:string:index \
-        definition:string \
+        definition_as_markdown:markdown \
     --force \
     --no-timestamps \
 

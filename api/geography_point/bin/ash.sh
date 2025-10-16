@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.GeographyPoint \
+    MyApp.None.geography_points \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,6 +15,7 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
+    --attribute tagging:string \
     --attribute latitude_as_decimal_degrees:decimal_degrees \
     --attribute longitude_as_decimal_degrees:decimal_degrees \
     --attribute altitude_agl_as_meters:meters \
@@ -22,9 +23,28 @@ mix ash.gen.resource \
     --attribute elevation_agl_as_meters:meters \
     --attribute elevation_msl_as_meters:meters \
 
-mix ash.codegen create_geography_point
+mix ash.codegen create_geography_points
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_geography_points.exs
+
+mkdir -p lib/my_app_web/live/geography_points
+touch lib/my_app_web/live/geography_points/form_live.ex
+touch lib/my_app_web/live/geography_points/index_live.ex
+touch lib/my_app_web/live/geography_points/show_live.ex
+
+mkdir -p test/my_app_web/live/geography_points
+touch test/my_app_web/live/geography_points/form_live.ex
+touch test/my_app_web/live/geography_points/index_live.ex
+touch test/my_app_web/live/geography_points/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/geography_points", GeographyPoints.IndexLive
+live "/geography_points/new", GeographyPoints.FormLive, :new
+live "/geography_points/:id", GeographyPoints.ShowLive
+live "/geography_points/:id/edit", GeographyPoints.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/geography_point.ex
@@ -37,7 +57,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

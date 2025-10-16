@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Geographic.GeographicArea \
+    MyApp.Geographic.geographic_areas \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -38,9 +39,28 @@ mix ash.gen.resource \
     --attribute area_as_meter2:meter2 \
     --attribute center_geographic_point:geographic_point \
 
-mix ash.codegen create_geographic_area
+mix ash.codegen create_geographic_areas
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_geographic_areas.exs
+
+mkdir -p lib/my_app_web/live/geographic_areas
+touch lib/my_app_web/live/geographic_areas/form_live.ex
+touch lib/my_app_web/live/geographic_areas/index_live.ex
+touch lib/my_app_web/live/geographic_areas/show_live.ex
+
+mkdir -p test/my_app_web/live/geographic_areas
+touch test/my_app_web/live/geographic_areas/form_live.ex
+touch test/my_app_web/live/geographic_areas/index_live.ex
+touch test/my_app_web/live/geographic_areas/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/geographic_areas", GeographicAreas.IndexLive
+live "/geographic_areas/new", GeographicAreas.FormLive, :new
+live "/geographic_areas/:id", GeographicAreas.ShowLive
+live "/geographic_areas/:id/edit", GeographicAreas.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/geographic/geographic_area.ex
@@ -53,7 +73,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

@@ -12,6 +12,7 @@ mix phx.gen.html \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:url:index \
         locale_code:string:index \
+        tagging:string:index \
         latitude_as_decimal_degrees:decimal_degreesNone \
         longitude_as_decimal_degrees:decimal_degreesNone \
         altitude_agl_as_meters:metersNone \

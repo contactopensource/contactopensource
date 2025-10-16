@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.Book \
+    MyApp.None.books \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -39,9 +40,28 @@ mix ash.gen.resource \
     --attribute global_trade_item_number_id:global_trade_item_number.id \
     --attribute international_standard_book_number_id:international_standard_book_number.id \
 
-mix ash.codegen create_book
+mix ash.codegen create_books
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_books.exs
+
+mkdir -p lib/my_app_web/live/books
+touch lib/my_app_web/live/books/form_live.ex
+touch lib/my_app_web/live/books/index_live.ex
+touch lib/my_app_web/live/books/show_live.ex
+
+mkdir -p test/my_app_web/live/books
+touch test/my_app_web/live/books/form_live.ex
+touch test/my_app_web/live/books/index_live.ex
+touch test/my_app_web/live/books/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/books", Books.IndexLive
+live "/books/new", Books.FormLive, :new
+live "/books/:id", Books.ShowLive
+live "/books/:id/edit", Books.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/book.ex
@@ -54,7 +74,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

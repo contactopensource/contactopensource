@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.locale \
+    MyApp.None.locales \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,6 +15,7 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
+    --attribute tagging:string \
     --attribute text:text \
     --attribute language_code:text \
     --attribute country_code:text \
@@ -29,9 +30,28 @@ mix ash.gen.resource \
     --attribute quotation_start_delimiter:text \
     --attribute quotation_stop_delimiter:text \
 
-mix ash.codegen create_locale
+mix ash.codegen create_locales
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_locales.exs
+
+mkdir -p lib/my_app_web/live/locales
+touch lib/my_app_web/live/locales/form_live.ex
+touch lib/my_app_web/live/locales/index_live.ex
+touch lib/my_app_web/live/locales/show_live.ex
+
+mkdir -p test/my_app_web/live/locales
+touch test/my_app_web/live/locales/form_live.ex
+touch test/my_app_web/live/locales/index_live.ex
+touch test/my_app_web/live/locales/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/locales", Locales.IndexLive
+live "/locales/new", Locales.FormLive, :new
+live "/locales/:id", Locales.ShowLive
+live "/locales/:id/edit", Locales.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/locale.ex
@@ -44,7 +64,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

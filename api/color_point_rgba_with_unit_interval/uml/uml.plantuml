@@ -14,6 +14,7 @@ entity color_point_rgba_with_unit_interval {
   deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
   locale_code : string ⚡
+  tagging : string ⚡
   .. Main ..
   red : unit_interval
   green : unit_interval

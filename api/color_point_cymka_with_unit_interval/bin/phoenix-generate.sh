@@ -12,6 +12,7 @@ mix phx.gen.html \
         deleted_at:timestamp_utc_usec:index \
         deleted_by:url:index \
         locale_code:string:index \
+        tagging:string:index \
         cyan:unit_intervalNone \
         yellow:unit_intervalNone \
         magenta:unit_intervalNone \

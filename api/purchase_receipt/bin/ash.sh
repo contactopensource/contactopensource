@@ -2,12 +2,11 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Purchase.PurchaseReceipt \
+    MyApp.Purchase.purchase_receipts \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute sign:string \
     --attribute lock_version:integer \
     --attribute created_at:timestamp_utc_usec \
     --attribute created_by:text \
@@ -16,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
-    --attribute title:string \
-    --attribute subtitle:string \
+    --attribute tagging:string \
+    --attribute name:string \
+    --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -37,9 +37,28 @@ mix ash.gen.resource \
     --attribute universal_product_code_id:universal_product_code.id \
     --attribute key:string \
 
-mix ash.codegen create_purchase_receipt
+mix ash.codegen create_purchase_receipts
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_purchase_receipts.exs
+
+mkdir -p lib/my_app_web/live/purchase_receipts
+touch lib/my_app_web/live/purchase_receipts/form_live.ex
+touch lib/my_app_web/live/purchase_receipts/index_live.ex
+touch lib/my_app_web/live/purchase_receipts/show_live.ex
+
+mkdir -p test/my_app_web/live/purchase_receipts
+touch test/my_app_web/live/purchase_receipts/form_live.ex
+touch test/my_app_web/live/purchase_receipts/index_live.ex
+touch test/my_app_web/live/purchase_receipts/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/purchase_receipts", PurchaseReceipts.IndexLive
+live "/purchase_receipts/new", PurchaseReceipts.FormLive, :new
+live "/purchase_receipts/:id", PurchaseReceipts.ShowLive
+live "/purchase_receipts/:id/edit", PurchaseReceipts.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/purchase/purchase_receipt.ex

@@ -11,15 +11,15 @@ active_users:
     - Main:
       - actual:
           help: Active users actual value
-          type: decimal
+          type: numeric(7,2)
           index: true
       - expect:
           help: Active users target value
-          type: decimal
+          type: numeric(7,2)
           index: true
       - ratio:
           help: Active users ratio = (actual / target)
-          type: decimal
+          type: numeric(7,2)
           index: true
           sql: ratio DECIMAL GENERATED ALWAYS AS (actual / target) STORED
       - unit:

@@ -25,6 +25,8 @@ meta:
 
   * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
 
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
+
 Main:
 
   * hex: hexdigit(6)+ - example: "FF0000" means red

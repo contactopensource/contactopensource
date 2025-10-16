@@ -9,8 +9,9 @@ CREATE INDEX index_thing_updated_by on thing(updated_by);
 CREATE INDEX index_thing_deleted_at on thing(deleted_at);
 CREATE INDEX index_thing_deleted_by on thing(deleted_by);
 CREATE INDEX index_thing_locale_code on thing(locale_code);
-CREATE INDEX index_thing_sign on thing(sign);
-CREATE INDEX index_thing_kind on thing(kind);
+CREATE INDEX index_thing_tagging on thing(tagging);
 CREATE INDEX index_thing_name on thing(name);
 CREATE INDEX index_thing_subname on thing(subname);
+CREATE INDEX index_thing_sign on thing(sign);
+CREATE INDEX index_thing_kind on thing(kind);
 

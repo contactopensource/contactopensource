@@ -1,0 +1,511 @@
+# initiative
+
+Initiative
+
+
+## Attributes
+
+meta:
+
+  * id: uuid (index)
+
+  * lock_version: integer
+
+  * created_at: timestamp_utc_usec (index)
+
+  * created_by: url (index)
+
+  * updated_at: timestamp_utc_usec (index)
+
+  * updated_by: url (index)
+
+  * deleted_at: timestamp_utc_usec (index)
+
+  * deleted_by: url (index)
+
+  * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
+
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
+
+card:
+
+  * name: string(50) (index) - example: Alice Anderson
+
+  * subname: string(50) (index) - example: @alice
+
+  * summary: string(72) - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
+
+  * description: text - example: This text is a description and can be as long as you wish.
+
+  * disambiguation: text - example: This text explains the difference between this item and others.
+
+  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
+
+  * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
+
+  * avatar_image_400x400_url: url
+
+  * avatar_image_400x400_alt: url
+
+  * main_image_1080x1080_url: url
+
+  * main_image_1080x1080_alt: text
+
+  * main_image_1920x1080_url: url
+
+  * main_image_1920x1080_alt: text
+
+  * main_image_1080x1920_url: url
+
+  * main_image_1080x1920_alt: text
+
+  * emoji: text - example: 🚀
+
+  * star_count: integer - example: 5 for the best rating
+
+  * quick_response_code_id: quick_response_code.id - example: A quick-response code that is a URL that leads to this card.
+
+  * universal_product_code_id: universal_product_code.id - example: A universal product code that is an id that leads to this card.
+
+Main:
+
+  * status: string
+
+  * tagging: string
+
+  * url: url
+
+  * email: string
+
+  * phone: string
+
+  * messaging: string
+
+  * postal: string
+
+  * orcid_pid: string
+
+  * rdf_type: string
+
+  * linkedin_url: url
+
+  * github_url: url
+
+  * codeberg_url: url
+
+  * agents_as_url: url
+
+  * agents_as_markdown: markdown
+
+  * home_emoji_url: url
+
+  * bellhop_bell_emoji_url: url
+
+  * target_emoji_url: url
+
+  * gear_emoji_url: url
+
+  * spiral_calendar_emoji_url: url
+
+  * sparkles_emoji_url: url
+
+  * speech_bubble_emoji_url: url
+
+  * newspaper_emoji_url: url
+
+  * bar_chart_emoji_url: url
+
+  * movie_camera_emoji_url: url
+
+  * construction_worker_emoji_url: url
+
+  * crystal_ball_emoji_url: url
+
+  * butterfly_emoji_url: url
+
+  * lady_beetle_emoji_url: url
+
+  * note: string
+
+  * email_distribution_list: string
+
+  * daisyui_timeline_html: string
+
+  * org_mode: string
+
+  * task_list_as_markdown: markdown
+
+  * ways_of_working_as_markdown: markdown
+
+  * objectives_and_key_results_as_url: url
+
+  * objectives_and_key_results_as_markdown: markdown
+
+  * key_performance_indicators_as_url: markdown
+
+  * key_performance_indicators_as_markdown: markdown
+
+  * glossary_as_url: url
+
+  * glossary_as_markdown: markdown
+
+  * code_of_conduct_url: url
+
+  * code_of_conduct_as_markdown: markdown
+
+  * license_url: url
+
+  * license_as_markdown: markdown
+
+  * arc42_as_url: url
+
+  * arc42_as_markdown: markdown
+
+  * explain_stakeholders_as_markdown: markdown
+
+  * explain_history_as_markdown: markdown
+
+  * explain_authentication_as_markdown: markdown
+
+  * explain_authorization_as_markdown: markdown
+
+  * explain_use_cases_as_markdown: markdown
+
+  * explain_demographics_as_markdown: markdown
+
+  * explain_ui_as_markdown: markdown
+
+  * explain_api_as_markdown: markdown
+
+  * explain_data_as_markdown: markdown
+
+  * explain_mobile_as_markdown: markdown
+
+  * explain_legal_as_markdown: markdown
+
+  * explain_financial_as_markdown: markdown
+
+  * explain_service_level_agreement_as_markdown: markdown
+
+  * explain_disaster_recovery_as_markdown: markdown
+
+  * apache_echart_as_url: url
+
+  * apache_echart_as_typescript: string
+
+business_analysis_kit:
+
+  * six_pager_double_sider_as_url: url
+
+  * six_pager_double_sider_as_markdown: markdown
+
+  * swot_as_url: url
+
+  * swot_as_markdown: markdown
+
+  * porters_five_forces_as_url: url
+
+  * porters_five_forces_as_markdown: markdown
+
+  * pestle_as_url: url
+
+  * pestle_as_markdown: markdown
+
+  * roles_and_responsibilities_as_url: url
+
+  * roles_and_responsibilities_as_markdown: markdown
+
+  * responsibility_assignment_matrix_as_url: url
+
+  * responsibility_assignment_matrix_as_markdown: markdown
+
+quality:
+
+  * quality_availability_as_url: url
+
+  * quality_availability_as_markdown: markdown
+
+  * quality_certifiability_as_url: url
+
+  * quality_certifiability_as_markdown: markdown
+
+  * quality_compatibility_as_url: url
+
+  * quality_compatibility_as_markdown: markdown
+
+  * quality_efficiency_as_url: url
+
+  * quality_efficiency_as_markdown: markdown
+
+  * quality_governability_as_url: url
+
+  * quality_governability_as_markdown: markdown
+
+  * quality_maintainability_as_url: url
+
+  * quality_maintainability_as_markdown: markdown
+
+  * quality_observability_as_url: markdown
+
+  * quality_observability_as_markdown: markdown
+
+  * quality_operability_as_markdown: url
+
+  * quality_operability_as_markdown: markdown
+
+  * quality_recoverability_as_url: url
+
+  * quality_recoverability_as_markdown: markdown
+
+  * quality_scalability_as_url: url
+
+  * quality_scalability_as_markdown: markdown
+
+  * quality_security_as_url: url
+
+  * quality_security_as_markdown: markdown
+
+  * quality_suitability_as_url: markdown
+
+  * quality_suitability_as_markdown: markdown
+
+  * quality_testability_as_url: url
+
+  * quality_testability_as_markdown: markdown
+
+  * quality_transferability_as_url: url
+
+  * quality_transferability_as_markdown: markdown
+
+  * quality_translatability_as_url: url
+
+  * quality_translatability_as_markdown: markdown
+
+  * quality_warrantability_as_url: url
+
+  * quality_warrantability_as_markdown: markdown
+
+burn_rate_net_cash_per_week:
+
+  * burn_rate_net_cash_per_week_actual: decimal
+
+  * burn_rate_net_cash_per_week_target: decimal
+
+  * burn_rate_net_cash_per_week_ratio: decimal
+
+  * burn_rate_net_cash_per_week_unit: string
+
+  * burn_rate_net_cash_per_week_description: string
+
+burn_rate_net_time_per_week:
+
+  * burn_rate_net_time_per_week_actual: decimal
+
+  * burn_rate_net_time_per_week_target: decimal
+
+  * burn_rate_net_time_per_week_ratio: decimal
+
+  * burn_rate_net_time_per_week_unit: string
+
+  * burn_rate_net_time_per_week_description: string
+
+net_promoter_score_customer_perspective_:
+
+  * net_promoter_score_customer_perspective_actual: decimal
+
+  * net_promoter_score_customer_perspective_expect: decimal
+
+  * net_promoter_score_customer_perspective_ratio: decimal
+
+  * net_promoter_score_customer_perspective_unit: text
+
+  * net_promoter_score_customer_perspective_description_as_markdown: text
+
+net_promoter_score_user_perspective_:
+
+  * net_promoter_score_user_perspective_actual: decimal
+
+  * net_promoter_score_user_perspective_expect: decimal
+
+  * net_promoter_score_user_perspective_ratio: decimal
+
+  * net_promoter_score_user_perspective_unit: text
+
+  * net_promoter_score_user_perspective_description_as_markdown: text
+
+net_promoter_score_worker_perspective_:
+
+  * net_promoter_score_worker_perspective_actual: decimal
+
+  * net_promoter_score_worker_perspective_expect: decimal
+
+  * net_promoter_score_worker_perspective_ratio: decimal
+
+  * net_promoter_score_worker_perspective_unit: text
+
+  * net_promoter_score_worker_perspective_description_as_markdown: text
+
+earned_value_management:
+
+  * earned_value_management_planned_value: decimal
+
+  * earned_value_management_earned_value: decimal
+
+  * earned_value_management_actual_cost: decimal
+
+  * earned_value_management_cost_variance: decimal
+
+  * earned_value_management_cost_variance_ratio: decimal
+
+  * earned_value_management_cost_performance_index: decimal
+
+  * earned_value_management_schedule_variance: decimal
+
+  * earned_value_management_schedule_variance_ratio: decimal
+
+  * earned_value_management_schedule_performance_index: decimal
+
+total_project_control:
+
+  * total_project_control_dipp: decimal
+
+  * total_project_control_dipp_progress_index_ratio: decimal
+
+  * total_project_control_dipp_progress_index_numerator: decimal
+
+  * total_project_control_dipp_progress_index_denominator: decimal
+
+  * total_project_control_expected_monetary_value: decimal
+
+  * total_project_control_cost_estimate_to_complete: decimal
+
+active_users:
+
+  * active_users_actual: decimal (index)
+
+  * active_users_target: decimal (index)
+
+  * active_users_ratio: decimal (index)
+
+  * active_users_unit: string
+
+  * active_users_description: string
+
+uptime_percentage:
+
+  * uptime_percentage_actual: decimal (index)
+
+  * uptime_percentage_target: decimal (index)
+
+  * uptime_percentage_ratio: decimal (index)
+
+  * uptime_percentage_unit: string
+
+  * uptime_percentage_description: string
+
+code_metrics_kit:
+
+  * maintainability_index_actual: decimal
+
+  * maintainability_index_target: decimal
+
+  * maintainability_index_ratio: decimal
+
+  * maintainability_index_unit: string
+
+  * maintainability_index_description: string
+
+  * line_count_actual: decimal
+
+  * line_count_target: decimal
+
+  * line_count_ratio: decimal
+
+  * line_count_unit: string
+
+  * line_count_description: string
+
+  * test_automation_code_coverage_actual: decimal
+
+  * test_automation_code_coverage_target: decimal
+
+  * test_automation_code_coverage_ratio: decimal
+
+  * test_automation_code_coverage_unit: string
+
+  * test_automation_code_coverage_description: string
+
+halstead_complexity:
+
+  * halstead_complexity_volume_actual: decimal
+
+  * halstead_complexity_volume_target: decimal
+
+  * halstead_complexity_volume_ratio: decimal
+
+  * halstead_complexity_volume_unit: text
+
+  * halstead_complexity_volume_description: text
+
+  * halstead_complexity_difficulty_actual: decimal
+
+  * halstead_complexity_difficulty_target: decimal
+
+  * halstead_complexity_difficulty_ratio: decimal
+
+  * halstead_complexity_difficulty_unit: text
+
+  * halstead_complexity_difficulty_description: text
+
+  * halstead_complexity_effort_actual: decimal
+
+  * halstead_complexity_effort_target: decimal
+
+  * halstead_complexity_effort_ratio: decimal
+
+  * halstead_complexity_effort_unit: decimal
+
+  * halstead_complexity_effort_description: decimal
+
+dora_metrics_kit:
+
+  * deployment_frequency_actual: decimal
+
+  * deployment_frequency_target: decimal
+
+  * deployment_frequency_ratio: decimal
+
+  * deployment_frequency_unit: text
+
+  * deployment_frequency_description: text
+
+  * lead_time_for_changes_actual: decimal
+
+  * lead_time_for_changes_target: decimal
+
+  * lead_time_for_changes_ratio: decimal
+
+  * lead_time_for_changes_unit: text
+
+  * lead_time_for_changes_description: text
+
+  * change_failure_rate_actual: decimal
+
+  * change_failure_rate_target: decimal
+
+  * change_failure_rate_ratio: decimal
+
+  * change_failure_rate_unit: text
+
+  * change_failure_rate_description: text
+
+  * mean_time_to_recovery_actual: decimal
+
+  * mean_time_to_recovery_target: decimal
+
+  * mean_time_to_recovery_ratio: decimal
+
+  * mean_time_to_recovery_unit: text
+
+  * mean_time_to_recovery_description: text
+

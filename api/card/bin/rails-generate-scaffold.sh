@@ -3,13 +3,13 @@ set -euf
 
 rails generate scaffold \
     card \
-        sign:"string{1}":index \
-        kind:string:index \
         name:"string{50}":index \
         subname:"string{50}":index \
         summary:"string{72}" \
         description:text \
         disambiguation:text \
+        sign:"string{1}":index \
+        kind:string:index \
         avatar_image_400x400_url:text \
         avatar_image_400x400_alt:text \
         main_image_1080x1080_url:text \

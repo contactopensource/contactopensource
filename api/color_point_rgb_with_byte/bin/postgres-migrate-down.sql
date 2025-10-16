@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS color_point_rgb_with_byte;
 DROP INDEX IF EXISTS index_color_point_rgb_with_byte_id;
-DROP INDEX IF EXISTS index_color_point_rgb_with_byte_sign;
 DROP INDEX IF EXISTS index_color_point_rgb_with_byte_created_at;
 DROP INDEX IF EXISTS index_color_point_rgb_with_byte_created_by;
 DROP INDEX IF EXISTS index_color_point_rgb_with_byte_updated_at;
@@ -8,4 +7,5 @@ DROP INDEX IF EXISTS index_color_point_rgb_with_byte_updated_by;
 DROP INDEX IF EXISTS index_color_point_rgb_with_byte_deleted_at;
 DROP INDEX IF EXISTS index_color_point_rgb_with_byte_deleted_by;
 DROP INDEX IF EXISTS index_color_point_rgb_with_byte_locale_code;
+DROP INDEX IF EXISTS index_color_point_rgb_with_byte_tagging;
 

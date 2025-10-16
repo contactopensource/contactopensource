@@ -7,9 +7,10 @@ DROP INDEX IF EXISTS index_lumina_foundation_skill_level_updated_by;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_deleted_at;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_deleted_by;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_locale_code;
-DROP INDEX IF EXISTS index_lumina_foundation_skill_level_sign;
-DROP INDEX IF EXISTS index_lumina_foundation_skill_level_kind;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_tagging;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_name;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_subname;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_sign;
+DROP INDEX IF EXISTS index_lumina_foundation_skill_level_kind;
 DROP INDEX IF EXISTS index_lumina_foundation_skill_level_number;
 

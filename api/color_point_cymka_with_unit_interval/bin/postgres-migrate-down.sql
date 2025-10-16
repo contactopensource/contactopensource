@@ -7,4 +7,5 @@ DROP INDEX IF EXISTS index_color_point_cymka_with_unit_interval_updated_by;
 DROP INDEX IF EXISTS index_color_point_cymka_with_unit_interval_deleted_at;
 DROP INDEX IF EXISTS index_color_point_cymka_with_unit_interval_deleted_by;
 DROP INDEX IF EXISTS index_color_point_cymka_with_unit_interval_locale_code;
+DROP INDEX IF EXISTS index_color_point_cymka_with_unit_interval_tagging;
 

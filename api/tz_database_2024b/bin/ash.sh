@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.TzDatabase2024b \
+    MyApp.None.tz_database_2024bs \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -43,9 +44,28 @@ mix ash.gen.resource \
     --attribute name:text \
     --attribute comment:text \
 
-mix ash.codegen create_tz_database_2024b
+mix ash.codegen create_tz_database_2024bs
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_tz_database_2024bs.exs
+
+mkdir -p lib/my_app_web/live/tz_database_2024bs
+touch lib/my_app_web/live/tz_database_2024bs/form_live.ex
+touch lib/my_app_web/live/tz_database_2024bs/index_live.ex
+touch lib/my_app_web/live/tz_database_2024bs/show_live.ex
+
+mkdir -p test/my_app_web/live/tz_database_2024bs
+touch test/my_app_web/live/tz_database_2024bs/form_live.ex
+touch test/my_app_web/live/tz_database_2024bs/index_live.ex
+touch test/my_app_web/live/tz_database_2024bs/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/tz_database_2024bs", TzDatabase2024Bs.IndexLive
+live "/tz_database_2024bs/new", TzDatabase2024Bs.FormLive, :new
+live "/tz_database_2024bs/:id", TzDatabase2024Bs.ShowLive
+live "/tz_database_2024bs/:id/edit", TzDatabase2024Bs.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/my_domain/tz_database_2024b.ex
@@ -58,7 +78,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

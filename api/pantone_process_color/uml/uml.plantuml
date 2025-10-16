@@ -14,6 +14,7 @@ entity pantone_process_color {
   deleted_at : timestamp_utc_usec ⚡
   deleted_by : url ⚡
   locale_code : string ⚡
+  tagging : string ⚡
   .. Main ..
   key : string ⚡
   name : string ⚡

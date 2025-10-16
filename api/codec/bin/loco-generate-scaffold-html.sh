@@ -12,13 +12,14 @@ cargo loco generate scaffold --html \
         deleted_at:timestamp_utc_usec \
         deleted_by:url \
         locale_code:string \
-        sign:"string{1}" \
-        kind:string \
+        tagging:string \
         name:"string{50}" \
         subname:"string{50}" \
         summary:"string{72}" \
         description:text \
         disambiguation:text \
+        sign:"string{1}" \
+        kind:string \
         avatar_image_400x400_url:url \
         avatar_image_400x400_alt:url \
         main_image_1080x1080_url:url \
@@ -41,9 +42,9 @@ cargo loco generate scaffold --html \
         prefer_media_type_id:references:media_type \
         lossy_flag:boolean \
         floss_flag:boolean \
-        fixed_bit_rate:decimal \
-        variable_bit_rate_minimum:decimal \
-        variable_bit_rate_maximum:decimal \
+        fixed_bit_rate:numeric(7,2) \
+        variable_bit_rate_minimum:numeric(7,2) \
+        variable_bit_rate_maximum:numeric(7,2) \
         fixed_channel_count:integer \
         variable_channel_count_minimum:integer \
         variable_channel_count_maximum:integer \

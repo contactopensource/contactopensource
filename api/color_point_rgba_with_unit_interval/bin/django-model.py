@@ -11,6 +11,7 @@ class ColorPointRGBAWithUnitInterval(models.Model):
         deleted_at = models.UnknownAttribute("The time when this happened.")
         deleted_by = models.URLAttribute("The user/agent/service/etc. that did this.")
         locale_code = models.TextAttribute("An international locale identifier, such as the id of locale "English - United States".")
+        tagging = models.TextAttribute("A tagging list that is space-separated and without any hash marks.")
         red = models.UnknownAttribute("red")
         green = models.UnknownAttribute("green")
         blue = models.UnknownAttribute("blue")

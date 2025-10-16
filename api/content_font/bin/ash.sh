@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Content.ContentFont \
+    MyApp.Content.content_fonts \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -35,9 +36,28 @@ mix ash.gen.resource \
     --attribute quick_response_code_id:quick_response_code.id \
     --attribute universal_product_code_id:universal_product_code.id \
 
-mix ash.codegen create_content_font
+mix ash.codegen create_content_fonts
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_content_fonts.exs
+
+mkdir -p lib/my_app_web/live/content_fonts
+touch lib/my_app_web/live/content_fonts/form_live.ex
+touch lib/my_app_web/live/content_fonts/index_live.ex
+touch lib/my_app_web/live/content_fonts/show_live.ex
+
+mkdir -p test/my_app_web/live/content_fonts
+touch test/my_app_web/live/content_fonts/form_live.ex
+touch test/my_app_web/live/content_fonts/index_live.ex
+touch test/my_app_web/live/content_fonts/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/content_fonts", ContentFonts.IndexLive
+live "/content_fonts/new", ContentFonts.FormLive, :new
+live "/content_fonts/:id", ContentFonts.ShowLive
+live "/content_fonts/:id/edit", ContentFonts.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/content/content_font.ex
@@ -50,7 +70,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

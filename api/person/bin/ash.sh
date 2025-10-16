@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Basics.Person \
+    MyApp.Basics.persons \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -64,9 +65,28 @@ mix ash.gen.resource \
     --attribute death_date:date \
     --attribute death_date_year:integer \
 
-mix ash.codegen create_person
+mix ash.codegen create_persons
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_persons.exs
+
+mkdir -p lib/my_app_web/live/persons
+touch lib/my_app_web/live/persons/form_live.ex
+touch lib/my_app_web/live/persons/index_live.ex
+touch lib/my_app_web/live/persons/show_live.ex
+
+mkdir -p test/my_app_web/live/persons
+touch test/my_app_web/live/persons/form_live.ex
+touch test/my_app_web/live/persons/index_live.ex
+touch test/my_app_web/live/persons/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/persons", Persons.IndexLive
+live "/persons/new", Persons.FormLive, :new
+live "/persons/:id", Persons.ShowLive
+live "/persons/:id/edit", Persons.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/basics/person.ex
@@ -79,7 +99,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

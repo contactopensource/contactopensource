@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Credential.Passport \
+    MyApp.Credential.passports \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -15,13 +15,14 @@ mix ash.gen.resource \
     --attribute deleted_at:timestamp_utc_usec \
     --attribute deleted_by:text \
     --attribute locale_code:string \
-    --attribute sign:string \
-    --attribute kind:string \
+    --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
+    --attribute sign:string \
+    --attribute kind:string \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -41,9 +42,28 @@ mix ash.gen.resource \
     --attribute four_corner_open_photo_url:text \
     --attribute four_corner_face_photo_url:text \
 
-mix ash.codegen create_passport
+mix ash.codegen create_passports
 mix ash.migrate
 
+touch priv/repo/migrations/00000000000000_create_passports.exs
+
+mkdir -p lib/my_app_web/live/passports
+touch lib/my_app_web/live/passports/form_live.ex
+touch lib/my_app_web/live/passports/index_live.ex
+touch lib/my_app_web/live/passports/show_live.ex
+
+mkdir -p test/my_app_web/live/passports
+touch test/my_app_web/live/passports/form_live.ex
+touch test/my_app_web/live/passports/index_live.ex
+touch test/my_app_web/live/passports/show_live.ex
+
+cat << EOF
+Edit file lib/my_app_web/router.ex to add live routes:
+live "/passports", Passports.IndexLive
+live "/passports/new", Passports.FormLive, :new
+live "/passports/:id", Passports.ShowLive
+live "/passports/:id/edit", Passports.FormLive, :edit
+EOF
 ### Extra ###
 #
 # Edit file lib/my_app/credential/passport.ex
@@ -56,7 +76,7 @@ mix ash.migrate
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #
