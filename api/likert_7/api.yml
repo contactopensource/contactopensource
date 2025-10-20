@@ -1,0 +1,50 @@
+likert_7:
+  title: Likert 7
+  model: Likert7
+  summary: |-
+
+    Likert 7-point scale value.
+
+  description: |-
+
+    This is a survey tool with five options, typically -3, -2, -1, 0, 1, 2, 3.
+    
+    This is used to measure a respondent's level of agreement, assessment, opinion, evaluation, etc.
+
+    Example: Agreement scale
+
+    - Strongly Disagree
+    - Somewhat Disagree
+    - Slightly Disagree
+    - Neutral
+    - Slightly Agree
+    - Somewhat Agree 
+    - Strongly Agree 
+
+    Example: Difficulty scale
+
+    - Maximally Hard
+    - Moderately Hard
+    - Minimally Hard
+    - Average
+    - Minimally Easy
+    - Moderately Easy
+    - Maximally Easy 
+
+    Example: Size
+
+    - Smallest
+    - Smaller
+    - Small
+    - Medium
+    - Large
+    - Larger
+    - Largest
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+        - likert_7:
+            help: Likert 7-point scale value from integer -2 to 2.
+            type: int
+            sql: likert_7 INT CONSTRAINT likert_7_check CHECK (likert_7 BETWEEN -2 AND 2)

@@ -1,0 +1,52 @@
+likert_5:
+  title: Likert 5
+  model: Likert5
+  summary: |-
+
+    Likert 5-point scale value.
+
+  description: |-
+
+    This is a survey tool with five options, typically -2, -1, 0, 1, 2. 
+    
+    This is used to measure a respondent's level of agreement, assessment, opinion, evaluation, etc.
+
+    Example: Agreement scale
+
+    - Strongly disagree
+    - Disagree
+    - Neutral
+    - Agree
+    - Strongly agree 
+
+    Example: Difficulty scale
+
+    - Extremely hard
+    - Moderately Hard
+    - Average
+    - Moderately Easy
+    - Extremely Easy 
+
+    Example: Support scale
+
+    - Strongly oppose
+    - Somewhat oppose
+    - Neutral
+    - Somewhat favor
+    - Strongly favor     
+
+    Example: Evaluation scale
+
+    - A Lot Less
+    - A Bit Less
+    - Ideal
+    - A Bit More
+    - A Lot More
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+        - likert_5:
+            help: Likert 5-point scale value from integer -2 to 2.
+            type: int
+            sql: likert_5 INT CONSTRAINT likert_5_check CHECK (likert_5 BETWEEN -2 AND 2)

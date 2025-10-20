@@ -1,0 +1,22 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity likert_7 {
+  .. meta ..
+  id : uuid ⚡
+  lock_version : integer
+  created_at : timestamp_utc_usec ⚡
+  created_by : url ⚡
+  updated_at : timestamp_utc_usec ⚡
+  updated_by : url ⚡
+  deleted_at : timestamp_utc_usec ⚡
+  deleted_by : url ⚡
+  locale_code : string ⚡
+  tagging : string ⚡
+  .. Main ..
+  likert_7 : int
+}
+
+@enduml
