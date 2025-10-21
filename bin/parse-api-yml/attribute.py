@@ -27,7 +27,7 @@ from functools import partial
 class Attribute:
 
     def __str__(self):
-        return f"id: {self.id}, help: {self.help}, type: {self.type}, nullable: {self.nullable}, unique: {self.unique}, index: {self.index}, example: {self.example}, uml: {self.uml}"
+        return f"id: {self.id}, help: {self.help}, type: {self.type}, nullable: {self.nullable}, unique: {self.unique}, index: {self.index}, example: {self.example}, uml: {self.uml}, join: {self.join}"
 
     @classmethod
     def parse(cls, args, y):
@@ -72,6 +72,7 @@ class Attribute:
                 a.example = y.get('example', None)
                 a.uml = y.get('uml', None)
                 a.join = Attribute.parse_join(a.type)
+                a.belongs_to_model =  y.get('belongs_to_model', None)
                 return a
             case _:
                 raise Exception(y)
@@ -95,6 +96,6 @@ class Attribute:
     @staticmethod
     def parse_join(s):
         if s:
-            return s.__contains__("(id)")
+            return s.endswith(".id")
         else:
             return None
