@@ -60,6 +60,8 @@ parser = argparse.ArgumentParser(
 parser.add_argument("-w", "--write", help="Write outputs to their respective files.", action=argparse.BooleanOptionalAction)
 parser.add_argument("--app-name-title-case", help="Application name as title case, such as \"MyApp\".", default='MyApp')
 parser.add_argument("--app-name-snake-case", help="Application name as snake case, such as \"my_app\".", default='my_app')
+parser.add_argument("--ddd-name-title-case", help="Domain Driven Design name as title case, such as \"MyDomain\".", default='MyDomain')
+parser.add_argument("--ddd-name-snake-case", help="Domain Driven Design name as snake case, such as \"my_domain\".", default='my_domain')
 parser.add_argument("paths", nargs='*')
 args = parser.parse_args()
 
