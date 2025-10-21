@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Contact.uri_contacts \
+    MyApp.Contact.UriContact \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

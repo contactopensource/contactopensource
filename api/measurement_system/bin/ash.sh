@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.measurement_systems \
+    MyApp.None.MeasurementSystem \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

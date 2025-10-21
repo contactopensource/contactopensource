@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.net_promoter_score_user_perspectives \
+    MyApp.None.NetPromoterScoreUserPerspective \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

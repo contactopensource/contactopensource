@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.active_userss \
+    MyApp.None.ActiveUsers \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

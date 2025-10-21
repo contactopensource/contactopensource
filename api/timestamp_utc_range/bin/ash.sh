@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Basics.tags \
+    MyApp.Basics.Tag \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

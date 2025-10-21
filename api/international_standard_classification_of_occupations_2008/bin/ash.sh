@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Codes.international_standard_classification_of_occupations_2008s \
+    MyApp.Codes.InternationalStandardClassificationOfOccupations2008 \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Content.content_messages \
+    MyApp.Content.ContentMessage \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,8 +33,8 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
 
 mix ash.codegen create_content_messages
 mix ash.migrate

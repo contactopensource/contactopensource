@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Color.color_point_cymk_as_unit_intervals \
+    MyApp.Color.ColorPointCymkAsUnitInterval \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

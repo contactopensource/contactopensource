@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.burn_rate_net_time_per_weeks \
+    MyApp.None.BurnRateNetTimePerWeek \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

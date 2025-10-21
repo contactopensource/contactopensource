@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.status.status_systems \
+    MyApp.status.StatusSystem \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

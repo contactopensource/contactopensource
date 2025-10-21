@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.united_states_bureau_of_labor_statistics_standard_occupational_classification_2018s \
+    MyApp.None.UnitedStatesBureauOfLaborStatisticsStandardOccupationalClassification2018 \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

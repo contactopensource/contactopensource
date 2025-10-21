@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.software_package_data_exchange_licenses \
+    MyApp.None.SoftwarePackageDataExchangeLicense \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

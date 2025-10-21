@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Access.access_tenants \
+    MyApp.Access.AccessTenant \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

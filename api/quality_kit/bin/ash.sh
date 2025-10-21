@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.quality_kits \
+    MyApp.None.QualityKit \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

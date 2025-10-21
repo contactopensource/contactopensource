@@ -2,13 +2,13 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Access.access_assignments \
+    MyApp.Access.AccessAssignment \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
     --uuid-primary-key id \
-    --attribute access_agent_id:access_agent.id \
-    --attribute access_attribute_id:access_attribute.id \
+    --relationship belongs_to:access_agent_id:MyApp.MyDomain.AccessAgent \
+    --relationship belongs_to:access_attribute_id:MyApp.MyDomain.AccessAttribute \
 
 mix ash.codegen create_access_assignments
 mix ash.migrate

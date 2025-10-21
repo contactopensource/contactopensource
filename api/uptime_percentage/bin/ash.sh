@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.uptime_percentages \
+    MyApp.None.UptimePercentage \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

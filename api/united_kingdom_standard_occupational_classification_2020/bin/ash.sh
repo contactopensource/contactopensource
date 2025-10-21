@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Codes.united_kingdom_standard_occupational_classification_2020s \
+    MyApp.Codes.UnitedKingdomStandardOccupationalClassification2020 \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

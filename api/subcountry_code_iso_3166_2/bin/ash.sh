@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.subcountry_code_iso_3166_2s \
+    MyApp.None.SubcountryCodeIso31662 \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

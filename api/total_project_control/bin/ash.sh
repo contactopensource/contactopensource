@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.total_project_controls \
+    MyApp.None.TotalProjectControl \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Color.color_name_kits \
+    MyApp.Color.ColorNameKit \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

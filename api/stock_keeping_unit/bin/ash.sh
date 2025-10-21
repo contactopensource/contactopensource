@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.stock_keeping_units \
+    MyApp.None.StockKeepingUnit \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,8 +33,8 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
     --attribute code:text \
 
 mix ash.codegen create_stock_keeping_units

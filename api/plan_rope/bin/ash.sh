@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.plan_ropes \
+    MyApp.None.PlanRope \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,14 +33,14 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
-    --attribute plan_id:plan.id \
-    --attribute measurement_unit_id:measurement_unit.id \
-    --attribute realistic:card.id \
-    --attribute optimistic:card.id \
-    --attribute pessimistic:card.id \
-    --attribute equilibristic:card.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:plan_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:measurement_unit_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:realistic:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:optimistic:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:pessimistic:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:equilibristic:MyApp.MyDomain.MyModel \
 
 mix ash.codegen create_plan_ropes
 mix ash.migrate

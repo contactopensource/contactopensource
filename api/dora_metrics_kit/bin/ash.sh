@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.dora_metrics_kits \
+    MyApp.None.DoraMetricsKit \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

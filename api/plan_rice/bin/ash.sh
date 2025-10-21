@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.plan_rices \
+    MyApp.None.PlanRice \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,17 +33,17 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
-    --attribute plan_id:plan.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:plan_id:MyApp.MyDomain.MyModel \
     --attribute score:number \
-    --attribute reach_card_id:card.id \
+    --relationship belongs_to:reach_card_id:MyApp.MyDomain.MyModel \
     --attribute reach_value:number \
-    --attribute impact_card_id:card.id \
+    --relationship belongs_to:impact_card_id:MyApp.MyDomain.MyModel \
     --attribute impact_value:number \
-    --attribute confidence_card_id:card.id \
+    --relationship belongs_to:confidence_card_id:MyApp.MyDomain.MyModel \
     --attribute confidence_value:number \
-    --attribute effort_card_id:card.id \
+    --relationship belongs_to:effort_card_id:MyApp.MyDomain.MyModel \
     --attribute effort_value:number \
 
 mix ash.codegen create_plan_rices

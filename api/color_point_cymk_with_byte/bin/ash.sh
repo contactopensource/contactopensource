@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Color.color_point_cymk_with_bytes \
+    MyApp.Color.ColorPointCymkWithByte \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

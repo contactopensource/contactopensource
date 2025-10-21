@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.books \
+    MyApp.None.Book \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,12 +33,12 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
     --attribute title:text \
     --attribute subtitle:text \
-    --attribute global_trade_item_number_id:global_trade_item_number.id \
-    --attribute international_standard_book_number_id:international_standard_book_number.id \
+    --relationship belongs_to:global_trade_item_number_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:international_standard_book_number_id:MyApp.MyDomain.MyModel \
 
 mix ash.codegen create_books
 mix ash.migrate

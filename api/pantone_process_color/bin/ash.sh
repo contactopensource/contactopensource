@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.pantone_process_colors \
+    MyApp.None.PantoneProcessColor \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

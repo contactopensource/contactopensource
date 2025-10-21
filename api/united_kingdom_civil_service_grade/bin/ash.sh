@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Codes.united_kingdom_civil_service_grades \
+    MyApp.Codes.UnitedKingdomCivilServiceGrade \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

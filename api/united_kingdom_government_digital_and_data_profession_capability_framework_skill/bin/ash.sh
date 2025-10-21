@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.united_kingdom_government_digital_and_data_profession_capability_framework_skills \
+    MyApp.None.UnitedKingdomGovernmentDigitalAndDataProfessionCapabilityFrameworkSkill \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

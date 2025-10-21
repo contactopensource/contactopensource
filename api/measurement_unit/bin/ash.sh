@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.measurement.measurement_units \
+    MyApp.measurement.MeasurementUnit \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -18,9 +18,9 @@ mix ash.gen.resource \
     --attribute tagging:string \
     --attribute name:text \
     --attribute symbol:text \
-    --attribute measurement_system_id:measurement_system.id \
-    --attribute numerator:measurement_unit.id \
-    --attribute denominator:measurement_unit.id \
+    --relationship belongs_to:measurement_system_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:numerator:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:denominator:MyApp.MyDomain.MyModel \
 
 mix ash.codegen create_measurement_units
 mix ash.migrate

@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Credential.passports \
+    MyApp.Credential.Passport \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,9 +33,9 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
-    --attribute country_id:country.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:country_id:MyApp.MyDomain.MyModel \
     --attribute number_text:text \
     --attribute start_date:date \
     --attribute stop_date:date \

@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.business_analysis_kits \
+    MyApp.None.BusinessAnalysisKit \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

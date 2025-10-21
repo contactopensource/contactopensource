@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.plan_smarts \
+    MyApp.None.PlanSmart \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,14 +33,14 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
-    --attribute plan_id:plan.id \
-    --attribute specific_card_id:card.id \
-    --attribute measurable_card_id:card.id \
-    --attribute achievable_card_id:card.id \
-    --attribute relevant_card_id:card.id \
-    --attribute timely_card_id:card.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:plan_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:specific_card_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:measurable_card_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:achievable_card_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:relevant_card_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:timely_card_id:MyApp.MyDomain.MyModel \
 
 mix ash.codegen create_plan_smarts
 mix ash.migrate

@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.united_kingdom_government_digital_and_data_profession_capability_framework_roles \
+    MyApp.None.UnitedKingdomGovernmentDigitalAndDataProfessionCapabilityFrameworkRole \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -16,7 +16,7 @@ mix ash.gen.resource \
     --attribute deleted_by:text \
     --attribute locale_code:string \
     --attribute tagging:string \
-    --attribute family_id:united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id \
+    --relationship belongs_to:family_id:MyApp.MyDomain.MyModel \
     --attribute name:string \
     --attribute url:text \
     --attribute description_as_markdown:markdown \
@@ -58,7 +58,7 @@ EOF
 #
 # Add this:
 #
-#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
+#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#     index[:{attribute.id}]#
 #
 # Change the attributes created_at and updated_at to:
 #

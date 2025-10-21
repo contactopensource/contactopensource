@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.Code.quick_response_codes \
+    MyApp.Code.QuickResponseCode \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

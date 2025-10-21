@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.System.system_envs \
+    MyApp.System.SystemEnv \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

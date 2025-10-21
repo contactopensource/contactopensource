@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.currency_types \
+    MyApp.None.CurrencyType \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

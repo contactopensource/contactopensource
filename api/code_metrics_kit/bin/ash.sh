@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.code_metrics_kits \
+    MyApp.None.CodeMetricsKit \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

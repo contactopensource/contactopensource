@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.earned_value_managements \
+    MyApp.None.EarnedValueManagement \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

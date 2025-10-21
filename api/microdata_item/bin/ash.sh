@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.microdata_items \
+    MyApp.None.MicrodataItem \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \

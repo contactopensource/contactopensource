@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.codecs \
+    MyApp.None.Codec \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -33,8 +33,8 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_alt:text \
     --attribute emoji:text \
     --attribute star_count:integer \
-    --attribute quick_response_code_id:quick_response_code.id \
-    --attribute universal_product_code_id:universal_product_code.id \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
     --attribute name:text \
     --attribute code:text \
     --attribute icon:text \
@@ -42,7 +42,7 @@ mix ash.gen.resource \
     --attribute note:text \
     --attribute creator_name:text \
     --attribute prefer_file_extension:text \
-    --attribute prefer_media_type_id:media_type.id \
+    --relationship belongs_to:prefer_media_type_id:MyApp.MyDomain.MyModel \
     --attribute lossy_flag:boolean \
     --attribute floss_flag:boolean \
     --attribute fixed_bit_rate:numeric \
