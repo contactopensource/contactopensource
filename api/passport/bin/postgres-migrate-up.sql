@@ -1,18 +1,17 @@
 CREATE TABLE passport (
 );
 
-CREATE INDEX index_passport_id on passport(id);
-CREATE INDEX index_passport_created_at on passport(created_at);
-CREATE INDEX index_passport_created_by on passport(created_by);
-CREATE INDEX index_passport_updated_at on passport(updated_at);
-CREATE INDEX index_passport_updated_by on passport(updated_by);
-CREATE INDEX index_passport_retired_at on passport(retired_at);
-CREATE INDEX index_passport_retired_by on passport(retired_by);
-CREATE INDEX index_passport_locale_code on passport(locale_code);
-CREATE INDEX index_passport_tagging on passport(tagging);
-CREATE INDEX index_passport_name on passport(name);
-CREATE INDEX index_passport_subname on passport(subname);
-CREATE INDEX index_passport_sign on passport(sign);
-CREATE INDEX index_passport_kind on passport(kind);
-CREATE INDEX index_passport_number_text on passport(number_text);
+CREATE INDEX passport_id_index on passport(id);
+CREATE INDEX passport_created_at_index on passport(created_at);
+CREATE INDEX passport_created_by_index on passport(created_by);
+CREATE INDEX passport_updated_at_index on passport(updated_at);
+CREATE INDEX passport_updated_by_index on passport(updated_by);
+CREATE INDEX passport_retired_at_index on passport(retired_at);
+CREATE INDEX passport_retired_by_index on passport(retired_by);
+CREATE INDEX passport_locale_code_index on passport(locale_code);
+CREATE INDEX passport_tagging_index on passport(tagging);
+CREATE INDEX passport_name_index on passport(name);
+CREATE INDEX passport_subname_index on passport(subname);
+CREATE INDEX passport_sign_index on passport(sign);
+CREATE INDEX passport_kind_index on passport(kind);
 

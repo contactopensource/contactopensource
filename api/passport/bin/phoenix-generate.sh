@@ -32,12 +32,55 @@ mix phx.gen.html \
         star_count:integerNone \
         quick_response_code_id:referencesNone \
         universal_product_code_id:referencesNone \
+        name_of_holder:textNone \
+        nationality:textNone \
+        date_of_birth:dateNone \
+        date_of_birth_check_digit:intNone \
+        sex:textNone \
+        composite_check_digit:intNone \
+        document_type:textNone \
+        document_number:textNone \
+        document_number_check_digit:intNone \
+        issuing_state_or_organization:textNone \
+        date_of_expiry_or_valid_until_date:dateNone \
+        date_of_expiry_or_valid_until_date_check_digit:intNone \
+        optional_data:textNone \
+        optional_data_check_digit:intNone \
+        encoded_face:binaryNone \
+        encoded_fingers:binaryNone \
+        encoded_eyes:binaryNone \
+        displayed_portrait:binaryNone \
+        reserved_for_future_use:todoNone \
+        displayed_signature_or_usual_mark:binaryNone \
+        data_features:unknownNone \
+        structure_features:unknownNone \
+        substance_features:todoNone \
+        other_names_of_holder:textNone \
+        place_of_birth:textNone \
+        personal_number:textNone \
+        address:textNone \
+        telephone_numbers:textNone \
+        profession:textNone \
+        title:textNone \
+        personal_summary:textNone \
+        proof_of_citizenship:textNone \
+        other_valid_travel_documents:textNone \
+        custody_information:textNone \
+        issuing_authority:textNone \
+        date_of_issue:dateNone \
+        other_persons_included_on_mrtd:textNone \
+        endorsements_observations:textNone \
+        tax_exit_requirements:textNone \
+        image_of_front_of_mrtd:binaryNone \
+        image_of_rear_of_mrtd:binaryNone \
+        optional_details:textNone \
+        security_options:todoNone \
+        active_authentication_public_key_info:todoNone \
+        persons_to_notify:textNone \
+        contact_details_of_persons_to_notify:textNone \
         country_id:referencesNone \
-        number_text:text:index \
-        start_date:dateNone \
-        stop_date:dateNone \
-        four_corner_open_photo_url:urlNone \
-        four_corner_face_photo_url:urlNone \
+        four_corner_open_book_photo_url:urlNone \
+        four_corner_clear_face_open_book_photo_url:urlNone \
     --force \
     --no-timestamps \
 

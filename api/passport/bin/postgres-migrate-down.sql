@@ -12,5 +12,4 @@ DROP INDEX IF EXISTS index_passport_name;
 DROP INDEX IF EXISTS index_passport_subname;
 DROP INDEX IF EXISTS index_passport_sign;
 DROP INDEX IF EXISTS index_passport_kind;
-DROP INDEX IF EXISTS index_passport_number_text;
 

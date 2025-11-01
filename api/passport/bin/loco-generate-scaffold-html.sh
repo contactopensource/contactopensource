@@ -32,10 +32,53 @@ cargo loco generate scaffold --html \
         star_count:integer \
         quick_response_code_id:references \
         universal_product_code_id:references \
+        name_of_holder:text \
+        nationality:text \
+        date_of_birth:date \
+        date_of_birth_check_digit:int \
+        sex:text \
+        composite_check_digit:int \
+        document_type:text \
+        document_number:text \
+        document_number_check_digit:int \
+        issuing_state_or_organization:text \
+        date_of_expiry_or_valid_until_date:date \
+        date_of_expiry_or_valid_until_date_check_digit:int \
+        optional_data:text \
+        optional_data_check_digit:int \
+        encoded_face:binary \
+        encoded_fingers:binary \
+        encoded_eyes:binary \
+        displayed_portrait:binary \
+        reserved_for_future_use:todo \
+        displayed_signature_or_usual_mark:binary \
+        data_features:unknown \
+        structure_features:unknown \
+        substance_features:todo \
+        other_names_of_holder:text \
+        place_of_birth:text \
+        personal_number:text \
+        address:text \
+        telephone_numbers:text \
+        profession:text \
+        title:text \
+        personal_summary:text \
+        proof_of_citizenship:text \
+        other_valid_travel_documents:text \
+        custody_information:text \
+        issuing_authority:text \
+        date_of_issue:date \
+        other_persons_included_on_mrtd:text \
+        endorsements_observations:text \
+        tax_exit_requirements:text \
+        image_of_front_of_mrtd:binary \
+        image_of_rear_of_mrtd:binary \
+        optional_details:text \
+        security_options:todo \
+        active_authentication_public_key_info:todo \
+        persons_to_notify:text \
+        contact_details_of_persons_to_notify:text \
         country_id:references \
-        number_text:text \
-        start_date:date \
-        stop_date:date \
-        four_corner_open_photo_url:url \
-        four_corner_face_photo_url:url \
+        four_corner_open_book_photo_url:url \
+        four_corner_clear_face_open_book_photo_url:url \
 

@@ -17,31 +17,277 @@ passport:
     key mechanism for border security and regulating migration; they may also
     serve as official identification for various domestic purposes.
 
+    The International Civil Aviation Organization (ICAO) defines the standards
+    for electronic passports, which contain a contactless integrated circuit
+    (IC) storing digital information. The technical details of electronic
+    passports are specified in ICAO Doc 9303.
+
+    MRP = A machine-readable passport (MRP) is a machine-readable travel
+    document (MRTD) with the data on the identity page encoded in optical
+    character recognition
+
+    MRTD = machine-readable travel document.
+
   links:
     - https://en.wikipedia.org/wiki/Passport
   module: Credential
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
-    - Main:
-        - country_id:
-            type: country.id
-        - number_text:
-            help: number text
+    - ICAO 9303 DG1 required personal details:
+        - name_of_holder:
+            help: Name of holder
+            example: Alice Adams
             type: text
-            index: true
+            nullable: false
+        - nationality:
+            help: Nationality
+            example: United States of America
+            type: text
+            nullable: false
+        - date_of_birth:
+            help: Date of birth
+            example: 2000-01-01
+            type: date
+            nullable: false
+        - date_of_birth_check_digit:
+            help: Date of birth check digit
+            example: 1
+            type: int
+            nullable: false
+        - sex:
+            help: Sex
+            example: Female
+            type: text
+            nullable: false
+        - composite_check_digit:
+            help: Composite check digit
+            example: 1
+            type: int
+            nullable: false
+    - ICAO 9303 DG1 required document details:
+        - document_type:
+            help: Document type
+            example: todo
+            type: text
+            nullable: false
+        - document_number:
+            help: Document number
             example: 111-111-111-111
-        - start_date:
-            help: valid start date
-            type: date
-            example: 2020-01-01
-        - stop_date:
-            help: valid stop date
-            type: date
+            type: text
+            nullable: false
+        - document_number_check_digit:
+            help: Document number check digit
+            example: 1
+            type: int
+            nullable: false
+        - issuing_state_or_organization:
+            help: Issuing state or organization
+            example: United States of America Department of State
+            type: text
+            nullable: false
+        - date_of_expiry_or_valid_until_date:
+            help: Date of expiry or valid until date
             example: 2030-01-01
-        - four_corner_open_photo_url:
-            help: Link to a photo that clearly shows the four corner perspective of the passport, specifically open to show the owner information and owner signature. This is suitable for a government verification, or background check, or security approval, etc.
+            type: date
+            nullable: false
+        - date_of_expiry_or_valid_until_date_check_digit:
+            help: Date of expiry or valid until date check digit
+            example: 1
+            type: int
+            nullable: false
+        - optional_data:
+            help: Optional data
+            example: todo
+            type: text
+            nullable: true
+        - optional_data_check_digit:
+            help: Optional data check digit
+            example: 1
+            type: int
+            nullable: true
+    - ICAO 9303 DG2:
+        - encoded_face:
+            help: Encoded face. This is a binary file of the holder's face.
+            example: todo
+            type: binary
+            nullable: false
+    - ICAO 9303 DG3:
+        - encoded_fingers:
+            help: Encoded finger(s). This is a binary file of the holder's fingerprint(s).
+            example: todo
+            type: binary
+            nullable: true
+    - ICAO 9303 DG4:
+        - encoded_eyes:
+            help: Encoded eyes.  This is a binary file of the holder's eye(s).
+            type: binary
+            example: todo
+            nullable: true
+    - ICAO 9303 DG5:
+        - displayed_portrait:
+            help: Displayed portrait
+            example: todo
+            type: binary
+            nullable: true
+    - ICAO 9303 DG6:
+        - reserved_for_future_use:
+            help: Reserved for future use
+            example: todo
+            type: todo
+            nullable: true
+    - ICAO 9303 DG7:
+        - displayed_signature_or_usual_mark:
+            help: Displayed signature or usual mark. This is an image of the holder's signature or equivalent usual mark such as an X.
+            example: todo
+            type: binary
+    - ICAO 9303 DG8:
+        - data_features:
+            help: Data features.
+            example: todo
+            type: unknown
+            nullable: true
+    - ICAO 9303 DG9:
+        - structure_features:
+            help: Structure features.
+            example: todo
+            type: unknown
+            nullable: true
+    - ICAO 9303 DG10:
+        - substance_features:
+            help: Substance features.
+            example: todo
+            type: todo
+            nullable: true
+    - ICAO 9303 DG11 additional personal details:
+        - other_names_of_holder:
+            help: Other names of holder.
+            example: Ali Adams, Alicia Adams
+            type: text
+            nullable: true
+        - place_of_birth:
+            help: Place of birth.
+            example: San Francisco, California, United States of America
+            type: text
+            nullable: true
+        - personal_number:
+            help: Personal number.
+            example: todo
+            type: text
+            nullable: true
+        - address:
+            help: Address.
+            example: 123 Main St, San Francisco, California, 94101, United States of America
+            type: text
+            nullable: true
+        - telephone_numbers:
+            help: Telephone number(s).
+            example: 1-415-555-5555
+            type: text
+            nullable: true
+        - profession:
+            help: Profession.
+            example: Teacher
+            type: text
+            nullable: true
+        - title:
+            help: Title.
+            example: Mx
+            type: text
+            nullable: true
+        - personal_summary:
+            help: Personal summary.
+            example: I am a teacher.
+            type: text
+            nullable: true
+        - proof_of_citizenship:
+            help: Proof of citizenship.
+            example: Birth certificate
+            type: text
+            nullable: true
+        - other_valid_travel_documents:
+            help: Other valid travel documents.
+            example: todo
+            type: text
+            nullable: true
+        - custody_information:
+            help: Custody information.
+            example: todo
+            type: text
+            nullable: true
+    - ICAO 9303 DG12 additional document details:
+        - issuing_authority:
+            help: Issuing authority.
+            example: todo
+            type: text
+            nullable: true
+        - date_of_issue:
+            help: Date of issue.
+            example: 2020-01-01
+            type: date
+            nullable: true
+        - other_persons_included_on_mrtd:
+            help: Other persons included on MRTD.
+            example: Bob Adams, Carol Adams
+            type: text
+            nullable: true
+        - endorsements_observations:
+            help: Endorsements observations.
+            example: todo
+            type: text
+            nullable: true
+        - tax_exit_requirements:
+            help: Tax exit requirements.
+            type: text
+            example: todo
+            nullable: true
+        - image_of_front_of_mrtd:
+            help: Image of front of machine-readable travel document (MRTD).
+            example: todo
+            type: binary
+            nullable: true
+        - image_of_rear_of_mrtd:
+            help: Image of rear of machine-readable travel document (MRTD).
+            example: todo
+            type: binary
+            nullable: true
+    - ICAO 9303 DG13:
+        - optional_details:
+            help: Optional details.
+            example: todo
+            type: text
+            nullable: true
+    - ICAO 9303 DG14:
+        - security_options:
+            help: Security options.
+            example: todo
+            type: todo
+            nullable: true
+    - ICAO 9303 DG15:
+        - active_authentication_public_key_info:
+            help: Active authentication public key info.
+            example: todo
+            type: todo
+            nullable: true
+    - ICAO 9303 DG16:
+        - persons_to_notify:
+            help: Person(s) to notify.
+            example: Bob Adams (spouse)
+            type: text
+            nullable: true
+        - contact_details_of_persons_to_notify:
+            help: 1-415-555-5556
+            type: text
+            example: todo
+            nullable: true
+    - Extra:
+        - country_id:
+            help: The country id suitable for index lookups.
+            type: country.id
+            example: todo
+        - four_corner_open_book_photo_url:
+            help: Link to a photo that clearly shows the four corner perspective of the passport, specifically with the passport open so it shows the holder information and holder signature. This is suitable for a government verification, or background check, or security approval, etc.
             type: url
-        - four_corner_face_photo_url:
-            help: Link to a photo that clearly shows the four corner perspective of the passport, specifically with a clear face view of the owner holding the passport open to show the owner information and owner signature. This is suitable for a government verification, or background check, or security approval, etc.
+        - four_corner_clear_face_open_book_photo_url:
+            help: Link to a photo that clearly shows the four corner perspective of the passport, specifically with a clear face view of the holder holding the passport, specifically with the passport open so it shows the holder information and holder signature. This is suitable for a government verification, or background check, or security approval, etc.
             type: url
