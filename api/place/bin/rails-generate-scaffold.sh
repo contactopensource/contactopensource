@@ -31,6 +31,14 @@ rails generate scaffold \
         star_count:integer \
         quick_response_code_id:references \
         universal_product_code_id:references \
+        latitude_as_decimal_degrees:decimal_degrees:index \
+        longitude_as_decimal_degrees:decimal_degrees:index \
+        altitude_agl_as_meters:meters:index \
+        altitude_msl_as_meters:meters:index \
+        elevation_agl_as_meters:meters:index \
+        elevation_msl_as_meters:meters:index \
+        what3words:text \
+        whatfreewords:text \
     --force \
     --no-timestamps \
 

@@ -68,3 +68,21 @@ card:
 
   * universal_product_code_id: universal_product_code.id - example: A universal product code that is an id that leads to this card.
 
+Main:
+
+  * latitude_as_decimal_degrees: decimal_degrees (index)
+
+  * longitude_as_decimal_degrees: decimal_degrees (index)
+
+  * altitude_agl_as_meters: meters (index)
+
+  * altitude_msl_as_meters: meters (index)
+
+  * elevation_agl_as_meters: meters (index)
+
+  * elevation_msl_as_meters: meters (index)
+
+  * what3words: text - example: rubble.occurs.holds
+
+  * whatfreewords: text - example: burst.fully.things
+

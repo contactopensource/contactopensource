@@ -31,4 +31,12 @@ class Place(models.Model):
         star_count = models.IntegerAttribute("A star count from 0-5, such as for a rating, or review, or priority, etc.")
         quick_response_code_id = models.ForeignKey("A quick-response (QR) code that uniquely identifies this card.", QuickResponseCodeId, on_delete=models.CASCADE)("A quick-response (QR) code that uniquely identifies this card.")
         universal_product_code_id = models.ForeignKey("A universal product code (UPC) that uniquely identifies this card.", UniversalProductCodeId, on_delete=models.CASCADE)("A universal product code (UPC) that uniquely identifies this card.")
+        latitude_as_decimal_degrees = models.UnknownAttribute("Latitude in decimal degrees.")
+        longitude_as_decimal_degrees = models.UnknownAttribute("Longitude in decimal degrees.")
+        altitude_agl_as_meters = models.UnknownAttribute("Altitude above ground level (AGL) in meters.")
+        altitude_msl_as_meters = models.UnknownAttribute("Altitude above mean sea level (MSL) in meters.")
+        elevation_agl_as_meters = models.UnknownAttribute("Elevation above ground level (AGL) in meters.")
+        elevation_msl_as_meters = models.UnknownAttribute("Elevation above mean sea level (MSL) in meters.")
+        what3words = models.TextAttribute("What3Words.com identifier text.")
+        whatfreewords = models.TextAttribute("WhatFreeWords.org identifier text.")
 

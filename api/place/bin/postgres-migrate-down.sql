@@ -12,4 +12,10 @@ DROP INDEX IF EXISTS index_place_name;
 DROP INDEX IF EXISTS index_place_subname;
 DROP INDEX IF EXISTS index_place_sign;
 DROP INDEX IF EXISTS index_place_kind;
+DROP INDEX IF EXISTS index_place_latitude_as_decimal_degrees;
+DROP INDEX IF EXISTS index_place_longitude_as_decimal_degrees;
+DROP INDEX IF EXISTS index_place_altitude_agl_as_meters;
+DROP INDEX IF EXISTS index_place_altitude_msl_as_meters;
+DROP INDEX IF EXISTS index_place_elevation_agl_as_meters;
+DROP INDEX IF EXISTS index_place_elevation_msl_as_meters;
 

@@ -19,36 +19,36 @@ place:
     - !include ../_card.yml
     - Main:
       - latitude_as_decimal_degrees:
-          help: Latitude in decimal degrees.
+          help: "Latitude in decimal degrees."
           type: decimal_degrees
           index: true
-          sql: latitude_as_decimal_degrees numeric(9, 7) CONSTRAINT latitude_as_decimal_degrees_check CHECK (latitude_as_decimal_degrees BETWEEN -90.0 AND 90.0),
+          sql: "latitude_as_decimal_degrees numeric(9, 7) CONSTRAINT latitude_as_decimal_degrees_check CHECK (latitude_as_decimal_degrees BETWEEN -90.0 AND 90.0),"
       - longitude_as_decimal_degrees:
-          help: Longitude in decimal degrees.
+          help: "Longitude in decimal degrees."
           type: decimal_degrees
           index: true
-          sql: longitude_as_decimal_degrees numeric(10, 7) CONSTRAINT longitude_as_decimal_degrees_check CHECK (longitude_as_decimal_degrees BETWEEN -180.0 AND 180.0),
+          sql: "longitude_as_decimal_degrees numeric(10, 7) CONSTRAINT longitude_as_decimal_degrees_check CHECK (longitude_as_decimal_degrees BETWEEN -180.0 AND 180.0),"
       - altitude_agl_as_meters:
-          help: Altitude above ground level (AGL) in meters.
+          help: "Altitude above ground level (AGL) in meters."
           type: meters
           index: true
       - altitude_msl_as_meters:
-          help: Altitude above mean sea level (MSL) in meters.
+          help: "Altitude above mean sea level (MSL) in meters."
           type: meters
-          index:true
+          index: true
       - elevation_agl_as_meters:
-          help: Elevation above ground level (AGL) in meters.
+          help: "Elevation above ground level (AGL) in meters."
           type: meters
           index: true
       - elevation_msl_as_meters:
-          help: Elevation above mean sea level (MSL) in meters.
+          help: "Elevation above mean sea level (MSL) in meters."
           type: meters
           index: true
       - what3words:
-          help: What3Words.com identifier text.
-          type: text
+          help: "What3Words.com identifier text."
           example: "rubble.occurs.holds"
-      - whatfreewords:
-          help: WhatFreeWords.org identifier text.
           type: text
+      - whatfreewords:
+          help: "WhatFreeWords.org identifier text."
           example: "burst.fully.things"
+          type: text

@@ -32,6 +32,14 @@ mix phx.gen.html \
         star_count:integerNone \
         quick_response_code_id:referencesNone \
         universal_product_code_id:referencesNone \
+        latitude_as_decimal_degrees:decimal_degrees:index \
+        longitude_as_decimal_degrees:decimal_degrees:index \
+        altitude_agl_as_meters:meters:index \
+        altitude_msl_as_meters:meters:index \
+        elevation_agl_as_meters:meters:index \
+        elevation_msl_as_meters:meters:index \
+        what3words:textNone \
+        whatfreewords:textNone \
     --force \
     --no-timestamps \
 

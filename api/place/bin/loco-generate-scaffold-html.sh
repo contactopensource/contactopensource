@@ -32,4 +32,12 @@ cargo loco generate scaffold --html \
         star_count:integer \
         quick_response_code_id:references \
         universal_product_code_id:references \
+        latitude_as_decimal_degrees:decimal_degrees \
+        longitude_as_decimal_degrees:decimal_degrees \
+        altitude_agl_as_meters:meters \
+        altitude_msl_as_meters:meters \
+        elevation_agl_as_meters:meters \
+        elevation_msl_as_meters:meters \
+        what3words:text \
+        whatfreewords:text \
 
