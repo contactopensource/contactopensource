@@ -1,0 +1,52 @@
+plan_invest:
+  title: Plan INVEST
+  model: PlanINVEST
+  summary: |-
+
+    Plan INVEST criteria, such as for agile items: Independent, Negotiable, Valuable, Estimable, Small, and Testable.
+
+  description: |-
+
+    Plan INVEST criteria, such as for agile user stories: 
+    
+    * Independent: must be self-contained.
+    
+    * Negotiable: must enable space for discussion, and is not an explicit contract.
+    
+    * Valuable: must deliver value to the stakeholders, such as the customers and users.
+    
+    * Estimable: must always be able to estimate, such as for time, cost, and materials.
+    
+    * Small: must be possible to plan/task/order within a level of accuracy.
+    
+    * Testable: must provide the necessary information to make test development possible.
+
+    https://en.wikipedia.org/wiki/INVEST_(mnemonic)
+
+  module: Plan
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - plan_id:
+          type: plan.id
+      - independent_as_markdown:
+          help: "Independent: must be self-contained."
+          type: string
+      - negotiable_as_markdown:
+          help: "Negotiable: must enable space for discussion, and is not an explicit contract."
+          type: string
+      - valuable_as_markdown:
+          help: "Valuable: must deliver value to the stakeholders, such as the customers and users."
+          type: string
+      - estimable_as_markdown:
+          help: "Estimable: must always be able to estimate, such as for time, cost, and materials."
+          type: string
+      - small_as_markdown:
+          help: "Small: must be possible to plan/task/order within a level of accuracy."
+          type: string
+      - testable_as_markdown:
+          help: "Testable: must provide the necessary information to make test development possible."
+          type: string
+  rails_model_extras: |-
+    belongs_to: plan
