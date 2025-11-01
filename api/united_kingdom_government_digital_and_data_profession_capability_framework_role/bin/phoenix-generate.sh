@@ -9,11 +9,11 @@ mix phx.gen.html \
         created_by:url:index \
         updated_at:timestamp_utc_usec:index \
         updated_by:url:index \
-        deleted_at:timestamp_utc_usec:index \
-        deleted_by:url:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:url:index \
         locale_code:string:index \
         tagging:string:index \
-        family_id:united_kingdom_government_digital_and_data_profession_capability_framework_role_family.id:index \
+        family_id:references:index \
         name:stringNone \
         url:urlNone \
         description_as_markdown:markdownNone \

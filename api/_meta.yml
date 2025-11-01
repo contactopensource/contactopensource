@@ -22,11 +22,11 @@
             help: The user/agent/service/etc. that did this.
             type: url
             index: true
-        - deleted_at:
+        - retired_at:
             help: The time when this happened.
             type: timestamp_utc_usec
             index: true
-        - deleted_by:
+        - retired_by:
             help: The user/agent/service/etc. that did this.
             type: url
             index: true

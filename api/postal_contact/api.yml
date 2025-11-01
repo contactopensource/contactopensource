@@ -20,7 +20,7 @@ postal_contact:
       - freeform:
           help: freeform
           type: text
-          example: "123 Main, San Fran, Cali"
+          example: "123 Main, San Fran, Cali, America"
       - country_text:
           help: A country means a generally recognized country, or in some cases, like Hong Kong, an area of quasi-national administrative status that has a designated country code under ISO 3166-1. If possible, aim for ISO 3166-1.
           type: text

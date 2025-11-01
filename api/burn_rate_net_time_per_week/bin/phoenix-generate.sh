@@ -9,8 +9,8 @@ mix phx.gen.html \
         created_by:url:index \
         updated_at:timestamp_utc_usec:index \
         updated_by:url:index \
-        deleted_at:timestamp_utc_usec:index \
-        deleted_by:url:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:url:index \
         locale_code:string:index \
         tagging:string:index \
         actual:numeric(7,2)None \

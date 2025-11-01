@@ -14,9 +14,11 @@ access_permission:
   model: AccessPermission
   attribute_groups:
     - join:
-      - access_attribute_it:
+      - access_attribute_id:
           type: access_attribute.id
           example: access attribute "reader"
+          belongs_to_model: AccessAttribute
       - access_operation_id:
           type: access_operation.id
           example: access operation "read"
+          belongs_to_model: AccessOperation

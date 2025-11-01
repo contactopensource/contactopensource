@@ -6,8 +6,8 @@ CREATE INDEX index_libraries_org_identifier_created_at on libraries_org_identifi
 CREATE INDEX index_libraries_org_identifier_created_by on libraries_org_identifier(created_by);
 CREATE INDEX index_libraries_org_identifier_updated_at on libraries_org_identifier(updated_at);
 CREATE INDEX index_libraries_org_identifier_updated_by on libraries_org_identifier(updated_by);
-CREATE INDEX index_libraries_org_identifier_deleted_at on libraries_org_identifier(deleted_at);
-CREATE INDEX index_libraries_org_identifier_deleted_by on libraries_org_identifier(deleted_by);
+CREATE INDEX index_libraries_org_identifier_retired_at on libraries_org_identifier(retired_at);
+CREATE INDEX index_libraries_org_identifier_retired_by on libraries_org_identifier(retired_by);
 CREATE INDEX index_libraries_org_identifier_locale_code on libraries_org_identifier(locale_code);
 CREATE INDEX index_libraries_org_identifier_tagging on libraries_org_identifier(tagging);
 CREATE INDEX index_libraries_org_identifier_name on libraries_org_identifier(name);

@@ -3,8 +3,8 @@ set -euf
 
 mix phx.gen.html \
     Access AccessPermission None \
-        access_attribute_it:access_attribute.idNone \
-        access_operation_id:access_operation.idNone \
+        access_attribute_id:referencesNone \
+        access_operation_id:referencesNone \
     --force \
     --no-timestamps \
 

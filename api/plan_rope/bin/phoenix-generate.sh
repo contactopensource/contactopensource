@@ -9,8 +9,8 @@ mix phx.gen.html \
         created_by:url:index \
         updated_at:timestamp_utc_usec:index \
         updated_by:url:index \
-        deleted_at:timestamp_utc_usec:index \
-        deleted_by:url:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:url:index \
         locale_code:string:index \
         tagging:string:index \
         name:"string{50}":index \
@@ -30,14 +30,14 @@ mix phx.gen.html \
         main_image_1080x1920_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
-        quick_response_code_id:quick_response_code.idNone \
-        universal_product_code_id:universal_product_code.idNone \
-        plan_id:plan.idNone \
-        measurement_unit_id:measurement_unit.idNone \
-        realistic:card.idNone \
-        optimistic:card.idNone \
-        pessimistic:card.idNone \
-        equilibristic:card.idNone \
+        quick_response_code_id:referencesNone \
+        universal_product_code_id:referencesNone \
+        plan_id:referencesNone \
+        measurement_unit_id:referencesNone \
+        realistic:referencesNone \
+        optimistic:referencesNone \
+        pessimistic:referencesNone \
+        equilibristic:referencesNone \
     --force \
     --no-timestamps \
 

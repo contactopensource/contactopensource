@@ -6,8 +6,8 @@ CREATE INDEX index_tz_database_2024b_created_at on tz_database_2024b(created_at)
 CREATE INDEX index_tz_database_2024b_created_by on tz_database_2024b(created_by);
 CREATE INDEX index_tz_database_2024b_updated_at on tz_database_2024b(updated_at);
 CREATE INDEX index_tz_database_2024b_updated_by on tz_database_2024b(updated_by);
-CREATE INDEX index_tz_database_2024b_deleted_at on tz_database_2024b(deleted_at);
-CREATE INDEX index_tz_database_2024b_deleted_by on tz_database_2024b(deleted_by);
+CREATE INDEX index_tz_database_2024b_retired_at on tz_database_2024b(retired_at);
+CREATE INDEX index_tz_database_2024b_retired_by on tz_database_2024b(retired_by);
 CREATE INDEX index_tz_database_2024b_locale_code on tz_database_2024b(locale_code);
 CREATE INDEX index_tz_database_2024b_tagging on tz_database_2024b(tagging);
 CREATE INDEX index_tz_database_2024b_name on tz_database_2024b(name);

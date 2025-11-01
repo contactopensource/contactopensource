@@ -1,5 +1,5 @@
       likert_5:
         - likert_5:
-            help: Likert 5-point scale value. This is a survey tool with five options, typically -2, -1, 0, 1, 2. This is used to measure a respondent's level of agreement or opinion. Examples include options like "Strongly disagree," "Disagree," "Neutral," "Agree," and "Strongly agree". The scale is used to capture a balanced range of attitudes and can be used for things like performance ratings, where the options might be "Unsatisfactory," "Needs Improvement," "Meets Expectations," "Exceeds Expectations," and "Outstanding". 
+            help: Likert 5-point scale value. This is a survey tool with five options, typically -2, -1, 0, 1, 2. This is used to measure a respondent's level of agreement or opinion. Examples include options like "Strongly disagree," "Disagree," "Neutral," "Agree," and "Strongly agree". The scale is used to capture a balanced range of attitudes and can be used for things like performance ratings, where the options might be "Unsatisfactory," "Needs Improvement," "Meets Expectations," "Exceeds Expectations," and "Outstanding".
             type: int
             sql: likert_5 INT CONSTRAINT likert_5_check CHECK (likert_5 BETWEEN -2 AND 2)

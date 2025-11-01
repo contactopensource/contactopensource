@@ -8,8 +8,8 @@ rails generate scaffold \
         created_by:text:index \
         updated_at:timestamp_utc_usec:index \
         updated_by:text:index \
-        deleted_at:timestamp_utc_usec:index \
-        deleted_by:text:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:text:index \
         locale_code:string:index \
         tagging:string:index \
         deployment_frequency_actual:numeric(7,2) \

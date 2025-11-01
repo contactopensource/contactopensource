@@ -6,8 +6,8 @@ CREATE INDEX index_universal_product_code_created_at on universal_product_code(c
 CREATE INDEX index_universal_product_code_created_by on universal_product_code(created_by);
 CREATE INDEX index_universal_product_code_updated_at on universal_product_code(updated_at);
 CREATE INDEX index_universal_product_code_updated_by on universal_product_code(updated_by);
-CREATE INDEX index_universal_product_code_deleted_at on universal_product_code(deleted_at);
-CREATE INDEX index_universal_product_code_deleted_by on universal_product_code(deleted_by);
+CREATE INDEX index_universal_product_code_retired_at on universal_product_code(retired_at);
+CREATE INDEX index_universal_product_code_retired_by on universal_product_code(retired_by);
 CREATE INDEX index_universal_product_code_locale_code on universal_product_code(locale_code);
 CREATE INDEX index_universal_product_code_tagging on universal_product_code(tagging);
 CREATE INDEX index_universal_product_code_code on universal_product_code(code);

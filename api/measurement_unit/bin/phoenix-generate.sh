@@ -9,15 +9,15 @@ mix phx.gen.html \
         created_by:url:index \
         updated_at:timestamp_utc_usec:index \
         updated_by:url:index \
-        deleted_at:timestamp_utc_usec:index \
-        deleted_by:url:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:url:index \
         locale_code:string:index \
         tagging:string:index \
         name:textNone \
         symbol:textNone \
-        measurement_system_id:measurement_system.idNone \
-        numerator:measurement_unit.idNone \
-        denominator:measurement_unit.idNone \
+        measurement_system_id:referencesNone \
+        numerator:referencesNone \
+        denominator:referencesNone \
     --force \
     --no-timestamps \
 

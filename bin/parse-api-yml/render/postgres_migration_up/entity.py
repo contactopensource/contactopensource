@@ -9,5 +9,5 @@ def render(args, entity):
         for attribute_group in entity.attribute_groups:
             for attribute in attribute_group.attributes:
                 if attribute.index:
-                    s += f"CREATE INDEX index_{entity.id}_{attribute.id} on {entity.id}({attribute.id});\n"
+                    s += f"CREATE INDEX {entity.id}_{attribute.id}_index on {entity.id}({attribute.id});\n"
     return s.strip() + "\n\n"

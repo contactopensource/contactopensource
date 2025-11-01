@@ -4,8 +4,8 @@ DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_created_at;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_created_by;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_updated_at;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_updated_by;
-DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_deleted_at;
-DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_deleted_by;
+DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_retired_at;
+DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_retired_by;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_locale_code;
 DROP INDEX IF EXISTS index_color_point_cymk_as_unit_interval_tagging;
 

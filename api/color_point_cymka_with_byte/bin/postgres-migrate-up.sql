@@ -6,8 +6,8 @@ CREATE INDEX index_color_point_cymka_as_byte_created_at on color_point_cymka_as_
 CREATE INDEX index_color_point_cymka_as_byte_created_by on color_point_cymka_as_byte(created_by);
 CREATE INDEX index_color_point_cymka_as_byte_updated_at on color_point_cymka_as_byte(updated_at);
 CREATE INDEX index_color_point_cymka_as_byte_updated_by on color_point_cymka_as_byte(updated_by);
-CREATE INDEX index_color_point_cymka_as_byte_deleted_at on color_point_cymka_as_byte(deleted_at);
-CREATE INDEX index_color_point_cymka_as_byte_deleted_by on color_point_cymka_as_byte(deleted_by);
+CREATE INDEX index_color_point_cymka_as_byte_retired_at on color_point_cymka_as_byte(retired_at);
+CREATE INDEX index_color_point_cymka_as_byte_retired_by on color_point_cymka_as_byte(retired_by);
 CREATE INDEX index_color_point_cymka_as_byte_locale_code on color_point_cymka_as_byte(locale_code);
 CREATE INDEX index_color_point_cymka_as_byte_tagging on color_point_cymka_as_byte(tagging);
 

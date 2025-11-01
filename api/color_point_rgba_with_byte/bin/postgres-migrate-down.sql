@@ -4,8 +4,8 @@ DROP INDEX IF EXISTS index_color_point_rgba_with_byte_created_at;
 DROP INDEX IF EXISTS index_color_point_rgba_with_byte_created_by;
 DROP INDEX IF EXISTS index_color_point_rgba_with_byte_updated_at;
 DROP INDEX IF EXISTS index_color_point_rgba_with_byte_updated_by;
-DROP INDEX IF EXISTS index_color_point_rgba_with_byte_deleted_at;
-DROP INDEX IF EXISTS index_color_point_rgba_with_byte_deleted_by;
+DROP INDEX IF EXISTS index_color_point_rgba_with_byte_retired_at;
+DROP INDEX IF EXISTS index_color_point_rgba_with_byte_retired_by;
 DROP INDEX IF EXISTS index_color_point_rgba_with_byte_locale_code;
 DROP INDEX IF EXISTS index_color_point_rgba_with_byte_tagging;
 

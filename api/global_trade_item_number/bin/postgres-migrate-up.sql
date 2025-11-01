@@ -6,8 +6,8 @@ CREATE INDEX index_global_trade_item_number_created_at on global_trade_item_numb
 CREATE INDEX index_global_trade_item_number_created_by on global_trade_item_number(created_by);
 CREATE INDEX index_global_trade_item_number_updated_at on global_trade_item_number(updated_at);
 CREATE INDEX index_global_trade_item_number_updated_by on global_trade_item_number(updated_by);
-CREATE INDEX index_global_trade_item_number_deleted_at on global_trade_item_number(deleted_at);
-CREATE INDEX index_global_trade_item_number_deleted_by on global_trade_item_number(deleted_by);
+CREATE INDEX index_global_trade_item_number_retired_at on global_trade_item_number(retired_at);
+CREATE INDEX index_global_trade_item_number_retired_by on global_trade_item_number(retired_by);
 CREATE INDEX index_global_trade_item_number_locale_code on global_trade_item_number(locale_code);
 CREATE INDEX index_global_trade_item_number_tagging on global_trade_item_number(tagging);
 CREATE INDEX index_global_trade_item_number_name on global_trade_item_number(name);

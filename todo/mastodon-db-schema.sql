@@ -855,7 +855,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_07_150100) do
 
   create_table "rules", force: :cascade do |t|
     t.integer "priority", default: 0, null: false
-    t.datetime "deleted_at", precision: nil
+    t.datetime "retired_at", precision: nil
     t.text "text", default: "", null: false
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
@@ -980,15 +980,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_07_150100) do
     t.bigint "application_id"
     t.bigint "in_reply_to_account_id"
     t.bigint "poll_id"
-    t.datetime "deleted_at", precision: nil
+    t.datetime "retired_at", precision: nil
     t.datetime "edited_at", precision: nil
     t.boolean "trendable"
     t.bigint "ordered_media_attachment_ids", array: true
-    t.index ["account_id", "id", "visibility", "updated_at"], name: "index_statuses_20190820", order: { id: :desc }, where: "(deleted_at IS NULL)"
+    t.index ["account_id", "id", "visibility", "updated_at"], name: "index_statuses_20190820", order: { id: :desc }, where: "(retired_at IS NULL)"
     t.index ["account_id"], name: "index_statuses_on_account_id"
-    t.index ["deleted_at"], name: "index_statuses_on_deleted_at", where: "(deleted_at IS NOT NULL)"
-    t.index ["id", "account_id"], name: "index_statuses_local_20190824", order: { id: :desc }, where: "((local OR (uri IS NULL)) AND (deleted_at IS NULL) AND (visibility = 0) AND (reblog_of_id IS NULL) AND ((NOT reply) OR (in_reply_to_account_id = account_id)))"
-    t.index ["id", "account_id"], name: "index_statuses_public_20200119", order: { id: :desc }, where: "((deleted_at IS NULL) AND (visibility = 0) AND (reblog_of_id IS NULL) AND ((NOT reply) OR (in_reply_to_account_id = account_id)))"
+    t.index ["retired_at"], name: "index_statuses_on_retired_at", where: "(retired_at IS NOT NULL)"
+    t.index ["id", "account_id"], name: "index_statuses_local_20190824", order: { id: :desc }, where: "((local OR (uri IS NULL)) AND (retired_at IS NULL) AND (visibility = 0) AND (reblog_of_id IS NULL) AND ((NOT reply) OR (in_reply_to_account_id = account_id)))"
+    t.index ["id", "account_id"], name: "index_statuses_public_20200119", order: { id: :desc }, where: "((retired_at IS NULL) AND (visibility = 0) AND (reblog_of_id IS NULL) AND ((NOT reply) OR (in_reply_to_account_id = account_id)))"
     t.index ["in_reply_to_account_id"], name: "index_statuses_on_in_reply_to_account_id", where: "(in_reply_to_account_id IS NOT NULL)"
     t.index ["in_reply_to_id"], name: "index_statuses_on_in_reply_to_id", where: "(in_reply_to_id IS NOT NULL)"
     t.index ["reblog_of_id", "account_id"], name: "index_statuses_on_reblog_of_id_and_account_id"
@@ -1336,7 +1336,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_07_150100) do
               statuses.language,
               statuses.sensitive
              FROM statuses
-            WHERE ((statuses.account_id = accounts.id) AND (statuses.deleted_at IS NULL) AND (statuses.reblog_of_id IS NULL))
+            WHERE ((statuses.account_id = accounts.id) AND (statuses.retired_at IS NULL) AND (statuses.reblog_of_id IS NULL))
             ORDER BY statuses.id DESC
            LIMIT 20) t0)
     WHERE ((accounts.suspended_at IS NULL) AND (accounts.silenced_at IS NULL) AND (accounts.moved_to_account_id IS NULL) AND (accounts.discoverable = true) AND (accounts.locked = false))

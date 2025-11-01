@@ -15,9 +15,11 @@ access_assignment:
       - access_agent_id:
           type: access_agent.id
           example: access agent "alice"
+          belongs_to_model: AccessAgent
       - access_attribute_id:
           type: access_attribute.id
           example: access attribute "reader"
+          belongs_to_model: AccessAttribute
   rails_model_extras: |-
     belongs_to: access_agent
     belongs_to: access_attribute

@@ -9,8 +9,8 @@ cargo loco generate scaffold --html \
         created_by:url \
         updated_at:timestamp_utc_usec \
         updated_by:url \
-        deleted_at:timestamp_utc_usec \
-        deleted_by:url \
+        retired_at:timestamp_utc_usec \
+        retired_by:url \
         locale_code:string \
         tagging:string \
         family_id:references:united_kingdom_government_digital_and_data_profession_capability_framework_role_family \

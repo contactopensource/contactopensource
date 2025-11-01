@@ -6,8 +6,8 @@ CREATE INDEX index_total_project_control_created_at on total_project_control(cre
 CREATE INDEX index_total_project_control_created_by on total_project_control(created_by);
 CREATE INDEX index_total_project_control_updated_at on total_project_control(updated_at);
 CREATE INDEX index_total_project_control_updated_by on total_project_control(updated_by);
-CREATE INDEX index_total_project_control_deleted_at on total_project_control(deleted_at);
-CREATE INDEX index_total_project_control_deleted_by on total_project_control(deleted_by);
+CREATE INDEX index_total_project_control_retired_at on total_project_control(retired_at);
+CREATE INDEX index_total_project_control_retired_by on total_project_control(retired_by);
 CREATE INDEX index_total_project_control_locale_code on total_project_control(locale_code);
 CREATE INDEX index_total_project_control_tagging on total_project_control(tagging);
 

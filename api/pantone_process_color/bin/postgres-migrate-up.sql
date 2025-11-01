@@ -6,8 +6,8 @@ CREATE INDEX index_pantone_process_color_created_at on pantone_process_color(cre
 CREATE INDEX index_pantone_process_color_created_by on pantone_process_color(created_by);
 CREATE INDEX index_pantone_process_color_updated_at on pantone_process_color(updated_at);
 CREATE INDEX index_pantone_process_color_updated_by on pantone_process_color(updated_by);
-CREATE INDEX index_pantone_process_color_deleted_at on pantone_process_color(deleted_at);
-CREATE INDEX index_pantone_process_color_deleted_by on pantone_process_color(deleted_by);
+CREATE INDEX index_pantone_process_color_retired_at on pantone_process_color(retired_at);
+CREATE INDEX index_pantone_process_color_retired_by on pantone_process_color(retired_by);
 CREATE INDEX index_pantone_process_color_locale_code on pantone_process_color(locale_code);
 CREATE INDEX index_pantone_process_color_tagging on pantone_process_color(tagging);
 CREATE INDEX index_pantone_process_color_key on pantone_process_color(key);

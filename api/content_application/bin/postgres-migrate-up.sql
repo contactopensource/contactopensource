@@ -6,8 +6,8 @@ CREATE INDEX index_content_application_created_at on content_application(created
 CREATE INDEX index_content_application_created_by on content_application(created_by);
 CREATE INDEX index_content_application_updated_at on content_application(updated_at);
 CREATE INDEX index_content_application_updated_by on content_application(updated_by);
-CREATE INDEX index_content_application_deleted_at on content_application(deleted_at);
-CREATE INDEX index_content_application_deleted_by on content_application(deleted_by);
+CREATE INDEX index_content_application_retired_at on content_application(retired_at);
+CREATE INDEX index_content_application_retired_by on content_application(retired_by);
 CREATE INDEX index_content_application_locale_code on content_application(locale_code);
 CREATE INDEX index_content_application_tagging on content_application(tagging);
 CREATE INDEX index_content_application_name on content_application(name);

@@ -20,8 +20,8 @@ mix phx.gen.html \
         main_image_1080x1920_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
-        quick_response_code_id:quick_response_code.idNone \
-        universal_product_code_id:universal_product_code.idNone \
+        quick_response_code_id:referencesNone \
+        universal_product_code_id:referencesNone \
     --force \
     --no-timestamps \
 

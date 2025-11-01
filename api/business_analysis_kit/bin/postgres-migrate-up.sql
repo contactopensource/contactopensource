@@ -6,8 +6,8 @@ CREATE INDEX index_business_analysis_kit_created_at on business_analysis_kit(cre
 CREATE INDEX index_business_analysis_kit_created_by on business_analysis_kit(created_by);
 CREATE INDEX index_business_analysis_kit_updated_at on business_analysis_kit(updated_at);
 CREATE INDEX index_business_analysis_kit_updated_by on business_analysis_kit(updated_by);
-CREATE INDEX index_business_analysis_kit_deleted_at on business_analysis_kit(deleted_at);
-CREATE INDEX index_business_analysis_kit_deleted_by on business_analysis_kit(deleted_by);
+CREATE INDEX index_business_analysis_kit_retired_at on business_analysis_kit(retired_at);
+CREATE INDEX index_business_analysis_kit_retired_by on business_analysis_kit(retired_by);
 CREATE INDEX index_business_analysis_kit_locale_code on business_analysis_kit(locale_code);
 CREATE INDEX index_business_analysis_kit_tagging on business_analysis_kit(tagging);
 

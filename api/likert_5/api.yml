@@ -7,8 +7,8 @@ likert_5:
 
   description: |-
 
-    This is a survey tool with five options, typically -2, -1, 0, 1, 2. 
-    
+    This is a survey tool with five options, typically -2, -1, 0, 1, 2.
+
     This is used to measure a respondent's level of agreement, assessment, opinion, evaluation, etc.
 
     Example: Agreement scale
@@ -17,7 +17,7 @@ likert_5:
     - Disagree
     - Neutral
     - Agree
-    - Strongly agree 
+    - Strongly agree
 
     Example: Difficulty scale
 
@@ -25,7 +25,7 @@ likert_5:
     - Moderately Hard
     - Average
     - Moderately Easy
-    - Extremely Easy 
+    - Extremely Easy
 
     Example: Support scale
 
@@ -33,7 +33,7 @@ likert_5:
     - Somewhat oppose
     - Neutral
     - Somewhat favor
-    - Strongly favor     
+    - Strongly favor
 
     Example: Evaluation scale
 

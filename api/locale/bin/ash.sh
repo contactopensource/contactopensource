@@ -12,8 +12,8 @@ mix ash.gen.resource \
     --attribute created_by:text \
     --attribute updated_at:timestamp_utc_usec \
     --attribute updated_by:text \
-    --attribute deleted_at:timestamp_utc_usec \
-    --attribute deleted_by:text \
+    --attribute retired_at:timestamp_utc_usec \
+    --attribute retired_by:text \
     --attribute locale_code:string \
     --attribute tagging:string \
     --attribute text:text \

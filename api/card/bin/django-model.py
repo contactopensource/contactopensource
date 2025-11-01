@@ -19,6 +19,6 @@ class Card(models.Model):
         main_image_1080x1920_alt = models.TextAttribute("A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as an alternate text description.")
         emoji = models.TextAttribute("Any emoji related to the item, such as for a badge, or indicator, or expression, etc.")
         star_count = models.IntegerAttribute("A star count from 0-5, such as for a rating, or review, or priority, etc.")
-        quick_response_code_id = models.UnknownAttribute("A quick-response (QR) code that uniquely identifies this card.")
-        universal_product_code_id = models.UnknownAttribute("A universal product code (UPC) that uniquely identifies this card.")
+        quick_response_code_id = models.ForeignKey("A quick-response (QR) code that uniquely identifies this card.", QuickResponseCodeId, on_delete=models.CASCADE)("A quick-response (QR) code that uniquely identifies this card.")
+        universal_product_code_id = models.ForeignKey("A universal product code (UPC) that uniquely identifies this card.", UniversalProductCodeId, on_delete=models.CASCADE)("A universal product code (UPC) that uniquely identifies this card.")
 

@@ -9,8 +9,8 @@ mix phx.gen.html \
         created_by:url:index \
         updated_at:timestamp_utc_usec:index \
         updated_by:url:index \
-        deleted_at:timestamp_utc_usec:index \
-        deleted_by:url:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:url:index \
         locale_code:string:index \
         tagging:string:index \
         name:"string{50}":index \
@@ -30,8 +30,8 @@ mix phx.gen.html \
         main_image_1080x1920_alt:textNone \
         emoji:textNone \
         star_count:integerNone \
-        quick_response_code_id:quick_response_code.idNone \
-        universal_product_code_id:universal_product_code.idNone \
+        quick_response_code_id:referencesNone \
+        universal_product_code_id:referencesNone \
         name:textNone \
         code:textNone \
         icon:textNone \
@@ -39,7 +39,7 @@ mix phx.gen.html \
         note:textNone \
         creator_name:textNone \
         prefer_file_extension:textNone \
-        prefer_media_type_id:media_type.idNone \
+        prefer_media_type_id:referencesNone \
         lossy_flag:booleanNone \
         floss_flag:booleanNone \
         fixed_bit_rate:numeric(7,2)None \

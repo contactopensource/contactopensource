@@ -5,7 +5,7 @@ hide circle
 
 entity access_permission {
   .. join ..
-  access_attribute_it : access_attribute.id
+  access_attribute_id : access_attribute.id 🔑
   access_operation_id : access_operation.id 🔑
 }
 

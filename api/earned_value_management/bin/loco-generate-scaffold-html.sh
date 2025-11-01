@@ -9,8 +9,8 @@ cargo loco generate scaffold --html \
         created_by:url \
         updated_at:timestamp_utc_usec \
         updated_by:url \
-        deleted_at:timestamp_utc_usec \
-        deleted_by:url \
+        retired_at:timestamp_utc_usec \
+        retired_by:url \
         locale_code:string \
         tagging:string \
         planned_value:numeric(7,2) \

@@ -4,8 +4,8 @@ DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_created_at;
 DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_created_by;
 DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_updated_at;
 DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_updated_by;
-DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_deleted_at;
-DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_deleted_by;
+DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_retired_at;
+DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_retired_by;
 DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_locale_code;
 DROP INDEX IF EXISTS index_net_promoter_score_worker_perspective_tagging;
 

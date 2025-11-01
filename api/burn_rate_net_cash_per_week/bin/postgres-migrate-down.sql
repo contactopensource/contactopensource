@@ -4,8 +4,8 @@ DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_created_at;
 DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_created_by;
 DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_updated_at;
 DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_updated_by;
-DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_deleted_at;
-DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_deleted_by;
+DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_retired_at;
+DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_retired_by;
 DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_locale_code;
 DROP INDEX IF EXISTS index_burn_rate_net_cash_per_week_tagging;
 

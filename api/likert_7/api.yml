@@ -8,7 +8,7 @@ likert_7:
   description: |-
 
     This is a survey tool with five options, typically -3, -2, -1, 0, 1, 2, 3.
-    
+
     This is used to measure a respondent's level of agreement, assessment, opinion, evaluation, etc.
 
     Example: Agreement scale
@@ -18,8 +18,8 @@ likert_7:
     - Slightly Disagree
     - Neutral
     - Slightly Agree
-    - Somewhat Agree 
-    - Strongly Agree 
+    - Somewhat Agree
+    - Strongly Agree
 
     Example: Difficulty scale
 
@@ -29,7 +29,7 @@ likert_7:
     - Average
     - Minimally Easy
     - Moderately Easy
-    - Maximally Easy 
+    - Maximally Easy
 
     Example: Size
 
