@@ -1,0 +1,71 @@
+measurement_unit:
+  title: Measurement Unit
+  model: MeasurementUnit
+  summary: |-
+
+    A measurement unit, such as metre, second, metre/second, etc.
+
+  description: |-
+
+    The Unified Code for Units of Measure (UCUM) is a code system intended to
+    include all units of measures being contemporarily used in international
+    science, engineering, and business. The purpose is to facilitate unambiguous
+    electronic communication of quantities together with their units. The focus
+    is on electronic communication, as opposed to communication between humans.
+    A typical application of The Unified Code for Units of Measure are
+    electronic data interchange (EDI) protocols, but there is nothing that
+    prevents it from being used in other types of machine communication."
+
+    UCUM has been adopted internationally by many organizations such as IEEE,
+    DICOM, LOINC, and HL7, and is also in the ISO 11240:2012 standard.
+
+    https://github.com/LHNCBC/ucum-lhc/blob/master/data/ucum.csv
+
+    Terminology note: Both "units of measure" and "measurement units" are
+    correct and widely understood, with "units of measure" being a very common
+    and preferred term. Both phrases refer to standardized ways of quantifying
+    things like length, weight, volume, and time, with common examples including
+    meters, inches, pounds, and seconds.
+
+    CSV note: the columns in the data file are:
+    - Case-sensitive code	
+    - Name (display)
+    - Category
+    - Synonyms
+    - LOINC property
+    - Guidance
+    - Source
+
+  module: measurement
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - id:
+          help: Id is a case-sensitive code as defined by the UCUM data file
+          example: s
+          type: string
+          index: true
+      - name:
+          help: Name suitable for display
+          type: text
+          example: second - time
+      - category:
+          help: Category
+          example: Clinical
+          type: text
+      - synonyms:
+          help: Synonyms
+          example: seconds
+          type: text
+      - loinc_property:
+          help: LOINC property
+          example: Time
+          type: text
+      - guidance:
+          help: Guidance
+          example: todo
+          type: text
+      - source:
+          help: Source
+          example: UCUM
+          type: text
