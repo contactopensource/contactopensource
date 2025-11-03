@@ -26,8 +26,9 @@ def render(args, entity):
           actions do
             defaults [read: :*, destroy: :*, create: :*, update: :*]
           end
+          
         end
-        '''.strip())
+        ''')
 
         if args.write:
             with open(dir / "attributes.ex", "w") as f:
