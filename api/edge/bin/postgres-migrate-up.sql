@@ -1,17 +1,17 @@
 CREATE TABLE edge (
 );
 
-CREATE INDEX index_edge_id on edge(id);
-CREATE INDEX index_edge_created_at on edge(created_at);
-CREATE INDEX index_edge_created_by on edge(created_by);
-CREATE INDEX index_edge_updated_at on edge(updated_at);
-CREATE INDEX index_edge_updated_by on edge(updated_by);
-CREATE INDEX index_edge_retired_at on edge(retired_at);
-CREATE INDEX index_edge_retired_by on edge(retired_by);
-CREATE INDEX index_edge_locale_code on edge(locale_code);
-CREATE INDEX index_edge_tagging on edge(tagging);
-CREATE INDEX index_edge_name on edge(name);
-CREATE INDEX index_edge_subname on edge(subname);
-CREATE INDEX index_edge_sign on edge(sign);
-CREATE INDEX index_edge_kind on edge(kind);
+CREATE INDEX edge_id_index on edge(id);
+CREATE INDEX edge_created_at_index on edge(created_at);
+CREATE INDEX edge_created_by_index on edge(created_by);
+CREATE INDEX edge_updated_at_index on edge(updated_at);
+CREATE INDEX edge_updated_by_index on edge(updated_by);
+CREATE INDEX edge_retired_at_index on edge(retired_at);
+CREATE INDEX edge_retired_by_index on edge(retired_by);
+CREATE INDEX edge_locale_code_index on edge(locale_code);
+CREATE INDEX edge_tagging_index on edge(tagging);
+CREATE INDEX edge_name_index on edge(name);
+CREATE INDEX edge_subname_index on edge(subname);
+CREATE INDEX edge_sign_index on edge(sign);
+CREATE INDEX edge_kind_index on edge(kind);
 

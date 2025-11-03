@@ -1,17 +1,17 @@
 CREATE TABLE node (
 );
 
-CREATE INDEX index_node_id on node(id);
-CREATE INDEX index_node_created_at on node(created_at);
-CREATE INDEX index_node_created_by on node(created_by);
-CREATE INDEX index_node_updated_at on node(updated_at);
-CREATE INDEX index_node_updated_by on node(updated_by);
-CREATE INDEX index_node_retired_at on node(retired_at);
-CREATE INDEX index_node_retired_by on node(retired_by);
-CREATE INDEX index_node_locale_code on node(locale_code);
-CREATE INDEX index_node_tagging on node(tagging);
-CREATE INDEX index_node_name on node(name);
-CREATE INDEX index_node_subname on node(subname);
-CREATE INDEX index_node_sign on node(sign);
-CREATE INDEX index_node_kind on node(kind);
+CREATE INDEX node_id_index on node(id);
+CREATE INDEX node_created_at_index on node(created_at);
+CREATE INDEX node_created_by_index on node(created_by);
+CREATE INDEX node_updated_at_index on node(updated_at);
+CREATE INDEX node_updated_by_index on node(updated_by);
+CREATE INDEX node_retired_at_index on node(retired_at);
+CREATE INDEX node_retired_by_index on node(retired_by);
+CREATE INDEX node_locale_code_index on node(locale_code);
+CREATE INDEX node_tagging_index on node(tagging);
+CREATE INDEX node_name_index on node(name);
+CREATE INDEX node_subname_index on node(subname);
+CREATE INDEX node_sign_index on node(sign);
+CREATE INDEX node_kind_index on node(kind);
 

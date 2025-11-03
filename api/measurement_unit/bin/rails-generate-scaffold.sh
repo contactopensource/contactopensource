@@ -13,10 +13,12 @@ rails generate scaffold \
         locale_code:string:index \
         tagging:string:index \
         name:text \
-        symbol:text \
+        name_phonetic:text \
+        category:text \
+        synonyms:text \
+        loinc_property:text \
+        guidance:text \
         measurement_system_id:references \
-        numerator:references \
-        denominator:references \
     --force \
     --no-timestamps \
 

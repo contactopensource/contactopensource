@@ -12,7 +12,7 @@ from . import entity
 from ..helpers import sh
 
 def output_path():
-    return Path("bin", "ash.sh")
+    return Path("bin", "ash", "mix-ash-gen-resource.sh")
 
 def render(args, entities):
     return sh() + ''.join(map(partial(entity.render, args), entities))

@@ -1,17 +1,17 @@
 CREATE TABLE trait (
 );
 
-CREATE INDEX index_trait_id on trait(id);
-CREATE INDEX index_trait_created_at on trait(created_at);
-CREATE INDEX index_trait_created_by on trait(created_by);
-CREATE INDEX index_trait_updated_at on trait(updated_at);
-CREATE INDEX index_trait_updated_by on trait(updated_by);
-CREATE INDEX index_trait_retired_at on trait(retired_at);
-CREATE INDEX index_trait_retired_by on trait(retired_by);
-CREATE INDEX index_trait_locale_code on trait(locale_code);
-CREATE INDEX index_trait_tagging on trait(tagging);
-CREATE INDEX index_trait_name on trait(name);
-CREATE INDEX index_trait_subname on trait(subname);
-CREATE INDEX index_trait_sign on trait(sign);
-CREATE INDEX index_trait_kind on trait(kind);
+CREATE INDEX trait_id_index on trait(id);
+CREATE INDEX trait_created_at_index on trait(created_at);
+CREATE INDEX trait_created_by_index on trait(created_by);
+CREATE INDEX trait_updated_at_index on trait(updated_at);
+CREATE INDEX trait_updated_by_index on trait(updated_by);
+CREATE INDEX trait_retired_at_index on trait(retired_at);
+CREATE INDEX trait_retired_by_index on trait(retired_by);
+CREATE INDEX trait_locale_code_index on trait(locale_code);
+CREATE INDEX trait_tagging_index on trait(tagging);
+CREATE INDEX trait_name_index on trait(name);
+CREATE INDEX trait_subname_index on trait(subname);
+CREATE INDEX trait_sign_index on trait(sign);
+CREATE INDEX trait_kind_index on trait(kind);
 

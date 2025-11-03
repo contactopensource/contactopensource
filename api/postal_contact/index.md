@@ -70,7 +70,7 @@ card:
 
 Main:
 
-  * freeform: text - example: 123 Main, San Fran, Cali
+  * freeform: text - example: 123 Main, San Fran, Cali, America
 
   * country_text: text - example: "US" means United States
 

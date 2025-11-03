@@ -1,13 +1,13 @@
 CREATE TABLE business_analysis_kit (
 );
 
-CREATE INDEX index_business_analysis_kit_id on business_analysis_kit(id);
-CREATE INDEX index_business_analysis_kit_created_at on business_analysis_kit(created_at);
-CREATE INDEX index_business_analysis_kit_created_by on business_analysis_kit(created_by);
-CREATE INDEX index_business_analysis_kit_updated_at on business_analysis_kit(updated_at);
-CREATE INDEX index_business_analysis_kit_updated_by on business_analysis_kit(updated_by);
-CREATE INDEX index_business_analysis_kit_retired_at on business_analysis_kit(retired_at);
-CREATE INDEX index_business_analysis_kit_retired_by on business_analysis_kit(retired_by);
-CREATE INDEX index_business_analysis_kit_locale_code on business_analysis_kit(locale_code);
-CREATE INDEX index_business_analysis_kit_tagging on business_analysis_kit(tagging);
+CREATE INDEX business_analysis_kit_id_index on business_analysis_kit(id);
+CREATE INDEX business_analysis_kit_created_at_index on business_analysis_kit(created_at);
+CREATE INDEX business_analysis_kit_created_by_index on business_analysis_kit(created_by);
+CREATE INDEX business_analysis_kit_updated_at_index on business_analysis_kit(updated_at);
+CREATE INDEX business_analysis_kit_updated_by_index on business_analysis_kit(updated_by);
+CREATE INDEX business_analysis_kit_retired_at_index on business_analysis_kit(retired_at);
+CREATE INDEX business_analysis_kit_retired_by_index on business_analysis_kit(retired_by);
+CREATE INDEX business_analysis_kit_locale_code_index on business_analysis_kit(locale_code);
+CREATE INDEX business_analysis_kit_tagging_index on business_analysis_kit(tagging);
 

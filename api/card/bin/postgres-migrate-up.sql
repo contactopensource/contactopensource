@@ -1,8 +1,8 @@
 CREATE TABLE card (
 );
 
-CREATE INDEX index_card_name on card(name);
-CREATE INDEX index_card_subname on card(subname);
-CREATE INDEX index_card_sign on card(sign);
-CREATE INDEX index_card_kind on card(kind);
+CREATE INDEX card_name_index on card(name);
+CREATE INDEX card_subname_index on card(subname);
+CREATE INDEX card_sign_index on card(sign);
+CREATE INDEX card_kind_index on card(kind);
 

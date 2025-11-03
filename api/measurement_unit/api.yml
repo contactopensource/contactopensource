@@ -9,28 +9,43 @@ measurement_unit:
 
     A measurement unit, such as metre, second, metre/second, etc.
 
-    If the measurement unit is a ratio, such as metres/second,
-    then use the attributes for numerator and denominator.
+    See also Unified Code for Units of Measure (UCUM).
 
   module: measurement
   attribute_groups:
     - !include ../_meta.yml
     - Main:
-      - name:
-          help: name
-          type: text
-          example: second
-      - symbol:
-          help: symbol
-          type: text
+      - id:
+          help: Id is a case-sensitive unique code, such as the UCUM case-sensitive code.
           example: s
-      - measurement_system_id:
-          type:  measurement_system.id
-          example: metric
-    - Ratio:
-      - numerator:
-          type: measurement_unit.id
-          example: metre
-      - denominator:
-          type: measurement_unit.id
+          type: string
+          index: true
+      - name:
+          help: Name suitable for display
+          type: text
           example: second
+      - name_phonetic:
+          help: Name phonetic
+          type: text
+          example: ˈsɛkənd
+      - category:
+          help: Category
+          example: Clinical
+          type: text
+      - synonyms:
+          help: Synonyms
+          example: seconds
+          type: text
+      - loinc_property:
+          help: LOINC property
+          example: Time
+          type: text
+      - guidance:
+          help: Guidance
+          example: todo
+          type: text
+      - measurement_system_id:
+          help: Measurement system that is the source of this record
+          example: UCUM
+          type: measurement_system.id
+          

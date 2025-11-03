@@ -1,18 +1,18 @@
 CREATE TABLE libraries_org_identifier (
 );
 
-CREATE INDEX index_libraries_org_identifier_id on libraries_org_identifier(id);
-CREATE INDEX index_libraries_org_identifier_created_at on libraries_org_identifier(created_at);
-CREATE INDEX index_libraries_org_identifier_created_by on libraries_org_identifier(created_by);
-CREATE INDEX index_libraries_org_identifier_updated_at on libraries_org_identifier(updated_at);
-CREATE INDEX index_libraries_org_identifier_updated_by on libraries_org_identifier(updated_by);
-CREATE INDEX index_libraries_org_identifier_retired_at on libraries_org_identifier(retired_at);
-CREATE INDEX index_libraries_org_identifier_retired_by on libraries_org_identifier(retired_by);
-CREATE INDEX index_libraries_org_identifier_locale_code on libraries_org_identifier(locale_code);
-CREATE INDEX index_libraries_org_identifier_tagging on libraries_org_identifier(tagging);
-CREATE INDEX index_libraries_org_identifier_name on libraries_org_identifier(name);
-CREATE INDEX index_libraries_org_identifier_subname on libraries_org_identifier(subname);
-CREATE INDEX index_libraries_org_identifier_sign on libraries_org_identifier(sign);
-CREATE INDEX index_libraries_org_identifier_kind on libraries_org_identifier(kind);
-CREATE INDEX index_libraries_org_identifier_key on libraries_org_identifier(key);
+CREATE INDEX libraries_org_identifier_id_index on libraries_org_identifier(id);
+CREATE INDEX libraries_org_identifier_created_at_index on libraries_org_identifier(created_at);
+CREATE INDEX libraries_org_identifier_created_by_index on libraries_org_identifier(created_by);
+CREATE INDEX libraries_org_identifier_updated_at_index on libraries_org_identifier(updated_at);
+CREATE INDEX libraries_org_identifier_updated_by_index on libraries_org_identifier(updated_by);
+CREATE INDEX libraries_org_identifier_retired_at_index on libraries_org_identifier(retired_at);
+CREATE INDEX libraries_org_identifier_retired_by_index on libraries_org_identifier(retired_by);
+CREATE INDEX libraries_org_identifier_locale_code_index on libraries_org_identifier(locale_code);
+CREATE INDEX libraries_org_identifier_tagging_index on libraries_org_identifier(tagging);
+CREATE INDEX libraries_org_identifier_name_index on libraries_org_identifier(name);
+CREATE INDEX libraries_org_identifier_subname_index on libraries_org_identifier(subname);
+CREATE INDEX libraries_org_identifier_sign_index on libraries_org_identifier(sign);
+CREATE INDEX libraries_org_identifier_kind_index on libraries_org_identifier(kind);
+CREATE INDEX libraries_org_identifier_key_index on libraries_org_identifier(key);
 

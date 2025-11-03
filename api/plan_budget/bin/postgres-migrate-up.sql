@@ -1,17 +1,17 @@
 CREATE TABLE plan_budget (
 );
 
-CREATE INDEX index_plan_budget_id on plan_budget(id);
-CREATE INDEX index_plan_budget_created_at on plan_budget(created_at);
-CREATE INDEX index_plan_budget_created_by on plan_budget(created_by);
-CREATE INDEX index_plan_budget_updated_at on plan_budget(updated_at);
-CREATE INDEX index_plan_budget_updated_by on plan_budget(updated_by);
-CREATE INDEX index_plan_budget_retired_at on plan_budget(retired_at);
-CREATE INDEX index_plan_budget_retired_by on plan_budget(retired_by);
-CREATE INDEX index_plan_budget_locale_code on plan_budget(locale_code);
-CREATE INDEX index_plan_budget_tagging on plan_budget(tagging);
-CREATE INDEX index_plan_budget_name on plan_budget(name);
-CREATE INDEX index_plan_budget_subname on plan_budget(subname);
-CREATE INDEX index_plan_budget_sign on plan_budget(sign);
-CREATE INDEX index_plan_budget_kind on plan_budget(kind);
+CREATE INDEX plan_budget_id_index on plan_budget(id);
+CREATE INDEX plan_budget_created_at_index on plan_budget(created_at);
+CREATE INDEX plan_budget_created_by_index on plan_budget(created_by);
+CREATE INDEX plan_budget_updated_at_index on plan_budget(updated_at);
+CREATE INDEX plan_budget_updated_by_index on plan_budget(updated_by);
+CREATE INDEX plan_budget_retired_at_index on plan_budget(retired_at);
+CREATE INDEX plan_budget_retired_by_index on plan_budget(retired_by);
+CREATE INDEX plan_budget_locale_code_index on plan_budget(locale_code);
+CREATE INDEX plan_budget_tagging_index on plan_budget(tagging);
+CREATE INDEX plan_budget_name_index on plan_budget(name);
+CREATE INDEX plan_budget_subname_index on plan_budget(subname);
+CREATE INDEX plan_budget_sign_index on plan_budget(sign);
+CREATE INDEX plan_budget_kind_index on plan_budget(kind);
 

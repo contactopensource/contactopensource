@@ -1,20 +1,20 @@
 CREATE TABLE global_trade_item_number (
 );
 
-CREATE INDEX index_global_trade_item_number_id on global_trade_item_number(id);
-CREATE INDEX index_global_trade_item_number_created_at on global_trade_item_number(created_at);
-CREATE INDEX index_global_trade_item_number_created_by on global_trade_item_number(created_by);
-CREATE INDEX index_global_trade_item_number_updated_at on global_trade_item_number(updated_at);
-CREATE INDEX index_global_trade_item_number_updated_by on global_trade_item_number(updated_by);
-CREATE INDEX index_global_trade_item_number_retired_at on global_trade_item_number(retired_at);
-CREATE INDEX index_global_trade_item_number_retired_by on global_trade_item_number(retired_by);
-CREATE INDEX index_global_trade_item_number_locale_code on global_trade_item_number(locale_code);
-CREATE INDEX index_global_trade_item_number_tagging on global_trade_item_number(tagging);
-CREATE INDEX index_global_trade_item_number_name on global_trade_item_number(name);
-CREATE INDEX index_global_trade_item_number_subname on global_trade_item_number(subname);
-CREATE INDEX index_global_trade_item_number_sign on global_trade_item_number(sign);
-CREATE INDEX index_global_trade_item_number_kind on global_trade_item_number(kind);
-CREATE INDEX index_global_trade_item_number_code on global_trade_item_number(code);
-CREATE INDEX index_global_trade_item_number_prefix on global_trade_item_number(prefix);
-CREATE INDEX index_global_trade_item_number_item on global_trade_item_number(item);
+CREATE INDEX global_trade_item_number_id_index on global_trade_item_number(id);
+CREATE INDEX global_trade_item_number_created_at_index on global_trade_item_number(created_at);
+CREATE INDEX global_trade_item_number_created_by_index on global_trade_item_number(created_by);
+CREATE INDEX global_trade_item_number_updated_at_index on global_trade_item_number(updated_at);
+CREATE INDEX global_trade_item_number_updated_by_index on global_trade_item_number(updated_by);
+CREATE INDEX global_trade_item_number_retired_at_index on global_trade_item_number(retired_at);
+CREATE INDEX global_trade_item_number_retired_by_index on global_trade_item_number(retired_by);
+CREATE INDEX global_trade_item_number_locale_code_index on global_trade_item_number(locale_code);
+CREATE INDEX global_trade_item_number_tagging_index on global_trade_item_number(tagging);
+CREATE INDEX global_trade_item_number_name_index on global_trade_item_number(name);
+CREATE INDEX global_trade_item_number_subname_index on global_trade_item_number(subname);
+CREATE INDEX global_trade_item_number_sign_index on global_trade_item_number(sign);
+CREATE INDEX global_trade_item_number_kind_index on global_trade_item_number(kind);
+CREATE INDEX global_trade_item_number_code_index on global_trade_item_number(code);
+CREATE INDEX global_trade_item_number_prefix_index on global_trade_item_number(prefix);
+CREATE INDEX global_trade_item_number_item_index on global_trade_item_number(item);
 

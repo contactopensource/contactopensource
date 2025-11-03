@@ -1,17 +1,17 @@
 CREATE TABLE ability (
 );
 
-CREATE INDEX index_ability_id on ability(id);
-CREATE INDEX index_ability_created_at on ability(created_at);
-CREATE INDEX index_ability_created_by on ability(created_by);
-CREATE INDEX index_ability_updated_at on ability(updated_at);
-CREATE INDEX index_ability_updated_by on ability(updated_by);
-CREATE INDEX index_ability_retired_at on ability(retired_at);
-CREATE INDEX index_ability_retired_by on ability(retired_by);
-CREATE INDEX index_ability_locale_code on ability(locale_code);
-CREATE INDEX index_ability_tagging on ability(tagging);
-CREATE INDEX index_ability_name on ability(name);
-CREATE INDEX index_ability_subname on ability(subname);
-CREATE INDEX index_ability_sign on ability(sign);
-CREATE INDEX index_ability_kind on ability(kind);
+CREATE INDEX ability_id_index on ability(id);
+CREATE INDEX ability_created_at_index on ability(created_at);
+CREATE INDEX ability_created_by_index on ability(created_by);
+CREATE INDEX ability_updated_at_index on ability(updated_at);
+CREATE INDEX ability_updated_by_index on ability(updated_by);
+CREATE INDEX ability_retired_at_index on ability(retired_at);
+CREATE INDEX ability_retired_by_index on ability(retired_by);
+CREATE INDEX ability_locale_code_index on ability(locale_code);
+CREATE INDEX ability_tagging_index on ability(tagging);
+CREATE INDEX ability_name_index on ability(name);
+CREATE INDEX ability_subname_index on ability(subname);
+CREATE INDEX ability_sign_index on ability(sign);
+CREATE INDEX ability_kind_index on ability(kind);
 

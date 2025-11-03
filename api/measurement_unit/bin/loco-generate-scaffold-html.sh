@@ -13,9 +13,12 @@ cargo loco generate scaffold --html \
         retired_by:url \
         locale_code:string \
         tagging:string \
+        id:string \
         name:text \
-        symbol:text \
+        name_phonetic:text \
+        category:text \
+        synonyms:text \
+        loinc_property:text \
+        guidance:text \
         measurement_system_id:references \
-        numerator:measurement_unit.id \
-        denominator:measurement_unit.id \
 

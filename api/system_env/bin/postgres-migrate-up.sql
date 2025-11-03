@@ -1,14 +1,14 @@
 CREATE TABLE system_env (
 );
 
-CREATE INDEX index_system_env_id on system_env(id);
-CREATE INDEX index_system_env_created_at on system_env(created_at);
-CREATE INDEX index_system_env_created_by on system_env(created_by);
-CREATE INDEX index_system_env_updated_at on system_env(updated_at);
-CREATE INDEX index_system_env_updated_by on system_env(updated_by);
-CREATE INDEX index_system_env_retired_at on system_env(retired_at);
-CREATE INDEX index_system_env_retired_by on system_env(retired_by);
-CREATE INDEX index_system_env_locale_code on system_env(locale_code);
-CREATE INDEX index_system_env_tagging on system_env(tagging);
-CREATE INDEX index_system_env_key on system_env(key);
+CREATE INDEX system_env_id_index on system_env(id);
+CREATE INDEX system_env_created_at_index on system_env(created_at);
+CREATE INDEX system_env_created_by_index on system_env(created_by);
+CREATE INDEX system_env_updated_at_index on system_env(updated_at);
+CREATE INDEX system_env_updated_by_index on system_env(updated_by);
+CREATE INDEX system_env_retired_at_index on system_env(retired_at);
+CREATE INDEX system_env_retired_by_index on system_env(retired_by);
+CREATE INDEX system_env_locale_code_index on system_env(locale_code);
+CREATE INDEX system_env_tagging_index on system_env(tagging);
+CREATE INDEX system_env_key_index on system_env(key);
 

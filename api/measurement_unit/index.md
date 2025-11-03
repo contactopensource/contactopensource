@@ -30,15 +30,19 @@ meta:
 
 Main:
 
+  * id: string (index) - example: s
+
   * name: text - example: second
 
-  * symbol: text - example: s
+  * name_phonetic: text - example: ˈsɛkənd
 
-  * measurement_system_id: measurement_system.id - example: metric
+  * category: text - example: Clinical
 
-Ratio:
+  * synonyms: text - example: seconds
 
-  * numerator: measurement_unit.id - example: metre
+  * loinc_property: text - example: Time
 
-  * denominator: measurement_unit.id - example: second
+  * guidance: text - example: todo
+
+  * measurement_system_id: measurement_system.id - example: UCUM
 

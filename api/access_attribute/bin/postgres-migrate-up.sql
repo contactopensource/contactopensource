@@ -1,18 +1,18 @@
 CREATE TABLE access_attribute (
 );
 
-CREATE INDEX index_access_attribute_id on access_attribute(id);
-CREATE INDEX index_access_attribute_created_at on access_attribute(created_at);
-CREATE INDEX index_access_attribute_created_by on access_attribute(created_by);
-CREATE INDEX index_access_attribute_updated_at on access_attribute(updated_at);
-CREATE INDEX index_access_attribute_updated_by on access_attribute(updated_by);
-CREATE INDEX index_access_attribute_retired_at on access_attribute(retired_at);
-CREATE INDEX index_access_attribute_retired_by on access_attribute(retired_by);
-CREATE INDEX index_access_attribute_locale_code on access_attribute(locale_code);
-CREATE INDEX index_access_attribute_tagging on access_attribute(tagging);
-CREATE INDEX index_access_attribute_name on access_attribute(name);
-CREATE INDEX index_access_attribute_subname on access_attribute(subname);
-CREATE INDEX index_access_attribute_sign on access_attribute(sign);
-CREATE INDEX index_access_attribute_kind on access_attribute(kind);
-CREATE INDEX index_access_attribute_key on access_attribute(key);
+CREATE INDEX access_attribute_id_index on access_attribute(id);
+CREATE INDEX access_attribute_created_at_index on access_attribute(created_at);
+CREATE INDEX access_attribute_created_by_index on access_attribute(created_by);
+CREATE INDEX access_attribute_updated_at_index on access_attribute(updated_at);
+CREATE INDEX access_attribute_updated_by_index on access_attribute(updated_by);
+CREATE INDEX access_attribute_retired_at_index on access_attribute(retired_at);
+CREATE INDEX access_attribute_retired_by_index on access_attribute(retired_by);
+CREATE INDEX access_attribute_locale_code_index on access_attribute(locale_code);
+CREATE INDEX access_attribute_tagging_index on access_attribute(tagging);
+CREATE INDEX access_attribute_name_index on access_attribute(name);
+CREATE INDEX access_attribute_subname_index on access_attribute(subname);
+CREATE INDEX access_attribute_sign_index on access_attribute(sign);
+CREATE INDEX access_attribute_kind_index on access_attribute(kind);
+CREATE INDEX access_attribute_key_index on access_attribute(key);
 

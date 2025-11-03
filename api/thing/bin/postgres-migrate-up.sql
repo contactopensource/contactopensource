@@ -1,17 +1,17 @@
 CREATE TABLE thing (
 );
 
-CREATE INDEX index_thing_id on thing(id);
-CREATE INDEX index_thing_created_at on thing(created_at);
-CREATE INDEX index_thing_created_by on thing(created_by);
-CREATE INDEX index_thing_updated_at on thing(updated_at);
-CREATE INDEX index_thing_updated_by on thing(updated_by);
-CREATE INDEX index_thing_retired_at on thing(retired_at);
-CREATE INDEX index_thing_retired_by on thing(retired_by);
-CREATE INDEX index_thing_locale_code on thing(locale_code);
-CREATE INDEX index_thing_tagging on thing(tagging);
-CREATE INDEX index_thing_name on thing(name);
-CREATE INDEX index_thing_subname on thing(subname);
-CREATE INDEX index_thing_sign on thing(sign);
-CREATE INDEX index_thing_kind on thing(kind);
+CREATE INDEX thing_id_index on thing(id);
+CREATE INDEX thing_created_at_index on thing(created_at);
+CREATE INDEX thing_created_by_index on thing(created_by);
+CREATE INDEX thing_updated_at_index on thing(updated_at);
+CREATE INDEX thing_updated_by_index on thing(updated_by);
+CREATE INDEX thing_retired_at_index on thing(retired_at);
+CREATE INDEX thing_retired_by_index on thing(retired_by);
+CREATE INDEX thing_locale_code_index on thing(locale_code);
+CREATE INDEX thing_tagging_index on thing(tagging);
+CREATE INDEX thing_name_index on thing(name);
+CREATE INDEX thing_subname_index on thing(subname);
+CREATE INDEX thing_sign_index on thing(sign);
+CREATE INDEX thing_kind_index on thing(kind);
 

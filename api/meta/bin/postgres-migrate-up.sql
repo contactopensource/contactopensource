@@ -1,13 +1,13 @@
 CREATE TABLE meta (
 );
 
-CREATE INDEX index_meta_id on meta(id);
-CREATE INDEX index_meta_created_at on meta(created_at);
-CREATE INDEX index_meta_created_by on meta(created_by);
-CREATE INDEX index_meta_updated_at on meta(updated_at);
-CREATE INDEX index_meta_updated_by on meta(updated_by);
-CREATE INDEX index_meta_retired_at on meta(retired_at);
-CREATE INDEX index_meta_retired_by on meta(retired_by);
-CREATE INDEX index_meta_locale_code on meta(locale_code);
-CREATE INDEX index_meta_tagging on meta(tagging);
+CREATE INDEX meta_id_index on meta(id);
+CREATE INDEX meta_created_at_index on meta(created_at);
+CREATE INDEX meta_created_by_index on meta(created_by);
+CREATE INDEX meta_updated_at_index on meta(updated_at);
+CREATE INDEX meta_updated_by_index on meta(updated_by);
+CREATE INDEX meta_retired_at_index on meta(retired_at);
+CREATE INDEX meta_retired_by_index on meta(retired_by);
+CREATE INDEX meta_locale_code_index on meta(locale_code);
+CREATE INDEX meta_tagging_index on meta(tagging);
 

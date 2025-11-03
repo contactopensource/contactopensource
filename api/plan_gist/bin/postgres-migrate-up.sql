@@ -1,17 +1,17 @@
 CREATE TABLE plan_gist (
 );
 
-CREATE INDEX index_plan_gist_id on plan_gist(id);
-CREATE INDEX index_plan_gist_created_at on plan_gist(created_at);
-CREATE INDEX index_plan_gist_created_by on plan_gist(created_by);
-CREATE INDEX index_plan_gist_updated_at on plan_gist(updated_at);
-CREATE INDEX index_plan_gist_updated_by on plan_gist(updated_by);
-CREATE INDEX index_plan_gist_retired_at on plan_gist(retired_at);
-CREATE INDEX index_plan_gist_retired_by on plan_gist(retired_by);
-CREATE INDEX index_plan_gist_locale_code on plan_gist(locale_code);
-CREATE INDEX index_plan_gist_tagging on plan_gist(tagging);
-CREATE INDEX index_plan_gist_name on plan_gist(name);
-CREATE INDEX index_plan_gist_subname on plan_gist(subname);
-CREATE INDEX index_plan_gist_sign on plan_gist(sign);
-CREATE INDEX index_plan_gist_kind on plan_gist(kind);
+CREATE INDEX plan_gist_id_index on plan_gist(id);
+CREATE INDEX plan_gist_created_at_index on plan_gist(created_at);
+CREATE INDEX plan_gist_created_by_index on plan_gist(created_by);
+CREATE INDEX plan_gist_updated_at_index on plan_gist(updated_at);
+CREATE INDEX plan_gist_updated_by_index on plan_gist(updated_by);
+CREATE INDEX plan_gist_retired_at_index on plan_gist(retired_at);
+CREATE INDEX plan_gist_retired_by_index on plan_gist(retired_by);
+CREATE INDEX plan_gist_locale_code_index on plan_gist(locale_code);
+CREATE INDEX plan_gist_tagging_index on plan_gist(tagging);
+CREATE INDEX plan_gist_name_index on plan_gist(name);
+CREATE INDEX plan_gist_subname_index on plan_gist(subname);
+CREATE INDEX plan_gist_sign_index on plan_gist(sign);
+CREATE INDEX plan_gist_kind_index on plan_gist(kind);
 

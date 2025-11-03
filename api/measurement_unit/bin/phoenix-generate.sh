@@ -13,11 +13,14 @@ mix phx.gen.html \
         retired_by:url:index \
         locale_code:string:index \
         tagging:string:index \
+        id:string:index \
         name:textNone \
-        symbol:textNone \
+        name_phonetic:textNone \
+        category:textNone \
+        synonyms:textNone \
+        loinc_property:textNone \
+        guidance:textNone \
         measurement_system_id:referencesNone \
-        numerator:referencesNone \
-        denominator:referencesNone \
     --force \
     --no-timestamps \
 

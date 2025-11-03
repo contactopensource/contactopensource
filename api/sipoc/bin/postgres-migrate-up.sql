@@ -1,13 +1,13 @@
 CREATE TABLE sipoc (
 );
 
-CREATE INDEX index_sipoc_id on sipoc(id);
-CREATE INDEX index_sipoc_created_at on sipoc(created_at);
-CREATE INDEX index_sipoc_created_by on sipoc(created_by);
-CREATE INDEX index_sipoc_updated_at on sipoc(updated_at);
-CREATE INDEX index_sipoc_updated_by on sipoc(updated_by);
-CREATE INDEX index_sipoc_retired_at on sipoc(retired_at);
-CREATE INDEX index_sipoc_retired_by on sipoc(retired_by);
-CREATE INDEX index_sipoc_locale_code on sipoc(locale_code);
-CREATE INDEX index_sipoc_tagging on sipoc(tagging);
+CREATE INDEX sipoc_id_index on sipoc(id);
+CREATE INDEX sipoc_created_at_index on sipoc(created_at);
+CREATE INDEX sipoc_created_by_index on sipoc(created_by);
+CREATE INDEX sipoc_updated_at_index on sipoc(updated_at);
+CREATE INDEX sipoc_updated_by_index on sipoc(updated_by);
+CREATE INDEX sipoc_retired_at_index on sipoc(retired_at);
+CREATE INDEX sipoc_retired_by_index on sipoc(retired_by);
+CREATE INDEX sipoc_locale_code_index on sipoc(locale_code);
+CREATE INDEX sipoc_tagging_index on sipoc(tagging);
 

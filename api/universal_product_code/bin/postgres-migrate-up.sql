@@ -1,14 +1,14 @@
 CREATE TABLE universal_product_code (
 );
 
-CREATE INDEX index_universal_product_code_id on universal_product_code(id);
-CREATE INDEX index_universal_product_code_created_at on universal_product_code(created_at);
-CREATE INDEX index_universal_product_code_created_by on universal_product_code(created_by);
-CREATE INDEX index_universal_product_code_updated_at on universal_product_code(updated_at);
-CREATE INDEX index_universal_product_code_updated_by on universal_product_code(updated_by);
-CREATE INDEX index_universal_product_code_retired_at on universal_product_code(retired_at);
-CREATE INDEX index_universal_product_code_retired_by on universal_product_code(retired_by);
-CREATE INDEX index_universal_product_code_locale_code on universal_product_code(locale_code);
-CREATE INDEX index_universal_product_code_tagging on universal_product_code(tagging);
-CREATE INDEX index_universal_product_code_code on universal_product_code(code);
+CREATE INDEX universal_product_code_id_index on universal_product_code(id);
+CREATE INDEX universal_product_code_created_at_index on universal_product_code(created_at);
+CREATE INDEX universal_product_code_created_by_index on universal_product_code(created_by);
+CREATE INDEX universal_product_code_updated_at_index on universal_product_code(updated_at);
+CREATE INDEX universal_product_code_updated_by_index on universal_product_code(updated_by);
+CREATE INDEX universal_product_code_retired_at_index on universal_product_code(retired_at);
+CREATE INDEX universal_product_code_retired_by_index on universal_product_code(retired_by);
+CREATE INDEX universal_product_code_locale_code_index on universal_product_code(locale_code);
+CREATE INDEX universal_product_code_tagging_index on universal_product_code(tagging);
+CREATE INDEX universal_product_code_code_index on universal_product_code(code);
 

@@ -1,23 +1,23 @@
 CREATE TABLE initiative (
 );
 
-CREATE INDEX index_initiative_id on initiative(id);
-CREATE INDEX index_initiative_created_at on initiative(created_at);
-CREATE INDEX index_initiative_created_by on initiative(created_by);
-CREATE INDEX index_initiative_updated_at on initiative(updated_at);
-CREATE INDEX index_initiative_updated_by on initiative(updated_by);
-CREATE INDEX index_initiative_retired_at on initiative(retired_at);
-CREATE INDEX index_initiative_retired_by on initiative(retired_by);
-CREATE INDEX index_initiative_locale_code on initiative(locale_code);
-CREATE INDEX index_initiative_tagging on initiative(tagging);
-CREATE INDEX index_initiative_name on initiative(name);
-CREATE INDEX index_initiative_subname on initiative(subname);
-CREATE INDEX index_initiative_sign on initiative(sign);
-CREATE INDEX index_initiative_kind on initiative(kind);
-CREATE INDEX index_initiative_active_users_actual on initiative(active_users_actual);
-CREATE INDEX index_initiative_active_users_target on initiative(active_users_target);
-CREATE INDEX index_initiative_active_users_ratio on initiative(active_users_ratio);
-CREATE INDEX index_initiative_uptime_percentage_actual on initiative(uptime_percentage_actual);
-CREATE INDEX index_initiative_uptime_percentage_target on initiative(uptime_percentage_target);
-CREATE INDEX index_initiative_uptime_percentage_ratio on initiative(uptime_percentage_ratio);
+CREATE INDEX initiative_id_index on initiative(id);
+CREATE INDEX initiative_created_at_index on initiative(created_at);
+CREATE INDEX initiative_created_by_index on initiative(created_by);
+CREATE INDEX initiative_updated_at_index on initiative(updated_at);
+CREATE INDEX initiative_updated_by_index on initiative(updated_by);
+CREATE INDEX initiative_retired_at_index on initiative(retired_at);
+CREATE INDEX initiative_retired_by_index on initiative(retired_by);
+CREATE INDEX initiative_locale_code_index on initiative(locale_code);
+CREATE INDEX initiative_tagging_index on initiative(tagging);
+CREATE INDEX initiative_name_index on initiative(name);
+CREATE INDEX initiative_subname_index on initiative(subname);
+CREATE INDEX initiative_sign_index on initiative(sign);
+CREATE INDEX initiative_kind_index on initiative(kind);
+CREATE INDEX initiative_active_users_actual_index on initiative(active_users_actual);
+CREATE INDEX initiative_active_users_target_index on initiative(active_users_target);
+CREATE INDEX initiative_active_users_ratio_index on initiative(active_users_ratio);
+CREATE INDEX initiative_uptime_percentage_actual_index on initiative(uptime_percentage_actual);
+CREATE INDEX initiative_uptime_percentage_target_index on initiative(uptime_percentage_target);
+CREATE INDEX initiative_uptime_percentage_ratio_index on initiative(uptime_percentage_ratio);
 

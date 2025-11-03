@@ -1,13 +1,13 @@
 CREATE TABLE earned_value_management (
 );
 
-CREATE INDEX index_earned_value_management_id on earned_value_management(id);
-CREATE INDEX index_earned_value_management_created_at on earned_value_management(created_at);
-CREATE INDEX index_earned_value_management_created_by on earned_value_management(created_by);
-CREATE INDEX index_earned_value_management_updated_at on earned_value_management(updated_at);
-CREATE INDEX index_earned_value_management_updated_by on earned_value_management(updated_by);
-CREATE INDEX index_earned_value_management_retired_at on earned_value_management(retired_at);
-CREATE INDEX index_earned_value_management_retired_by on earned_value_management(retired_by);
-CREATE INDEX index_earned_value_management_locale_code on earned_value_management(locale_code);
-CREATE INDEX index_earned_value_management_tagging on earned_value_management(tagging);
+CREATE INDEX earned_value_management_id_index on earned_value_management(id);
+CREATE INDEX earned_value_management_created_at_index on earned_value_management(created_at);
+CREATE INDEX earned_value_management_created_by_index on earned_value_management(created_by);
+CREATE INDEX earned_value_management_updated_at_index on earned_value_management(updated_at);
+CREATE INDEX earned_value_management_updated_by_index on earned_value_management(updated_by);
+CREATE INDEX earned_value_management_retired_at_index on earned_value_management(retired_at);
+CREATE INDEX earned_value_management_retired_by_index on earned_value_management(retired_by);
+CREATE INDEX earned_value_management_locale_code_index on earned_value_management(locale_code);
+CREATE INDEX earned_value_management_tagging_index on earned_value_management(tagging);
 

@@ -77,6 +77,8 @@ def parse_path(path: os.PathLike):
 
     Outputs:
         index.md (markdown file)
+        bin/ash.sh (Ash generate script)
+        bin/attributes.ex (Ash attributes file for the Ash resource)
         bin/django-model.py (Django model file)
         bin/loco-generate-scaffold-html.sh (Loco.rs generate scaffold HTML file)
         bin/postgres-migration-up.sql
@@ -85,18 +87,20 @@ def parse_path(path: os.PathLike):
         uml/uml.plantuml (UML PlantUML file)
     """
     logging.info(banner(path))
-    dirname = os.path.dirname(path) # e.g. "./api/user"
-    concept = os.path.basename(dirname) # e.g. "user"
+    args.dirname = os.path.dirname(path) # e.g. "./api/user"
+    args.concept = os.path.basename(args.dirname) # e.g. "user"
+    args.dir = Path(args.dirname)
 
     with open(path, 'r') as file:
         y = yaml.load(file)
-        logging.debug(f"parse_path path: {path}, concept: {concept}, yaml.dump: " + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
+        logging.debug(f"parse_path path: {path}, concept: {args.concept}, yaml.dump: " + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
         entities = Entity.parse(args, y)
         for entity in entities:
             logging.info(banner(f"{entity.id}"))
 
         for renderer in [
             render.ash,
+            render.ash_attributes,
             render.django_model,
             render.loco_generate_scaffold_html,
             render.markdown,
@@ -107,11 +111,12 @@ def parse_path(path: os.PathLike):
             render.rails_generate_scaffold,
         ]:
             s = renderer.render(args, entities)
-            logging.info(banner(f"{concept} {renderer.__name__}") + s)
-            if args.write:
-                with open(os.path.join(dirname, renderer.output_path()), "w") as f:
-                    f.write(s)
-                    # TODO chmod
+            if s != None:
+                logging.info(banner(f"{args.concept} {renderer.__name__}") + s)
+                if args.write:
+                    with open(os.path.join(args.dirname, renderer.output_path()), "w") as f:
+                        f.write(s)
+                        # TODO chmod
 
 def main():
     logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))
