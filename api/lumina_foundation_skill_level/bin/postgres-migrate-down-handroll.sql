@@ -1,0 +1,7 @@
+DROP CONSTRAINT IF EXISTS lumina_foundation_skill_level_number_check;
+DROP INDEX IF EXISTS lumina_foundation_skill_level_index_gto;
+DROP INDEX IF EXISTS lumina_foundation_skill_level_locale_code_index;
+DROP INDEX IF EXISTS lumina_foundation_skill_level_number_index;
+DROP INDEX IF EXISTS lumina_foundation_skill_level_name_index;
+DROP INDEX IF EXISTS lumina_foundation_skill_level_name_index_tpo;
+DROP TABLE IF EXISTS lumina_foundation_skill_level;

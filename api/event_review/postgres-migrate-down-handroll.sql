@@ -1,0 +1,15 @@
+DROP CONSTRAINT IF EXISTS event_review_parent_id_fk;
+DROP CONSTRAINT IF EXISTS event_review_parent_order_check;
+DROP CONSTRAINT IF EXISTS event_review_by_user_id_fk;
+DROP CONSTRAINT IF EXISTS event_review_to_event_id_fk;
+DROP TRIGGER IF EXISTS trigger_event_review_updated_at;
+DROP INDEX IF EXISTS event_review_index_gto;
+DROP INDEX IF EXISTS event_review_created_at_index;
+DROP INDEX IF EXISTS event_review_updated_at_index;
+DROP INDEX IF EXISTS event_review_retired_at_index;
+DROP INDEX IF EXISTS event_review_locale_code_index;
+DROP INDEX IF EXISTS event_review_name_index;
+DROP INDEX IF EXISTS event_review_name_index_tpo;
+DROP INDEX IF EXISTS event_review_tagging_index;
+DROP INDEX IF EXISTS event_review_tagging_index_tpo;
+DROP TABLE IF EXISTS event_review;

@@ -1,0 +1,13 @@
+DROP CONSTRAINT IF EXISTS access_permission_parent_id_fk;
+DROP CONSTRAINT IF EXISTS access_permission_parent_order_check;
+DROP CONSTRAINT IF EXISTS access_permission_access_attribute_id_fk;
+DROP CONSTRAINT IF EXISTS access_permission_access_operation_id_fk;
+DROP TRIGGER IF EXISTS trigger_access_permission_updated_at;
+DROP INDEX IF EXISTS access_permission_index_gto;
+DROP INDEX IF EXISTS access_permission_created_at_index;
+DROP INDEX IF EXISTS access_permission_updated_at_index;
+DROP INDEX IF EXISTS access_permission_retired_at_index;
+DROP INDEX IF EXISTS access_permission_locale_code_index;
+DROP INDEX IF EXISTS access_permission_access_attribute_id_index;
+DROP INDEX IF EXISTS access_permission_access_operation_id_index;
+DROP TABLE IF EXISTS access_permission;

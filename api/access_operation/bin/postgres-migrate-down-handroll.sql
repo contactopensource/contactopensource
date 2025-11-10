@@ -1,0 +1,14 @@
+DROP CONSTRAINT IF EXISTS access_operation_parent_id_fk;
+DROP CONSTRAINT IF EXISTS access_operation_parent_order_check;
+DROP CONSTRAINT IF EXISTS access_operation_sign_check;
+DROP TRIGGER IF EXISTS trigger_access_operation_updated_at;
+DROP INDEX IF EXISTS access_operation_index_gto;
+DROP INDEX IF EXISTS access_operation_created_at_index;
+DROP INDEX IF EXISTS access_operation_updated_at_index;
+DROP INDEX IF EXISTS access_operation_retired_at_index;
+DROP INDEX IF EXISTS access_operation_locale_code_index;
+DROP INDEX IF EXISTS access_operation_name_index;
+DROP INDEX IF EXISTS access_operation_name_index_tpo;
+DROP INDEX IF EXISTS access_operation_tagging_index;
+DROP INDEX IF EXISTS access_operation_tagging_index_tpo;
+DROP TABLE IF EXISTS access_operation;

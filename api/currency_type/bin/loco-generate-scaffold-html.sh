@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    currency_type \
+    currency \
         id:uuid \
         lock_version:integer \
         created_at:timestamp_utc_usec \

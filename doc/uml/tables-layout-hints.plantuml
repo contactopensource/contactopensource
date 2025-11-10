@@ -45,8 +45,8 @@ tag -[hidden] codec
 codec -[hidden] locale
 locale -[hidden] media_type
 media_type -[hidden] microdata_item
-microdata_item -[hidden] currency_type
-currency_type -[hidden] license_type
+microdata_item -[hidden] currency
+currency -[hidden] license_type
 
 '' package Media
 content_application -[hidden] content_audio

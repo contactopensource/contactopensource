@@ -1,4 +1,4 @@
-# currency_type
+# currency
 
 
 Currency is a standardization of money in any form.

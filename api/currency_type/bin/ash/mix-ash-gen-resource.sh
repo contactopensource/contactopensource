@@ -20,31 +20,31 @@ mix ash.gen.resource \
     --attribute code:text \
     --attribute symbol:text \
 
-mix ash.codegen create_currency_types
+mix ash.codegen create_currencys
 mix ash.migrate
 
-touch priv/repo/migrations/00000000000000_create_currency_types.exs
-touch test/my_app/my_domain/currency_type.exs
+touch priv/repo/migrations/00000000000000_create_currencys.exs
+touch test/my_app/my_domain/currency.exs
 
-mkdir -p lib/my_app_web/live/currency_types
-touch lib/my_app_web/live/currency_types/form_live.ex
-touch lib/my_app_web/live/currency_types/index_live.ex
-touch lib/my_app_web/live/currency_types/show_live.ex
+mkdir -p lib/my_app_web/live/currencys
+touch lib/my_app_web/live/currencys/form_live.ex
+touch lib/my_app_web/live/currencys/index_live.ex
+touch lib/my_app_web/live/currencys/show_live.ex
 
-mkdir -p test/my_app_web/live/currency_types
-touch test/my_app_web/live/currency_types/form_test.exs
-touch test/my_app_web/live/currency_types/index_test.exs
-touch test/my_app_web/live/currency_types/show_test.exs
+mkdir -p test/my_app_web/live/currencys
+touch test/my_app_web/live/currencys/form_test.exs
+touch test/my_app_web/live/currencys/index_test.exs
+touch test/my_app_web/live/currencys/show_test.exs
 
 cat << EOF
 Edit file lib/my_app_web/router.ex to add live routes:
 
-live "/currency_types", CurrencyTypes.IndexLive
-live "/currency_types/new", CurrencyTypes.FormLive, :new
-live "/currency_types/:id", CurrencyTypes.ShowLive
-live "/currency_types/:id/edit", CurrencyTypes.FormLive, :edit
+live "/currencys", CurrencyTypes.IndexLive
+live "/currencys/new", CurrencyTypes.FormLive, :new
+live "/currencys/:id", CurrencyTypes.ShowLive
+live "/currencys/:id/edit", CurrencyTypes.FormLive, :edit
 
-If there is a parent, then edit file lib/my_app/currency_type.ex to add:
+If there is a parent, then edit file lib/my_app/currency.ex to add:
 
 
 relationships do
@@ -55,7 +55,7 @@ end
 EOF
 ### Extra ###
 #
-# Edit file lib/my_app/my_domain/currency_type.ex
+# Edit file lib/my_app/my_domain/currency.ex
 #
 # Find this section:
 #

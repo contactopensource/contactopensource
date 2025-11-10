@@ -1,0 +1,15 @@
+DROP CONSTRAINT IF EXISTS message_parent_id_fk;
+DROP CONSTRAINT IF EXISTS message_parent_order_check;
+DROP CONSTRAINT IF EXISTS message_from_user_id_fk;
+DROP CONSTRAINT IF EXISTS message_to_user_id_fk;
+DROP TRIGGER IF EXISTS trigger_message_updated_at;
+DROP INDEX IF EXISTS message_index_gto;
+DROP INDEX IF EXISTS message_created_at_index;
+DROP INDEX IF EXISTS message_updated_at_index;
+DROP INDEX IF EXISTS message_retired_at_index;
+DROP INDEX IF EXISTS message_locale_code_index;
+DROP INDEX IF EXISTS message_name_index;
+DROP INDEX IF EXISTS message_name_index_tpo;
+DROP INDEX IF EXISTS message_tagging_index;
+DROP INDEX IF EXISTS message_tagging_index_tpo;
+DROP TABLE IF EXISTS message;

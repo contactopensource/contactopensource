@@ -51,7 +51,7 @@ package Data {
   entity measurement_system
   entity media_type
   entity microdata_item
-  entity currency_type
+  entity currency
   entity license_type
 }
 
@@ -437,7 +437,7 @@ entity microdata_item {
   itemprop : string
 }
 
-entity currency_type {
+entity currency {
   name : string+
   code : string
   symbol : string

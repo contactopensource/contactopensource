@@ -19,7 +19,7 @@ tag
 codec
 locale
 media_type
-currency_type
+currency
 license_type
 content_application
 content_audio

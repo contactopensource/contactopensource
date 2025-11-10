@@ -38,7 +38,7 @@ Data:
 * [codec](concepts/codec/)
 * [locale](concepts/locale/)
 * [media_type](concepts/media_type/)
-* [currency_type](concepts/currency_type/)
+* [currency](concepts/currency/)
 * [license_type](concepts/license_type/)
 
 Content:

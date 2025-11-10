@@ -1,0 +1,15 @@
+DROP CONSTRAINT IF EXISTS place_review_parent_id_fk;
+DROP CONSTRAINT IF EXISTS place_review_parent_order_check;
+DROP CONSTRAINT IF EXISTS place_review_by_user_id_fk;
+DROP CONSTRAINT IF EXISTS place_review_to_place_id_fk;
+DROP TRIGGER IF EXISTS trigger_place_review_updated_at;
+DROP INDEX IF EXISTS place_review_index_gto;
+DROP INDEX IF EXISTS place_review_created_at_index;
+DROP INDEX IF EXISTS place_review_updated_at_index;
+DROP INDEX IF EXISTS place_review_retired_at_index;
+DROP INDEX IF EXISTS place_review_locale_code_index;
+DROP INDEX IF EXISTS place_review_name_index;
+DROP INDEX IF EXISTS place_review_name_index_tpo;
+DROP INDEX IF EXISTS place_review_tagging_index;
+DROP INDEX IF EXISTS place_review_tagging_index_tpo;
+DROP TABLE IF EXISTS place_review;

@@ -3,7 +3,7 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity currency_type {
+entity currency {
   .. meta ..
   id : uuid ⚡
   lock_version : integer

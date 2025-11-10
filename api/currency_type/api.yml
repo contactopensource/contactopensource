@@ -1,4 +1,4 @@
-currency_type:
+currency:
   title: Currency Type
   model: CurrencyType
   summary: |-

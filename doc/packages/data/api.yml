@@ -11,5 +11,5 @@ data:
     measurement_system
     media_type
     microdata_item
-    currency_type
+    currency
     license_type
