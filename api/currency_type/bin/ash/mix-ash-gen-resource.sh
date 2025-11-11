@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.None.CurrencyType \
+    MyApp.None.Currency \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -39,10 +39,10 @@ touch test/my_app_web/live/currencys/show_test.exs
 cat << EOF
 Edit file lib/my_app_web/router.ex to add live routes:
 
-live "/currencys", CurrencyTypes.IndexLive
-live "/currencys/new", CurrencyTypes.FormLive, :new
-live "/currencys/:id", CurrencyTypes.ShowLive
-live "/currencys/:id/edit", CurrencyTypes.FormLive, :edit
+live "/currencys", Currencys.IndexLive
+live "/currencys/new", Currencys.FormLive, :new
+live "/currencys/:id", Currencys.ShowLive
+live "/currencys/:id/edit", Currencys.FormLive, :edit
 
 If there is a parent, then edit file lib/my_app/currency.ex to add:
 

@@ -13,3 +13,4 @@ CREATE INDEX currency_tagging_index on currency(tagging);
 CREATE INDEX currency_name_index on currency(name);
 CREATE INDEX currency_code_index on currency(code);
 CREATE INDEX currency_symbol_index on currency(symbol);
+

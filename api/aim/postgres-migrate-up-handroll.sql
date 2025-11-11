@@ -297,24 +297,24 @@ CREATE TABLE aim (
   deployment_frequency_ratio numeric(7,2) GENERATED ALWAYS AS (deployment_frequency_actual / deployment_frequency_expect) STORED,
   deployment_frequency_unit text,
   deployment_frequency_description text,
-  --- lead_time_for_changes
-  lead_time_for_changes_actual numeric(7,2),
-  lead_time_for_changes_expect numeric(7,2),
-  lead_time_for_changes_ratio numeric(7,2) GENERATED ALWAYS AS (lead_time_for_changes_actual / lead_time_for_changes_expect) STORED,
-  lead_time_for_changes_unit text,
-  lead_time_for_changes_description text,
+  --- mean_lead_time_for_changes
+  mean_lead_time_for_changes_actual numeric(7,2),
+  mean_lead_time_for_changes_expect numeric(7,2),
+  mean_lead_time_for_changes_ratio numeric(7,2) GENERATED ALWAYS AS (mean_lead_time_for_changes_actual / mean_lead_time_for_changes_expect) STORED,
+  mean_lead_time_for_changes_unit text,
+  mean_lead_time_for_changes_description text,
   --- change_failure_rate
   change_failure_rate_actual numeric(7,2),
   change_failure_rate_expect numeric(7,2),
   change_failure_rate_ratio numeric(7,2) GENERATED ALWAYS AS (change_failure_rate_actual / change_failure_rate_expect) STORED,
   change_failure_rate_unit text,
   change_failure_rate_description text,
-  --- mean_time_to_recovery
-  mean_time_to_recovery_actual numeric(7,2),
-  mean_time_to_recovery_expect numeric(7,2),
-  mean_time_to_recovery_ratio numeric(7,2) GENERATED ALWAYS AS (mean_time_to_recovery_actual / mean_time_to_recovery_expect) STORED,
-  mean_time_to_recovery_unit text,
-  mean_time_to_recovery_description text,
+  --- failed_deployment_recovery_time
+  failed_deployment_recovery_time_actual numeric(7,2),
+  failed_deployment_recovery_time_expect numeric(7,2),
+  failed_deployment_recovery_time_ratio numeric(7,2) GENERATED ALWAYS AS (failed_deployment_recovery_time_actual / failed_deployment_recovery_time_expect) STORED,
+  failed_deployment_recovery_time_unit text,
+  failed_deployment_recovery_time_description text,
   --- maintainability_index
   maintainability_index_actual numeric(7,2),
   maintainability_index_expect numeric(7,2),

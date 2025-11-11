@@ -21,21 +21,21 @@ mix ash.gen.resource \
     --attribute deployment_frequency_ratio:numeric \
     --attribute deployment_frequency_unit:text \
     --attribute deployment_frequency_description:text \
-    --attribute lead_time_for_changes_actual:numeric \
-    --attribute lead_time_for_changes_target:numeric \
-    --attribute lead_time_for_changes_ratio:numeric \
-    --attribute lead_time_for_changes_unit:text \
-    --attribute lead_time_for_changes_description:text \
+    --attribute mean_lead_time_for_changes_actual:numeric \
+    --attribute mean_lead_time_for_changes_target:numeric \
+    --attribute mean_lead_time_for_changes_ratio:numeric \
+    --attribute mean_lead_time_for_changes_unit:text \
+    --attribute mean_lead_time_for_changes_description:text \
     --attribute change_failure_rate_actual:numeric \
     --attribute change_failure_rate_target:numeric \
     --attribute change_failure_rate_ratio:numeric \
     --attribute change_failure_rate_unit:text \
     --attribute change_failure_rate_description:text \
-    --attribute mean_time_to_recovery_actual:numeric \
-    --attribute mean_time_to_recovery_target:numeric \
-    --attribute mean_time_to_recovery_ratio:numeric \
-    --attribute mean_time_to_recovery_unit:text \
-    --attribute mean_time_to_recovery_description:text \
+    --attribute failed_deployment_recovery_time_actual:numeric \
+    --attribute failed_deployment_recovery_time_target:numeric \
+    --attribute failed_deployment_recovery_time_ratio:numeric \
+    --attribute failed_deployment_recovery_time_unit:text \
+    --attribute failed_deployment_recovery_time_description:text \
 
 mix ash.codegen create_dora_metrics_kits
 mix ash.migrate

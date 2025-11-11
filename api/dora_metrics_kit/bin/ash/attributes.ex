@@ -65,24 +65,24 @@ defmodule MyApp.MyDomain.DoraMetricsKit.Attributes do
       description "deployment frequency description"
     end
 
-    attribute :lead_time_for_changes_actual, :numeric do
-      description "Lead time for changes actual value"
+    attribute :mean_lead_time_for_changes_actual, :numeric do
+      description "Mean lead time for changes actual value"
     end
 
-    attribute :lead_time_for_changes_target, :numeric do
-      description "Lead time for changes target value"
+    attribute :mean_lead_time_for_changes_target, :numeric do
+      description "Mean lead time for changes target value"
     end
 
-    attribute :lead_time_for_changes_ratio, :numeric do
-      description "Lead time for changes ratio = (actual / target)"
+    attribute :mean_lead_time_for_changes_ratio, :numeric do
+      description "Mean lead time for changes ratio = (actual / target)"
     end
 
-    attribute :lead_time_for_changes_unit, :text do
-      description "Lead time for changes unit"
+    attribute :mean_lead_time_for_changes_unit, :text do
+      description "Mean lead time for changes unit"
     end
 
-    attribute :lead_time_for_changes_description, :text do
-      description "Lead time for changes description"
+    attribute :mean_lead_time_for_changes_description, :text do
+      description "Mean lead time for changes description"
     end
 
     attribute :change_failure_rate_actual, :numeric do
@@ -105,24 +105,24 @@ defmodule MyApp.MyDomain.DoraMetricsKit.Attributes do
       description "Change failure rate description"
     end
 
-    attribute :mean_time_to_recovery_actual, :numeric do
-      description "Mean time to recovery actual value"
+    attribute :failed_deployment_recovery_time_actual, :numeric do
+      description "Failed deployment recovery time actual value"
     end
 
-    attribute :mean_time_to_recovery_target, :numeric do
-      description "Mean time to recovery target value"
+    attribute :failed_deployment_recovery_time_target, :numeric do
+      description "Failed deployment recovery time target value"
     end
 
-    attribute :mean_time_to_recovery_ratio, :numeric do
-      description "Mean time to recovery (actual / target)"
+    attribute :failed_deployment_recovery_time_ratio, :numeric do
+      description "Failed deployment recovery time (actual / target)"
     end
 
-    attribute :mean_time_to_recovery_unit, :text do
-      description "Mean time to recovery unit"
+    attribute :failed_deployment_recovery_time_unit, :text do
+      description "Failed deployment recovery time unit"
     end
 
-    attribute :mean_time_to_recovery_description, :text do
-      description "Mean time to recovery description"
+    attribute :failed_deployment_recovery_time_description, :text do
+      description "Failed deployment recovery time description"
     end
 
   end

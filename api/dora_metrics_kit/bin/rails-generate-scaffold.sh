@@ -17,21 +17,21 @@ rails generate scaffold \
         deployment_frequency_ratio:numeric(7,2) \
         deployment_frequency_unit:text \
         deployment_frequency_description:text \
-        lead_time_for_changes_actual:numeric(7,2) \
-        lead_time_for_changes_target:numeric(7,2) \
-        lead_time_for_changes_ratio:numeric(7,2) \
-        lead_time_for_changes_unit:text \
-        lead_time_for_changes_description:text \
+        mean_lead_time_for_changes_actual:numeric(7,2) \
+        mean_lead_time_for_changes_target:numeric(7,2) \
+        mean_lead_time_for_changes_ratio:numeric(7,2) \
+        mean_lead_time_for_changes_unit:text \
+        mean_lead_time_for_changes_description:text \
         change_failure_rate_actual:numeric(7,2) \
         change_failure_rate_target:numeric(7,2) \
         change_failure_rate_ratio:numeric(7,2) \
         change_failure_rate_unit:text \
         change_failure_rate_description:text \
-        mean_time_to_recovery_actual:numeric(7,2) \
-        mean_time_to_recovery_target:numeric(7,2) \
-        mean_time_to_recovery_ratio:numeric(7,2) \
-        mean_time_to_recovery_unit:text \
-        mean_time_to_recovery_description:text \
+        failed_deployment_recovery_time_actual:numeric(7,2) \
+        failed_deployment_recovery_time_target:numeric(7,2) \
+        failed_deployment_recovery_time_ratio:numeric(7,2) \
+        failed_deployment_recovery_time_unit:text \
+        failed_deployment_recovery_time_description:text \
     --force \
     --no-timestamps \
 

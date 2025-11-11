@@ -846,24 +846,24 @@ defmodule MyApp.MyDomain.Initiative.Attributes do
       description "deployment frequency description"
     end
 
-    attribute :lead_time_for_changes_actual, :decimal do
-      description "Lead time for changes actual value"
+    attribute :mean_lead_time_for_changes_actual, :decimal do
+      description "Mean lead time for changes actual value"
     end
 
-    attribute :lead_time_for_changes_target, :decimal do
-      description "Lead time for changes target value"
+    attribute :mean_lead_time_for_changes_target, :decimal do
+      description "Mean lead time for changes target value"
     end
 
-    attribute :lead_time_for_changes_ratio, :decimal do
-      description "Lead time for changes ratio = (actual / target)"
+    attribute :mean_lead_time_for_changes_ratio, :decimal do
+      description "Mean lead time for changes ratio = (actual / target)"
     end
 
-    attribute :lead_time_for_changes_unit, :text do
-      description "Lead time for changes unit"
+    attribute :mean_lead_time_for_changes_unit, :text do
+      description "Mean lead time for changes unit"
     end
 
-    attribute :lead_time_for_changes_description, :text do
-      description "Lead time for changes description"
+    attribute :mean_lead_time_for_changes_description, :text do
+      description "Mean lead time for changes description"
     end
 
     attribute :change_failure_rate_actual, :decimal do
@@ -886,24 +886,44 @@ defmodule MyApp.MyDomain.Initiative.Attributes do
       description "Change failure rate description"
     end
 
-    attribute :mean_time_to_recovery_actual, :decimal do
-      description "Mean time to recovery actual value"
+    attribute :failed_deployment_recovery_time_actual, :decimal do
+      description "Failed deployment recovery time actual value"
     end
 
-    attribute :mean_time_to_recovery_target, :decimal do
-      description "Mean time to recovery target value"
+    attribute :failed_deployment_recovery_time_target, :decimal do
+      description "Failed deployment recovery time target value"
     end
 
-    attribute :mean_time_to_recovery_ratio, :decimal do
-      description "Mean time to recovery (actual / target)"
+    attribute :failed_deployment_recovery_time_ratio, :decimal do
+      description "Failed deployment recovery time (actual / target)"
     end
 
-    attribute :mean_time_to_recovery_unit, :text do
-      description "Mean time to recovery unit"
+    attribute :failed_deployment_recovery_time_unit, :text do
+      description "Failed deployment recovery time unit"
     end
 
-    attribute :mean_time_to_recovery_description, :text do
-      description "Mean time to recovery description"
+    attribute :failed_deployment_recovery_time_description, :text do
+      description "Failed deployment recovery time description"
+    end
+
+    attribute :reliability_actual, :decimal do
+      description "Reliability actual value"
+    end
+
+    attribute :reliability_target, :decimal do
+      description "Reliability target value"
+    end
+
+    attribute :reliability_ratio, :decimal do
+      description "Reliability (actual / target)"
+    end
+
+    attribute :reliability_unit, :text do
+      description "Reliability unit"
+    end
+
+    attribute :reliability_description, :text do
+      description "Reliability description"
     end
 
   end

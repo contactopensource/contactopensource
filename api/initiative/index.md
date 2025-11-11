@@ -479,15 +479,15 @@ dora_metrics_kit:
 
   * deployment_frequency_description: text
 
-  * lead_time_for_changes_actual: decimal
+  * mean_lead_time_for_changes_actual: decimal
 
-  * lead_time_for_changes_target: decimal
+  * mean_lead_time_for_changes_target: decimal
 
-  * lead_time_for_changes_ratio: decimal
+  * mean_lead_time_for_changes_ratio: decimal
 
-  * lead_time_for_changes_unit: text
+  * mean_lead_time_for_changes_unit: text
 
-  * lead_time_for_changes_description: text
+  * mean_lead_time_for_changes_description: text
 
   * change_failure_rate_actual: decimal
 
@@ -499,13 +499,23 @@ dora_metrics_kit:
 
   * change_failure_rate_description: text
 
-  * mean_time_to_recovery_actual: decimal
+  * failed_deployment_recovery_time_actual: decimal
 
-  * mean_time_to_recovery_target: decimal
+  * failed_deployment_recovery_time_target: decimal
 
-  * mean_time_to_recovery_ratio: decimal
+  * failed_deployment_recovery_time_ratio: decimal
 
-  * mean_time_to_recovery_unit: text
+  * failed_deployment_recovery_time_unit: text
 
-  * mean_time_to_recovery_description: text
+  * failed_deployment_recovery_time_description: text
+
+  * reliability_actual: decimal
+
+  * reliability_target: decimal
+
+  * reliability_ratio: decimal
+
+  * reliability_unit: text
+
+  * reliability_description: text
 

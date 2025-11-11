@@ -25,21 +25,21 @@ dora_metrics_kit:
       - deployment_frequency_description:
           help: deployment frequency description
           type: text
-      - lead_time_for_changes_actual:
-          help: Lead time for changes actual value
+      - mean_lead_time_for_changes_actual:
+          help: Mean lead time for changes actual value
           type: numeric(7,2)
-      - lead_time_for_changes_target:
-          help: Lead time for changes target value
+      - mean_lead_time_for_changes_target:
+          help: Mean lead time for changes target value
           type: numeric(7,2)
-      - lead_time_for_changes_ratio:
-          help: Lead time for changes ratio = (actual / target)
+      - mean_lead_time_for_changes_ratio:
+          help: Mean lead time for changes ratio = (actual / target)
           type: numeric(7,2)
-          sql: lead_time_for_changes_ratio decimal generated always as (lead_time_for_changes_actual / lead_time_for_changes_expect)
-      - lead_time_for_changes_unit:
-          help: Lead time for changes unit
+          sql: mean_lead_time_for_changes_ratio decimal generated always as (mean_lead_time_for_changes_actual / mean_lead_time_for_changes_expect)
+      - mean_lead_time_for_changes_unit:
+          help: Mean lead time for changes unit
           type: text
-      - lead_time_for_changes_description:
-          help: Lead time for changes description
+      - mean_lead_time_for_changes_description:
+          help: Mean lead time for changes description
           type: text
       - change_failure_rate_actual:
           help: Change failure rate actual value
@@ -57,19 +57,19 @@ dora_metrics_kit:
       - change_failure_rate_description:
           help: Change failure rate description
           type: text
-      - mean_time_to_recovery_actual:
-          help: Mean time to recovery actual value
+      - failed_deployment_recovery_time_actual:
+          help: Failed deployment recovery time actual value
           type: numeric(7,2)
-      - mean_time_to_recovery_target:
-          help: Mean time to recovery target value
+      - failed_deployment_recovery_time_target:
+          help: Failed deployment recovery time target value
           type: numeric(7,2)
-      - mean_time_to_recovery_ratio:
-          help: Mean time to recovery (actual / target)
+      - failed_deployment_recovery_time_ratio:
+          help: Failed deployment recovery time (actual / target)
           type: numeric(7,2)
-          sqL: mean_time_to_recovery_ratio decimal generated always as (mean_time_to_recovery_actual / mean_time_to_recovery_expect)
-      - mean_time_to_recovery_unit:
-          help: Mean time to recovery unit
+          sqL: failed_deployment_recovery_time_ratio decimal generated always as (failed_deployment_recovery_time_actual / failed_deployment_recovery_time_expect)
+      - failed_deployment_recovery_time_unit:
+          help: Failed deployment recovery time unit
           type: text
-      - mean_time_to_recovery_description:
-          help: Mean time to recovery description
+      - failed_deployment_recovery_time_description:
+          help: Failed deployment recovery time description
           type: text

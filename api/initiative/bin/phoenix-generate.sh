@@ -223,21 +223,26 @@ mix phx.gen.html \
         deployment_frequency_ratio:decimalNone \
         deployment_frequency_unit:textNone \
         deployment_frequency_description:textNone \
-        lead_time_for_changes_actual:decimalNone \
-        lead_time_for_changes_target:decimalNone \
-        lead_time_for_changes_ratio:decimalNone \
-        lead_time_for_changes_unit:textNone \
-        lead_time_for_changes_description:textNone \
+        mean_lead_time_for_changes_actual:decimalNone \
+        mean_lead_time_for_changes_target:decimalNone \
+        mean_lead_time_for_changes_ratio:decimalNone \
+        mean_lead_time_for_changes_unit:textNone \
+        mean_lead_time_for_changes_description:textNone \
         change_failure_rate_actual:decimalNone \
         change_failure_rate_target:decimalNone \
         change_failure_rate_ratio:decimalNone \
         change_failure_rate_unit:textNone \
         change_failure_rate_description:textNone \
-        mean_time_to_recovery_actual:decimalNone \
-        mean_time_to_recovery_target:decimalNone \
-        mean_time_to_recovery_ratio:decimalNone \
-        mean_time_to_recovery_unit:textNone \
-        mean_time_to_recovery_description:textNone \
+        failed_deployment_recovery_time_actual:decimalNone \
+        failed_deployment_recovery_time_target:decimalNone \
+        failed_deployment_recovery_time_ratio:decimalNone \
+        failed_deployment_recovery_time_unit:textNone \
+        failed_deployment_recovery_time_description:textNone \
+        reliability_actual:decimalNone \
+        reliability_target:decimalNone \
+        reliability_ratio:decimalNone \
+        reliability_unit:textNone \
+        reliability_description:textNone \
     --force \
     --no-timestamps \
 

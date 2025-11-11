@@ -15,7 +15,7 @@ plan_rope:
 
     * Change Failure Rate - Percentage of failed changes over all changes (regardless of success)
 
-    * Mean Time to Recovery (MTTR) - Time it takes to restore service after production failure
+    * Failed deployment recovery time (MTTR) - Time it takes to restore service after production failure
 
     <https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment>
 
@@ -37,8 +37,8 @@ plan_rope:
           help: "Change Failure Rate - Percentage of failed changes over all changes (regardless of success)"
           type: value
           measurement_unit: id
-      - mean_time_to_recovery:
-          help: "Mean Time to Recovery - Time it takes to restore service after production failure"
+      - failed_deployment_recovery_time:
+          help: "Failed deployment recovery time - Time it takes to restore service after production failure"
           type: value
           measurement_unit: id
   rails_model_extras: |-

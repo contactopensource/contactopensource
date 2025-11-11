@@ -226,21 +226,26 @@ mix ash.gen.resource \
     --attribute deployment_frequency_ratio:decimal \
     --attribute deployment_frequency_unit:text \
     --attribute deployment_frequency_description:text \
-    --attribute lead_time_for_changes_actual:decimal \
-    --attribute lead_time_for_changes_target:decimal \
-    --attribute lead_time_for_changes_ratio:decimal \
-    --attribute lead_time_for_changes_unit:text \
-    --attribute lead_time_for_changes_description:text \
+    --attribute mean_lead_time_for_changes_actual:decimal \
+    --attribute mean_lead_time_for_changes_target:decimal \
+    --attribute mean_lead_time_for_changes_ratio:decimal \
+    --attribute mean_lead_time_for_changes_unit:text \
+    --attribute mean_lead_time_for_changes_description:text \
     --attribute change_failure_rate_actual:decimal \
     --attribute change_failure_rate_target:decimal \
     --attribute change_failure_rate_ratio:decimal \
     --attribute change_failure_rate_unit:text \
     --attribute change_failure_rate_description:text \
-    --attribute mean_time_to_recovery_actual:decimal \
-    --attribute mean_time_to_recovery_target:decimal \
-    --attribute mean_time_to_recovery_ratio:decimal \
-    --attribute mean_time_to_recovery_unit:text \
-    --attribute mean_time_to_recovery_description:text \
+    --attribute failed_deployment_recovery_time_actual:decimal \
+    --attribute failed_deployment_recovery_time_target:decimal \
+    --attribute failed_deployment_recovery_time_ratio:decimal \
+    --attribute failed_deployment_recovery_time_unit:text \
+    --attribute failed_deployment_recovery_time_description:text \
+    --attribute reliability_actual:decimal \
+    --attribute reliability_target:decimal \
+    --attribute reliability_ratio:decimal \
+    --attribute reliability_unit:text \
+    --attribute reliability_description:text \
 
 mix ash.codegen create_initiatives
 mix ash.migrate
