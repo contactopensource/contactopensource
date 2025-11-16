@@ -1,0 +1,18 @@
+question:
+  title: Question
+  model: Question
+  summary: |-
+
+    A question
+
+  description: |-
+
+    A question.
+
+  links:
+    schema.org: https://schema.org/Question
+    wikipedia.org: https://en.wikipedia.org/wiki/Task_(project_management)
+  module: Social
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
