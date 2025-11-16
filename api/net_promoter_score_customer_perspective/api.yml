@@ -1,7 +1,10 @@
 net_promoter_score_customer_perspective:
   title: Net Promoter Score (NPS) customer perspective
   model: NetPromoterScoreKitCustomerPerspective
-  summary: Net Promoter Score (NPS) customer perspective
+  summary: |-
+
+    Net Promoter Score (NPS) customer perspective
+
   description: |-
 
     Net Promoter Score (NPS) customer_perspective

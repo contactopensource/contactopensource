@@ -1,5 +1,8 @@
 content:
-  summary: Content package for content-related concepts.
+  summary: |-
+
+    Content package for content-related concepts.
+
   entities:
     content_application
     content_audio

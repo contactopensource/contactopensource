@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_event_locale_code;
 DROP INDEX IF EXISTS index_event_tagging;
 DROP INDEX IF EXISTS index_event_name;
 DROP INDEX IF EXISTS index_event_subname;
+DROP INDEX IF EXISTS index_event_slug;
 DROP INDEX IF EXISTS index_event_sign;
 DROP INDEX IF EXISTS index_event_kind;
 

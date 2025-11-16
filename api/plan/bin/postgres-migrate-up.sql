@@ -12,6 +12,7 @@ CREATE INDEX plan_locale_code_index on plan(locale_code);
 CREATE INDEX plan_tagging_index on plan(tagging);
 CREATE INDEX plan_name_index on plan(name);
 CREATE INDEX plan_subname_index on plan(subname);
+CREATE INDEX plan_slug_index on plan(slug);
 CREATE INDEX plan_sign_index on plan(sign);
 CREATE INDEX plan_kind_index on plan(kind);
 

@@ -12,6 +12,7 @@ CREATE INDEX plan_milestone_locale_code_index on plan_milestone(locale_code);
 CREATE INDEX plan_milestone_tagging_index on plan_milestone(tagging);
 CREATE INDEX plan_milestone_name_index on plan_milestone(name);
 CREATE INDEX plan_milestone_subname_index on plan_milestone(subname);
+CREATE INDEX plan_milestone_slug_index on plan_milestone(slug);
 CREATE INDEX plan_milestone_sign_index on plan_milestone(sign);
 CREATE INDEX plan_milestone_kind_index on plan_milestone(kind);
 

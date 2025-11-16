@@ -2,7 +2,10 @@ skill:
   title: Skill
   model: Skill
   module: Works
-  summary: A skill is the ability to act with determined results with good execution.
+  summary: |-
+
+    A skill is the ability to act with determined results with good execution.
+
   description: |-
 
     A skill is the ability to act with determined results with good execution
@@ -22,7 +25,7 @@ skill:
     - aviation piloting
 
   links:
-    - https://wikipedia.org/wiki/Skill
+    wikipedia: https://wikipedia.org/wiki/Skill
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

@@ -27,7 +27,7 @@ international_standard_industrial_classification_v4:
     production processes.
 
   links:
-    - https://wikipedia.org/wiki/International_Standard_Industrial_Classification
+    wikipedia: https://wikipedia.org/wiki/International_Standard_Industrial_Classification
   module: Code
   attribute_groups:
     - !include ../_meta.yml

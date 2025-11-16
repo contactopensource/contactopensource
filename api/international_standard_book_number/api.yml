@@ -27,7 +27,7 @@ international_standard_book_number:
     internet.
 
   links:
-    - https://wikipedia.org/wiki/ISBN
+    wikipedia: https://wikipedia.org/wiki/ISBN
   module: Code
   attribute_groups:
     - !include ../_meta.yml

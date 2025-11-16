@@ -19,7 +19,7 @@ medical_current_procedural_terminology_code_2025:
     inpatient setting.
 
   links:
-    - https://wikipedia.org/wiki/Current_Procedural_Terminology
+    wikipedia: https://wikipedia.org/wiki/Current_Procedural_Terminology
   module: Codes
   attribute_groups:
     - !include ../_meta.yml

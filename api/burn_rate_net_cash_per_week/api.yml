@@ -1,7 +1,10 @@
 burn_rate_net_cash_per_week:
   title:  Burn rate net cash per week
   model: BurnRateNetCashPerWeek
-  summary: Burn rate net cash per week
+  summary: |-
+
+    Burn rate net cash per week
+
   description: |-
 
     Burn rate net cash per week: actual, target, ratio, unit, description.

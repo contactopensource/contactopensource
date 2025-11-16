@@ -1,7 +1,7 @@
 plan_milestone:
   title: Plan Milestone
   model: PlanMilestone
-  summary: :-
+  summary: |-
 
     Plan milestone, such as a given deliverable at a given time.
 

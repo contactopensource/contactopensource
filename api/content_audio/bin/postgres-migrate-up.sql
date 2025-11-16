@@ -12,6 +12,7 @@ CREATE INDEX content_audio_locale_code_index on content_audio(locale_code);
 CREATE INDEX content_audio_tagging_index on content_audio(tagging);
 CREATE INDEX content_audio_name_index on content_audio(name);
 CREATE INDEX content_audio_subname_index on content_audio(subname);
+CREATE INDEX content_audio_slug_index on content_audio(slug);
 CREATE INDEX content_audio_sign_index on content_audio(sign);
 CREATE INDEX content_audio_kind_index on content_audio(kind);
 

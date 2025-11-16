@@ -3,8 +3,6 @@
 
 United Kingdom (UK) Government Digital And Data (GDAD) Profession Capability Framework (PCF) Role Family
 
-<https://ddat-capability-framework.service.gov.uk/>
-
 
 ## Attributes
 

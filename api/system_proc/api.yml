@@ -12,12 +12,10 @@ system_proc:
   module: System
   attributes:
     pid:
-      summary: process id
       type: integer
       index: true
       example: 1000
-    key:
-      summary: description of running process
+    description:
       type: text
       index: true
       example: "/bin/sh --version"

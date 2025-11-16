@@ -2,7 +2,10 @@ initiative_type:
   title: Initiative Type
   model: InitiativeType
   module: Works
-  summary: Initiative type for the initiative model.
+  summary: |-
+
+    Initiative type for the initiative model.
+
   description: |-
 
     Initiative type examples:
@@ -23,7 +26,7 @@ initiative_type:
     - Venture
 
   links:
-    - https://wikipedia.org/wiki/Initiative
+    wikipedia: https://wikipedia.org/wiki/Initiative
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

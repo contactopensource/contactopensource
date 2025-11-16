@@ -2,7 +2,7 @@ timestamp_range:
   title: Timestamp Range
   model: Timestamp Range
   module: Basics
-  summary:  |-
+  summary: |-
 
     A timestamp range is a period between two timestamp values.
 

@@ -16,7 +16,7 @@ media_type:
     Internet Mail Extensions (MIME) type.
 
   links:
-    - https://wikipedia.org/wiki/Media_type
+    wikipedia: https://wikipedia.org/wiki/Media_type
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

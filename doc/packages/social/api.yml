@@ -1,5 +1,8 @@
 social:
-  summary: Social package for social-related concepts, such as social media, social networks, social sharing, etc.
+  summary: |-
+
+    Social package for social-related concepts, such as social media, social networks, social sharing, etc.
+
   entities:
     post
     feed

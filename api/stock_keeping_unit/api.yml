@@ -3,6 +3,9 @@ stock_keeping_unit:
   model: StockKeepingUnit
   summary: |-
 
+    |-
+
+
     Stock Keeping Unit (SKU) is the unit of measure in which the stocks
     of a material are managed
 

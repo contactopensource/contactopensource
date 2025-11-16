@@ -1,7 +1,7 @@
 tag:
   title: Tag
   model: Tag
-  summary:  |-
+  summary: |-
 
     A tag is one word that annotates something.
 

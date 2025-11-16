@@ -1,5 +1,6 @@
 # sipoc
 
+
 Suppliers, Inputs, Processes, Output, Customers (SIPOC).
 
 

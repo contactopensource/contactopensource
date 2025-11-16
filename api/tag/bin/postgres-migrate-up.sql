@@ -12,6 +12,7 @@ CREATE INDEX tag_locale_code_index on tag(locale_code);
 CREATE INDEX tag_tagging_index on tag(tagging);
 CREATE INDEX tag_name_index on tag(name);
 CREATE INDEX tag_subname_index on tag(subname);
+CREATE INDEX tag_slug_index on tag(slug);
 CREATE INDEX tag_sign_index on tag(sign);
 CREATE INDEX tag_kind_index on tag(kind);
 

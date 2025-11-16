@@ -5,6 +5,7 @@ cargo loco generate scaffold --html \
     card \
         name:"string{50}" \
         subname:"string{50}" \
+        slug:"string{72}" \
         summary:"string{72}" \
         description:text \
         disambiguation:text \

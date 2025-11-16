@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_content_video_locale_code;
 DROP INDEX IF EXISTS index_content_video_tagging;
 DROP INDEX IF EXISTS index_content_video_name;
 DROP INDEX IF EXISTS index_content_video_subname;
+DROP INDEX IF EXISTS index_content_video_slug;
 DROP INDEX IF EXISTS index_content_video_sign;
 DROP INDEX IF EXISTS index_content_video_kind;
 DROP INDEX IF EXISTS index_content_video_width_as_pixels;

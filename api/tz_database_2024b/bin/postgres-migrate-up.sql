@@ -12,6 +12,7 @@ CREATE INDEX tz_database_2024b_locale_code_index on tz_database_2024b(locale_cod
 CREATE INDEX tz_database_2024b_tagging_index on tz_database_2024b(tagging);
 CREATE INDEX tz_database_2024b_name_index on tz_database_2024b(name);
 CREATE INDEX tz_database_2024b_subname_index on tz_database_2024b(subname);
+CREATE INDEX tz_database_2024b_slug_index on tz_database_2024b(slug);
 CREATE INDEX tz_database_2024b_sign_index on tz_database_2024b(sign);
 CREATE INDEX tz_database_2024b_kind_index on tz_database_2024b(kind);
 CREATE INDEX tz_database_2024b_country_code_index on tz_database_2024b(country_code);

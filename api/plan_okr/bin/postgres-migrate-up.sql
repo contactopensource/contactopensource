@@ -12,6 +12,7 @@ CREATE INDEX plan_okr_locale_code_index on plan_okr(locale_code);
 CREATE INDEX plan_okr_tagging_index on plan_okr(tagging);
 CREATE INDEX plan_okr_name_index on plan_okr(name);
 CREATE INDEX plan_okr_subname_index on plan_okr(subname);
+CREATE INDEX plan_okr_slug_index on plan_okr(slug);
 CREATE INDEX plan_okr_sign_index on plan_okr(sign);
 CREATE INDEX plan_okr_kind_index on plan_okr(kind);
 

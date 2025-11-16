@@ -12,6 +12,7 @@ CREATE INDEX postal_contact_locale_code_index on postal_contact(locale_code);
 CREATE INDEX postal_contact_tagging_index on postal_contact(tagging);
 CREATE INDEX postal_contact_name_index on postal_contact(name);
 CREATE INDEX postal_contact_subname_index on postal_contact(subname);
+CREATE INDEX postal_contact_slug_index on postal_contact(slug);
 CREATE INDEX postal_contact_sign_index on postal_contact(sign);
 CREATE INDEX postal_contact_kind_index on postal_contact(kind);
 

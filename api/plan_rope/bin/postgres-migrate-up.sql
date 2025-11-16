@@ -12,6 +12,7 @@ CREATE INDEX plan_rope_locale_code_index on plan_rope(locale_code);
 CREATE INDEX plan_rope_tagging_index on plan_rope(tagging);
 CREATE INDEX plan_rope_name_index on plan_rope(name);
 CREATE INDEX plan_rope_subname_index on plan_rope(subname);
+CREATE INDEX plan_rope_slug_index on plan_rope(slug);
 CREATE INDEX plan_rope_sign_index on plan_rope(sign);
 CREATE INDEX plan_rope_kind_index on plan_rope(kind);
 

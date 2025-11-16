@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_plan_smart_locale_code;
 DROP INDEX IF EXISTS index_plan_smart_tagging;
 DROP INDEX IF EXISTS index_plan_smart_name;
 DROP INDEX IF EXISTS index_plan_smart_subname;
+DROP INDEX IF EXISTS index_plan_smart_slug;
 DROP INDEX IF EXISTS index_plan_smart_sign;
 DROP INDEX IF EXISTS index_plan_smart_kind;
 

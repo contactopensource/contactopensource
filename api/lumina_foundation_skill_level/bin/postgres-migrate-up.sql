@@ -12,6 +12,7 @@ CREATE INDEX lumina_foundation_skill_level_locale_code_index on lumina_foundatio
 CREATE INDEX lumina_foundation_skill_level_tagging_index on lumina_foundation_skill_level(tagging);
 CREATE INDEX lumina_foundation_skill_level_name_index on lumina_foundation_skill_level(name);
 CREATE INDEX lumina_foundation_skill_level_subname_index on lumina_foundation_skill_level(subname);
+CREATE INDEX lumina_foundation_skill_level_slug_index on lumina_foundation_skill_level(slug);
 CREATE INDEX lumina_foundation_skill_level_sign_index on lumina_foundation_skill_level(sign);
 CREATE INDEX lumina_foundation_skill_level_kind_index on lumina_foundation_skill_level(kind);
 CREATE INDEX lumina_foundation_skill_level_number_index on lumina_foundation_skill_level(number);

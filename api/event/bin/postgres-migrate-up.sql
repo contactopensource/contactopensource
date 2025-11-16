@@ -12,6 +12,7 @@ CREATE INDEX event_locale_code_index on event(locale_code);
 CREATE INDEX event_tagging_index on event(tagging);
 CREATE INDEX event_name_index on event(name);
 CREATE INDEX event_subname_index on event(subname);
+CREATE INDEX event_slug_index on event(slug);
 CREATE INDEX event_sign_index on event(sign);
 CREATE INDEX event_kind_index on event(kind);
 

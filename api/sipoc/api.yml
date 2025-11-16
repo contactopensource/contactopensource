@@ -1,7 +1,10 @@
 sipoc:
   title: SIPOC
   model: Sipoc
-  summary: Suppliers, Inputs, Processes, Output, Customers (SIPOC).
+  summary: |-
+
+    Suppliers, Inputs, Processes, Output, Customers (SIPOC).
+
   description: |-
 
     Suppliers, Inputs, Processes, Output, Customers (SIPOC).

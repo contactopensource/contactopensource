@@ -12,6 +12,7 @@ CREATE INDEX trait_locale_code_index on trait(locale_code);
 CREATE INDEX trait_tagging_index on trait(tagging);
 CREATE INDEX trait_name_index on trait(name);
 CREATE INDEX trait_subname_index on trait(subname);
+CREATE INDEX trait_slug_index on trait(slug);
 CREATE INDEX trait_sign_index on trait(sign);
 CREATE INDEX trait_kind_index on trait(kind);
 

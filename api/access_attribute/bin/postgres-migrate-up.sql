@@ -12,6 +12,7 @@ CREATE INDEX access_attribute_locale_code_index on access_attribute(locale_code)
 CREATE INDEX access_attribute_tagging_index on access_attribute(tagging);
 CREATE INDEX access_attribute_name_index on access_attribute(name);
 CREATE INDEX access_attribute_subname_index on access_attribute(subname);
+CREATE INDEX access_attribute_slug_index on access_attribute(slug);
 CREATE INDEX access_attribute_sign_index on access_attribute(sign);
 CREATE INDEX access_attribute_kind_index on access_attribute(kind);
 CREATE INDEX access_attribute_key_index on access_attribute(key);

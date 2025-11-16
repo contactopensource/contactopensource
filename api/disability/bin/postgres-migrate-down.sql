@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_disability_locale_code;
 DROP INDEX IF EXISTS index_disability_tagging;
 DROP INDEX IF EXISTS index_disability_name;
 DROP INDEX IF EXISTS index_disability_subname;
+DROP INDEX IF EXISTS index_disability_slug;
 DROP INDEX IF EXISTS index_disability_sign;
 DROP INDEX IF EXISTS index_disability_kind;
 

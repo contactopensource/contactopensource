@@ -21,7 +21,7 @@ microdata_item:
     the similar approaches of using RDFa and microformats.
 
   links:
-    - https://wikipedia.org/wiki/Microdata_(HTML)
+    wikipedia: https://wikipedia.org/wiki/Microdata_(HTML)
   attribute_groups:
     - !include ../_meta.yml
     - Main:

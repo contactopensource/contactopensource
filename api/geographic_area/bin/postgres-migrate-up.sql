@@ -12,6 +12,7 @@ CREATE INDEX geographic_area_locale_code_index on geographic_area(locale_code);
 CREATE INDEX geographic_area_tagging_index on geographic_area(tagging);
 CREATE INDEX geographic_area_name_index on geographic_area(name);
 CREATE INDEX geographic_area_subname_index on geographic_area(subname);
+CREATE INDEX geographic_area_slug_index on geographic_area(slug);
 CREATE INDEX geographic_area_sign_index on geographic_area(sign);
 CREATE INDEX geographic_area_kind_index on geographic_area(kind);
 

@@ -53,17 +53,24 @@ defmodule MyApp.MyDomain.InternationalStandardBookNumber.Attributes do
       description "The card subname a.k.a. card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle."
     end
 
+    attribute :slug, :string do
+      description "The card slug suitable for a web URL using kebab case or equivalent internationalization. This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems."
+    end
+
     attribute :summary, :string do
+      description "This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems."
     end
 
     attribute :description, :text do
+      description "Describe this item. This can be as long as you wish."
     end
 
     attribute :disambiguation, :text do
+      description "Explain differences between this item and other items. This can be as long as you wish."
     end
 
     attribute :sign, :string do
-      description "An option one-character sign, such as an emoji indicator."
+      description "An optional one-character sign, such as an emoji indicator."
     end
 
     attribute :kind, :string do

@@ -14,7 +14,7 @@ gs1_country_code:
     company prefixes. See https://wikipedia.org/wiki/GS1.
 
   links:
-    - https://wikipedia.org/wiki/List_of_GS1_country_codes
+    wikipedia: https://wikipedia.org/wiki/List_of_GS1_country_codes
   module: Code
   attribute_groups:
     - !include ../_meta.yml

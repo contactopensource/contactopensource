@@ -12,6 +12,7 @@ CREATE INDEX stock_keeping_unit_locale_code_index on stock_keeping_unit(locale_c
 CREATE INDEX stock_keeping_unit_tagging_index on stock_keeping_unit(tagging);
 CREATE INDEX stock_keeping_unit_name_index on stock_keeping_unit(name);
 CREATE INDEX stock_keeping_unit_subname_index on stock_keeping_unit(subname);
+CREATE INDEX stock_keeping_unit_slug_index on stock_keeping_unit(slug);
 CREATE INDEX stock_keeping_unit_sign_index on stock_keeping_unit(sign);
 CREATE INDEX stock_keeping_unit_kind_index on stock_keeping_unit(kind);
 CREATE INDEX stock_keeping_unit_code_index on stock_keeping_unit(code);

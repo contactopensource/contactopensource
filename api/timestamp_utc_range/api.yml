@@ -2,7 +2,7 @@ tag:
   title: Timestamp UTC Range
   model: Timestamp UTC Range
   module: Basics
-  summary:  |-
+  summary: |-
 
     A timestamp UTC range is a period between two timestamp UTC values.
 

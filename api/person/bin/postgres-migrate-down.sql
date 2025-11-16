@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_person_locale_code;
 DROP INDEX IF EXISTS index_person_tagging;
 DROP INDEX IF EXISTS index_person_name;
 DROP INDEX IF EXISTS index_person_subname;
+DROP INDEX IF EXISTS index_person_slug;
 DROP INDEX IF EXISTS index_person_sign;
 DROP INDEX IF EXISTS index_person_kind;
 DROP INDEX IF EXISTS index_person_birth_date;

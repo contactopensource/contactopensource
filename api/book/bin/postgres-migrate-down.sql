@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_book_locale_code;
 DROP INDEX IF EXISTS index_book_tagging;
 DROP INDEX IF EXISTS index_book_name;
 DROP INDEX IF EXISTS index_book_subname;
+DROP INDEX IF EXISTS index_book_slug;
 DROP INDEX IF EXISTS index_book_sign;
 DROP INDEX IF EXISTS index_book_kind;
 

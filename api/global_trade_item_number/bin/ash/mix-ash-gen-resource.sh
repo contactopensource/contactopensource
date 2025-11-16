@@ -18,6 +18,7 @@ mix ash.gen.resource \
     --attribute tagging:string \
     --attribute name:string \
     --attribute subname:string \
+    --attribute slug:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
@@ -96,6 +97,7 @@ EOF
 #     index[:tagging] \
 #     index[:name] \
 #     index[:subname] \
+#     index[:slug] \
 #     index[:sign] \
 #     index[:kind] \
 #     index[:code] \

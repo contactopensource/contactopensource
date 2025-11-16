@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_access_operation_locale_code;
 DROP INDEX IF EXISTS index_access_operation_tagging;
 DROP INDEX IF EXISTS index_access_operation_name;
 DROP INDEX IF EXISTS index_access_operation_subname;
+DROP INDEX IF EXISTS index_access_operation_slug;
 DROP INDEX IF EXISTS index_access_operation_sign;
 DROP INDEX IF EXISTS index_access_operation_kind;
 DROP INDEX IF EXISTS index_access_operation_key;

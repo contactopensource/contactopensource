@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_plan_outcome_locale_code;
 DROP INDEX IF EXISTS index_plan_outcome_tagging;
 DROP INDEX IF EXISTS index_plan_outcome_name;
 DROP INDEX IF EXISTS index_plan_outcome_subname;
+DROP INDEX IF EXISTS index_plan_outcome_slug;
 DROP INDEX IF EXISTS index_plan_outcome_sign;
 DROP INDEX IF EXISTS index_plan_outcome_kind;
 

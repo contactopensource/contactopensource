@@ -12,6 +12,7 @@ CREATE INDEX content_font_locale_code_index on content_font(locale_code);
 CREATE INDEX content_font_tagging_index on content_font(tagging);
 CREATE INDEX content_font_name_index on content_font(name);
 CREATE INDEX content_font_subname_index on content_font(subname);
+CREATE INDEX content_font_slug_index on content_font(slug);
 CREATE INDEX content_font_sign_index on content_font(sign);
 CREATE INDEX content_font_kind_index on content_font(kind);
 

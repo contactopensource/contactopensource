@@ -2,7 +2,7 @@
 set -euf
 
 mix phx.gen.html \
-    Code VirtualInternaionalAuthorityFileIndentifier None \
+    Code VirtualInternationalAuthorityFileIndentifier None \
         id:uuid:index \
         lock_version:integerNone \
         created_at:timestamp_utc_usec:index \
@@ -15,6 +15,7 @@ mix phx.gen.html \
         tagging:string:index \
         name:"string{50}":index \
         subname:"string{50}":index \
+        slug:"string{72}":index \
         summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \

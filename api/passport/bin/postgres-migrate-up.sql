@@ -12,6 +12,7 @@ CREATE INDEX passport_locale_code_index on passport(locale_code);
 CREATE INDEX passport_tagging_index on passport(tagging);
 CREATE INDEX passport_name_index on passport(name);
 CREATE INDEX passport_subname_index on passport(subname);
+CREATE INDEX passport_slug_index on passport(slug);
 CREATE INDEX passport_sign_index on passport(sign);
 CREATE INDEX passport_kind_index on passport(kind);
 

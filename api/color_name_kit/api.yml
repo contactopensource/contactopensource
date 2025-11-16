@@ -1,7 +1,10 @@
 color_name_kit:
   title: Color Name Kit
   model: ColorNameKit
-  summary: Color name kit
+  summary: |-
+
+    Color name kit
+
   module: Color
   attribute_groups:
     - !include ../_meta.yml

@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_skill_locale_code;
 DROP INDEX IF EXISTS index_skill_tagging;
 DROP INDEX IF EXISTS index_skill_name;
 DROP INDEX IF EXISTS index_skill_subname;
+DROP INDEX IF EXISTS index_skill_slug;
 DROP INDEX IF EXISTS index_skill_sign;
 DROP INDEX IF EXISTS index_skill_kind;
 

@@ -12,6 +12,7 @@ CREATE INDEX ability_locale_code_index on ability(locale_code);
 CREATE INDEX ability_tagging_index on ability(tagging);
 CREATE INDEX ability_name_index on ability(name);
 CREATE INDEX ability_subname_index on ability(subname);
+CREATE INDEX ability_slug_index on ability(slug);
 CREATE INDEX ability_sign_index on ability(sign);
 CREATE INDEX ability_kind_index on ability(kind);
 

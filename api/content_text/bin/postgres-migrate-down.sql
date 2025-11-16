@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_content_text_locale_code;
 DROP INDEX IF EXISTS index_content_text_tagging;
 DROP INDEX IF EXISTS index_content_text_name;
 DROP INDEX IF EXISTS index_content_text_subname;
+DROP INDEX IF EXISTS index_content_text_slug;
 DROP INDEX IF EXISTS index_content_text_sign;
 DROP INDEX IF EXISTS index_content_text_kind;
 

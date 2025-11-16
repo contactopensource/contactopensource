@@ -1,7 +1,10 @@
 quality_kit:
   title: Quality kit
   model: QualityKit
-  summary: Quality kit
+  summary: |-
+
+    Quality kit
+
   description: |-
 
     Quality kit.

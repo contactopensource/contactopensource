@@ -1,7 +1,10 @@
 halstead_complexity:
   title: Halstead complexity
   model: HalsteadComplexity
-  summary: Halstead complexity
+  summary: |-
+
+    Halstead complexity
+
   description: |-
 
     Halstead complexity

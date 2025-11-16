@@ -1,7 +1,10 @@
 uptime_percentage:
   title: Uptime percentage
   model: UptimePercentage
-  summary: Uptime percentage
+  summary: |-
+
+    Uptime percentage
+
   description: |-
 
     Uptime percentage metric: actual, target, ratio, unit, description.

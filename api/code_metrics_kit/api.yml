@@ -1,7 +1,10 @@
 code_metrics_kit:
   title: Code metrics kit
   model: CodeMetricsKit
-  summary: Code metrics kit
+  summary: |-
+
+    Code metrics kit
+
   description: |-
 
     Code metrics kit.

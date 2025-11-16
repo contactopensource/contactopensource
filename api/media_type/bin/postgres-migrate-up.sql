@@ -12,6 +12,7 @@ CREATE INDEX media_type_locale_code_index on media_type(locale_code);
 CREATE INDEX media_type_tagging_index on media_type(tagging);
 CREATE INDEX media_type_name_index on media_type(name);
 CREATE INDEX media_type_subname_index on media_type(subname);
+CREATE INDEX media_type_slug_index on media_type(slug);
 CREATE INDEX media_type_sign_index on media_type(sign);
 CREATE INDEX media_type_kind_index on media_type(kind);
 

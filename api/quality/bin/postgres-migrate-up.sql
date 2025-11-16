@@ -12,6 +12,7 @@ CREATE INDEX quality_locale_code_index on quality(locale_code);
 CREATE INDEX quality_tagging_index on quality(tagging);
 CREATE INDEX quality_name_index on quality(name);
 CREATE INDEX quality_subname_index on quality(subname);
+CREATE INDEX quality_slug_index on quality(slug);
 CREATE INDEX quality_sign_index on quality(sign);
 CREATE INDEX quality_kind_index on quality(kind);
 

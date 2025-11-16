@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_access_agent_locale_code;
 DROP INDEX IF EXISTS index_access_agent_tagging;
 DROP INDEX IF EXISTS index_access_agent_name;
 DROP INDEX IF EXISTS index_access_agent_subname;
+DROP INDEX IF EXISTS index_access_agent_slug;
 DROP INDEX IF EXISTS index_access_agent_sign;
 DROP INDEX IF EXISTS index_access_agent_kind;
 DROP INDEX IF EXISTS index_access_agent_key;

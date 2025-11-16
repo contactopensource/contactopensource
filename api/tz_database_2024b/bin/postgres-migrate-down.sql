@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_tz_database_2024b_locale_code;
 DROP INDEX IF EXISTS index_tz_database_2024b_tagging;
 DROP INDEX IF EXISTS index_tz_database_2024b_name;
 DROP INDEX IF EXISTS index_tz_database_2024b_subname;
+DROP INDEX IF EXISTS index_tz_database_2024b_slug;
 DROP INDEX IF EXISTS index_tz_database_2024b_sign;
 DROP INDEX IF EXISTS index_tz_database_2024b_kind;
 DROP INDEX IF EXISTS index_tz_database_2024b_country_code;

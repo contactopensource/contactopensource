@@ -1,7 +1,10 @@
 total_project_control:
   title: Total Project Control (TPC)
   model: TotalProjectControl
-  summary: Total Project Control (TPC)
+  summary: |-
+
+    Total Project Control (TPC)
+
   description: |-
 
     Total Project Control (TPC).

@@ -12,6 +12,7 @@ CREATE INDEX book_locale_code_index on book(locale_code);
 CREATE INDEX book_tagging_index on book(tagging);
 CREATE INDEX book_name_index on book(name);
 CREATE INDEX book_subname_index on book(subname);
+CREATE INDEX book_slug_index on book(slug);
 CREATE INDEX book_sign_index on book(sign);
 CREATE INDEX book_kind_index on book(kind);
 

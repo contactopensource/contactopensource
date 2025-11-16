@@ -1,6 +1,9 @@
 
 access:
-  summary: Access package, such as for Attribute-Based Access Control (ABAC), Multi-Tenant Agent Access, etc.
+  summary: |-
+
+    Access package, such as for Attribute-Based Access Control (ABAC), Multi-Tenant Agent Access, etc.
+
   monopic|>
     ┌──────────────────────────┐
     │ access_tenant            │

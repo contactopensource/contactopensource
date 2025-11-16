@@ -1,7 +1,7 @@
 event:
   title: Event
   model: Event
-  summary:  |-
+  summary: |-
 
     An event is a generic concept of anything that happens over time.
 

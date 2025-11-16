@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_purchase_receipt_locale_code;
 DROP INDEX IF EXISTS index_purchase_receipt_tagging;
 DROP INDEX IF EXISTS index_purchase_receipt_name;
 DROP INDEX IF EXISTS index_purchase_receipt_subname;
+DROP INDEX IF EXISTS index_purchase_receipt_slug;
 DROP INDEX IF EXISTS index_purchase_receipt_sign;
 DROP INDEX IF EXISTS index_purchase_receipt_kind;
 DROP INDEX IF EXISTS index_purchase_receipt_key;

@@ -12,6 +12,7 @@ CREATE INDEX global_trade_item_number_locale_code_index on global_trade_item_num
 CREATE INDEX global_trade_item_number_tagging_index on global_trade_item_number(tagging);
 CREATE INDEX global_trade_item_number_name_index on global_trade_item_number(name);
 CREATE INDEX global_trade_item_number_subname_index on global_trade_item_number(subname);
+CREATE INDEX global_trade_item_number_slug_index on global_trade_item_number(slug);
 CREATE INDEX global_trade_item_number_sign_index on global_trade_item_number(sign);
 CREATE INDEX global_trade_item_number_kind_index on global_trade_item_number(kind);
 CREATE INDEX global_trade_item_number_code_index on global_trade_item_number(code);

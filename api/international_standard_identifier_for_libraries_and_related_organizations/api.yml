@@ -41,7 +41,7 @@ international_standard_identifier_for_libraries_and_related_organization:
     https://www.iso.org/standard/77849.html
 
   links:
-    - https://wikipedia.org/wiki/International_Standard_Identifier_for_Libraries_and_Related_Organizations
+    wikipedia: https://wikipedia.org/wiki/International_Standard_Identifier_for_Libraries_and_Related_Organizations
   module: Code
   attribute_groups:
     - !include ../_meta.yml

@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_passport_locale_code;
 DROP INDEX IF EXISTS index_passport_tagging;
 DROP INDEX IF EXISTS index_passport_name;
 DROP INDEX IF EXISTS index_passport_subname;
+DROP INDEX IF EXISTS index_passport_slug;
 DROP INDEX IF EXISTS index_passport_sign;
 DROP INDEX IF EXISTS index_passport_kind;
 

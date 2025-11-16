@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_international_classification_of_diseases_11_locale_co
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_tagging;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_name;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_subname;
+DROP INDEX IF EXISTS index_international_classification_of_diseases_11_slug;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_sign;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_kind;
 DROP INDEX IF EXISTS index_international_classification_of_diseases_11_code;

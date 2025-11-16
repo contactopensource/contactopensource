@@ -12,6 +12,7 @@ CREATE INDEX edge_locale_code_index on edge(locale_code);
 CREATE INDEX edge_tagging_index on edge(tagging);
 CREATE INDEX edge_name_index on edge(name);
 CREATE INDEX edge_subname_index on edge(subname);
+CREATE INDEX edge_slug_index on edge(slug);
 CREATE INDEX edge_sign_index on edge(sign);
 CREATE INDEX edge_kind_index on edge(kind);
 

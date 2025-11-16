@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_phone_contact_locale_code;
 DROP INDEX IF EXISTS index_phone_contact_tagging;
 DROP INDEX IF EXISTS index_phone_contact_name;
 DROP INDEX IF EXISTS index_phone_contact_subname;
+DROP INDEX IF EXISTS index_phone_contact_slug;
 DROP INDEX IF EXISTS index_phone_contact_sign;
 DROP INDEX IF EXISTS index_phone_contact_kind;
 DROP INDEX IF EXISTS index_phone_contact_number_text;

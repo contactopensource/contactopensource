@@ -2,7 +2,10 @@ initiative:
   title: Initiative
   model: Initiative
   module: Works
-  summary: Initiative
+  summary: |-
+
+    Initiative
+
   description: |-
 
     An initiative is a catch-all term for all of these and more:
@@ -17,7 +20,7 @@ initiative:
     - Support
 
   links:
-    - https://wikipedia.org/wiki/Initiative
+    wikipedia: https://wikipedia.org/wiki/Initiative
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

@@ -1,7 +1,10 @@
 business_analysis_kit:
   title:  Business analysis
   model: BusinessAnalysis
-  summary: Business analysis kit
+  summary: |-
+
+    Business analysis kit
+
   description: |-
 
     Business analysis kit.

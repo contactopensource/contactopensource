@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_place_locale_code;
 DROP INDEX IF EXISTS index_place_tagging;
 DROP INDEX IF EXISTS index_place_name;
 DROP INDEX IF EXISTS index_place_subname;
+DROP INDEX IF EXISTS index_place_slug;
 DROP INDEX IF EXISTS index_place_sign;
 DROP INDEX IF EXISTS index_place_kind;
 DROP INDEX IF EXISTS index_place_latitude_as_decimal_degrees;

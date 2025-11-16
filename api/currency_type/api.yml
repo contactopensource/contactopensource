@@ -14,7 +14,7 @@ currency:
     Under this definition, the British Pound sterling (£), euros (€), Japanese yen (¥), and U.S. dollars (US$) are examples of (government-issued) fiat currencies.
 
   links:
-    - https://wikipedia.org/wiki/Currency
+    wikipedia: https://wikipedia.org/wiki/Currency
   attribute_groups:
     - !include ../_meta.yml
     - Main:

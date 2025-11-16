@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_codec_locale_code;
 DROP INDEX IF EXISTS index_codec_tagging;
 DROP INDEX IF EXISTS index_codec_name;
 DROP INDEX IF EXISTS index_codec_subname;
+DROP INDEX IF EXISTS index_codec_slug;
 DROP INDEX IF EXISTS index_codec_sign;
 DROP INDEX IF EXISTS index_codec_kind;
 

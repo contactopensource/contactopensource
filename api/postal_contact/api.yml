@@ -12,7 +12,7 @@ postal_contact:
     Postal address formats are different in different places, and unlike latitude and longitude coordinates, there is no simple mapping from an address to a location.
 
   links:
-    - https://wikipedia.org/wiki/Address
+    wikipedia: https://wikipedia.org/wiki/Address
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

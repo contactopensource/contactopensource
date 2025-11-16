@@ -5,6 +5,7 @@ rails generate scaffold \
     card \
         name:"string{50}":index \
         subname:"string{50}":index \
+        slug:"string{72}":index \
         summary:"string{72}" \
         description:text \
         disambiguation:text \

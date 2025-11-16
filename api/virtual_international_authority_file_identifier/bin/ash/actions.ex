@@ -1,5 +1,5 @@
 
-defmodule MyApp.MyDomain.VirtualInternaionalAuthorityFileIndentifier.Actions do
+defmodule MyApp.MyDomain.VirtualInternationalAuthorityFileIndentifier.Actions do
   use Spark.Dsl.Fragment, of: Ash.Resource
 
   actions do

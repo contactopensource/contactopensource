@@ -1,5 +1,8 @@
 system:
-  summary: System package for system-related concepts, such as operating system resources for a typical unix operating system.
+  summary: |-
+
+    System package for system-related concepts, such as operating system resources for a typical unix operating system.
+
   entities:
     system_user
     system_group

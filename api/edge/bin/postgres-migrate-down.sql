@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_edge_locale_code;
 DROP INDEX IF EXISTS index_edge_tagging;
 DROP INDEX IF EXISTS index_edge_name;
 DROP INDEX IF EXISTS index_edge_subname;
+DROP INDEX IF EXISTS index_edge_slug;
 DROP INDEX IF EXISTS index_edge_sign;
 DROP INDEX IF EXISTS index_edge_kind;
 

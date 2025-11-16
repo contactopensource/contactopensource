@@ -1,7 +1,10 @@
 dora_metrics_kit:
   title: DORA metrics kit
   model: DoraMetricsKit
-  summary: DORA metrics kit
+  summary: |-
+
+    DORA metrics kit
+
   description: |-
 
     DORA metrics kit

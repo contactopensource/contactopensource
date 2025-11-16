@@ -12,6 +12,7 @@ CREATE INDEX place_locale_code_index on place(locale_code);
 CREATE INDEX place_tagging_index on place(tagging);
 CREATE INDEX place_name_index on place(name);
 CREATE INDEX place_subname_index on place(subname);
+CREATE INDEX place_slug_index on place(slug);
 CREATE INDEX place_sign_index on place(sign);
 CREATE INDEX place_kind_index on place(kind);
 CREATE INDEX place_latitude_as_decimal_degrees_index on place(latitude_as_decimal_degrees);

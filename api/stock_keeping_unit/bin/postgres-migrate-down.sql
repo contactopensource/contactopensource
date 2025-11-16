@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_stock_keeping_unit_locale_code;
 DROP INDEX IF EXISTS index_stock_keeping_unit_tagging;
 DROP INDEX IF EXISTS index_stock_keeping_unit_name;
 DROP INDEX IF EXISTS index_stock_keeping_unit_subname;
+DROP INDEX IF EXISTS index_stock_keeping_unit_slug;
 DROP INDEX IF EXISTS index_stock_keeping_unit_sign;
 DROP INDEX IF EXISTS index_stock_keeping_unit_kind;
 DROP INDEX IF EXISTS index_stock_keeping_unit_code;

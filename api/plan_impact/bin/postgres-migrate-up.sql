@@ -12,6 +12,7 @@ CREATE INDEX plan_impact_locale_code_index on plan_impact(locale_code);
 CREATE INDEX plan_impact_tagging_index on plan_impact(tagging);
 CREATE INDEX plan_impact_name_index on plan_impact(name);
 CREATE INDEX plan_impact_subname_index on plan_impact(subname);
+CREATE INDEX plan_impact_slug_index on plan_impact(slug);
 CREATE INDEX plan_impact_sign_index on plan_impact(sign);
 CREATE INDEX plan_impact_kind_index on plan_impact(kind);
 

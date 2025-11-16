@@ -1,5 +1,8 @@
 purchase:
-  summary: Purchase package for purchase-related concepts, such as buying and selling.
+  summary: |-
+
+    Purchase package for purchase-related concepts, such as buying and selling.
+
   entities:
     - purchase_order
     - purchase_payment

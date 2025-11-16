@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_plan_okr_locale_code;
 DROP INDEX IF EXISTS index_plan_okr_tagging;
 DROP INDEX IF EXISTS index_plan_okr_name;
 DROP INDEX IF EXISTS index_plan_okr_subname;
+DROP INDEX IF EXISTS index_plan_okr_slug;
 DROP INDEX IF EXISTS index_plan_okr_sign;
 DROP INDEX IF EXISTS index_plan_okr_kind;
 

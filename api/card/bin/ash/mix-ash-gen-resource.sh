@@ -9,6 +9,7 @@ mix ash.gen.resource \
     --uuid-primary-key id \
     --attribute name:string \
     --attribute subname:string \
+    --attribute slug:string \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
@@ -74,6 +75,7 @@ EOF
 #
 #     index[:name] \
 #     index[:subname] \
+#     index[:slug] \
 #     index[:sign] \
 #     index[:kind] \
 #

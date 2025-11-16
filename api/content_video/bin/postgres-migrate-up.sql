@@ -12,6 +12,7 @@ CREATE INDEX content_video_locale_code_index on content_video(locale_code);
 CREATE INDEX content_video_tagging_index on content_video(tagging);
 CREATE INDEX content_video_name_index on content_video(name);
 CREATE INDEX content_video_subname_index on content_video(subname);
+CREATE INDEX content_video_slug_index on content_video(slug);
 CREATE INDEX content_video_sign_index on content_video(sign);
 CREATE INDEX content_video_kind_index on content_video(kind);
 CREATE INDEX content_video_width_as_pixels_index on content_video(width_as_pixels);

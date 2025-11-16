@@ -12,6 +12,7 @@ CREATE INDEX gs1_country_code_locale_code_index on gs1_country_code(locale_code)
 CREATE INDEX gs1_country_code_tagging_index on gs1_country_code(tagging);
 CREATE INDEX gs1_country_code_name_index on gs1_country_code(name);
 CREATE INDEX gs1_country_code_subname_index on gs1_country_code(subname);
+CREATE INDEX gs1_country_code_slug_index on gs1_country_code(slug);
 CREATE INDEX gs1_country_code_sign_index on gs1_country_code(sign);
 CREATE INDEX gs1_country_code_kind_index on gs1_country_code(kind);
 CREATE INDEX gs1_country_code_code_index on gs1_country_code(code);

@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_tag_locale_code;
 DROP INDEX IF EXISTS index_tag_tagging;
 DROP INDEX IF EXISTS index_tag_name;
 DROP INDEX IF EXISTS index_tag_subname;
+DROP INDEX IF EXISTS index_tag_slug;
 DROP INDEX IF EXISTS index_tag_sign;
 DROP INDEX IF EXISTS index_tag_kind;
 

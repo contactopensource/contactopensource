@@ -26,7 +26,7 @@ disability:
     others.[3]
 
   links:
-    - https://wikipedia.org/wiki/Disability
+    wikipedia: https://wikipedia.org/wiki/Disability
   snake_case_plural: disabilities
   attribute_groups:
     - !include ../_meta.yml

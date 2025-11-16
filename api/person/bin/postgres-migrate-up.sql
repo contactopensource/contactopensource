@@ -12,6 +12,7 @@ CREATE INDEX person_locale_code_index on person(locale_code);
 CREATE INDEX person_tagging_index on person(tagging);
 CREATE INDEX person_name_index on person(name);
 CREATE INDEX person_subname_index on person(subname);
+CREATE INDEX person_slug_index on person(slug);
 CREATE INDEX person_sign_index on person(sign);
 CREATE INDEX person_kind_index on person(kind);
 CREATE INDEX person_birth_date_index on person(birth_date);

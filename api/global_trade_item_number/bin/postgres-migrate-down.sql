@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_global_trade_item_number_locale_code;
 DROP INDEX IF EXISTS index_global_trade_item_number_tagging;
 DROP INDEX IF EXISTS index_global_trade_item_number_name;
 DROP INDEX IF EXISTS index_global_trade_item_number_subname;
+DROP INDEX IF EXISTS index_global_trade_item_number_slug;
 DROP INDEX IF EXISTS index_global_trade_item_number_sign;
 DROP INDEX IF EXISTS index_global_trade_item_number_kind;
 DROP INDEX IF EXISTS index_global_trade_item_number_code;

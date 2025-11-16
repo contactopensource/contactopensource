@@ -12,6 +12,7 @@ CREATE INDEX content_model_locale_code_index on content_model(locale_code);
 CREATE INDEX content_model_tagging_index on content_model(tagging);
 CREATE INDEX content_model_name_index on content_model(name);
 CREATE INDEX content_model_subname_index on content_model(subname);
+CREATE INDEX content_model_slug_index on content_model(slug);
 CREATE INDEX content_model_sign_index on content_model(sign);
 CREATE INDEX content_model_kind_index on content_model(kind);
 

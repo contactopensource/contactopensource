@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_plan_impact_locale_code;
 DROP INDEX IF EXISTS index_plan_impact_tagging;
 DROP INDEX IF EXISTS index_plan_impact_name;
 DROP INDEX IF EXISTS index_plan_impact_subname;
+DROP INDEX IF EXISTS index_plan_impact_slug;
 DROP INDEX IF EXISTS index_plan_impact_sign;
 DROP INDEX IF EXISTS index_plan_impact_kind;
 

@@ -12,6 +12,7 @@ CREATE INDEX codec_locale_code_index on codec(locale_code);
 CREATE INDEX codec_tagging_index on codec(tagging);
 CREATE INDEX codec_name_index on codec(name);
 CREATE INDEX codec_subname_index on codec(subname);
+CREATE INDEX codec_slug_index on codec(slug);
 CREATE INDEX codec_sign_index on codec(sign);
 CREATE INDEX codec_kind_index on codec(kind);
 

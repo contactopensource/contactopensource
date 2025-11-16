@@ -12,6 +12,7 @@ CREATE INDEX ethnicity_locale_code_index on ethnicity(locale_code);
 CREATE INDEX ethnicity_tagging_index on ethnicity(tagging);
 CREATE INDEX ethnicity_name_index on ethnicity(name);
 CREATE INDEX ethnicity_subname_index on ethnicity(subname);
+CREATE INDEX ethnicity_slug_index on ethnicity(slug);
 CREATE INDEX ethnicity_sign_index on ethnicity(sign);
 CREATE INDEX ethnicity_kind_index on ethnicity(kind);
 

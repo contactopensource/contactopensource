@@ -12,6 +12,7 @@ CREATE INDEX content_application_locale_code_index on content_application(locale
 CREATE INDEX content_application_tagging_index on content_application(tagging);
 CREATE INDEX content_application_name_index on content_application(name);
 CREATE INDEX content_application_subname_index on content_application(subname);
+CREATE INDEX content_application_slug_index on content_application(slug);
 CREATE INDEX content_application_sign_index on content_application(sign);
 CREATE INDEX content_application_kind_index on content_application(kind);
 

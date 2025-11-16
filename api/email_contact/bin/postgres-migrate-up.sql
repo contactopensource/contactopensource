@@ -12,6 +12,7 @@ CREATE INDEX email_contact_locale_code_index on email_contact(locale_code);
 CREATE INDEX email_contact_tagging_index on email_contact(tagging);
 CREATE INDEX email_contact_name_index on email_contact(name);
 CREATE INDEX email_contact_subname_index on email_contact(subname);
+CREATE INDEX email_contact_slug_index on email_contact(slug);
 CREATE INDEX email_contact_sign_index on email_contact(sign);
 CREATE INDEX email_contact_kind_index on email_contact(kind);
 

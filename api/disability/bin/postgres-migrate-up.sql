@@ -12,6 +12,7 @@ CREATE INDEX disability_locale_code_index on disability(locale_code);
 CREATE INDEX disability_tagging_index on disability(tagging);
 CREATE INDEX disability_name_index on disability(name);
 CREATE INDEX disability_subname_index on disability(subname);
+CREATE INDEX disability_slug_index on disability(slug);
 CREATE INDEX disability_sign_index on disability(sign);
 CREATE INDEX disability_kind_index on disability(kind);
 

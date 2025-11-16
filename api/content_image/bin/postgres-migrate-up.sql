@@ -12,6 +12,7 @@ CREATE INDEX content_image_locale_code_index on content_image(locale_code);
 CREATE INDEX content_image_tagging_index on content_image(tagging);
 CREATE INDEX content_image_name_index on content_image(name);
 CREATE INDEX content_image_subname_index on content_image(subname);
+CREATE INDEX content_image_slug_index on content_image(slug);
 CREATE INDEX content_image_sign_index on content_image(sign);
 CREATE INDEX content_image_kind_index on content_image(kind);
 

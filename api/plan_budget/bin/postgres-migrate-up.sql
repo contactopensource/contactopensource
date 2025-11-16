@@ -12,6 +12,7 @@ CREATE INDEX plan_budget_locale_code_index on plan_budget(locale_code);
 CREATE INDEX plan_budget_tagging_index on plan_budget(tagging);
 CREATE INDEX plan_budget_name_index on plan_budget(name);
 CREATE INDEX plan_budget_subname_index on plan_budget(subname);
+CREATE INDEX plan_budget_slug_index on plan_budget(slug);
 CREATE INDEX plan_budget_sign_index on plan_budget(sign);
 CREATE INDEX plan_budget_kind_index on plan_budget(kind);
 

@@ -12,6 +12,7 @@ CREATE INDEX content_multipart_locale_code_index on content_multipart(locale_cod
 CREATE INDEX content_multipart_tagging_index on content_multipart(tagging);
 CREATE INDEX content_multipart_name_index on content_multipart(name);
 CREATE INDEX content_multipart_subname_index on content_multipart(subname);
+CREATE INDEX content_multipart_slug_index on content_multipart(slug);
 CREATE INDEX content_multipart_sign_index on content_multipart(sign);
 CREATE INDEX content_multipart_kind_index on content_multipart(kind);
 

@@ -11,6 +11,6 @@
             * week day (0 - 6 meaning Sunday to Monday)
 
         links:
-          - https://wikipedia.org/wiki/Cron
+          wikipedia: https://wikipedia.org/wiki/Cron
         type: string
         index: false

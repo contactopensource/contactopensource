@@ -12,12 +12,10 @@ system_user:
   module: System
   attributes:
     uid:
-      summary: uid
       type: integer
       index: true
       example: 1
     key:
-      summary: key
       type: string
       index: true
       example: root

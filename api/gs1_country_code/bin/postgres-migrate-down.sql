@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_gs1_country_code_locale_code;
 DROP INDEX IF EXISTS index_gs1_country_code_tagging;
 DROP INDEX IF EXISTS index_gs1_country_code_name;
 DROP INDEX IF EXISTS index_gs1_country_code_subname;
+DROP INDEX IF EXISTS index_gs1_country_code_slug;
 DROP INDEX IF EXISTS index_gs1_country_code_sign;
 DROP INDEX IF EXISTS index_gs1_country_code_kind;
 DROP INDEX IF EXISTS index_gs1_country_code_code;

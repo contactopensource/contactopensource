@@ -1,7 +1,10 @@
 ability:
   title: Ability
   model: Ability
-  summary: An ability is a power an agent has to perform various actions.
+  summary: |-
+
+    An ability is a power an agent has to perform various actions.
+
   description: |-
 
     An ability is a power an agent has to perform various actions.
@@ -11,7 +14,7 @@ ability:
     Abilities are intelligent powers: they are guided by the person's intention and executing them successfully results in an action, which is not true for all types of powers.
 
   links:
-    - https://wikipedia.org/wiki/Ability
+    wikipedia: https://wikipedia.org/wiki/Ability
   snake_case_plural: abilities
   attribute_groups:
     - !include ../_meta.yml

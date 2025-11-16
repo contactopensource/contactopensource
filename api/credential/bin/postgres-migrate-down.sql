@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_credential_locale_code;
 DROP INDEX IF EXISTS index_credential_tagging;
 DROP INDEX IF EXISTS index_credential_name;
 DROP INDEX IF EXISTS index_credential_subname;
+DROP INDEX IF EXISTS index_credential_slug;
 DROP INDEX IF EXISTS index_credential_sign;
 DROP INDEX IF EXISTS index_credential_kind;
 

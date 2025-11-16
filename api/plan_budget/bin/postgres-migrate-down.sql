@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_plan_budget_locale_code;
 DROP INDEX IF EXISTS index_plan_budget_tagging;
 DROP INDEX IF EXISTS index_plan_budget_name;
 DROP INDEX IF EXISTS index_plan_budget_subname;
+DROP INDEX IF EXISTS index_plan_budget_slug;
 DROP INDEX IF EXISTS index_plan_budget_sign;
 DROP INDEX IF EXISTS index_plan_budget_kind;
 

@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_plan_rope_locale_code;
 DROP INDEX IF EXISTS index_plan_rope_tagging;
 DROP INDEX IF EXISTS index_plan_rope_name;
 DROP INDEX IF EXISTS index_plan_rope_subname;
+DROP INDEX IF EXISTS index_plan_rope_slug;
 DROP INDEX IF EXISTS index_plan_rope_sign;
 DROP INDEX IF EXISTS index_plan_rope_kind;
 

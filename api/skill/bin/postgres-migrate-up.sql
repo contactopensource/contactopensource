@@ -12,6 +12,7 @@ CREATE INDEX skill_locale_code_index on skill(locale_code);
 CREATE INDEX skill_tagging_index on skill(tagging);
 CREATE INDEX skill_name_index on skill(name);
 CREATE INDEX skill_subname_index on skill(subname);
+CREATE INDEX skill_slug_index on skill(slug);
 CREATE INDEX skill_sign_index on skill(sign);
 CREATE INDEX skill_kind_index on skill(kind);
 

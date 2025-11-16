@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_content_multipart_locale_code;
 DROP INDEX IF EXISTS index_content_multipart_tagging;
 DROP INDEX IF EXISTS index_content_multipart_name;
 DROP INDEX IF EXISTS index_content_multipart_subname;
+DROP INDEX IF EXISTS index_content_multipart_slug;
 DROP INDEX IF EXISTS index_content_multipart_sign;
 DROP INDEX IF EXISTS index_content_multipart_kind;
 

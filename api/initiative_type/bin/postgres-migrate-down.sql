@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_initiative_type_locale_code;
 DROP INDEX IF EXISTS index_initiative_type_tagging;
 DROP INDEX IF EXISTS index_initiative_type_name;
 DROP INDEX IF EXISTS index_initiative_type_subname;
+DROP INDEX IF EXISTS index_initiative_type_slug;
 DROP INDEX IF EXISTS index_initiative_type_sign;
 DROP INDEX IF EXISTS index_initiative_type_kind;
 

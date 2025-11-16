@@ -12,6 +12,7 @@ CREATE INDEX item_locale_code_index on item(locale_code);
 CREATE INDEX item_tagging_index on item(tagging);
 CREATE INDEX item_name_index on item(name);
 CREATE INDEX item_subname_index on item(subname);
+CREATE INDEX item_slug_index on item(slug);
 CREATE INDEX item_sign_index on item(sign);
 CREATE INDEX item_kind_index on item(kind);
 

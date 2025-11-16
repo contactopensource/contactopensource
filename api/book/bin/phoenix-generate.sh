@@ -15,6 +15,7 @@ mix phx.gen.html \
         tagging:string:index \
         name:"string{50}":index \
         subname:"string{50}":index \
+        slug:"string{72}":index \
         summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \

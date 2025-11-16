@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_purchase_order_locale_code;
 DROP INDEX IF EXISTS index_purchase_order_tagging;
 DROP INDEX IF EXISTS index_purchase_order_name;
 DROP INDEX IF EXISTS index_purchase_order_subname;
+DROP INDEX IF EXISTS index_purchase_order_slug;
 DROP INDEX IF EXISTS index_purchase_order_sign;
 DROP INDEX IF EXISTS index_purchase_order_kind;
 DROP INDEX IF EXISTS index_purchase_order_key;

@@ -12,6 +12,7 @@ CREATE INDEX initiative_type_locale_code_index on initiative_type(locale_code);
 CREATE INDEX initiative_type_tagging_index on initiative_type(tagging);
 CREATE INDEX initiative_type_name_index on initiative_type(name);
 CREATE INDEX initiative_type_subname_index on initiative_type(subname);
+CREATE INDEX initiative_type_slug_index on initiative_type(slug);
 CREATE INDEX initiative_type_sign_index on initiative_type(sign);
 CREATE INDEX initiative_type_kind_index on initiative_type(kind);
 

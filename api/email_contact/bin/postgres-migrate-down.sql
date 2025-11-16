@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_email_contact_locale_code;
 DROP INDEX IF EXISTS index_email_contact_tagging;
 DROP INDEX IF EXISTS index_email_contact_name;
 DROP INDEX IF EXISTS index_email_contact_subname;
+DROP INDEX IF EXISTS index_email_contact_slug;
 DROP INDEX IF EXISTS index_email_contact_sign;
 DROP INDEX IF EXISTS index_email_contact_kind;
 

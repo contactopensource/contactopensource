@@ -12,6 +12,7 @@ CREATE INDEX purchase_order_locale_code_index on purchase_order(locale_code);
 CREATE INDEX purchase_order_tagging_index on purchase_order(tagging);
 CREATE INDEX purchase_order_name_index on purchase_order(name);
 CREATE INDEX purchase_order_subname_index on purchase_order(subname);
+CREATE INDEX purchase_order_slug_index on purchase_order(slug);
 CREATE INDEX purchase_order_sign_index on purchase_order(sign);
 CREATE INDEX purchase_order_kind_index on purchase_order(kind);
 CREATE INDEX purchase_order_key_index on purchase_order(key);

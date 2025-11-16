@@ -10,7 +10,7 @@ email_contact:
     An email contact, which is an email address and personal info.
 
   links:
-    - https://wikipedia.org/wiki/Uniform_Resource_Identifier
+    wikipedia: https://wikipedia.org/wiki/Uniform_Resource_Identifier
   module: Contact
   attribute_groups:
     - !include ../_meta.yml

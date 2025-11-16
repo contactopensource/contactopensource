@@ -34,11 +34,13 @@ card:
 
   * subname: string(50) (index) - example: @alice
 
-  * summary: string(72) - example: This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.
+  * slug: string(72) (index) - example: alice-anderson
 
-  * description: text - example: This text is a description and can be as long as you wish.
+  * summary: string(72)
 
-  * disambiguation: text - example: This text explains the difference between this item and others.
+  * description: text
+
+  * disambiguation: text
 
   * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
 

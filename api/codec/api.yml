@@ -1,7 +1,7 @@
 codec:
   title: Codec
   model: Codec
-  summary:  |-
+  summary: |-
 
     A codec encodes or decodes a data stream or signal.
 
@@ -14,7 +14,7 @@ codec:
     Codec is a portmanteau of coder/decoder.
 
   links:
-    - https://wikipedia.org/wiki/Codec
+    wikipedia: https://wikipedia.org/wiki/Codec
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml

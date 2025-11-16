@@ -1,5 +1,8 @@
 plan:
-  summary: Plan package for plan-related concepts, such as for project management, task tracking, work breakdown structure, etc.
+  summary: |-
+
+    Plan package for plan-related concepts, such as for project management, task tracking, work breakdown structure, etc.
+
   entities:
     plan
     plan_budget

@@ -12,6 +12,7 @@ CREATE INDEX libraries_org_identifier_locale_code_index on libraries_org_identif
 CREATE INDEX libraries_org_identifier_tagging_index on libraries_org_identifier(tagging);
 CREATE INDEX libraries_org_identifier_name_index on libraries_org_identifier(name);
 CREATE INDEX libraries_org_identifier_subname_index on libraries_org_identifier(subname);
+CREATE INDEX libraries_org_identifier_slug_index on libraries_org_identifier(slug);
 CREATE INDEX libraries_org_identifier_sign_index on libraries_org_identifier(sign);
 CREATE INDEX libraries_org_identifier_kind_index on libraries_org_identifier(kind);
 CREATE INDEX libraries_org_identifier_key_index on libraries_org_identifier(key);

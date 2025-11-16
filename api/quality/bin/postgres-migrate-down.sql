@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_quality_locale_code;
 DROP INDEX IF EXISTS index_quality_tagging;
 DROP INDEX IF EXISTS index_quality_name;
 DROP INDEX IF EXISTS index_quality_subname;
+DROP INDEX IF EXISTS index_quality_slug;
 DROP INDEX IF EXISTS index_quality_sign;
 DROP INDEX IF EXISTS index_quality_kind;
 

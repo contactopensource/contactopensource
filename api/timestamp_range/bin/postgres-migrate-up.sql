@@ -12,6 +12,7 @@ CREATE INDEX timestamp_range_locale_code_index on timestamp_range(locale_code);
 CREATE INDEX timestamp_range_tagging_index on timestamp_range(tagging);
 CREATE INDEX timestamp_range_name_index on timestamp_range(name);
 CREATE INDEX timestamp_range_subname_index on timestamp_range(subname);
+CREATE INDEX timestamp_range_slug_index on timestamp_range(slug);
 CREATE INDEX timestamp_range_sign_index on timestamp_range(sign);
 CREATE INDEX timestamp_range_kind_index on timestamp_range(kind);
 

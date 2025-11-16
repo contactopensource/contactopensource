@@ -1,7 +1,10 @@
 earned_value_management:
   title: Earned Value Management (EVM)
   model: EarnedValueManagement
-  summary: Earned Value Management (EVM)
+  summary: |-
+
+    Earned Value Management (EVM)
+
   description: |-
 
     Earned Value Management (EVM)

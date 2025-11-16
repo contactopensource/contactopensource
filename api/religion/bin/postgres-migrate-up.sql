@@ -12,6 +12,7 @@ CREATE INDEX religion_locale_code_index on religion(locale_code);
 CREATE INDEX religion_tagging_index on religion(tagging);
 CREATE INDEX religion_name_index on religion(name);
 CREATE INDEX religion_subname_index on religion(subname);
+CREATE INDEX religion_slug_index on religion(slug);
 CREATE INDEX religion_sign_index on religion(sign);
 CREATE INDEX religion_kind_index on religion(kind);
 

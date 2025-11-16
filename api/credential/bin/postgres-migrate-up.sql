@@ -12,6 +12,7 @@ CREATE INDEX credential_locale_code_index on credential(locale_code);
 CREATE INDEX credential_tagging_index on credential(tagging);
 CREATE INDEX credential_name_index on credential(name);
 CREATE INDEX credential_subname_index on credential(subname);
+CREATE INDEX credential_slug_index on credential(slug);
 CREATE INDEX credential_sign_index on credential(sign);
 CREATE INDEX credential_kind_index on credential(kind);
 

@@ -1,7 +1,10 @@
 active_users:
   title: Active users
   model: ActiveUsers
-  summary: Active users measurement
+  summary: |-
+
+    Active users measurement
+
   description: |-
 
     Active users measurement, such as active users per week.

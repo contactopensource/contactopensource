@@ -10,6 +10,7 @@ DROP INDEX IF EXISTS index_timestamp_range_locale_code;
 DROP INDEX IF EXISTS index_timestamp_range_tagging;
 DROP INDEX IF EXISTS index_timestamp_range_name;
 DROP INDEX IF EXISTS index_timestamp_range_subname;
+DROP INDEX IF EXISTS index_timestamp_range_slug;
 DROP INDEX IF EXISTS index_timestamp_range_sign;
 DROP INDEX IF EXISTS index_timestamp_range_kind;
 
