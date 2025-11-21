@@ -1,0 +1,155 @@
+question:
+  title: Passenger Name Record
+  model: PassengerNameRecord
+  summary: |-
+
+    Passenger Name Record (PNR)
+
+  description: |-
+
+    Passenger Name Record (PNR) is the basic form of computerized travel record.
+
+    PNRs are the records about each airline passenger that are being used USA government’s passenger surveillance and permission system and “no-fly” lists, and compiled into the Automated Targeting System (ATS) and other databases of the Transportation Security Agency (TSA) and Customs and Border Protection (CBP) divisions of the Department of Homeland Security (DHS).
+
+    Passenger Name Records are commercial records used to store airline reservations and records related to other travel services. A single PNR can contain data about an entire family or tour group, and about all services for their trip from multiple providers: air and train travel, hotels, car hire, etc.
+
+    Perhaps the best way to conceptualize PNR data is as “metadata about the movements of our bodies.
+
+    From https://hasbrouck.org/articles/PNR.html
+  links:
+    schema.org: TODO
+    wikipedia.org: TODO
+  module: TODO
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - pnr_record_locator_code:
+          help: PNR record locator code
+          type: code
+      - date_of_reservation:
+          help: Date of reservation
+          type: date
+      - dates_of_intended_travel:
+          help: Date(s) of intended travel
+          type: dates 
+      - name:
+          help: name
+          type: text
+      - other_names_on_pnr:
+          help: Other names on PNR
+          type: text
+      - number_of_travelers_on_pnr:
+          help: Number of travelers on PNR
+          type: count
+      - seat_information:
+          help: Seat information
+          type: text 
+      - address:
+          help: Address
+          type: text
+      - all_forms_of_payment_information:
+          help: All forms of payment information
+          type: text
+      - billing_address:
+          help: Billing address
+          type: text
+      - contact_telephone_numbers:
+          help: Contact telephone numbers
+          type: text
+      - all_travel_itinerary_for_specific_pnr:
+          help: All travel itinerary for specific PNR
+          type: text
+      - frequent_flyer_information:
+          help: Frequent flyer information (limited to miles flown and address(es))
+          type: text
+      - travel_agency:
+          help: Travel agency
+          type: text
+      - travel_agent:
+          help: Travel agent
+          type: text
+      - code_share_pnr_information:
+          help: Code share PNR information
+          type: text
+      - travel_status_of_passenger:
+          help: Travel status of passenger
+          type: text
+      - split_divided_pnr_information:
+          help: Split/Divided PNR information
+          type: text
+      - identifiers_for_free_tickets:
+          help: Identifiers for free tickets
+          type: text
+      - one_way_tickets:
+          help: One-way tickets
+          type: text
+      - email_address:
+          help: Email address
+          type: email_address
+      - ticketing_field_information:
+          help: Ticketing field information
+          type: text
+      - atfq_fields:
+          help: ATFQ fields
+          type: text 
+      - general_remarks:
+          help: General remarks
+          type: text
+      - ticket_number:
+          help: Ticket number
+          type: text
+      - seat_number:
+          help: Seat number
+          type: text 
+      - date_of_ticket_issuance:
+          help: Date of ticket issuance
+          type: date
+      - any_collected_apis_information:
+          help: Any collected APIS information
+          type: text
+      - no_show_history:
+          help: No show history
+          type: text
+      - number_of_bags:
+          help: Number of bags
+          type: count
+      - bag_tab_numbers:
+          help: Bag tab numbers
+          type: text
+      - go_show_information:
+          help: Go show information
+          type: text
+      - number_of_bags_on_each_segment:
+          help: Number of bags on each segment
+          type: text
+      - osi_information:
+          help: OSI information
+          type: text 
+      - ssi_information:
+          help: SSI information
+          type: text
+      - ssr_information:
+          help: SSR information
+          type: text 
+      - voluntary_involuntary_upgrades:
+          help: Voluntary/involuntary upgrades
+          type: text
+      - received_from_information:
+          help: Received from information
+          type: text
+      - all_historical_changes_to_the_pnr:
+          help: All historical changes to the PNR
+          type: text
+    - TSA Additional PNR Requirements:
+      - travelers_full_name:
+          help: Traveler's full name
+          type: text
+      - travelers_date_of_birth:
+          help: Traveler's date of birth
+          type: text
+      - travelers_complete_home_address:
+          help: Traveler's complete home address
+          type: text
+      - travelers_home_phone_number:
+          help: Traveler's home phone number
+          type: text

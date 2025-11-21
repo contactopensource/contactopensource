@@ -1,0 +1,61 @@
+#!/bin/sh
+set -euf
+
+mix phx.gen.html \
+    TODO PassengerNameRecord None \
+        id:uuid:index \
+        lock_version:integerNone \
+        created_at:timestamp_utc_usec:index \
+        created_by:url:index \
+        updated_at:timestamp_utc_usec:index \
+        updated_by:url:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:url:index \
+        locale_code:string:index \
+        tagging:string:index \
+        pnr_record_locator_code:codeNone \
+        date_of_reservation:dateNone \
+        dates_of_intended_travel:datesNone \
+        name:textNone \
+        other_names_on_pnr:textNone \
+        number_of_travelers_on_pnr:countNone \
+        seat_information:textNone \
+        address:textNone \
+        all_forms_of_payment_information:textNone \
+        billing_address:textNone \
+        contact_telephone_numbers:textNone \
+        all_travel_itinerary_for_specific_pnr:textNone \
+        frequent_flyer_information:textNone \
+        travel_agency:textNone \
+        travel_agent:textNone \
+        code_share_pnr_information:textNone \
+        travel_status_of_passenger:textNone \
+        split_divided_pnr_information:textNone \
+        identifiers_for_free_tickets:textNone \
+        one_way_tickets:textNone \
+        email_address:email_addressNone \
+        ticketing_field_information:textNone \
+        atfq_fields:textNone \
+        general_remarks:textNone \
+        ticket_number:textNone \
+        seat_number:textNone \
+        date_of_ticket_issuance:dateNone \
+        any_collected_apis_information:textNone \
+        no_show_history:textNone \
+        number_of_bags:countNone \
+        bag_tab_numbers:textNone \
+        go_show_information:textNone \
+        number_of_bags_on_each_segment:textNone \
+        osi_information:textNone \
+        ssi_information:textNone \
+        ssr_information:textNone \
+        voluntary_involuntary_upgrades:textNone \
+        received_from_information:textNone \
+        all_historical_changes_to_the_pnr:textNone \
+        travelers_full_name:textNone \
+        travelers_date_of_birth:textNone \
+        travelers_complete_home_address:textNone \
+        travelers_home_phone_number:textNone \
+    --force \
+    --no-timestamps \
+
