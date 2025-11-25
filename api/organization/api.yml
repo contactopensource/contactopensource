@@ -33,6 +33,7 @@ organization:
   attributes:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - lifetime:
       - start_date:
           help: The start date, such as when the organization was founded.

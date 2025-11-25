@@ -17,6 +17,7 @@ purchase:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
   rails_model_extras: |-
     has_many: purchase_orders
     has_many: purchase_payments

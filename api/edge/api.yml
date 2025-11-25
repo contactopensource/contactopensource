@@ -13,6 +13,7 @@ edge:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Subject:
       - subject_uri:
           help: type identifier, such as an RDF link, or semantic URL, or internal URN

@@ -23,6 +23,7 @@ person:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - names:
       - given_name:
           help: The person's given name(s), such as the first name in given-middle-family.

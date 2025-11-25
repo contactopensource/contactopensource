@@ -29,6 +29,7 @@ tz_database_2024b:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - country_code:
           help: "Country code: ISO 3166 2-character country code.  See the file `iso3166.tab'."

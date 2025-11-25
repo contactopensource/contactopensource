@@ -32,6 +32,7 @@ international_standard_book_number:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - code:
           type: string(13)

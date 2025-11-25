@@ -34,6 +34,7 @@ passport:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - ICAO 9303 DG1 required personal details:
         - name_of_holder:
             help: Name of holder

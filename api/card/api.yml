@@ -11,3 +11,4 @@ card:
 
   attribute_groups:
     - !include ../_card.yml
+    - !include ../_images.yml

@@ -37,6 +37,7 @@ stock_keeping_unit:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - code:
           help: Code

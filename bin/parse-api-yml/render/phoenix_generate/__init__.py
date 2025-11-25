@@ -10,7 +10,7 @@ from . import entity
 from ..helpers import sh
 
 def output_path():
-    return Path("bin", "phoenix-generate.sh")
+    return Path("bin", "phoenix", "phoenix-generate.sh")
 
 def render(args, entities):
     return sh() + ''.join(map(partial(entity.render, args), entities))

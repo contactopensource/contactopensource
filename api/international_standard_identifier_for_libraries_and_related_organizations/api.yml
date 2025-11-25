@@ -46,6 +46,7 @@ international_standard_identifier_for_libraries_and_related_organization:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - key:
           type: varchar(16)

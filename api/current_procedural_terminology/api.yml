@@ -24,6 +24,7 @@ medical_current_procedural_terminology_code_2025:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - code:
           type: string(6)

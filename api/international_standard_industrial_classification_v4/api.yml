@@ -32,6 +32,7 @@ international_standard_industrial_classification_v4:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - code:
           type: string

@@ -33,6 +33,7 @@ global_trade_item_number:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - code:
           type: digit(14)

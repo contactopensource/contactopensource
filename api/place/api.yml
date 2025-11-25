@@ -17,6 +17,7 @@ place:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - latitude_as_decimal_degrees:
           help: "Latitude in decimal degrees."

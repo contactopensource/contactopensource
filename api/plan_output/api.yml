@@ -15,6 +15,7 @@ plan_output:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - plan_id:
           type: plan.id

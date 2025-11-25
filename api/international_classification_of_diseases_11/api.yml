@@ -32,6 +32,7 @@ international_classification_of_diseases_11:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - code:
           type: string

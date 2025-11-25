@@ -15,6 +15,7 @@ content_video:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - codec_id:
           help: codec id

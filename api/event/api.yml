@@ -16,6 +16,7 @@ event:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - start_timestamp_local:
           type: timestamp_utc_usec

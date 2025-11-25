@@ -25,7 +25,7 @@
             type: text
         - sign:
             help: An optional one-character sign, such as an emoji indicator.
-            type: string(1)
+            type: text(1)
             example: a green check mark emoji to indicate that this instance is complete.
             index: true
         - kind:
@@ -33,36 +33,8 @@
             type: string
             example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
             index: true
-        - avatar_image_400x400_url:
-            help: An avatar image for the item, 400x400 pixels, which is square 1:1 aspect ratio and the same size as other popular social networks, and will look good within a circle mask, as a URL.
-            type: url
-        - avatar_image_400x400_alt:
-            help: An avatar image for the item, 400x400 pixels, which is square 1:1 aspect ratio and the same size as other popular social networks, and will look good within a circle mask, as an alternate text description.
-            type: url
-        - main_image_1080x1080_url:
-            help: A main image for the item, 1080x1080 pixels, which is square 1:1 aspect ratio, as a URL.
-            type: url
-        - main_image_1080x1080_alt:
-            help: A main image for the item, 1080x1080 pixels, which is square 1:1 aspect ratio, as an alternate text description.
-            type: text
-        - main_image_1920x1080_url:
-            help: A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as a URL.
-            type: url
-        - main_image_1920x1080_alt:
-            help: A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as an alternate text description.
-            type: text
-        - main_image_1080x1920_url:
-            help: A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as a URL.
-            type: url
-        - main_image_1080x1920_alt:
-            help: A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as an alternate text description.
-            type: text
-        - emoji:
-            help: Any emoji related to the item, such as for a badge, or indicator, or expression, etc.
-            type: text
-            example: "🚀"
         - star_count:
-            help: A star count from 0-5, such as for a rating, or review, or priority, etc.
+            help: A star count from 1-5, such as for a rating, or review, or priority, etc.
             type: integer
             example: 5 for the best rating
         - quick_response_code_id:

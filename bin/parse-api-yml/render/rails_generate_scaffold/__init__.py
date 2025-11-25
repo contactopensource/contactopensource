@@ -10,7 +10,7 @@ from . import entity
 from ..helpers import sh
 
 def output_path():
-    return Path("bin", "rails-generate-scaffold.sh")
+    return Path("bin", "rails", "rails-generate-scaffold.sh")
 
 def render(args, entities):
     return sh() + ''.join(map(partial(entity.render, args), entities))

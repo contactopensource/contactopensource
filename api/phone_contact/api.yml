@@ -15,6 +15,7 @@ phone_contact:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - label:
           help: label

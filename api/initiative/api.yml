@@ -10,20 +10,101 @@ initiative:
 
     An initiative is a catch-all term for all of these and more:
 
+    - Action
+    - Activity
+    - Agenda
+    - Aim
+    - Ambition
+    - Analysis
+    - Application
+    - Arrangement
+    - Aspiration
+    - Assignment
+    - Attempt
+    - Benchmark
+    - Blueprint
+    - Budget
+    - Brief
+    - Campaign
+    - Conjecture
+    - Deliverable
+    - Design
+    - Destination
+    - Directive
+    - Effort
+    - Endeavor
+    - Endpoint
+    - Enterprise
+    - Exercise
+    - Experiment
+    - Function
+    - Gate
+    - Goal
+    - Hope
+    - Idea
+    - Impact
+    - Initiative
+    - Intention
+    - Investigation
+    - Mark
+    - Method
+    - Milestone
+    - Mission
+    - Offering
+    - Outcome
+    - Output
+    - Package
+    - Path
+    - Perspective
+    - Plan
+    - Phase
     - Portfolio
-    - Product
-    - Program
-    - Project
     - Practice
+    - Process
+    - Product
+    - Program/Programme
+    - Project
+    - Proof
+    - Proof Of Capability
+    - Proof Of Concept
+    - Proof Of Value
+    - Proposal
+    - Prototype
+    - Purpose
+    - Pursuit
+    - Quest
+    - Report
+    - Roadmap
+    - Scheme
+    - Schedule
+    - Scope
     - Service
     - Solution
+    - Stage
+    - Step
+    - Strategy
+    - Study
+    - Subject
     - Support
+    - Survey
+    - System    
+    - Task
+    - Target
+    - Tactic
+    - Test
+    - Trial
+    - Undertaking
+    - Venture
+    - Vision
+    - Work Breakdown Structure
+    - Workstream
 
   links:
     wikipedia: https://wikipedia.org/wiki/Initiative
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - status:
           help: Status

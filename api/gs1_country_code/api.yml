@@ -19,6 +19,7 @@ gs1_country_code:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - code:
           type: digit(3)

@@ -15,6 +15,7 @@ email_contact:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - address:
           help: See https://tools.ietf.org/html/rfc5322

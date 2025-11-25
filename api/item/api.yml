@@ -12,6 +12,7 @@ item:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Sketches:
       - geographic_point_id:
           help: Generic geographic point, such as the item's current location.

@@ -27,6 +27,7 @@ virtual_international_authority_file_identifier:
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
+    - !include ../_images.yml
     - Main:
       - key:
           type: string(22)
