@@ -69,12 +69,24 @@ defmodule MyApp.MyDomain.Person.Attributes do
       description "Explain differences between this item and other items. This can be as long as you wish."
     end
 
-    attribute :sign, :string do
+    attribute :sign, :text do
       description "An optional one-character sign, such as an emoji indicator."
     end
 
     attribute :kind, :string do
       description "A category class, such as a useful way to sort or subset the resource."
+    end
+
+    attribute :star_count, :integer do
+      description "A star count from 1-5, such as for a rating, or review, or priority, etc."
+    end
+
+    attribute :quick_response_code_id, :quick_response_code.id do
+      description "A quick-response (QR) code that uniquely identifies this card."
+    end
+
+    attribute :universal_product_code_id, :universal_product_code.id do
+      description "A universal product code (UPC) that uniquely identifies this card."
     end
 
     attribute :avatar_image_400x400_url, :text do
@@ -107,22 +119,6 @@ defmodule MyApp.MyDomain.Person.Attributes do
 
     attribute :main_image_1080x1920_alt, :text do
       description "A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as an alternate text description."
-    end
-
-    attribute :emoji, :text do
-      description "Any emoji related to the item, such as for a badge, or indicator, or expression, etc."
-    end
-
-    attribute :star_count, :integer do
-      description "A star count from 0-5, such as for a rating, or review, or priority, etc."
-    end
-
-    attribute :quick_response_code_id, :quick_response_code.id do
-      description "A quick-response (QR) code that uniquely identifies this card."
-    end
-
-    attribute :universal_product_code_id, :universal_product_code.id do
-      description "A universal product code (UPC) that uniquely identifies this card."
     end
 
     attribute :given_name, :text do

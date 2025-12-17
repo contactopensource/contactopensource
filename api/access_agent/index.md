@@ -42,27 +42,9 @@ card:
 
   * disambiguation: text
 
-  * sign: string(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
+  * sign: text(1) (index) - example: a green check mark emoji to indicate that this instance is complete.
 
   * kind: string (index) - example: a "Pet" resource can be a kind of "Dog", "Cat", "Bird", etc.
-
-  * avatar_image_400x400_url: url
-
-  * avatar_image_400x400_alt: url
-
-  * main_image_1080x1080_url: url
-
-  * main_image_1080x1080_alt: text
-
-  * main_image_1920x1080_url: url
-
-  * main_image_1920x1080_alt: text
-
-  * main_image_1080x1920_url: url
-
-  * main_image_1080x1920_alt: text
-
-  * emoji: text - example: 🚀
 
   * star_count: integer - example: 5 for the best rating
 

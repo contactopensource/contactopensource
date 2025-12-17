@@ -18,8 +18,11 @@ rails generate scaffold \
         summary:"string{72}" \
         description:text \
         disambiguation:text \
-        sign:"string{1}":index \
+        sign:text(1):index \
         kind:string:index \
+        star_count:integer \
+        quick_response_code_id:references \
+        universal_product_code_id:references \
         avatar_image_400x400_url:text \
         avatar_image_400x400_alt:text \
         main_image_1080x1080_url:text \
@@ -28,10 +31,6 @@ rails generate scaffold \
         main_image_1920x1080_alt:text \
         main_image_1080x1920_url:text \
         main_image_1080x1920_alt:text \
-        emoji:text \
-        star_count:integer \
-        quick_response_code_id:references \
-        universal_product_code_id:references \
         name:text \
         code:text \
         icon:text \

@@ -1,0 +1,64 @@
+#!/bin/sh
+set -euf
+
+cargo loco generate scaffold --html \
+    person \
+        id:uuid \
+        lock_version:integer \
+        created_at:timestamp_utc_usec \
+        created_by:url \
+        updated_at:timestamp_utc_usec \
+        updated_by:url \
+        retired_at:timestamp_utc_usec \
+        retired_by:url \
+        locale_code:string \
+        tagging:string \
+        name:"string{50}" \
+        subname:"string{50}" \
+        slug:"string{72}" \
+        summary:"string{72}" \
+        description:text \
+        disambiguation:text \
+        sign:text(1) \
+        kind:string \
+        star_count:integer \
+        quick_response_code_id:references \
+        universal_product_code_id:references \
+        avatar_image_400x400_url:url \
+        avatar_image_400x400_alt:url \
+        main_image_1080x1080_url:url \
+        main_image_1080x1080_alt:text \
+        main_image_1920x1080_url:url \
+        main_image_1920x1080_alt:text \
+        main_image_1080x1920_url:url \
+        main_image_1080x1920_alt:text \
+        given_name:text \
+        given_name_phonetic:text \
+        middle_name:text \
+        middle_name_phonetic:text \
+        family_name:text \
+        family_name_phonetic:text \
+        legal_name:text \
+        legal_name_phonetic:text \
+        nickname:text \
+        nickname_phonetic:text \
+        prefix_name:text \
+        prefix_name_phonetic:text \
+        suffix_name:text \
+        suffix_name_phonetic:text \
+        salutation_name:text \
+        salutation_name_phonetic:text \
+        addressee_name:text \
+        addressee_name_phonetic:text \
+        subject_pronoun:text \
+        object_pronoun:text \
+        dependent_possessive_pronoun:text \
+        independent_possessive_pronoun:text \
+        reflexive_pronoun:text \
+        intensive_pronoun:text \
+        disjunctive_pronoun:text \
+        birth_date:date \
+        birth_date_year:integer \
+        death_date:date \
+        death_date_year:integer \
+

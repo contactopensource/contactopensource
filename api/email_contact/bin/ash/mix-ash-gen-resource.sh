@@ -22,8 +22,11 @@ mix ash.gen.resource \
     --attribute summary:string \
     --attribute description:text \
     --attribute disambiguation:text \
-    --attribute sign:string \
+    --attribute sign:text \
     --attribute kind:string \
+    --attribute star_count:integer \
+    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
+    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
     --attribute avatar_image_400x400_url:text \
     --attribute avatar_image_400x400_alt:text \
     --attribute main_image_1080x1080_url:text \
@@ -32,10 +35,6 @@ mix ash.gen.resource \
     --attribute main_image_1920x1080_alt:text \
     --attribute main_image_1080x1920_url:text \
     --attribute main_image_1080x1920_alt:text \
-    --attribute emoji:text \
-    --attribute star_count:integer \
-    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
-    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
     --attribute address:text \
     --attribute display_name:text \
     --attribute addr_spec:text \

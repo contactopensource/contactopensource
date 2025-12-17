@@ -19,8 +19,11 @@ mix phx.gen.html \
         summary:"string{72}"None \
         description:textNone \
         disambiguation:textNone \
-        sign:"string{1}":index \
+        sign:text(1):index \
         kind:string:index \
+        star_count:integerNone \
+        quick_response_code_id:referencesNone \
+        universal_product_code_id:referencesNone \
         avatar_image_400x400_url:urlNone \
         avatar_image_400x400_alt:urlNone \
         main_image_1080x1080_url:urlNone \
@@ -29,10 +32,6 @@ mix phx.gen.html \
         main_image_1920x1080_alt:textNone \
         main_image_1080x1920_url:urlNone \
         main_image_1080x1920_alt:textNone \
-        emoji:textNone \
-        star_count:integerNone \
-        quick_response_code_id:referencesNone \
-        universal_product_code_id:referencesNone \
         key:stringNone \
         description:textNone \
     --force \
