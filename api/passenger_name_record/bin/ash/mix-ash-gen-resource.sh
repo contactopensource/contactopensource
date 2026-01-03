@@ -2,7 +2,7 @@
 set -euf
 
 mix ash.gen.resource \
-    MyApp.TODO.Question \
+    MyApp.TODO.PassengerNameRecord \
     --conflicts replace \
     --default-actions create,read,update,destroy \
     --extend postgres \
@@ -60,31 +60,31 @@ mix ash.gen.resource \
     --attribute travelers_complete_home_address:text \
     --attribute travelers_home_phone_number:text \
 
-mix ash.codegen create_questions
+mix ash.codegen create_passenger_name_records
 mix ash.migrate
 
-touch priv/repo/migrations/00000000000000_create_questions.exs
-touch test/my_app/my_domain/question.exs
+touch priv/repo/migrations/00000000000000_create_passenger_name_records.exs
+touch test/my_app/my_domain/passenger_name_record.exs
 
-mkdir -p lib/my_app_web/live/questions
-touch lib/my_app_web/live/questions/form_live.ex
-touch lib/my_app_web/live/questions/index_live.ex
-touch lib/my_app_web/live/questions/show_live.ex
+mkdir -p lib/my_app_web/live/passenger_name_records
+touch lib/my_app_web/live/passenger_name_records/form_live.ex
+touch lib/my_app_web/live/passenger_name_records/index_live.ex
+touch lib/my_app_web/live/passenger_name_records/show_live.ex
 
-mkdir -p test/my_app_web/live/questions
-touch test/my_app_web/live/questions/form_test.exs
-touch test/my_app_web/live/questions/index_test.exs
-touch test/my_app_web/live/questions/show_test.exs
+mkdir -p test/my_app_web/live/passenger_name_records
+touch test/my_app_web/live/passenger_name_records/form_test.exs
+touch test/my_app_web/live/passenger_name_records/index_test.exs
+touch test/my_app_web/live/passenger_name_records/show_test.exs
 
 cat << EOF
 Edit file lib/my_app_web/router.ex to add live routes:
 
-live "/questions", Questions.IndexLive
-live "/questions/new", Questions.FormLive, :new
-live "/questions/:id", Questions.ShowLive
-live "/questions/:id/edit", Questions.FormLive, :edit
+live "/passenger_name_records", PassengerNameRecords.IndexLive
+live "/passenger_name_records/new", PassengerNameRecords.FormLive, :new
+live "/passenger_name_records/:id", PassengerNameRecords.ShowLive
+live "/passenger_name_records/:id/edit", PassengerNameRecords.FormLive, :edit
 
-If there is a parent, then edit file lib/my_app/question.ex to add:
+If there is a parent, then edit file lib/my_app/passenger_name_record.ex to add:
 
 
 relationships do
@@ -95,7 +95,7 @@ end
 EOF
 ### Extra ###
 #
-# Edit file lib/my_app/todo/question.ex
+# Edit file lib/my_app/todo/passenger_name_record.ex
 #
 # Find this section:
 #

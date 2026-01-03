@@ -28,10 +28,12 @@ religion:
     - https://en.wikipedia.org/wiki/Religion
   attribute_groups:
     - !include ../_meta.yml
-    - !include ../_card.yml
-    - !include ../_images.yml
     - Main:
         - name:
             help: name
             type: text
-            example: Christianity
+            example: Buddhism
+        - summary:
+            help: summary
+            type: text(72)
+            example: Tradition teaching impermanence, non-self, and middle path to nirvana.

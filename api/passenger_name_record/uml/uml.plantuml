@@ -3,7 +3,7 @@ skinparam monochrome true
 skinparam linetype ortho
 hide circle
 
-entity question {
+entity passenger_name_record {
   .. meta ..
   id : uuid ⚡
   lock_version : integer

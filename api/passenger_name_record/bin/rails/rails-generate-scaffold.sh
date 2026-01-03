@@ -2,7 +2,7 @@
 set -euf
 
 rails generate scaffold \
-    question \
+    passenger_name_record \
         lock_version:integer \
         created_at:timestamp_utc_usec:index \
         created_by:text:index \

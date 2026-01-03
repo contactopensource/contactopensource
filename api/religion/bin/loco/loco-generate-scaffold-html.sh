@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    burn_rate_net_cash_per_week \
+    religion \
         id:uuid \
         lock_version:integer \
         created_at:timestamp_utc_usec \
@@ -13,9 +13,6 @@ cargo loco generate scaffold --html \
         retired_by:url \
         locale_code:string \
         tagging:string \
-        actual:numeric(7,2) \
-        target:numeric(7,2) \
-        ratio:numeric(7,2) \
-        unit:string \
-        description:string \
+        name:text \
+        summary:text(72) \
 

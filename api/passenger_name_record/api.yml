@@ -1,4 +1,4 @@
-question:
+passenger_name_record:
   title: Passenger Name Record
   model: PassengerNameRecord
   summary: |-

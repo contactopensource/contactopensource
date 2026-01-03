@@ -12,26 +12,8 @@ rails generate scaffold \
         retired_by:text:index \
         locale_code:string:index \
         tagging:string:index \
-        name:"string{50}":index \
-        subname:"string{50}":index \
-        slug:"string{72}":index \
-        summary:"string{72}" \
-        description:text \
-        disambiguation:text \
-        sign:text(1):index \
-        kind:string:index \
-        star_count:integer \
-        quick_response_code_id:references \
-        universal_product_code_id:references \
-        avatar_image_400x400_url:text \
-        avatar_image_400x400_alt:text \
-        main_image_1080x1080_url:text \
-        main_image_1080x1080_alt:text \
-        main_image_1920x1080_url:text \
-        main_image_1920x1080_alt:text \
-        main_image_1080x1920_url:text \
-        main_image_1080x1920_alt:text \
         name:text \
+        summary:text(72) \
     --force \
     --no-timestamps \
 

@@ -1,13 +1,13 @@
-CREATE TABLE question (
+CREATE TABLE passenger_name_record (
 );
 
-CREATE INDEX question_id_index on question(id);
-CREATE INDEX question_created_at_index on question(created_at);
-CREATE INDEX question_created_by_index on question(created_by);
-CREATE INDEX question_updated_at_index on question(updated_at);
-CREATE INDEX question_updated_by_index on question(updated_by);
-CREATE INDEX question_retired_at_index on question(retired_at);
-CREATE INDEX question_retired_by_index on question(retired_by);
-CREATE INDEX question_locale_code_index on question(locale_code);
-CREATE INDEX question_tagging_index on question(tagging);
+CREATE INDEX passenger_name_record_id_index on passenger_name_record(id);
+CREATE INDEX passenger_name_record_created_at_index on passenger_name_record(created_at);
+CREATE INDEX passenger_name_record_created_by_index on passenger_name_record(created_by);
+CREATE INDEX passenger_name_record_updated_at_index on passenger_name_record(updated_at);
+CREATE INDEX passenger_name_record_updated_by_index on passenger_name_record(updated_by);
+CREATE INDEX passenger_name_record_retired_at_index on passenger_name_record(retired_at);
+CREATE INDEX passenger_name_record_retired_by_index on passenger_name_record(retired_by);
+CREATE INDEX passenger_name_record_locale_code_index on passenger_name_record(locale_code);
+CREATE INDEX passenger_name_record_tagging_index on passenger_name_record(tagging);
 

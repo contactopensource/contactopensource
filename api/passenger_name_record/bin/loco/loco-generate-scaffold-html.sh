@@ -2,7 +2,7 @@
 set -euf
 
 cargo loco generate scaffold --html \
-    question \
+    passenger_name_record \
         id:uuid \
         lock_version:integer \
         created_at:timestamp_utc_usec \

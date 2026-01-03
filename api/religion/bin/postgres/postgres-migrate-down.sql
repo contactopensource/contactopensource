@@ -8,9 +8,4 @@ DROP INDEX IF EXISTS index_religion_retired_at;
 DROP INDEX IF EXISTS index_religion_retired_by;
 DROP INDEX IF EXISTS index_religion_locale_code;
 DROP INDEX IF EXISTS index_religion_tagging;
-DROP INDEX IF EXISTS index_religion_name;
-DROP INDEX IF EXISTS index_religion_subname;
-DROP INDEX IF EXISTS index_religion_slug;
-DROP INDEX IF EXISTS index_religion_sign;
-DROP INDEX IF EXISTS index_religion_kind;
 

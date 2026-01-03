@@ -16,26 +16,8 @@ mix ash.gen.resource \
     --attribute retired_by:text \
     --attribute locale_code:string \
     --attribute tagging:string \
-    --attribute name:string \
-    --attribute subname:string \
-    --attribute slug:string \
-    --attribute summary:string \
-    --attribute description:text \
-    --attribute disambiguation:text \
-    --attribute sign:text \
-    --attribute kind:string \
-    --attribute star_count:integer \
-    --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
-    --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
-    --attribute avatar_image_400x400_url:text \
-    --attribute avatar_image_400x400_alt:text \
-    --attribute main_image_1080x1080_url:text \
-    --attribute main_image_1080x1080_alt:text \
-    --attribute main_image_1920x1080_url:text \
-    --attribute main_image_1920x1080_alt:text \
-    --attribute main_image_1080x1920_url:text \
-    --attribute main_image_1080x1920_alt:text \
     --attribute name:text \
+    --attribute summary:text \
 
 mix ash.codegen create_religions
 mix ash.migrate
@@ -90,11 +72,6 @@ EOF
 #     index[:retired_by] \
 #     index[:locale_code] \
 #     index[:tagging] \
-#     index[:name] \
-#     index[:subname] \
-#     index[:slug] \
-#     index[:sign] \
-#     index[:kind] \
 #
 #
 # Change the attributes created_at and updated_at to:
