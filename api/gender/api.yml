@@ -1,9 +1,9 @@
-gender:
-  title: gender
-  model: gender
+religion:
+  title: Gender
+  model: Gender
   summary: |-
 
-    Gnder is a range of social-cultural systems.
+    Gender is a range of social-cultural systems.
 
   description: |-
 
@@ -12,7 +12,7 @@ gender:
     individuals, the various biological determinants of sex are congruent and
     consistent with the individual's gender identity. Gender expression
     typically reflects a person's gender identity, but this is not always the
-    case. While a person may express behaviors, attitudes, and appearances
+    case While a person may express behaviors, attitudes, and appearances
     consistent with a particular gender role, such expression may not
     necessarily reflect their gender identity. The term gender identity was
     coined by psychiatry professor Robert J. Stoller in 1964 and popularized by
@@ -22,20 +22,21 @@ gender:
     associated with males and females, a gender binary to which most people
     adhere and which includes expectations of masculinity and femininity in all
     aspects of sex and gender: biological sex, gender identity, gender
-    expression, and sexual orientation.[8][9][10] Some people do not identify
-    with some, or all, of the aspects of gender associated with their biological
-    sex; some of those people are transgender, non-binary, or genderqueer. Some
-    societies have third gender categories.
+    expression, and sexual orientation. Some people do not identify with some,
+    or all, of the aspects of gender associated with their biological sex; some
+    of those people are transgender, non-binary, or genderqueer. Some societies
+    have third gender categories.
 
   links:
-    - https://en.wikipedia.org/wiki/Gender_identity
+    - https://en.wikipedia.org/wiki/Gender
   attribute_groups:
     - !include ../_meta.yml
     - Main:
         - name:
-            help: Name
+            help: name
             type: text
-            example:
+            example: Pangender
         - summary:
-            help: Summary
+            help: summary
             type: text(72)
+            example: All or many gender identities
