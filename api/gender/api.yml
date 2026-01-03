@@ -1,0 +1,41 @@
+gender:
+  title: gender
+  model: gender
+  summary: |-
+
+    Gnder is a range of social-cultural systems.
+
+  description: |-
+
+    Gender identity is the personal sense of one's own gender. Gender identity
+    can correspond to a person's assigned sex or can differ from it. In most
+    individuals, the various biological determinants of sex are congruent and
+    consistent with the individual's gender identity. Gender expression
+    typically reflects a person's gender identity, but this is not always the
+    case. While a person may express behaviors, attitudes, and appearances
+    consistent with a particular gender role, such expression may not
+    necessarily reflect their gender identity. The term gender identity was
+    coined by psychiatry professor Robert J. Stoller in 1964 and popularized by
+    psychologist John Money.
+
+    In most societies, there is a basic division between gender attributes
+    associated with males and females, a gender binary to which most people
+    adhere and which includes expectations of masculinity and femininity in all
+    aspects of sex and gender: biological sex, gender identity, gender
+    expression, and sexual orientation.[8][9][10] Some people do not identify
+    with some, or all, of the aspects of gender associated with their biological
+    sex; some of those people are transgender, non-binary, or genderqueer. Some
+    societies have third gender categories.
+
+  links:
+    - https://en.wikipedia.org/wiki/Gender_identity
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+        - name:
+            help: Name
+            type: text
+            example:
+        - summary:
+            help: Summary
+            type: text(72)
