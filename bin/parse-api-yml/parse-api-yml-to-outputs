@@ -42,31 +42,57 @@ import logging
 import os
 import pprint
 import sys
-import yaml_with_include as yaml
 from pathlib import Path
 
-from package import Package
-from entity import Entity
-from attribute_group import AttributeGroup
-from attribute import Attribute
-
 import render
+import yaml_with_include as yaml
+from attribute import Attribute
+from attribute_group import AttributeGroup
+from entity import Entity
+from package import Package
 
 parser = argparse.ArgumentParser(
-    prog='parse-api-yml-to-outputs',
-    description='Parse the documentation api.yml files to various outputs.',
-    epilog='For help contact joel@joelparkerhenderson.com'
+    prog="parse-api-yml-to-outputs",
+    description="Parse the documentation api.yml files to various outputs.",
+    epilog="For help contact joel@joelparkerhenderson.com",
 )
-parser.add_argument("-w", "--write", help="Write outputs to their respective files.", action=argparse.BooleanOptionalAction)
-parser.add_argument("--app-name-title-case", help="Application name as title case, such as \"MyApp\".", default='MyApp')
-parser.add_argument("--app-name-snake-case", help="Application name as snake case, such as \"my_app\".", default='my_app')
-parser.add_argument("--ddd-name-title-case", help="Domain Driven Design name as title case, such as \"MyDomain\".", default='MyDomain')
-parser.add_argument("--ddd-name-snake-case", help="Domain Driven Design name as snake case, such as \"my_domain\".", default='my_domain')
-parser.add_argument("paths", nargs='*')
+parser.add_argument(
+    "-w",
+    "--write",
+    help="Write outputs to their respective files.",
+    action=argparse.BooleanOptionalAction,
+)
+parser.add_argument(
+    "--app-name-title-case",
+    help='Application name as title case, such as "MyApp".',
+    default="MyApp",
+)
+parser.add_argument(
+    "--app-name-snake-case",
+    help='Application name as snake case, such as "my_app".',
+    default="my_app",
+)
+parser.add_argument(
+    "--ddd-name-title-case",
+    help='Domain Driven Design name as title case, such as "MyDomain".',
+    default="MyDomain",
+)
+parser.add_argument(
+    "--ddd-name-snake-case",
+    help='Domain Driven Design name as snake case, such as "my_domain".',
+    default="my_domain",
+)
+parser.add_argument("paths", nargs="*")
 args = parser.parse_args()
 
+
 def banner(s):
-    return f"\n\n###########################################\n#\n#  " + s + "\n#\n###########################################\n\n"
+    return (
+        f"\n\n###########################################\n#\n#  "
+        + s
+        + "\n#\n###########################################\n\n"
+    )
+
 
 def parse_path(path: os.PathLike):
     """
@@ -87,13 +113,16 @@ def parse_path(path: os.PathLike):
         uml/uml.plantuml (UML PlantUML file)
     """
     logging.info(banner(path))
-    args.dirname = os.path.dirname(path) # e.g. "./api/user"
-    args.concept = os.path.basename(args.dirname) # e.g. "user"
+    args.dirname = os.path.dirname(path)  # e.g. "./api/user"
+    args.concept = os.path.basename(args.dirname)  # e.g. "user"
     args.dir = Path(args.dirname)
 
-    with open(path, 'r') as file:
+    with open(path, "r") as file:
         y = yaml.load(file)
-        logging.debug(f"parse_path path: {path}, concept: {args.concept}, yaml.dump: " + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False))
+        logging.debug(
+            f"parse_path path: {path}, concept: {args.concept}, yaml.dump: "
+            + yaml.dump(y, indent=2, default_flow_style=False, sort_keys=False)
+        )
         entities = Entity.parse(args, y)
         for entity in entities:
             logging.info(banner(f"{entity.id}"))
@@ -111,12 +140,15 @@ def parse_path(path: os.PathLike):
             render.rails_generate_scaffold,
         ]:
             s = renderer.render(args, entities)
-            if s != None:
+            if s is not None:
                 logging.info(banner(f"{args.concept} {renderer.__name__}") + s)
                 if args.write:
-                    with open(os.path.join(args.dirname, renderer.output_path()), "w") as f:
+                    path = Path(args.dirname, renderer.output_path())
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    with open(path, "w") as f:
                         f.write(s)
                         # TODO chmod
+
 
 def main():
     logging.basicConfig(level=os.environ.get("LOGLEVEL", "WARN"))
@@ -126,7 +158,8 @@ def main():
             parse_path(path)
     else:
         for line in sys.stdin:
-            parse_path(line.rstrip('\n'))
+            parse_path(line.rstrip("\n"))
+
 
 if __name__ == "__main__":
     main()
