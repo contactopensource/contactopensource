@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS six_axis_model_of_influence;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_id;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_created_at;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_created_by;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_updated_at;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_updated_by;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_retired_at;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_retired_by;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_locale_code;
+DROP INDEX IF EXISTS index_six_axis_model_of_influence_tagging;
+

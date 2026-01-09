@@ -1,0 +1,13 @@
+CREATE TABLE six_axis_model_of_influence (
+);
+
+CREATE INDEX six_axis_model_of_influence_id_index on six_axis_model_of_influence(id);
+CREATE INDEX six_axis_model_of_influence_created_at_index on six_axis_model_of_influence(created_at);
+CREATE INDEX six_axis_model_of_influence_created_by_index on six_axis_model_of_influence(created_by);
+CREATE INDEX six_axis_model_of_influence_updated_at_index on six_axis_model_of_influence(updated_at);
+CREATE INDEX six_axis_model_of_influence_updated_by_index on six_axis_model_of_influence(updated_by);
+CREATE INDEX six_axis_model_of_influence_retired_at_index on six_axis_model_of_influence(retired_at);
+CREATE INDEX six_axis_model_of_influence_retired_by_index on six_axis_model_of_influence(retired_by);
+CREATE INDEX six_axis_model_of_influence_locale_code_index on six_axis_model_of_influence(locale_code);
+CREATE INDEX six_axis_model_of_influence_tagging_index on six_axis_model_of_influence(tagging);
+

@@ -1,0 +1,59 @@
+
+six_axis_model_of_influence:
+  title: Six Axis Model Of Influence
+  model: SixAxisModelOfInfluence
+  module: Personality
+  summary: |-
+
+    The Six-Axis Model Of Influence by Chase Hughes is how he coaches his staff.
+
+  description: |-
+
+    The Six-Axis Model Of Influence by Chase Hughes is how he coaches his staff.
+
+    The model illustrates potential for influence. It can be used both as a
+    planning tool to ensure a conversation is as persuasive as possible, and a
+    post-mortem tool to figure out what went wrong, or what worked best in an
+    interaction. 
+
+    The model is described in the book "The Behavior Ops Model" by Chase Hughes.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - suggestibility:
+          help: |-
+            Suggestibility is the degree to which a person will accept and then act on a given suggestion by an operator.
+            Prioritize this axis for a situation that require you to be more memorable than persuasive.
+          type: probability
+          example: 0.1 means 10%
+      - focus:
+          help: |-
+            Focus is the degree to which a person will maintain attention on something and exclude other competing stimuli from awareness.
+            Prioritize this axis for a situation requiring strong deviation from person's normal behavior.
+          type: probability
+          example: 0.1 means 10%
+      - openness:
+          help: |-
+            Openness is the degree to which a person feels they can completely become vulnerable with another person, marked by an absence of fear of social or societal repercussions.
+            Prioritize this axis for a situation requiring more trust and emotion than logic and judgment.
+          type: probability
+          example: 0.1 means 10%
+      - connection:
+          help: |-
+            Connection is the degree to which a person feels a sense of social connection with another marked by a desire for future contact.
+            Prioritize this axis for a situation requiring deviation from baseline that the subject might perceive as illogical or unusual.
+          type: probability
+          example: 0.1 means 10%
+      - compliance:
+          help: |-
+            Compliance is the degree to which a person will comply with a direction to perform an action.
+            Prioritize this axis for a situation requiring a gradual increase in compliant behavior that becomes self-sustaining over time.
+          type: probability
+          example: 0.1 means 10%
+      - expectancy:
+          help: |-
+            Expectancy is the degree to which a person reasonably feels they can predict, either consciously or unconsciously, what's to come, and that it will be enjoyed. 
+            Prioritize this axis for a situation requiring excitement and trust, where the subject will use predictions about the future to make decisions about themselves in the present.
+          type: probability
+          example: 0.1 means 10%
