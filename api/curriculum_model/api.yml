@@ -367,6 +367,35 @@ curriculum_model:
     - Scope Creep: Continuous iteration may lead to over-developing, exceeding budgets, or endless refinements.
     - Perfectionism Risk: The focus on constant improvement can hinder finalizing the product.
 
+    ### The Kemp Design Model
+
+    The Kemp Model of Instructional Design is a relatively recent instructional
+    design model explained in Kemp's book Designing Effective Instruction.[12]
+    It has been called a holistic approach because some believe it includes more
+    elements into the design process.
+
+    Elements:
+
+    1. Identify instructional problems, and specify goals for designing an instructional program.
+    2. Examine learner characteristics that should receive attention during planning.
+    3. Identify subject content, and analyze task components related to stated goals and purposes.
+    4. State instructional objectives for the learner.
+    5. Sequence content within each instructional unit for logical learning.
+    6. Design instructional strategies so that each learner can master the objectives.
+    7. Plan the instructional message and delivery.
+    8. Develop evaluation instruments to assess objectives.
+    9. Select resources to support instruction and learning activities.
+
+    Kemp's cognitive learning design model is learner-centered, thus its oval shape, and the steps are interdependent; the steps do not have to be followed in any particular order to complete the instructional learning systems design. This signifies a systems approach in which the instructional design process is a continuous cycle, while maintaining the importance on how to manage the instructional design process.
+
+    The characteristics of the model:
+
+    - All elements are interdependent
+    - All the elements can be performed simultaneously as the model is nonlinear and flexible
+    - The user can start at any point in the process
+    - Learning needs, goals, priorities and constraints determine the instructional solutions.
+    - All programs or projects may not require all nine elements.
+
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
