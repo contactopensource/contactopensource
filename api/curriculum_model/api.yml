@@ -1,7 +1,7 @@
 curriculum_model:
   title: Curriculum Model
   model: CurriculumModel
-  summary: Curriculumn model
+  summary: Curriculum model
   description: |-
 
     What are some popular curriculum design models?
@@ -13,6 +13,11 @@ curriculum_model:
     - Goodlad's Curriculum Model: Five levels of curriculum decision-making.
     - Bruner's Spiral Curriculum: Iterative revisiting of concepts.
     - Understanding by Design: Three stages, working backward
+    - ADDIE model by U.S. military
+    - PADDIE+M model by U.S. Navy
+    - Successive Approximation Model (SAM)
+    - Universal design for instruction
+    - Gerlach and Ely Instructional Design Model
 
     ### Tyler's Rationale Model (1949)
 
@@ -337,6 +342,22 @@ curriculum_model:
 
     PADDIE+M is used to create a "repeatable and defendable" process for training development.
 
+    ### Dick and Carey model (also known as the systems approach model)
+
+    The Dick and Carey model is made up of nine different stages which are meant to be executed in parallel, rather than linear, fashion, but this model still follows the same basic instructional design pattern of the ADDIE model, as does backward design. The Dick and Carey model focuses on the interrelationship between context, content, learning and instruction, and addresses instruction as an entire system.[15] In this model, all of the components of this model work together to enable learners to meet the desired learning outcomes. The model includes the following components:
+
+    - Identify instructional goals
+    - Conduct instructional analysis
+    - Identify entry behaviors and learner characteristics
+    - Write performance objectives
+    - Develop assessment instruments
+    - Develop instructional strategy
+    - Develop and select instructional materials
+    - Design and conduct formative evaluation of instruction
+    - Design and conduct summative evaluation.
+    
+    Both the Dick and Carey model and the backward design model are goal and objective oriented; assessment is created based on learning objectives and goals, and instruction is created based on evaluation and assessment. The Dick and Carey model, however, is a more systemic model in that making changes to components affects other components and, therefore, the changes occur in parallel. In the more linear backward design model, the steps are non-flexible which means that skipping or changing steps is not an option.
+
     ### Successive Approximation Model (SAM)
 
     The Successive Approximation Model (SAM) is an agile, iterative instructional design framework developed by Dr. Michael Allen to replace linear models like ADDIE. It emphasizes rapid prototyping, continuous feedback, and collaboration, allowing for faster development cycles and early detection of errors, resulting in high-quality, user-centered learning solutions.
@@ -396,6 +417,19 @@ curriculum_model:
     - Learning needs, goals, priorities and constraints determine the instructional solutions.
     - All programs or projects may not require all nine elements.
 
+
+    ### Universal design for instruction
+
+    <https://en.wikipedia.org/wiki/Universal_design_for_instruction>
+
+    TODO
+
+    ### Gerlach and Ely Instructional Design Model
+
+    <https://en.wikipedia.org/wiki/Gerlach_and_Ely_Instructional_Design_Model>
+
+    TODO
+    
   attribute_groups:
     - !include ../_meta.yml
     - !include ../_card.yml
