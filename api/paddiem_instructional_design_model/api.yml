@@ -1,0 +1,68 @@
+paddiem_instructional_design_model:
+  title: PADDIE+M Instructional Design Model
+  model: PADDIEMInstructionalDesignModel
+  summary: PADDIE+M Instructional Design Model by the U.S. Navy
+  description: |-
+
+    PADDIE+M Instructional Design Model
+
+    The U.S. Navy's PADDIE+M is an enhanced, seven-phase instructional design
+    model used to create, deliver, and maintain training content, particularly
+    within the Naval Education and Training Command (NETC). It is a variant of
+    the traditional five-step ADDIE (Analysis, Design, Development,
+    Implementation, and Evaluation) model, incorporating specific Planning and
+    Maintenance phases to ensure training meets fleet requirements.
+
+    Phases:
+
+    1. Planning: Defining the scope, resources, and timeline for the training project.
+
+    2. Analysis: Identifying training needs, conducting job task analysis (JDTA), and determining performance gaps.
+
+    3. Design: Developing learning objectives, assessment tools, and the training structure.
+
+    4. Development: Creating the actual training materials, including courseware and instructor guides.
+
+    5. Implementation: Delivering the training to sailors, often via Navy eLearning (NeL) or in-person instruction.
+
+    6. Evaluation: Assessing the effectiveness of the training (internal and external) to ensure it meets operational requirements.
+
+    7. Maintenance: Reviewing and updating the training content to ensure it remains accurate and relevant to current fleet operations.
+
+    Key Aspects and Context:
+
+    - Naval Education and Training (NAVEDTRA) M-142: The model is defined in the NAVEDTRA M-142 series of manuals, which guide curriculum development, delivery, and evaluation.
+
+    - Ready Relevant Learning (RRL): PADDIE+M is integrated into the Navy's RRL process, which aims to provide training at the right time in a sailor's career.
+
+    - End-to-End (E2E) Process: It is a core component of the E2E process, which connects training requirements directly to fleet input.
+
+    - Focus on Maintenance: Unlike standard ADDIE, the "+M" emphasizes long-term sustainment of training, ensuring it is constantly updated based on Fleet Performance Assessments and occupational standards.
+
+    PADDIE+M is used to create a "repeatable and defendable" process for training development.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - phase_1_planning_as_markdown:
+          type: markdown
+          help: Define the scope, resources, and timeline for the training project.
+      - phase_2_analysis_as_markdown:
+          type: markdown
+          help: Identify training needs, conducting job task analysis (JDTA), and determining performance gaps.
+      - phase_3_design_as_markdown:
+          type: markdown
+          help: Develop learning objectives, assessment tools, and the training structure.
+      - phase_4_development_as_markdown:
+          type: markdown
+          help: Create the actual training materials, including courseware and instructor guides.
+      - phase_5_implementation_as_markdown:
+          type: markdown
+          help: Deliver the training to sailors, often via Navy eLearning (NeL) or in-person instruction.
+      - phase_6_evaluation_as_markdown:
+          type: markdown
+          help: Assess the effectiveness of the training (internal and external) to ensure it meets operational requirements.
+      - phase_7_maintenance_as_markdown:
+          type: markdown
+          help: Review and update the training content to ensure it remains accurate and relevant to current fleet operations.

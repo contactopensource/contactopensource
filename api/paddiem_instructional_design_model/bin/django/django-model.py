@@ -1,0 +1,33 @@
+#!/bin/sh
+set -euf
+
+class PADDIEMInstructionalDesignModel(models.Model):
+        id = models.UUIDAttribute("Primary key id that is a secure-random 32-character lowercase hexadecimal, optimized for zero information rather than speed and memory; you can show this id to users.")
+        lock_version = models.IntegerAttribute("This is for optimistic locking.")
+        created_at = models.UnknownAttribute("The time when this happened.")
+        created_by = models.URLAttribute("The user/agent/service/etc. that did this.")
+        updated_at = models.UnknownAttribute("The time when this happened.")
+        updated_by = models.URLAttribute("The user/agent/service/etc. that did this.")
+        retired_at = models.UnknownAttribute("The time when this happened.")
+        retired_by = models.URLAttribute("The user/agent/service/etc. that did this.")
+        locale_code = models.TextAttribute("An international locale identifier, such as the id of locale "English - United States".")
+        tagging = models.TextAttribute("A tagging list that is space-separated and without any hash marks.")
+        name = models.UnknownAttribute("The card name a.k.a. card title, typically displayed in large font size on the card, such as a H1 headline, or a person's name.")
+        subname = models.UnknownAttribute("The card subname a.k.a. card subtitle, typically displayed medium font size on the card, such as a H2 headline, or a person's handle.")
+        slug = models.UnknownAttribute("The card slug suitable for a web URL using kebab case or equivalent internationalization. This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.")
+        summary = models.UnknownAttribute("This text is a one-line summary, maximum 72 characters, for compatibility with terminal screens and many other systems.")
+        description = models.TextAttribute("Describe this item. This can be as long as you wish.")
+        disambiguation = models.TextAttribute("Explain differences between this item and other items. This can be as long as you wish.")
+        sign = models.UnknownAttribute("An optional one-character sign, such as an emoji indicator.")
+        kind = models.TextAttribute("A category class, such as a useful way to sort or subset the resource.")
+        star_count = models.IntegerAttribute("A star count from 1-5, such as for a rating, or review, or priority, etc.")
+        quick_response_code_id = models.ForeignKey("A quick-response (QR) code that uniquely identifies this card.", QuickResponseCodeId, on_delete=models.CASCADE)("A quick-response (QR) code that uniquely identifies this card.")
+        universal_product_code_id = models.ForeignKey("A universal product code (UPC) that uniquely identifies this card.", UniversalProductCodeId, on_delete=models.CASCADE)("A universal product code (UPC) that uniquely identifies this card.")
+        phase_1_planning_as_markdown = models.UnknownAttribute("Define the scope, resources, and timeline for the training project.")
+        phase_2_analysis_as_markdown = models.UnknownAttribute("Identify training needs, conducting job task analysis (JDTA), and determining performance gaps.")
+        phase_3_design_as_markdown = models.UnknownAttribute("Develop learning objectives, assessment tools, and the training structure.")
+        phase_4_development_as_markdown = models.UnknownAttribute("Create the actual training materials, including courseware and instructor guides.")
+        phase_5_implementation_as_markdown = models.UnknownAttribute("Deliver the training to sailors, often via Navy eLearning (NeL) or in-person instruction.")
+        phase_6_evaluation_as_markdown = models.UnknownAttribute("Assess the effectiveness of the training (internal and external) to ensure it meets operational requirements.")
+        phase_7_maintenance_as_markdown = models.UnknownAttribute("Review and update the training content to ensure it remains accurate and relevant to current fleet operations.")
+
