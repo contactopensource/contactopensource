@@ -1,0 +1,128 @@
+curriculum:
+  title: Curriculum
+  model: Curriculum
+  summary: |-
+
+    Curriculum is the totality of student experiences in an educational process.
+
+  description: |-
+
+    A curriculum is the totality of student experiences that occur in an
+    educational process. The term often refers specifically to a planned
+    sequence of instruction, or to a view of the student's experiences in terms
+    of the educator's or school's instructional goals. A curriculum may
+    incorporate the planned interaction of pupils with instructional content,
+    materials, resources, and processes for evaluating the attainment of
+    educational objectives.
+
+    Curricula are split into several categories: the explicit, the implicit
+    (including the hidden), the excluded, and the extracurricular.
+
+    Curricula may be tightly standardized or may include a high level of
+    instructor or learner autonomy.[7] Many countries have national curricula in
+    primary and secondary education, such as the United Kingdom's National
+    Curriculum.
+
+    Key aspects:
+
+    - Intent (What to learn): Aims, knowledge, and skills students should gain at different stages.
+
+    - Implementation (How it's taught): The structure, narrative, activities, and resources used in teaching.
+
+    - Experience (What's actually learned): Includes formal lessons, extracurriculars (informal), and unspoken lessons (hidden curriculum like social norms).
+
+    Purpose:
+
+    - Sets clear expectations for teachers and students.
+
+    - Reflects a society's values and educational vision.
+
+    - Provides a roadmap for quality, inclusive learning experiences.
+
+    Ideally:
+
+    - The curriculum defines "why, what, when, where, how, and with whom to learn."
+
+    For example, a curriculum can be ordered into a procedure of steps:
+
+    1. Diagnosis of needs.
+    2. Formulation of objectives.
+    3. Selection of content.
+    4. Organization of content.
+    5. Selection of learning experiences.
+    6. Organization of learning experiences.
+    7. Determination of what to evaluate and of the ways and means of doing it.
+
+    For example, a curriculum can be created in phases:
+
+    1. Planning: Defining the scope, resources, and timeline for the training project.
+    2. Analysis: Identifying training needs, conducting job task analysis (JDTA), and determining performance gaps.
+    3. Design: Developing learning objectives, assessment tools, and the training structure.
+    4. Development: Creating the actual training materials, including courseware and instructor guides.
+    5. Implementation: Delivering the training to students, such as by in-person instruction and/or e-learning.
+    6. Evaluation: Assessing the effectiveness of the training (internal and external) to ensure it meets operational requirements.
+    7. Maintenance: Reviewing and updating the training content to ensure it remains accurate and relevant.
+
+    For example, a curriculum can be considered in four ways:
+
+    - curriculum as a body of knowledge to be transmitted
+    - curriculum as an attempt to help students achieve a goal
+    - curriculum as a process
+    - curriculum as praxis
+
+    The philosopher Aristotle held that there were three basic activities of
+    humans: theoria (thinking), poiesis (making), and praxis (doing).
+    Corresponding to these activities were three types of knowledge:
+    theoretical, the end goal being truth; poietical, the end goal being
+    production; and practical, the end goal being action
+
+    Cf. syllabus: A syllabus is a document that communicates information about an
+    academic course or class and defines expectations and responsibilities. It is
+    generally an overview or summary of the curriculum. A syllabus may be set out
+    by an examination board or prepared by the tutor or instructor who teaches or
+    controls the course. The syllabus is usually handed out and reviewed in the
+    first class; it can also be available online.
+
+    ## Assessment: formative assessment vs summative assessement
+
+    Formative Assessment ("For Learning"):
+
+    - Purpose: Monitor student learning, provide ongoing feedback, and adjust teaching.
+    - Timing: During the learning process (ongoing).
+    - Stakes: Typically low-stakes (not heavily graded).
+    - Focus: Identifying knowledge gaps, improving skills, promoting metacognition.
+    - Examples: Quizzes, class discussions, homework, drafts, exit tickets.
+
+    Summative Assessment ("Of Learning"):
+
+    - Purpose: Evaluate overall learning, measure achievement against standards, and assign grades.
+    - Timing: At the end of a unit, course, or academic period.
+    - Stakes: Often high-stakes (graded).
+    - Focus: Summarizing mastery, accountability, reporting results (report cards, placement).
+    - Examples: Final exams, standardized tests, major projects, term papers.
+
+    Key Distinction
+
+    - The difference lies not in the type of task (a quiz can be either), but in how it's used.
+    - A quiz used to review and reteach is formative
+    - A quiz used for a final grade is summative.
+
+  links:
+    wikipedia: https://en.wikipedia.org/wiki/Curriculum
+  module: Topics
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - purpose_description_as_markdown:
+          type: markdown
+          help: The purpose of this curriculum. For example, aims, goals, intents, knowledge, needs, objectives, outcomes, and skills, that students should gain at different stages.
+      - process_description_as_markdown:
+          type: markdown
+          help: The process of this curriculum. For example, implementations, structures, narratives, activities, resources, intracurriculars (i.e. formal experiences), extracurriculars (i.e. informal experiences), and unspoken lessons (hidden curriculum like social norms).
+      - evaluation_description_as_markdown:
+          type: markdown
+          help: The evaluation of this curriculum. For example, tests, exams, certifications, peer review, project-based outputs, formative assessments, summative assessments, etc.
+      - continuation_description_as_markdown:
+          type: markdown
+          help: The continuation of this curriculum. For example, continuous improvement, feedback from stakeholders, maintenance, lifecycles.
