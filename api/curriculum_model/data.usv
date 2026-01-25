@@ -1,0 +1,309 @@
+Tyler's Rationale Model
+␟1949
+␟Objectives →  Content Selection →  Learning Experiences →  Evaluation
+␟Standardized testing environments, accountability systems
+␟Measurable objectives and outcomes
+␟Product-oriented
+␟Top-down, linear
+␟Implementer of prescribed curriculum
+␟
+1. What educational purposes should the school seek to attain?
+2. What educational experiences can be provided to attain these purposes?
+3. How can these experiences be effectively organized?
+4. How can we determine whether purposes are being attained?
+␟
+- Clear, logical progression
+- Easy to implement and assess
+- Strong accountability through measurable objectives
+␟
+- Rigid; doesn't accommodate emergent learning
+- Teacher-centered; students are passive recipients
+- Overemphasis on behavioral outcomes
+␞
+
+Taba's Grassroots Model
+␟1962
+␟Inductive, bottom-up, seven-step process
+␟Teachers, being closest to learners, should design curriculum rather than administrators.
+␟Diverse classrooms, localized curriculum needs
+␟Learner needs and teacher expertise
+␟Process-oriented
+␟Bottom-up, inductive
+␟Primary curriculum designer
+␟
+1. Diagnosis of Needs
+2. Formulation of Objectives
+3. Selection of Content
+4. Organization of Content
+5. Selection of Learning Experiences
+6. Organization of Learning Experiences
+7. Evaluation
+␟
+- Responsive to actual student needs
+- Empowers teachers as curriculum developers
+- Context-sensitive and adaptable
+␟
+- Time-intensive for teachers
+- May lack system-wide coherence
+- Requires highly skilled teachers
+␞
+
+Wheeler's Cyclical Model
+␟1967
+␟Curriculum is never "finished"—continuous refinement based on evaluation feedback.
+␟Evolving disciplines, pilot programs
+␟Continuous improvement
+␟Process-oriented
+␟Cyclical, iterative
+␟Evaluator and reviser
+␟
+1. Aims & Objectives
+2. Selection of Content
+3. Selection of Learning Experiences
+4. Organization & Integration
+5. Evaluation
+6. Return to Aims & Objectives
+␟
+- Built-in mechanism for improvement
+- Flexible and adaptive
+- Acknowledges curriculum as dynamic
+␟
+- Can lead to perpetual revision without stability
+- Requires robust evaluation systems
+- May lack clear endpoints
+␞
+
+Kerr's Model
+␟1968
+␟All elements are interconnected; change in one affects all others.
+␟Comprehensive curriculum reform
+␟Balance among curriculum elements
+␟Systems-oriented
+␟Interconnected domains
+␟Balancer of curriculum elements
+␟
+1. Objectives — What learners should achieve
+2. Knowledge — Subject matter content
+3. Learning Experiences — Methods and activities
+4. Evaluation — Assessment of achievement
+␟
+- Holistic view of curriculum components
+- Emphasizes balance and integration
+- Systematic yet flexible
+␟
+- Complex to implement
+- Requires coordination across all domains
+- Less guidance on sequencing
+␞
+
+Goodlad's Curriculum Model
+␟1979
+␟Curriculum exists at multiple levels; what is intended often differs from what is experienced.
+␟Philosophical alignment, policy analysis
+␟Values and lived curriculum
+␟Phenomenological
+␟Multi-level analysis
+␟Interpreter and mediator
+␟
+1. Ideological. Ideal curriculum based on values/philosophy. Decisions by scholars, theorists.
+2. Formal. Official, written curriculum. Decisions by governments, boards.
+3. Perceived. Teachers' interpretation. Decisions by teachers.
+4. Operational. Actual classroom delivery. Decisions by teachers in action.
+5. Experiential. What students actually learn. Decisions by students.
+␟
+- Recognizes gap between intention and reality
+- Value-oriented and humanistic
+- Accounts for multiple stakeholders
+␟
+- Descriptive more than prescriptive
+- Complex to operationalize
+- Difficult to align all five levels
+␞
+
+Bruner's Spiral Curriculum
+␟1960
+␟TODO
+␟Mathematics, sciences, languages
+␟Cognitive development and retention
+␟Constructivist
+␟Iterative deepening
+␟Scaffolder of increasing complexity
+␟
+1. Any subject can be taught to anyone in some intellectually honest form
+2. Topics are revisited repeatedly
+3. Each encounter increases depth and complexity
+4. Prior knowledge scaffolds new learning
+␟
+- Reinforces retention through repetition
+- Builds deep conceptual understanding
+- Developmentally appropriate progression
+␟
+- Requires careful long-term planning
+- Risk of superficial coverage if poorly implemented
+- Difficult to coordinate across grade levels
+␞
+
+Understanding by Design
+␟1998
+␟Start with the end in mind; assessment drives instruction.
+␟Interdisciplinary units, competency-based education
+␟Deep understanding and transfer
+␟Outcome-oriented
+␟Backward from goals
+␟Designer of understanding-focused units
+␟
+1. Identify Desired Results: Enduring understandings, essential questions, knowledge and skills.
+2. Determine Acceptable Evidence: Performance tasks, and other evidence (quizzes, observations).
+3. Plan Learning Experiences: Instruction aligned to assessments, and activities that build toward understanding.
+␟
+- Ensures alignment between goals, assessment, and instruction
+- Promotes deep understanding over coverage
+- Focuses on transfer of learning
+␟
+- Time-consuming to design well
+- Requires paradigm shift for teachers
+- May feel constraining for emergent learning
+␞
+
+ADDIE model by U.S. military
+␟TODO: year
+␟TODO: philosophy_sentence
+␟TODO: best_use_case_summary
+␟TODO: focus_summary
+␟TODO: approach_summary
+␟TODO: direction_summary
+␟TODO: teacher_role_summary
+␟
+1. Analyze: The analysis phase defines instructional goals, learner characteristics, and constraints. It identifies the gap between current and desired performance.
+2. Design. The design phase specifies measurable learning objectives, assessment strategies, instructional methods, and media. Detailed planning ensures that instructional outcomes align with needs identified in analysis.
+3. Develop. During development, materials and media are produced, tested, and revised. Prototypes and pilot testing provide feedback before full implementation.
+4. Implement. This phase delivers the instruction to learners and prepares facilitators, ensuring readiness of learning environments and technologies.
+5. Evaluate. Evaluation includes both formative feedback—conducted throughout the process—and summary evaluation after implementation. Results inform continuous improvement of the instructional product.
+␟
+TODO: strengths_description_as_markdown
+␟
+TODO: limitations_description_as_markdown
+␞
+
+PADDIE+M Model by U.S. Navy
+␟TODO: year
+␟TODO: philosophy_sentence
+␟TODO: best_use_case_summary
+␟TODO: focus_summary
+␟TODO: approach_summary
+␟TODO: direction_summary
+␟TODO: teacher_role_summary
+␟
+1. Planning: Defining the scope, resources, and timeline for the training project.
+2. Analysis: Identifying training needs, conducting job task analysis (JDTA), and determining performance gaps.
+3. Design: Developing learning objectives, assessment tools, and the training structure.
+4. Development: Creating the actual training materials, including courseware and instructor guides.
+5. Implementation: Delivering the training to sailors, often via Navy eLearning (NeL) or in-person instruction.
+6. Evaluation: Assessing the effectiveness of the training (internal and external) to ensure it meets operational requirements.
+7. Maintenance: Reviewing and updating the training content to ensure it remains accurate and relevant to current fleet operations.
+␟
+TODO: strengths_description_as_markdown
+␟
+TODO: limitations_description_as_markdown
+␞
+
+Systems Approach Model by Dick and Carey
+␟TODO: year
+␟TODO: philosophy_sentence
+␟TODO: best_use_case_summary
+␟TODO: focus_summary
+␟TODO: approach_summary
+␟TODO: direction_summary
+␟TODO: teacher_role_summary
+␟
+1. Identify instructional goals
+2. Conduct instructional analysis
+3. Identify entry behaviors and learner characteristics
+4. Write performance objectives
+5. Develop assessment instruments
+6. Develop instructional strategy
+7. Develop and select instructional materials
+8. Design and conduct formative evaluation of instruction
+9. Design and conduct summative evaluation.
+␟
+TODO: strengths_description_as_markdown
+␟
+TODO: limitations_description_as_markdown
+␞
+
+Successive Approximation Model
+␟TODO: year
+␟TODO: philosophy_sentence
+␟TODO: best_use_case_summary
+␟TODO: focus_summary
+␟TODO: approach_summary
+␟TODO: direction_summary
+␟TODO: teacher_role_summary
+␟
+1. Preparation: Involves project kickoff, gathering information, and brainstorming (often called the Savvy Start).
+2. Iterative Design: Focuses on creating prototypes (Alpha, Beta) based on stakeholder feedback.
+3. Iterative Development: Involves continuously improving the product through testing and refinements until it is ready for release.
+␟
+- Speed and Efficiency: Rapid prototyping reduces overall development time.
+- Flexibility: Easily accommodates changes in scope or requirements.
+- Higher Quality: Constant user testing ensures the final product meets user needs.
+␟
+- Scope Creep: Continuous iteration may lead to over-developing, exceeding budgets, or endless refinements.
+- Perfectionism Risk: The focus on constant improvement can hinder finalizing the product.
+␞
+
+Kemp Model of Instructional Design
+␟TODO: year
+␟TODO: philosophy_sentence
+␟TODO: best_use_case_summary
+␟TODO: focus_summary
+␟TODO: approach_summary
+␟TODO: direction_summary
+␟TODO: teacher_role_summary
+␟
+1. Identify instructional problems, and specify goals for designing an instructional program.
+2. Examine learner characteristics that should receive attention during planning.
+3. Identify subject content, and analyze task components related to stated goals and purposes.
+4. State instructional objectives for the learner.
+5. Sequence content within each instructional unit for logical learning.
+6. Design instructional strategies so that each learner can master the objectives.
+7. Plan the instructional message and delivery.
+8. Develop evaluation instruments to assess objectives.
+9. Select resources to support instruction and learning activities.
+␟
+TODO: strengths_description_as_markdown
+␟
+TODO: limitations_description_as_markdown
+␞
+
+Universal design for instruction
+␟TODO: year
+␟TODO: philosophy_sentence
+␟TODO: best_use_case_summary
+␟TODO: focus_summary
+␟TODO: approach_summary
+␟TODO: direction_summary
+␟TODO: teacher_role_summary
+␟
+TODO: structure (steps or phases)
+␟
+TODO: strengths_description_as_markdown
+␟
+TODO: limitations_description_as_markdown
+␞
+
+Gerlach and Ely Instructional Design Model
+␟TODO: year
+␟TODO: philosophy_sentence
+␟TODO: best_use_case_summary
+␟TODO: focus_summary
+␟TODO: approach_summary
+␟TODO: direction_summary
+␟TODO: teacher_role_summary
+␟
+TODO: structure (steps or phases)
+␟
+TODO: strengths_description_as_markdown
+␟
+TODO: limitations_description_as_markdown
+␞
