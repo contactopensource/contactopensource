@@ -1,0 +1,44 @@
+paddiem_instructional_design_model:
+  title: ADDIE Instructional Design Model
+  model: ADDIEInstructionalDesignModel
+  summary: ADDIE Instructional Design Model by the U.S. military
+  description: |-
+
+    ADDIE Instructional Design Model
+
+    The U.S. military's ADDIE is a five-phase instructional design
+    model used to create, deliver, and maintain training content.
+    The phases are Analysis, Design, Development,
+    Implementation, and Evaluation.
+
+    Phases:
+
+    1. Analysis: Identifying training needs, conducting job task analysis (JDTA), and determining performance gaps.
+
+    2. Design: Developing learning objectives, assessment tools, and the training structure.
+
+    3. Development: Creating the actual training materials, including courseware and instructor guides.
+
+    4. Implementation: Delivering the training to sailors, often via Navy eLearning (NeL) or in-person instruction.
+
+    5. Evaluation: Assessing the effectiveness of the training (internal and external) to ensure it meets operational requirements.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - Main:
+      - phase_1_analysis_as_markdown:
+          type: markdown
+          help: Identify training needs, conducting job task analysis (JDTA), and determining performance gaps.
+      - phase_2_design_as_markdown:
+          type: markdown
+          help: Develop learning objectives, assessment tools, and the training structure.
+      - phase_3_development_as_markdown:
+          type: markdown
+          help: Create the actual training materials, including courseware and instructor guides.
+      - phase_4_implementation_as_markdown:
+          type: markdown
+          help: Deliver the training to sailors, often via Navy eLearning (NeL) or in-person instruction.
+      - phase_5_evaluation_as_markdown:
+          type: markdown
+          help: Assess the effectiveness of the training (internal and external) to ensure it meets operational requirements.

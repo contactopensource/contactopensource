@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS paddiem_instructional_design_model;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_id;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_created_at;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_created_by;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_updated_at;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_updated_by;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_retired_at;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_retired_by;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_locale_code;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_tagging;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_name;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_subname;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_slug;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_sign;
+DROP INDEX IF EXISTS index_paddiem_instructional_design_model_kind;
+
