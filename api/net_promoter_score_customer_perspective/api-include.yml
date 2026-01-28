@@ -1,4 +1,4 @@
-      net_promoter_score_customer_perspective_:
+      net_promoter_score_customer_perspective:
         - net_promoter_score_customer_perspective_actual:
             help: Net Promoter Score (NPS) customer perspective, actual value
             type: decimal
