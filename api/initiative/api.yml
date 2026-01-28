@@ -12,6 +12,7 @@ initiative:
 
     - Action
     - Activity
+    - ARTIFACT
     - Agenda
     - Aim
     - Ambition
@@ -27,10 +28,12 @@ initiative:
     - Brief
     - Campaign
     - Conjecture
+    - Deck
     - Deliverable
     - Design
     - Destination
     - Directive
+    - Document
     - Effort
     - Endeavor
     - Endpoint
@@ -41,11 +44,13 @@ initiative:
     - Gate
     - Goal
     - Hope
+    - Hub
     - Idea
     - Impact
     - Initiative
     - Intention
     - Investigation
+    - Layer
     - Mark
     - Method
     - Milestone
@@ -54,12 +59,16 @@ initiative:
     - Outcome
     - Output
     - Package
+    - Packet
+    - Parcel
     - Path
     - Perspective
     - Plan
     - Phase
+    - Pitch
     - Portfolio
     - Practice
+    - Presentation
     - Process
     - Product
     - Program/Programme
@@ -79,7 +88,9 @@ initiative:
     - Schedule
     - Scope
     - Service
+    - Slide Deck
     - Solution
+    - Space
     - Stage
     - Step
     - Strategy
@@ -87,11 +98,12 @@ initiative:
     - Subject
     - Support
     - Survey
-    - System    
+    - System
     - Task
     - Target
     - Tactic
     - Test
+    - Topic
     - Trial
     - Undertaking
     - Venture

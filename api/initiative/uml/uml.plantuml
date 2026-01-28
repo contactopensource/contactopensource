@@ -157,7 +157,7 @@ entity initiative {
   burn_rate_net_time_per_week_ratio : decimal
   burn_rate_net_time_per_week_unit : string
   burn_rate_net_time_per_week_description : string
-  .. net_promoter_score_customer_perspective_ ..
+  .. net_promoter_score_customer_perspective ..
   net_promoter_score_customer_perspective_actual : decimal
   net_promoter_score_customer_perspective_expect : decimal
   net_promoter_score_customer_perspective_ratio : decimal

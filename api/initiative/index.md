@@ -312,7 +312,7 @@ burn_rate_net_time_per_week:
 
   * burn_rate_net_time_per_week_description: string
 
-net_promoter_score_customer_perspective_:
+net_promoter_score_customer_perspective:
 
   * net_promoter_score_customer_perspective_actual: decimal
 
