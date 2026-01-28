@@ -1,0 +1,27 @@
+measurement_device:
+  title: Measurement Device
+  model: MeasurementDevice
+  summary: |-
+
+    A measurement device, such as a generic ruler or specific machine.
+
+  description: |-
+
+    A measurement device, such as a generic ruler or specific machine.
+
+  module: measurement
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - name:
+          help: Name suitable for display
+          type: text
+          example: TODO
+      - name_phonetic:
+          help: Name phonetic
+          type: text
+          example: TODO
+      - stock_keeping_unit_id:
+          help: Stock keeping unit, such as for a brand, kit, model, etc.
+          example: TODO
+          type: stock_keeping_unit.id
