@@ -1,0 +1,34 @@
+measurement:
+  title: Measurement
+  model: Measurement
+  summary: |-
+
+    A measurement, such as 1 metre, 2 seconds, 3 metres/second, etc.
+
+  description: |-
+
+    A measurement, such as 1 metre, 2 seconds, 3 metres/second, etc.
+
+    See also Unified Code for Units of Measure (UCUM).
+
+  module: measurement
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - timestamp_utc_usec:
+          help: Timestamp
+          example: 2026-01-28T19:03:57.000Z
+          type: timestamp_utc_usec
+      - measurement_unit_id:
+          help: Measurement unit id
+          example: UCUM
+          type: measurement_unit.id
+      - measurement_device_id:
+          help: Measurement device id
+          example: TODO
+          type: measurement_device.id
+      - value:
+          help: TODO
+          example: TODO
+          type: TODO
+          
