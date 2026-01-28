@@ -12,13 +12,14 @@ rails generate scaffold \
         retired_by:text:index \
         locale_code:string:index \
         tagging:string:index \
+        measurement_system_id:references \
+        code:string:index \
         name:text \
         name_phonetic:text \
-        category:text \
         synonyms:text \
-        loinc_property:text \
+        category:text \
+        property:text \
         guidance:text \
-        measurement_system_id:references \
     --force \
     --no-timestamps \
 

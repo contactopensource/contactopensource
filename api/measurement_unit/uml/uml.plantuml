@@ -16,14 +16,14 @@ entity measurement_unit {
   locale_code : string ⚡
   tagging : string ⚡
   .. Main ..
-  id : string ⚡
+  measurement_system_id : measurement_system.id 🔑
+  code : string ⚡
   name : text
   name_phonetic : text
-  category : text
   synonyms : text
-  loinc_property : text
+  category : text
+  property : text
   guidance : text
-  measurement_system_id : measurement_system.id 🔑
 }
 
 @enduml

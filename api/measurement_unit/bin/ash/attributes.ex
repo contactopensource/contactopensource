@@ -45,9 +45,12 @@ defmodule MyApp.MyDomain.MeasurementUnit.Attributes do
       description "A tagging list that is space-separated and without any hash marks."
     end
 
-    attribute :id, :string do
-      primary_key? true
-      description "Id is a case-sensitive unique code, such as the UCUM case-sensitive code."
+    attribute :measurement_system_id, :measurement_system.id do
+      description "Measurement system that is the source of this record"
+    end
+
+    attribute :code, :string do
+      description "code that is unique to the measurement system and is case-sensitive, such as the UCUM code \"s\" meaning \"second\"."
     end
 
     attribute :name, :text do
@@ -58,24 +61,20 @@ defmodule MyApp.MyDomain.MeasurementUnit.Attributes do
       description "Name phonetic"
     end
 
-    attribute :category, :text do
-      description "Category"
-    end
-
     attribute :synonyms, :text do
-      description "Synonyms"
+      description "Synonyms, as a comma-separated list"
     end
 
-    attribute :loinc_property, :text do
-      description "LOINC property"
+    attribute :category, :text do
+      description "Category, which is typically relevant to the measurement system, such as the medical category \"Clinical\". Case-sensitive."
+    end
+
+    attribute :property, :text do
+      description "Property, which is typically relevant to the measure system, such as the medical LOINC property \"Time\". Case-sensitive."
     end
 
     attribute :guidance, :text do
       description "Guidance"
-    end
-
-    attribute :measurement_system_id, :measurement_system.id do
-      description "Measurement system that is the source of this record"
     end
 
   end

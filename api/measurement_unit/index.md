@@ -30,19 +30,19 @@ meta:
 
 Main:
 
-  * id: string (index) - example: s
+  * measurement_system_id: measurement_system.id - example: UCUM
+
+  * code: string (index) - example: s
 
   * name: text - example: second
 
   * name_phonetic: text - example: ˈsɛkənd
 
-  * category: text - example: Clinical
-
   * synonyms: text - example: seconds
 
-  * loinc_property: text - example: Time
+  * category: text - example: Clinical
+
+  * property: text - example: Time
 
   * guidance: text - example: todo
-
-  * measurement_system_id: measurement_system.id - example: UCUM
 

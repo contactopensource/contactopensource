@@ -16,13 +16,14 @@ mix ash.gen.resource \
     --attribute retired_by:text \
     --attribute locale_code:string \
     --attribute tagging:string \
+    --relationship belongs_to:measurement_system_id:MyApp.MyDomain.MyModel \
+    --attribute code:string \
     --attribute name:text \
     --attribute name_phonetic:text \
-    --attribute category:text \
     --attribute synonyms:text \
-    --attribute loinc_property:text \
+    --attribute category:text \
+    --attribute property:text \
     --attribute guidance:text \
-    --relationship belongs_to:measurement_system_id:MyApp.MyDomain.MyModel \
 
 mix ash.codegen create_measurement_units
 mix ash.migrate
@@ -77,6 +78,7 @@ EOF
 #     index[:retired_by] \
 #     index[:locale_code] \
 #     index[:tagging] \
+#     index[:code] \
 #
 #
 # Change the attributes created_at and updated_at to:

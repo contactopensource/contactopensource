@@ -15,8 +15,12 @@ measurement_unit:
   attribute_groups:
     - !include ../_meta.yml
     - Main:
-      - id:
-          help: Id is a case-sensitive unique code, such as the UCUM case-sensitive code.
+      - measurement_system_id:
+          help: Measurement system that is the source of this record
+          example: UCUM
+          type: measurement_system.id
+      - code:
+          help: code that is unique to the measurement system and is case-sensitive, such as the UCUM code "s" meaning "second".
           example: s
           type: string
           index: true
@@ -28,24 +32,20 @@ measurement_unit:
           help: Name phonetic
           type: text
           example: ˈsɛkənd
-      - category:
-          help: Category
-          example: Clinical
-          type: text
       - synonyms:
-          help: Synonyms
+          help: Synonyms, as a comma-separated list
           example: seconds
           type: text
-      - loinc_property:
-          help: LOINC property
+      - category:
+          help: Category, which is typically relevant to the measurement system, such as the medical category "Clinical". Case-sensitive.
+          example: Clinical
+          type: text
+      - property:
+          help: Property, which is typically relevant to the measure system, such as the medical LOINC property "Time". Case-sensitive.
           example: Time
           type: text
       - guidance:
           help: Guidance
           example: todo
           type: text
-      - measurement_system_id:
-          help: Measurement system that is the source of this record
-          example: UCUM
-          type: measurement_system.id
-          
+        
