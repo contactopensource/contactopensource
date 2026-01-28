@@ -33,6 +33,11 @@ mix phx.gen.html \
         failed_deployment_recovery_time_ratio:numeric(7,2)None \
         failed_deployment_recovery_time_unit:textNone \
         failed_deployment_recovery_time_description:textNone \
+        reliability_probability_actual:numeric(9,6)None \
+        reliability_probability_target:numeric(9,6)None \
+        reliability_probability_ratio:numeric(9,6)None \
+        reliability_probability_unit:textNone \
+        reliability_probability_description:textNone \
     --force \
     --no-timestamps \
 

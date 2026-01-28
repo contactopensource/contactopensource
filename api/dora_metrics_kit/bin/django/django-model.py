@@ -32,4 +32,9 @@ class DoraMetricsKit(models.Model):
         failed_deployment_recovery_time_ratio = models.UnknownAttribute("Failed deployment recovery time (actual / target)")
         failed_deployment_recovery_time_unit = models.TextAttribute("Failed deployment recovery time unit")
         failed_deployment_recovery_time_description = models.TextAttribute("Failed deployment recovery time description")
+        reliability_probability_actual = models.UnknownAttribute("Reliability probability actual value")
+        reliability_probability_target = models.UnknownAttribute("Reliability probability target value")
+        reliability_probability_ratio = models.UnknownAttribute("Reliability probability (actual / target)")
+        reliability_probability_unit = models.TextAttribute("Reliability probability unit")
+        reliability_probability_description = models.TextAttribute("Reliability probability description")
 

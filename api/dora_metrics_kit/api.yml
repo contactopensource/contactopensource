@@ -76,3 +76,19 @@ dora_metrics_kit:
       - failed_deployment_recovery_time_description:
           help: Failed deployment recovery time description
           type: text
+      - reliability_probability_actual:
+          help: Reliability probability actual value
+          type: numeric(9,6)
+      - reliability_probability_target:
+          help: Reliability probability target value
+          type: numeric(9,6)
+      - reliability_probability_ratio:
+          help: Reliability probability (actual / target)
+          type: numeric(9,6)
+          sqL: reliability_probability_ratio decimal generated always as (reliability_probability_actual / reliability_probability_expect)
+      - reliability_probability_unit:
+          help: Reliability probability unit
+          type: text
+      - reliability_probability_description:
+          help: Reliability probability description
+          type: text

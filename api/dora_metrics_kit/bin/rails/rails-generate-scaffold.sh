@@ -32,6 +32,11 @@ rails generate scaffold \
         failed_deployment_recovery_time_ratio:numeric(7,2) \
         failed_deployment_recovery_time_unit:text \
         failed_deployment_recovery_time_description:text \
+        reliability_probability_actual:numeric(9,6) \
+        reliability_probability_target:numeric(9,6) \
+        reliability_probability_ratio:numeric(9,6) \
+        reliability_probability_unit:text \
+        reliability_probability_description:text \
     --force \
     --no-timestamps \
 

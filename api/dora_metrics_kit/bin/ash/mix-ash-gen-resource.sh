@@ -36,6 +36,11 @@ mix ash.gen.resource \
     --attribute failed_deployment_recovery_time_ratio:numeric \
     --attribute failed_deployment_recovery_time_unit:text \
     --attribute failed_deployment_recovery_time_description:text \
+    --attribute reliability_probability_actual:numeric \
+    --attribute reliability_probability_target:numeric \
+    --attribute reliability_probability_ratio:numeric \
+    --attribute reliability_probability_unit:text \
+    --attribute reliability_probability_description:text \
 
 mix ash.codegen create_dora_metrics_kits
 mix ash.migrate
