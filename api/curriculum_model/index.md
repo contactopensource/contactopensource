@@ -1,6 +1,6 @@
 # curriculum_model
 
-Curriculumn model
+Curriculum model
 
 
 ## Attributes
@@ -53,9 +53,48 @@ card:
 
 Main:
 
-  * structure_description_as_markdown: markdown
+  * year: year - example: 2026
 
-  * philosphy_description_as_markdown: markdown
+  * philosophy_sentence: text - example: - Teachers, being closest to learners, should design curriculum rather than administrators.
+- Curriculum is never "finished"—continuous refinement based on evaluation feedback.
+- All elements are interconnected; change in one affects all others.
+- Curriculum exists at multiple levels; what is intended often differs from what is experienced.
+- Start with the end in mind; assessment drives instruction.
+
+  * best_use_case_summary: text - example: ['Standardized testing environments, accountability systems', 'Diverse classrooms, localized curriculum needs', 'Evolving disciplines, pilot programs', 'Comprehensive curriculum reform', 'Philosophical alignment, policy analysis', 'Mathematics, sciences, languages', 'Interdisciplinary units, competency-based education']
+
+  * focus_summary: text - example: - Measurable objectives and outcomes
+- Learner needs and teacher expertise
+- Continuous improvement
+- Balance among curriculum elements
+- Values and lived curriculum
+- Cognitive development and retention
+- Deep understanding and transfer
+
+  * approach_summary: text - example: - Product-oriented
+- Process-oriented
+- Systems-oriented
+- Outcome-oriented
+- Phenomenological
+- Constructivist
+
+  * direction_summary: text - example: - Top-down, linear
+- Bottom-up, inductive
+- Cyclical, iterative
+- Interconnected domains
+- Multi-level analysis
+- Iterative deepening
+- Backward from goals
+
+  * teacher_role_summary: text - example: - Implementer of prescribed curriculum
+- Primary curriculum designer
+- Evaluator and reviser
+- Balancer of curriculum elements
+- Interpreter and mediator
+- Scaffolder of increasing complexity
+- Designer of understanding-focused units
+
+  * structure_description_as_markdown: markdown
 
   * strengths_description_as_markdown: markdown
 

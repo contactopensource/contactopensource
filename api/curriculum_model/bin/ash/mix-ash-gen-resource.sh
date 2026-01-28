@@ -27,8 +27,14 @@ mix ash.gen.resource \
     --attribute star_count:integer \
     --relationship belongs_to:quick_response_code_id:MyApp.MyDomain.MyModel \
     --relationship belongs_to:universal_product_code_id:MyApp.MyDomain.MyModel \
+    --attribute year:year \
+    --attribute philosophy_sentence:text \
+    --attribute best_use_case_summary:text \
+    --attribute focus_summary:text \
+    --attribute approach_summary:text \
+    --attribute direction_summary:text \
+    --attribute teacher_role_summary:text \
     --attribute structure_description_as_markdown:markdown \
-    --attribute philosphy_description_as_markdown:markdown \
     --attribute strengths_description_as_markdown:markdown \
     --attribute limitations_description_as_markdown:markdown \
 

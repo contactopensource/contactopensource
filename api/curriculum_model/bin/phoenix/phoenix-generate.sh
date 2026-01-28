@@ -24,8 +24,14 @@ mix phx.gen.html \
         star_count:integerNone \
         quick_response_code_id:referencesNone \
         universal_product_code_id:referencesNone \
+        year:yearNone \
+        philosophy_sentence:textNone \
+        best_use_case_summary:textNone \
+        focus_summary:textNone \
+        approach_summary:textNone \
+        direction_summary:textNone \
+        teacher_role_summary:textNone \
         structure_description_as_markdown:markdownNone \
-        philosphy_description_as_markdown:markdownNone \
         strengths_description_as_markdown:markdownNone \
         limitations_description_as_markdown:markdownNone \
     --force \

@@ -24,8 +24,14 @@ cargo loco generate scaffold --html \
         star_count:integer \
         quick_response_code_id:references \
         universal_product_code_id:references \
+        year:year \
+        philosophy_sentence:text \
+        best_use_case_summary:text \
+        focus_summary:text \
+        approach_summary:text \
+        direction_summary:text \
+        teacher_role_summary:text \
         structure_description_as_markdown:markdown \
-        philosphy_description_as_markdown:markdown \
         strengths_description_as_markdown:markdown \
         limitations_description_as_markdown:markdown \
 

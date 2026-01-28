@@ -89,12 +89,36 @@ defmodule MyApp.MyDomain.CurriculumModel.Attributes do
       description "A universal product code (UPC) that uniquely identifies this card."
     end
 
-    attribute :structure_description_as_markdown, :markdown do
-      description "structure description as markdown."
+    attribute :year, :year do
+      description "year of publication, or announcement, or founding, etc."
     end
 
-    attribute :philosphy_description_as_markdown, :markdown do
-      description "philosophy description as markdown."
+    attribute :philosophy_sentence, :text do
+      description "philosophy sentence as markdown."
+    end
+
+    attribute :best_use_case_summary, :text do
+      description "best use case summary"
+    end
+
+    attribute :focus_summary, :text do
+      description "focus summary"
+    end
+
+    attribute :approach_summary, :text do
+      description "approach summary"
+    end
+
+    attribute :direction_summary, :text do
+      description "direction summary"
+    end
+
+    attribute :teacher_role_summary, :text do
+      description "teacher role summary"
+    end
+
+    attribute :structure_description_as_markdown, :markdown do
+      description "structure description as markdown."
     end
 
     attribute :strengths_description_as_markdown, :markdown do
