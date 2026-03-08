@@ -16,16 +16,19 @@ mix ash.gen.resource \
     --attribute retired_by:text \
     --attribute locale_code:string \
     --attribute tagging:string \
-    --attribute type:text \
+    --attribute queue_type:text \
+    --attribute queue_total_count:count \
+    --attribute queue_skip_count:count \
+    --attribute queue_error_count:count \
     --attribute queue_arrival_rate_actual:numeric \
     --attribute queue_arrival_rate_target:numeric \
     --attribute queue_arrival_rate_ratio:numeric \
     --attribute queue_service_rate_actual:numeric \
     --attribute queue_service_rate_target:numeric \
     --attribute queue_service_rate_ratio:numeric \
-    --attribute queue_dropout_rate_actual:numeric \
-    --attribute queue_dropout_rate_target:numeric \
-    --attribute queue_dropout_rate_ratio:numeric \
+    --attribute queue_skip_rate_actual:numeric \
+    --attribute queue_skip_rate_target:numeric \
+    --attribute queue_skip_rate_ratio:numeric \
     --attribute queue_utilization_ratio_actual:numeric \
     --attribute queue_utilization_ratio_actual:numeric \
     --attribute queue_utilization_ratio_ratio:numeric \
@@ -44,8 +47,6 @@ mix ash.gen.resource \
     --attribute queue_step_time_actual:numeric \
     --attribute queue_step_time_target:numeric \
     --attribute queue_step_time_ratio:numeric \
-    --attribute queue_item_count:count \
-    --attribute queue_service_error_count:count \
     --attribute queue_arrival_process_probability_distribution_count:text \
     --attribute queue_service_process_probability_distribution_count:text \
     --attribute queue_server_count:count \

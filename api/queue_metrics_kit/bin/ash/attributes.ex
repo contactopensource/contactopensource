@@ -45,7 +45,7 @@ defmodule MyApp.MyDomain.QueueMetricKit.Attributes do
       description "A tagging list that is space-separated and without any hash marks."
     end
 
-    attribute :type, :text do
+    attribute :queue_type, :text do
       description "
 Queue types and service types describe how the queue chooses which items to process.
 
@@ -62,17 +62,32 @@ Queue types and service types describe how the queue chooses which items to proc
 * Longest Job First (LJF): serve the customer who needs the largest amount of service."
     end
 
+    attribute :queue_total_count, :count do
+      description "
+κ (kappa): the number of items in the system."
+    end
+
+    attribute :queue_skip_count, :count do
+      description "
+σκ (sigma kappa): the number of items that skip out of the system"
+    end
+
+    attribute :queue_error_count, :count do
+      description "
+εκ (epsilon kappa): the number of errors in the system"
+    end
+
     attribute :queue_arrival_rate_actual, :numeric do
       description "
 λ: arrival rate. This measures how fast new items are coming into the queue.
 
 Examples:
 
-* λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than dropouts.
+* λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than skips.
 
-* λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than dropouts.
+* λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than skips.
 
-* λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than dropouts."
+* λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than skips."
     end
 
     attribute :queue_arrival_rate_target, :numeric do
@@ -92,9 +107,9 @@ Examples:
     attribute :queue_service_rate_ratio, :numeric do
     end
 
-    attribute :queue_dropout_rate_actual, :numeric do
+    attribute :queue_skip_rate_actual, :numeric do
       description "
-σ: dropout rate. This measures how fast items are skipping out the queue unhandled.
+σ (sigma): skip rate. This measures how fast items are skipping out the queue unhandled.
 
 Examples:
 
@@ -105,10 +120,10 @@ Examples:
 * Jockeying: when a customer switches between queues in a tandem queue system, trying to get a shorter wait."
     end
 
-    attribute :queue_dropout_rate_target, :numeric do
+    attribute :queue_skip_rate_target, :numeric do
     end
 
-    attribute :queue_dropout_rate_ratio, :numeric do
+    attribute :queue_skip_rate_ratio, :numeric do
     end
 
     attribute :queue_utilization_ratio_actual, :numeric do
@@ -213,16 +228,6 @@ Example:
 
     attribute :queue_step_time_ratio, :numeric do
       description "Deployment frequency ratio = (actual / target)"
-    end
-
-    attribute :queue_item_count, :count do
-      description "
-n: the number of items in the system."
-    end
-
-    attribute :queue_service_error_count, :count do
-      description "
-TODO"
     end
 
     attribute :queue_arrival_process_probability_distribution_count, :text do

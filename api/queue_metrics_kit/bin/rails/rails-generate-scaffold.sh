@@ -12,16 +12,19 @@ rails generate scaffold \
         retired_by:text:index \
         locale_code:string:index \
         tagging:string:index \
-        type:text \
+        queue_type:text \
+        queue_total_count:count \
+        queue_skip_count:count \
+        queue_error_count:count \
         queue_arrival_rate_actual:numeric(7,2) \
         queue_arrival_rate_target:numeric(7,2) \
         queue_arrival_rate_ratio:numeric(7,2) \
         queue_service_rate_actual:numeric(7,2) \
         queue_service_rate_target:numeric(7,2) \
         queue_service_rate_ratio:numeric(7,2) \
-        queue_dropout_rate_actual:numeric(7,2) \
-        queue_dropout_rate_target:numeric(7,2) \
-        queue_dropout_rate_ratio:numeric(7,2) \
+        queue_skip_rate_actual:numeric(7,2) \
+        queue_skip_rate_target:numeric(7,2) \
+        queue_skip_rate_ratio:numeric(7,2) \
         queue_utilization_ratio_actual:numeric(7,2) \
         queue_utilization_ratio_actual:numeric(7,2) \
         queue_utilization_ratio_ratio:numeric(7,2) \
@@ -40,8 +43,6 @@ rails generate scaffold \
         queue_step_time_actual:numeric(7,2) \
         queue_step_time_target:numeric(7,2) \
         queue_step_time_ratio:numeric(7,2) \
-        queue_item_count:count \
-        queue_service_error_count:count \
         queue_arrival_process_probability_distribution_count:text \
         queue_service_process_probability_distribution_count:text \
         queue_server_count:count \

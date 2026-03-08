@@ -65,9 +65,9 @@ queue_metrics_kit:
 
       * Time Sharing: serve everyone at the same time; service capacity is distributed evenly among everyone waiting.
 
-    ### Queue dropouts
+    ### Queue skips
 
-    Queue dropouts are when a customer does not make it through the queue.
+    Queue skips are when a customer does not make it through the queue.
 
       * Balking: when a customer decides not to start waiting for service because the wait time threatens to be too long.
 
@@ -81,7 +81,7 @@ queue_metrics_kit:
 
     Our teams use some of the popular notation; we also add some custom notion that help us with software projects.
 
-    ### Arrival rate, service rate, dropout rate
+    ### Arrival rate, service rate, skip rate
 
     The most important notation:
 
@@ -89,15 +89,15 @@ queue_metrics_kit:
 
       * μ: service rate. This measures how fast items in the queue are being handled.
 
-      * σ: dropout rate. This measures how fast items are skipping out the queue unhandled.
+      * σ: skip rate. This measures how fast items are skipping out the queue unhandled.
 
     Examples:
 
-      * λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than dropouts.
+      * λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than skips.
 
-      * λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than dropouts.
+      * λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than skips.
 
-      * λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than dropouts.
+      * λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than skips.
 
     ### Utilization ratio
 
@@ -179,7 +179,7 @@ queue_metrics_kit:
 
       * Aμ: Activity service rate: how many items are completed per time unit.
 
-      * Aσ: Activity dropout rate: how many items are abandoned per time unit.
+      * Aσ: Activity skip rate: how many items are abandoned per time unit.
 
       * Aρ: Activity utilization ratio: how many items are arriving vs. completing.
 
@@ -294,222 +294,226 @@ queue_metrics_kit:
   attribute_groups:
     - !include ../_meta.yml
     - Main:
-      - type:
-          help: |-
+        - queue_type:
+            help: |-
 
-            Queue types and service types describe how the queue chooses which items to process.
+              Queue types and service types describe how the queue chooses which items to process.
 
-            * Priority: serve customers based on their priority level; these levels could be based on status, urgency, payment, etc.
+              * Priority: serve customers based on their priority level; these levels could be based on status, urgency, payment, etc.
 
-            * Timeshare: serve everyone at the same time; service capacity is distributed evenly among everyone waiting.
-          
-            * First In First Out (FIFO): serve the customer who has been waiting for the longest time.
+              * Timeshare: serve everyone at the same time; service capacity is distributed evenly among everyone waiting.
 
-            * Last In First Out (LIFO): serve the customer who has been waiting for the shortest time.
+              * First In First Out (FIFO): serve the customer who has been waiting for the longest time.
 
-            * Shortest Job First (SJF): serve the customer who needs the smallest amount of service.
+              * Last In First Out (LIFO): serve the customer who has been waiting for the shortest time.
 
-            * Longest Job First (LJF): serve the customer who needs the largest amount of service.
+              * Shortest Job First (SJF): serve the customer who needs the smallest amount of service.
 
-          type: text
+              * Longest Job First (LJF): serve the customer who needs the largest amount of service.
 
-      - queue_arrival_rate_actual:
-          help: |-
+            type: text
+        - queue_total_count:
+            help: |-
 
-            λ: arrival rate. This measures how fast new items are coming into the queue.
+              κ (kappa): the number of items in the system.
 
-            Examples:
+            type: count
+        - queue_skip_count:
+            help: |-
 
-            * λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than dropouts.
+              σκ (sigma kappa): the number of items that skip out of the system
 
-            * λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than dropouts.
+            type: count
+        - queue_error_count:
+            help: |-
 
-            * λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than dropouts.
+              εκ (epsilon kappa): the number of errors in the system
+            type: count
+        - queue_arrival_rate_actual:
+            help: |-
 
-          type: numeric(7,2)
-      - queue_arrival_rate_target:
-          type: numeric(7,2)
-      - queue_arrival_rate_ratio:
-          type: numeric(7,2)
-          sql: queue_arrival_rate_ratio decimal generated always as (queue_arrival_rate_actual / queue_arrival_rate_target) STORED,
-      - queue_service_rate_actual:
-          help: |-
-          
-            μ: service rate. This measures how fast items in the queue are being handled.
+              λ: arrival rate. This measures how fast new items are coming into the queue.
 
-          type: numeric(7,2)
-      - queue_service_rate_target:
-          type: numeric(7,2)
-      - queue_service_rate_ratio:
-          type: numeric(7,2)
-          sql: queue_service_rate_ratio decimal generated always as (queue_service_rate_actual / queue_service_rate_target) STORED,
-      - queue_dropout_rate_actual:
-          help: |-
-          
-            σ: dropout rate. This measures how fast items are skipping out the queue unhandled.
+              Examples:
 
-            Examples:
+              * λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than skips.
 
-            * Balking: when a customer decides not to start waiting for service because the wait time threatens to be too long.
+              * λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than skips.
 
-            * Reneging: when a customer who has waited already decides to leave because they’ve wasted too much time.
+              * λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than skips.
 
-            * Jockeying: when a customer switches between queues in a tandem queue system, trying to get a shorter wait.
+            type: numeric(7,2)
+        - queue_arrival_rate_target:
+            type: numeric(7,2)
+        - queue_arrival_rate_ratio:
+            type: numeric(7,2)
+            sql: queue_arrival_rate_ratio decimal generated always as (queue_arrival_rate_actual / queue_arrival_rate_target) STORED,
+        - queue_service_rate_actual:
+            help: |-
 
-          type: numeric(7,2)
-      - queue_dropout_rate_target:
-          type: numeric(7,2)
-      - queue_dropout_rate_ratio:
-          type: numeric(7,2)
-          sql: queue_dropout_rate_ratio decimal generated always as (queue_dropout_rate_actual / queue_dropout_rate_target) STORED,
-      - queue_utilization_ratio_actual:
-          help: |-
+              μ: service rate. This measures how fast items in the queue are being handled.
 
-            ρ: utilization ratio = λ / μ
+            type: numeric(7,2)
+        - queue_service_rate_target:
+            type: numeric(7,2)
+        - queue_service_rate_ratio:
+            type: numeric(7,2)
+            sql: queue_service_rate_ratio decimal generated always as (queue_service_rate_actual / queue_service_rate_target) STORED,
+        - queue_skip_rate_actual:
+            help: |-
 
-            This is the most important notation that summarizes a queue.
+              σ (sigma): skip rate. This measures how fast items are skipping out the queue unhandled.
 
-            Examples:
+              Examples:
 
-              * ρ = 1 means the arrival rate is equal to the service rate; the queue is staying the same size.
+              * Balking: when a customer decides not to start waiting for service because the wait time threatens to be too long.
 
-              * ρ > 1 means the arrival rate is greater than the service rate; the queue is getting larger.
+              * Reneging: when a customer who has waited already decides to leave because they’ve wasted too much time.
 
-              * ρ < 1 means the arrival rate is less than the service rate; the queue is getting smaller.
+              * Jockeying: when a customer switches between queues in a tandem queue system, trying to get a shorter wait.
 
-          type: numeric(7,2)
-          sql: queue_utilization_ratio decimal generated always as (queue_arrival_rate_actual / queue_service_rate_actual) STORED,
-      - queue_utilization_ratio_actual:
-          type: numeric(7,2)
-      - queue_utilization_ratio_ratio:
-          type: numeric(7,2)
-          sql: queue_utilization_ratio_ratio decimal generated always as (queue_utilization_ratio_actual / queue_dropout_rate_target) STORED,
-      - queue_error_ratio_actual:
-          help: |-
+            type: numeric(7,2)
+        - queue_skip_rate_target:
+            type: numeric(7,2)
+        - queue_skip_rate_ratio:
+            type: numeric(7,2)
+            sql: queue_skip_rate_ratio decimal generated always as (queue_skip_rate_actual / queue_skip_rate_target) STORED,
+        - queue_utilization_ratio_actual:
+            help: |-
 
-            ε: error ratio = service failure count / service total count
+              ρ: utilization ratio = λ / μ
 
-            This is the most important notation that summarizes a queue's success.
+              This is the most important notation that summarizes a queue.
 
-            Examples:
+              Examples:
 
-            * ε = 0 means no errors.
+                * ρ = 1 means the arrival rate is equal to the service rate; the queue is staying the same size.
 
-            * ε = 0.1 means 10% of services have an error.
+                * ρ > 1 means the arrival rate is greater than the service rate; the queue is getting larger.
 
-            * ε = 1 means every service has an error.
+                * ρ < 1 means the arrival rate is less than the service rate; the queue is getting smaller.
 
-          type: numeric(7,2)
-          sql: queue_error_ratio decimal generated always as (queue_error_count_actual / queue_total_count_actual) STORED,
-      - queue_error_ratio_target:
-          type: numeric(7,2)
-      - queue_error_ratio_ratio:
-          type: numeric(7,2)
-          sql: queue_error_ratio_ratio decimal generated always as (queue_error_ratio_actual / queue_error_ratio_target) STORED,
-      - queue_lead_time_actual:
-          help: |-
-          
-            τ: lead time = from arrival to finish
+            type: numeric(7,2)
+            sql: queue_utilization_ratio decimal generated always as (queue_arrival_rate_actual / queue_service_rate_actual) STORED,
+        - queue_utilization_ratio_actual:
+            type: numeric(7,2)
+        - queue_utilization_ratio_ratio:
+            type: numeric(7,2)
+            sql: queue_utilization_ratio_ratio decimal generated always as (queue_utilization_ratio_actual / queue_skip_rate_target) STORED,
+        - queue_error_ratio_actual:
+            help: |-
 
-            Example:
+              ε: error ratio = service failure count / service total count
 
-            * τ = 5s means an item is added to the queue, then serviced 5 seconds later.
+              This is the most important notation that summarizes a queue's success.
 
-          type: numeric(7,2)
-      - queue_lead_time_target:
-          type: numeric(7,2)
-      - queue_lead_time_ratio:
-          type: numeric(7,2)
-          sql: queue_lead_time_ratio decimal generated always as (queue_lead_time_actual / queue_lead_time_target) STORED,
-      - queue_wait_time_actual:
-          help: |-
-          
-            ω: wait time = from arrival to start of work
+              Examples:
 
-            Example:
+              * ε = 0 means no errors.
 
-            * ω = 4s means an item waits in the queue for 4 seconds, then work starts.
+              * ε = 0.1 means 10% of services have an error.
 
-          type: numeric(7,2)
-      - queue_wait_time_target:
-          type: numeric(7,2)
-      - queue_wait_time_ratio:
-          type: numeric(7,2)
-          sql: queue_wait_time_ratio decimal generated always as (queue_wait_time_actual / queue_wait_time_target) STORED,
-      - queue_work_time_actual:
-          help: |-
+              * ε = 1 means every service has an error.
 
-            φ: work time = from start of work to finish
+            type: numeric(7,2)
+            sql: queue_error_ratio decimal generated always as (queue_error_count_actual / queue_total_count_actual) STORED,
+        - queue_error_ratio_target:
+            type: numeric(7,2)
+        - queue_error_ratio_ratio:
+            type: numeric(7,2)
+            sql: queue_error_ratio_ratio decimal generated always as (queue_error_ratio_actual / queue_error_ratio_target) STORED,
+        - queue_lead_time_actual:
+            help: |-
 
-            Example:
+              τ: lead time = from arrival to finish
 
-            * φ = 1s means an item takes 1 second of work, then is complete.
+              Example:
 
-          type: numeric(7,2)
-      - queue_work_time_target:
-          help: 
-          type: numeric(7,2)
-      - queue_work_time_ratio:
-          help: Deployment frequency ratio = (actual / target)
-          type: numeric(7,2)
-          sql: queue_work_time_ratio decimal generated always as (queue_work_time_actual / queue_work_time_target) STORED,
-      - queue_step_time_actual:
-          help: |-
+              * τ = 5s means an item is added to the queue, then serviced 5 seconds later.
 
-            θ: step time = from finish to next finish
+            type: numeric(7,2)
+        - queue_lead_time_target:
+            type: numeric(7,2)
+        - queue_lead_time_ratio:
+            type: numeric(7,2)
+            sql: queue_lead_time_ratio decimal generated always as (queue_lead_time_actual / queue_lead_time_target) STORED,
+        - queue_wait_time_actual:
+            help: |-
 
-            Example:
+              ω: wait time = from arrival to start of work
 
-            * θ = 1s means there's 1 second between one completion and the next completion.
+              Example:
 
-          type: numeric(7,2)
-      - queue_step_time_target:
-          help: 
-          type: numeric(7,2)
-      - queue_step_time_ratio:
-          help: Deployment frequency ratio = (actual / target)
-          type: numeric(7,2)
-          sql: queue_step_time_ratio decimal generated always as (queue_step_time_actual / queue_step_time_target) STORED,
-      - queue_item_count:
-          help: |-
+              * ω = 4s means an item waits in the queue for 4 seconds, then work starts.
 
-            n: the number of items in the system.
-            
-          type: count
-      - queue_service_error_count:
-          help: |-
+            type: numeric(7,2)
+        - queue_wait_time_target:
+            type: numeric(7,2)
+        - queue_wait_time_ratio:
+            type: numeric(7,2)
+            sql: queue_wait_time_ratio decimal generated always as (queue_wait_time_actual / queue_wait_time_target) STORED,
+        - queue_work_time_actual:
+            help: |-
 
-            TODO
-            
-          type: count
-      - queue_arrival_process_probability_distribution_count:
-          help: |-
+              φ: work time = from start of work to finish
 
-            A: the arrival process probability distribution.
+              Example:
 
-          type: text
-      - queue_service_process_probability_distribution_count:
-          help: |-
+              * φ = 1s means an item takes 1 second of work, then is complete.
 
-            B: the service process probability distribution.
+            type: numeric(7,2)
+        - queue_work_time_target:
+            help:
+            type: numeric(7,2)
+        - queue_work_time_ratio:
+            help: Deployment frequency ratio = (actual / target)
+            type: numeric(7,2)
+            sql: queue_work_time_ratio decimal generated always as (queue_work_time_actual / queue_work_time_target) STORED,
+        - queue_step_time_actual:
+            help: |-
 
-          type: text
-      - queue_server_count:
-          help: |-
+              θ: step time = from finish to next finish
 
-            C: the number of servers.
+              Example:
 
-          type: count
+              * θ = 1s means there's 1 second between one completion and the next completion.
 
-      - queue_maximum_active_items_count:
-          help: |-
+            type: numeric(7,2)
+        - queue_step_time_target:
+            help:
+            type: numeric(7,2)
+        - queue_step_time_ratio:
+            help: Deployment frequency ratio = (actual / target)
+            type: numeric(7,2)
+            sql: queue_step_time_ratio decimal generated always as (queue_step_time_actual / queue_step_time_target) STORED,
+        - queue_arrival_process_probability_distribution_count:
+            help: |-
 
-            D: the maximum number of items allowed in the queue at any given time, waiting or being served (without getting bumped).
+              A: the arrival process probability distribution.
 
-          type: count
-      - queue_maximum_total_items_count:
-          help: |-
+            type: text
+        - queue_service_process_probability_distribution_count:
+            help: |-
 
-            E: the maximum number of items total.
+              B: the service process probability distribution.
 
-          type: count
+            type: text
+        - queue_server_count:
+            help: |-
+
+              C: the number of servers.
+
+            type: count
+
+        - queue_maximum_active_items_count:
+            help: |-
+
+              D: the maximum number of items allowed in the queue at any given time, waiting or being served (without getting bumped).
+
+            type: count
+        - queue_maximum_total_items_count:
+            help: |-
+
+              E: the maximum number of items total.
+
+            type: count

@@ -13,16 +13,19 @@ mix phx.gen.html \
         retired_by:url:index \
         locale_code:string:index \
         tagging:string:index \
-        type:textNone \
+        queue_type:textNone \
+        queue_total_count:countNone \
+        queue_skip_count:countNone \
+        queue_error_count:countNone \
         queue_arrival_rate_actual:numeric(7,2)None \
         queue_arrival_rate_target:numeric(7,2)None \
         queue_arrival_rate_ratio:numeric(7,2)None \
         queue_service_rate_actual:numeric(7,2)None \
         queue_service_rate_target:numeric(7,2)None \
         queue_service_rate_ratio:numeric(7,2)None \
-        queue_dropout_rate_actual:numeric(7,2)None \
-        queue_dropout_rate_target:numeric(7,2)None \
-        queue_dropout_rate_ratio:numeric(7,2)None \
+        queue_skip_rate_actual:numeric(7,2)None \
+        queue_skip_rate_target:numeric(7,2)None \
+        queue_skip_rate_ratio:numeric(7,2)None \
         queue_utilization_ratio_actual:numeric(7,2)None \
         queue_utilization_ratio_actual:numeric(7,2)None \
         queue_utilization_ratio_ratio:numeric(7,2)None \
@@ -41,8 +44,6 @@ mix phx.gen.html \
         queue_step_time_actual:numeric(7,2)None \
         queue_step_time_target:numeric(7,2)None \
         queue_step_time_ratio:numeric(7,2)None \
-        queue_item_count:countNone \
-        queue_service_error_count:countNone \
         queue_arrival_process_probability_distribution_count:textNone \
         queue_service_process_probability_distribution_count:textNone \
         queue_server_count:countNone \

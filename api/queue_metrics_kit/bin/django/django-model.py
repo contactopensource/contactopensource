@@ -12,7 +12,7 @@ class QueueMetricKit(models.Model):
         retired_by = models.URLAttribute("The user/agent/service/etc. that did this.")
         locale_code = models.TextAttribute("An international locale identifier, such as the id of locale "English - United States".")
         tagging = models.TextAttribute("A tagging list that is space-separated and without any hash marks.")
-        type = models.TextAttribute("
+        queue_type = models.TextAttribute("
 Queue types and service types describe how the queue chooses which items to process.
 
 * Priority: serve customers based on their priority level; these levels could be based on status, urgency, payment, etc.
@@ -26,24 +26,30 @@ Queue types and service types describe how the queue chooses which items to proc
 * Shortest Job First (SJF): serve the customer who needs the smallest amount of service.
 
 * Longest Job First (LJF): serve the customer who needs the largest amount of service.")
+        queue_total_count = models.UnknownAttribute("
+κ (kappa): the number of items in the system.")
+        queue_skip_count = models.UnknownAttribute("
+σκ (sigma kappa): the number of items that skip out of the system")
+        queue_error_count = models.UnknownAttribute("
+εκ (epsilon kappa): the number of errors in the system")
         queue_arrival_rate_actual = models.UnknownAttribute("
 λ: arrival rate. This measures how fast new items are coming into the queue.
 
 Examples:
 
-* λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than dropouts.
+* λ = μ means the arrival rate equals the service rate; the queue is staying the same size, other than skips.
 
-* λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than dropouts.
+* λ > μ means the arrival rate is greater than the service rate; the queue is getting larger, other than skips.
 
-* λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than dropouts.")
+* λ < μ means the arrival rate is less than the service rate; the queue is getting smaller, other than skips.")
         queue_arrival_rate_target = models.UnknownAttribute("None")
         queue_arrival_rate_ratio = models.UnknownAttribute("None")
         queue_service_rate_actual = models.UnknownAttribute("
 μ: service rate. This measures how fast items in the queue are being handled.")
         queue_service_rate_target = models.UnknownAttribute("None")
         queue_service_rate_ratio = models.UnknownAttribute("None")
-        queue_dropout_rate_actual = models.UnknownAttribute("
-σ: dropout rate. This measures how fast items are skipping out the queue unhandled.
+        queue_skip_rate_actual = models.UnknownAttribute("
+σ (sigma): skip rate. This measures how fast items are skipping out the queue unhandled.
 
 Examples:
 
@@ -52,8 +58,8 @@ Examples:
 * Reneging: when a customer who has waited already decides to leave because they’ve wasted too much time.
 
 * Jockeying: when a customer switches between queues in a tandem queue system, trying to get a shorter wait.")
-        queue_dropout_rate_target = models.UnknownAttribute("None")
-        queue_dropout_rate_ratio = models.UnknownAttribute("None")
+        queue_skip_rate_target = models.UnknownAttribute("None")
+        queue_skip_rate_ratio = models.UnknownAttribute("None")
         queue_utilization_ratio_actual = models.UnknownAttribute("
 ρ: utilization ratio = λ / μ
 
@@ -114,10 +120,6 @@ Example:
 * θ = 1s means there's 1 second between one completion and the next completion.")
         queue_step_time_target = models.UnknownAttribute("None")
         queue_step_time_ratio = models.UnknownAttribute("Deployment frequency ratio = (actual / target)")
-        queue_item_count = models.UnknownAttribute("
-n: the number of items in the system.")
-        queue_service_error_count = models.UnknownAttribute("
-TODO")
         queue_arrival_process_probability_distribution_count = models.TextAttribute("
 A: the arrival process probability distribution.")
         queue_service_process_probability_distribution_count = models.TextAttribute("

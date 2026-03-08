@@ -30,7 +30,13 @@ meta:
 
 Main:
 
-  * type: text
+  * queue_type: text
+
+  * queue_total_count: count
+
+  * queue_skip_count: count
+
+  * queue_error_count: count
 
   * queue_arrival_rate_actual: numeric(7,2)
 
@@ -44,11 +50,11 @@ Main:
 
   * queue_service_rate_ratio: numeric(7,2)
 
-  * queue_dropout_rate_actual: numeric(7,2)
+  * queue_skip_rate_actual: numeric(7,2)
 
-  * queue_dropout_rate_target: numeric(7,2)
+  * queue_skip_rate_target: numeric(7,2)
 
-  * queue_dropout_rate_ratio: numeric(7,2)
+  * queue_skip_rate_ratio: numeric(7,2)
 
   * queue_utilization_ratio_actual: numeric(7,2)
 
@@ -85,10 +91,6 @@ Main:
   * queue_step_time_target: numeric(7,2)
 
   * queue_step_time_ratio: numeric(7,2)
-
-  * queue_item_count: count
-
-  * queue_service_error_count: count
 
   * queue_arrival_process_probability_distribution_count: text
 
