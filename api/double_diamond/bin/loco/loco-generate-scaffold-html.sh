@@ -1,0 +1,48 @@
+#!/bin/sh
+set -euf
+
+cargo loco generate scaffold --html \
+    double_diamond \
+        id:uuid \
+        lock_version:integer \
+        created_at:timestamp_utc_usec \
+        created_by:url \
+        updated_at:timestamp_utc_usec \
+        updated_by:url \
+        retired_at:timestamp_utc_usec \
+        retired_by:url \
+        locale_code:string \
+        tagging:string \
+        phase_1_title:text \
+        phase_1_smart:smart \
+        phase_1_resolve_wall_time:duration \
+        phase_1_resolve_work_time:duration \
+        phase_1_reliability_unit_interval:numeric(6,6) \
+        phase_2_title:text \
+        phase_2_smart:smart \
+        phase_2_wall_time:duration \
+        phase_2_work_time:duration \
+        phase_2_total_count:count \
+        phase_2_error_count:count \
+        phase_2_resolve_wall_time:duration \
+        phase_2_resolve_work_time:duration \
+        phase_2_reliability_unit_interval:numeric(6,6) \
+        phase_3_title:text \
+        phase_3_smart:smart \
+        phase_3_wall_time:duration \
+        phase_3_work_time:duration \
+        phase_3_total_count:count \
+        phase_3_error_count:count \
+        phase_3_resolve_wall_time:duration \
+        phase_3_resolve_work_time:duration \
+        phase_3_reliability_unit_interval:numeric(6,6) \
+        phase_4_title:text \
+        phase_4_smart:smart \
+        phase_4_wall_time:duration \
+        phase_4_work_time:duration \
+        phase_4_total_count:count \
+        phase_4_error_count:count \
+        phase_4_resolve_wall_time:duration \
+        phase_4_resolve_work_time:duration \
+        phase_4_reliability_unit_interval:numeric(6,6) \
+

@@ -1,0 +1,153 @@
+double_diamond:
+  title: Double Diamond
+  model: DoubleDiamond
+  summary: |-
+
+    Double Diamond is an innovation process model.
+
+  description: |-
+
+    Double Diamond is an innovation process model.
+
+    There are four phases: 
+      
+    1. Discover
+    2. Define
+    3. Develop
+    4. Deliver
+
+  module: plan
+  links:
+    main: https://www.designcouncil.org.uk/our-resources/the-double-diamond/
+    wikipedia: https://wikipedia.org/wiki/Double_Diamond_(design_process_model)
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+        - phase_1_title:
+            help: Phase 1 title
+            type: text
+            example: Discover
+        - phase_1_smart:
+            help: Explain specific, measurable, actionable, relatable, timely.
+            type: smart
+            example: The discover phase is …
+        - phase_1_resolve_wall_time:
+            help: Phase 1 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_1_resolve_work_time:
+            help: Phase 1 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_1_reliability_unit_interval:
+            help: Phase 1 reliability unit interval
+            type: numeric(6,6)
+            example: 0.999999
+        - phase_2_title:
+            help: Phase 2 title
+            type: text
+            example: Define
+        - phase_2_smart:
+            help: Explain specific, measurable, actionable, relatable, timely.
+            type: smart
+            example: The define phase is …
+        - phase_2_wall_time:
+            help: Phase 2 wall time
+            type: duration
+            example: 4 hours
+        - phase_2_work_time:
+            help: Phase 2 work time
+            type: duration
+            example: 2 hours
+        - phase_2_total_count:
+            help: Phase 2 total count
+            type: count
+            example: 100
+        - phase_2_error_count:
+            help: Phase 2 error count
+            type: count
+            example: 1
+        - phase_2_resolve_wall_time:
+            help: Phase 2 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_2_resolve_work_time:
+            help: Phase 2 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_2_reliability_unit_interval:
+            help: Phase 2 reliability unit interval
+            type: numeric(6,6)
+            example: 0.999999
+        - phase_3_title:
+            help: Phase 3 title
+            type: text
+            example: Develop
+        - phase_3_smart:
+            help: Explain specific, measurable, actionable, relatable, timely.
+            type: smart
+            example: The develop phase is …
+        - phase_3_wall_time:
+            help: Phase 3 wall time
+            type: duration
+            example: 4 hours
+        - phase_3_work_time:
+            help: Phase 3 work time
+            type: duration
+            example: 2 hours
+        - phase_3_total_count:
+            help: Phase 3 total count
+            type: count
+            example: 100
+        - phase_3_error_count:
+            help: Phase 3 error count
+            type: count
+            example: 1
+        - phase_3_resolve_wall_time:
+            help: Phase 3 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_3_resolve_work_time:
+            help: Phase 3 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_3_reliability_unit_interval:
+            help: Phase 3 reliability unit interval
+            type: numeric(6,6)
+            example: 0.999999
+        - phase_4_title:
+            help: Phase 4 title
+            type: text
+            example: Deliver
+        - phase_4_smart:
+            help: Explain specific, measurable, actionable, relatable, timely.
+            type: smart
+            example: The deliver phase is …
+        - phase_4_wall_time:
+            help: Phase 4 wall time
+            type: duration
+            example: 4 hours
+        - phase_4_work_time:
+            help: Phase 4 work time
+            type: duration
+            example: 2 hours
+        - phase_4_total_count:
+            help: Phase 4 total count
+            type: count
+            example: 100
+        - phase_4_error_count:
+            help: Phase 4 error count
+            type: count
+            example: 1
+        - phase_4_resolve_wall_time:
+            help: Phase 4 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_4_resolve_work_time:
+            help: Phase 4 resolve wall time. A.k.a. mean time to resolve (MTTR), which is >= mean time to recover wall time.
+            type: duration
+            example: 4 hours
+        - phase_4_reliability_unit_interval:
+            help: Phase 4 reliability unit interval
+            type: numeric(6,6)
+            example: 0.999999

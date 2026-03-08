@@ -1,0 +1,49 @@
+#!/bin/sh
+set -euf
+
+rails generate scaffold \
+    double_diamond \
+        lock_version:integer \
+        created_at:timestamp_utc_usec:index \
+        created_by:text:index \
+        updated_at:timestamp_utc_usec:index \
+        updated_by:text:index \
+        retired_at:timestamp_utc_usec:index \
+        retired_by:text:index \
+        locale_code:string:index \
+        tagging:string:index \
+        phase_1_title:text \
+        phase_1_smart:smart \
+        phase_1_resolve_wall_time:duration \
+        phase_1_resolve_work_time:duration \
+        phase_1_reliability_unit_interval:numeric(6,6) \
+        phase_2_title:text \
+        phase_2_smart:smart \
+        phase_2_wall_time:duration \
+        phase_2_work_time:duration \
+        phase_2_total_count:count \
+        phase_2_error_count:count \
+        phase_2_resolve_wall_time:duration \
+        phase_2_resolve_work_time:duration \
+        phase_2_reliability_unit_interval:numeric(6,6) \
+        phase_3_title:text \
+        phase_3_smart:smart \
+        phase_3_wall_time:duration \
+        phase_3_work_time:duration \
+        phase_3_total_count:count \
+        phase_3_error_count:count \
+        phase_3_resolve_wall_time:duration \
+        phase_3_resolve_work_time:duration \
+        phase_3_reliability_unit_interval:numeric(6,6) \
+        phase_4_title:text \
+        phase_4_smart:smart \
+        phase_4_wall_time:duration \
+        phase_4_work_time:duration \
+        phase_4_total_count:count \
+        phase_4_error_count:count \
+        phase_4_resolve_wall_time:duration \
+        phase_4_resolve_work_time:duration \
+        phase_4_reliability_unit_interval:numeric(6,6) \
+    --force \
+    --no-timestamps \
+
