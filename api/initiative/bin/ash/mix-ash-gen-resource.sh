@@ -226,11 +226,11 @@ mix ash.gen.resource \
     --attribute deployment_frequency_ratio:decimal \
     --attribute deployment_frequency_unit:text \
     --attribute deployment_frequency_description:text \
-    --attribute mean_lead_time_for_changes_actual:decimal \
-    --attribute mean_lead_time_for_changes_target:decimal \
-    --attribute mean_lead_time_for_changes_ratio:decimal \
-    --attribute mean_lead_time_for_changes_unit:text \
-    --attribute mean_lead_time_for_changes_description:text \
+    --attribute lead_time_for_changes_actual:decimal \
+    --attribute lead_time_for_changes_target:decimal \
+    --attribute lead_time_for_changes_ratio:decimal \
+    --attribute lead_time_for_changes_unit:text \
+    --attribute lead_time_for_changes_description:text \
     --attribute change_failure_rate_actual:decimal \
     --attribute change_failure_rate_target:decimal \
     --attribute change_failure_rate_ratio:decimal \

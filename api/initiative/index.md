@@ -482,15 +482,15 @@ dora_metrics_kit:
 
   * deployment_frequency_description: text
 
-  * mean_lead_time_for_changes_actual: decimal
+  * lead_time_for_changes_actual: decimal
 
-  * mean_lead_time_for_changes_target: decimal
+  * lead_time_for_changes_target: decimal
 
-  * mean_lead_time_for_changes_ratio: decimal
+  * lead_time_for_changes_ratio: decimal
 
-  * mean_lead_time_for_changes_unit: text
+  * lead_time_for_changes_unit: text
 
-  * mean_lead_time_for_changes_description: text
+  * lead_time_for_changes_description: text
 
   * change_failure_rate_actual: decimal
 

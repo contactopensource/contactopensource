@@ -223,11 +223,11 @@ mix phx.gen.html \
         deployment_frequency_ratio:decimalNone \
         deployment_frequency_unit:textNone \
         deployment_frequency_description:textNone \
-        mean_lead_time_for_changes_actual:decimalNone \
-        mean_lead_time_for_changes_target:decimalNone \
-        mean_lead_time_for_changes_ratio:decimalNone \
-        mean_lead_time_for_changes_unit:textNone \
-        mean_lead_time_for_changes_description:textNone \
+        lead_time_for_changes_actual:decimalNone \
+        lead_time_for_changes_target:decimalNone \
+        lead_time_for_changes_ratio:decimalNone \
+        lead_time_for_changes_unit:textNone \
+        lead_time_for_changes_description:textNone \
         change_failure_rate_actual:decimalNone \
         change_failure_rate_target:decimalNone \
         change_failure_rate_ratio:decimalNone \

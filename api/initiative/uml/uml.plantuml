@@ -242,11 +242,11 @@ entity initiative {
   deployment_frequency_ratio : decimal
   deployment_frequency_unit : text
   deployment_frequency_description : text
-  mean_lead_time_for_changes_actual : decimal
-  mean_lead_time_for_changes_target : decimal
-  mean_lead_time_for_changes_ratio : decimal
-  mean_lead_time_for_changes_unit : text
-  mean_lead_time_for_changes_description : text
+  lead_time_for_changes_actual : decimal
+  lead_time_for_changes_target : decimal
+  lead_time_for_changes_ratio : decimal
+  lead_time_for_changes_unit : text
+  lead_time_for_changes_description : text
   change_failure_rate_actual : decimal
   change_failure_rate_target : decimal
   change_failure_rate_ratio : decimal

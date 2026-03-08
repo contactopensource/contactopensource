@@ -846,27 +846,27 @@ defmodule MyApp.MyDomain.Initiative.Attributes do
     end
 
     attribute :deployment_frequency_description, :text do
-      description "deployment frequency description"
+      description "deployment frequency description, ideally SMART"
     end
 
-    attribute :mean_lead_time_for_changes_actual, :decimal do
-      description "Mean lead time for changes actual value"
+    attribute :lead_time_for_changes_actual, :decimal do
+      description "Lead time for changes actual value"
     end
 
-    attribute :mean_lead_time_for_changes_target, :decimal do
-      description "Mean lead time for changes target value"
+    attribute :lead_time_for_changes_target, :decimal do
+      description "Lead time for changes target value"
     end
 
-    attribute :mean_lead_time_for_changes_ratio, :decimal do
-      description "Mean lead time for changes ratio = (actual / target)"
+    attribute :lead_time_for_changes_ratio, :decimal do
+      description "Lead time for changes ratio = (actual / target)"
     end
 
-    attribute :mean_lead_time_for_changes_unit, :text do
-      description "Mean lead time for changes unit"
+    attribute :lead_time_for_changes_unit, :text do
+      description "Lead time for changes unit"
     end
 
-    attribute :mean_lead_time_for_changes_description, :text do
-      description "Mean lead time for changes description"
+    attribute :lead_time_for_changes_description, :text do
+      description "Lead time for changes description, ideally SMART"
     end
 
     attribute :change_failure_rate_actual, :decimal do
@@ -886,7 +886,7 @@ defmodule MyApp.MyDomain.Initiative.Attributes do
     end
 
     attribute :change_failure_rate_description, :text do
-      description "Change failure rate description"
+      description "Change failure rate description, ideally SMART"
     end
 
     attribute :failed_deployment_recovery_time_actual, :decimal do
@@ -906,7 +906,7 @@ defmodule MyApp.MyDomain.Initiative.Attributes do
     end
 
     attribute :failed_deployment_recovery_time_description, :text do
-      description "Failed deployment recovery time description"
+      description "Failed deployment recovery time description, ideally SMART"
     end
 
     attribute :reliability_actual, :decimal do
