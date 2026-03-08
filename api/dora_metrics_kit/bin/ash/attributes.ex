@@ -125,24 +125,24 @@ defmodule MyApp.MyDomain.DoraMetricsKit.Attributes do
       description "Failed deployment recovery time description"
     end
 
-    attribute :reliability_probability_actual, :numeric do
-      description "Reliability probability actual value"
+    attribute :reliability_unit_interval_actual, :numeric do
+      description "Reliability unit interval actual value"
     end
 
-    attribute :reliability_probability_target, :numeric do
-      description "Reliability probability target value"
+    attribute :reliability_unit_interval_target, :numeric do
+      description "Reliability unit interval target value"
     end
 
-    attribute :reliability_probability_ratio, :numeric do
-      description "Reliability probability (actual / target)"
+    attribute :reliability_unit_interval_ratio, :numeric do
+      description "Reliability unit interval (actual / target)"
     end
 
-    attribute :reliability_probability_unit, :text do
-      description "Reliability probability unit"
+    attribute :reliability_unit_interval_unit, :text do
+      description "Reliability unit interval unit"
     end
 
-    attribute :reliability_probability_description, :text do
-      description "Reliability probability description"
+    attribute :reliability_unit_interval_description, :text do
+      description "Reliability unit interval description"
     end
 
   end

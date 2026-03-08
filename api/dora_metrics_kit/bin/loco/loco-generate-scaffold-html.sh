@@ -33,9 +33,9 @@ cargo loco generate scaffold --html \
         failed_deployment_recovery_time_ratio:numeric(7,2) \
         failed_deployment_recovery_time_unit:text \
         failed_deployment_recovery_time_description:text \
-        reliability_probability_actual:numeric(9,6) \
-        reliability_probability_target:numeric(9,6) \
-        reliability_probability_ratio:numeric(9,6) \
-        reliability_probability_unit:text \
-        reliability_probability_description:text \
+        reliability_unit_interval_actual:numeric(9,6) \
+        reliability_unit_interval_target:numeric(9,6) \
+        reliability_unit_interval_ratio:numeric(9,6) \
+        reliability_unit_interval_unit:text \
+        reliability_unit_interval_description:text \
 
