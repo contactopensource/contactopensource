@@ -1,0 +1,59 @@
+vital_sign_kit:
+  title: Vital sign kit
+  model: VitalSignKit
+  summary: |-
+
+    Vital sign kit
+
+  description: |-
+
+    Vital sign kit
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+        - blood-pressure-diastolic-as-mmhg:
+            help: blood pressure diastolic as mmhg
+            type: count
+        - blood-pressure-systolic-as-mmhg:
+            help: blood pressure systolic as mmhg
+            type: count
+        - body-fat-as-percentage:
+            help: body fat as percentage
+            type: percent
+        - body-temperature-as-celcius:
+            help: body temperature as celcius
+            type: celcius
+        - cholesterol-hdl-as-mmol-per-litre:
+            help: cholesterol HDL mmol per litre
+            type: count
+        - cholesterol-ldl-as-mmol-per-litre:
+            help: cholesterol LDL as mmol per litre
+            type: count
+        - heart-rate-as-beats-per-minute:
+            help: heart rate as beats per minute
+            type: count
+        - heart-rate-variability:
+            help: heart rate variability
+            type: percent
+        - height-as-cm:
+            help: height as cm
+            type: count
+        - respiratory-rate-as-breaths-per-minute:
+            help: respiratory rate as breaths per minute
+            type: count
+        - sleep-score-as-percent:
+            help: sleep score as 0 to 100
+            type: percent
+        - total-sleep-time-as-min-per-day:
+            help: total sleep time as min per day
+            type: count
+        - vo2-max-as-ml-per-kg-per-minute:
+            help: VO2 max as ml per kg per minute
+            type: count
+        - waist-circumference-as-cm:
+            help: waist circumference as cm
+            type: count
+        - weight-as-kg:
+            help: weight-as-kg
+            type: count

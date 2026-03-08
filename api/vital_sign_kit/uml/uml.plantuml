@@ -1,0 +1,36 @@
+@startuml uml
+skinparam monochrome true
+skinparam linetype ortho
+hide circle
+
+entity vital_sign_kit {
+  .. meta ..
+  id : uuid ⚡
+  lock_version : integer
+  created_at : timestamp_utc_usec ⚡
+  created_by : url ⚡
+  updated_at : timestamp_utc_usec ⚡
+  updated_by : url ⚡
+  retired_at : timestamp_utc_usec ⚡
+  retired_by : url ⚡
+  locale_code : string ⚡
+  tagging : string ⚡
+  .. Main ..
+  blood-pressure-diastolic-as-mmhg : count
+  blood-pressure-systolic-as-mmhg : count
+  body-fat-as-percentage : percent
+  body-temperature-as-celcius : celcius
+  cholesterol-hdl-as-mmol-per-litre : count
+  cholesterol-ldl-as-mmol-per-litre : count
+  heart-rate-as-beats-per-minute : count
+  heart-rate-variability : percent
+  height-as-cm : count
+  respiratory-rate-as-breaths-per-minute : count
+  sleep-score-as-percent : percent
+  total-sleep-time-as-min-per-day : count
+  vo2-max-as-ml-per-kg-per-minute : count
+  waist-circumference-as-cm : count
+  weight-as-kg : count
+}
+
+@enduml
