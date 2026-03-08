@@ -1,0 +1,60 @@
+renderee:
+  title: Renderee
+  model: Renderee
+  summary: |-
+
+    Renderee is renderable input (e.g. PlantUML text markup) and rendered output (e.g. PlantUML PNG image).
+
+  description: |-
+
+    Renderee is renderable input (e.g. PlantUML text markup) and rendered output (e.g. PlantUML PNG image).
+
+    The purpose of this API is to enable rendering from one media type to another,
+    such as rendering from PlantUML text to PlantUML inage.
+
+    Examples:
+      
+    - PlantUML text "text/vnd.plantuml"
+    - PlantUML text for Archimate "text/vnd.plantuml-archimate-c4"
+    - PlantUML text for Archimate C4 "text/vnd.plantuml-archimate-c4"
+
+  links:
+    - https://en.wikipedia.org/wiki/Religion
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+        - renderer_id:
+            help: Renderer id
+            type: renderer.id
+        - input_media_type_id:
+            help: Input media type, such as "text/vnd.plantuml" for PlantUML text
+            type: media_type.id
+            example: Media type "text/vnd.plantuml" meaning PlantUML text
+        - input_as_json:
+            help: Input as JSON, such as arbitrary JavaScript data. This field is as a union of ( as_json | as_text | as_url ).
+            type: text
+            example: The renderer input JSON.
+        - input_as_text:
+            help: Input as text, such as PlantUML markup text that we want to render to a PNG image. Use this field when you want the data store to maintain the input as text; otherwise, prefer the field input_as_url.
+            type: text
+            example: "@startuml ... @enduml"
+        - input_as_url:
+            help: Input as URL, such as a link to a photo image that we want to render to a text caption. Use this field when you want the data store to fetch the input URL; otherwise, prefer the field input_as_text.
+            type: text
+            example: https://example.com/photo.jpg
+        - output_media_type_id:
+            help: Output media type, such as "image/png" for PlantUML text
+            type: media_type.id
+            example: Media type "image/png" for PlantUML text
+        - output_as_json:
+            help: Output as JSON, such as arbitrary JavaScript data. This field is a union of ( as_json | as_text | as_url ).
+            type: text
+            example: The renderer output JSON.
+        - output_as_text:
+            help: Output as text, such as w Use this field when you want the data store to maintain the output as text. Otherwise, prefer the field output_as_url.
+            type: url
+            example: The renderer output text, such as "This is a photo of two people smiling."
+        - output_as_url:
+            help: Output as URL, such as a link to PlantUML PNG image.
+            type: url
+            example: The renderer output URL, such as "https://example.com/diagram.png"
