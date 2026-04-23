@@ -1,0 +1,42 @@
+ingredient:
+  title: Ingredient
+  model: Ingredient
+  summary: |-
+
+    An ingredient is any substance, component, or element that forms part of a mixture, compound, or recipe, commonly used in cooking, manufacturing, or pharmaceuticals. 
+
+  description: |-
+
+    An ingredient is any substance, component, or element that forms part of a mixture, compound, or recipe, commonly used in cooking, manufacturing, or pharmaceuticals. 
+    
+    It is a fundamental element that combines with others to create a final product, often intentionally added for taste, texture, or function. 
+
+    Key Usage Examples:
+
+    - Cooking: Flour, eggs, and sugar are key ingredients in a cake.
+    - Manufacturing/Food Science: Preservatives, color additives, flavors, and emulsifiers added to improve quality, freshness, and safety.
+    - Pharmaceuticals: The active ingredient in medicine, such as acetaminophen in pain relievers, provides the therapeutic effect.
+    - Metaphorical: "Hard work and dedication are key ingredients for success.
+    
+  module: Things
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - !include ../_images.yml
+    - Main:
+      - name:
+          type: text
+          example: flour
+          index: true
+      - description:
+          type: text
+          example: Flour is a powder used to make many different foods, including baked goods, as well as thickening dishes.
+          index: true
+  trigram: |-
+    CREATE INDEX ingredient_index_gto
+      ON ingredient
+      USING GIN ((
+        name
+          || ' ' ||
+        description
+      ) gin_trgm_ops);
