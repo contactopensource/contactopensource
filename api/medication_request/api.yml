@@ -1,0 +1,30 @@
+medication_request:
+  title: MedicationRequest
+  model: MedicationRequest
+  summary: |-
+
+    An order for a medication for a patient, typically used for prescriptions.
+
+  description: |-
+
+    An order for a medication for a patient, typically used for prescriptions.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - title:
+          help: The title of the medication request, typically indicating the medication and its purpose.
+          type: string
+          example: Aspirin for Pain Relief
+      - description:
+          help: A detailed description of the medication request, including the medication name, dosage, and intended use. For example, "A prescription for Aspirin to be taken for pain relief, with a dosage of 100 mg once daily."
+          type: string
+          example: A prescription for Aspirin to be taken for pain relief, with a dosage of 100 mg once daily.
+  trigram: |-
+    CREATE INDEX medication_request_index_gto
+      ON medication_request
+      USING GIN ((
+        title
+          || ' ' ||
+        description
+      ) gin_trgm_ops);

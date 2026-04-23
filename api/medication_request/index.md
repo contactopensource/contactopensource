@@ -1,0 +1,36 @@
+# medication_request
+
+
+An order for a medication for a patient, typically used for prescriptions.
+
+
+## Attributes
+
+meta:
+
+  * id: uuid (index)
+
+  * lock_version: integer
+
+  * created_at: timestamp_utc_usec (index)
+
+  * created_by: url (index)
+
+  * updated_at: timestamp_utc_usec (index)
+
+  * updated_by: url (index)
+
+  * retired_at: timestamp_utc_usec (index)
+
+  * retired_by: url (index)
+
+  * locale_code: string (index) - example: the locale code "en-US" means "English - United States".
+
+  * tagging: string (index) - example: The tagging "red green blue" means a list of three tags ["red", "green", "blue"]
+
+Main:
+
+  * title: string - example: Aspirin for Pain Relief
+
+  * description: string - example: A prescription for Aspirin to be taken for pain relief, with a dosage of 100 mg once daily.
+
