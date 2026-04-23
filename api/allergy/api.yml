@@ -1,0 +1,102 @@
+allergy:
+  title: Allergy
+  model: Allergy
+  summary: |-
+
+    An allergy is an inappropriate, exaggerated immune system response to normally harmless substances (allergens) such as pollen, food, or pet dander. The body mistakenly identifies these as a threat, triggering symptoms ranging from minor discomfort (itchy rashes, sneezing) to life-threatening emergencies (anaphylaxis). 
+
+  description: |-
+
+    An allergy is an inappropriate, exaggerated immune system response to normally harmless substances (allergens) such as pollen, food, or pet dander. The body mistakenly identifies these as a threat, triggering symptoms ranging from minor discomfort (itchy rashes, sneezing) to life-threatening emergencies (anaphylaxis). 
+
+    Key Aspects of Allergies:
+
+    - Common Causes (Allergens): Pollen, house dust mites, pet dander, moulds, insect venom, foods (nuts, milk, eggs, shellfish), and medications.
+    - Symptoms: Skin rashes (hives), swelling (eyes, lips), sneezing, watery eyes, digestive issues, and difficulty breathing.
+    - Reaction Types: Reactions can be localized (e.g., hay fever) or systemic, including anaphylaxis which requires immediate emergency treatment.
+    - Management: Avoidance of the allergen, along with treatments like antihistamines and immunotherapy. 
+
+    Common Synonyms & Related Terms:
+    
+    - Hypersensitivity
+    - Allergic reaction
+    - Atopy (genetic tendency to develop allergies)
+    - Allergic disease 
+    
+    Usage Examples:
+
+    - "He has a severe allergy to peanuts."
+    - "My allergy medication helps with hay fever."
+    - "The rash is an allergic reaction to the soap."
+    
+    Common allergies are often diagnosed by healthcare professionals through skin prick or blood tests.
+
+    Naming Conventions:
+
+    1. Scientific/Systematic Nomenclature (WHO/IUIS)
+
+    The World Health Organization and International Union of Immunological Societies (WHO/IUIS) establish a systematic naming convention for allergen identification, which uses the Linnaean taxonomic system (genus and species). 
+
+    Format: The first three letters of the genus, a space, the first letter of the species, a space, and an Arabic number denoting the order of discovery. 
+
+    Examples:
+    - Bet v 1: Betula verrucosa (birch) allergen 1.
+    - Der p 1: Dermatophagoides pteronyssinus (dust mite) allergen 1.
+    - Fel d 1: Felis domesticus (cat) allergen 1. 
+
+    Isoallergens & Variants: Designated by adding digits after a decimal point (e.g., Bet v 1.0101). 
+
+    2. Food Labelling Convention (UK/EU Law)
+
+    - Food law requires that the 14 most common allergens be clearly identified when used as ingredients, or through "may contain" labels. 
+
+    - Mandatory Declaration: The 14 allergens are: Celery, Cereals containing gluten (wheat, rye, barley, oats), Crustaceans, Eggs, Fish, Lupin, Milk, Molluscs, Mustard, Peanuts, Sesame, Soybeans, Sulphur dioxide/sulphites (>10ppm), and Tree Nuts. 
+
+    - Emphasis: Allergens must be highlighted in the ingredient list using bold, italics, or uppercase, such as: "Ingredients: flour (wheat), sugar, whey powder (milk)". 
+
+    - Hidden Allergens: If a component contains an allergen, it must be listed, e.g., "whey powder (milk)". 
+
+    - "May Contain" (Precautionary Labelling): Used for potential cross-contamination, e.g., "May contain peanuts". 
+
+    3. Food Labelling Convention (US/FDA)
+
+    - The FDA mandates identifying "major food allergens" under the Food Allergen Labeling and Consumer Protection Act (FALCPA). 
+    - "Big 9": Milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans, and sesame.
+    - Labeling Method: Either the common name is used in the ingredient list, or a "Contains" statement is used (e.g., "Contains: wheat, milk"). 
+
+    4. Cosmetic Labelling
+    
+    - Cosmetic products must list specific allergens in the ingredient list if they exceed 0.001% (leave-on) or 0.01% (rinse-off) concentration. 
+    - Naming: Uses specific, individual chemical names (e.g., Limonene, Linalool). 
+    
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - scientific_name:
+          help: The World Health Organization and International Union of Immunological Societies (WHO/IUIS) establish a systematic naming convention for allergen identification, which uses the Linnaean taxonomic system (genus and species). 
+          type: string
+          example: Betula pendula (birch pollen)
+      - european_union_name:
+          help: The European Union (EU) Food Standards Agency (FSA) mandates identifying "major food allergens".
+          type: string
+          example: wheat
+      - united_states_name:
+          help: The United States (US) Food and Drug Administration (FDA) mandates identifying "major food allergens" under the Food Allergen Labeling and Consumer Protection Act (FALCPA). 
+          type: string
+          example: wheat
+      - cosmetic_name:
+          help: Cosmetic products must list specific allergens in the ingredient list if they exceed 0.
+          type: string
+          example: Limonene
+  trigram: |-
+    CREATE INDEX allergy_index_gto
+      ON allergy
+      USING GIN ((
+        scientific_name
+          || ' ' ||
+        european_union_name
+          || ' ' ||
+        united_states_name
+          || ' ' ||
+        cosmetic_name
+      ) gin_trgm_ops);
