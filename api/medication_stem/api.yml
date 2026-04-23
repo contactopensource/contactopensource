@@ -1,0 +1,36 @@
+medication_stem:
+  title: MedicationStem
+  model: MedicationStem
+  summary: |-
+
+    Medication stem is the part of a medication's name that indicates its pharmacological class or chemical structure, often following specific naming conventions (stems) that reflect their function or target. For example, -cillin denotes penicillins, -olol indicates beta-blockers, and -statin indicates cholesterol-lowering drugs.
+
+  description: |-
+
+    Medication stem is the part of a medication's name that indicates its pharmacological class or chemical structure, often following specific naming conventions (stems) that reflect their function or target. For example, -cillin denotes penicillins, -olol indicates beta-blockers, and -statin indicates cholesterol-lowering drugs.
+
+  attribute_groups:
+    - !include ../_meta.yml
+    - Main:
+      - stem:
+          help: The medication stem is the part of a medication's name that indicates its pharmacological class or chemical structure, often following specific naming conventions (stems) that reflect their function or target. For example, -cillin denotes penicillins, -olol indicates beta-blockers, and -statin indicates cholesterol-lowering drugs.
+          type: string
+          example: "–cillin"
+      - class:
+          help: The medication class is a group of medications that share similar pharmacological properties, mechanisms of action, or therapeutic uses. For example, penicillins are a class of antibiotics that include medications with the -cillin stem, such as amoxicillin and penicillin G. 
+          type: string
+          example: Penicillins
+      - examples:
+          help: Examples of medications that belong to the class indicated by the stem. For instance, for the -cillin stem, examples include amoxicillin, penicillin G, and ampicillin.
+          type: string
+          example: ampicillin, penicillin, oxacillin
+  trigram: |-
+    CREATE INDEX medication_stem_index_gto
+      ON medication_stem
+      USING GIN ((
+        stem
+          || ' ' ||
+        class
+          || ' ' ||
+        examples  
+      ) gin_trgm_ops);
