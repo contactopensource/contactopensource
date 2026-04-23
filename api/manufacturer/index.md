@@ -74,5 +74,5 @@ Main:
 
   * name: text (index) - example: Acme Corporation
 
-  * name: text (index) - example: Acme Corporation manufactures widgets for industries.
+  * description: text (index) - example: Acme Corporation manufactures widgets for industries.
 

@@ -124,7 +124,7 @@ defmodule MyApp.MyDomain.Manufacturer.Attributes do
     attribute :name, :text do
     end
 
-    attribute :name, :text do
+    attribute :description, :text do
     end
 
   end

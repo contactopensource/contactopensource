@@ -14,5 +14,5 @@ DROP INDEX IF EXISTS index_manufacturer_slug;
 DROP INDEX IF EXISTS index_manufacturer_sign;
 DROP INDEX IF EXISTS index_manufacturer_kind;
 DROP INDEX IF EXISTS index_manufacturer_name;
-DROP INDEX IF EXISTS index_manufacturer_name;
+DROP INDEX IF EXISTS index_manufacturer_description;
 

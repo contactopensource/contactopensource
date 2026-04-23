@@ -36,7 +36,7 @@ mix ash.gen.resource \
     --attribute main_image_1080x1920_url:text \
     --attribute main_image_1080x1920_alt:text \
     --attribute name:text \
-    --attribute name:text \
+    --attribute description:text \
 
 mix ash.codegen create_manufacturers
 mix ash.migrate
@@ -97,7 +97,7 @@ EOF
 #     index[:sign] \
 #     index[:kind] \
 #     index[:name] \
-#     index[:name] \
+#     index[:description] \
 #
 #
 # Change the attributes created_at and updated_at to:

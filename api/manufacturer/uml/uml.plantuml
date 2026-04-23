@@ -38,7 +38,7 @@ entity manufacturer {
   main_image_1080x1920_alt : text
   .. Main ..
   name : text ⚡
-  name : text ⚡
+  description : text ⚡
 }
 
 @enduml

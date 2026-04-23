@@ -32,7 +32,7 @@ rails generate scaffold \
         main_image_1080x1920_url:text \
         main_image_1080x1920_alt:text \
         name:text:index \
-        name:text:index \
+        description:text:index \
     --force \
     --no-timestamps \
 

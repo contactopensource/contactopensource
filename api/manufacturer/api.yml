@@ -31,7 +31,7 @@ manufacturer:
           type: text
           example: Acme Corporation
           index: true
-      - name:
+      - description:
           type: text
           example: Acme Corporation manufactures widgets for industries.
           index: true

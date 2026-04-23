@@ -33,7 +33,7 @@ mix phx.gen.html \
         main_image_1080x1920_url:urlNone \
         main_image_1080x1920_alt:textNone \
         name:text:index \
-        name:text:index \
+        description:text:index \
     --force \
     --no-timestamps \
 

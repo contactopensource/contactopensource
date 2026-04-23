@@ -32,5 +32,5 @@ class Manufacturer(models.Model):
         main_image_1080x1920_url = models.URLAttribute("A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as a URL.")
         main_image_1080x1920_alt = models.TextAttribute("A main image for the item, 1920x1080 pixels, which is landscape aspect ratio, as an alternate text description.")
         name = models.TextAttribute("None")
-        name = models.TextAttribute("None")
+        description = models.TextAttribute("None")
 

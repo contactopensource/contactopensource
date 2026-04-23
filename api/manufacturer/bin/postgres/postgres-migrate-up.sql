@@ -16,5 +16,5 @@ CREATE INDEX manufacturer_slug_index on manufacturer(slug);
 CREATE INDEX manufacturer_sign_index on manufacturer(sign);
 CREATE INDEX manufacturer_kind_index on manufacturer(kind);
 CREATE INDEX manufacturer_name_index on manufacturer(name);
-CREATE INDEX manufacturer_name_index on manufacturer(name);
+CREATE INDEX manufacturer_description_index on manufacturer(description);
 

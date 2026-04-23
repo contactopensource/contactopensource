@@ -33,5 +33,5 @@ cargo loco generate scaffold --html \
         main_image_1080x1920_url:url \
         main_image_1080x1920_alt:text \
         name:text \
-        name:text \
+        description:text \
 
