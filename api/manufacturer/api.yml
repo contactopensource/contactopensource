@@ -1,0 +1,45 @@
+manufacturer:
+  title: Manufacturer
+  model: Manufacturer
+  summary: |-
+
+    A manufacturer is a person, company, or entity that produces finished goods from raw materials or components on a large scale using labor, machinery, and tools.
+
+  description: |-
+
+    A manufacturer is a person, company, or entity that produces finished goods from raw materials or components on a large scale using labor, machinery, and tools. They are the initial, crucial stage in the supply chain, transforming inputs into sellable items for consumers, other manufacturers, or wholesalers
+
+    Synonyms:
+    - Producer: Emphasizes the creation of goods.
+    - Maker: Emphasizes the entity crafting the product.
+    - Supplier: Emphasizes providing the finished goods to the market.
+    - Factory/Firm: Refers to the organization.
+    - Constructor: Refers to assembling parts. 
+
+    Common Types of Manufacturing Processes:
+    - Make-to-Stock (MTS): Producing goods based on demand forecasts.
+    - Make-to-Order (MTO): Producing goods only after receiving an order.
+    - Make-to-Assemble (MTA): Producing components and assembling them upon order. 
+    
+  module: Organizations
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - !include ../_images.yml
+    - Main:
+      - name:
+          type: text
+          example: Acme Corporation
+          index: true
+      - name:
+          type: text
+          example: Acme Corporation manufactures widgets for industries.
+          index: true
+  trigram: |-
+    CREATE INDEX manufacturer_index_gto
+      ON manufacturer
+      USING GIN ((
+        name
+          || ' ' ||
+        description
+      ) gin_trgm_ops);
