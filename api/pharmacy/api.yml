@@ -1,0 +1,53 @@
+pharmacy:
+  title: Pharmacy
+  model: Pharmacy
+  summary: |-
+
+    A pharmacy is both a health service and a physical location (often called a chemist in the UK) where medicines are stored, prepared, and dispensed by qualified healthcare professionals. 
+
+  description: |-
+
+    A pharmacy is both a health service and a physical location (often called a chemist in the UK) where medicines are stored, prepared, and dispensed by qualified healthcare professionals. 
+
+    Pharmacies provide essential healthcare services that go beyond just handing out medication: 
+
+    - Dispensing Prescriptions: Preparing and supplying medicines prescribed by doctors or other clinicians. 
+    - Minor Illness Advice: Pharmacists can provide expert clinical advice and over-the-counter treatments for conditions like coughs, colds, sore throats, and rashes. 
+    - Pharmacy First: In many areas, pharmacists can now prescribe certain antibiotics or antivirals for specific conditions (like earaches, UTIs, or shingles) without you needing to see a GP. 
+    - Safe Disposal: You can return out-of-date or unwanted medicines to a pharmacy for safe disposal rather than putting them in household waste. 
+    - Healthy Living Support: Many offer blood pressure checks, vaccinations (flu and COVID-19), smoking cessation support, and weight management advice. 
+    
+    Types of Pharmacies:
+
+    - Community Pharmacies: Found on high streets, in supermarkets, or in local neighbourhoods. They often sell retail goods like toiletries and cosmetics alongside medicines.
+    - Hospital Pharmacies: Located within hospitals to manage more complex medications and provide specialized treatments for inpatients.
+    - Specialty Pharmacies: Handle high-cost or complex medications for chronic diseases like cancer or rheumatoid arthritis. 
+    
+    The Pharmacy Team:
+
+    - Pharmacist: Who must complete years of specialized training in medicines.
+    - Pharmacy Technicians: Who help prepare and dispense medications.
+    - Pharmacy Assistants: Who handle customer service, stock management, and basic medicine queries. 
+    
+  module: Organizations
+  attribute_groups:
+    - !include ../_meta.yml
+    - !include ../_card.yml
+    - !include ../_images.yml
+    - Main:
+      - name:
+          type: text
+          example: Acme Pharmacy
+          index: true
+      - name:
+          type: text
+          example: Acme Pharmacy provides prescriptions.
+          index: true
+  trigram: |-
+    CREATE INDEX pharmacy_index_gto
+      ON pharmacy
+      USING GIN ((
+        name
+          || ' ' ||
+        description
+      ) gin_trgm_ops);
